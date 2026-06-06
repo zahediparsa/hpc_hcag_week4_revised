@@ -1,0 +1,13 @@
+{
+    "group": 3,
+    "project": "Apache Hadoop",
+    "component": "MapReduce Client Core",
+    "embedding_model": "ibm-granite/granite-embedding-english-r2",
+    "alpha": 0.4,
+    "target_num_clusters": 8,
+    "number_of_java_files": 332,
+    "number_of_embeddings": 332,
+    "embedding_dimension": 768,
+    "rsf_path": "/content/drive/MyDrive/DSSE_week2/hadoop_mapreduce_focused.rsf",
+    "source_code_dir": "/content/hadoop/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapreduce"
+}

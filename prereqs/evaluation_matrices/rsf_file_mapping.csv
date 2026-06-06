@@ -1,0 +1,60 @@
+label,path,source
+W1__ACDC_hadoop_mapreduce_focused__ACDC_hadoop_mapreduce_focused,D:\DSSE_output\tuning_runs\ACDC_hadoop_mapreduce_focused\ACDC_hadoop_mapreduce_focused.rsf,week1
+W1__LIMBO_IL_thresh100_stop-PRESELECTED_file-True__hadoopmapreduce-3.4.1_IL_100_clusters,D:\DSSE_output\tuning_runs\LIMBO_IL_thresh100_stop-PRESELECTED_file-True\hadoopmapreduce-3.4.1_IL_100_clusters.rsf,week1
+W1__LIMBO_IL_thresh20_stop-PRESELECTED_file-True__hadoopmapreduce-3.4.1_IL_20_clusters,D:\DSSE_output\tuning_runs\LIMBO_IL_thresh20_stop-PRESELECTED_file-True\hadoopmapreduce-3.4.1_IL_20_clusters.rsf,week1
+W1__LIMBO_IL_thresh23_stop-PRESELECTED_file-True__hadoopmapreduce-3.4.1_IL_23_clusters,D:\DSSE_output\tuning_runs\LIMBO_IL_thresh23_stop-PRESELECTED_file-True\hadoopmapreduce-3.4.1_IL_23_clusters.rsf,week1
+W1__LIMBO_IL_thresh30_stop-PRESELECTED_file-True__hadoopmapreduce-3.4.1_IL_30_clusters,D:\DSSE_output\tuning_runs\LIMBO_IL_thresh30_stop-PRESELECTED_file-True\hadoopmapreduce-3.4.1_IL_30_clusters.rsf,week1
+W1__LIMBO_IL_thresh50_stop-PRESELECTED_file-True__hadoopmapreduce-3.4.1_IL_50_clusters,D:\DSSE_output\tuning_runs\LIMBO_IL_thresh50_stop-PRESELECTED_file-True\hadoopmapreduce-3.4.1_IL_50_clusters.rsf,week1
+W1__LIMBO_IL_thresh75_stop-PRESELECTED_file-True__hadoopmapreduce-3.4.1_IL_75_clusters,D:\DSSE_output\tuning_runs\LIMBO_IL_thresh75_stop-PRESELECTED_file-True\hadoopmapreduce-3.4.1_IL_75_clusters.rsf,week1
+W1__WCA_UEM_thresh100_stop-PRESELECTED_file-True__hadoopmapreduce-3.4.1_UEM_100_clusters,D:\DSSE_output\tuning_runs\WCA_UEM_thresh100_stop-PRESELECTED_file-True\hadoopmapreduce-3.4.1_UEM_100_clusters.rsf,week1
+W1__WCA_UEM_thresh20_stop-PRESELECTED_file-True__hadoopmapreduce-3.4.1_UEM_20_clusters,D:\DSSE_output\tuning_runs\WCA_UEM_thresh20_stop-PRESELECTED_file-True\hadoopmapreduce-3.4.1_UEM_20_clusters.rsf,week1
+W1__WCA_UEM_thresh23_stop-PRESELECTED_file-True__hadoopmapreduce-3.4.1_UEM_23_clusters,D:\DSSE_output\tuning_runs\WCA_UEM_thresh23_stop-PRESELECTED_file-True\hadoopmapreduce-3.4.1_UEM_23_clusters.rsf,week1
+W1__WCA_UEM_thresh30_stop-PRESELECTED_file-True__hadoopmapreduce-3.4.1_UEM_30_clusters,D:\DSSE_output\tuning_runs\WCA_UEM_thresh30_stop-PRESELECTED_file-True\hadoopmapreduce-3.4.1_UEM_30_clusters.rsf,week1
+W1__WCA_UEM_thresh50_stop-PRESELECTED_file-True__hadoopmapreduce-3.4.1_UEM_50_clusters,D:\DSSE_output\tuning_runs\WCA_UEM_thresh50_stop-PRESELECTED_file-True\hadoopmapreduce-3.4.1_UEM_50_clusters.rsf,week1
+W1__WCA_UEM_thresh75_stop-PRESELECTED_file-True__hadoopmapreduce-3.4.1_UEM_75_clusters,D:\DSSE_output\tuning_runs\WCA_UEM_thresh75_stop-PRESELECTED_file-True\hadoopmapreduce-3.4.1_UEM_75_clusters.rsf,week1
+W1__WCA_UEMNM_thresh100_stop-PRESELECTED_file-True__hadoopmapreduce-3.4.1_UEMNM_100_clusters,D:\DSSE_output\tuning_runs\WCA_UEMNM_thresh100_stop-PRESELECTED_file-True\hadoopmapreduce-3.4.1_UEMNM_100_clusters.rsf,week1
+W1__WCA_UEMNM_thresh20_stop-PRESELECTED_file-True__hadoopmapreduce-3.4.1_UEMNM_20_clusters,D:\DSSE_output\tuning_runs\WCA_UEMNM_thresh20_stop-PRESELECTED_file-True\hadoopmapreduce-3.4.1_UEMNM_20_clusters.rsf,week1
+W1__WCA_UEMNM_thresh23_stop-PRESELECTED_file-True__hadoopmapreduce-3.4.1_UEMNM_23_clusters,D:\DSSE_output\tuning_runs\WCA_UEMNM_thresh23_stop-PRESELECTED_file-True\hadoopmapreduce-3.4.1_UEMNM_23_clusters.rsf,week1
+W1__WCA_UEMNM_thresh30_stop-PRESELECTED_file-True__hadoopmapreduce-3.4.1_UEMNM_30_clusters,D:\DSSE_output\tuning_runs\WCA_UEMNM_thresh30_stop-PRESELECTED_file-True\hadoopmapreduce-3.4.1_UEMNM_30_clusters.rsf,week1
+W1__WCA_UEMNM_thresh50_stop-PRESELECTED_file-True__hadoopmapreduce-3.4.1_UEMNM_50_clusters,D:\DSSE_output\tuning_runs\WCA_UEMNM_thresh50_stop-PRESELECTED_file-True\hadoopmapreduce-3.4.1_UEMNM_50_clusters.rsf,week1
+W1__WCA_UEMNM_thresh75_stop-PRESELECTED_file-True__hadoopmapreduce-3.4.1_UEMNM_75_clusters,D:\DSSE_output\tuning_runs\WCA_UEMNM_thresh75_stop-PRESELECTED_file-True\hadoopmapreduce-3.4.1_UEMNM_75_clusters.rsf,week1
+W3__group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.2_k_10,D:\DSSE_output\week 3\group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.2_k_10.rsf,week3
+W3__group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.2_k_12,D:\DSSE_output\week 3\group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.2_k_12.rsf,week3
+W3__group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.2_k_15,D:\DSSE_output\week 3\group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.2_k_15.rsf,week3
+W3__group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.2_k_6,D:\DSSE_output\week 3\group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.2_k_6.rsf,week3
+W3__group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.2_k_8,D:\DSSE_output\week 3\group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.2_k_8.rsf,week3
+W3__group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.4_k_10,D:\DSSE_output\week 3\group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.4_k_10.rsf,week3
+W3__group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.4_k_12,D:\DSSE_output\week 3\group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.4_k_12.rsf,week3
+W3__group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.4_k_15,D:\DSSE_output\week 3\group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.4_k_15.rsf,week3
+W3__group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.4_k_6,D:\DSSE_output\week 3\group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.4_k_6.rsf,week3
+W3__group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.4_k_8,D:\DSSE_output\week 3\group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.4_k_8.rsf,week3
+W3__group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.6_k_10,D:\DSSE_output\week 3\group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.6_k_10.rsf,week3
+W3__group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.6_k_12,D:\DSSE_output\week 3\group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.6_k_12.rsf,week3
+W3__group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.6_k_15,D:\DSSE_output\week 3\group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.6_k_15.rsf,week3
+W3__group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.6_k_6,D:\DSSE_output\week 3\group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.6_k_6.rsf,week3
+W3__group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.6_k_8,D:\DSSE_output\week 3\group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.6_k_8.rsf,week3
+W3__group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.8_k_10,D:\DSSE_output\week 3\group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.8_k_10.rsf,week3
+W3__group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.8_k_12,D:\DSSE_output\week 3\group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.8_k_12.rsf,week3
+W3__group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.8_k_15,D:\DSSE_output\week 3\group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.8_k_15.rsf,week3
+W3__group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.8_k_6,D:\DSSE_output\week 3\group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.8_k_6.rsf,week3
+W3__group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.8_k_8,D:\DSSE_output\week 3\group3_arc_ibm-granite__granite-embedding-english-r2_alpha_0.8_k_8.rsf,week3
+W3__group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.2_k_10,D:\DSSE_output\week 3\group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.2_k_10.rsf,week3
+W3__group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.2_k_12,D:\DSSE_output\week 3\group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.2_k_12.rsf,week3
+W3__group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.2_k_15,D:\DSSE_output\week 3\group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.2_k_15.rsf,week3
+W3__group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.2_k_6,D:\DSSE_output\week 3\group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.2_k_6.rsf,week3
+W3__group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.2_k_8,D:\DSSE_output\week 3\group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.2_k_8.rsf,week3
+W3__group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.4_k_10,D:\DSSE_output\week 3\group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.4_k_10.rsf,week3
+W3__group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.4_k_12,D:\DSSE_output\week 3\group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.4_k_12.rsf,week3
+W3__group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.4_k_15,D:\DSSE_output\week 3\group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.4_k_15.rsf,week3
+W3__group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.4_k_6,D:\DSSE_output\week 3\group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.4_k_6.rsf,week3
+W3__group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.4_k_8,D:\DSSE_output\week 3\group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.4_k_8.rsf,week3
+W3__group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.6_k_10,D:\DSSE_output\week 3\group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.6_k_10.rsf,week3
+W3__group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.6_k_12,D:\DSSE_output\week 3\group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.6_k_12.rsf,week3
+W3__group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.6_k_15,D:\DSSE_output\week 3\group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.6_k_15.rsf,week3
+W3__group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.6_k_6,D:\DSSE_output\week 3\group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.6_k_6.rsf,week3
+W3__group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.6_k_8,D:\DSSE_output\week 3\group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.6_k_8.rsf,week3
+W3__group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.8_k_10,D:\DSSE_output\week 3\group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.8_k_10.rsf,week3
+W3__group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.8_k_12,D:\DSSE_output\week 3\group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.8_k_12.rsf,week3
+W3__group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.8_k_15,D:\DSSE_output\week 3\group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.8_k_15.rsf,week3
+W3__group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.8_k_6,D:\DSSE_output\week 3\group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.8_k_6.rsf,week3
+W3__group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.8_k_8,D:\DSSE_output\week 3\group3_arc_jinaai__jina-code-embeddings-0.5b_alpha_0.8_k_8.rsf,week3

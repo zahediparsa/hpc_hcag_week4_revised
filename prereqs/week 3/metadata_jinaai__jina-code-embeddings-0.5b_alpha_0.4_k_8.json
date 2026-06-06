@@ -1,0 +1,13 @@
+{
+    "group": 3,
+    "project": "Apache Hadoop",
+    "component": "MapReduce Client Core",
+    "embedding_model": "jinaai/jina-code-embeddings-0.5b",
+    "alpha": 0.4,
+    "target_num_clusters": 8,
+    "number_of_java_files": 332,
+    "number_of_embeddings": 332,
+    "embedding_dimension": 896,
+    "rsf_path": "/content/drive/MyDrive/DSSE_week2/hadoop_mapreduce_focused.rsf",
+    "source_code_dir": "/content/hadoop/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapreduce"
+}
