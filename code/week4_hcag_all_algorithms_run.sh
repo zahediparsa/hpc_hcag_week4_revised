@@ -21,7 +21,7 @@ echo "========================================================"
 module reset
 module load lang/Python/3.11.3-GCCcore-12.3.0
 
-export WORK_ROOT="/scratch/hpc-prf-dssecs/zahedi/ds4se_group3"
+export WORK_ROOT="/scratch/hpc-prf-dssecs/zahedi/ds4se_group3" #Change it to your username
 export CODE_DIR="$WORK_ROOT/code"
 export INPUT_DIR="$WORK_ROOT/input"
 export OUTPUT_ROOT="$WORK_ROOT/week4_hcag_all_algorithms_output"
