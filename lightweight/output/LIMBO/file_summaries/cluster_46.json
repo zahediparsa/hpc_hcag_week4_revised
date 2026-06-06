@@ -1,0 +1,74 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 46,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.MapAttemptFinishedEvent",
+    "path": "jobhistory/MapAttemptFinishedEvent.java",
+    "file_name": "MapAttemptFinishedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to represent an event that records the successful completion of a map attempt in Apache Hadoop MapReduce. It encapsulates various details about the map attempt, such as task ID, type, status, timestamps, host, rack, counters, and split data.\n\nCORE LOGIC:\nThe core logic involves the constructor that initializes an instance with details of a map attempt's successful completion. It also includes getter and setter methods for accessing and modifying the encapsulated data. The class converts the internal data structure (MapAttemptFinished) to and from Avro format for interoperability. It also provides methods to convert the event data into a TimelineEvent for YARN timeline service integration.\n\nINPUTS/OUTPUTS:\nINPUTS:\n- TaskAttemptID\n- TaskType\n- String taskStatus\n- long mapFinishTime\n- long finishTime\n- String hostname\n- int port\n- String rackName\n- String state\n- Counters counters\n- int[][] allSplits (optional)\n- long startTime\n\nOUTPUTS:\n- MapAttemptFinishedEvent object initialized with the provided data.\n- TimelineEvent object for YARN timeline service integration.\n- Set<TimelineMetric> for YARN timeline service metrics.\n\nDEPENDENCIES:\n- org.apache.hadoop.mapreduce.jobhistory.HistoryEvent\n- org.apache.hadoop.mapred.ProgressSplitsBlock\n- org.apache.hadoop.mapreduce.Counters\n- org.apache.hadoop.mapreduce.TaskAttemptID\n- org.apache.hadoop.mapreduce.TaskID\n- org.apache.hadoop.mapreduce.TaskType\n- org.apache.hadoop.yarn.api.records.timelineservice.TimelineEvent\n- org.apache.hadoop.yarn.api.records.timelineservice.TimelineMetric\n- org.apache.hadoop.util.StringUtils\n- org.apache.hadoop.yarn.util.SystemClock\n- org.apache.hadoop.hadoop.classification.InterfaceAudience\n- org.apache.hadoop.hadoop.classification.InterfaceStability\n- org.apache.hadoop.avro.util.Utf8\n- org.apache.hadoop.mapreduce.util.JobHistoryEventUtils\n- java.util.Set\n\nThis class also depends on Avro serialization/deserialization utilities (not explicitly shown) for converting internal data structures to",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 46,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.ReduceAttemptFinishedEvent",
+    "path": "jobhistory/ReduceAttemptFinishedEvent.java",
+    "file_name": "ReduceAttemptFinishedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to represent an event that records the successful completion of a reduce attempt in Apache Hadoop MapReduce.\n\nCORE LOGIC:\nThe class `ReduceAttemptFinishedEvent` implements the `HistoryEvent` interface. It has a constructor that initializes various attributes like `attemptId`, `taskType`, `taskStatus`, finish times, host details, state, counters, and an array of splits representing various measurable worker node state variables against progress. It also has methods to convert these attributes into Avro format (`getDatum` and `setDatum`) and to create a `TimelineEvent` object (`toTimelineEvent`).\n\nINPUTS/OUTPUTS:\n- Inputs: TaskAttemptID, TaskType, taskStatus, shuffleFinishTime, sortFinishTime, finishTime, hostname, port, rackName, state, Counters, and an array of splits (wallclock time, CPU time, virtual memory, and physical memory).\n- Outputs: An instance of `ReduceAttemptFinishedEvent` with all the input parameters encapsulated, and methods to convert this data into Avro format and into a `TimelineEvent` object for YARN timeline service.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.jobhistory`: Package where this class resides.\n- `org.apache.hadoop.mapred`: Classes like `ProgressSplitsBlock` for handling split data.\n- `org.apache.hadoop.mapreduce`: Classes like `TaskAttemptID`, `TaskType`, `Counters`.\n- `org.apache.hadoop.yarn`: Classes like `TimelineEvent`, `TimelineMetric`, `TaskType` for YARN integration.\n- `org.apache.hadoop.util`: Class `SystemClock`.\n- `org.apache.hadoop.classification`: Annotations for audience and stability.\n- `org.apache.avro`: Classes for Avro serialization (`Utf8`, `toAvro`, `fromAvro`).\n- `java.util`: Class `Set`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 46,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.TaskAttemptFinishedEvent",
+    "path": "jobhistory/TaskAttemptFinishedEvent.java",
+    "file_name": "TaskAttemptFinishedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to represent an event that records the successful completion of a task attempt in Apache Hadoop MapReduce.\n\nCORE LOGIC:\nThe class `TaskAttemptFinishedEvent` implements the `HistoryEvent` interface. It has a constructor that initializes the properties of a task attempt such as `TaskAttemptID`, `TaskType`, `taskStatus`, `finishTime`, `rackName`, `hostname`, `state`, and `Counters`. It also has methods to get and set the event's data in the form of an Avro `TaskAttemptFinished` object. The class includes methods to convert the event data into a `TimelineEvent` for YARN timeline service and to generate a set of `TimelineMetric` objects for counters.\n\nINPUTS/OUTPUTS:\nThe class takes in several inputs during initialization, including `TaskAttemptID`, `TaskType`, `taskStatus`, `finishTime`, `rackName`, `hostname`, `state`, and `Counters`. It outputs a `TimelineEvent` object for YARN timeline service and a set of `TimelineMetric` objects representing counters.\n\nDEPENDENCIES:\nThe class depends on several classes from the Apache Hadoop and Hadoop YARN libraries, including:\n- `org.apache.hadoop.mapreduce.jobhistory.HistoryEvent`\n- `org.apache.hadoop.mapreduce.TaskAttemptID`\n- `org.apache.hadoop.mapreduce.TaskType`\n- `org.apache.hadoop.mapreduce.Counters`\n- `org.apache.hadoop.yarn.api.records.timelineservice.TimelineEvent`\n- `org.apache.hadoop.yarn.api.records.timelineservice.TimelineMetric`\n- `org.apache.hadoop.util.StringUtils`\n- `org.apache.hadoop.yarn.util.SystemClock`\n- `org.apache.avro.util.Utf8`\n- `org.apache.hadoop.classification.InterfaceAudience`\n- `org.apache.hadoop.classification.InterfaceStability`\n- `org.apache.hadoop.mapreduce.util.JobHistoryEventUtils`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 46,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.TaskAttemptUnsuccessfulCompletionEvent",
+    "path": "jobhistory/TaskAttemptUnsuccessfulCompletionEvent.java",
+    "file_name": "TaskAttemptUnsuccessfulCompletionEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\nThis Java class, `TaskAttemptUnsuccessfulCompletionEvent`, is part of Apache Hadoop MapReduce's job history logging system. It represents an event that records the unsuccessful completion (either failure or kill) of a task attempt.\n\nCORE LOGIC:\nThe class has a constructor that initializes an instance with details about the unsuccessful task attempt, including its ID, type, status, finish time, host, port, rack name, error message, counters, and various metrics (wallclock time, CPU time, virtual memory, and physical memory usage). It also has methods to convert the event data into Avro format (`getDatum` and `setDatum`) and to create a `TimelineEvent` object for YARN timeline service (`toTimelineEvent`).\n\nINPUTS/OUTPUTS:\n- Inputs: TaskAttemptID, TaskType, status (String), finishTime (long), hostname (String), port (int), rackName (String), error (String), Counters, and an array of split metrics (int[][]).\n- Outputs: An instance of `TaskAttemptUnsuccessfulCompletionEvent` populated with the provided inputs. This instance can be converted into Avro format (`getDatum`) or a `TimelineEvent` object (`toTimelineEvent`) for YARN timeline service.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.jobhistory.HistoryEvent`: Superclass indicating this class implements a history event.\n- `org.apache.hadoop.mapreduce.TaskAttemptID`, `org.apache.hadoop.mapreduce.TaskType`, `org.apache.hadoop.mapreduce.Counters`: Classes representing task attempt ID, task type, and task counters respectively.\n- `org.apache.hadoop.mapred.ProgressSplitsBlock`: Utilized for extracting split metrics from the input array.\n- `org.apache.hadoop.yarn.api.records.timelineservice.TimelineEvent`, `org.apache.hadoop.yarn.api.records.timelineservice.TimelineMetric`: YARN Timeline Service classes for representing timeline events and metrics.\n- `org.apache.hadoop.util.StringUtils`, `org.apache.hadoop.mapreduce.util.JobHistoryEventUtils`: Utility classes for string manipulation and job history event utilities.\n- `org.apache.hadoop.yarn.util.SystemClock`: For getting the current time.\n- `org.apache.avro",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 46,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.TaskFailedEvent",
+    "path": "jobhistory/TaskFailedEvent.java",
+    "file_name": "TaskFailedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to represent an event that records the failure of a task in Apache Hadoop MapReduce. It provides methods to create, manipulate, and retrieve information about a task failure event.\n\nCORE LOGIC:\n- The class `TaskFailedEvent` implements the `HistoryEvent` interface.\n- It contains fields to store task-related information such as `TaskID`, `TaskType`, `finishTime`, `error`, `status`, `failedDueToAttempt`, `counters`, and `startTime`.\n- A constructor is provided to initialize these fields when a task failure event is recorded.\n- The `getDatum()` method creates an Avro-based `TaskFailed` object if `datum` is null, populating it with the event's details.\n- The `setDatum(Object odatum)` method sets the event's details from an Avro-based `TaskFailed` object.\n- `getTaskId()`, `getError()`, `getFinishTime()`, `getStartTime()`, `getTaskType()`, `getFailedAttemptID()`, `getTaskStatus()`, and `getCounters()` are getter methods for the event's details.\n- `toTimelineEvent()` method converts the event into a `TimelineEvent` object for YARN timeline service.\n- `getTimelineMetrics()` method converts task counters into `TimelineMetric` objects.\n\nINPUTS/OUTPUTS:\n- INPUTS: Task ID, finish time, task type, error message, status, failed attempt ID, counters, and start time.\n- OUTPUTS: Avro-based `TaskFailed` object, `TimelineEvent` for YARN timeline service, and `TimelineMetric` objects for task counters.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.jobhistory.HistoryEvent`\n- `org.apache.hadoop.mapreduce.TaskID`, `org.apache.hadoop.mapreduce.TaskType`, `org.apache.hadoop.mapreduce.Counters`, `org.apache.hadoop.mapreduce.TaskAttemptID`\n- `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`\n- `org.apache.hadoop.util.StringUtils`\n- `org.apache.hadoop.yarn.api.records.timelineservice.TimelineEvent`, `org.apache.hadoop.yarn.api.records.time",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 46,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.TaskFinishedEvent",
+    "path": "jobhistory/TaskFinishedEvent.java",
+    "file_name": "TaskFinishedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to represent an event that records the successful completion of a task in Apache Hadoop MapReduce.\n\nCORE LOGIC:\nThe class `TaskFinishedEvent` implements the `HistoryEvent` interface. It has a constructor that initializes the task completion details such as task ID, task attempt ID, finish time, task type, status, counters, and start time. The `getDatum()` method creates an Avro-based `TaskFinished` object with these details, and the `setDatum()` method sets the properties of this class from an Avro-based `TaskFinished` object. The `toTimelineEvent()` method converts the event details into a `TimelineEvent` object for YARN timeline service, and `getTimelineMetrics()` method converts task counters into `TimelineMetric` objects.\n\nINPUTS/OUTPUTS:\nThe class takes several inputs during initialization, including `TaskID`, `TaskAttemptID`, `long` (finishTime), `TaskType`, `String` (status), `Counters`, and `long` (startTime). The main output is a `TimelineEvent` object created by the `toTimelineEvent()` method, which contains various details about the task's completion. Additionally, `getTimelineMetrics()` method returns a set of `TimelineMetric` objects representing the task's counters.\n\nDEPENDENCIES:\nThis class depends on several classes from the Apache Hadoop and Hadoop YARN libraries, including:\n- `org.apache.hadoop.mapreduce.jobhistory.HistoryEvent`\n- `org.apache.hadoop.mapred.TaskStatus`\n- `org.apache.hadoop.mapreduce.Counters`\n- `org.apache.hadoop.mapreduce.TaskAttemptID`\n- `org.apache.hadoop.mapreduce.TaskID`\n- `org.apache.hadoop.mapreduce.TaskType`\n- `org.apache.hadoop.util.StringUtils`\n- `org.apache.hadoop.yarn.api.records.timelineservice.TimelineEvent`\n- `org.apache.hadoop.yarn.api.records.timelineservice.TimelineMetric`\n- `org.apache.hadoop.yarn.util.SystemClock`\n- `org.apache.avro.util.Utf8`\n- `org.apache.hadoop.classification.InterfaceAudience`\n- `org.apache.hadoop.classification.InterfaceSt",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

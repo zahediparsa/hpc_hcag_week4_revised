@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 21,
+  "directory": "lib",
+  "title": "Hadoop MapReduce Input-Output Processing",
+  "description": "The 'lib' directory in the Hadoop MapReduce architecture primarily houses Java files that define custom input and partitioning mechanisms for MapReduce jobs. The 'input' subdirectory, specifically, contains TextInputFormat.java, which processes text files, determining their splittability and preparing them for MapReduce processing. It extends FileInputFormat, setting LongWritable as the key and Text as the value, and uses TaskAttemptContext for record delimiter. The 'partition' subdirectory includes HashPartitioner.java, a custom partitioner that distributes keys based on their hash code, ensuring even data distribution across reduce tasks. This directory exemplifies the Strategy pattern, where different input formats and partitioning strategies can be plugged in as needed, promoting flexibility and extensibility in the MapReduce processing framework.",
+  "summary": "TITLE: Hadoop MapReduce Input-Output Processing\nDESCRIPTION: The 'lib' directory in the Hadoop MapReduce architecture primarily houses Java files that define custom input and partitioning mechanisms for MapReduce jobs. The 'input' subdirectory, specifically, contains TextInputFormat.java, which processes text files, determining their splittability and preparing them for MapReduce processing. It extends FileInputFormat, setting LongWritable as the key and Text as the value, and uses TaskAttemptContext for record delimiter. The 'partition' subdirectory includes HashPartitioner.java, a custom partitioner that distributes keys based on their hash code, ensuring even data distribution across reduce tasks. This directory exemplifies the Strategy pattern, where different input formats and partitioning strategies can be plugged in as needed, promoting flexibility and extensibility in the MapReduce processing framework.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/input"
+    },
+    {
+      "type": "directory",
+      "name": "lib/partition"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Input-Output Processing\n\nDESCRIPTION: The 'lib' directory in the Hadoop MapReduce architecture primarily houses Java files that define custom input and partitioning mechanisms for MapReduce jobs. The 'input' subdirectory, specifically, contains TextInputFormat.java, which processes text files, determining their splittability and preparing them for MapReduce processing. It extends FileInputFormat, setting LongWritable as the key and Text as the value, and uses TaskAttemptContext for record delimiter. The 'partition' subdirectory includes HashPartitioner.java, a custom partitioner that distributes keys based on their hash code, ensuring even data distribution across reduce tasks. This directory exemplifies the Strategy pattern, where different input formats and partitioning strategies can be plugged in as needed, promoting flexibility and extensibility in the MapReduce processing framework."
+}

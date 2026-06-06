@@ -1,0 +1,98 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 50,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.DoubleValueSum",
+    "path": "lib/aggregate/DoubleValueSum.java",
+    "file_name": "DoubleValueSum.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to implement a value aggregator that sums up a sequence of double values. It provides methods to add values, retrieve the aggregated sum, and reset the aggregator.\n\nCORE LOGIC:\nThe core logic involves adding double values to a 'sum' variable. The class provides methods to add values either as a String (converted to double), or directly as a double. The aggregated sum can be retrieved as a String or a double. The 'reset' method allows to clear the sum. The 'getCombinerOutput' method returns an array of strings, which is expected to be used by a combiner in the MapReduce process.\n\nINPUTS/OUTPUTS:\n- Inputs: The class accepts double values either as Objects (String representation) or directly as doubles.\n- Outputs: The class provides the aggregated sum as a String via 'getReport()' or as a double via 'getSum()'. It also provides a combiner output in the form of an ArrayList of Strings via 'getCombinerOutput()'.\n\nDEPENDENCIES:\n- The class depends on 'java.util.ArrayList' for creating an array of strings.\n- It also depends on 'org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregator' as it implements this interface.\n- Other dependencies include standard Java classes like 'Object' and 'Double'.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 50,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.LongValueMax",
+    "path": "lib/aggregate/LongValueMax.java",
+    "file_name": "LongValueMax.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class, as indicated by its name and the comments, is to implement a value aggregator that maintains the maximum of a sequence of long values.\n\nCORE LOGIC:\nThe core logic revolves around the `addNextValue` methods that accept either a generic object (whose string representation is a long) or a long value directly. It compares these values with the current maximum (`maxVal`) and updates `maxVal` if the new value is greater. The `getVal` method returns the current maximum, `getReport` returns the maximum as a string, and `getCombinerOutput` returns an array containing the maximum value as a string. The `reset` method sets `maxVal` back to the minimum possible long value.\n\nINPUTS/OUTPUTS:\n- Inputs: The class accepts two types of inputs - an object whose string representation is a long value or a long value directly.\n- Outputs: The class provides multiple ways to get the aggregated (maximum) value:\n  - `getVal()`: Returns the maximum long value.\n  - `getReport()`: Returns a string representation of the maximum long value.\n  - `getCombinerOutput()`: Returns an array of strings, where the only element is the string representation of the maximum long value. This is likely intended for use by a combiner in the MapReduce process.\n\nDEPENDENCIES:\n- The class depends on `java.util.ArrayList` for creating an array of strings.\n- It also depends on `org.apache.hadoop.classification` for interface stability annotations.\n- The class implements `org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregator<String>`, indicating it's part of Apache Hadoop MapReduce library and specifically designed to work with string keys.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 50,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.LongValueMin",
+    "path": "lib/aggregate/LongValueMin.java",
+    "file_name": "LongValueMin.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class, as indicated by its name and the implementation, is to maintain the minimum of a sequence of long values. It implements the ValueAggregator interface from Apache Hadoop MapReduce library.\n\nCORE LOGIC:\nThe core logic revolves around the 'addNextValue' methods that accept either a generic Object (assumed to be convertible to a String representation of a long) or a long value directly. It compares these values with the current minimum value (initialized to Long.MAX_VALUE) and updates it if the new value is smaller. The 'getVal' method returns the current minimum value, 'getReport' returns a string representation of the minimum value, and 'getCombinerOutput' returns an array of strings, each being the string representation of the current minimum value. The 'reset' method resets the minimum value back to Long.MAX_VALUE.\n\nINPUTS/OUTPUTS:\n- Inputs: The class accepts two types of inputs in the 'addNextValue' method. The first one is a generic Object (val) that is expected to be convertible to a String representation of a long. The second one is a direct long value (newVal).\n- Outputs: \n  - 'getVal': Returns the current minimum long value.\n  - 'getReport': Returns a string representation of the current minimum long value.\n  - 'getCombinerOutput': Returns an ArrayList containing a string representation of the current minimum long value. This method's output is specifically intended for use by a combiner in the MapReduce process.\n\nDEPENDENCIES:\n- The class depends on 'java.util.ArrayList' for creating an array of strings.\n- It also depends on 'org.apache.hadoop.classification' package for interface stability annotations.\n- It implements the 'ValueAggregator<String>' interface from the 'org.apache.hadoop.mapreduce.lib.aggregate' package, indicating its role within the Hadoop MapReduce framework.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 50,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.LongValueSum",
+    "path": "lib/aggregate/LongValueSum.java",
+    "file_name": "LongValueSum.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to implement a value aggregator that sums up a sequence of long values. It provides methods to add values, retrieve the sum, reset the sum, and get a string representation of the sum.\n\nCORE LOGIC:\nThe core logic involves adding long values to a 'sum' variable. The class provides two 'addNextValue' methods to accept either a String representation of a long or a long itself. The 'getSum' method returns the aggregated sum, 'getReport' returns the sum as a String, 'reset' resets the sum to zero, and 'getCombinerOutput' returns an array of Strings, each being the sum.\n\nINPUTS/OUTPUTS:\nInputs: The class accepts two types of inputs - an Object whose string representation is a long value, or a long value directly.\n\nOutputs: The class provides several methods for outputting data:\n- 'getSum' returns the aggregated long sum.\n- 'getReport' returns a String representation of the sum.\n- 'getCombinerOutput' returns an ArrayList of Strings, each being the sum.\n\nDEPENDENCIES:\nThe class depends on the 'org.apache.hadoop.mapreduce.lib.aggregate' package and 'java.util.ArrayList'. It also imports 'java.lang.Object' and 'java.lang.Long'. The class implements the 'ValueAggregator<String>' interface, indicating its role within the Hadoop MapReduce framework.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 50,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.StringValueMax",
+    "path": "lib/aggregate/StringValueMax.java",
+    "file_name": "StringValueMax.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY: The main purpose of this class is to implement a value aggregator that maintains the maximum (biggest) string in a sequence.\n\nCORE LOGIC: The core logic involves adding string values to the aggregator using the `addNextValue` method. This method compares the new string value with the current maximum value (`maxVal`) and updates `maxVal` if the new value is greater. The `getVal` method returns the maximum string value, and `getReport` returns the same value as a string. The `reset` method resets the maximum value to null, and `getCombinerOutput` returns an array containing the maximum string value, intended for use by a combiner.\n\nINPUTS/OUTPUTS: The input to this class is a sequence of string values, which are added using the `addNextValue` method. The main output is the maximum string value, retrieved via the `getVal` method. Additionally, `getReport` returns the maximum string value as a string, and `getCombinerOutput` returns an array containing the maximum string value.\n\nDEPENDENCIES: The class depends on the `java.util.ArrayList` class for creating an array-like structure to return the maximum value to a combiner. It also depends on the `org.apache.hadoop.classification` package for interface stability annotations and the `org.apache.hadoop.mapreduce.lib.aggregate` package for the `ValueAggregator` interface it implements.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 50,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.StringValueMin",
+    "path": "lib/aggregate/StringValueMin.java",
+    "file_name": "StringValueMin.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY: The main purpose of this class is to implement a value aggregator that maintains the smallest (minimum) string value from a sequence of strings.\n\nCORE LOGIC: The core logic involves adding string values to the aggregator using the `addNextValue` method. This method compares the new string value with the current minimum value (`minVal`). If the new value is smaller, it updates `minVal`. The `getVal` method returns the smallest string value found so far. The `getCombinerOutput` method returns an array containing the smallest string value, which is intended for use by a combiner.\n\nINPUTS/OUTPUTS: The input to this class is a sequence of string values, which are added using the `addNextValue` method. The output is the smallest string value found so far, which can be retrieved using the `getVal` method. The `getCombinerOutput` method returns an array containing this smallest string value, intended for use by a combiner.\n\nDEPENDENCIES: The class imports `java.util.ArrayList` and depends on `org.apache.hadoop.classification.InterfaceAudience` and `org.apache.hadoop.classification.InterfaceStability`. It is part of the `org.apache.hadoop.mapreduce.lib.aggregate` package. The class implements the `ValueAggregator<String>` interface, which is not shown in this chunk but is crucial for understanding the class's role within the Hadoop MapReduce framework.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 50,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.UniqValueCount",
+    "path": "lib/aggregate/UniqValueCount.java",
+    "file_name": "UniqValueCount.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY: The main purpose of this class is to implement a value aggregator that deduplicates a sequence of objects, maintaining a maximum limit on the number of unique values.\n\nCORE LOGIC: The class uses a TreeMap to store unique items, where the key is the string representation of the object and the value is a placeholder (always \"1\"). The addNextValue method adds new items, ensuring the number of unique items does not exceed the specified maximum. The getReport method returns the count of unique items, and getUniqueItems returns a set of unique items. The getCombinerOutput method returns an array of unique items, intended for use by a combiner.\n\nINPUTS/OUTPUTS: The class takes objects as input in the addNextValue method. It outputs the count of unique items as a string via the getReport method, a set of unique items via getUniqueItems, and an array of unique items via getCombinerOutput. The maximum number of unique items to keep is set via the setMaxItems method.\n\nDEPENDENCIES: The class depends on java.util.ArrayList, java.util.Iterator, java.util.Set, java.util.TreeMap, and org.apache.hadoop.classification.InterfaceAudience, org.apache.hadoop.classification.InterfaceStability from the Apache Hadoop library. It is part of the org.apache.hadoop.mapreduce.lib.aggregate package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 50,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.ValueHistogram",
+    "path": "lib/aggregate/ValueHistogram.java",
+    "file_name": "ValueHistogram.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to implement a value aggregator that computes the histogram of a sequence of strings. It provides methods to add values, get a report of the histogram, get detailed report, get combiner output, and reset the aggregator.\n\nCORE LOGIC:\n1. The class uses a TreeMap to store the histogram data, where keys are the unique string values and values are their corresponding counts.\n2. The `addNextValue` method processes input strings in the format \"xxxx\\tnum\", where \"xxxx\" is the value and \"num\" is its count. It updates the count in the TreeMap.\n3. The `getReport` method generates a string representation of the histogram, including the number of unique values, min, max, average, and standard deviation.\n4. The `getReportDetails` method returns a detailed string representation of the value/frequency pairs in the histogram.\n5. The `getCombinerOutput` method prepares a list of string representations of value/frequency pairs for use by the reducer.\n6. The `getReportItems` method returns the TreeMap representation of the histogram.\n7. The `reset` method clears the histogram data by reinitializing the TreeMap.\n\nINPUTS/OUTPUTS:\n- INPUTS: The class accepts strings in the format \"xxxx\\tnum\" via the `addNextValue` method.\n- OUTPUTS:\n  - `getReport`: A string containing basic statistics of the histogram.\n  - `getReportDetails`: A detailed string representation of the value/frequency pairs.\n  - `getCombinerOutput`: A list of strings in the format \"value\\tcount\" for use by the reducer.\n  - `getReportItems`: The TreeMap representation of the histogram.\n  - `reset`: No direct output, resets the internal state.\n\nDEPENDENCIES:\n- The class depends on the `java.util.TreeMap`, `java.util.Iterator`, `java.util.ArrayList`, and `java.util.Arrays` classes.\n- It also imports `org.apache.hadoop.classification.InterfaceAudience` and `org.apache.hadoop.classification.InterfaceStability` for annotations.\n- The class implements the `ValueAggregator<String>` interface, indicating it's part of Apache Hadoop MapReduce library.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

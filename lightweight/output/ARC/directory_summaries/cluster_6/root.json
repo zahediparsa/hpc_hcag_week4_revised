@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 6,
+  "directory": ".",
+  "title": "Hadoop MapReduce Database Splitter Directory",
+  "description": "The 'lib/db' directory houses Java classes for dividing database queries into InputSplits. Files like 'BigDecimalSplitter.java' and 'IntegerSplitter.java' extend 'DBSplitter' interface, converting query results into InputSplits. They work with Hadoop's InputSplit and Oracle-specific classes, illustrating the Data-Driven pattern. This enables parallel processing of extensive databases, optimizing Hadoop's MapReduce efficiency.",
+  "summary": "TITLE: Hadoop MapReduce Database Splitter Directory\nDESCRIPTION: The 'lib/db' directory houses Java classes for dividing database queries into InputSplits. Files like 'BigDecimalSplitter.java' and 'IntegerSplitter.java' extend 'DBSplitter' interface, converting query results into InputSplits. They work with Hadoop's InputSplit and Oracle-specific classes, illustrating the Data-Driven pattern. This enables parallel processing of extensive databases, optimizing Hadoop's MapReduce efficiency.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Database Splitter Directory\n\nDESCRIPTION: The 'lib/db' directory houses Java classes for dividing database queries into InputSplits. Files like 'BigDecimalSplitter.java' and 'IntegerSplitter.java' extend 'DBSplitter' interface, converting query results into InputSplits. They work with Hadoop's InputSplit and Oracle-specific classes, illustrating the Data-Driven pattern. This enables parallel processing of extensive databases, optimizing Hadoop's MapReduce efficiency."
+}

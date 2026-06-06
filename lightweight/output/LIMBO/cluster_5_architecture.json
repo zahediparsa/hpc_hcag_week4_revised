@@ -1,0 +1,24 @@
+{
+  "cluster_id": 5,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture comprises JobTracker (deprecated in YARN), TaskTracker (deprecated in YARN), and a distributed file system (HDFS). Job.java manages job configurations, while Task.java oversees task execution. TaskAttemptContextImpl.java provides context for individual task attempts, and TaskReport.java encapsulates task states. OutputCommitter.java coordinates output task commit, and FileOutputFormat.java manages output directories. MultipleOutputs.java facilitates multiple outputs per job. Mappers process input data, and Reducers aggregate results. This architecture ensures scalability, maintainability, and reliability through distributed processing and fault tolerance. Technologies used include Java for programming, and Hadoop APIs for framework interaction. The coordinator pattern is evident in JobTracker and TaskTracker roles, while the worker pattern is seen in nodes executing tasks.",
+  "description_word_count": 117,
+  "number_of_files": 4,
+  "number_of_directories": 4,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster architecture comprises JobTracker (deprecated in YARN), TaskTracker (deprecated in YARN), and a distributed file system (HDFS). Job.java manages job configurations, while Task.java oversees task execution. TaskAttemptContextImpl.java provides context for individual task attempts, and TaskReport.java encapsulates task states. OutputCommitter.java coordinates output task commit, and FileOutputFormat.java manages output directories. MultipleOutputs.java facilitates multiple outputs per job. Mappers process input data, and Reducers aggregate results. This architecture ensures scalability, maintainability, and reliability through distributed processing and fault tolerance. Technologies used include Java for programming, and Hadoop APIs for framework interaction. The coordinator pattern is evident in JobTracker and TaskTracker roles, while the worker pattern is seen in nodes executing tasks.",
+  "algorithm": "LIMBO",
+  "files": [
+    "TaskReport.java",
+    "lib/output/FileOutputFormat.java",
+    "lib/output/MultipleOutputs.java",
+    "task/TaskInputOutputContextImpl.java"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 97,
+  "directory": "task/reduce",
+  "title": "Merge Manager Implementation",
+  "description": "The task/reduce/MergeManagerImpl.java file is responsible for managing the merging of map outputs in Hadoop MapReduce jobs. It handles both in-memory and on-disk merging, producing a single output file for the reduce phase. The core logic involves initializing and configuring merger threads for merging map outputs. It uses classes like InMemoryMerger and OnDiskMerger, extending MergeThread, to manage merging processes. The inputs include various components like TaskAttemptID, JobConf, FileSystem, and outputs involve internal data structures and methods managing the merging process. The implementation depends on several classes from the Apache Hadoop MapReduce library.",
+  "summary": "TITLE: Merge Manager Implementation\nDESCRIPTION: The task/reduce/MergeManagerImpl.java file is responsible for managing the merging of map outputs in Hadoop MapReduce jobs. It handles both in-memory and on-disk merging, producing a single output file for the reduce phase. The core logic involves initializing and configuring merger threads for merging map outputs. It uses classes like InMemoryMerger and OnDiskMerger, extending MergeThread, to manage merging processes. The inputs include various components like TaskAttemptID, JobConf, FileSystem, and outputs involve internal data structures and methods managing the merging process. The implementation depends on several classes from the Apache Hadoop MapReduce library.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "MergeManagerImpl.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Merge Manager Implementation\n\nDESCRIPTION:\nThe task/reduce/MergeManagerImpl.java file is responsible for managing the merging of map outputs in Hadoop MapReduce jobs. It handles both in-memory and on-disk merging, producing a single output file for the reduce phase. The core logic involves initializing and configuring merger threads for merging map outputs. It uses classes like InMemoryMerger and OnDiskMerger, extending MergeThread, to manage merging processes. The inputs include various components like TaskAttemptID, JobConf, FileSystem, and outputs involve internal data structures and methods managing the merging process. The implementation depends on several classes from the Apache Hadoop MapReduce library."
+}

@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 76,
+  "directory": "lib/output/committer/manifest",
+  "title": "Task Manifest Management in Hadoop MapReduce",
+  "description": "The 'lib/output/committer/manifest' directory in Hadoop MapReduce is pivotal for task manifest management. It contains classes like 'DirEntry', 'FileEntry', 'ManifestSuccessData', and 'TaskManifest' for generating and tracking task-generated files. 'LoadedManifestData' class in 'impl' subdirectory loads and manages manifest data, ensuring data integrity during MapReduce job output. This directory exemplifies a well-structured, maintainable, and efficient architectural pattern, utilizing object-oriented design, serialization, and adherence to Hadoop's data processing standards.",
+  "summary": "TITLE: Task Manifest Management in Hadoop MapReduce\nDESCRIPTION: The 'lib/output/committer/manifest' directory in Hadoop MapReduce is pivotal for task manifest management. It contains classes like 'DirEntry', 'FileEntry', 'ManifestSuccessData', and 'TaskManifest' for generating and tracking task-generated files. 'LoadedManifestData' class in 'impl' subdirectory loads and manages manifest data, ensuring data integrity during MapReduce job output. This directory exemplifies a well-structured, maintainable, and efficient architectural pattern, utilizing object-oriented design, serialization, and adherence to Hadoop's data processing standards.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest/files"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest/impl"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Task Manifest Management in Hadoop MapReduce\n\nDESCRIPTION: The 'lib/output/committer/manifest' directory in Hadoop MapReduce is pivotal for task manifest management. It contains classes like 'DirEntry', 'FileEntry', 'ManifestSuccessData', and 'TaskManifest' for generating and tracking task-generated files. 'LoadedManifestData' class in 'impl' subdirectory loads and manages manifest data, ensuring data integrity during MapReduce job output. This directory exemplifies a well-structured, maintainable, and efficient architectural pattern, utilizing object-oriented design, serialization, and adherence to Hadoop's data processing standards."
+}

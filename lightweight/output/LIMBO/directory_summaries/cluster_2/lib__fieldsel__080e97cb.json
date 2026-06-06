@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "lib/fieldsel",
+  "title": "Field Selection Helper",
+  "description": "The FieldSelectionHelper.java in Hadoop MapReduce's lib/fieldsel directory is a crucial component for field selection, akin to Unix 'cut' command. It interprets field specifications for MapReduce processes, parsing and storing field numbers for keys and values. The class utilizes 'extractFields' for field number interpretation, 'selectFields' for field selection, and 'parseOutputKeyValueSpec' for splitting input value strings. It depends on Hadoop's Text class for text handling and Java's List for storing field numbers, showcasing its architectural role within Hadoop's data processing library.",
+  "summary": "TITLE: Field Selection Helper\nDESCRIPTION: The FieldSelectionHelper.java in Hadoop MapReduce's lib/fieldsel directory is a crucial component for field selection, akin to Unix 'cut' command. It interprets field specifications for MapReduce processes, parsing and storing field numbers for keys and values. The class utilizes 'extractFields' for field number interpretation, 'selectFields' for field selection, and 'parseOutputKeyValueSpec' for splitting input value strings. It depends on Hadoop's Text class for text handling and Java's List for storing field numbers, showcasing its architectural role within Hadoop's data processing library.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "FieldSelectionHelper.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Field Selection Helper\n\nDESCRIPTION: \nThe FieldSelectionHelper.java in Hadoop MapReduce's lib/fieldsel directory is a crucial component for field selection, akin to Unix 'cut' command. It interprets field specifications for MapReduce processes, parsing and storing field numbers for keys and values. The class utilizes 'extractFields' for field number interpretation, 'selectFields' for field selection, and 'parseOutputKeyValueSpec' for splitting input value strings. It depends on Hadoop's Text class for text handling and Java's List for storing field numbers, showcasing its architectural role within Hadoop's data processing library."
+}

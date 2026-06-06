@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 18,
+  "directory": "lib/output/committer",
+  "title": "ManifestCommitterFactory for Hadoop MapReduce",
+  "description": "The 'lib/output/committer/manifest' directory houses 'ManifestCommitterFactory.java'. This factory creates 'ManifestCommitter' instances for supported filesystem schemas. It extends 'PathOutputCommitterFactory' and checks the filesystem schema of the output path in 'createOutputCommitter'. The factory ensures job outputs are accessible, managing commits and depending on Hadoop classes like 'Path', 'PathIOException', 'TaskAttemptContext', 'PathOutputCommitterFactory', and 'ManifestCommitter'. It plays a crucial role in Hadoop MapReduce's output management.",
+  "summary": "TITLE: ManifestCommitterFactory for Hadoop MapReduce\nDESCRIPTION: The 'lib/output/committer/manifest' directory houses 'ManifestCommitterFactory.java'. This factory creates 'ManifestCommitter' instances for supported filesystem schemas. It extends 'PathOutputCommitterFactory' and checks the filesystem schema of the output path in 'createOutputCommitter'. The factory ensures job outputs are accessible, managing commits and depending on Hadoop classes like 'Path', 'PathIOException', 'TaskAttemptContext', 'PathOutputCommitterFactory', and 'ManifestCommitter'. It plays a crucial role in Hadoop MapReduce's output management.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ManifestCommitterFactory for Hadoop MapReduce\n\nDESCRIPTION: The 'lib/output/committer/manifest' directory houses 'ManifestCommitterFactory.java'. This factory creates 'ManifestCommitter' instances for supported filesystem schemas. It extends 'PathOutputCommitterFactory' and checks the filesystem schema of the output path in 'createOutputCommitter'. The factory ensures job outputs are accessible, managing commits and depending on Hadoop classes like 'Path', 'PathIOException', 'TaskAttemptContext', 'PathOutputCommitterFactory', and 'ManifestCommitter'. It plays a crucial role in Hadoop MapReduce's output management."
+}

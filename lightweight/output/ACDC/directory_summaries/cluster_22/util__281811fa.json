@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 22,
+  "directory": "util",
+  "title": "Hadoop MapReduce Configuration Utilities",
+  "description": "The 'util' directory in Hadoop MapReduce houses utility classes for managing configurations and job settings. ConfigUtil.java is responsible for loading deprecated configuration keys and default configuration resources into the Configuration object. MRJobConfUtil.java provides utility methods for configuring MapReduce jobs, including redacting sensitive properties, calculating task progress report intervals, and setting logging thresholds. ProcessTree.java manages and terminates process trees and groups using shell commands, ensuring graceful shutdown of MapReduce tasks. These utilities collaborate to streamline job configuration and management, adhering to the Mediator and Strategy architectural patterns.",
+  "summary": "TITLE: Hadoop MapReduce Configuration Utilities\nDESCRIPTION: The 'util' directory in Hadoop MapReduce houses utility classes for managing configurations and job settings. ConfigUtil.java is responsible for loading deprecated configuration keys and default configuration resources into the Configuration object. MRJobConfUtil.java provides utility methods for configuring MapReduce jobs, including redacting sensitive properties, calculating task progress report intervals, and setting logging thresholds. ProcessTree.java manages and terminates process trees and groups using shell commands, ensuring graceful shutdown of MapReduce tasks. These utilities collaborate to streamline job configuration and management, adhering to the Mediator and Strategy architectural patterns.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ConfigUtil.java"
+    },
+    {
+      "type": "file",
+      "name": "MRJobConfUtil.java"
+    },
+    {
+      "type": "file",
+      "name": "ProcessTree.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Configuration Utilities\n\nDESCRIPTION:\nThe 'util' directory in Hadoop MapReduce houses utility classes for managing configurations and job settings. ConfigUtil.java is responsible for loading deprecated configuration keys and default configuration resources into the Configuration object. MRJobConfUtil.java provides utility methods for configuring MapReduce jobs, including redacting sensitive properties, calculating task progress report intervals, and setting logging thresholds. ProcessTree.java manages and terminates process trees and groups using shell commands, ensuring graceful shutdown of MapReduce tasks. These utilities collaborate to streamline job configuration and management, adhering to the Mediator and Strategy architectural patterns."
+}

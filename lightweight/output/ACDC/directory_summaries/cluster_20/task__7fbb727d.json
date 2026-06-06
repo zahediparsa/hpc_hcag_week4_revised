@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 20,
+  "directory": "task",
+  "title": "Reduce Task Processing in Hadoop MapReduce",
+  "description": "The 'task/reduce' directory orchestrates merging and processing of map outputs. It uses multi-threaded components like 'EventFetcher', 'Fetcher', 'MergeThread', and 'OnDiskMapOutput' for concurrent merge operations. Collaboration with 'TaskTracker', 'ShuffleScheduler', 'ExceptionReporter', and 'MergeManager' ensures seamless data transfer and processing. The 'Shuffle' class manages shuffle process, while 'ShuffleClientMetrics' tracks shuffle client performance. This directory employs a multi-threaded, collaborative architectural pattern for efficient reduce phase in Hadoop MapReduce jobs.",
+  "summary": "TITLE: Reduce Task Processing in Hadoop MapReduce\nDESCRIPTION: The 'task/reduce' directory orchestrates merging and processing of map outputs. It uses multi-threaded components like 'EventFetcher', 'Fetcher', 'MergeThread', and 'OnDiskMapOutput' for concurrent merge operations. Collaboration with 'TaskTracker', 'ShuffleScheduler', 'ExceptionReporter', and 'MergeManager' ensures seamless data transfer and processing. The 'Shuffle' class manages shuffle process, while 'ShuffleClientMetrics' tracks shuffle client performance. This directory employs a multi-threaded, collaborative architectural pattern for efficient reduce phase in Hadoop MapReduce jobs.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "task/reduce"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Reduce Task Processing in Hadoop MapReduce\n\nDESCRIPTION: The 'task/reduce' directory orchestrates merging and processing of map outputs. It uses multi-threaded components like 'EventFetcher', 'Fetcher', 'MergeThread', and 'OnDiskMapOutput' for concurrent merge operations. Collaboration with 'TaskTracker', 'ShuffleScheduler', 'ExceptionReporter', and 'MergeManager' ensures seamless data transfer and processing. The 'Shuffle' class manages shuffle process, while 'ShuffleClientMetrics' tracks shuffle client performance. This directory employs a multi-threaded, collaborative architectural pattern for efficient reduce phase in Hadoop MapReduce jobs."
+}

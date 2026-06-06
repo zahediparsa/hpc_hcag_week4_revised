@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 58,
+  "directory": ".",
+  "title": "Hadoop MapReduce Input Data Splitting and Management",
+  "description": "The 'lib' directory in Hadoop MapReduce architecture stores libraries and interfaces for input data management. It employs the Strategy pattern via 'DBSplitter' for flexible data division. 'InputSplit' implementations like 'CombineFileSplit.java' and 'FileSplit.java' partition data for parallel processing. 'CompositeInputSplit' in 'lib/join' manages multiple InputSplits, facilitating complex operations like joins, demonstrating a clear architectural role in handling diverse data splits for distributed processing across the cluster.",
+  "summary": "TITLE: Hadoop MapReduce Input Data Splitting and Management\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce architecture stores libraries and interfaces for input data management. It employs the Strategy pattern via 'DBSplitter' for flexible data division. 'InputSplit' implementations like 'CombineFileSplit.java' and 'FileSplit.java' partition data for parallel processing. 'CompositeInputSplit' in 'lib/join' manages multiple InputSplits, facilitating complex operations like joins, demonstrating a clear architectural role in handling diverse data splits for distributed processing across the cluster.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Input Data Splitting and Management\n\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce architecture stores libraries and interfaces for input data management. It employs the Strategy pattern via 'DBSplitter' for flexible data division. 'InputSplit' implementations like 'CombineFileSplit.java' and 'FileSplit.java' partition data for parallel processing. 'CompositeInputSplit' in 'lib/join' manages multiple InputSplits, facilitating complex operations like joins, demonstrating a clear architectural role in handling diverse data splits for distributed processing across the cluster."
+}

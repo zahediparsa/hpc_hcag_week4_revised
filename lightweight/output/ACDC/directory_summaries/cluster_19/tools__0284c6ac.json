@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 19,
+  "directory": "tools",
+  "title": "Hadoop MapReduce Command-Line Interface",
+  "description": "The CLI.java file in the tools directory of Hadoop MapReduce serves as the command-line interface for managing MapReduce jobs. It processes command-line arguments to perform various actions such as job submission, status checks, priority setting, job history viewing, task management, and log file access. The core logic revolves around the `run` method, which interprets the command and executes the corresponding action. It interacts with numerous Hadoop MapReduce classes to accomplish these tasks, demonstrating a comprehensive use of the MapReduce API. This directory exemplifies a command-line utility pattern, providing a direct interface for users to interact with the MapReduce system.",
+  "summary": "TITLE: Hadoop MapReduce Command-Line Interface\nDESCRIPTION: The CLI.java file in the tools directory of Hadoop MapReduce serves as the command-line interface for managing MapReduce jobs. It processes command-line arguments to perform various actions such as job submission, status checks, priority setting, job history viewing, task management, and log file access. The core logic revolves around the `run` method, which interprets the command and executes the corresponding action. It interacts with numerous Hadoop MapReduce classes to accomplish these tasks, demonstrating a comprehensive use of the MapReduce API. This directory exemplifies a command-line utility pattern, providing a direct interface for users to interact with the MapReduce system.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CLI.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Command-Line Interface\n\nDESCRIPTION:\nThe CLI.java file in the tools directory of Hadoop MapReduce serves as the command-line interface for managing MapReduce jobs. It processes command-line arguments to perform various actions such as job submission, status checks, priority setting, job history viewing, task management, and log file access. The core logic revolves around the `run` method, which interprets the command and executes the corresponding action. It interacts with numerous Hadoop MapReduce classes to accomplish these tasks, demonstrating a comprehensive use of the MapReduce API. This directory exemplifies a command-line utility pattern, providing a direct interface for users to interact with the MapReduce system."
+}

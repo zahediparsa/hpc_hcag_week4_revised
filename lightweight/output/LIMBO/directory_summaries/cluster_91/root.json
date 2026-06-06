@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 91,
+  "directory": ".",
+  "title": "Job Token Management",
+  "description": "The 'security/token' directory in Hadoop MapReduce architecture manages job tokens. JobTokenSecretManager.java creates, stores, and retrieves job token secrets using a TreeMap cache. JobTokenSelector.java identifies and returns the first matching job token, checking for JobTokenIdentifier.KIND_NAME and service match. Both components collaborate, ensuring secure and efficient job token management, following Secret Manager and Token Selector patterns.",
+  "summary": "TITLE: Job Token Management\nDESCRIPTION: The 'security/token' directory in Hadoop MapReduce architecture manages job tokens. JobTokenSecretManager.java creates, stores, and retrieves job token secrets using a TreeMap cache. JobTokenSelector.java identifies and returns the first matching job token, checking for JobTokenIdentifier.KIND_NAME and service match. Both components collaborate, ensuring secure and efficient job token management, following Secret Manager and Token Selector patterns.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "security"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job Token Management\n\nDESCRIPTION: The 'security/token' directory in Hadoop MapReduce architecture manages job tokens. JobTokenSecretManager.java creates, stores, and retrieves job token secrets using a TreeMap cache. JobTokenSelector.java identifies and returns the first matching job token, checking for JobTokenIdentifier.KIND_NAME and service match. Both components collaborate, ensuring secure and efficient job token management, following Secret Manager and Token Selector patterns."
+}

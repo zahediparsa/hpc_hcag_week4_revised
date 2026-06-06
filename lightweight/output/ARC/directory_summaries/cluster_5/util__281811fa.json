@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 5,
+  "directory": "util",
+  "title": "JobHistoryEventUtils.java",
+  "description": "This Java file, JobHistoryEventUtils.java, provides utility methods for converting MapReduce counters to JSON and TimelineMetrics. It contains the class `JobHistoryEventUtils` with methods `countersToJSON` and `countersToTimelineMetric`. The former converts counters to JSON, while the latter transforms them into TimelineMetrics. Both methods iterate over `CounterGroup` and `Counter` objects, creating JSON objects or TimelineMetrics for each. The class depends on packages like Jackson for JSON operations and Hadoop for MapReduce-related classes. It uses HashSet for storing TimelineMetrics and requires `Counters` and a timestamp as inputs, returning JSON Node or a set of TimelineMetrics as outputs.",
+  "summary": "TITLE: JobHistoryEventUtils.java\nDESCRIPTION: This Java file, JobHistoryEventUtils.java, provides utility methods for converting MapReduce counters to JSON and TimelineMetrics. It contains the class `JobHistoryEventUtils` with methods `countersToJSON` and `countersToTimelineMetric`. The former converts counters to JSON, while the latter transforms them into TimelineMetrics. Both methods iterate over `CounterGroup` and `Counter` objects, creating JSON objects or TimelineMetrics for each. The class depends on packages like Jackson for JSON operations and Hadoop for MapReduce-related classes. It uses HashSet for storing TimelineMetrics and requires `Counters` and a timestamp as inputs, returning JSON Node or a set of TimelineMetrics as outputs.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobHistoryEventUtils.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobHistoryEventUtils.java\n\nDESCRIPTION: \nThis Java file, JobHistoryEventUtils.java, provides utility methods for converting MapReduce counters to JSON and TimelineMetrics. It contains the class `JobHistoryEventUtils` with methods `countersToJSON` and `countersToTimelineMetric`. The former converts counters to JSON, while the latter transforms them into TimelineMetrics. Both methods iterate over `CounterGroup` and `Counter` objects, creating JSON objects or TimelineMetrics for each. The class depends on packages like Jackson for JSON operations and Hadoop for MapReduce-related classes. It uses HashSet for storing TimelineMetrics and requires `Counters` and a timestamp as inputs, returning JSON Node or a set of TimelineMetrics as outputs."
+}

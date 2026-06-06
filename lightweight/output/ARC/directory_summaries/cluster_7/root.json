@@ -1,0 +1,54 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": ".",
+  "title": "Distributed Cache Management",
+  "description": "The DistributedCache.java file in Hadoop MapReduce manages caching of large, read-only files across the cluster. It provides methods to add and manage files/archives, ensuring they're copied once per job and accessible by all nodes. The class handles symlinks, permissions, and visibility settings, adding cached files to the task's classpath for access by mappers and reducers. It depends on core Hadoop classes and standard Java libraries.\n\nTITLE: MapReduce Library Extensions\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce architecture contains specialized libraries extending core MapReduce functionalities. The 'lib/chain' directory enables chaining of Mappers or Mapper-Reducer pairs within a single Map or Reduce task. The 'lib/map' directory features multithreaded mapper implementation for improved throughput. The 'lib/reduce' directory includes 'WrappedReducer.java', a custom Reducer context class allowing tailored Reducer.Context implementations while leveraging standard Hadoop Reducer functions. These directories demonstrate architectural patterns like Chain, Decorator, and Thread Pool, optimizing Hadoop's MapReduce model for diverse processing needs.\n\nTITLE: On-Disk Map Output Management\nDESCRIPTION: OnDiskMapOutput.java in Hadoop MapReduce's task/reduce directory manages temporary on-disk storage of map outputs. It extends IFileWrappedMapOutput, handling input/output stream operations, progress tracking, and renaming temporary to final output paths upon successful commit. The class supports encryption and deletion in case of abort, utilizing various Hadoop classes and logging utilities. It's part of the internal API, subject to change.\n\nTITLE: Hadoop MapReduce Job Command-Line Interface\nDESCRIPTION: The CLI.java file in the tools directory of Hadoop MapReduce serves as the command-line interface for managing MapReduce jobs. It processes command-line arguments to perform actions like job submission, status checks, killing jobs or tasks, setting priorities, viewing job history, listing job events, and displaying logs. The core logic revolves around the 'run' method, which interprets the command and executes the corresponding action. It heavily relies on classes from the Apache Hadoop MapReduce library to interact with job and task details, status, and logs, implementing a command pattern for user interaction.",
+  "summary": "TITLE: Distributed Cache Management\nDESCRIPTION: The DistributedCache.java file in Hadoop MapReduce manages caching of large, read-only files across the cluster. It provides methods to add and manage files/archives, ensuring they're copied once per job and accessible by all nodes. The class handles symlinks, permissions, and visibility settings, adding cached files to the task's classpath for access by mappers and reducers. It depends on core Hadoop classes and standard Java libraries.\n\nTITLE: MapReduce Library Extensions\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce architecture contains specialized libraries extending core MapReduce functionalities. The 'lib/chain' directory enables chaining of Mappers or Mapper-Reducer pairs within a single Map or Reduce task. The 'lib/map' directory features multithreaded mapper implementation for improved throughput. The 'lib/reduce' directory includes 'WrappedReducer.java', a custom Reducer context class allowing tailored Reducer.Context implementations while leveraging standard Hadoop Reducer functions. These directories demonstrate architectural patterns like Chain, Decorator, and Thread Pool, optimizing Hadoop's MapReduce model for diverse processing needs.\n\nTITLE: On-Disk Map Output Management\nDESCRIPTION: OnDiskMapOutput.java in Hadoop MapReduce's task/reduce directory manages temporary on-disk storage of map outputs. It extends IFileWrappedMapOutput, handling input/output stream operations, progress tracking, and renaming temporary to final output paths upon successful commit. The class supports encryption and deletion in case of abort, utilizing various Hadoop classes and logging utilities. It's part of the internal API, subject to change.\n\nTITLE: Hadoop MapReduce Job Command-Line Interface\nDESCRIPTION: The CLI.java file in the tools directory of Hadoop MapReduce serves as the command-line interface for managing MapReduce jobs. It processes command-line arguments to perform actions like job submission, status checks, killing jobs or tasks, setting priorities, viewing job history, listing job events, and displaying logs. The core logic revolves around the 'run' method, which interprets the command and executes the corresponding action. It heavily relies on classes from the Apache Hadoop MapReduce library to interact with job and task details, status, and logs, implementing a command pattern for user interaction.",
+  "number_of_children": 10,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "Cluster.java"
+    },
+    {
+      "type": "file",
+      "name": "Job.java"
+    },
+    {
+      "type": "file",
+      "name": "JobResourceUploader.java"
+    },
+    {
+      "type": "file",
+      "name": "JobSubmitter.java"
+    },
+    {
+      "type": "file",
+      "name": "Mapper.java"
+    },
+    {
+      "type": "file",
+      "name": "Reducer.java"
+    },
+    {
+      "type": "directory",
+      "name": "filecache"
+    },
+    {
+      "type": "directory",
+      "name": "lib"
+    },
+    {
+      "type": "directory",
+      "name": "task"
+    },
+    {
+      "type": "directory",
+      "name": "tools"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Distributed Cache Management\nDESCRIPTION: The DistributedCache.java file in Hadoop MapReduce manages caching of large, read-only files across the cluster. It provides methods to add and manage files/archives, ensuring they're copied once per job and accessible by all nodes. The class handles symlinks, permissions, and visibility settings, adding cached files to the task's classpath for access by mappers and reducers. It depends on core Hadoop classes and standard Java libraries.\n\nTITLE: MapReduce Library Extensions\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce architecture contains specialized libraries extending core MapReduce functionalities. The 'lib/chain' directory enables chaining of Mappers or Mapper-Reducer pairs within a single Map or Reduce task. The 'lib/map' directory features multithreaded mapper implementation for improved throughput. The 'lib/reduce' directory includes 'WrappedReducer.java', a custom Reducer context class allowing tailored Reducer.Context implementations while leveraging standard Hadoop Reducer functions. These directories demonstrate architectural patterns like Chain, Decorator, and Thread Pool, optimizing Hadoop's MapReduce model for diverse processing needs.\n\nTITLE: On-Disk Map Output Management\nDESCRIPTION: OnDiskMapOutput.java in Hadoop MapReduce's task/reduce directory manages temporary on-disk storage of map outputs. It extends IFileWrappedMapOutput, handling input/output stream operations, progress tracking, and renaming temporary to final output paths upon successful commit. The class supports encryption and deletion in case of abort, utilizing various Hadoop classes and logging utilities. It's part of the internal API, subject to change.\n\nTITLE: Hadoop MapReduce Job Command-Line Interface\nDESCRIPTION: The CLI.java file in the tools directory of Hadoop MapReduce serves as the command-line interface for managing MapReduce jobs. It processes command-line arguments to perform actions like job submission, status checks, killing jobs or tasks, setting priorities, viewing job history, listing job events, and displaying logs. The core logic revolves around the 'run' method, which interprets the command and executes the corresponding action. It heavily relies on classes from the Apache Hadoop MapReduce library to interact with job and task details, status, and logs, implementing a command pattern for user interaction."
+}

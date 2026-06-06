@@ -1,0 +1,22 @@
+{
+  "cluster_id": 14,
+  "title": "MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and DataNodes. The JobTracker coordinates and monitors jobs, delegating tasks to available TaskTrackers. TaskTrackers execute map and reduce tasks, reporting progress back to the JobTracker. DataNodes store and process data, serving chunks to TaskTrackers. This architecture ensures scalability, reliability, and maintainability through task distribution and fault tolerance. Java is the primary programming language, with Hadoop APIs and protocols facilitating communication. The MapContext and ReduceContext interfaces provide context to Mappers and Reducers, respectively, enabling input processing and output generation. The architecture follows a coordinator pattern, with the JobTracker acting as the central coordinator, and a worker pattern, with TaskTrackers and DataNodes executing tasks.",
+  "description_word_count": 117,
+  "number_of_files": 2,
+  "number_of_directories": 1,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and DataNodes. The JobTracker coordinates and monitors jobs, delegating tasks to available TaskTrackers. TaskTrackers execute map and reduce tasks, reporting progress back to the JobTracker. DataNodes store and process data, serving chunks to TaskTrackers. This architecture ensures scalability, reliability, and maintainability through task distribution and fault tolerance. Java is the primary programming language, with Hadoop APIs and protocols facilitating communication. The MapContext and ReduceContext interfaces provide context to Mappers and Reducers, respectively, enabling input processing and output generation. The architecture follows a coordinator pattern, with the JobTracker acting as the central coordinator, and a worker pattern, with TaskTrackers and DataNodes executing tasks.",
+  "algorithm": "LIMBO",
+  "files": [
+    "MapContext.java",
+    "ReduceContext.java"
+  ]
+}

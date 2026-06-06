@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "lib/output",
+  "title": "FileOutputFormatCounter in Hadoop MapReduce",
+  "description": "The FileOutputFormatCounter.java file defines an enumeration, `FileOutputFormatCounter`, used by task classes to track specific counters, such as the number of bytes written during MapReduce job execution. This enumeration, part of the `org.apache.hadoop.mapreduce.lib.output` package, serves as a set of constants. It primarily focuses on defining the `FileOutputFormatCounter` enumeration, which contains a single constant, `BYTES_WRITTEN`. This counter is crucial for monitoring the output of task classes within the Hadoop MapReduce framework. The enumeration's constants are utilized by task classes to track and report specific metrics, contributing to the overall job performance analysis and debugging.",
+  "summary": "TITLE: FileOutputFormatCounter in Hadoop MapReduce\nDESCRIPTION: The FileOutputFormatCounter.java file defines an enumeration, `FileOutputFormatCounter`, used by task classes to track specific counters, such as the number of bytes written during MapReduce job execution. This enumeration, part of the `org.apache.hadoop.mapreduce.lib.output` package, serves as a set of constants. It primarily focuses on defining the `FileOutputFormatCounter` enumeration, which contains a single constant, `BYTES_WRITTEN`. This counter is crucial for monitoring the output of task classes within the Hadoop MapReduce framework. The enumeration's constants are utilized by task classes to track and report specific metrics, contributing to the overall job performance analysis and debugging.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "FileOutputFormatCounter.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: FileOutputFormatCounter in Hadoop MapReduce\n\nDESCRIPTION: The FileOutputFormatCounter.java file defines an enumeration, `FileOutputFormatCounter`, used by task classes to track specific counters, such as the number of bytes written during MapReduce job execution. This enumeration, part of the `org.apache.hadoop.mapreduce.lib.output` package, serves as a set of constants. It primarily focuses on defining the `FileOutputFormatCounter` enumeration, which contains a single constant, `BYTES_WRITTEN`. This counter is crucial for monitoring the output of task classes within the Hadoop MapReduce framework. The enumeration's constants are utilized by task classes to track and report specific metrics, contributing to the overall job performance analysis and debugging."
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "lib/db",
+  "title": "DBOutputFormat.java",
+  "description": "This Java file defines a custom Hadoop OutputFormat, DBOutputFormat, which writes MapReduce reduce output to a SQL table. It includes a DBRecordWriter class extending Hadoop's RecordWriter, using a PreparedStatement for batch insertion of key data into a specified SQL table. The write() method adds key data to the batch, while the close() method executes the batch and commits the transaction. The format accepts key-value pairs where the key extends DBWritable, and outputs the reduce results to a SQL table, inserting only the key using a batch SQL query. Dependencies include various Java SQL classes and Hadoop's OutputFormat, RecordWriter, Job, JobContext, TaskAttemptContext, and FileOutputCommitter.",
+  "summary": "TITLE: DBOutputFormat.java\nDESCRIPTION: This Java file defines a custom Hadoop OutputFormat, DBOutputFormat, which writes MapReduce reduce output to a SQL table. It includes a DBRecordWriter class extending Hadoop's RecordWriter, using a PreparedStatement for batch insertion of key data into a specified SQL table. The write() method adds key data to the batch, while the close() method executes the batch and commits the transaction. The format accepts key-value pairs where the key extends DBWritable, and outputs the reduce results to a SQL table, inserting only the key using a batch SQL query. Dependencies include various Java SQL classes and Hadoop's OutputFormat, RecordWriter, Job, JobContext, TaskAttemptContext, and FileOutputCommitter.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "DBOutputFormat.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: DBOutputFormat.java\n\nDESCRIPTION:\nThis Java file defines a custom Hadoop OutputFormat, DBOutputFormat, which writes MapReduce reduce output to a SQL table. It includes a DBRecordWriter class extending Hadoop's RecordWriter, using a PreparedStatement for batch insertion of key data into a specified SQL table. The write() method adds key data to the batch, while the close() method executes the batch and commits the transaction. The format accepts key-value pairs where the key extends DBWritable, and outputs the reduce results to a SQL table, inserting only the key using a batch SQL query. Dependencies include various Java SQL classes and Hadoop's OutputFormat, RecordWriter, Job, JobContext, TaskAttemptContext, and FileOutputCommitter."
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 11,
+  "directory": "lib",
+  "title": "MapReduce Job Output Management",
+  "description": "The 'lib/output' directory is responsible for managing MapReduce job outputs. It includes classes for task and job manifest management, ensuring accurate tracking of task outputs. The Hadoop Manifest Committer Implementation ensures data integrity by creating and managing manifest files. The directory also manages MapReduce job commit process stages, ensuring a robust commit process and clear separation of concerns. This structure collaborates for efficient job commit and recovery, maintaining data integrity and ensuring accurate tracking of outputs.",
+  "summary": "TITLE: MapReduce Job Output Management\nDESCRIPTION: The 'lib/output' directory is responsible for managing MapReduce job outputs. It includes classes for task and job manifest management, ensuring accurate tracking of task outputs. The Hadoop Manifest Committer Implementation ensures data integrity by creating and managing manifest files. The directory also manages MapReduce job commit process stages, ensuring a robust commit process and clear separation of concerns. This structure collaborates for efficient job commit and recovery, maintaining data integrity and ensuring accurate tracking of outputs.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Job Output Management\n\nDESCRIPTION: The 'lib/output' directory is responsible for managing MapReduce job outputs. It includes classes for task and job manifest management, ensuring accurate tracking of task outputs. The Hadoop Manifest Committer Implementation ensures data integrity by creating and managing manifest files. The directory also manages MapReduce job commit process stages, ensuring a robust commit process and clear separation of concerns. This structure collaborates for efficient job commit and recovery, maintaining data integrity and ensuring accurate tracking of outputs."
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 68,
+  "directory": "lib",
+  "title": "StreamBackedIterator for Join Operations",
+  "description": "The 'lib/join/StreamBackedIterator.java' file implements a ResetableIterator, using ByteArrayOutputStream for byte storage. It includes ReplayableByteInputStream for stream resetting, supporting add, next, hasNext, and reset operations. This class is designed for Hadoop's MapReduce library, specifically for join operations with Writable objects, utilizing Hadoop's Writable interface for serialization. It employs standard Java classes for byte stream handling.",
+  "summary": "TITLE: StreamBackedIterator for Join Operations\nDESCRIPTION: The 'lib/join/StreamBackedIterator.java' file implements a ResetableIterator, using ByteArrayOutputStream for byte storage. It includes ReplayableByteInputStream for stream resetting, supporting add, next, hasNext, and reset operations. This class is designed for Hadoop's MapReduce library, specifically for join operations with Writable objects, utilizing Hadoop's Writable interface for serialization. It employs standard Java classes for byte stream handling.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/join"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: StreamBackedIterator for Join Operations\n\nDESCRIPTION: The 'lib/join/StreamBackedIterator.java' file implements a ResetableIterator, using ByteArrayOutputStream for byte storage. It includes ReplayableByteInputStream for stream resetting, supporting add, next, hasNext, and reset operations. This class is designed for Hadoop's MapReduce library, specifically for join operations with Writable objects, utilizing Hadoop's Writable interface for serialization. It employs standard Java classes for byte stream handling."
+}

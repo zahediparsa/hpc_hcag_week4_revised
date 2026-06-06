@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": "security",
+  "title": "TokenCache for MapReduce Security",
+  "description": "The TokenCache.java file in Hadoop MapReduce's security directory is responsible for managing security tokens. It provides APIs for transferring secrets, like delegation tokens, from the job client to tasks. Key functionalities include obtaining tokens for namenodes, cleaning up irrelevant token references, merging binary tokens, loading tokens from a file, storing job tokens, and retrieving shuffle and encrypted spill keys. The class interacts with various Hadoop components such as Configuration, FileSystem, Path, JobConf, and Credentials. It plays a crucial role in maintaining secure communication between MapReduce tasks and NameNodes, adhering to the Mediator architectural pattern by managing token-related interactions.",
+  "summary": "TITLE: TokenCache for MapReduce Security\nDESCRIPTION: The TokenCache.java file in Hadoop MapReduce's security directory is responsible for managing security tokens. It provides APIs for transferring secrets, like delegation tokens, from the job client to tasks. Key functionalities include obtaining tokens for namenodes, cleaning up irrelevant token references, merging binary tokens, loading tokens from a file, storing job tokens, and retrieving shuffle and encrypted spill keys. The class interacts with various Hadoop components such as Configuration, FileSystem, Path, JobConf, and Credentials. It plays a crucial role in maintaining secure communication between MapReduce tasks and NameNodes, adhering to the Mediator architectural pattern by managing token-related interactions.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "TokenCache.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: TokenCache for MapReduce Security\n\nDESCRIPTION:\nThe TokenCache.java file in Hadoop MapReduce's security directory is responsible for managing security tokens. It provides APIs for transferring secrets, like delegation tokens, from the job client to tasks. Key functionalities include obtaining tokens for namenodes, cleaning up irrelevant token references, merging binary tokens, loading tokens from a file, storing job tokens, and retrieving shuffle and encrypted spill keys. The class interacts with various Hadoop components such as Configuration, FileSystem, Path, JobConf, and Credentials. It plays a crucial role in maintaining secure communication between MapReduce tasks and NameNodes, adhering to the Mediator architectural pattern by managing token-related interactions."
+}

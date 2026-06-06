@@ -1,0 +1,22 @@
+{
+  "cluster_id": 68,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture comprises a NameNode, DataNodes, and TaskTrackers. The NameNode manages file system operations, metadata, and resource allocation, while DataNodes store HDFS data. TaskTrackers execute MapReduce tasks, coordinating with the NameNode for resource allocation. The MapReduce library's 'StreamBackedIterator' (in 'lib/join/StreamBackedIterator.java') facilitates efficient join operations, utilizing ByteArrayOutputStream and ReplayableByteInputStream for byte stream handling. This design ensures scalability, maintainability, and performance, leveraging Hadoop's Writable interface for serialization. Java is the primary programming language, with HDFS and MapReduce APIs for data storage and processing. The architecture follows a coordinator pattern, with the NameNode acting as the central coordinator, and a utility pattern in the 'StreamBackedIterator' for efficient data processing.",
+  "description_word_count": 112,
+  "number_of_files": 2,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster architecture comprises a NameNode, DataNodes, and TaskTrackers. The NameNode manages file system operations, metadata, and resource allocation, while DataNodes store HDFS data. TaskTrackers execute MapReduce tasks, coordinating with the NameNode for resource allocation. The MapReduce library's 'StreamBackedIterator' (in 'lib/join/StreamBackedIterator.java') facilitates efficient join operations, utilizing ByteArrayOutputStream and ReplayableByteInputStream for byte stream handling. This design ensures scalability, maintainability, and performance, leveraging Hadoop's Writable interface for serialization. Java is the primary programming language, with HDFS and MapReduce APIs for data storage and processing. The architecture follows a coordinator pattern, with the NameNode acting as the central coordinator, and a utility pattern in the 'StreamBackedIterator' for efficient data processing.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/join/ArrayListBackedIterator.java",
+    "lib/join/StreamBackedIterator.java"
+  ]
+}

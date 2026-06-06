@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 53,
+  "directory": "lib",
+  "title": "Chain.java - Apache Hadoop MapReduce Chain Class",
+  "description": "Chain.java in Apache Hadoop MapReduce defines a Chain class, managing multiple mappers and a single reducer. It ensures compatibility between mappers, handling input/output via blocking queues or task contexts. The class manages threads for mappers and reducer, using ChainRecordReader and ChainRecordWriter. It supports adding mappers that read from input context, write to a queue, or read from a queue and write to output context. The runMapper and runReducer methods execute mappers and reducers, while startAllThreads, joinAllThreads, and interruptAllThreads manage thread lifecycle. The class creates and manages a chain of Mappers and a single Reducer, prioritizing chain configuration over individual Mapper or Reducer settings.",
+  "summary": "TITLE: Chain.java - Apache Hadoop MapReduce Chain Class\nDESCRIPTION: Chain.java in Apache Hadoop MapReduce defines a Chain class, managing multiple mappers and a single reducer. It ensures compatibility between mappers, handling input/output via blocking queues or task contexts. The class manages threads for mappers and reducer, using ChainRecordReader and ChainRecordWriter. It supports adding mappers that read from input context, write to a queue, or read from a queue and write to output context. The runMapper and runReducer methods execute mappers and reducers, while startAllThreads, joinAllThreads, and interruptAllThreads manage thread lifecycle. The class creates and manages a chain of Mappers and a single Reducer, prioritizing chain configuration over individual Mapper or Reducer settings.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/chain"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Chain.java - Apache Hadoop MapReduce Chain Class\n\nDESCRIPTION: Chain.java in Apache Hadoop MapReduce defines a Chain class, managing multiple mappers and a single reducer. It ensures compatibility between mappers, handling input/output via blocking queues or task contexts. The class manages threads for mappers and reducer, using ChainRecordReader and ChainRecordWriter. It supports adding mappers that read from input context, write to a queue, or read from a queue and write to output context. The runMapper and runReducer methods execute mappers and reducers, while startAllThreads, joinAllThreads, and interruptAllThreads manage thread lifecycle. The class creates and manages a chain of Mappers and a single Reducer, prioritizing chain configuration over individual Mapper or Reducer settings."
+}

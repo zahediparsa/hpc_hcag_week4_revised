@@ -1,0 +1,24 @@
+{
+  "cluster_id": 11,
+  "title": "MapReduce Job and Task Identification",
+  "description": "Apache Hadoop MapReduce employs a unique identification system for jobs and tasks, ensuring seamless tracking and management. The JobID.java class generates a unique job identifier, comprising the job tracker identifier and job number. The JobStatus.java class manages and provides comprehensive details about job attributes. TaskAttemptID.java uniquely identifies task attempts, combining TaskID and attempt number. TaskID.java defines Map or Reduce task identifiers, incorporating job ID, task type, and number. These Java classes, utilizing encapsulation, inheritance, and serialization, ensure proper identification and tracking of jobs and tasks, contributing to the system's scalability, maintainability, and reliability. The architecture adheres to the principles of the identifier pattern, ensuring each job and task can be distinctly recognized and monitored across the distributed cluster.",
+  "description_word_count": 122,
+  "number_of_files": 4,
+  "number_of_directories": 1,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Job and Task Identification\n\nDESCRIPTION: Apache Hadoop MapReduce employs a unique identification system for jobs and tasks, ensuring seamless tracking and management. The JobID.java class generates a unique job identifier, comprising the job tracker identifier and job number. The JobStatus.java class manages and provides comprehensive details about job attributes. TaskAttemptID.java uniquely identifies task attempts, combining TaskID and attempt number. TaskID.java defines Map or Reduce task identifiers, incorporating job ID, task type, and number. These Java classes, utilizing encapsulation, inheritance, and serialization, ensure proper identification and tracking of jobs and tasks, contributing to the system's scalability, maintainability, and reliability. The architecture adheres to the principles of the identifier pattern, ensuring each job and task can be distinctly recognized and monitored across the distributed cluster.",
+  "algorithm": "LIMBO",
+  "files": [
+    "JobID.java",
+    "JobStatus.java",
+    "TaskAttemptID.java",
+    "TaskID.java"
+  ]
+}

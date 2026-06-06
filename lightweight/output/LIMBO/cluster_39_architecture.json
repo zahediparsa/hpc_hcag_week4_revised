@@ -1,0 +1,27 @@
+{
+  "cluster_id": 39,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and a Job History Server. The JobTracker coordinates and monitors jobs, scheduling tasks on TaskTrackers (NodeManagers). MapReduce tasks are executed in parallel across nodes, processing large datasets in a distributed manner. The Job History Server, utilizing the 'jobhistory' directory, logs and stores job details, converting them into 'TimelineEvent' objects for YARN's timeline service. This architecture ensures scalability, maintainability, and reliability, leveraging Hadoop and YARN APIs, Java, and Avro for job identification and integration. The layered design of the 'jobhistory' directory exemplifies a layered architectural pattern, enhancing system modularity and maintainability.",
+  "description_word_count": 105,
+  "number_of_files": 7,
+  "number_of_directories": 2,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and a Job History Server. The JobTracker coordinates and monitors jobs, scheduling tasks on TaskTrackers (NodeManagers). MapReduce tasks are executed in parallel across nodes, processing large datasets in a distributed manner. The Job History Server, utilizing the 'jobhistory' directory, logs and stores job details, converting them into 'TimelineEvent' objects for YARN's timeline service. This architecture ensures scalability, maintainability, and reliability, leveraging Hadoop and YARN APIs, Java, and Avro for job identification and integration. The layered design of the 'jobhistory' directory exemplifies a layered architectural pattern, enhancing system modularity and maintainability.",
+  "algorithm": "LIMBO",
+  "files": [
+    "jobhistory/JobInfoChangeEvent.java",
+    "jobhistory/JobInitedEvent.java",
+    "jobhistory/JobPriorityChangeEvent.java",
+    "jobhistory/JobQueueChangeEvent.java",
+    "jobhistory/JobStatusChangedEvent.java",
+    "jobhistory/JobSubmittedEvent.java",
+    "jobhistory/JobUnsuccessfulCompletionEvent.java"
+  ]
+}

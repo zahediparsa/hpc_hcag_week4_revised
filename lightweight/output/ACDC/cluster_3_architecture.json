@@ -1,0 +1,37 @@
+{
+  "cluster_id": 3,
+  "title": "Hadoop MapReduce Value Aggregation",
+  "description": "This Hadoop MapReduce cluster facilitates value aggregation via Java classes in 'lib/aggregate'. Components include 'ValueAggregatorMapper', 'ValueAggregatorReducer', and 'ValueHistogram', implementing 'ValueAggregator' interface for sum, max, min, and count operations. The Strategy design pattern enables easy extension of aggregation functions. Collaboration within MapReduce workflow ensures scalability and maintainability. Technologies used: Java, Hadoop API. Quality attributes: Scalability, Maintainability, Reliability.",
+  "description_word_count": 57,
+  "number_of_files": 17,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Value Aggregation\n\nDESCRIPTION: This Hadoop MapReduce cluster facilitates value aggregation via Java classes in 'lib/aggregate'. Components include 'ValueAggregatorMapper', 'ValueAggregatorReducer', and 'ValueHistogram', implementing 'ValueAggregator' interface for sum, max, min, and count operations. The Strategy design pattern enables easy extension of aggregation functions. Collaboration within MapReduce workflow ensures scalability and maintainability. Technologies used: Java, Hadoop API. Quality attributes: Scalability, Maintainability, Reliability.",
+  "algorithm": "ACDC",
+  "files": [
+    "lib/aggregate/DoubleValueSum.java",
+    "lib/aggregate/LongValueMax.java",
+    "lib/aggregate/LongValueMin.java",
+    "lib/aggregate/LongValueSum.java",
+    "lib/aggregate/StringValueMax.java",
+    "lib/aggregate/StringValueMin.java",
+    "lib/aggregate/UniqValueCount.java",
+    "lib/aggregate/UserDefinedValueAggregatorDescriptor.java",
+    "lib/aggregate/ValueAggregator.java",
+    "lib/aggregate/ValueAggregatorBaseDescriptor.java",
+    "lib/aggregate/ValueAggregatorCombiner.java",
+    "lib/aggregate/ValueAggregatorDescriptor.java",
+    "lib/aggregate/ValueAggregatorJob.java",
+    "lib/aggregate/ValueAggregatorJobBase.java",
+    "lib/aggregate/ValueAggregatorMapper.java",
+    "lib/aggregate/ValueAggregatorReducer.java",
+    "lib/aggregate/ValueHistogram.java"
+  ]
+}

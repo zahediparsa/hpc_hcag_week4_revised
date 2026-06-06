@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 20,
+  "directory": "lib/output",
+  "title": "PartialOutputCommitter Interface for Hadoop MapReduce",
+  "description": "The PartialOutputCommitter.java file defines an interface for an OutputCommitter in Hadoop MapReduce, specifically designed for partial commit of task outputs during preemption. The core functionality is encapsulated in the method 'cleanUpPartialOutputForTask', which removes previously committed outputs from prior task executions. This method takes a TaskAttemptContext object as input and throws an IOException if the cleanup process fails. The interface extends OutputCommitter and is marked as public and evolving, indicating its intended use and stability level. The interface's role is crucial in maintaining the integrity of task outputs, especially in scenarios of task preemption or failure.",
+  "summary": "TITLE: PartialOutputCommitter Interface for Hadoop MapReduce\nDESCRIPTION: The PartialOutputCommitter.java file defines an interface for an OutputCommitter in Hadoop MapReduce, specifically designed for partial commit of task outputs during preemption. The core functionality is encapsulated in the method 'cleanUpPartialOutputForTask', which removes previously committed outputs from prior task executions. This method takes a TaskAttemptContext object as input and throws an IOException if the cleanup process fails. The interface extends OutputCommitter and is marked as public and evolving, indicating its intended use and stability level. The interface's role is crucial in maintaining the integrity of task outputs, especially in scenarios of task preemption or failure.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "PartialOutputCommitter.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: PartialOutputCommitter Interface for Hadoop MapReduce\n\nDESCRIPTION:\nThe PartialOutputCommitter.java file defines an interface for an OutputCommitter in Hadoop MapReduce, specifically designed for partial commit of task outputs during preemption. The core functionality is encapsulated in the method 'cleanUpPartialOutputForTask', which removes previously committed outputs from prior task executions. This method takes a TaskAttemptContext object as input and throws an IOException if the cleanup process fails. The interface extends OutputCommitter and is marked as public and evolving, indicating its intended use and stability level. The interface's role is crucial in maintaining the integrity of task outputs, especially in scenarios of task preemption or failure."
+}

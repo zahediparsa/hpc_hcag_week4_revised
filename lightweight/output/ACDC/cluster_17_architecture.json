@@ -1,0 +1,22 @@
+{
+  "cluster_id": 17,
+  "title": "JobTokenSecretManager",
+  "description": "This Hadoop MapReduce component, implemented in Java, serves as a SecretManager for job tokens, ensuring security. It uses a TreeMap cache for efficient storage and retrieval of job token secrets, interacting with Hadoop's security classes. The class manages job token creation, storage, and retrieval, utilizing a master key. It processes JobTokenIdentifier, job IDs, and tokens, outputting job token secrets as SecretKey objects or byte arrays. This component contributes to the system's reliability and security, adhering to the Coordinator pattern, as it manages and coordinates the secure handling of job tokens within the MapReduce framework.",
+  "description_word_count": 94,
+  "number_of_files": 2,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobTokenSecretManager\n\nDESCRIPTION: This Hadoop MapReduce component, implemented in Java, serves as a SecretManager for job tokens, ensuring security. It uses a TreeMap cache for efficient storage and retrieval of job token secrets, interacting with Hadoop's security classes. The class manages job token creation, storage, and retrieval, utilizing a master key. It processes JobTokenIdentifier, job IDs, and tokens, outputting job token secrets as SecretKey objects or byte arrays. This component contributes to the system's reliability and security, adhering to the Coordinator pattern, as it manages and coordinates the secure handling of job tokens within the MapReduce framework.",
+  "algorithm": "ACDC",
+  "files": [
+    "security/SecureShuffleUtils.java",
+    "security/token/JobTokenSecretManager.java"
+  ]
+}

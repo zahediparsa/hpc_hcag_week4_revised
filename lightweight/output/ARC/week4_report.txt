@@ -1,0 +1,61 @@
+Week 4 - HCAG-style LLM-Based Architectural Recovery
+Algorithm: ARC
+Group 3 - Hadoop MapReduce Client Core
+Model: ibm-granite/granite-3.3-8b-instruct
+Files analyzed: 332
+Clusters: 8
+Prompting method: zero-shot
+========================================================================
+
+Cluster 0 - Hadoop MapReduce Cluster Architecture
+Files: 152
+Directories: 27
+Description words: 142
+Description: The Hadoop MapReduce cluster architecture comprises Java-based components that ensure seamless job execution and management. The `ClusterMetrics.java` class tracks cluster performance, while `ContextFactory.java` creates MapReduce Context Objects, facilitating interaction between tasks. `CryptoUtils.java` ensures data security via encryption, and `CustomJobEndNotifier.java` allows for tailored job completion notifications.
+
+`MRJobConfig.java` and `MapContext.java` configure and provide context to the Mapper, respectively. `MarkableIterator.java` and `MarkableIteratorInterface.java` support data navigation, while `OutputCommitter.java` and `OutputFormat.java` manage task output commit and specifications. `QueueAclsInfo.java` and `QueueInfo.java` handle job queue ACLs and information, and `RecordReader.java` defines the abstract RecordReader class for input data reading.
+
+This architecture demonstrates high scalability, maintainability, and reliability, leveraging Java as the primary technology. It employs patterns such as factory (ContextFactory.java) and observer (CustomJobEndNotifier.java) to ensure efficient job execution and management in the MapReduce framework.
+
+Cluster 1 - Hadoop MapReduce Partitioning and Security
+Files: 10
+Directories: 6
+Description words: 101
+Description: This Hadoop MapReduce architecture employs a partitioning mechanism for efficient data distribution and a secure job execution model. The Partitioner.java class, an abstract base, uses hash functions to partition keys, with custom partitioners like BinaryPartitioner, HashPartitioner, and KeyFieldBasedPartitioner in the 'lib/partition' directory, demonstrating the Strategy pattern for varied partitioning strategies. The 'security/token/delegation' directory manages MapReduce tokens for secure job submission and tracking, implementing the Delegate pattern for secure access and job management. This design ensures scalability, maintainability, and reliability, leveraging Java and Hadoop's framework. It supports performance through efficient data distribution and security through token-based access control.
+
+Cluster 2 - Hadoop MapReduce Cluster Architecture
+Files: 10
+Directories: 3
+Description words: 93
+Description: This Hadoop MapReduce cluster architecture comprises two main components: Task Checkpoint Management and ResourceBundle Management. The Task Checkpoint Management, facilitated by the CheckpointID, CheckpointNamingService, CheckpointService, EnumCounter, FSCheckpointID, FSCheckpointService, RandomNameCNS, SimpleNamingService, and TaskCheckpointID, ensures fault tolerance and job recovery through reliable checkpoint management. The ResourceBundle Management, handled by the ResourceBundles.java class, efficiently retrieves resources from bundles, ensuring thread safety and exception handling. The architecture leverages Java for implementation, demonstrating scalability, maintainability, and reliability. The coordinator pattern is evident in the Task Checkpoint Management, while the utility pattern is observed in the ResourceBundle Management.
+
+Cluster 3 - Hadoop MapReduce Cluster Architecture
+Files: 55
+Directories: 18
+Description words: 122
+Description: The Hadoop MapReduce cluster architecture comprises interconnected components for job management, data processing, and security. The 'counters' directory implements the Abstract Factory pattern for diverse counter groups, ensuring modularity and extensibility. 'filecache' organizes file caching operations, adhering to maintainable design principles. 'jobhistory' uses a layered pattern for job history storage and retrieval. 'lib' encapsulates reusable Java libraries, employing patterns like Adapter, Strategy, Observer, and Composite. 'protocol' provides package documentation, aiding developers. 'security' ensures shuffle and spill encryption, using metadata documentation. 'split' prepares for split operations. 'task/reduce' organizes Reduce phase classes, following modular design. 'util' provides utility classes, adhering to the Utility pattern. This architecture ensures scalability, maintainability, reliability, and security, leveraging Hadoop's core classes, Google's Guava library, and standard Java libraries.
+
+Cluster 4 - Hadoop MapReduce Output Committer
+Files: 46
+Directories: 8
+Description words: 85
+Description: The Hadoop MapReduce Output Committer ensures data integrity during MapReduce tasks' output. It comprises auditing classes, SequenceFile management, constants, and file system operation utilities. The committer maintains reliability and consistency in Hadoop's distributed file system, employing helper and abstract base classes for modularity. It interacts with Hadoop classes for seamless integration, ensuring dependable task output committal. This architecture prioritizes reliability and data consistency, leveraging Java for implementation within the Hadoop framework. The committer pattern ensures that all data is durably stored, enhancing overall system dependability.
+
+Cluster 5 - Task Identification and Logging in Hadoop MapReduce
+Files: 30
+Directories: 3
+Description words: 92
+Description: Hadoop MapReduce employs a robust task identification system, utilizing 'TaskAttemptID.java' and 'TaskID.java' classes for unique task tracking within jobs. 'TaskAttemptID' combines 'TaskID' and an attempt number, ensuring each task attempt's uniqueness. 'TaskID' identifies Map or Reduce tasks, encapsulating job ID, task type, and task number. Both classes ensure immutability and provide methods for comparison, serialization, and deserialization. 'TaskType.java' defines task types, including MAP, REDUCE, JOB_SETUP, JOB_CLEANUP, and TASK_CLEANUP. This system, built with Java, ensures scalability, maintainability, and reliability by enabling efficient task tracking and management in Hadoop MapReduce jobs.
+
+Cluster 6 - Hadoop MapReduce Cluster Architecture
+Files: 9
+Directories: 3
+Description words: 124
+Description: The Hadoop MapReduce cluster architecture, comprising six nodes, employs a master-slave model. The master node, or JobTracker, coordinates tasks and assigns them to slave nodes, or TaskTrackers. Input data is split into InputSplits by database splitter classes in the 'lib/db' directory, facilitating parallel processing. MapReduce jobs are executed in two phases: Map and Reduce. The Map phase processes data in parallel across TaskTrackers, while the Reduce phase collects, sorts, and aggregates the Map outputs. This architecture ensures scalability, maintainability, and reliability, leveraging Java and Hadoop technologies. The Data-Driven pattern is evident in the database splitter classes, optimizing Hadoop's efficiency. Security is maintained through Hadoop's access control mechanisms. Performance is enhanced by data locality optimization, where tasks are scheduled near the data they process.
+
+Cluster 7 - Hadoop MapReduce Cluster Architecture
+Files: 20
+Directories: 9
+Description words: 97
+Description: This cluster architecture leverages Hadoop MapReduce for distributed processing. The DistributedCache.java manages file caching, ensuring accessibility across nodes. Specialized libraries in the 'lib' directory extend core functionalities, employing patterns like Chain, Decorator, and Thread Pool. OnDiskMapOutput.java handles temporary map output storage, supporting encryption and deletion. The CLI.java provides a command-line interface for job management, utilizing a command pattern. This architecture ensures scalability, maintainability, and reliability through distributed caching, specialized libraries, and robust output management. It employs Java, Hadoop core classes, and standard libraries, demonstrating a coordinator-worker pattern with a focus on performance and security.
+

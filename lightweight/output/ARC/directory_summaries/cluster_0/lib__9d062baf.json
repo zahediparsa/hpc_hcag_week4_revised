@@ -1,0 +1,54 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "lib",
+  "title": "Hadoop MapReduce Library Directory",
+  "description": "The 'lib' directory in Hadoop MapReduce architecture serves as a repository for various utility classes and frameworks, facilitating diverse functionalities such as data aggregation, database output, field selection, input handling, job control, join operations, custom mappers, output management, data partitioning, and reduction. Each subdirectory within 'lib' encapsulates a specific functionality, employing a range of architectural patterns including delegation, extension, specialization, and layered architecture. These components collaborate to provide a robust, flexible, and extensible MapReduce framework, enabling efficient processing of large datasets across distributed clusters. The directory's modular design adheres to Hadoop's public and stable API guidelines, ensuring compatibility and maintainability.",
+  "summary": "TITLE: Hadoop MapReduce Library Directory\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce architecture serves as a repository for various utility classes and frameworks, facilitating diverse functionalities such as data aggregation, database output, field selection, input handling, job control, join operations, custom mappers, output management, data partitioning, and reduction. Each subdirectory within 'lib' encapsulates a specific functionality, employing a range of architectural patterns including delegation, extension, specialization, and layered architecture. These components collaborate to provide a robust, flexible, and extensible MapReduce framework, enabling efficient processing of large datasets across distributed clusters. The directory's modular design adheres to Hadoop's public and stable API guidelines, ensuring compatibility and maintainability.",
+  "number_of_children": 10,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/aggregate"
+    },
+    {
+      "type": "directory",
+      "name": "lib/db"
+    },
+    {
+      "type": "directory",
+      "name": "lib/fieldsel"
+    },
+    {
+      "type": "directory",
+      "name": "lib/input"
+    },
+    {
+      "type": "directory",
+      "name": "lib/jobcontrol"
+    },
+    {
+      "type": "directory",
+      "name": "lib/join"
+    },
+    {
+      "type": "directory",
+      "name": "lib/map"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output"
+    },
+    {
+      "type": "directory",
+      "name": "lib/partition"
+    },
+    {
+      "type": "directory",
+      "name": "lib/reduce"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Library Directory\n\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce architecture serves as a repository for various utility classes and frameworks, facilitating diverse functionalities such as data aggregation, database output, field selection, input handling, job control, join operations, custom mappers, output management, data partitioning, and reduction. Each subdirectory within 'lib' encapsulates a specific functionality, employing a range of architectural patterns including delegation, extension, specialization, and layered architecture. These components collaborate to provide a robust, flexible, and extensible MapReduce framework, enabling efficient processing of large datasets across distributed clusters. The directory's modular design adheres to Hadoop's public and stable API guidelines, ensuring compatibility and maintainability."
+}

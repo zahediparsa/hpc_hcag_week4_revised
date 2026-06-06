@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 73,
+  "directory": "lib/join",
+  "title": "TupleWritable Class for Hadoop MapReduce",
+  "description": "The TupleWritable.java file in Hadoop MapReduce's lib/join directory defines a class, TupleWritable, which implements the Writable interface. This class is designed to store multiple Writable objects in a tuple format, allowing for iteration and serialization. It uses a bit set to track initialized elements and provides methods for checking, retrieving, and iterating over these elements. The class handles serialization and deserialization through write and readFields methods, respectively. Dependencies include various Hadoop classes for data output/input, bit set management, and interoperability with Hadoop's data model. This class is crucial for managing complex data structures in MapReduce jobs, particularly in join operations.",
+  "summary": "TITLE: TupleWritable Class for Hadoop MapReduce\nDESCRIPTION: The TupleWritable.java file in Hadoop MapReduce's lib/join directory defines a class, TupleWritable, which implements the Writable interface. This class is designed to store multiple Writable objects in a tuple format, allowing for iteration and serialization. It uses a bit set to track initialized elements and provides methods for checking, retrieving, and iterating over these elements. The class handles serialization and deserialization through write and readFields methods, respectively. Dependencies include various Hadoop classes for data output/input, bit set management, and interoperability with Hadoop's data model. This class is crucial for managing complex data structures in MapReduce jobs, particularly in join operations.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ResetableIterator.java"
+    },
+    {
+      "type": "file",
+      "name": "TupleWritable.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: TupleWritable Class for Hadoop MapReduce\n\nDESCRIPTION:\nThe TupleWritable.java file in Hadoop MapReduce's lib/join directory defines a class, TupleWritable, which implements the Writable interface. This class is designed to store multiple Writable objects in a tuple format, allowing for iteration and serialization. It uses a bit set to track initialized elements and provides methods for checking, retrieving, and iterating over these elements. The class handles serialization and deserialization through write and readFields methods, respectively. Dependencies include various Hadoop classes for data output/input, bit set management, and interoperability with Hadoop's data model. This class is crucial for managing complex data structures in MapReduce jobs, particularly in join operations."
+}

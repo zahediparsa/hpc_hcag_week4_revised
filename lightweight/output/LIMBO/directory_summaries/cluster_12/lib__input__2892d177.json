@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 12,
+  "directory": "lib/input",
+  "title": "FileInputFormat.java - Input Data Preparation for MapReduce",
+  "description": "The FileInputFormat.java class serves as a foundational component in Apache Hadoop MapReduce for preparing input data. It defines a base class for file-based input formats, providing a generic implementation for generating input splits and listing input directories. This class is crucial for reading data into MapReduce jobs, as it calculates split sizes, creates FileSplit objects, and handles non-splittable files. It prepares input data by generating InputSplit objects, representing logical partitions of input files for processing by individual map tasks. The class depends on several Hadoop library components, including InputFormat, JobContext, Path, PathFilter, FileStatus, FileSystem, BlockLocation, FileSplit, Configuration, StopWatch, InvalidInputException, InterruptedIOException, ReflectionUtils, StringUtils, and Logger.",
+  "summary": "TITLE: FileInputFormat.java - Input Data Preparation for MapReduce\nDESCRIPTION: The FileInputFormat.java class serves as a foundational component in Apache Hadoop MapReduce for preparing input data. It defines a base class for file-based input formats, providing a generic implementation for generating input splits and listing input directories. This class is crucial for reading data into MapReduce jobs, as it calculates split sizes, creates FileSplit objects, and handles non-splittable files. It prepares input data by generating InputSplit objects, representing logical partitions of input files for processing by individual map tasks. The class depends on several Hadoop library components, including InputFormat, JobContext, Path, PathFilter, FileStatus, FileSystem, BlockLocation, FileSplit, Configuration, StopWatch, InvalidInputException, InterruptedIOException, ReflectionUtils, StringUtils, and Logger.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "FileInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "MultipleInputs.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: FileInputFormat.java - Input Data Preparation for MapReduce\n\nDESCRIPTION:\nThe FileInputFormat.java class serves as a foundational component in Apache Hadoop MapReduce for preparing input data. It defines a base class for file-based input formats, providing a generic implementation for generating input splits and listing input directories. This class is crucial for reading data into MapReduce jobs, as it calculates split sizes, creates FileSplit objects, and handles non-splittable files. It prepares input data by generating InputSplit objects, representing logical partitions of input files for processing by individual map tasks. The class depends on several Hadoop library components, including InputFormat, JobContext, Path, PathFilter, FileStatus, FileSystem, BlockLocation, FileSplit, Configuration, StopWatch, InvalidInputException, InterruptedIOException, ReflectionUtils, StringUtils, and Logger."
+}

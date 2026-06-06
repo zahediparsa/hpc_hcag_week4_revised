@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 19,
+  "directory": "filecache",
+  "title": "ClientDistributedCacheManager and DistributedCache Collaboration",
+  "description": "The `ClientDistributedCacheManager.java` and `DistributedCache.java` collaborate to manage and distribute large, read-only files across a Hadoop cluster. The `ClientDistributedCacheManager` determines file timestamps and cache visibilities, storing this information in the job configuration. It checks the visibility of distributed cache files and archives based on their permissions. \n\nOn the other hand, `DistributedCache.java` facilitates the distribution of these files. It adds files and archives to be cached, retrieves them, and manages their timestamps. It ensures these files are copied only once per job and are accessible by all nodes in the cluster. The class handles symlinks, file permissions, and visibility settings, and adds localized files and archives to the task's classpath. Both components work together to efficiently manage and distribute necessary files for MapReduce applications in a Hadoop cluster.",
+  "summary": "TITLE: ClientDistributedCacheManager and DistributedCache Collaboration\nDESCRIPTION: The `ClientDistributedCacheManager.java` and `DistributedCache.java` collaborate to manage and distribute large, read-only files across a Hadoop cluster. The `ClientDistributedCacheManager` determines file timestamps and cache visibilities, storing this information in the job configuration. It checks the visibility of distributed cache files and archives based on their permissions. \n\nOn the other hand, `DistributedCache.java` facilitates the distribution of these files. It adds files and archives to be cached, retrieves them, and manages their timestamps. It ensures these files are copied only once per job and are accessible by all nodes in the cluster. The class handles symlinks, file permissions, and visibility settings, and adds localized files and archives to the task's classpath. Both components work together to efficiently manage and distribute necessary files for MapReduce applications in a Hadoop cluster.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ClientDistributedCacheManager.java"
+    },
+    {
+      "type": "file",
+      "name": "DistributedCache.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ClientDistributedCacheManager and DistributedCache Collaboration\n\nDESCRIPTION:\nThe `ClientDistributedCacheManager.java` and `DistributedCache.java` collaborate to manage and distribute large, read-only files across a Hadoop cluster. The `ClientDistributedCacheManager` determines file timestamps and cache visibilities, storing this information in the job configuration. It checks the visibility of distributed cache files and archives based on their permissions. \n\nOn the other hand, `DistributedCache.java` facilitates the distribution of these files. It adds files and archives to be cached, retrieves them, and manages their timestamps. It ensures these files are copied only once per job and are accessible by all nodes in the cluster. The class handles symlinks, file permissions, and visibility settings, and adds localized files and archives to the task's classpath. Both components work together to efficiently manage and distribute necessary files for MapReduce applications in a Hadoop cluster."
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "lib/output/committer",
+  "title": "Hadoop MapReduce Committer Manifest",
+  "description": "The 'lib/output/committer/manifest' directory in Hadoop MapReduce is crucial for committer operations. It contains Java classes for data structures, diagnostic information, and file/directory entry status. The 'impl' subdirectory holds custom exception classes for output validation errors. The 'stages' subdirectory manages committer stages using interfaces that follow the Observer pattern for event handling. This directory ensures reliable committer operation, employing the Abstract Factory pattern for creating related objects.",
+  "summary": "TITLE: Hadoop MapReduce Committer Manifest\nDESCRIPTION: The 'lib/output/committer/manifest' directory in Hadoop MapReduce is crucial for committer operations. It contains Java classes for data structures, diagnostic information, and file/directory entry status. The 'impl' subdirectory holds custom exception classes for output validation errors. The 'stages' subdirectory manages committer stages using interfaces that follow the Observer pattern for event handling. This directory ensures reliable committer operation, employing the Abstract Factory pattern for creating related objects.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Committer Manifest\n\nDESCRIPTION: The 'lib/output/committer/manifest' directory in Hadoop MapReduce is crucial for committer operations. It contains Java classes for data structures, diagnostic information, and file/directory entry status. The 'impl' subdirectory holds custom exception classes for output validation errors. The 'stages' subdirectory manages committer stages using interfaces that follow the Observer pattern for event handling. This directory ensures reliable committer operation, employing the Abstract Factory pattern for creating related objects."
+}

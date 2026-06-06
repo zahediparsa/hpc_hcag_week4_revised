@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 90,
+    "class": "org.apache.hadoop.mapreduce.security.IntermediateEncryptedStream",
+    "path": "security/IntermediateEncryptedStream.java",
+    "file_name": "IntermediateEncryptedStream.java",
+    "directory": "security",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to provide methods for wrapping input/output streams with encryption and handling spill callbacks for intermediate files in Apache Hadoop MapReduce.\n\nCORE LOGIC:\n1. The class uses static methods to wrap FSDataOutputStream, FSDataInputStream, InputStream, and raw InputStream with encryption, utilizing the CryptoUtils class.\n2. It also manages spill callbacks for tracking spilled files using the SpillCallBackInjector.\n3. Methods like writeSpillFileCB, getSpillFileCB, addSpillIndexFileCB, and validateSpillIndexFileCB are used to interact with the SpillCallBackInjector for managing spill-related operations.\n4. The class maintains a static variable prevSpillCBInjector to keep track of the previous SpillCallBackInjector instance and provides methods to reset and set the SpillCallBackInjector.\n\nINPUTS/OUTPUTS:\n- Inputs: Configuration (conf), FSDataOutputStream/InputStream, Path (for file locations), raw InputStream, and length (for certain input streams).\n- Outputs: Encrypted FSDataOutputStream/InputStream, and management of spill callback information.\n\nDEPENDENCIES:\n- Imported classes: java.io.IOException, java.io.InputStream, org.apache.hadoop.classification.InterfaceAudience, org.apache.hadoop.classification.InterfaceStability, org.apache.hadoop.conf.Configuration, org.apache.hadoop.fs.FSDataInputStream, org.apache.hadoop.fs.FSDataOutputStream, org.apache.hadoop.fs.Path, org.apache.hadoop.mapreduce.CryptoUtils.\n- Collaborator classes: SpillCallBackInjector (an injected, presumably internal class for managing spill callbacks).",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 90,
+    "class": "org.apache.hadoop.mapreduce.security.SpillCallBackPathsFinder",
+    "path": "security/SpillCallBackPathsFinder.java",
+    "file_name": "SpillCallBackPathsFinder.java",
+    "directory": "security",
+    "summary": "KEY FUNCTIONALITY:\nThis Java class, `SpillCallBackPathsFinder`, is part of Apache Hadoop MapReduce's security module. Its main purpose is to track and manage spilled files, distinguishing between encrypted and non-encrypted ones, and handling invalid access attempts.\n\nCORE LOGIC:\n1. The class maintains four maps to store spilled files: `encryptedSpillFiles`, `spillFiles`, `invalidAccessMap`, and `indexSpillFiles`.\n2. It provides methods to add spill files (`writeSpillFileCB` and `addSpillIndexFileCB`), retrieve spill files (`getSpillFileCB`), and validate spill index files (`validateSpillIndexFileCB`).\n3. The `getFilesMap` method determines whether to return `encryptedSpillFiles` or `spillFiles` based on the configuration.\n4. The `getSpillFileCB` method checks if the requested file exists in the maps and handles incorrect position accesses by logging them in `invalidAccessMap`.\n5. The `getSpilledFileReport` method generates a string representation of the spill file status, including encrypted and non-encrypted files, invalid access attempts, spilled index files, and negative cache files.\n6. The `getInvalidSpillEntries` method returns a set of strings representing paths and positions of incorrectly accessed spill files.\n\nINPUTS/OUTPUTS:\n- INPUTS: Path objects, FSDataOutputStream, InputStream, Configuration objects.\n- OUTPUTS: None explicitly, but it populates and maintains internal maps (`encryptedSpillFiles`, `spillFiles`, `invalidAccessMap`, `indexSpillFiles`, and `negativeCache`).\n- The `getSpilledFileReport` method generates a string report of spill file status.\n- The `getInvalidSpillEntries` method returns a set of strings representing paths and positions of incorrectly accessed spill files.\n\nDEPENDENCIES:\n- Imported classes: `java.io.IOException`, `java.io.InputStream`, `java.util.Collections`, `java.util.LinkedHashSet`, `java.util.Map`, `java.util.Map.Entry`, `java.util.Set`, `java.util.concurrent.ConcurrentHashMap`, `org.slf4j.Logger`, `org.slf4j.LoggerFactory`, `org.apache.hadoop.conf.Configuration`, `org.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

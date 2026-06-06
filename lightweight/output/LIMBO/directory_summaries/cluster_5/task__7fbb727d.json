@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 5,
+  "directory": "task",
+  "title": "TaskInputOutputContextImpl.java",
+  "description": "This Java file, TaskInputOutputContextImpl.java, is pivotal in Hadoop MapReduce's task execution. It provides a context for input and output operations in Mapper and Reducer classes, extending TaskAttemptContextImpl and implementing TaskInputOutputContext. The class manages RecordWriter for output and OutputCommitter for task commit tracking, offering methods to handle key-value pairs and output committers. It interacts with Hadoop's configuration, task attempt ID, RecordWriter, and OutputCommitter. The class retrieves and sets input keys and values, and writes output keys and values, ensuring seamless data flow between Hadoop's distributed file system and the task's processing units.",
+  "summary": "TITLE: TaskInputOutputContextImpl.java\nDESCRIPTION: This Java file, TaskInputOutputContextImpl.java, is pivotal in Hadoop MapReduce's task execution. It provides a context for input and output operations in Mapper and Reducer classes, extending TaskAttemptContextImpl and implementing TaskInputOutputContext. The class manages RecordWriter for output and OutputCommitter for task commit tracking, offering methods to handle key-value pairs and output committers. It interacts with Hadoop's configuration, task attempt ID, RecordWriter, and OutputCommitter. The class retrieves and sets input keys and values, and writes output keys and values, ensuring seamless data flow between Hadoop's distributed file system and the task's processing units.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "TaskInputOutputContextImpl.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: TaskInputOutputContextImpl.java\n\nDESCRIPTION: \nThis Java file, TaskInputOutputContextImpl.java, is pivotal in Hadoop MapReduce's task execution. It provides a context for input and output operations in Mapper and Reducer classes, extending TaskAttemptContextImpl and implementing TaskInputOutputContext. The class manages RecordWriter for output and OutputCommitter for task commit tracking, offering methods to handle key-value pairs and output committers. It interacts with Hadoop's configuration, task attempt ID, RecordWriter, and OutputCommitter. The class retrieves and sets input keys and values, and writes output keys and values, ensuring seamless data flow between Hadoop's distributed file system and the task's processing units."
+}

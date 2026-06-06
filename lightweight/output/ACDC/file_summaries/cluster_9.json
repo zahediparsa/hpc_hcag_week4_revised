@@ -1,0 +1,122 @@
+[
+  {
+    "algorithm": "ACDC",
+    "cluster": 9,
+    "class": "org.apache.hadoop.mapreduce.MapContext",
+    "path": "MapContext.java",
+    "file_name": "MapContext.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define an interface `MapContext` for providing context to the `Mapper` in Apache Hadoop MapReduce.\n\nCORE LOGIC:\nThe core logic involves defining an interface `MapContext` that extends `TaskInputOutputContext`. This interface includes a single method `getInputSplit()` which returns the `InputSplit` for the map task. This `InputSplit` represents the logical partition of the input data processed by this map task.\n\nINPUTS/OUTPUTS:\nThe interface does not directly handle any input or output data. Instead, it provides access to the `InputSplit` which is an input to the map task. The `InputSplit` represents a logical partition of the input for the map task, and it contains information about the location of the data that the map task should process.\n\nDEPENDENCIES:\nThe key dependency in this chunk is the `TaskInputOutputContext` interface from the same package `org.apache.hadoop.mapreduce`. This interface is extended by `MapContext` to provide input and output functionalities. Additionally, it imports `org.apache.hadoop.classification.InterfaceAudience` and `org.apache.hadoop.classification.InterfaceStability` for annotating the interface's audience and stability.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 9,
+    "class": "org.apache.hadoop.mapreduce.Mapper",
+    "path": "Mapper.java",
+    "file_name": "Mapper.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define the abstract base class for a Mapper in Apache Hadoop MapReduce. The Mapper is responsible for transforming input key/value pairs into intermediate key/value pairs.\n\nCORE LOGIC:\nThe core logic involves four main methods: setup, map, cleanup, and run. The setup method is called once at the beginning of the task and does nothing by default. The map method is called for each key/value pair in the input split, and by default, it writes the key and value directly to the output. The cleanup method is called once at the end of the task and does nothing by default. The run method provides expert users with more complete control over the execution of the Mapper, handling the setup, processing key/value pairs, and cleanup in a single method.\n\nINPUTS/OUTPUTS:\nThe Mapper takes in input key/value pairs (KEYIN, VALUEIN) and produces intermediate key/value pairs (KEYOUT, VALUEOUT). The processing happens in the map method, where each input key/value pair is transformed into one or more output key/value pairs. The context object (of type Context) is used to write these intermediate key/value pairs.\n\nDEPENDENCIES:\nThe code chunk depends on several classes from the Apache Hadoop MapReduce library, including Configuration, RawComparator, and CompressionCodec. It also imports standard Java classes like IOException and Object. The Mapper class itself is part of the org.apache.hadoop.mapreduce package, and it defines an abstract nested Context class that implements MapContext, which is also part of the same package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 9,
+    "class": "org.apache.hadoop.mapreduce.StatusReporter",
+    "path": "StatusReporter.java",
+    "file_name": "StatusReporter.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThis Java code snippet defines an abstract class `StatusReporter` in the Apache Hadoop MapReduce library. The main purpose of this class is to provide a reporting mechanism for tracking the progress and status of MapReduce jobs.\n\nCORE LOGIC:\nThe core logic of this class revolves around abstract methods that need to be implemented by concrete subclasses. These methods include:\n- `getCounter(Enum<?> name)`: Retrieves a counter by its enum name.\n- `getCounter(String group, String name)`: Retrieves a counter by its group and name.\n- `progress()`: A method to report progress, which would be implemented to update the status of the job.\n- `getProgress()`: Returns a float value between 0.0 and 1.0 indicating the progress of the job.\n- `setStatus(String status)`: Sets the status of the job.\n\nINPUTS/OUTPUTS:\nThis class does not directly handle inputs or outputs. Instead, it defines methods to report on the status and progress of a MapReduce job, which would be used internally by other components of the Hadoop MapReduce framework. The actual data related to the job's progress or status would be provided or updated by those components when invoking these methods.\n\nDEPENDENCIES:\nThe key dependencies visible in this chunk are:\n- `org.apache.hadoop.classification.InterfaceAudience.Private`: An annotation indicating that this class is part of an internal package and is subject to change without notice.\n- `org.apache.hadoop.mapreduce.Counter`: An interface representing a named, counted long value, used for tracking job statistics.\n- The class itself is part of the `org.apache.hadoop.mapreduce` package, indicating its role within the Hadoop MapReduce framework.\n\nThis abstract class serves as a contract for any class that wants to report the status or progress of a MapReduce job, ensuring consistency in the reporting mechanism across different implementations.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 9,
+    "class": "org.apache.hadoop.mapreduce.lib.fieldsel.FieldSelectionMapper",
+    "path": "lib/fieldsel/FieldSelectionMapper.java",
+    "file_name": "FieldSelectionMapper.java",
+    "directory": "lib/fieldsel",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a custom Hadoop Mapper class, `FieldSelectionMapper`, that performs field selection similar to the Unix `cut` command. It allows users to specify which fields from the input data should be used as keys and values for the map output.\n\nCORE LOGIC:\nThe core logic of this class revolves around the `setup` and `map` methods. In the `setup` method, it reads configuration parameters from the Hadoop job configuration, initializes field separator, and parses the map output key-value field specification. The `map` method extracts the specified fields from the input key-value pair using the `FieldSelectionHelper` class and writes the extracted fields as the map output key-value pair.\n\nINPUTS/OUTPUTS:\n- INPUTS: The mapper receives key-value pairs as input, where the key and value types are generic (K, V).\n- OUTPUTS: The mapper outputs Text key-value pairs, where both key and value are of type Text.\n\nDEPENDENCIES:\n- `org.apache.hadoop.classification`: For annotations.\n- `org.apache.hadoop.conf.Configuration`: For accessing job configuration.\n- `org.apache.hadoop.io.Text`: For using Text class as key and value types.\n- `org.apache.hadoop.mapreduce.Mapper`: The base class for implementing a mapper.\n- `org.apache.hadoop.mapreduce.lib.input.TextInputFormat`: For determining if the input format is TextInputFormat.\n- `org.slf4j.Logger` and `org.slf4j.LoggerFactory`: For logging.\n- `org.apache.hadoop.mapreduce.lib.fieldsel`: Custom package for field selection logic.\n- `org.apache.hadoop.mapreduce.lib.fieldsel.FieldSelectionHelper`: Helper class for extracting fields.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 9,
+    "class": "org.apache.hadoop.mapreduce.lib.map.InverseMapper",
+    "path": "lib/map/InverseMapper.java",
+    "file_name": "InverseMapper.java",
+    "directory": "lib/map",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define an InverseMapper class that extends the Mapper class from the Hadoop MapReduce library. This mapper swaps the keys and values of the input data.\n\nCORE LOGIC:\nThe core logic is implemented in the `map` method, which is overridden from the parent Mapper class. In this method, the keys and values passed to the map function are swapped before being written to the context.\n\nINPUTS/OUTPUTS:\nThe mapper takes two types, K and V, representing the key-value pairs of the input data. It outputs key-value pairs of types V and K respectively.\n\nDEPENDENCIES:\nThe key dependencies in this chunk are:\n- `org.apache.hadoop.mapreduce.lib.map.Mapper`: The abstract class that InverseMapper extends to provide basic map functionality.\n- `org.apache.hadoop.classification.InterfaceAudience.Public`: Annotation indicating that this class is part of the public API.\n- `org.apache.hadoop.classification.InterfaceStability.Stable`: Annotation indicating that this part of the API is stable.\n- `java.io.IOException`: An exception that may be thrown by the map method.\n- `InterruptedException`: Another exception that may be thrown by the map method.\n- `Context`: An interface that provides information about the current map task and allows the task to write output.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 9,
+    "class": "org.apache.hadoop.mapreduce.lib.map.MultithreadedMapper",
+    "path": "lib/map/MultithreadedMapper.java",
+    "file_name": "MultithreadedMapper.java",
+    "directory": "lib/map",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a multithreaded implementation for the Hadoop Mapper interface, allowing for improved throughput when the map operation is not CPU-bound.\n\nCORE LOGIC:\nThe core logic involves creating a thread pool to run the map function concurrently. It initializes a list of MapRunner threads, each running an instance of the specified Mapper class. The run method starts these threads, and the main thread waits for their completion, handling any exceptions that may arise. The SubMapRecordReader and SubMapRecordWriter classes handle reading and writing key-value pairs, respectively, while ensuring thread safety.\n\nINPUTS/OUTPUTS:\nThe code does not explicitly show input or output data flow. However, it prepares the environment for handling input data (K1, V1) and producing output data (K2, V2) by managing thread-safe record readers and writers. The actual input and output operations would be handled by the Mapper implementation that extends MultithreadedMapper.\n\nDEPENDENCIES:\nThe code chunk depends on several Hadoop classes and interfaces, including:\n- org.apache.hadoop.mapreduce.Mapper\n- org.apache.hadoop.mapreduce.InputSplit\n- org.apache.hadoop.mapreduce.JobContext\n- org.apache.hadoop.mapreduce.TaskAttemptContext\n- org.apache.hadoop.mapreduce.MapContext\n- org.apache.hadoop.mapreduce.Counter\n- org.apache.hadoop.mapreduce.RecordReader\n- org.apache.hadoop.mapreduce.RecordWriter\n- org.apache.hadoop.mapreduce.StatusReporter\n- org.apache.hadoop.util.ReflectionUtils\n- org.slf4j.Logger\n- org.slf4j.LoggerFactory\n- org.apache.hadoop.conf.Configuration\n- java.io.IOException\n- java.util.List\n- java.util.ArrayList\n\nThese dependencies are crucial for the multithreaded mapper to function correctly within the Hadoop MapReduce framework.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 9,
+    "class": "org.apache.hadoop.mapreduce.lib.map.TokenCounterMapper",
+    "path": "lib/map/TokenCounterMapper.java",
+    "file_name": "TokenCounterMapper.java",
+    "directory": "lib/map",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a Hadoop Mapper class, `TokenCounterMapper`, which extends the `Mapper` abstract class from the Hadoop MapReduce library. This class is designed to tokenize input text values and emit each word with a count of 1.\n\nCORE LOGIC:\nThe core logic of this Mapper class involves overriding the `map` method. Inside this method, a `StringTokenizer` is used to split the input text value into individual words. For each token (word), a new `Text` object is created and assigned the token value. Then, the context's `write` method is called with the word and a fixed `IntWritable` object (initialized to 1) as arguments, effectively emitting each word with a count of 1.\n\nINPUTS/OUTPUTS:\n- INPUT: The Mapper takes three parameters in its `map` method: an Object key, a Text value, and a Context object. The value (Text) represents the input text to be tokenized.\n- OUTPUT: The Mapper emits a pair of key-value pairs for each word in the input text. The key is of type Text (representing the word), and the value is of type IntWritable (initialized to 1, representing the count).\n\nDEPENDENCIES:\n- `java.io.IOException`: For exception handling during I/O operations.\n- `java.io.IOException`: For exception handling during I/O operations.\n- `java.util.StringTokenizer`: Used to tokenize the input text.\n- `org.apache.hadoop.classification.InterfaceAudience`: Marks the class for public audience.\n- `org.apache.hadoop.classification.InterfaceStability`: Marks the class as stable.\n- `org.apache.hadoop.io.IntWritable`: Used to store the integer count (1) for each word.\n- `org.apache.hadoop.io.Text`: Used to store the word as a key.\n- `org.apache.hadoop.mapreduce.Mapper`: The abstract class being extended to implement the Mapper functionality.\n- `org.apache.hadoop.mapreduce.Context`: Provides the context in which the map task is running, enabling the Mapper to write intermediate key-value pairs.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 9,
+    "class": "org.apache.hadoop.mapreduce.lib.map.WrappedMapper",
+    "path": "lib/map/WrappedMapper.java",
+    "file_name": "WrappedMapper.java",
+    "directory": "lib/map",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a class `WrappedMapper` that extends the `Mapper` class from Apache Hadoop MapReduce. This wrapper allows for custom implementations of the `Mapper.Context` interface.\n\nCORE LOGIC:\nThe core logic involves creating a nested static class `Context` within `WrappedMapper`. This class extends `Mapper.Context` and delegates all its methods to the provided `MapContext<KEYIN, VALUEIN, KEYOUT, VALUEOUT>` object. This design pattern is known as the Wrapper or Decorator pattern, allowing for the extension of functionality without altering the behavior of the object being wrapped.\n\nINPUTS/OUTPUTS:\nThe class does not directly handle inputs or outputs. Instead, it manages the context in which a mapper operates, delegating all context-related method calls to the provided `MapContext` object. This context includes information about the task, job configuration, counters, and methods to write output key-value pairs.\n\nDEPENDENCIES:\nThe code chunk depends on several classes from the Apache Hadoop MapReduce library:\n\n- `MapContext`\n- `Mapper`\n- `Configuration`\n- `InputSplit`\n- `JobID`\n- `TaskAttemptID`\n- `Counter`\n- `OutputCommitter`\n- `OutputFormat`\n- `Reducer`\n- `Path`\n- `RawComparator`\n- `Credentials`\n- `Enum`\n- `String[]`\n- `URI[]`\n- `Class<?>`\n- `IntegerRanges`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 9,
+    "class": "org.apache.hadoop.mapreduce.task.MapContextImpl",
+    "path": "task/MapContextImpl.java",
+    "file_name": "MapContextImpl.java",
+    "directory": "task",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to implement the `MapContext` interface for providing context to the `Mapper` in Apache Hadoop MapReduce.\n\nCORE LOGIC:\nThe core logic involves the initialization of the `MapContextImpl` class with a `RecordReader` and an `InputSplit`. The `RecordReader` is used to read the input data, and the `InputSplit` provides information about the portion of input data processed by this map task. The class extends `TaskInputOutputContextImpl` to inherit input/output functionalities and implements `MapContext` to provide methods for accessing current key and value, and to move to the next key-value pair.\n\nINPUTS/OUTPUTS:\n- Inputs: `Configuration` (Hadoop configuration), `TaskAttemptID` (identifier for the task attempt), `RecordReader<KEYIN,VALUEIN>` (for reading input data), `RecordWriter<KEYOUT,VALUEOUT>` (for writing output data), `OutputCommitter` (for committing output), `StatusReporter` (for reporting status), and `InputSplit` (describing the data to be processed by this task).\n- Outputs: None explicitly in this chunk, but it prepares the context for the `Mapper` to read input data and produce output.\n\nDEPENDENCIES:\n- Imported classes: `java.io.IOException`\n- Collaborator classes: `org.apache.hadoop.mapreduce.InputSplit`, `org.apache.hadoop.mapreduce.Mapper`, `org.apache.hadoop.mapreduce.OutputCommitter`, `org.apache.hadoop.mapreduce.RecordReader`, `org.apache.hadoop.mapreduce.RecordWriter`, `org.apache.hadoop.mapreduce.StatusReporter`, `org.apache.hadoop.mapreduce.TaskAttemptID`, and `org.apache.hadoop.conf.Configuration`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 9,
+    "class": "org.apache.hadoop.mapreduce.task.TaskInputOutputContextImpl",
+    "path": "task/TaskInputOutputContextImpl.java",
+    "file_name": "TaskInputOutputContextImpl.java",
+    "directory": "task",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to provide a context object for input and output operations in a MapReduce task, specifically for Mapper and Reducer classes. It extends TaskAttemptContextImpl and implements TaskInputOutputContext, offering methods to manage key-value pairs and output committers.\n\nCORE LOGIC:\nThe core logic involves managing the RecordWriter for output and the OutputCommitter for task commit tracking. It provides methods to advance to the next key-value pair (nextKeyValue), retrieve the current key (getCurrentKey) and value (getCurrentValue), write key-value pairs (write), and access the OutputCommitter (getOutputCommitter).\n\nINPUTS/OUTPUTS:\n- Configuration (conf): Hadoop configuration object for accessing Hadoop settings.\n- TaskAttemptID (taskid): Unique identifier for the task attempt.\n- RecordWriter<KEYOUT,VALUEOUT> (output): Used for writing key-value pairs to the output.\n- OutputCommitter (committer): Manages the committing of task output.\n\nOUTPUTS:\n- KEYIN (key): Current input key retrieved by getCurrentKey().\n- VALUEIN (value): Current input value retrieved by getCurrentValue().\n- KEYOUT (key): Output key for the write method.\n- VALUEOUT (value): Output value for the write method.\n\nDEPENDENCIES:\n- org.apache.hadoop.mapreduce.TaskInputOutputContext\n- org.apache.hadoop.mapreduce.RecordWriter\n- org.apache.hadoop.mapreduce.OutputCommitter\n- org.apache.hadoop.mapreduce.StatusReporter\n- org.apache.hadoop.mapreduce.Mapper\n- org.apache.hadoop.mapreduce.Reducer\n- org.apache.hadoop.conf.Configuration\n- org.apache.hadoop.mapreduce.TaskAttemptID",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

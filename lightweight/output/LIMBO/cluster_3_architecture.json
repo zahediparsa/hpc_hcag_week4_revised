@@ -1,0 +1,25 @@
+{
+  "cluster_id": 3,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "This cluster architecture leverages Hadoop's MapReduce framework, utilizing Java for implementation. ContextFactory.java serves as a coordinator, ensuring compatibility across Hadoop versions by creating JobContext and TaskAttemptContext. Multithreaded Mapper execution, implemented in MultithreadedMapper.java, enhances throughput for non-CPU-intensive tasks via a thread pool, demonstrating a utility pattern. The 'task' directory, employing a layered architectural pattern, manages task-specific contexts with MapContextImpl.java, ReduceContextImpl.java, and TaskAttemptContextImpl.java, ensuring modularity and scalability. The architecture prioritizes quality attributes such as scalability, maintainability, and performance, achieved through separation of concerns and clear component interactions. Security is maintained through Hadoop's inherent access control mechanisms.",
+  "description_word_count": 100,
+  "number_of_files": 5,
+  "number_of_directories": 4,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: This cluster architecture leverages Hadoop's MapReduce framework, utilizing Java for implementation. ContextFactory.java serves as a coordinator, ensuring compatibility across Hadoop versions by creating JobContext and TaskAttemptContext. Multithreaded Mapper execution, implemented in MultithreadedMapper.java, enhances throughput for non-CPU-intensive tasks via a thread pool, demonstrating a utility pattern. The 'task' directory, employing a layered architectural pattern, manages task-specific contexts with MapContextImpl.java, ReduceContextImpl.java, and TaskAttemptContextImpl.java, ensuring modularity and scalability. The architecture prioritizes quality attributes such as scalability, maintainability, and performance, achieved through separation of concerns and clear component interactions. Security is maintained through Hadoop's inherent access control mechanisms.",
+  "algorithm": "LIMBO",
+  "files": [
+    "ContextFactory.java",
+    "lib/map/MultithreadedMapper.java",
+    "task/MapContextImpl.java",
+    "task/ReduceContextImpl.java",
+    "task/TaskAttemptContextImpl.java"
+  ]
+}

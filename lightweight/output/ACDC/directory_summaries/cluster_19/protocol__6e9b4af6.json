@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 19,
+  "directory": "protocol",
+  "title": "ClientProtocolProvider Factory",
+  "description": "The ClientProtocolProvider.java file defines an abstract class, ClientProtocolProvider, acting as a factory for creating ClientProtocol instances. It offers methods to create ClientProtocol using Configuration or InetSocketAddress and Configuration. The core logic revolves around abstract methods create and close, intended to be implemented by subclasses. Inputs include Configuration and InetSocketAddress, while outputs are ClientProtocol instances. The class depends on standard Java and Hadoop-specific classes, with no direct collaborator classes visible in this chunk. It follows the Factory pattern, encapsulating the instantiation logic for ClientProtocol instances.",
+  "summary": "TITLE: ClientProtocolProvider Factory\nDESCRIPTION: The ClientProtocolProvider.java file defines an abstract class, ClientProtocolProvider, acting as a factory for creating ClientProtocol instances. It offers methods to create ClientProtocol using Configuration or InetSocketAddress and Configuration. The core logic revolves around abstract methods create and close, intended to be implemented by subclasses. Inputs include Configuration and InetSocketAddress, while outputs are ClientProtocol instances. The class depends on standard Java and Hadoop-specific classes, with no direct collaborator classes visible in this chunk. It follows the Factory pattern, encapsulating the instantiation logic for ClientProtocol instances.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ClientProtocolProvider.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ClientProtocolProvider Factory\n\nDESCRIPTION:\nThe ClientProtocolProvider.java file defines an abstract class, ClientProtocolProvider, acting as a factory for creating ClientProtocol instances. It offers methods to create ClientProtocol using Configuration or InetSocketAddress and Configuration. The core logic revolves around abstract methods create and close, intended to be implemented by subclasses. Inputs include Configuration and InetSocketAddress, while outputs are ClientProtocol instances. The class depends on standard Java and Hadoop-specific classes, with no direct collaborator classes visible in this chunk. It follows the Factory pattern, encapsulating the instantiation logic for ClientProtocol instances."
+}

@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 69,
+  "directory": "lib/join",
+  "title": "CompositeInputFormat and Parser for Hadoop Join Operations",
+  "description": "The 'lib/join' directory in Hadoop MapReduce architecture houses crucial components for handling complex join operations across multiple data sources. The 'CompositeInputFormat.java' file defines a custom InputFormat, 'CompositeInputFormat', which extends Hadoop's InputFormat. This class is designed to manage joins over sorted and partitioned data sources, allowing users to specify new join types via configuration properties.\n\nThe 'Parser.java' file implements a shift-reduce parser for join expressions, constructing a parse tree from user-defined join expressions. This tree is then used to build CompositeInputSplit and CompositeRecordReader for processing. Both files collaborate to enable efficient and flexible join operations in Hadoop MapReduce jobs, showcasing a clear application of the Composite Pattern and Strategy Pattern architectural designs.",
+  "summary": "TITLE: CompositeInputFormat and Parser for Hadoop Join Operations\nDESCRIPTION: The 'lib/join' directory in Hadoop MapReduce architecture houses crucial components for handling complex join operations across multiple data sources. The 'CompositeInputFormat.java' file defines a custom InputFormat, 'CompositeInputFormat', which extends Hadoop's InputFormat. This class is designed to manage joins over sorted and partitioned data sources, allowing users to specify new join types via configuration properties.\n\nThe 'Parser.java' file implements a shift-reduce parser for join expressions, constructing a parse tree from user-defined join expressions. This tree is then used to build CompositeInputSplit and CompositeRecordReader for processing. Both files collaborate to enable efficient and flexible join operations in Hadoop MapReduce jobs, showcasing a clear application of the Composite Pattern and Strategy Pattern architectural designs.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CompositeInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "Parser.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: CompositeInputFormat and Parser for Hadoop Join Operations\n\nDESCRIPTION:\nThe 'lib/join' directory in Hadoop MapReduce architecture houses crucial components for handling complex join operations across multiple data sources. The 'CompositeInputFormat.java' file defines a custom InputFormat, 'CompositeInputFormat', which extends Hadoop's InputFormat. This class is designed to manage joins over sorted and partitioned data sources, allowing users to specify new join types via configuration properties.\n\nThe 'Parser.java' file implements a shift-reduce parser for join expressions, constructing a parse tree from user-defined join expressions. This tree is then used to build CompositeInputSplit and CompositeRecordReader for processing. Both files collaborate to enable efficient and flexible join operations in Hadoop MapReduce jobs, showcasing a clear application of the Composite Pattern and Strategy Pattern architectural designs."
+}

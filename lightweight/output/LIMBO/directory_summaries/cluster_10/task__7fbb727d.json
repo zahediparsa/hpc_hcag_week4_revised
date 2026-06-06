@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 10,
+  "directory": "task",
+  "title": "Job Configuration Interface",
+  "description": "The 'task/JobContextImpl.java' file provides a read-only interface to job configuration parameters for tasks during execution. It initializes with a Hadoop Configuration object and JobID, offering getter methods for job-specific classes, key and value classes, job name, job jar path, cache details, timestamps, task maximum attempts, profiling settings, and user credentials. This class relies on Hadoop core classes and interfaces, along with Apache Commons Lang's StringUtils for string operations, to retrieve and expose these settings. It plays a crucial role in ensuring tasks have the necessary configuration details to perform their functions correctly within the MapReduce framework.",
+  "summary": "TITLE: Job Configuration Interface\nDESCRIPTION: The 'task/JobContextImpl.java' file provides a read-only interface to job configuration parameters for tasks during execution. It initializes with a Hadoop Configuration object and JobID, offering getter methods for job-specific classes, key and value classes, job name, job jar path, cache details, timestamps, task maximum attempts, profiling settings, and user credentials. This class relies on Hadoop core classes and interfaces, along with Apache Commons Lang's StringUtils for string operations, to retrieve and expose these settings. It plays a crucial role in ensuring tasks have the necessary configuration details to perform their functions correctly within the MapReduce framework.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobContextImpl.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job Configuration Interface\n\nDESCRIPTION:\nThe 'task/JobContextImpl.java' file provides a read-only interface to job configuration parameters for tasks during execution. It initializes with a Hadoop Configuration object and JobID, offering getter methods for job-specific classes, key and value classes, job name, job jar path, cache details, timestamps, task maximum attempts, profiling settings, and user credentials. This class relies on Hadoop core classes and interfaces, along with Apache Commons Lang's StringUtils for string operations, to retrieve and expose these settings. It plays a crucial role in ensuring tasks have the necessary configuration details to perform their functions correctly within the MapReduce framework."
+}

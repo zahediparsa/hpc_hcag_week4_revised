@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 80,
+  "directory": "lib/output/committer/manifest",
+  "title": "SequenceFile Entry Management",
+  "description": "The 'lib/output/committer/manifest/impl' directory contains 'EntryFileIO.java', managing 'FileEntry' objects in SequenceFiles. It uses a blocking queue and a dedicated thread for writing, implementing the Producer pattern. 'EntryFileIO' interacts with Hadoop's SequenceFile class for file management, utilizing multi-threading for efficient I/O. It provides methods for creating writers and readers, iterating over entries, and managing a writer thread for queuing and processing entries for writing.",
+  "summary": "TITLE: SequenceFile Entry Management\nDESCRIPTION: The 'lib/output/committer/manifest/impl' directory contains 'EntryFileIO.java', managing 'FileEntry' objects in SequenceFiles. It uses a blocking queue and a dedicated thread for writing, implementing the Producer pattern. 'EntryFileIO' interacts with Hadoop's SequenceFile class for file management, utilizing multi-threading for efficient I/O. It provides methods for creating writers and readers, iterating over entries, and managing a writer thread for queuing and processing entries for writing.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest/impl"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: SequenceFile Entry Management\n\nDESCRIPTION: The 'lib/output/committer/manifest/impl' directory contains 'EntryFileIO.java', managing 'FileEntry' objects in SequenceFiles. It uses a blocking queue and a dedicated thread for writing, implementing the Producer pattern. 'EntryFileIO' interacts with Hadoop's SequenceFile class for file management, utilizing multi-threading for efficient I/O. It provides methods for creating writers and readers, iterating over entries, and managing a writer thread for queuing and processing entries for writing."
+}

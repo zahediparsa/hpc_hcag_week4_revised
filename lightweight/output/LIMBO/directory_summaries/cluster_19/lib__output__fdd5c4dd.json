@@ -1,0 +1,30 @@
+{
+  "type": "directory",
+  "cluster_id": 19,
+  "directory": "lib/output",
+  "title": "Hadoop MapReduce OutputFormat Directory",
+  "description": "The 'lib/output' directory houses several Java classes that extend Hadoop MapReduce's OutputFormat abstract class, facilitating diverse output functionalities. FilterOutputFormat.java introduces a convenience class for extending existing output formats with additional filters. LazyOutputFormat.java creates output lazily, useful with MultipleOutputs for mimicking old Hadoop API behavior. NullOutputFormat.java discards all outputs, writing to '/dev/null'. PathOutputCommitter.java serves as a base for committers managing data written to working and final directories. These classes collaborate within the MapReduce framework, enabling flexible, customizable output handling. They rely heavily on Hadoop MapReduce's core classes and adhere to established architectural patterns, ensuring seamless integration and functionality.",
+  "summary": "TITLE: Hadoop MapReduce OutputFormat Directory\nDESCRIPTION: The 'lib/output' directory houses several Java classes that extend Hadoop MapReduce's OutputFormat abstract class, facilitating diverse output functionalities. FilterOutputFormat.java introduces a convenience class for extending existing output formats with additional filters. LazyOutputFormat.java creates output lazily, useful with MultipleOutputs for mimicking old Hadoop API behavior. NullOutputFormat.java discards all outputs, writing to '/dev/null'. PathOutputCommitter.java serves as a base for committers managing data written to working and final directories. These classes collaborate within the MapReduce framework, enabling flexible, customizable output handling. They rely heavily on Hadoop MapReduce's core classes and adhere to established architectural patterns, ensuring seamless integration and functionality.",
+  "number_of_children": 4,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "FilterOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "LazyOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "NullOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "PathOutputCommitter.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce OutputFormat Directory\n\nDESCRIPTION:\nThe 'lib/output' directory houses several Java classes that extend Hadoop MapReduce's OutputFormat abstract class, facilitating diverse output functionalities. FilterOutputFormat.java introduces a convenience class for extending existing output formats with additional filters. LazyOutputFormat.java creates output lazily, useful with MultipleOutputs for mimicking old Hadoop API behavior. NullOutputFormat.java discards all outputs, writing to '/dev/null'. PathOutputCommitter.java serves as a base for committers managing data written to working and final directories. These classes collaborate within the MapReduce framework, enabling flexible, customizable output handling. They rely heavily on Hadoop MapReduce's core classes and adhere to established architectural patterns, ensuring seamless integration and functionality."
+}

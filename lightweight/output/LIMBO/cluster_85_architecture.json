@@ -1,0 +1,23 @@
+{
+  "cluster_id": 85,
+  "title": "Custom Partitioners in Hadoop MapReduce",
+  "description": "This Hadoop MapReduce cluster employs custom partitioners in the 'lib/partition' directory, including BinaryPartitioner.java and HashPartitioner.java. These extend the base Partitioner<K, V> class, implementing strategies like BinaryPartitioner's byte subarray, HashPartitioner's hash code, and RehashPartitioner's rehashing for uniform distribution. They ensure efficient data distribution to reducers, following the Partitioner pattern. Technologies used include Java and Hadoop MapReduce framework. This architecture ensures scalability, maintainability, and performance, leveraging custom partitioning for optimized data processing in large clusters.",
+  "description_word_count": 77,
+  "number_of_files": 3,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Custom Partitioners in Hadoop MapReduce\n\nDESCRIPTION: This Hadoop MapReduce cluster employs custom partitioners in the 'lib/partition' directory, including BinaryPartitioner.java and HashPartitioner.java. These extend the base Partitioner<K, V> class, implementing strategies like BinaryPartitioner's byte subarray, HashPartitioner's hash code, and RehashPartitioner's rehashing for uniform distribution. They ensure efficient data distribution to reducers, following the Partitioner pattern. Technologies used include Java and Hadoop MapReduce framework. This architecture ensures scalability, maintainability, and performance, leveraging custom partitioning for optimized data processing in large clusters.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/partition/BinaryPartitioner.java",
+    "lib/partition/HashPartitioner.java",
+    "lib/partition/RehashPartitioner.java"
+  ]
+}

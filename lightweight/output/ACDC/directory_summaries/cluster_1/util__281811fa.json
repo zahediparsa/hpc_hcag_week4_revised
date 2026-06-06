@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 1,
+  "directory": "util",
+  "title": "ResourceBundle Management",
+  "description": "The ResourceBundles.java file provides a utility class for managing resource bundles in Hadoop MapReduce. It offers methods to retrieve resource bundles and specific resources from those bundles, using static helper methods. The class uses the java.util.ResourceBundle class for bundle management and handles exceptions with MissingResourceException. It also incorporates concurrency control using ReentrantLock for thread safety. The class is written in Java and utilizes generics for type safety.",
+  "summary": "TITLE: ResourceBundle Management\nDESCRIPTION: The ResourceBundles.java file provides a utility class for managing resource bundles in Hadoop MapReduce. It offers methods to retrieve resource bundles and specific resources from those bundles, using static helper methods. The class uses the java.util.ResourceBundle class for bundle management and handles exceptions with MissingResourceException. It also incorporates concurrency control using ReentrantLock for thread safety. The class is written in Java and utilizes generics for type safety.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ResourceBundles.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ResourceBundle Management\n\nDESCRIPTION: The ResourceBundles.java file provides a utility class for managing resource bundles in Hadoop MapReduce. It offers methods to retrieve resource bundles and specific resources from those bundles, using static helper methods. The class uses the java.util.ResourceBundle class for bundle management and handles exceptions with MissingResourceException. It also incorporates concurrency control using ReentrantLock for thread safety. The class is written in Java and utilizes generics for type safety."
+}

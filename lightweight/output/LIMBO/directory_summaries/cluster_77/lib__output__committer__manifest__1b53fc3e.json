@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 77,
+  "directory": "lib/output/committer/manifest",
+  "title": "Manifest Printing Utility",
+  "description": "The 'lib/output/committer/manifest/files' directory in Hadoop MapReduce contains the 'ManifestPrinter.java' utility. It prints manifest file contents to an output stream, aiding in debugging and monitoring. The utility loads manifest data from a specified file using Hadoop FileSystem. It takes a single command-line argument, the manifest file path, and prints data including diagnostics and I/O statistics. This directory follows a utility pattern, providing a tool for system debugging and performance analysis.",
+  "summary": "TITLE: Manifest Printing Utility\nDESCRIPTION: The 'lib/output/committer/manifest/files' directory in Hadoop MapReduce contains the 'ManifestPrinter.java' utility. It prints manifest file contents to an output stream, aiding in debugging and monitoring. The utility loads manifest data from a specified file using Hadoop FileSystem. It takes a single command-line argument, the manifest file path, and prints data including diagnostics and I/O statistics. This directory follows a utility pattern, providing a tool for system debugging and performance analysis.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest/files"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Manifest Printing Utility\n\nDESCRIPTION: The 'lib/output/committer/manifest/files' directory in Hadoop MapReduce contains the 'ManifestPrinter.java' utility. It prints manifest file contents to an output stream, aiding in debugging and monitoring. The utility loads manifest data from a specified file using Hadoop FileSystem. It takes a single command-line argument, the manifest file path, and prints data including diagnostics and I/O statistics. This directory follows a utility pattern, providing a tool for system debugging and performance analysis."
+}

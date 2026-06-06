@@ -1,0 +1,14 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 96,
+    "class": "org.apache.hadoop.mapreduce.task.reduce.MergeThread",
+    "path": "task/reduce/MergeThread.java",
+    "file_name": "MergeThread.java",
+    "directory": "task/reduce",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class, `MergeThread`, is to manage and execute merge operations on a set of inputs in a separate thread. It ensures that the merge operation is performed concurrently, improving the overall performance of the reduce phase in Hadoop MapReduce.\n\nCORE LOGIC:\n- The class extends `Thread` and overrides the `run` method to continuously wait for merge tasks and execute them.\n- It maintains a queue of inputs to be merged using a `LinkedList<List<T>>` called `pendingToBeMerged`.\n- The `startMerge` method adds a subset of input elements to this queue, signaling the thread to perform a merge operation.\n- The `waitForMerge` method is used to block the calling thread until all pending merge operations are completed.\n- The `merge` method is an abstract method that needs to be implemented by subclasses, responsible for the actual merging logic of the input elements.\n\nINPUTS/OUTPUTS:\n- INPUTS: The class accepts a set of input elements of type `T` via the `startMerge` method.\n- OUTPUTS: The merging result is not explicitly returned; instead, it is assumed to be handled within the `merge` method, which is intended to be implemented by subclasses.\n\nDEPENDENCIES:\n- Imported classes: `java.io.IOException`, `java.util.ArrayList`, `java.util.Iterator`, `java.util.LinkedList`, `java.util.List`, `java.util.Set`, `java.util.concurrent.atomic.AtomicInteger`.\n- Collaborator classes: `org.apache.hadoop.classification.VisibleForTesting`, `org.slf4j.Logger`, `org.slf4j.LoggerFactory`, `org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl`, and `org.apache.hadoop.mapreduce.task.reduce.ExceptionReporter`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

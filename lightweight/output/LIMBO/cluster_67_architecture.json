@@ -1,0 +1,24 @@
+{
+  "cluster_id": 67,
+  "title": "Hadoop MapReduce Join Operations Library ---",
+  "description": "This Hadoop MapReduce library, housed in 'lib/join', employs Java classes for intricate join operations. 'ComposableRecordReader' extends Hadoop's RecordReader, aiding joins. 'CompositeRecordReader' orchestrates multiple RecordReaders, and 'MultiFilterRecordReader' manages composite joins. 'WrappedRecordReader' proxies RecordReader for head key-value pair management. These components, illustrating Adapter and Composite patterns, collaborate to facilitate complex data joins using Hadoop's input/output and key-value comparison interfaces. The architecture ensures scalability and maintainability, leveraging Java and Hadoop technologies. It supports reliable, high-performance data processing, adhering to the Adapter and Composite architectural patterns.",
+  "description_word_count": 84,
+  "number_of_files": 4,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- TITLE: Hadoop MapReduce Join Operations Library ---\n\nDESCRIPTION: This Hadoop MapReduce library, housed in 'lib/join', employs Java classes for intricate join operations. 'ComposableRecordReader' extends Hadoop's RecordReader, aiding joins. 'CompositeRecordReader' orchestrates multiple RecordReaders, and 'MultiFilterRecordReader' manages composite joins. 'WrappedRecordReader' proxies RecordReader for head key-value pair management. These components, illustrating Adapter and Composite patterns, collaborate to facilitate complex data joins using Hadoop's input/output and key-value comparison interfaces. The architecture ensures scalability and maintainability, leveraging Java and Hadoop technologies. It supports reliable, high-performance data processing, adhering to the Adapter and Composite architectural patterns.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/join/ComposableRecordReader.java",
+    "lib/join/CompositeRecordReader.java",
+    "lib/join/MultiFilterRecordReader.java",
+    "lib/join/WrappedRecordReader.java"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "lib/output/committer/manifest/impl",
+  "title": "OutputValidationException Class for MapReduce Output Committer",
+  "description": "The `OutputValidationException.java` file defines a custom exception class, `OutputValidationException`, used in Hadoop MapReduce's output committer. This class extends `PathIOException` to signal validation errors during the output phase of a MapReduce job. It has two constructors: one for initializing with a Path and error message, and another for including a cause of the exception. The class imports `org.apache.hadoop.fs.Path` and `org.apache.hadoop.fs.PathIOException`, indicating its role within the Hadoop MapReduce output committer. It's part of the package `org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl`, showing its collaboration with other committer-related classes.",
+  "summary": "TITLE: OutputValidationException Class for MapReduce Output Committer\nDESCRIPTION: The `OutputValidationException.java` file defines a custom exception class, `OutputValidationException`, used in Hadoop MapReduce's output committer. This class extends `PathIOException` to signal validation errors during the output phase of a MapReduce job. It has two constructors: one for initializing with a Path and error message, and another for including a cause of the exception. The class imports `org.apache.hadoop.fs.Path` and `org.apache.hadoop.fs.PathIOException`, indicating its role within the Hadoop MapReduce output committer. It's part of the package `org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl`, showing its collaboration with other committer-related classes.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "OutputValidationException.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: OutputValidationException Class for MapReduce Output Committer\n\nDESCRIPTION: \nThe `OutputValidationException.java` file defines a custom exception class, `OutputValidationException`, used in Hadoop MapReduce's output committer. This class extends `PathIOException` to signal validation errors during the output phase of a MapReduce job. It has two constructors: one for initializing with a Path and error message, and another for including a cause of the exception. The class imports `org.apache.hadoop.fs.Path` and `org.apache.hadoop.fs.PathIOException`, indicating its role within the Hadoop MapReduce output committer. It's part of the package `org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl`, showing its collaboration with other committer-related classes."
+}

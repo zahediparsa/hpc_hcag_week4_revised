@@ -1,0 +1,86 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.CryptoUtils",
+    "path": "CryptoUtils.java",
+    "file_name": "CryptoUtils.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY: This Java code snippet is part of the Apache Hadoop MapReduce framework, specifically the `CryptoUtils` class. Its main purpose is to provide utilities for working with cryptographic streams, particularly for handling encrypted intermediate data such as MapReduce spill files.\n\nCORE LOGIC: The class offers methods to create and initialize an Initialization Vector (IV), determine crypto padding, and wrap Input/Output streams with cryptographic streams if encryption is enabled. It uses the `CryptoCodec` class to handle cryptographic operations, and checks the configuration for encryption settings.\n\nINPUTS/OUTPUTS: The methods take Configuration objects, FSDataInputStreams, FSDataOutputStreams, and regular InputStream/OutputStreams as inputs. They return wrapped FSDataInputStreams or FSDataOutputStreams, or regular InputStream/OutputStreams, depending on whether encryption is enabled.\n\nDEPENDENCIES: The class depends on several Hadoop classes and libraries, including:\n\n- `org.apache.hadoop.mapreduce.Configuration`\n- `org.apache.hadoop.crypto.CryptoCodec`\n- `org.apache.hadoop.fs.FSDataInputStream`\n- `org.apache.hadoop.fs.FSDataOutputStream`\n- `org.apache.hadoop.fs.crypto.CryptoFSDataInputStream`\n- `org.apache.hadoop.fs.crypto.CryptoFSDataOutputStream`\n- `org.apache.hadoop.io.IOUtils`\n- `org.apache.hadoop.mapreduce.security.TokenCache`\n- `org.apache.hadoop.security.UserGroupInformation`\n- `org.apache.hadoop.util.LimitInputStream`\n- `org.slf4j.Logger` and `org.slf4j.LoggerFactory` for logging\n- `org.apache.commons.codec.binary.Base64` for Base64 encoding",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.JobACL",
+    "path": "JobACL.java",
+    "file_name": "JobACL.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY: This Java code defines an enumeration `JobACL` within the `org.apache.hadoop.mapreduce` package, which represents Access Control Lists (ACLs) related to Hadoop MapReduce jobs.\n\nCORE LOGIC: The `JobACL` enum includes two main constants: `VIEW_JOB` and `MODIFY_JOB`. Each represents different levels of access to a MapReduce job (viewing details vs. modifying the job). The constructor initializes the `aclName` field with a string corresponding to the job ACL. The `getAclName()` method returns this name.\n\nINPUTS/OUTPUTS: There are no explicit inputs or outputs in this code snippet. The `JobACL` enum itself serves as a way to categorize different job access levels, providing string identifiers (`aclName`) for these levels.\n\nDEPENDENCIES: The code depends on the `org.apache.hadoop.mapreduce` package and imports `org.apache.hadoop.classification.InterfaceAudience.Private` for annotation. It also references `MRJobConfig.JOB_ACL_VIEW_JOB` and `MRJobConfig.JOB_ACL_MODIFY_JOB`, which are presumably constants defined in the `MRJobConfig` class, indicating the underlying configuration properties for job ACLs.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.counters.Limits",
+    "path": "counters/Limits.java",
+    "file_name": "Limits.java",
+    "directory": "counters",
+    "summary": "KEY FUNCTIONALITY:\nThis Java code defines a class `Limits` that manages and enforces limits on the number of counter groups and counter names in Apache Hadoop MapReduce. It ensures that these limits are not exceeded, throwing a `LimitExceededException` if they are.\n\nCORE LOGIC:\n- The class maintains four static variables: `totalCounters`, `firstViolation`, `isInited`, `GROUP_NAME_MAX`, `COUNTER_NAME_MAX`, `GROUPS_MAX`, and `COUNTERS_MAX`.\n- The `init` method initializes these variables by reading configuration parameters from a `Configuration` object.\n- `getGroupNameMax`, `getCounterNameMax`, `getGroupsMax`, and `getCountersMax` methods return the respective maximum limits.\n- `filterName` is a utility method that truncates a string if it exceeds a given maximum length.\n- `checkCounters` and `checkGroups` methods validate the number of counters and groups, respectively, against their maximum limits, throwing an exception if the limits are exceeded.\n- `incrCounters` increments the `totalCounters` and checks if the new total exceeds the counter limit.\n- `violation` returns the first recorded violation, if any.\n\nINPUTS/OUTPUTS:\n- Inputs: Configuration object (`Configuration conf`) in the `init` method.\n- Counter group and name maximum limits are read from the Configuration object.\n- Outputs: Maximum limits for counter groups (`getGroupNameMax`), counter names (`getCounterNameMax`), counter groups (`getGroupsMax`), and counters (`getCountersMax`).\n- Exceptions: `LimitExceededException` is thrown when the number of counters or groups exceeds the configured limits.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.counters.Limits` depends on:\n  - `org.apache.hadoop.classification.InterfaceAudience`\n  - `org.apache.hadoop.conf.Configuration`\n  - `org.apache.hadoop.mapred.JobConf`\n  - `org.apache.hadoop.mapreduce.MRJobConfig` constants like `COUNTER_GROUP_NAME_MAX_KEY`, `COUNTER_NAME_MAX_KEY`, `COUNTER_GROUPS_MAX_KEY`, and `COUNTERS_MAX_KEY`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.filecache.ClientDistributedCacheManager",
+    "path": "filecache/ClientDistributedCacheManager.java",
+    "file_name": "ClientDistributedCacheManager.java",
+    "directory": "filecache",
+    "summary": "KEY FUNCTIONALITY: The main purpose of this code chunk is to manage the internal configuration of the cache for job submission in Apache Hadoop MapReduce. It determines the timestamps of files to be cached and stores them in the configuration. It also checks the visibility of distributed cache files and archives.\n\nCORE LOGIC: The core logic involves several static methods within the `ClientDistributedCacheManager` class. The `determineTimestampsAndCacheVisibilities` method orchestrates the process of determining file timestamps and cache visibilities. It calls `determineTimestamps` and `determineCacheVisibilities` methods to perform these tasks. \n\nThe `determineTimestamps` method retrieves file status objects for cache files and archives, calculates their sizes and modification times, and stores this information in the job configuration. The `determineCacheVisibilities` method checks if the cache files and archives are publicly accessible based on their file permissions.\n\nThe `isPublic` method checks whether a cache file or archive is visible to all (public) or not by examining file permissions. The `ancestorsHaveExecutePermissions` method ensures that all ancestors of a specified path have execute permissions for others. The `checkPermissionOfOther` method verifies if a given path's 'other' permissions imply the specified file system action.\n\nINPUTS/OUTPUTS: The inputs to these methods are primarily the job configuration (`Configuration job`), URIs of cache files and archives (`URI[] tarchives` and `URI[] tfiles`), and a map of cached file status objects (`Map<URI, FileStatus> statCache`). The outputs are modifications to the job configuration (`Configuration job`) with cache file sizes, timestamps, and visibility information.\n\nDEPENDENCIES: This chunk depends on several classes from the Apache Hadoop framework, including `Configuration`, `FileSystem`, `Path`, `FileStatus`, `JobContextImpl`, `MRJobConfig`, `Credentials`, and `TokenCache`. It also uses `org.apache.hadoop.fs.permission.FsAction` for permission checks and `org.apache.hadoop.mapreduce.filecache.ClientDistributedCacheManager` for its own functionalities. The `URI` and `HashMap` classes from the Java standard library are also used.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.filecache.DistributedCache",
+    "path": "filecache/DistributedCache.java",
+    "file_name": "DistributedCache.java",
+    "directory": "filecache",
+    "summary": "KEY FUNCTIONALITY: This Java code is part of the Apache Hadoop MapReduce framework, specifically the `DistributedCache` class. Its main purpose is to facilitate the efficient distribution of large, read-only files (like text files, archives, jars) needed by MapReduce applications across a Hadoop cluster.\n\nCORE LOGIC: The class provides methods to add files and archives to be cached, retrieve cached files, and manage their timestamps. It also includes functionality to add these files to the task's classpath, allowing them to be accessed by mappers and reducers. The class ensures that files are copied only once per job and are accessible by all nodes in the cluster. It handles symlinks, file permissions, and visibility settings.\n\nINPUTS/OUTPUTS: \n- Inputs: URIs (for files and archives) to be cached, Configuration object (for job settings), JobContext (for job-specific information).\n- Outputs: Localized files and archives are made available in the working directory of tasks, added to the job's classpath, and their timestamps are managed.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.Job`\n- `org.apache.hadoop.mapred.JobConf`\n- `org.apache.hadoop.mapred.JobContextImpl`\n- `org.apache.hadoop.util.GenericOptionsParser`\n- `org.apache.hadoop.fs.FileSystem`\n- `org.apache.hadoop.fs.Path`\n- `org.apache.hadoop.conf.Configuration`\n- `org.apache.hadoop.classification.InterfaceAudience.Private`\n- `java.io.*`\n- `java.util.*`\n- `java.net.URI`\n- `org.apache.hadoop.mapred.Mapper`\n- `org.apache.hadoop.mapred.Reducer`\n- `org.apache.hadoop.mapred.MapReduceBase`\n- `org.apache.hadoop.io.Text`\n- `org.apache.hadoop.io.LongWritable`\n- `org.apache.commons.logging.Log`\n- `org.apache.commons.logging.LogFactory`\n- `org.apache.hadoop.mapreduce.MRJobConfig`\n- `org.apache.hadoop.mapreduce.TaskAttemptContext`\n- `org.apache.hadoop.mapreduce",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.security.TokenCache",
+    "path": "security/TokenCache.java",
+    "file_name": "TokenCache.java",
+    "directory": "security",
+    "summary": "KEY FUNCTIONALITY: This Java code snippet is part of the TokenCache class in Apache Hadoop MapReduce, which provides APIs for transferring secrets (like delegation tokens) from the job client to tasks. It includes methods for obtaining tokens for namenodes, cleaning up token references, merging binary tokens, loading tokens from a file, storing job tokens, and retrieving shuffle and encrypted spill keys.\n\nCORE LOGIC: The core logic revolves around managing and transferring security tokens. It includes methods to:\n- Obtain delegation tokens for namenodes.\n- Clean up token references that are no longer relevant.\n- Merge binary tokens from a file into existing credentials.\n- Load tokens from a file for compatibility with older Hadoop versions.\n- Store job tokens.\n- Retrieve shuffle and encrypted spill keys.\n\nINPUTS/OUTPUTS:\n- INPUTS: Credentials, Path[] (array of paths), Configuration (Hadoop configuration), Text (aliases for secret keys), JobConf (for compatibility with older Hadoop versions).\n- OUTPUTS: Token[] (delegation tokens), Credentials (updated with tokens), byte[] (secret keys).\n\nDEPENDENCIES:\n- org.apache.hadoop.mapreduce.security.TokenCache\n- org.apache.hadoop.classification.InterfaceAudience\n- org.apache.hadoop.classification.InterfaceStability\n- org.apache.hadoop.conf.Configuration\n- org.apache.hadoop.fs.FileSystem\n- org.apache.hadoop.fs.Path\n- org.apache.hadoop.io.Text\n- org.apache.hadoop.mapred.JobConf\n- org.apache.hadoop.mapred.Master\n- org.apache.hadoop.mapreduce.MRJobConfig\n- org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier\n- org.apache.hadoop.security.Credentials\n- org.apache.hadoop.security.UserGroupInformation\n- org.apache.hadoop.security.token.Token\n- org.apache.hadoop.security.token.TokenIdentifier\n- org.slf4j.Logger\n- org.slf4j.LoggerFactory\n- java.io.IOException\n- java.util.HashSet\n- java.util.Set",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.util.MRJobConfUtil",
+    "path": "util/MRJobConfUtil.java",
+    "file_name": "MRJobConfUtil.java",
+    "directory": "util",
+    "summary": "KEY FUNCTIONALITY:\nThis Java class, `MRJobConfUtil`, provides utility methods for configuring MapReduce jobs in Apache Hadoop. It includes methods for redacting sensitive properties in job configurations, calculating task progress report intervals, and setting thresholds for logging task progress.\n\nCORE LOGIC:\n1. The `redact` method iterates over a collection of properties specified in `MRJobConfig.MR_JOB_REDACTED_PROPERTIES` and replaces their values with a redaction placeholder (`REDACTION_REPLACEMENT_VAL`).\n2. The `getTaskProgressReportInterval` method calculates the task progress report interval as a ratio of the task timeout.\n3. The `setTaskLogProgressDeltaThresholds` method loads min delta progress and max wait delta time thresholds from the configuration, ensuring these values are only computed once.\n4. The `convertTaskProgressToFactor` method scales a progress value (between 0.0 and 1.0) to a factor suitable for logging task progress.\n5. The `initEncryptedIntermediateConfigsForTesting` method configures settings for testing encrypted intermediate data, including setting JVM options and enabling encrypted intermediate data.\n6. The `setLocalDirectoriesConfigForTesting` method configures local directories for testing purposes, ensuring generated folders are subdirectories of a specified test root directory.\n\nINPUTS/OUTPUTS:\n- INPUTS: Configuration object (`Configuration conf`) containing MapReduce job settings.\n- OUTPUTS: Modified Configuration object with updated settings, such as redacted properties, task progress report intervals, logging thresholds, and test-specific configurations.\n\nDEPENDENCIES:\n- `org.slf4j.Logger` and `org.slf4j.LoggerFactory` for logging.\n- `java.io.File` and `java.util.concurrent.TimeUnit` for file and time-related operations.\n- `org.apache.hadoop.conf.Configuration` for managing Hadoop configuration.\n- `org.apache.hadoop.fs.Path` for path-related operations.\n- `org.apache.hadoop.mapreduce.MRJobConfig` for MapReduce-specific configuration constants.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

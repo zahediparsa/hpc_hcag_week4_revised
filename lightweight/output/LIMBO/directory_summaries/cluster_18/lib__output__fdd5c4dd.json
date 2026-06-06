@@ -1,0 +1,42 @@
+{
+  "type": "directory",
+  "cluster_id": 18,
+  "directory": "lib/output",
+  "title": "ManifestCommitterFactory in Hadoop MapReduce",
+  "description": "The 'ManifestCommitterFactory' in the 'lib/output/committer/manifest' directory is responsible for creating 'ManifestCommitter' instances. It extends 'PathOutputCommitterFactory' and determines the committer type based on the output path's filesystem schema in 'createOutputCommitter'. This factory ensures job outputs are accessible by managing commits, depending on Hadoop classes such as 'Path', 'PathIOException', 'TaskAttemptContext', 'PathOutputCommitterFactory', and 'ManifestCommitter'. It plays a crucial role in Hadoop MapReduce's output management.",
+  "summary": "TITLE: ManifestCommitterFactory in Hadoop MapReduce\nDESCRIPTION: The 'ManifestCommitterFactory' in the 'lib/output/committer/manifest' directory is responsible for creating 'ManifestCommitter' instances. It extends 'PathOutputCommitterFactory' and determines the committer type based on the output path's filesystem schema in 'createOutputCommitter'. This factory ensures job outputs are accessible by managing commits, depending on Hadoop classes such as 'Path', 'PathIOException', 'TaskAttemptContext', 'PathOutputCommitterFactory', and 'ManifestCommitter'. It plays a crucial role in Hadoop MapReduce's output management.",
+  "number_of_children": 7,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "BindingPathOutputCommitter.java"
+    },
+    {
+      "type": "file",
+      "name": "FileOutputCommitter.java"
+    },
+    {
+      "type": "file",
+      "name": "FileOutputCommitterFactory.java"
+    },
+    {
+      "type": "file",
+      "name": "NamedCommitterFactory.java"
+    },
+    {
+      "type": "file",
+      "name": "PartialFileOutputCommitter.java"
+    },
+    {
+      "type": "file",
+      "name": "PathOutputCommitterFactory.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output/committer"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ManifestCommitterFactory in Hadoop MapReduce\n\nDESCRIPTION:\nThe 'ManifestCommitterFactory' in the 'lib/output/committer/manifest' directory is responsible for creating 'ManifestCommitter' instances. It extends 'PathOutputCommitterFactory' and determines the committer type based on the output path's filesystem schema in 'createOutputCommitter'. This factory ensures job outputs are accessible by managing commits, depending on Hadoop classes such as 'Path', 'PathIOException', 'TaskAttemptContext', 'PathOutputCommitterFactory', and 'ManifestCommitter'. It plays a crucial role in Hadoop MapReduce's output management."
+}

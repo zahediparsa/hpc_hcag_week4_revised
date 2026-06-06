@@ -1,0 +1,22 @@
+{
+  "cluster_id": 71,
+  "title": "Join Operations Management in Hadoop MapReduce",
+  "description": "Hadoop's MapReduce framework facilitates distributed data processing via a coordinator-worker model. The `lib/join` directory, utilizing Java, manages join operations, employing `InnerJoinRecordReader` and `OuterJoinRecordReader` that extend `JoinRecordReader`. These components ensure only matching keys are combined for inner joins, and all elements for full outer joins, leveraging `TupleWritable`. The Strategy pattern enhances maintainability by allowing flexible join type implementation. This architecture ensures scalability, reliability, and performance through distributed processing and fault tolerance. Security is maintained via Hadoop's access control mechanisms. Technologies used include Java, Hadoop MapReduce, and TupleWritable.",
+  "description_word_count": 87,
+  "number_of_files": 2,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Join Operations Management in Hadoop MapReduce\n\nDESCRIPTION: Hadoop's MapReduce framework facilitates distributed data processing via a coordinator-worker model. The `lib/join` directory, utilizing Java, manages join operations, employing `InnerJoinRecordReader` and `OuterJoinRecordReader` that extend `JoinRecordReader`. These components ensure only matching keys are combined for inner joins, and all elements for full outer joins, leveraging `TupleWritable`. The Strategy pattern enhances maintainability by allowing flexible join type implementation. This architecture ensures scalability, reliability, and performance through distributed processing and fault tolerance. Security is maintained via Hadoop's access control mechanisms. Technologies used include Java, Hadoop MapReduce, and TupleWritable.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/join/InnerJoinRecordReader.java",
+    "lib/join/OuterJoinRecordReader.java"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "type": "directory",
+  "cluster_id": 11,
+  "directory": "lib/output/committer/manifest/impl",
+  "title": "Hadoop MapReduce Manifest Committer Directory",
+  "description": "The 'lib/output/committer/manifest/impl' directory in Hadoop MapReduce houses Java classes crucial for the manifest committer functionality. This committer ensures data integrity by creating and managing manifest files during MapReduce jobs. The directory includes classes for auditing integration, defining constants, handling loaded manifest data, providing utility methods, and implementing file system operations. These components collaborate to manage job and task stages, track metrics, handle file system operations, and validate outputs, all while ensuring compatibility with Hadoop's auditing system. The directory employs various architectural patterns, including helper classes, utility classes, and abstract base classes, to achieve its responsibilities efficiently and maintainably.",
+  "summary": "TITLE: Hadoop MapReduce Manifest Committer Directory\nDESCRIPTION: The 'lib/output/committer/manifest/impl' directory in Hadoop MapReduce houses Java classes crucial for the manifest committer functionality. This committer ensures data integrity by creating and managing manifest files during MapReduce jobs. The directory includes classes for auditing integration, defining constants, handling loaded manifest data, providing utility methods, and implementing file system operations. These components collaborate to manage job and task stages, track metrics, handle file system operations, and validate outputs, all while ensuring compatibility with Hadoop's auditing system. The directory employs various architectural patterns, including helper classes, utility classes, and abstract base classes, to achieve its responsibilities efficiently and maintainably.",
+  "number_of_children": 7,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AuditingIntegration.java"
+    },
+    {
+      "type": "file",
+      "name": "InternalConstants.java"
+    },
+    {
+      "type": "file",
+      "name": "LoadedManifestData.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestCommitterSupport.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestStoreOperations.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestStoreOperationsThroughFileSystem.java"
+    },
+    {
+      "type": "file",
+      "name": "OutputValidationException.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Manifest Committer Directory\n\nDESCRIPTION:\nThe 'lib/output/committer/manifest/impl' directory in Hadoop MapReduce houses Java classes crucial for the manifest committer functionality. This committer ensures data integrity by creating and managing manifest files during MapReduce jobs. The directory includes classes for auditing integration, defining constants, handling loaded manifest data, providing utility methods, and implementing file system operations. These components collaborate to manage job and task stages, track metrics, handle file system operations, and validate outputs, all while ensuring compatibility with Hadoop's auditing system. The directory employs various architectural patterns, including helper classes, utility classes, and abstract base classes, to achieve its responsibilities efficiently and maintainably."
+}

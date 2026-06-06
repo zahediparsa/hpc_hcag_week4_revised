@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 66,
+  "directory": "lib/jobcontrol",
+  "title": "Job Control Management",
+  "description": "The 'lib/jobcontrol' directory houses the 'JobControl.java' file, which is pivotal for managing MapReduce jobs and their dependencies within a Hadoop cluster. The JobControl class within this file maintains job states, handles job submission, and monitors job execution. It uses lists to categorize jobs based on their states and a unique ID generator for new jobs. The class also implements a topological sorting algorithm to detect circular job dependencies. It interacts with Hadoop's job management classes and utilizes standard Java collections and threading for its operations. The class provides job state information through various getter methods, facilitating external access to job lists.",
+  "summary": "TITLE: Job Control Management\nDESCRIPTION: The 'lib/jobcontrol' directory houses the 'JobControl.java' file, which is pivotal for managing MapReduce jobs and their dependencies within a Hadoop cluster. The JobControl class within this file maintains job states, handles job submission, and monitors job execution. It uses lists to categorize jobs based on their states and a unique ID generator for new jobs. The class also implements a topological sorting algorithm to detect circular job dependencies. It interacts with Hadoop's job management classes and utilizes standard Java collections and threading for its operations. The class provides job state information through various getter methods, facilitating external access to job lists.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobControl.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job Control Management\n\nDESCRIPTION: \nThe 'lib/jobcontrol' directory houses the 'JobControl.java' file, which is pivotal for managing MapReduce jobs and their dependencies within a Hadoop cluster. The JobControl class within this file maintains job states, handles job submission, and monitors job execution. It uses lists to categorize jobs based on their states and a unique ID generator for new jobs. The class also implements a topological sorting algorithm to detect circular job dependencies. It interacts with Hadoop's job management classes and utilizes standard Java collections and threading for its operations. The class provides job state information through various getter methods, facilitating external access to job lists."
+}

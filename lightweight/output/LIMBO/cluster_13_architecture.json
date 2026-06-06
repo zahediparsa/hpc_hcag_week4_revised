@@ -1,0 +1,21 @@
+{
+  "cluster_id": 13,
+  "title": "MapReduce Cluster Architecture",
+  "description": "This Hadoop MapReduce cluster architecture comprises Job Queue Management (QueueInfo.java) for scheduling jobs, and numerous nodes functioning as TaskTrackers and a JobTracker. The JobTracker coordinates tasks, monitors progress, and manages resource allocation, while TaskTrackers execute map and reduce tasks. MapReduce jobs are submitted to the JobTracker, which assigns tasks to available TaskTrackers. QueueInfo.java manages job queues, ensuring efficient distribution and execution. This architecture ensures scalability, maintainability, and reliability through distributed processing and fault tolerance. Technologies used include Java, Hadoop's Writable interface, and standard Java libraries. The MapReduce pattern is evident in job scheduling and execution, with the JobTracker acting as a coordinator and TaskTrackers as workers. Security is maintained through Hadoop's access control mechanisms.",
+  "description_word_count": 116,
+  "number_of_files": 1,
+  "number_of_directories": 1,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Cluster Architecture\n\nDESCRIPTION: This Hadoop MapReduce cluster architecture comprises Job Queue Management (QueueInfo.java) for scheduling jobs, and numerous nodes functioning as TaskTrackers and a JobTracker. The JobTracker coordinates tasks, monitors progress, and manages resource allocation, while TaskTrackers execute map and reduce tasks. MapReduce jobs are submitted to the JobTracker, which assigns tasks to available TaskTrackers. QueueInfo.java manages job queues, ensuring efficient distribution and execution. This architecture ensures scalability, maintainability, and reliability through distributed processing and fault tolerance. Technologies used include Java, Hadoop's Writable interface, and standard Java libraries. The MapReduce pattern is evident in job scheduling and execution, with the JobTracker acting as a coordinator and TaskTrackers as workers. Security is maintained through Hadoop's access control mechanisms.",
+  "algorithm": "LIMBO",
+  "files": [
+    "QueueInfo.java"
+  ]
+}

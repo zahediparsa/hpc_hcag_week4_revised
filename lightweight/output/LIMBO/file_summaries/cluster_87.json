@@ -1,0 +1,50 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 87,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.KeyFieldBasedComparator",
+    "path": "lib/partition/KeyFieldBasedComparator.java",
+    "file_name": "KeyFieldBasedComparator.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\nThis Java code defines a class `KeyFieldBasedComparator` that extends `WritableComparator` and implements `Configurable`. It is designed to provide a subset of Unix/GNU Sort features for sorting keys in Apache Hadoop MapReduce jobs. The supported features include numerical sorting, reverse sorting, and specifying key fields with character positions.\n\nCORE LOGIC:\n1. The class uses a `KeyFieldHelper` to parse key specifications and extract relevant parts of the key for comparison.\n2. The `compare` method is overridden to implement custom key comparison logic based on the parsed key specifications.\n3. The `compareByteSequence` method compares byte sequences based on whether the keys are numeric or not.\n4. The `numericalCompare` method handles numerical comparison, taking into account negative numbers, decimal points, and varying mantissa lengths.\n5. The `setKeyFieldComparatorOptions` and `getKeyFieldComparatorOption` static methods allow setting and retrieving key specification options for the comparator.\n\nINPUTS/OUTPUTS:\n- INPUTS: The class takes byte arrays (`b1` and `b2`), start indices (`s1`, `s2`), lengths (`l1`, `l2`), and key specifications parsed by `KeyFieldHelper`.\n- OUTPUTS: The `compare` method returns an integer indicating the comparison result (-1, 0, or 1), which is used by Hadoop's partitioning mechanism to determine key distribution.\n\nDEPENDENCIES:\n- Imported classes: `java.util.List`, `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`, `org.apache.hadoop.conf.Configurable`, `org.apache.hadoop.conf.Configuration`, `org.apache.hadoop.io.WritableComparator`, `org.apache.hadoop.io.WritableUtils`, `org.apache.hadoop.io.Text`, `org.apache.hadoop.mapreduce.Job`, `org.apache.hadoop.mapreduce.JobContext`, `org.apache.hadoop.mapreduce.lib.partition.KeyFieldHelper.KeyDescription`, `org.apache.hadoop.mapreduce.MRJobConfig`.\n- Collaborator classes: `KeyFieldHelper`, `WritableComparator`, `Configuration`, `Text`, `Job`, `JobContext`, `MRJobConfig`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 87,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.KeyFieldBasedPartitioner",
+    "path": "lib/partition/KeyFieldBasedPartitioner.java",
+    "file_name": "KeyFieldBasedPartitioner.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY: This Java class, `KeyFieldBasedPartitioner`, is a custom partitioner for Apache Hadoop MapReduce that partitions keys based on specific fields within the key. It allows users to specify which fields and characters within those fields to use for partitioning.\n\nCORE LOGIC: The core logic of this class involves parsing a user-defined key specification string to determine which parts of the key to use for hashing. It uses a helper class, `KeyFieldHelper`, to manage the parsing and extraction of key fields. The `getPartition` method calculates a hash based on the specified key fields and then uses this hash to determine the partition number.\n\nINPUTS/OUTPUTS: The class takes a key-value pair (`K2 key, V2 value`) and the number of reduce tasks (`int numReduceTasks`) as inputs. It outputs an integer representing the partition number (`int`). The key specification is set either via the Hadoop configuration or directly via the `setKeyFieldPartitionerOptions` method.\n\nDEPENDENCIES: This class depends on several Hadoop classes and interfaces:\n- `org.apache.hadoop.mapreduce.Partitioner<K2, V2>`: The superclass for custom partitioners.\n- `org.apache.hadoop.conf.Configurable`: For configuration management.\n- `org.apache.hadoop.mapreduce.Job`: For accessing job-level configuration.\n- `org.apache.hadoop.mapreduce.JobContext`: For accessing job context.\n- `org.apache.hadoop.mapreduce.MRJobConfig`: For accessing MapReduce-specific configuration keys.\n- `org.apache.hadoop.classification`: For class stability and audience annotations.\n- `org.slf4j`: For logging.\n- `org.apache.hadoop.mapreduce.lib.partition.KeyFieldHelper`: For parsing key specifications.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 87,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.KeyFieldHelper",
+    "path": "lib/partition/KeyFieldHelper.java",
+    "file_name": "KeyFieldHelper.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class, `KeyFieldHelper`, is to parse and manage key specifications for use in `KeyFieldBasedComparator` and `KeyFieldBasedPartitioner` in Apache Hadoop MapReduce. It provides methods to set key field separators, parse key specifications, and extract word lengths from a byte array.\n\nCORE LOGIC:\n- The class uses a nested `KeyDescription` class to encapsulate the details of each key specification, including field and character positions, numeric comparison, and reverse ordering.\n- The `parseOption` method processes command-line options to set global comparison options and individual key specifications.\n- The `parseKey` method parses individual key specifications, validating the format and populating a `KeyDescription` object.\n- The `getWordLengths` method calculates the lengths of words in a key based on a specified separator.\n- The `getStartOffset` and `getEndOffset` methods determine the start and end positions of a key within a byte array based on the parsed key specifications.\n\nINPUTS/OUTPUTS:\n- Inputs: The class takes a byte array representing the key, start and end positions within this array, and an array of word lengths.\n- Outputs: It returns an array of integers representing word lengths, start and end offsets for key extraction, and a list of `KeyDescription` objects.\n\nDEPENDENCIES:\n- The class depends on `org.apache.hadoop.util.UTF8ByteArrayUtils` for byte array operations.\n- It also depends on standard Java classes like `List`, `ArrayList`, `StringTokenizer`, and `String`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 87,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.TotalOrderPartitioner",
+    "path": "lib/partition/TotalOrderPartitioner.java",
+    "file_name": "TotalOrderPartitioner.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a `TotalOrderPartitioner` class that extends `Partitioner<K,V>` and implements `Configurable`. This class is designed to read in partition file and build indexing data structures for total order partitioning in Apache Hadoop MapReduce.\n\nCORE LOGIC:\nThe core logic involves reading a sorted SequenceFile containing partition keys, and constructing a data structure (either a trie or a binary search tree) based on these keys. The partitioner uses a `Node` interface to locate a key within the partition keyset. Depending on the key type and configuration settings, it builds either a trie (for `BinaryComparable` keys when `naturalOrder` is enabled) or a binary search tree (for other key types). The `buildTrie` method recursively constructs the trie, while `buildTrieRec` handles the depth-first traversal and node creation.\n\nINPUTS/OUTPUTS:\n- INPUTS: Configuration object (`conf`), Path to the partition file (`p`), Map output key class (`keyClass`), Job configuration (`job`).\n- OUTPUTS: An array of partition keys (`K[] splitPoints`) read from the SequenceFile, and a `Node<T>` object (`partitions`) representing the constructed data structure for partitioning.\n\nDEPENDENCIES:\n- Imported classes: `java.io.IOException`, `java.lang.reflect.Array`, `java.util.ArrayList`, `java.util.Arrays`, `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`, `org.apache.hadoop.conf.Configurable`, `org.apache.hadoop.conf.Configuration`, `org.apache.hadoop.fs.FileSystem`, `org.apache.hadoop.fs.Path`, `org.apache.hadoop.io.BinaryComparable`, `org.apache.hadoop.io.IOUtils`, `org.apache.hadoop.io.RawComparator`, `org.apache.hadoop.mapreduce.Job`, `org.apache.hadoop.mapreduce.Partitioner`, `org.apache.hadoop.util.ReflectionUtils`, `org.slf4j.Logger`, `org.slf4j.LoggerFactory`.\n- Collaborator classes: `SequenceFile.Reader`, `SequenceFile.Writer`, `BinarySearchNode`, `TrieNode`, `InnerTrieNode`, `",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

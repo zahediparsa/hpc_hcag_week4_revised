@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 14,
+  "directory": "lib",
+  "title": "Total Order Partitioner and Input Sampler",
+  "description": "The 'lib/partition' directory in Hadoop MapReduce architecture manages data partitioning and sampling. It includes 'InputSampler.java' for selecting input data keys using strategies like Split, Random, Interval. 'TotalOrderPartitioner.java' reads sorted SequenceFiles to create indexing structures for total order partitioning, optimizing data distribution across reducers and enhancing MapReduce job performance. This directory implements a specialized data handling and partitioning pattern, crucial for Hadoop's distributed processing.",
+  "summary": "TITLE: Total Order Partitioner and Input Sampler\nDESCRIPTION: The 'lib/partition' directory in Hadoop MapReduce architecture manages data partitioning and sampling. It includes 'InputSampler.java' for selecting input data keys using strategies like Split, Random, Interval. 'TotalOrderPartitioner.java' reads sorted SequenceFiles to create indexing structures for total order partitioning, optimizing data distribution across reducers and enhancing MapReduce job performance. This directory implements a specialized data handling and partitioning pattern, crucial for Hadoop's distributed processing.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/partition"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Total Order Partitioner and Input Sampler\n\nDESCRIPTION: The 'lib/partition' directory in Hadoop MapReduce architecture manages data partitioning and sampling. It includes 'InputSampler.java' for selecting input data keys using strategies like Split, Random, Interval. 'TotalOrderPartitioner.java' reads sorted SequenceFiles to create indexing structures for total order partitioning, optimizing data distribution across reducers and enhancing MapReduce job performance. This directory implements a specialized data handling and partitioning pattern, crucial for Hadoop's distributed processing."
+}

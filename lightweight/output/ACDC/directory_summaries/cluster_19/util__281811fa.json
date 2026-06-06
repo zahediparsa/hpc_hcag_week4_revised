@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 19,
+  "directory": "util",
+  "title": "CountersString Utility",
+  "description": "The 'CountersStrings.java' file in Hadoop MapReduce's 'util' directory provides utility methods for converting counter objects into compact string representations and vice versa. This functionality is primarily intended for older Hadoop versions (pre-0.21) and is marked for potential deprecation due to the introduction of JSON in newer versions. The core logic revolves around methods that convert 'Counter' and 'CounterGroupBase' objects into compact strings, escaping special characters for correct interpretation. Conversely, it parses compact strings back into counter objects. The class depends on several Hadoop core classes for counter management, string handling, and integer writables.",
+  "summary": "TITLE: CountersString Utility\nDESCRIPTION: The 'CountersStrings.java' file in Hadoop MapReduce's 'util' directory provides utility methods for converting counter objects into compact string representations and vice versa. This functionality is primarily intended for older Hadoop versions (pre-0.21) and is marked for potential deprecation due to the introduction of JSON in newer versions. The core logic revolves around methods that convert 'Counter' and 'CounterGroupBase' objects into compact strings, escaping special characters for correct interpretation. Conversely, it parses compact strings back into counter objects. The class depends on several Hadoop core classes for counter management, string handling, and integer writables.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CountersStrings.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: CountersString Utility\n\nDESCRIPTION:\nThe 'CountersStrings.java' file in Hadoop MapReduce's 'util' directory provides utility methods for converting counter objects into compact string representations and vice versa. This functionality is primarily intended for older Hadoop versions (pre-0.21) and is marked for potential deprecation due to the introduction of JSON in newer versions. The core logic revolves around methods that convert 'Counter' and 'CounterGroupBase' objects into compact strings, escaping special characters for correct interpretation. Conversely, it parses compact strings back into counter objects. The class depends on several Hadoop core classes for counter management, string handling, and integer writables."
+}

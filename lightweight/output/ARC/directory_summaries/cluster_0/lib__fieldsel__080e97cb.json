@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "lib/fieldsel",
+  "title": "Field Selection in Hadoop MapReduce",
+  "description": "The 'lib/fieldsel' directory in Hadoop MapReduce contains classes for performing field selection operations similar to Unix 'cut' command. The 'FieldSelectionHelper.java' class interprets field specifications for both map and reduce outputs. 'FieldSelectionMapper.java' defines a custom Mapper that uses 'FieldSelectionHelper' to select fields for map output. 'FieldSelectionReducer.java' defines a Reducer that selects fields for reduce output keys and values. All these components collaborate to enable users to specify which fields from input data should be used as keys and values in the MapReduce process, enhancing data processing flexibility. The directory employs a layered architectural pattern, with 'FieldSelectionHelper' acting as a utility layer, and 'Mapper' and 'Reducer' implementing the core data processing logic.",
+  "summary": "TITLE: Field Selection in Hadoop MapReduce\nDESCRIPTION: The 'lib/fieldsel' directory in Hadoop MapReduce contains classes for performing field selection operations similar to Unix 'cut' command. The 'FieldSelectionHelper.java' class interprets field specifications for both map and reduce outputs. 'FieldSelectionMapper.java' defines a custom Mapper that uses 'FieldSelectionHelper' to select fields for map output. 'FieldSelectionReducer.java' defines a Reducer that selects fields for reduce output keys and values. All these components collaborate to enable users to specify which fields from input data should be used as keys and values in the MapReduce process, enhancing data processing flexibility. The directory employs a layered architectural pattern, with 'FieldSelectionHelper' acting as a utility layer, and 'Mapper' and 'Reducer' implementing the core data processing logic.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "FieldSelectionHelper.java"
+    },
+    {
+      "type": "file",
+      "name": "FieldSelectionMapper.java"
+    },
+    {
+      "type": "file",
+      "name": "FieldSelectionReducer.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Field Selection in Hadoop MapReduce\n\nDESCRIPTION:\nThe 'lib/fieldsel' directory in Hadoop MapReduce contains classes for performing field selection operations similar to Unix 'cut' command. The 'FieldSelectionHelper.java' class interprets field specifications for both map and reduce outputs. 'FieldSelectionMapper.java' defines a custom Mapper that uses 'FieldSelectionHelper' to select fields for map output. 'FieldSelectionReducer.java' defines a Reducer that selects fields for reduce output keys and values. All these components collaborate to enable users to specify which fields from input data should be used as keys and values in the MapReduce process, enhancing data processing flexibility. The directory employs a layered architectural pattern, with 'FieldSelectionHelper' acting as a utility layer, and 'Mapper' and 'Reducer' implementing the core data processing logic."
+}

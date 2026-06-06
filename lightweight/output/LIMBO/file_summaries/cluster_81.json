@@ -1,0 +1,110 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 81,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.InternalConstants",
+    "path": "lib/output/committer/manifest/impl/InternalConstants.java",
+    "file_name": "InternalConstants.java",
+    "directory": "lib/output/committer/manifest/impl",
+    "summary": "KEY FUNCTIONALITY: This Java code snippet defines constants used within the Hadoop MapReduce framework, specifically for the manifest committer. These constants include durations, counters, error strings, naming formats, unsupported filesystem schemas, and a save sleep interval.\n\nCORE LOGIC: The core logic in this snippet is the declaration and initialization of static final variables. These variables are categorized into three groups: DURATION_STATISTICS, COUNTER_STATISTICS, and other miscellaneous constants. DURATION_STATISTICS represent various job and task stages along with lower-level filesystem operations. COUNTER_STATISTICS are used for tracking committer-related metrics.\n\nINPUTS/OUTPUTS: This chunk does not directly handle any inputs or outputs. Instead, it declares constants that are used throughout the MapReduce framework, particularly in the manifest committer. These constants are used to categorize and track different stages of job and task execution, as well as to identify unsupported filesystem schemas and define behavior for error conditions.\n\nDEPENDENCIES: The key dependencies in this chunk are imports from the Java standard library and the Hadoop API. Specifically, it imports classes from `java.util.Set`, `org.apache.hadoop.thirdparty.com.google.common.collect.ImmutableSet`, and various classes from the `org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl` package along with constants from `org.apache.hadoop.fs.statistics`. Additionally, it references static import statements from `org.apache.hadoop.fs.statistics.StoreStatisticNames` and `org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterStatisticNames`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 81,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.CommitJobStage",
+    "path": "lib/output/committer/manifest/stages/CommitJobStage.java",
+    "file_name": "CommitJobStage.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define the `CommitJobStage` class, which is responsible for committing a job in Apache Hadoop MapReduce. This stage handles several sub-tasks, including loading manifests, creating output directories, renaming files, saving the _SUCCESS marker, and validating the output.\n\nCORE LOGIC:\n1. The `executeStage` method orchestrates the commit process.\n2. It first loads the manifests using the `LoadManifestsStage`.\n3. Then, it prepares the destination directories using `CreateOutputDirectoriesStage`.\n4. Files are renamed using the `RenameFilesStage`.\n5. If the `createMarker` flag is set, it saves the _SUCCESS marker using `SaveSuccessFileStage`.\n6. It optionally validates the output using `ValidateRenamedFilesStage`.\n7. Finally, it performs cleanup using `CleanupJobStage`.\n\nThroughout the process, it aggregates and updates IO statistics using `IOStatisticsStore`.\n\nINPUTS/OUTPUTS:\n- INPUTS:\n  - `createMarker`: boolean, indicating whether to create the _SUCCESS marker.\n  - `validateOutput`: boolean, indicating whether to perform output validation.\n  - `manifestRenameDir`: optional string, directory to rename task manifests to.\n  - `cleanupArguments`: CleanupJobStage arguments.\n\n- OUTPUTS:\n  - `Result` object containing:\n    - `successPath`: Path of the _SUCCESS file, or null if not saved.\n    - `jobSuccessData`: ManifestSuccessData object containing information about the commit.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.AbstractJobOrTaskStage`\n- `org.apache.hadoop.fs.Path`\n- `org.apache.hadoop.fs.statistics.IOStatisticsSnapshot`\n- `org.apache.hadoop.fs.statistics.impl.IOStatisticsStore`\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.ManifestSuccessData`\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.LoadedManifestData`\n- `org.apache.commons.lang3.tuple.Triple`\n- `javax.annotation.Nullable`\n- `java.io.File`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 81,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.CommitTaskStage",
+    "path": "lib/output/committer/manifest/stages/CommitTaskStage.java",
+    "file_name": "CommitTaskStage.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a stage in the MapReduce job for committing a task attempt. This involves scanning the task attempt directories and saving the manifest, including a snapshot of the IOStatistics.\n\nCORE LOGIC:\nThe core logic revolves around the `executeStage` method, which performs the task commit process. It first executes a `TaskAttemptScanDirectoryStage` to scan the directories, then saves the manifest using a `SaveTaskManifestStage`. A snapshot of the IOStatistics is included in the manifest, and the execution duration is added to the statistics.\n\nINPUTS/OUTPUTS:\nThe stage takes no explicit inputs (`Void` arguments), but it uses internal data structures and configurations (`getStageConfig()` and `getIOStatistics()`) to perform its tasks. The output is a `Result` object containing the path where the manifest was saved and the manifest itself (`TaskManifest`).\n\nDEPENDENCIES:\nThe code chunk depends on several classes from the Apache Hadoop library, including:\n- `org.slf4j.Logger` and `org.slf4j.LoggerFactory` for logging\n- `org.apache.commons.lang3.tuple.Pair` for data structures\n- `org.apache.hadoop.fs.Path` for file paths\n- `org.apache.hadoop.fs.statistics.IOStatisticsSnapshot` for IO statistics\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.TaskManifest` for the task manifest\n- Static imports from `org.apache.hadoop.fs.statistics.IOStatisticsSupport` and `org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterStatisticNames` for IO statistics support and manifest statistic names.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 81,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.CreateOutputDirectoriesStage",
+    "path": "lib/output/committer/manifest/stages/CreateOutputDirectoriesStage.java",
+    "file_name": "CreateOutputDirectoriesStage.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a class `CreateOutputDirectoriesStage` that prepares the destination directory tree for Hadoop MapReduce jobs. It ensures directories are created efficiently, in parallel, and handles file deletions where necessary.\n\nCORE LOGIC:\n1. The class extends `AbstractJobOrTaskStage` and overrides the `executeStage` method.\n2. It uses a `ConcurrentHashMap` called `dirMap` to track the state of directories (created, file deleted, etc.).\n3. The `createAllDirectories` method sorts and processes directories in parallel, creating new directories and deleting files where required.\n4. It uses `TaskPool` for parallel execution of directory creation tasks.\n5. The `maybeCreateOneDirectory` method attempts to create directories, handling various scenarios like existing directories, file existence, and multiple attempts.\n6. The class maintains a list of `createdDirectories` and a `dirMap` to track directory creation status.\n\nINPUTS/OUTPUTS:\n- INPUTS: A collection of `DirEntry` objects, representing directories to be created or files to be deleted.\n- OUTPUTS: A `Result` object containing a set of `createdDirectories` and a map (`dirMap`) detailing the state of each directory.\n\nDEPENDENCIES:\n- Imported classes: `java.io.IOException`, `java.time.Duration`, `java.util.*`, `java.util.concurrent.*`, `org.slf4j.Logger`, `org.slf4j.LoggerFactory`, `org.apache.hadoop.fs.*`, `org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.*`, `org.apache.hadoop.util.functional.TaskPool`.\n- Collaborator classes: `StageConfig`, `DirEntry`, `EntryStatus`, `AbstractJobOrTaskStage`, `PathIOException`, `IOStatistics`, `IOProcessors`.\n- Static imports: `org.apache.hadoop.fs.statistics.StoreStatisticNames`, `org.apache.hadoop.fs.statistics.impl.IOStatisticsBinding`, `org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterStatisticNames`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 81,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.LoadManifestsStage",
+    "path": "lib/output/committer/manifest/stages/LoadManifestsStage.java",
+    "file_name": "LoadManifestsStage.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a stage in the Hadoop MapReduce framework for loading all task manifests from the job attempt directory. This stage is invoked during the job commit process and operates in parallel to load manifests efficiently.\n\nCORE LOGIC:\nThe core logic revolves around the `executeStage` method, which orchestrates the loading of task manifests. It initializes an `EntryFileIO` object to handle writing manifest data, and then proceeds to list all manifest files in the job attempt directory. The `processAllManifests` method uses a `RemoteIterator` to iterate through the manifest files, processing each one in the `processOneManifest` method. This method fetches the task manifest, updates the summary information, and enqueues the files to be committed. The `coalesceDirectories` method ensures that duplicate directories are not added, reducing redundancy.\n\nINPUTS/OUTPUTS:\n- INPUTS: The primary input is the job attempt directory (`manifestDir`), which contains task manifest files.\n- OUTPUTS: The stage outputs a `Result` object containing summary information (`SummaryInfo`) about the loaded manifests and a `LoadedManifestData` object with all loaded manifest data.\n\nDEPENDENCIES:\n- Imported classes: `java.io.File`, `java.io.IOException`, `java.util.ArrayList`, `java.util.List`, `java.util.Map`, `java.util.concurrent.ConcurrentHashMap`, `java.util.concurrent.atomic.AtomicLong`, `java.util.stream.Collectors`, `org.slf4j.Logger`, `org.slf4j.LoggerFactory`, `org.apache.hadoop.classification.VisibleForTesting`, `org.apache.hadoop.fs.FileStatus`, `org.apache.hadoop.fs.Path`, `org.apache.hadoop.fs.PathIOException`, `org.apache.hadoop.fs.RemoteIterator`, `org.apache.hadoop.fs.statistics.IOStatisticsSnapshot`, `org.apache.hadoop.fs.statistics.IOStatisticsSource`, `org.apache.hadoop.fs.statistics.impl.IOStatisticsStore`, `org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.DirEntry`, `org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.TaskManifest`,",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 81,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.RenameFilesStage",
+    "path": "lib/output/committer/manifest/stages/RenameFilesStage.java",
+    "file_name": "RenameFilesStage.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a stage in the Hadoop MapReduce framework that renames committed files. This stage, called `RenameFilesStage`, extends `AbstractJobOrTaskStage` and is responsible for renaming files based on the data from a `LoadedManifestData` object and a set of created directories.\n\nCORE LOGIC:\nThe core logic involves iterating over the entries in the entry file referenced in the `LoadedManifestData`. For each entry, it calls the `commitOneFile` method, which performs the actual renaming operation. The renaming operation considers whether to delete the destination file based on job configuration and if the parent directory was created. After renaming, it updates the list of committed files and the total file size.\n\nINPUTS/OUTPUTS:\n- INPUTS:\n  - `LoadedManifestData` from the `LoadManifestsStage`\n  - Set of directories created by the `CreateOutputDirectoriesStage`\n- OUTPUTS:\n  - A `ManifestSuccessData` object summarizing the output, containing a subset of the destination files' paths\n\nDEPENDENCIES:\n- Imported classes:\n  - `java.io.IOException`\n  - `java.util.ArrayList`\n  - `java.util.List`\n  - `java.util.Set`\n  - `java.util.stream.Collectors`\n  - `org.slf4j.Logger`\n  - `org.slf4j.LoggerFactory`\n  - `org.apache.commons.lang3.tuple.Triple`\n  - `org.apache.hadoop.fs.Path`\n  - `org.apache.hadoop.io.SequenceFile`\n  - `org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.FileEntry`\n  - `org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.LoadedManifestData`\n  - `org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.EntryFileIO`\n  - `org.apache.hadoop.util.functional.TaskPool`\n- Collaborator classes:\n  - `AbstractJobOrTaskStage`\n  - `StageConfig`\n  - `ManifestCommitterStatisticNames`\n  - `ManifestCommitterSupport`\n  - `createManifestOutcome`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 81,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.SaveTaskManifestStage",
+    "path": "lib/output/committer/manifest/stages/SaveTaskManifestStage.java",
+    "file_name": "SaveTaskManifestStage.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a class `SaveTaskManifestStage` that extends `AbstractJobOrTaskStage`. This class is responsible for saving a task manifest to the job attempt directory, using the task ID for the name of the final file. It ensures atomic writes by first writing to a temporary file and then renaming it. The class also handles retries in case of rename failures to ensure data integrity.\n\nCORE LOGIC:\nThe core logic revolves around the `executeStage` method, which generates and saves a manifest to a temporary file and renames it to the final manifest destination. This method is called on each retried attempt. It uses the `saveManifest` method to handle the actual saving process, which logs the operation, saves the manifest to a temporary file, and then renames it to the final manifest file. The renaming process is designed to overwrite any existing file at the final path, ensuring atomic writes.\n\nINPUTS/OUTPUTS:\nThe class takes a `Supplier<TaskManifest>` as input, which is used to generate the task manifest. The output is a `Pair<Path, TaskManifest>`, where the first element of the pair is the path to the final manifest file, and the second element is the generated task manifest.\n\nDEPENDENCIES:\nThe code chunk depends on several classes and packages:\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages` package\n- `org.apache.hadoop.fs.Path` class for file paths\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.TaskManifest` class for the task manifest\n- `org.apache.commons.lang3.tuple.Pair` class for the output pair\n- `org.slf4j.Logger` and `org.slf4j.LoggerFactory` for logging\n- `static imports` from `org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterStatisticNames` and `org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.ManifestCommitterSupport` for constants and helper methods.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 81,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.TaskAttemptScanDirectoryStage",
+    "path": "lib/output/committer/manifest/stages/TaskAttemptScanDirectoryStage.java",
+    "file_name": "TaskAttemptScanDirectoryStage.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a stage for scanning a directory tree and building a task manifest. This stage is executed by the task committer in Apache Hadoop MapReduce.\n\nCORE LOGIC:\nThe core logic involves the `executeStage` method, which builds the task manifest by scanning the directory tree starting from the task attempt directory. It uses the `scanDirectoryTree` method to recursively traverse the directory, adding files to commit and directories to create in the manifest. The `scanDirectoryTree` method processes the directory listing, handling files and subdirectories, and recursively scanning subdirectories. It also gathers statistics about the task output, such as directory count, depth, file count, and file size.\n\nINPUTS/OUTPUTS:\nThe main input is the `taskAttemptDir`, which is the directory to be scanned. The output is a `TaskManifest` object containing information about files to commit and directories to create.\n\nDEPENDENCIES:\nThe code chunk depends on several classes from the Apache Hadoop MapReduce library, including:\n\n- `org.apache.hadoop.fs.FileStatus`\n- `org.apache.hadoop.fs.Path`\n- `org.apache.hadoop.fs.RemoteIterator`\n- `org.apache.hadoop.fs.statistics.impl.IOStatisticsStore`\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.DirEntry`\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.EntryStatus`\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.FileEntry`\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.TaskManifest`\n- `org.apache.hadoop.util.DurationInfo`\n\nAdditionally, it uses classes from the SLF4J logging library (`org.slf4j.Logger` and `org.slf4j.LoggerFactory`) and Java standard library (`java.io.IOException`, `java.util.ArrayList`, `java.util.List`, `java.util.LongSummaryStatistics`).",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 81,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.ValidateRenamedFilesStage",
+    "path": "lib/output/committer/manifest/stages/ValidateRenamedFilesStage.java",
+    "file_name": "ValidateRenamedFilesStage.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a stage in the MapReduce job that validates all files by scanning the manifests and verifying every file in every manifest is of the given size. It raises an OutputValidationException on a validation failure.\n\nCORE LOGIC:\nThe core logic involves reading a manifest file (represented as a SequenceFile) and validating each file entry. For each entry, it checks if the corresponding file exists in the destination directory, verifies its size, and optionally checks its ETag if the operation preserves ETags through renames. If any discrepancy is found, it throws an OutputValidationException.\n\nINPUTS/OUTPUTS:\n- INPUTS: The stage takes a Path object (entryFile) representing the manifest file to validate.\n- OUTPUTS: It returns a List<FileEntry> of all files committed, which is built up within the class as valid files are found.\n\nDEPENDENCIES:\n- org.apache.hadoop.fs.FileStatus\n- org.apache.hadoop.fs.Path\n- org.apache.hadoop.io.SequenceFile\n- org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.FileEntry\n- org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.EntryFileIO\n- org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.ManifestCommitterSupport\n- org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.OutputValidationException\n- org.apache.hadoop.util.functional.TaskPool\n- org.slf4j.Logger\n- org.slf4j.LoggerFactory\n- org.apache.commons.lang3.StringUtils\n- org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterStatisticNames\n\nAdditionally, it depends on methods and properties from the parent class AbstractJobOrTaskStage and the constructor parameters from StageConfig.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

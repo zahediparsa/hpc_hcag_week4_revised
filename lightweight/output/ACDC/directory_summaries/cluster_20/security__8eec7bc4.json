@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 20,
+  "directory": "security",
+  "title": "Spill File Management in Hadoop MapReduce Security",
+  "description": "The 'security' directory in Hadoop MapReduce's architecture focuses on secure spill file management during the MapReduce process. It includes classes like IntermediateEncryptedStream.java, SpillCallBackInjector.java, and SpillCallBackPathsFinder.java. IntermediateEncryptedStream.java handles encryption of input/output streams and spill callbacks. SpillCallBackInjector.java, following a singleton pattern, prepares interfaces for potential future use of callback functions in the spill process. SpillCallBackPathsFinder.java manages spilled files, distinguishing between encrypted and non-encrypted ones, and handles invalid access attempts. These components collaborate to ensure secure spill file operations in Hadoop MapReduce, with dependencies on various Apache Hadoop and Java standard classes.",
+  "summary": "TITLE: Spill File Management in Hadoop MapReduce Security\nDESCRIPTION: The 'security' directory in Hadoop MapReduce's architecture focuses on secure spill file management during the MapReduce process. It includes classes like IntermediateEncryptedStream.java, SpillCallBackInjector.java, and SpillCallBackPathsFinder.java. IntermediateEncryptedStream.java handles encryption of input/output streams and spill callbacks. SpillCallBackInjector.java, following a singleton pattern, prepares interfaces for potential future use of callback functions in the spill process. SpillCallBackPathsFinder.java manages spilled files, distinguishing between encrypted and non-encrypted ones, and handles invalid access attempts. These components collaborate to ensure secure spill file operations in Hadoop MapReduce, with dependencies on various Apache Hadoop and Java standard classes.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "IntermediateEncryptedStream.java"
+    },
+    {
+      "type": "file",
+      "name": "SpillCallBackInjector.java"
+    },
+    {
+      "type": "file",
+      "name": "SpillCallBackPathsFinder.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Spill File Management in Hadoop MapReduce Security\n\nDESCRIPTION:\nThe 'security' directory in Hadoop MapReduce's architecture focuses on secure spill file management during the MapReduce process. It includes classes like IntermediateEncryptedStream.java, SpillCallBackInjector.java, and SpillCallBackPathsFinder.java. IntermediateEncryptedStream.java handles encryption of input/output streams and spill callbacks. SpillCallBackInjector.java, following a singleton pattern, prepares interfaces for potential future use of callback functions in the spill process. SpillCallBackPathsFinder.java manages spilled files, distinguishing between encrypted and non-encrypted ones, and handles invalid access attempts. These components collaborate to ensure secure spill file operations in Hadoop MapReduce, with dependencies on various Apache Hadoop and Java standard classes."
+}

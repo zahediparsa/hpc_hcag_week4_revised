@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 14,
+  "directory": ".",
+  "title": "MapReduce Context Interfaces",
+  "description": "The MapContext.java file defines the MapContext interface, providing context to the Mapper in Apache Hadoop MapReduce. It extends TaskInputOutputContext and includes a method to return the InputSplit for the map task. The ReduceContext.java file defines the ReduceContext interface, managing unique keys and iterating through values for the Reducer. It also extends TaskInputOutputContext and includes methods for moving to the next key and iterating through values. Both interfaces prepare the context for input processing and output generation, with actual I/O handled by classes extending these interfaces. They depend on various Hadoop classes and standard Java packages for functionality and annotations.",
+  "summary": "TITLE: MapReduce Context Interfaces\nDESCRIPTION: The MapContext.java file defines the MapContext interface, providing context to the Mapper in Apache Hadoop MapReduce. It extends TaskInputOutputContext and includes a method to return the InputSplit for the map task. The ReduceContext.java file defines the ReduceContext interface, managing unique keys and iterating through values for the Reducer. It also extends TaskInputOutputContext and includes methods for moving to the next key and iterating through values. Both interfaces prepare the context for input processing and output generation, with actual I/O handled by classes extending these interfaces. They depend on various Hadoop classes and standard Java packages for functionality and annotations.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "MapContext.java"
+    },
+    {
+      "type": "file",
+      "name": "ReduceContext.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Context Interfaces\n\nDESCRIPTION:\nThe MapContext.java file defines the MapContext interface, providing context to the Mapper in Apache Hadoop MapReduce. It extends TaskInputOutputContext and includes a method to return the InputSplit for the map task. The ReduceContext.java file defines the ReduceContext interface, managing unique keys and iterating through values for the Reducer. It also extends TaskInputOutputContext and includes methods for moving to the next key and iterating through values. Both interfaces prepare the context for input processing and output generation, with actual I/O handled by classes extending these interfaces. They depend on various Hadoop classes and standard Java packages for functionality and annotations."
+}

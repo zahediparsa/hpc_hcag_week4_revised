@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 85,
+  "directory": "lib",
+  "title": "Custom Partitioners in Hadoop MapReduce",
+  "description": "The 'lib/partition' directory contains custom partitioners for Hadoop MapReduce. These partitioners, like BinaryPartitioner.java and HashPartitioner.java, extend the base Partitioner<K, V> class to implement unique data distribution strategies. BinaryPartitioner uses a byte subarray, HashPartitioner uses key hash code, and RehashPartitioner rehashes for uniform distribution. They collaborate within MapReduce jobs, directing key-value pairs to appropriate reducers, thus implementing the Partitioner architectural pattern for efficient data processing.",
+  "summary": "TITLE: Custom Partitioners in Hadoop MapReduce\nDESCRIPTION: The 'lib/partition' directory contains custom partitioners for Hadoop MapReduce. These partitioners, like BinaryPartitioner.java and HashPartitioner.java, extend the base Partitioner<K, V> class to implement unique data distribution strategies. BinaryPartitioner uses a byte subarray, HashPartitioner uses key hash code, and RehashPartitioner rehashes for uniform distribution. They collaborate within MapReduce jobs, directing key-value pairs to appropriate reducers, thus implementing the Partitioner architectural pattern for efficient data processing.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/partition"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Custom Partitioners in Hadoop MapReduce\n\nDESCRIPTION: The 'lib/partition' directory contains custom partitioners for Hadoop MapReduce. These partitioners, like BinaryPartitioner.java and HashPartitioner.java, extend the base Partitioner<K, V> class to implement unique data distribution strategies. BinaryPartitioner uses a byte subarray, HashPartitioner uses key hash code, and RehashPartitioner rehashes for uniform distribution. They collaborate within MapReduce jobs, directing key-value pairs to appropriate reducers, thus implementing the Partitioner architectural pattern for efficient data processing."
+}

@@ -1,0 +1,22 @@
+{
+  "cluster_id": 92,
+  "title": "MapReduce Security Token Management",
+  "description": "This component manages MapReduce tokens for secure access, utilizing 'DelegationTokenSecretManager' for lifecycle oversight and 'DelegationTokenSelector' for secure job authorization. The 'Manager' pattern ensures controlled access, preventing unauthorized HDFS access. This architecture enhances security and reliability in Hadoop MapReduce clusters, maintaining data integrity and confidentiality. Technologies used include Java for programming and Hadoop's security APIs for token management.",
+  "description_word_count": 57,
+  "number_of_files": 2,
+  "number_of_directories": 4,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Security Token Management\n\nDESCRIPTION: This component manages MapReduce tokens for secure access, utilizing 'DelegationTokenSecretManager' for lifecycle oversight and 'DelegationTokenSelector' for secure job authorization. The 'Manager' pattern ensures controlled access, preventing unauthorized HDFS access. This architecture enhances security and reliability in Hadoop MapReduce clusters, maintaining data integrity and confidentiality. Technologies used include Java for programming and Hadoop's security APIs for token management.",
+  "algorithm": "LIMBO",
+  "files": [
+    "security/token/delegation/DelegationTokenSecretManager.java",
+    "security/token/delegation/DelegationTokenSelector.java"
+  ]
+}

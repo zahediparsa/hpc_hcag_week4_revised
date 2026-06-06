@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 12,
+  "directory": "lib/output/committer",
+  "title": "Hadoop MapReduce Committer Stage Directory",
+  "description": "The 'lib/output/committer' directory in Hadoop MapReduce is responsible for managing the commit protocol. It ensures data consistency and integrity during the MapReduce job execution. The 'manifest' subdirectory contains files like 'AbstractJobOrTaskStage.java' and 'JobOrTaskStage.java' that define stages and ensure single execution, tracked by 'LoadManifestsStage.java' which processes task manifests. This directory exemplifies a layered architecture pattern, where each component collaborates to maintain the commit protocol, showcasing a well-structured, modular design.",
+  "summary": "TITLE: Hadoop MapReduce Committer Stage Directory\nDESCRIPTION: The 'lib/output/committer' directory in Hadoop MapReduce is responsible for managing the commit protocol. It ensures data consistency and integrity during the MapReduce job execution. The 'manifest' subdirectory contains files like 'AbstractJobOrTaskStage.java' and 'JobOrTaskStage.java' that define stages and ensure single execution, tracked by 'LoadManifestsStage.java' which processes task manifests. This directory exemplifies a layered architecture pattern, where each component collaborates to maintain the commit protocol, showcasing a well-structured, modular design.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Committer Stage Directory\n\nDESCRIPTION: The 'lib/output/committer' directory in Hadoop MapReduce is responsible for managing the commit protocol. It ensures data consistency and integrity during the MapReduce job execution. The 'manifest' subdirectory contains files like 'AbstractJobOrTaskStage.java' and 'JobOrTaskStage.java' that define stages and ensure single execution, tracked by 'LoadManifestsStage.java' which processes task manifests. This directory exemplifies a layered architecture pattern, where each component collaborates to maintain the commit protocol, showcasing a well-structured, modular design."
+}

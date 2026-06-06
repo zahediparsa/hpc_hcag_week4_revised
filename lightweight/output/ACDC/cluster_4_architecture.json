@@ -1,0 +1,35 @@
+{
+  "cluster_id": 4,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "This cluster employs Hadoop's MapReduce paradigm, utilizing a master-slave architecture. The master node, or JobTracker, coordinates tasks and schedules jobs across slave nodes, or TaskTrackers. The 'lib' directory extends MapReduce functionalities, demonstrating the Open/Closed Principle, ensuring adaptability without core alterations. Custom classes like 'chain' and 'reduce' facilitate task chaining and specialized reductions, respectively. Hadoop Distributed File System (HDFS) provides reliable, scalable data storage. The architecture ensures maintainability through modular design, enhances performance via parallel processing, and guarantees reliability through fault tolerance. Technologies used include Java for custom class development, and Hadoop's MapReduce framework for distributed processing. This architecture exemplifies the Adapter pattern, allowing Hadoop to work with diverse data processing needs.",
+  "description_word_count": 112,
+  "number_of_files": 15,
+  "number_of_directories": 5,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: This cluster employs Hadoop's MapReduce paradigm, utilizing a master-slave architecture. The master node, or JobTracker, coordinates tasks and schedules jobs across slave nodes, or TaskTrackers. The 'lib' directory extends MapReduce functionalities, demonstrating the Open/Closed Principle, ensuring adaptability without core alterations. Custom classes like 'chain' and 'reduce' facilitate task chaining and specialized reductions, respectively. Hadoop Distributed File System (HDFS) provides reliable, scalable data storage. The architecture ensures maintainability through modular design, enhances performance via parallel processing, and guarantees reliability through fault tolerance. Technologies used include Java for custom class development, and Hadoop's MapReduce framework for distributed processing. This architecture exemplifies the Adapter pattern, allowing Hadoop to work with diverse data processing needs.",
+  "algorithm": "ACDC",
+  "files": [
+    "ContextFactory.java",
+    "OutputCommitter.java",
+    "RecordReader.java",
+    "RecordWriter.java",
+    "Reducer.java",
+    "TaskAttemptContext.java",
+    "TaskInputOutputContext.java",
+    "lib/chain/Chain.java",
+    "lib/chain/ChainMapContextImpl.java",
+    "lib/chain/ChainMapper.java",
+    "lib/chain/ChainReduceContextImpl.java",
+    "lib/chain/ChainReducer.java",
+    "lib/fieldsel/FieldSelectionReducer.java",
+    "lib/reduce/IntSumReducer.java",
+    "lib/reduce/LongSumReducer.java"
+  ]
+}

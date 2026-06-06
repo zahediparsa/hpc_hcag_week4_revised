@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 92,
+  "directory": "security/token",
+  "title": "MapReduce Delegation Token Management",
+  "description": "The 'security/token/delegation' directory manages MapReduce-specific delegation tokens. 'DelegationTokenSecretManager.java' oversees token lifecycle, including creation, renewal, and removal. 'DelegationTokenSelector.java' provides a specialized token class for MapReduce jobs, ensuring secure access control. These components collaborate to prevent unauthorized HDFS access while allowing legitimate tasks. This directory implements the 'Manager' pattern, with 'DelegationTokenSecretManager' managing MapReduce delegation tokens for secure, controlled access in Hadoop MapReduce.",
+  "summary": "TITLE: MapReduce Delegation Token Management\nDESCRIPTION: The 'security/token/delegation' directory manages MapReduce-specific delegation tokens. 'DelegationTokenSecretManager.java' oversees token lifecycle, including creation, renewal, and removal. 'DelegationTokenSelector.java' provides a specialized token class for MapReduce jobs, ensuring secure access control. These components collaborate to prevent unauthorized HDFS access while allowing legitimate tasks. This directory implements the 'Manager' pattern, with 'DelegationTokenSecretManager' managing MapReduce delegation tokens for secure, controlled access in Hadoop MapReduce.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "security/token/delegation"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Delegation Token Management\n\nDESCRIPTION: The 'security/token/delegation' directory manages MapReduce-specific delegation tokens. 'DelegationTokenSecretManager.java' oversees token lifecycle, including creation, renewal, and removal. 'DelegationTokenSelector.java' provides a specialized token class for MapReduce jobs, ensuring secure access control. These components collaborate to prevent unauthorized HDFS access while allowing legitimate tasks. This directory implements the 'Manager' pattern, with 'DelegationTokenSecretManager' managing MapReduce delegation tokens for secure, controlled access in Hadoop MapReduce."
+}

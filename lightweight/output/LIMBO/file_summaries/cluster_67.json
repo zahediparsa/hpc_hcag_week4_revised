@@ -1,0 +1,50 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 67,
+    "class": "org.apache.hadoop.mapreduce.lib.join.ComposableRecordReader",
+    "path": "lib/join/ComposableRecordReader.java",
+    "file_name": "ComposableRecordReader.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\nThis Java code snippet defines an abstract class `ComposableRecordReader` that extends `RecordReader` from the Apache Hadoop MapReduce library. It is designed to support additional operations required for participating in a join operation.\n\nCORE LOGIC:\nThe abstract class `ComposableRecordReader` outlines several abstract methods that concrete subclasses must implement. These methods include:\n- `id()`: Returns the position of this RecordReader in a composite structure.\n- `key()`: Returns the key that would be produced by a call to `next(K, V)`.\n- `key(K key)`: Clones the key at the head of this RecordReader into the provided object.\n- `createKey()`: Creates an instance of the key.\n- `createValue()`: Creates an instance of the value.\n- `hasNext()`: Indicates whether the stream is not empty, but does not guarantee success on a call to `next(K, V)`.\n- `skip(K key)`: Skips key-value pairs with keys less than or equal to the provided key.\n- `accept(CompositeRecordReader.JoinCollector jc, K key)`: Registers key-value pairs from this RecordReader with the provided `JoinCollector` while the keys match the given key.\n\nINPUTS/OUTPUTS:\nThe class itself does not directly handle inputs or outputs. Instead, it defines methods for interacting with input data (like `key()`, `skip()`, etc.) and for providing data to a join operation (`accept()`). The actual input data is read by the concrete subclasses implementing this abstract class.\n\nDEPENDENCIES:\nThe `ComposableRecordReader` class depends on several classes and interfaces from the Hadoop MapReduce library:\n- `RecordReader<K, V>`: The superclass providing the basic functionality for reading data.\n- `WritableComparable<K>` and `Writable<V>`: Interfaces for key and value types that Hadoop uses for serialization.\n- `IOException`: Standard Hadoop exception for input/output operations.\n- `InterruptedException`: Exception thrown when a thread is waiting, sleeping, or otherwise occupied in deferring its execution.\n\nAdditionally, it uses Java's generic types (`<K, V>`) for type safety and flexibility in handling different key-value pairs. The `Comparable<ComposableRecordReader<K,?>>` interface indicates that instances of this class can be compared with each other, which is necessary",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 67,
+    "class": "org.apache.hadoop.mapreduce.lib.join.CompositeRecordReader",
+    "path": "lib/join/CompositeRecordReader.java",
+    "file_name": "CompositeRecordReader.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\nThis Java code defines an abstract class `CompositeRecordReader` in Apache Hadoop MapReduce library. It serves as a RecordReader that can perform joins of RecordReaders sharing a common key type and partitioning.\n\nCORE LOGIC:\n- The class extends `ComposableRecordReader` and implements `Configurable`.\n- It maintains a priority queue (`q`) of `ComposableRecordReader` instances ordered by their keys, using a `WritableComparator` for comparison.\n- The `add` method allows adding `ComposableRecordReader` instances to this queue.\n- A nested `JoinCollector` class manages the collection and ordering of values for a given key from child RecordReaders.\n- The `accept` method is overridden to handle the join logic, adding child iterators to the `JoinCollector` if their keys match the current key.\n- The `fillJoinCollector` method populates the `JoinCollector` with iterators from child RecordReaders that match the given key.\n- The `key` method returns the key for the current join or the value at the top of the RecordReader heap.\n- The `hasNext` method checks if more values can be emitted, and `next` retrieves and combines values from child RecordReaders.\n- The `skip` method skips a given key across child RecordReaders.\n- The `close` method closes all child RecordReaders and the `JoinCollector`.\n- The `getProgress` method reports the progress as the minimum of all child RecordReader progress.\n\nINPUTS/OUTPUTS:\n- INPUTS: The class takes RecordReaders (`ComposableRecordReader<K, ? extends V>`) as inputs, which are added using the `add` method.\n- OUTPUTS: It emits `Writable` objects of type `X` through the `next` method, which combines values from child RecordReaders based on a common key.\n\nDEPENDENCIES:\n- Imported classes: `java.io.IOException`, `java.util.ArrayList`, `java.util.Comparator`, `java.util.PriorityQueue`, `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`, `org.apache.hadoop.conf.Configurable`, `org.apache.hadoop.conf.Configuration`, `org.apache.hadoop.io.NullWritable`, `org.apache.hadoop.io.Writable",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 67,
+    "class": "org.apache.hadoop.mapreduce.lib.join.MultiFilterRecordReader",
+    "path": "lib/join/MultiFilterRecordReader.java",
+    "file_name": "MultiFilterRecordReader.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define an abstract class `MultiFilterRecordReader` for handling composite joins in Apache Hadoop MapReduce. It extends `CompositeRecordReader` and provides an interface for emitting values derived from multiple sources.\n\nCORE LOGIC:\nThe core logic involves the `nextKeyValue()` method, which is responsible for iterating through the input sources and emitting values. It uses a `PriorityQueue` to manage the `ComposableRecordReader` instances. The `combine()` method is used to determine if a tuple should be emitted. The `MultiFilterDelegationIterator` inner class is a resettable iterator that proxies the `JoinCollector` and includes a callback to `emit`.\n\nINPUTS/OUTPUTS:\nThe class takes no direct inputs in this chunk, but it extends `CompositeRecordReader`, which would typically receive input from child record readers. The main output is the `value` object of type `V`, which is set in the `nextKeyValue()` method after processing the input sources.\n\nDEPENDENCIES:\nThe key dependencies visible in this chunk include:\n- `org.apache.hadoop.mapreduce.lib.join` package\n- `org.apache.hadoop.io` package for `Writable`, `WritableComparable`, and `WritableComparator`\n- `org.apache.hadoop.conf` for `Configuration`\n- `org.apache.hadoop.mapreduce` for `InputSplit` and `TaskAttemptContext`\n- `org.apache.hadoop.util` for `ReflectionUtils`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 67,
+    "class": "org.apache.hadoop.mapreduce.lib.join.WrappedRecordReader",
+    "path": "lib/join/WrappedRecordReader.java",
+    "file_name": "WrappedRecordReader.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class, `WrappedRecordReader`, is to act as a proxy for a `RecordReader` in the context of Apache Hadoop MapReduce's join framework. It manages the \"head\" key-value pair from the provided `RecordReader` and stores values associated with keys when participating in a join operation.\n\nCORE LOGIC:\n- The class extends `ComposableRecordReader` and maintains state for the key and value at the \"head\" of the `RecordReader`.\n- It uses a `WritableComparator` to compare keys, ensuring they are in the correct order for joining.\n- Methods like `initialize`, `nextKeyValue`, `next`, `skip`, and `accept` are used to manage the position and state of the `RecordReader` within the join operation.\n- It provides methods to get the current key and value, check if the reader is exhausted, and compare itself with another `ComposableRecordReader`.\n\nINPUTS/OUTPUTS:\n- Inputs: An instance of `RecordReader<K, U>`, a class `WritableComparator`, and a configuration `Configuration`.\n- Outputs: Key-value pairs (`K` and `U`) are read from the proxied `RecordReader` and managed by `WrappedRecordReader`. These pairs are passed to a `CompositeRecordReader.JoinCollector` via the `accept` method.\n\nDEPENDENCIES:\n- Imported classes: `java.io.IOException`, `java.io.Writable`, `java.io.WritableComparable`.\n- Parent class: `org.apache.hadoop.mapreduce.lib.join.ComposableRecordReader<K, U>`.\n- Collaborator classes: `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`, `org.apache.hadoop.conf.Configuration`, `org.apache.hadoop.io.NullWritable`, `org.apache.hadoop.io.WritableComparator`, `org.apache.hadoop.mapreduce.InputSplit`, `org.apache.hadoop.mapreduce.RecordReader`, `org.apache.hadoop.mapreduce.TaskAttemptContext`, `org.apache.hadoop.util.ReflectionUtils`.\n- Inner and static imports: `StreamBackedIterator<U>` from `org.apache.hadoop.mapreduce.lib.join`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

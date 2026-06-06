@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 57,
+  "directory": ".",
+  "title": "Hadoop MapReduce Database Input Format and Record Reader Architecture",
+  "description": "The 'lib/db' directory in Hadoop MapReduce architecture serves as a repository for specialized classes facilitating SQL database data ingestion. It includes custom InputFormat (DBInputFormat) and RecordReader (DBRecordReader) classes, extending Hadoop's generic versions to incorporate database-specific functionalities. DBInputFormat reads SQL table data, emitting LongWritable keys and DBWritable values. DBRecordReader reads SQL records, also emitting LongWritable keys and DBWritable values. Specialized versions like DataDrivenDBInputFormat and DataDrivenDBRecordReader generate data-driven WHERE clauses for parallel processing. MySQLDBRecordReader and OracleDBRecordReader provide MySQL and Oracle-specific implementations, respectively. This architecture follows a layered design, abstracting database-specifics in higher layers and providing concrete implementations in lower layers.",
+  "summary": "TITLE: Hadoop MapReduce Database Input Format and Record Reader Architecture\nDESCRIPTION: The 'lib/db' directory in Hadoop MapReduce architecture serves as a repository for specialized classes facilitating SQL database data ingestion. It includes custom InputFormat (DBInputFormat) and RecordReader (DBRecordReader) classes, extending Hadoop's generic versions to incorporate database-specific functionalities. DBInputFormat reads SQL table data, emitting LongWritable keys and DBWritable values. DBRecordReader reads SQL records, also emitting LongWritable keys and DBWritable values. Specialized versions like DataDrivenDBInputFormat and DataDrivenDBRecordReader generate data-driven WHERE clauses for parallel processing. MySQLDBRecordReader and OracleDBRecordReader provide MySQL and Oracle-specific implementations, respectively. This architecture follows a layered design, abstracting database-specifics in higher layers and providing concrete implementations in lower layers.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Database Input Format and Record Reader Architecture\n\nDESCRIPTION: The 'lib/db' directory in Hadoop MapReduce architecture serves as a repository for specialized classes facilitating SQL database data ingestion. It includes custom InputFormat (DBInputFormat) and RecordReader (DBRecordReader) classes, extending Hadoop's generic versions to incorporate database-specific functionalities. DBInputFormat reads SQL table data, emitting LongWritable keys and DBWritable values. DBRecordReader reads SQL records, also emitting LongWritable keys and DBWritable values. Specialized versions like DataDrivenDBInputFormat and DataDrivenDBRecordReader generate data-driven WHERE clauses for parallel processing. MySQLDBRecordReader and OracleDBRecordReader provide MySQL and Oracle-specific implementations, respectively. This architecture follows a layered design, abstracting database-specifics in higher layers and providing concrete implementations in lower layers."
+}

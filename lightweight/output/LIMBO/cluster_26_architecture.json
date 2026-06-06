@@ -1,0 +1,24 @@
+{
+  "cluster_id": 26,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "This Hadoop MapReduce cluster, comprising 26 nodes, employs a master-worker architecture. The master node, or JobTracker, coordinates tasks and schedules jobs, while worker nodes, or TaskTrackers, execute them. Data is stored in HDFS, providing scalability and fault tolerance. Checkpoints ensure data consistency, utilizing the Service Designer pattern. MapReduce jobs process data in parallel, enhancing performance. Java is the primary programming language, with Hadoop APIs facilitating interactions. Security is maintained through access control and encryption. The architecture supports horizontal scalability, allowing addition of more nodes for increased processing power.",
+  "description_word_count": 88,
+  "number_of_files": 4,
+  "number_of_directories": 2,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: This Hadoop MapReduce cluster, comprising 26 nodes, employs a master-worker architecture. The master node, or JobTracker, coordinates tasks and schedules jobs, while worker nodes, or TaskTrackers, execute them. Data is stored in HDFS, providing scalability and fault tolerance. Checkpoints ensure data consistency, utilizing the Service Designer pattern. MapReduce jobs process data in parallel, enhancing performance. Java is the primary programming language, with Hadoop APIs facilitating interactions. Security is maintained through access control and encryption. The architecture supports horizontal scalability, allowing addition of more nodes for increased processing power.",
+  "algorithm": "LIMBO",
+  "files": [
+    "checkpoint/CheckpointService.java",
+    "checkpoint/FSCheckpointID.java",
+    "checkpoint/FSCheckpointService.java",
+    "checkpoint/TaskCheckpointID.java"
+  ]
+}

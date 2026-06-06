@@ -1,0 +1,149 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "lib/input",
+  "title": "Hadoop MapReduce Input Handling Architecture",
+  "description": "The 'lib/input' directory in Hadoop MapReduce architecture is dedicated to input handling, optimizing data processing from multiple files. It includes various input formats and record readers, such as 'CombineFileInputFormat', 'FileInputFormat', 'FixedLengthRecordReader', and 'KeyValueLineRecordReader'. These components collaborate to ensure efficient and flexible input handling, with classes like 'CombineFileSplit' and 'DelegatingInputFormat' managing splits and delegating input format behavior, respectively. 'SequenceFileInputFormat' and its related classes handle SequenceFiles, while 'FixedLengthInputFormat' and 'TextInputFormat' cater to specific data formats. 'MultipleInputs' and 'NLineInputFormat' enhance job flexibility by allowing multiple input paths and splitting files into logical chunks, respectively. Overall, this directory employs a variety of architectural patterns, including delegation, extension, and specialization, to provide a robust and adaptable input handling mechanism for Hadoop MapReduce jobs.",
+  "summary": "TITLE: Hadoop MapReduce Input Handling Architecture\nDESCRIPTION: The 'lib/input' directory in Hadoop MapReduce architecture is dedicated to input handling, optimizing data processing from multiple files. It includes various input formats and record readers, such as 'CombineFileInputFormat', 'FileInputFormat', 'FixedLengthRecordReader', and 'KeyValueLineRecordReader'. These components collaborate to ensure efficient and flexible input handling, with classes like 'CombineFileSplit' and 'DelegatingInputFormat' managing splits and delegating input format behavior, respectively. 'SequenceFileInputFormat' and its related classes handle SequenceFiles, while 'FixedLengthInputFormat' and 'TextInputFormat' cater to specific data formats. 'MultipleInputs' and 'NLineInputFormat' enhance job flexibility by allowing multiple input paths and splitting files into logical chunks, respectively. Overall, this directory employs a variety of architectural patterns, including delegation, extension, and specialization, to provide a robust and adaptable input handling mechanism for Hadoop MapReduce jobs.",
+  "number_of_children": 29,
+  "number_of_intermediate_summaries": 3,
+  "children": [
+    {
+      "type": "file",
+      "name": "CombineFileInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "CombineFileRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "CombineFileRecordReaderWrapper.java"
+    },
+    {
+      "type": "file",
+      "name": "CombineFileSplit.java"
+    },
+    {
+      "type": "file",
+      "name": "CombineSequenceFileInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "CombineTextInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "CompressedSplitLineReader.java"
+    },
+    {
+      "type": "file",
+      "name": "DelegatingInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "DelegatingMapper.java"
+    },
+    {
+      "type": "file",
+      "name": "DelegatingRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "FileInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "FileSplit.java"
+    },
+    {
+      "type": "file",
+      "name": "FixedLengthInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "FixedLengthRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "KeyValueLineRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "KeyValueTextInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "LineRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "MultipleInputs.java"
+    },
+    {
+      "type": "file",
+      "name": "NLineInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileAsBinaryInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileAsTextInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileAsTextRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileInputFilter.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "SplitLineReader.java"
+    },
+    {
+      "type": "file",
+      "name": "TaggedInputSplit.java"
+    },
+    {
+      "type": "file",
+      "name": "TextInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "UncompressedSplitLineReader.java"
+    }
+  ],
+  "intermediate_summaries": [
+    {
+      "type": "intermediate",
+      "name": "lib/input chunk 0",
+      "summary": "The `lib/input` directory node focuses on Hadoop MapReduce input handling, specifically optimizing data processing from multiple files. The `CombineFileInputFormat.java` class generates `CombineFileSplit` objects, ensuring splits do not mix files from different pools and optimizing block usage within splits. `CombineFileRecordReader.java` manages different RecordReaders for each chunk in a `CombineFileSplit`, while `CombineFileRecordReaderWrapper.java` ensures correct initialization of delegate RecordReaders with appropriate FileSplits. `CombineFileSplit.java` represents a sub-collection of input files, facilitating efficient processing across multiple files. `CombineSequenceFileInputFormat.java` and `CombineTextInputFormat.java` extend `CombineFileInputFormat` for handling SequenceFiles and text files, respectively. `CompressedSplitLineReader.java` handles reading records from compressed splits correctly, avoiding data loss or duplication. `DelegatingInputFormat.java` delegates input format behavior to multiple InputFormats based on paths. `DelegatingMapper.java` allows the use of different mappers for different input paths, and `DelegatingRecordReader.java` delegates RecordReader functionality to an underlying RecordReader in a TaggedInputSplit. `FileInputFormat.java` provides a base class for file-based input formats, listing input directories and generating input splits. `FileSplit.java` represents a section of an input file, encapsulating metadata for processing. `FixedLengthInputFormat.java` reads fixed-length records from input files, providing a RecordReader tailored for binary data. These components collectively ensure efficient and flexible input handling in Hadoop MapReduce jobs.",
+      "number_of_children": 13
+    },
+    {
+      "type": "intermediate",
+      "name": "lib/input chunk 1",
+      "summary": "The `lib/input` directory node focuses on various input formats and record readers for Apache Hadoop MapReduce jobs. The `FixedLengthRecordReader.java` class reads fixed-length records, extending the standard `RecordReader` class, and is crucial for handling specific data formats. `KeyValueLineRecordReader.java` and `KeyValueTextInputFormat.java` work together to parse key-value pairs from text files, with the former implementing the record reading logic and the latter managing input splits and record reader instantiation.\n\n`LineRecordReader.java` provides a flexible solution for reading key-value pairs with byte offsets as keys, handling both compressed and uncompressed files. `MultipleInputs.java` offers utility methods to add multiple input paths with custom InputFormat and Mapper classes to a MapReduce job, enhancing job flexibility.\n\n`NLineInputFormat.java` splits input files into logical chunks, each containing a specified number of lines, ensuring even distribution of data across mappers. `SequenceFileAsBinaryInputFormat.java` and `SequenceFileAsTextInputFormat.java` cater to reading SequenceFiles in binary and text formats, respectively, with custom RecordReaders for each case.\n\n`SequenceFileInputFilter.java` extends `SequenceFileInputFormat` to allow filtering of SequenceFiles based on regex, percentage, or MD5, enhancing data processing flexibility. Lastly, `SequenceFileInputFormat.java` and `SequenceFileRecordReader.java` handle the core logic of reading from SequenceFiles, while `SplitLineReader.java` provides a specialized line reader for handling record delimiters. These components collectively ensure a robust and adaptable input handling mechanism for Hadoop MapReduce jobs.",
+      "number_of_children": 13
+    },
+    {
+      "type": "intermediate",
+      "name": "lib/input chunk 2",
+      "summary": "The `lib/input` directory node focuses on enhancing Hadoop's input processing capabilities. The `TaggedInputSplit.java` file extends Hadoop's `InputSplit` class, adding job-specific metadata for use by `DelegatingInputFormat` and `DelegatingMapper`. This class implements `Writable` for serialization, utilizing Hadoop's `SerializationFactory` and `Deserializer`. It collaborates with `TextInputFormat.java`, which extends `FileInputFormat` to process plain text files, creating a `LineRecordReader` for line-based reading and determining file splittability based on compression codecs.\n\n`UncompressedSplitLineReader.java` further extends the input processing by handling uncompressed files with multi-byte delimiters, ensuring correct splitting even when a split ends in the middle of a record delimiter. This class depends on various Hadoop core classes, including those for input/output operations, configuration management, and text representation. Overall, these components work together to provide flexible and efficient input processing in Hadoop MapReduce jobs.",
+      "number_of_children": 3
+    }
+  ],
+  "raw_response": "TITLE: Hadoop MapReduce Input Handling Architecture\n\nDESCRIPTION:\nThe 'lib/input' directory in Hadoop MapReduce architecture is dedicated to input handling, optimizing data processing from multiple files. It includes various input formats and record readers, such as 'CombineFileInputFormat', 'FileInputFormat', 'FixedLengthRecordReader', and 'KeyValueLineRecordReader'. These components collaborate to ensure efficient and flexible input handling, with classes like 'CombineFileSplit' and 'DelegatingInputFormat' managing splits and delegating input format behavior, respectively. 'SequenceFileInputFormat' and its related classes handle SequenceFiles, while 'FixedLengthInputFormat' and 'TextInputFormat' cater to specific data formats. 'MultipleInputs' and 'NLineInputFormat' enhance job flexibility by allowing multiple input paths and splitting files into logical chunks, respectively. Overall, this directory employs a variety of architectural patterns, including delegation, extension, and specialization, to provide a robust and adaptable input handling mechanism for Hadoop MapReduce jobs."
+}

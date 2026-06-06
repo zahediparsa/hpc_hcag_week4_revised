@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 15,
+  "directory": "lib/fieldsel",
+  "title": "FieldSelectionMapper.java",
+  "description": "This Java file defines a custom Hadoop Mapper, FieldSelectionMapper, which performs field selection akin to Unix 'cut' command. It reads configuration parameters, initializes field separator, and parses field specification for map output. The core logic resides in setup and map methods. It outputs Text key-value pairs, utilizing several Hadoop and custom dependencies for functionality.",
+  "summary": "TITLE: FieldSelectionMapper.java\nDESCRIPTION: This Java file defines a custom Hadoop Mapper, FieldSelectionMapper, which performs field selection akin to Unix 'cut' command. It reads configuration parameters, initializes field separator, and parses field specification for map output. The core logic resides in setup and map methods. It outputs Text key-value pairs, utilizing several Hadoop and custom dependencies for functionality.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "FieldSelectionMapper.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: FieldSelectionMapper.java\n\nDESCRIPTION: This Java file defines a custom Hadoop Mapper, FieldSelectionMapper, which performs field selection akin to Unix 'cut' command. It reads configuration parameters, initializes field separator, and parses field specification for map output. The core logic resides in setup and map methods. It outputs Text key-value pairs, utilizing several Hadoop and custom dependencies for functionality."
+}

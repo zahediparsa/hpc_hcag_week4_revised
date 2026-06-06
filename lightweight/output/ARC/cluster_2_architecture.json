@@ -1,0 +1,30 @@
+{
+  "cluster_id": 2,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "This Hadoop MapReduce cluster architecture comprises two main components: Task Checkpoint Management and ResourceBundle Management. The Task Checkpoint Management, facilitated by the CheckpointID, CheckpointNamingService, CheckpointService, EnumCounter, FSCheckpointID, FSCheckpointService, RandomNameCNS, SimpleNamingService, and TaskCheckpointID, ensures fault tolerance and job recovery through reliable checkpoint management. The ResourceBundle Management, handled by the ResourceBundles.java class, efficiently retrieves resources from bundles, ensuring thread safety and exception handling. The architecture leverages Java for implementation, demonstrating scalability, maintainability, and reliability. The coordinator pattern is evident in the Task Checkpoint Management, while the utility pattern is observed in the ResourceBundle Management.",
+  "description_word_count": 93,
+  "number_of_files": 10,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: This Hadoop MapReduce cluster architecture comprises two main components: Task Checkpoint Management and ResourceBundle Management. The Task Checkpoint Management, facilitated by the CheckpointID, CheckpointNamingService, CheckpointService, EnumCounter, FSCheckpointID, FSCheckpointService, RandomNameCNS, SimpleNamingService, and TaskCheckpointID, ensures fault tolerance and job recovery through reliable checkpoint management. The ResourceBundle Management, handled by the ResourceBundles.java class, efficiently retrieves resources from bundles, ensuring thread safety and exception handling. The architecture leverages Java for implementation, demonstrating scalability, maintainability, and reliability. The coordinator pattern is evident in the Task Checkpoint Management, while the utility pattern is observed in the ResourceBundle Management.",
+  "algorithm": "ARC",
+  "files": [
+    "checkpoint/CheckpointID.java",
+    "checkpoint/CheckpointNamingService.java",
+    "checkpoint/CheckpointService.java",
+    "checkpoint/EnumCounter.java",
+    "checkpoint/FSCheckpointID.java",
+    "checkpoint/FSCheckpointService.java",
+    "checkpoint/RandomNameCNS.java",
+    "checkpoint/SimpleNamingService.java",
+    "checkpoint/TaskCheckpointID.java",
+    "util/ResourceBundles.java"
+  ]
+}

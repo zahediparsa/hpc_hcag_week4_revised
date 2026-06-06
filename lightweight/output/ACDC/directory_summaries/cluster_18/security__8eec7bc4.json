@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 18,
+  "directory": "security",
+  "title": "JobTokenIdentifier and JobTokenSelector",
+  "description": "The 'security/token' directory in Hadoop MapReduce manages job tokens via JobTokenIdentifier and JobTokenSelector. JobTokenIdentifier, extending TokenIdentifier, creates, reads, writes, and renews job tokens using Text for job ID storage. JobTokenSelector, implementing TokenSelector, finds and returns matching job tokens using Text for service representation, showcasing the Strategy design pattern for token selection based on kind. Both classes utilize Hadoop's security token interfaces, ensuring secure job execution.",
+  "summary": "TITLE: JobTokenIdentifier and JobTokenSelector\nDESCRIPTION: The 'security/token' directory in Hadoop MapReduce manages job tokens via JobTokenIdentifier and JobTokenSelector. JobTokenIdentifier, extending TokenIdentifier, creates, reads, writes, and renews job tokens using Text for job ID storage. JobTokenSelector, implementing TokenSelector, finds and returns matching job tokens using Text for service representation, showcasing the Strategy design pattern for token selection based on kind. Both classes utilize Hadoop's security token interfaces, ensuring secure job execution.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "security/token"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobTokenIdentifier and JobTokenSelector\n\nDESCRIPTION: The 'security/token' directory in Hadoop MapReduce manages job tokens via JobTokenIdentifier and JobTokenSelector. JobTokenIdentifier, extending TokenIdentifier, creates, reads, writes, and renews job tokens using Text for job ID storage. JobTokenSelector, implementing TokenSelector, finds and returns matching job tokens using Text for service representation, showcasing the Strategy design pattern for token selection based on kind. Both classes utilize Hadoop's security token interfaces, ensuring secure job execution."
+}

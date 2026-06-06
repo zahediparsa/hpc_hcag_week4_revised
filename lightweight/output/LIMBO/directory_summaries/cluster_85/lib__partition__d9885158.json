@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 85,
+  "directory": "lib/partition",
+  "title": "Custom Partitioners in Hadoop MapReduce",
+  "description": "The 'lib/partition' directory in Hadoop MapReduce architecture houses custom partitioners, which are crucial for determining how data is distributed across reducers. The partitioners, such as BinaryPartitioner.java, HashPartitioner.java, and RehashPartitioner.java, extend the base `Partitioner<K, V>` class to implement unique partitioning strategies. BinaryPartitioner allows partitioning based on a subarray of bytes from a binary key. HashPartitioner uses the hash code of the key for partitioning, while RehashPartitioner rehashes the hash code to achieve a more uniform distribution. These partitioners collaborate within the MapReduce job to ensure efficient data processing by directing key-value pairs to the appropriate reducers, thereby implementing the Partitioner architectural pattern.",
+  "summary": "TITLE: Custom Partitioners in Hadoop MapReduce\nDESCRIPTION: The 'lib/partition' directory in Hadoop MapReduce architecture houses custom partitioners, which are crucial for determining how data is distributed across reducers. The partitioners, such as BinaryPartitioner.java, HashPartitioner.java, and RehashPartitioner.java, extend the base `Partitioner<K, V>` class to implement unique partitioning strategies. BinaryPartitioner allows partitioning based on a subarray of bytes from a binary key. HashPartitioner uses the hash code of the key for partitioning, while RehashPartitioner rehashes the hash code to achieve a more uniform distribution. These partitioners collaborate within the MapReduce job to ensure efficient data processing by directing key-value pairs to the appropriate reducers, thereby implementing the Partitioner architectural pattern.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "BinaryPartitioner.java"
+    },
+    {
+      "type": "file",
+      "name": "HashPartitioner.java"
+    },
+    {
+      "type": "file",
+      "name": "RehashPartitioner.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Custom Partitioners in Hadoop MapReduce\n\nDESCRIPTION:\nThe 'lib/partition' directory in Hadoop MapReduce architecture houses custom partitioners, which are crucial for determining how data is distributed across reducers. The partitioners, such as BinaryPartitioner.java, HashPartitioner.java, and RehashPartitioner.java, extend the base `Partitioner<K, V>` class to implement unique partitioning strategies. BinaryPartitioner allows partitioning based on a subarray of bytes from a binary key. HashPartitioner uses the hash code of the key for partitioning, while RehashPartitioner rehashes the hash code to achieve a more uniform distribution. These partitioners collaborate within the MapReduce job to ensure efficient data processing by directing key-value pairs to the appropriate reducers, thereby implementing the Partitioner architectural pattern."
+}

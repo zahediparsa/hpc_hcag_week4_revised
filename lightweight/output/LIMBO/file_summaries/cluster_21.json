@@ -1,0 +1,50 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.lib.fieldsel.FieldSelectionReducer",
+    "path": "lib/fieldsel/FieldSelectionReducer.java",
+    "file_name": "FieldSelectionReducer.java",
+    "directory": "lib/fieldsel",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this chunk is to define a reducer class, `FieldSelectionReducer`, that performs field selections similar to the Unix `cut` command. It allows users to specify a list of fields for the reduce output keys and values, using a user-defined separator and a field specification string.\n\nCORE LOGIC:\n1. The reducer class extends `Reducer<Text, Text, Text, Text>`.\n2. In the `setup` method, it reads configuration parameters for the field separator and the reduce output key-value field specification.\n3. It parses the reduce output key-value field specification to create two lists: `reduceOutputKeyFieldList` and `reduceOutputValueFieldList`.\n4. In the `reduce` method, for each value associated with a key, it extracts the specified fields using `FieldSelectionHelper` and writes the result as a new key-value pair.\n\nINPUTS/OUTPUTS:\n- INPUTS: The reducer receives Text key-value pairs from the mapper.\n- OUTPUTS: It emits Text key-value pairs, with keys and values composed of selected fields from the input.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.lib.fieldsel`: This package likely contains the `FieldSelectionHelper` class used for field extraction.\n- `org.apache.hadoop.io.Text`: Used for the Text class representing string data.\n- `org.apache.hadoop.conf.Configuration`: Used for accessing configuration parameters.\n- `org.slf4j.Logger` and `org.slf4j.LoggerFactory`: Used for logging.\n- `org.apache.hadoop.mapreduce.Reducer`: The base class for reducers in Hadoop MapReduce.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.lib.reduce.IntSumReducer",
+    "path": "lib/reduce/IntSumReducer.java",
+    "file_name": "IntSumReducer.java",
+    "directory": "lib/reduce",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a Reducer class for summing up integer values. This class, `IntSumReducer`, extends the generic Reducer class provided by Hadoop's MapReduce library. The reducer takes a key and an iterable of `IntWritable` values, computes their sum, and outputs a new `IntWritable` with the result associated with the same key.\n\nCORE LOGIC:\nThe core logic of this class revolves around the `reduce` method. This method iterates over an iterable of `IntWritable` values, accumulates their integer values into a `sum` variable, and then stores this sum in a new `IntWritable` object named `result`. This `result` is then written out by the context.\n\nINPUTS/OUTPUTS:\n- Inputs: The reducer takes three parameters in its `reduce` method: a key of type `Key`, an iterable of `IntWritable` values, and a `Context` object for writing the output.\n- Outputs: The reducer outputs a key of type `Key` and a new `IntWritable` object containing the sum of the integer values it processed.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.lib.reduce.Reducer`: The superclass providing the reduce method signature.\n- `org.apache.hadoop.io.IntWritable`: Used to represent integer values in Hadoop.\n- `org.apache.hadoop.mapreduce.Context`: Used for writing the output of the reducer.\n- `java.io.IOException`: Standard exception for input/output operations.\n- `java.lang.InterruptedException`: Thrown when a thread is waiting for a notification that a particular condition has occurred.\n\nAdditional context from the imports and class definition indicates dependencies on Hadoop's MapReduce library and its IO classes, reflecting the class's role within the broader Hadoop MapReduce framework.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.lib.reduce.LongSumReducer",
+    "path": "lib/reduce/LongSumReducer.java",
+    "file_name": "LongSumReducer.java",
+    "directory": "lib/reduce",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a Reducer class for summing up long values in a MapReduce job.\n\nCORE LOGIC:\nThe core logic is implemented in the `reduce` method. It iterates over a collection of `LongWritable` values associated with a key, accumulates their sum, and then writes the result (also a `LongWritable`) back to the context.\n\nINPUTS/OUTPUTS:\n- INPUTS: The Reducer receives three parameters in its `reduce` method: a key of type `KEY`, an iterable of `LongWritable` values, and a `Context` object.\n- OUTPUTS: The Reducer writes a single `LongWritable` value back to the context, which represents the sum of all `LongWritable` values associated with the given key.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.lib.reduce.Reducer`: The class `LongSumReducer` extends this abstract class, which provides the basic structure for a reducer in a MapReduce job.\n- `org.apache.hadoop.io.LongWritable`: This class is used to wrap a long value, allowing it to be written as key-value pairs.\n- `org.apache.hadoop.mapreduce.Context`: This class provides the context in which reduce tasks are executed, allowing the Reducer to write its output.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.lib.reduce.WrappedReducer",
+    "path": "lib/reduce/WrappedReducer.java",
+    "file_name": "WrappedReducer.java",
+    "directory": "lib/reduce",
+    "summary": "KEY FUNCTIONALITY:\nThis Java code defines a class `WrappedReducer` that extends the generic `Reducer` class from Apache Hadoop MapReduce library. The main purpose of this class is to wrap a given reducer to allow for custom implementations of the `Reducer.Context` interface.\n\nCORE LOGIC:\nThe core logic of this class revolves around the nested static class `Context`, which extends the `Reducer.Context` interface. This nested class implements all the methods of `Reducer.Context` and delegates each call to the corresponding method in the wrapped `ReduceContext` object. This allows for custom context implementations while still using the standard Hadoop Reducer functionality.\n\nINPUTS/OUTPUTS:\nThe class does not directly handle any input or output data flow. Instead, it manages the context for the reducer, which indirectly influences how the reducer processes its input and generates output. The inputs are the key-value pairs produced by the Map phase, and the outputs are the reduced key-value pairs that are passed to the OutputFormat.\n\nDEPENDENCIES:\nThis class depends on several classes from the Apache Hadoop MapReduce library, including:\n\n- `org.apache.hadoop.mapreduce.Reducer`\n- `org.apache.hadoop.mapreduce.InputFormat`\n- `org.apache.hadoop.mapreduce.OutputFormat`\n- `org.apache.hadoop.mapreduce.Partitioner`\n- `org.apache.hadoop.mapreduce.Mapper`\n- `org.apache.hadoop.mapreduce.Counter`\n- `org.apache.hadoop.conf.Configuration`\n- `org.apache.hadoop.fs.Path`\n- `org.apache.hadoop.io.RawComparator`\n- `org.apache.hadoop.mapreduce.JobID`\n- `org.apache.hadoop.mapreduce.TaskAttemptID`\n- `org.apache.hadoop.security.Credentials`\n- `org.apache.hadoop.mapreduce.ReduceContext`\n\nThese dependencies are crucial for the functionality of `WrappedReducer`, as they provide the necessary interfaces and classes for Hadoop's MapReduce paradigm.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

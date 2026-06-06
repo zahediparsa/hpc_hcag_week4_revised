@@ -1,0 +1,21 @@
+{
+  "cluster_id": 15,
+  "title": "Custom Reducer Context Management in Hadoop MapReduce Cluster",
+  "description": "This Hadoop MapReduce cluster employs a custom Reducer context management system, encapsulated in the 'lib/reduce' directory's WrappedReducer.java. This class extends Hadoop's generic Reducer, managing the reducer context and indirectly influencing input processing and output generation. It interacts with Hadoop's core MapReduce components, including InputFormat, OutputFormat, Partitioner, Mapper, Counter, Configuration, and Credentials. The architecture ensures scalability and maintainability, leveraging Hadoop's robust framework for distributed processing. The custom Reducer context management pattern enhances flexibility and control over the MapReduce job execution, without directly handling data flow. Technologies used include Java, Hadoop's MapReduce library, and related classes. This design supports high performance and reliability in a distributed computing environment.",
+  "description_word_count": 108,
+  "number_of_files": 1,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Custom Reducer Context Management in Hadoop MapReduce Cluster\n\nDESCRIPTION: This Hadoop MapReduce cluster employs a custom Reducer context management system, encapsulated in the 'lib/reduce' directory's WrappedReducer.java. This class extends Hadoop's generic Reducer, managing the reducer context and indirectly influencing input processing and output generation. It interacts with Hadoop's core MapReduce components, including InputFormat, OutputFormat, Partitioner, Mapper, Counter, Configuration, and Credentials. The architecture ensures scalability and maintainability, leveraging Hadoop's robust framework for distributed processing. The custom Reducer context management pattern enhances flexibility and control over the MapReduce job execution, without directly handling data flow. Technologies used include Java, Hadoop's MapReduce library, and related classes. This design supports high performance and reliability in a distributed computing environment.",
+  "algorithm": "ACDC",
+  "files": [
+    "lib/reduce/WrappedReducer.java"
+  ]
+}

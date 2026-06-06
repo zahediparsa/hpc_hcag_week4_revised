@@ -1,0 +1,50 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 58,
+    "class": "org.apache.hadoop.mapreduce.lib.db.DBSplitter",
+    "path": "lib/db/DBSplitter.java",
+    "file_name": "DBSplitter.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define an interface `DBSplitter` for generating `DBInputSplits` to be used with `DataDrivenDBInputFormat`. This interface is part of the Apache Hadoop MapReduce library, specifically under the `org.apache.hadoop.mapreduce.lib.db` package.\n\nCORE LOGIC:\nThe core logic of this chunk is the definition of a single method `split()`. This method takes in three parameters: a `Configuration` object, a `ResultSet` containing one record with two columns (representing low and high values), and a `String` representing the column name. It returns a `List<InputSplit>`, which are essentially logical divisions of the data to be processed. The method is intended to determine a set of splits that span the given low and high values, based on the data type of the specified column.\n\nINPUTS/OUTPUTS:\n- Inputs: \n  - `Configuration conf`: Hadoop configuration settings.\n  - `ResultSet results`: A result set containing one record with two columns representing low and high values.\n  - `String colName`: The name of the column to use for determining the splits.\n- Outputs: \n  - `List<InputSplit>`: A list of `InputSplit` objects, which represent logical divisions of the data to be processed.\n\nDEPENDENCIES:\n- Imported classes: `java.sql.ResultSet`, `java.sql.SQLException`, `java.util.List`\n- Parent/Collaborator classes: `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`, `org.apache.hadoop.conf.Configuration`, `org.apache.hadoop.mapreduce.InputSplit`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 58,
+    "class": "org.apache.hadoop.mapreduce.lib.input.CombineFileSplit",
+    "path": "lib/input/CombineFileSplit.java",
+    "file_name": "CombineFileSplit.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY: The main purpose of this class is to represent a sub-collection of input files, specifically a split of input files into smaller sets, which can contain blocks from different files. It's used to implement RecordReader's, reading one record per file.\n\nCORE LOGIC: The class `CombineFileSplit` extends `InputSplit` and implements `Writable`. It contains several arrays (`paths`, `startoffset`, `lengths`, `locations`) to store file paths, start offsets, lengths, and locations respectively. The constructor `initSplit` initializes these arrays. The `getLength` method calculates the total length of the split. Methods like `getStartOffsets`, `getLengths`, `getOffset`, `getLength`, `getNumPaths`, `getPath`, `getPaths`, and `getLocations` are used to retrieve split information. The `readFields` and `write` methods handle serialization and deserialization.\n\nINPUTS/OUTPUTS: The class takes in arrays of `Path` objects, start offsets (`long[]`), lengths (`long[]`), and locations (`String[]`) as inputs. It outputs this information via its getter methods. The class also interacts with `DataInput` and `DataOutput` for serialization.\n\nDEPENDENCIES: The class depends on several Hadoop core classes: `Path` from `org.apache.hadoop.fs`, `Text` and `Writable` from `org.apache.hadoop.io`, and `InputSplit` from `org.apache.hadoop.mapreduce`. It also imports standard Java classes like `java.io.DataInput`, `java.io.DataOutput`, `java.io.IOException`, and `java.util.Arrays`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 58,
+    "class": "org.apache.hadoop.mapreduce.lib.input.FileSplit",
+    "path": "lib/input/FileSplit.java",
+    "file_name": "FileSplit.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to represent a section or \"split\" of an input file for processing in a Hadoop MapReduce job. It extends the `InputSplit` interface and implements the `Writable` interface to enable serialization.\n\nCORE LOGIC:\n- The class maintains information about the file (Path), starting byte position (long start), and length of the data to process (long length).\n- It also stores host information (String[] hosts) about where the data blocks reside, which can be extended with in-memory host information (String[] inMemoryHosts) for optimization.\n- The `FileSplit` class provides constructors to initialize these properties, getter methods to access them, and implementations for the `Writable` interface to serialize and deserialize the object.\n- The `getLocationInfo()` method returns an array of `SplitLocationInfo` objects, providing detailed location data for task scheduling.\n\nINPUTS/OUTPUTS:\n- INPUTS: The class does not directly read or process input data. Instead, it encapsulates metadata about sections of input files as determined by an `InputFormat`.\n- OUTPUTS: The class does not produce output data. It is purely for holding metadata about input data splits.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapred.SplitLocationInfo`\n- `org.apache.hadoop.mapreduce.InputFormat`\n- `org.apache.hadoop.mapreduce.InputSplit`\n- `org.apache.hadoop.mapreduce.TaskAttemptContext`\n- `org.apache.hadoop.classification` (for annotations)\n- `org.apache.hadoop.fs` (for Path)\n- `org.apache.hadoop.io` (for Text and Writable)",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 58,
+    "class": "org.apache.hadoop.mapreduce.lib.join.CompositeInputSplit",
+    "path": "lib/join/CompositeInputSplit.java",
+    "file_name": "CompositeInputSplit.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class, CompositeInputSplit, is to serve as an aggregate InputSplit that contains a set of child InputSplits. It allows for the addition of InputSplits, retrieval of individual child InputSplits, and collection of locations from all child InputSplits. It also implements the Writable interface to handle serialization and deserialization.\n\nCORE LOGIC:\nThe core logic revolves around managing an array of InputSplit objects. The class provides methods to add InputSplits to this array, retrieve individual InputSplits, calculate the total size of all InputSplits, and collect host locations from all child InputSplits. The write and readFields methods handle serialization and deserialization, respectively, using reflection to instantiate and populate InputSplit objects.\n\nINPUTS/OUTPUTS:\n- Inputs: The class accepts InputSplit objects as inputs, which are added using the 'add' method.\n- Outputs: The class provides several methods to retrieve information about the InputSplits it contains:\n  - get(int i): Returns the ith child InputSplit.\n  - getLength(): Returns the aggregate length of all child InputSplits.\n  - getLength(int i): Returns the length of the ith child InputSplit.\n  - getLocations(): Returns a set of unique host locations from all child InputSplits.\n  - getLocation(int i): Returns the host locations of the ith child InputSplit.\n- Serialization: The class implements the Writable interface to serialize and deserialize its state.\n\nDEPENDENCIES:\n- org.apache.hadoop.mapreduce.lib.join: This class is part of the Hadoop MapReduce library, specifically the 'lib.join' package.\n- org.apache.hadoop.io: This package provides classes for basic I/O, such as Text and Writable.\n- org.apache.hadoop.conf: This package provides access to the Hadoop configuration.\n- org.apache.hadoop.util: This package provides utility classes, such as ReflectionUtils.\n- java.io: Standard Java I/O classes are used for data input and output.\n- java.util: HashSet from the util package is used for collecting unique host locations.\n- java.lang: Basic language features are used throughout the class.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

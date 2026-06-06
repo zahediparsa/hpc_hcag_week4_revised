@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "lib/reduce",
+  "title": "Reduce Directory for Integer and Long Summation",
+  "description": "The 'lib/reduce' directory in Hadoop MapReduce architecture houses reducer classes, specifically 'IntSumReducer.java' and 'LongSumReducer.java', designed for summing integer and long values respectively. These reducers extend Hadoop's generic Reducer class, implementing the 'reduce' method to accumulate and output summed values. They utilize Hadoop's IO classes for representing large numeric values and the Context class for outputting results. This directory exemplifies the reducer pattern in MapReduce, where reducers collaborate with mappers to aggregate intermediate key-value pairs, demonstrating a clear division of labor and data flow in the overall MapReduce architectural pattern.",
+  "summary": "TITLE: Reduce Directory for Integer and Long Summation\nDESCRIPTION: The 'lib/reduce' directory in Hadoop MapReduce architecture houses reducer classes, specifically 'IntSumReducer.java' and 'LongSumReducer.java', designed for summing integer and long values respectively. These reducers extend Hadoop's generic Reducer class, implementing the 'reduce' method to accumulate and output summed values. They utilize Hadoop's IO classes for representing large numeric values and the Context class for outputting results. This directory exemplifies the reducer pattern in MapReduce, where reducers collaborate with mappers to aggregate intermediate key-value pairs, demonstrating a clear division of labor and data flow in the overall MapReduce architectural pattern.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "IntSumReducer.java"
+    },
+    {
+      "type": "file",
+      "name": "LongSumReducer.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Reduce Directory for Integer and Long Summation\n\nDESCRIPTION:\nThe 'lib/reduce' directory in Hadoop MapReduce architecture houses reducer classes, specifically 'IntSumReducer.java' and 'LongSumReducer.java', designed for summing integer and long values respectively. These reducers extend Hadoop's generic Reducer class, implementing the 'reduce' method to accumulate and output summed values. They utilize Hadoop's IO classes for representing large numeric values and the Context class for outputting results. This directory exemplifies the reducer pattern in MapReduce, where reducers collaborate with mappers to aggregate intermediate key-value pairs, demonstrating a clear division of labor and data flow in the overall MapReduce architectural pattern."
+}

@@ -1,0 +1,99 @@
+{
+  "type": "directory",
+  "cluster_id": 4,
+  "directory": "lib/output/committer/manifest/stages",
+  "title": "Hadoop MapReduce Committer Stages Directory",
+  "description": "The 'lib/output/committer/manifest/stages' directory in Hadoop MapReduce architecture encapsulates the committer module's core functionalities, focusing on job and task stages. It includes classes like 'AbortTaskStage.java', 'CleanupJobStage.java', and 'CommitJobStage.java', each responsible for specific tasks such as aborting tasks, cleaning up jobs, and committing jobs and tasks respectively. The 'StageConfig.java' and 'StageEventCallbacks.java' ensure stage configuration and event handling, while 'TaskAttemptScanDirectoryStage.java' and 'ValidateRenamedFilesStage.java' manage task scanning and file validation. This directory demonstrates a clear architectural role in managing and validating stages, ensuring data integrity and consistency during task execution through collaborative efforts of its components.",
+  "summary": "TITLE: Hadoop MapReduce Committer Stages Directory\nDESCRIPTION: The 'lib/output/committer/manifest/stages' directory in Hadoop MapReduce architecture encapsulates the committer module's core functionalities, focusing on job and task stages. It includes classes like 'AbortTaskStage.java', 'CleanupJobStage.java', and 'CommitJobStage.java', each responsible for specific tasks such as aborting tasks, cleaning up jobs, and committing jobs and tasks respectively. The 'StageConfig.java' and 'StageEventCallbacks.java' ensure stage configuration and event handling, while 'TaskAttemptScanDirectoryStage.java' and 'ValidateRenamedFilesStage.java' manage task scanning and file validation. This directory demonstrates a clear architectural role in managing and validating stages, ensuring data integrity and consistency during task execution through collaborative efforts of its components.",
+  "number_of_children": 18,
+  "number_of_intermediate_summaries": 2,
+  "children": [
+    {
+      "type": "file",
+      "name": "AbortTaskStage.java"
+    },
+    {
+      "type": "file",
+      "name": "AbstractJobOrTaskStage.java"
+    },
+    {
+      "type": "file",
+      "name": "CleanupJobStage.java"
+    },
+    {
+      "type": "file",
+      "name": "CommitJobStage.java"
+    },
+    {
+      "type": "file",
+      "name": "CommitTaskStage.java"
+    },
+    {
+      "type": "file",
+      "name": "CreateOutputDirectoriesStage.java"
+    },
+    {
+      "type": "file",
+      "name": "JobOrTaskStage.java"
+    },
+    {
+      "type": "file",
+      "name": "LoadManifestsStage.java"
+    },
+    {
+      "type": "file",
+      "name": "RenameFilesStage.java"
+    },
+    {
+      "type": "file",
+      "name": "SaveSuccessFileStage.java"
+    },
+    {
+      "type": "file",
+      "name": "SaveTaskManifestStage.java"
+    },
+    {
+      "type": "file",
+      "name": "SetupJobStage.java"
+    },
+    {
+      "type": "file",
+      "name": "SetupTaskStage.java"
+    },
+    {
+      "type": "file",
+      "name": "StageConfig.java"
+    },
+    {
+      "type": "file",
+      "name": "StageEventCallbacks.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptScanDirectoryStage.java"
+    },
+    {
+      "type": "file",
+      "name": "ValidateRenamedFilesStage.java"
+    },
+    {
+      "type": "file",
+      "name": "package-info.java"
+    }
+  ],
+  "intermediate_summaries": [
+    {
+      "type": "intermediate",
+      "name": "lib/output/committer/manifest/stages chunk 0",
+      "summary": "The `lib/output/committer/manifest/stages` directory node encapsulates the core functionalities of the Hadoop MapReduce committer module, focusing on job and task stages. The `AbortTaskStage.java` class provides a mechanism to abort tasks by deleting their attempt directories, with core logic centered around the `executeStage` method. `AbstractJobOrTaskStage.java` serves as an abstract base class, ensuring stages manage job or task commit protocols, execute stages only once, and update IO statistics.\n\n`CleanupJobStage.java` is responsible for cleaning up a job's temporary directory, performing parallel deletion of task attempt directories, and handling exceptions. `CommitJobStage.java` orchestrates the job commit process, handling loading manifests, creating output directories, renaming files, saving the _SUCCESS marker, and validating output. `CommitTaskStage.java` focuses on committing a task attempt, scanning directories, and saving manifests with IO statistics.\n\n`CreateOutputDirectoriesStage.java` prepares the destination directory tree, ensuring directories are created efficiently and in parallel, while `JobOrTaskStage.java` defines an interface for stages that can raise IOExceptions and provide IO statistics. `LoadManifestsStage.java` loads all task manifests from the job attempt directory, and `RenameFilesStage.java` renames committed files based on loaded manifest data.\n\n`SaveSuccessFileStage.java` saves the _SUCCESS file, and `SaveTaskManifestStage.java` handles saving task manifests atomically. `SetupJobStage.java` creates the job attempt directory and task manifest directory, optionally deleting a success marker file. These components collaborate to ensure robust, efficient, and reliable commit processes in Hadoop MapReduce jobs.",
+      "number_of_children": 12
+    },
+    {
+      "type": "intermediate",
+      "name": "lib/output/committer/manifest/stages chunk 1",
+      "summary": "This directory node, `lib/output/committer/manifest/stages`, is a crucial part of the Apache Hadoop MapReduce framework, focusing on the intermediate stages of the manifest committer. The `SetupTaskStage.java` class defines a task setup stage, ensuring a new directory is created for each task attempt. The `StageConfig.java` class uses a builder pattern to configure stage attributes, ensuring immutability post-construction. `StageEventCallbacks.java` is an interface for handling stage entry and exit events, while `TaskAttemptScanDirectoryStage.java` outlines a stage for scanning a directory tree and building a task manifest. `ValidateRenamedFilesStage.java` validates files by scanning manifests and verifying their sizes. The `package-info.java` file serves as the package's interface, detailing its role in managing individual and aggregate stages of the task and job commit process. Collectively, these components demonstrate a shared responsibility for managing and validating stages in the MapReduce commit process, with clear collaboration and a visible architectural role in ensuring data integrity and consistency during task execution.",
+      "number_of_children": 6
+    }
+  ],
+  "raw_response": "TITLE: Hadoop MapReduce Committer Stages Directory\n\nDESCRIPTION:\nThe 'lib/output/committer/manifest/stages' directory in Hadoop MapReduce architecture encapsulates the committer module's core functionalities, focusing on job and task stages. It includes classes like 'AbortTaskStage.java', 'CleanupJobStage.java', and 'CommitJobStage.java', each responsible for specific tasks such as aborting tasks, cleaning up jobs, and committing jobs and tasks respectively. The 'StageConfig.java' and 'StageEventCallbacks.java' ensure stage configuration and event handling, while 'TaskAttemptScanDirectoryStage.java' and 'ValidateRenamedFilesStage.java' manage task scanning and file validation. This directory demonstrates a clear architectural role in managing and validating stages, ensuring data integrity and consistency during task execution through collaborative efforts of its components."
+}

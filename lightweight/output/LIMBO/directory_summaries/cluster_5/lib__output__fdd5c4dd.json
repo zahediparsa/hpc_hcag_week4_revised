@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 5,
+  "directory": "lib/output",
+  "title": "FileOutputFormat.java",
+  "description": "FileOutputFormat.java is a core Hadoop MapReduce class responsible for managing output directories, handling compression, and generating unique file names for task-specific output files. It extends OutputFormat, providing abstract methods for creating record writers and checking output specifications. The class includes utility methods for setting and getting compression options, output directory, and handling task-specific temporary output directories. It generates unique filenames for task-specific output files and initializes an OutputCommitter for managing the output directory. It depends on various Hadoop and Java classes for its functionality.\n\nTITLE: MultipleOutputs.java\n\nDESCRIPTION:\nMultipleOutputs.java simplifies writing output data to multiple outputs in a MapReduce job. It allows defining additional outputs with their own OutputFormat, key class, and value class, and supports counters for tracking records written to each output. The class manages record writers for each named output, caches them to avoid repeated instantiation, and wraps them with RecordWriterWithCounter if counters are enabled. It uses an ExecutorService to manage a pool of threads for closing multiple output streams concurrently. MultipleOutputs depends on several Hadoop MapReduce classes and Google Guava for thread pool management.",
+  "summary": "TITLE: FileOutputFormat.java\nDESCRIPTION: FileOutputFormat.java is a core Hadoop MapReduce class responsible for managing output directories, handling compression, and generating unique file names for task-specific output files. It extends OutputFormat, providing abstract methods for creating record writers and checking output specifications. The class includes utility methods for setting and getting compression options, output directory, and handling task-specific temporary output directories. It generates unique filenames for task-specific output files and initializes an OutputCommitter for managing the output directory. It depends on various Hadoop and Java classes for its functionality.\n\nTITLE: MultipleOutputs.java\n\nDESCRIPTION:\nMultipleOutputs.java simplifies writing output data to multiple outputs in a MapReduce job. It allows defining additional outputs with their own OutputFormat, key class, and value class, and supports counters for tracking records written to each output. The class manages record writers for each named output, caches them to avoid repeated instantiation, and wraps them with RecordWriterWithCounter if counters are enabled. It uses an ExecutorService to manage a pool of threads for closing multiple output streams concurrently. MultipleOutputs depends on several Hadoop MapReduce classes and Google Guava for thread pool management.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "FileOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "MultipleOutputs.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: FileOutputFormat.java\n\nDESCRIPTION:\nFileOutputFormat.java is a core Hadoop MapReduce class responsible for managing output directories, handling compression, and generating unique file names for task-specific output files. It extends OutputFormat, providing abstract methods for creating record writers and checking output specifications. The class includes utility methods for setting and getting compression options, output directory, and handling task-specific temporary output directories. It generates unique filenames for task-specific output files and initializes an OutputCommitter for managing the output directory. It depends on various Hadoop and Java classes for its functionality.\n\nTITLE: MultipleOutputs.java\n\nDESCRIPTION:\nMultipleOutputs.java simplifies writing output data to multiple outputs in a MapReduce job. It allows defining additional outputs with their own OutputFormat, key class, and value class, and supports counters for tracking records written to each output. The class manages record writers for each named output, caches them to avoid repeated instantiation, and wraps them with RecordWriterWithCounter if counters are enabled. It uses an ExecutorService to manage a pool of threads for closing multiple output streams concurrently. MultipleOutputs depends on several Hadoop MapReduce classes and Google Guava for thread pool management."
+}

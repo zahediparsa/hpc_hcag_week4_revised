@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 1,
+  "directory": ".",
+  "title": "Hadoop MapReduce Counters Management",
+  "description": "The 'counters' directory manages counters crucial for tracking metrics during Hadoop MapReduce job execution. It includes AbstractCounters.java for managing different counter types, FileSystemCounterGroup.java for filesystem-specific counters, and FrameworkCounterGroup.java for framework-specific counters. These components collaborate using Abstract Factory, Iterator, and Strategy patterns, ensuring efficient tracking, modularity, and maintainability of counters. This architecture is vital for job monitoring, debugging, and performance analysis.",
+  "summary": "TITLE: Hadoop MapReduce Counters Management\nDESCRIPTION: The 'counters' directory manages counters crucial for tracking metrics during Hadoop MapReduce job execution. It includes AbstractCounters.java for managing different counter types, FileSystemCounterGroup.java for filesystem-specific counters, and FrameworkCounterGroup.java for framework-specific counters. These components collaborate using Abstract Factory, Iterator, and Strategy patterns, ensuring efficient tracking, modularity, and maintainability of counters. This architecture is vital for job monitoring, debugging, and performance analysis.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "FileSystemCounter.java"
+    },
+    {
+      "type": "directory",
+      "name": "counters"
+    },
+    {
+      "type": "directory",
+      "name": "util"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Counters Management\n\nDESCRIPTION: The 'counters' directory manages counters crucial for tracking metrics during Hadoop MapReduce job execution. It includes AbstractCounters.java for managing different counter types, FileSystemCounterGroup.java for filesystem-specific counters, and FrameworkCounterGroup.java for framework-specific counters. These components collaborate using Abstract Factory, Iterator, and Strategy patterns, ensuring efficient tracking, modularity, and maintainability of counters. This architecture is vital for job monitoring, debugging, and performance analysis."
+}

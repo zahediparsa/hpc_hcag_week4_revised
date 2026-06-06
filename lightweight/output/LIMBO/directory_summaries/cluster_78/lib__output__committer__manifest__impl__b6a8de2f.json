@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 78,
+  "directory": "lib/output/committer/manifest/impl",
+  "title": "Hadoop Auditing Integration for MapReduce Committer",
+  "description": "The 'lib/output/committer/manifest/impl' directory houses the 'AuditingIntegration.java' file, which serves as an integration layer for Hadoop MapReduce with Hadoop 3.3.2+ Auditing. This class ensures consistent use of fs.audit methods, facilitating backport compatibility by allowing for stub class substitution. It provides static methods to manage the audit context for MapReduce jobs, updating the CommonAuditContext with job ID and task attempt ID, and handling context updates during committer stages. The class operly depends on Hadoop's auditing and MapReduce libraries, directly modifying the CommonAuditContext without producing any outputs. This design follows the Strategy pattern, centralizing audit context management for maintainability and flexibility.",
+  "summary": "TITLE: Hadoop Auditing Integration for MapReduce Committer\nDESCRIPTION: The 'lib/output/committer/manifest/impl' directory houses the 'AuditingIntegration.java' file, which serves as an integration layer for Hadoop MapReduce with Hadoop 3.3.2+ Auditing. This class ensures consistent use of fs.audit methods, facilitating backport compatibility by allowing for stub class substitution. It provides static methods to manage the audit context for MapReduce jobs, updating the CommonAuditContext with job ID and task attempt ID, and handling context updates during committer stages. The class operly depends on Hadoop's auditing and MapReduce libraries, directly modifying the CommonAuditContext without producing any outputs. This design follows the Strategy pattern, centralizing audit context management for maintainability and flexibility.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AuditingIntegration.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop Auditing Integration for MapReduce Committer\n\nDESCRIPTION:\nThe 'lib/output/committer/manifest/impl' directory houses the 'AuditingIntegration.java' file, which serves as an integration layer for Hadoop MapReduce with Hadoop 3.3.2+ Auditing. This class ensures consistent use of fs.audit methods, facilitating backport compatibility by allowing for stub class substitution. It provides static methods to manage the audit context for MapReduce jobs, updating the CommonAuditContext with job ID and task attempt ID, and handling context updates during committer stages. The class operly depends on Hadoop's auditing and MapReduce libraries, directly modifying the CommonAuditContext without producing any outputs. This design follows the Strategy pattern, centralizing audit context management for maintainability and flexibility."
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "algorithm": "ACDC",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.FileSystemCounter",
+    "path": "FileSystemCounter.java",
+    "file_name": "FileSystemCounter.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY: This code chunk defines an enumeration (enum) called `FileSystemCounter` in the `org.apache.hadoop.mapreduce` package. The enum lists various file system-related counters used in Hadoop MapReduce jobs.\n\nCORE LOGIC: The core logic in this chunk is the definition of an enum called `FileSystemCounter`. This enum lists several constants, each representing a specific type of file system operation counter. These counters are used to track various file system activities during the execution of MapReduce jobs.\n\nINPUTS/OUTPUTS: There are no explicit inputs or outputs in this code chunk, as it's purely a declaration of constants. These constants will be used as identifiers to track file system operations in the MapReduce framework.\n\nDEPENDENCIES: The key imported class visible in this chunk is `org.apache.hadoop.classification.InterfaceAudience`. This annotation is used for specifying the audience of an API. There are no direct collaborator classes, as this chunk only defines an enum. However, this enum will be utilized across the Hadoop MapReduce framework, particularly in classes responsible for tracking and reporting job statistics.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.counters.AbstractCounters",
+    "path": "counters/AbstractCounters.java",
+    "file_name": "AbstractCounters.java",
+    "directory": "counters",
+    "summary": "KEY FUNCTIONALITY:\nThis code defines an abstract class `AbstractCounters` that provides a common implementation for the Counters container in both the `mapred` and `mapreduce` packages of Apache Hadoop. It serves as a base for managing different types of counters and their groups.\n\nCORE LOGIC:\n- The class uses a `Map` to cache counters for quick retrieval.\n- It maintains two separate `Map`s (`fgroups` and `groups`) to store framework and non-framework counter groups, respectively.\n- The `addGroup` method adds a new counter group, placing it in the correct map based on whether it's a framework group or not.\n- The `findCounter` method retrieves a counter, creating it if it doesn't already exist.\n- The `iterator` method allows iteration over all counter groups.\n- The `write` and `readFields` methods handle serialization and deserialization of counter groups.\n- The `incrAllCounters` method increments counters from another `AbstractCounters` instance.\n\nINPUTS/OUTPUTS:\n- INPUTS: The class takes a `CounterGroupFactory` in its constructor, which is used to create new counter groups.\n- OUTPUTS: The class implements the `Writable` interface, allowing it to be written to a `DataOutput`. It also provides a `toString` method to generate a textual representation of counter values.\n\nDEPENDENCIES:\n- The class depends on several Hadoop classes, including `org.apache.hadoop.mapreduce.Counter`, `org.apache.hadoop.mapreduce.JobCounter`, `org.apache.hadoop.mapreduce.TaskCounter`, `org.apache.hadoop.io.Text`, `org.apache.hadoop.io.Writable`, `org.apache.hadoop.io.WritableUtils`, `org.apache.hadoop.util.StringInterner`, and `org.slf4j.Logger`.\n- It also uses classes from Google's Guava library (`org.apache.hadoop.thirdparty.com.google.common.collect.*`).\n- The `CounterGroupFactory` interface, which is used to create new counter groups, is assumed to be defined elsewhere.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.counters.FileSystemCounterGroup",
+    "path": "counters/FileSystemCounterGroup.java",
+    "file_name": "FileSystemCounterGroup.java",
+    "directory": "counters",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define an abstract class `FileSystemCounterGroup` that provides common implementation for filesystem counter groups in both MapReduce and MapReduce 2 (MR2) packages. It includes methods for adding counters, finding counters, incrementing all counters, writing and reading counter data, and implementing iterator functionality.\n\nCORE LOGIC:\nThe core logic revolves around managing filesystem counters using a concurrent skip list map (`ConcurrentSkipListMap`) to store counters grouped by their scheme. The `findCounter` method is used to locate a specific counter by its name and scheme. The `newCounter` method is an abstract factory method to create a file system counter. The `incrAllCounters` method increments counters from another `CounterGroupBase` instance. The `write` and `readFields` methods handle serialization and deserialization of counter data. The `iterator` method provides an iterator for the counters.\n\nINPUTS/OUTPUTS:\nThe class does not directly handle external inputs or outputs. However, it manages internal counter data, which can be serialized and deserialized using the `write` and `readFields` methods. The `iterator` method allows iteration over the stored counters.\n\nDEPENDENCIES:\nThe code chunk depends on several classes from the Apache Hadoop and Google Guava libraries:\n\n1. `org.apache.hadoop.mapreduce.counters.CounterGroupBase`: The base class for counter groups.\n2. `org.apache.hadoop.mapreduce.Counter`: Represents a single counter.\n3. `org.apache.hadoop.mapreduce.FileSystemCounter`: Represents a filesystem counter.\n4. `org.apache.hadoop.util.StringUtils`: Provides utility methods for string manipulation.\n5. `org.slf4j.Logger` and `org.slf4j.LoggerFactory`: For logging purposes.\n6. `java.io.DataInput`, `java.io.DataOutput`, and `java.io.IOException`: For input/output operations.\n7. `java.util.Arrays`, `java.util.concurrent.ConcurrentMap`, `java.util.concurrent.ConcurrentSkipListMap`, `java.util.Iterator`, and `java.util.Map`: For data structures and iteration.\n8. `org.apache.hadoop.thirdparty.com.google.common.base.Joiner`: For string joining.\n9. `",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.counters.FrameworkCounterGroup",
+    "path": "counters/FrameworkCounterGroup.java",
+    "file_name": "FrameworkCounterGroup.java",
+    "directory": "counters",
+    "summary": "KEY FUNCTIONALITY:\nThis code defines an abstract class `FrameworkCounterGroup` that provides common implementation for the framework counter group in both MapReduce and MapReduce 2 (MR2) packages. It's designed to manage counters, which are used to track various metrics during job execution.\n\nCORE LOGIC:\n- The class uses an abstract factory method `newCounter(T key)` to create new counters.\n- It maintains an array of counters (`counters`) indexed by the ordinal of enum constants.\n- It provides methods to add counters (`addCounter`), find existing counters (`findCounter`), increment all counters (`incrAllCounters`), and write/read counter data (`write`, `readFields`).\n- The class also implements the `CounterGroupBase` interface, providing implementations for methods like `getName`, `getDisplayName`, `size`, and `iterator`.\n\nINPUTS/OUTPUTS:\n- INPUTS: The class doesn't directly take any external inputs. Internally, it receives enum constants of type `T` (which extends Enum) and counter names as strings.\n- OUTPUTS: The class outputs counter data via its `write` method, which serializes counter values into a `DataOutput`. It also provides an iterator for traversing counters.\n\nDEPENDENCIES:\n- The class depends on several Hadoop classes and interfaces, including:\n  - `org.apache.hadoop.mapreduce.Counter`\n  - `org.apache.hadoop.mapreduce.util.ResourceBundles`\n  - `org.apache.hadoop.io.WritableUtils`\n  - `org.apache.hadoop.classification.InterfaceAudience`\n  - `org.slf4j.Logger` and `org.slf4j.LoggerFactory` for logging\n  - `org.apache.hadoop.thirdparty.com.google.common.collect.AbstractIterator` and `org.apache.hadoop.thirdparty.com.google.common.collect.Iterators` for iterator implementation\n  - `org.apache.hadoop.io.DataInput` and `org.apache.hadoop.io.DataOutput` for serialization.\n- It also depends on Java's core classes like `java.util.Arrays`, `java.util.Iterator`, and `java.lang.reflect.Enum`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.util.ResourceBundles",
+    "path": "util/ResourceBundles.java",
+    "file_name": "ResourceBundles.java",
+    "directory": "util",
+    "summary": "KEY FUNCTIONALITY: This Java class, `ResourceBundle`, provides helper methods to manage resource bundles in a more organized way. It offers methods to retrieve resource bundles and specific resources from those bundles.\n\nCORE LOGIC: The class primarily uses static methods to interact with `ResourceBundle`. The `getBundle(String bundleName)` method retrieves a resource bundle using the specified bundle name, replacing any '$' characters with '_'. The `getValue(String bundleName, String key, String suffix, T defaultValue)` method retrieves a resource from the bundle using the given key and suffix. If the resource is not found or an exception occurs, it returns the default value. The `getLookupKey(String key, String suffix)` method constructs a lookup key by appending a suffix to the key if provided.\n\nINPUTS/OUTPUTS: The class takes strings as inputs, including the bundle name, key, suffix, and default values. It returns resources (objects of type T) from the resource bundles.\n\nDEPENDENCIES: The class depends on the `java.util.ResourceBundle`, `java.util.MissingResourceException`, `java.util.Locale`, and `java.util.concurrent.locks.ReentrantLock` classes. It also uses Java generics with the `<T>` type parameter.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

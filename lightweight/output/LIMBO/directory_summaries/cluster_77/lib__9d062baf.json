@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 77,
+  "directory": "lib",
+  "title": "Manifest Printing Utility",
+  "description": "The 'lib/output' directory houses the 'ManifestPrinter.java' utility, aiding in debugging and monitoring. It reads manifest files, displaying their contents via command-line arguments. This utility, adhering to a utility pattern, outputs diagnostics and I/O statistics, supporting the main output process with ancillary functions.",
+  "summary": "TITLE: Manifest Printing Utility\nDESCRIPTION: The 'lib/output' directory houses the 'ManifestPrinter.java' utility, aiding in debugging and monitoring. It reads manifest files, displaying their contents via command-line arguments. This utility, adhering to a utility pattern, outputs diagnostics and I/O statistics, supporting the main output process with ancillary functions.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- DIRECTORY: lib/output ---\n\nTITLE: Manifest Printing Utility\n\nDESCRIPTION: The 'lib/output' directory houses the 'ManifestPrinter.java' utility, aiding in debugging and monitoring. It reads manifest files, displaying their contents via command-line arguments. This utility, adhering to a utility pattern, outputs diagnostics and I/O statistics, supporting the main output process with ancillary functions."
+}

@@ -1,0 +1,50 @@
+{
+  "type": "directory",
+  "cluster_id": 6,
+  "directory": "lib/db",
+  "title": "Hadoop MapReduce Database Splitter Directory",
+  "description": "The 'lib/db' directory in Hadoop MapReduce architecture houses classes responsible for splitting database queries into manageable InputSplits for distributed processing. Key files include 'BigDecimalSplitter.java', 'BooleanSplitter.java', 'DBSplitter.java', 'DateSplitter.java', 'FloatSplitter.java', 'IntegerSplitter.java', and 'TextSplitter.java'. Each file implements a specific data type splitter, converting database query results into logical data ranges for MapReduce tasks. These splitters extend the 'DBSplitter' interface, overriding the 'split' method to generate InputSplit objects based on the data type and range. They collaborate with Hadoop's InputSplit interface and Oracle-specific classes like 'OracleDataDrivenDBInputFormat' and 'OracleDateSplitter' for database-driven input formats. This directory exemplifies the Data-Driven approach in Hadoop, enabling efficient parallel processing of large databases.",
+  "summary": "TITLE: Hadoop MapReduce Database Splitter Directory\nDESCRIPTION: The 'lib/db' directory in Hadoop MapReduce architecture houses classes responsible for splitting database queries into manageable InputSplits for distributed processing. Key files include 'BigDecimalSplitter.java', 'BooleanSplitter.java', 'DBSplitter.java', 'DateSplitter.java', 'FloatSplitter.java', 'IntegerSplitter.java', and 'TextSplitter.java'. Each file implements a specific data type splitter, converting database query results into logical data ranges for MapReduce tasks. These splitters extend the 'DBSplitter' interface, overriding the 'split' method to generate InputSplit objects based on the data type and range. They collaborate with Hadoop's InputSplit interface and Oracle-specific classes like 'OracleDataDrivenDBInputFormat' and 'OracleDateSplitter' for database-driven input formats. This directory exemplifies the Data-Driven approach in Hadoop, enabling efficient parallel processing of large databases.",
+  "number_of_children": 9,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "BigDecimalSplitter.java"
+    },
+    {
+      "type": "file",
+      "name": "BooleanSplitter.java"
+    },
+    {
+      "type": "file",
+      "name": "DBSplitter.java"
+    },
+    {
+      "type": "file",
+      "name": "DateSplitter.java"
+    },
+    {
+      "type": "file",
+      "name": "FloatSplitter.java"
+    },
+    {
+      "type": "file",
+      "name": "IntegerSplitter.java"
+    },
+    {
+      "type": "file",
+      "name": "OracleDataDrivenDBInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "OracleDateSplitter.java"
+    },
+    {
+      "type": "file",
+      "name": "TextSplitter.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Database Splitter Directory\n\nDESCRIPTION:\nThe 'lib/db' directory in Hadoop MapReduce architecture houses classes responsible for splitting database queries into manageable InputSplits for distributed processing. Key files include 'BigDecimalSplitter.java', 'BooleanSplitter.java', 'DBSplitter.java', 'DateSplitter.java', 'FloatSplitter.java', 'IntegerSplitter.java', and 'TextSplitter.java'. Each file implements a specific data type splitter, converting database query results into logical data ranges for MapReduce tasks. These splitters extend the 'DBSplitter' interface, overriding the 'split' method to generate InputSplit objects based on the data type and range. They collaborate with Hadoop's InputSplit interface and Oracle-specific classes like 'OracleDataDrivenDBInputFormat' and 'OracleDateSplitter' for database-driven input formats. This directory exemplifies the Data-Driven approach in Hadoop, enabling efficient parallel processing of large databases."
+}

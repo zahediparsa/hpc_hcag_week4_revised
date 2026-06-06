@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 78,
+  "directory": "lib/output/committer/manifest",
+  "title": "Hadoop MapReduce Committer Manifest Directory",
+  "description": "The 'lib/output/committer/manifest' directory in Hadoop MapReduce architecture is responsible for managing job output committer stages. It includes 'AuditingIntegration.java' for Hadoop auditing compatibility and 'manifest/stages' for various committer stages like abort, cleanup, setup, and success file handling. These components collaborate to ensure job output commitment and cleanup, utilizing patterns like Strategy and inheritance. The directory's role is integral to maintaining job consistency and integrity, adhering to Hadoop's logging and file system utilities.",
+  "summary": "TITLE: Hadoop MapReduce Committer Manifest Directory\nDESCRIPTION: The 'lib/output/committer/manifest' directory in Hadoop MapReduce architecture is responsible for managing job output committer stages. It includes 'AuditingIntegration.java' for Hadoop auditing compatibility and 'manifest/stages' for various committer stages like abort, cleanup, setup, and success file handling. These components collaborate to ensure job output commitment and cleanup, utilizing patterns like Strategy and inheritance. The directory's role is integral to maintaining job consistency and integrity, adhering to Hadoop's logging and file system utilities.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest/impl"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest/stages"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Committer Manifest Directory\n\nDESCRIPTION: The 'lib/output/committer/manifest' directory in Hadoop MapReduce architecture is responsible for managing job output committer stages. It includes 'AuditingIntegration.java' for Hadoop auditing compatibility and 'manifest/stages' for various committer stages like abort, cleanup, setup, and success file handling. These components collaborate to ensure job output commitment and cleanup, utilizing patterns like Strategy and inheritance. The directory's role is integral to maintaining job consistency and integrity, adhering to Hadoop's logging and file system utilities."
+}

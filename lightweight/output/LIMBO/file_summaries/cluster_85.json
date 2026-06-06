@@ -1,0 +1,38 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 85,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.BinaryPartitioner",
+    "path": "lib/partition/BinaryPartitioner.java",
+    "file_name": "BinaryPartitioner.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\nThe main functionality of this code chunk is to define a custom partitioner for Apache Hadoop MapReduce, specifically for partitioning keys of type `BinaryComparable`. This partitioner allows users to specify a subarray of the bytes array returned by `BinaryComparable#getBytes()` for partitioning purposes.\n\nCORE LOGIC:\nThe core logic involves setting and retrieving left and right offsets for the subarray to be used in partitioning. The `getPartition` method calculates a hash based on the specified subarray and uses it to determine the partition number for the given key and value.\n\nINPUTS/OUTPUTS:\n- INPUTS: The partitioner takes `BinaryComparable` keys and any value `V`. It also takes configuration settings for left and right offsets.\n- OUTPUTS: The partitioner outputs an integer representing the partition number for the given key and value.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.lib.partition.Partitioner<BinaryComparable, V>`: The class extends this to implement the partitioning logic.\n- `org.apache.hadoop.io.BinaryComparable`: The key type for which the partitioner is designed.\n- `org.apache.hadoop.io.WritableComparator`: Used for hashing the specified subarray of bytes.\n- `org.apache.hadoop.conf.Configuration`: Used for storing and retrieving configuration settings.\n- `org.apache.hadoop.conf.Configurable`: An interface implemented to allow configuration of the partitioner.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 85,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.HashPartitioner",
+    "path": "lib/partition/HashPartitioner.java",
+    "file_name": "HashPartitioner.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a custom partitioner for Apache Hadoop MapReduce, named `HashPartitioner`, which partitions keys based on their hash code.\n\nCORE LOGIC:\nThe core logic of this class is the `getPartition` method, which takes a key and a value, and an integer `numReduceTasks`. It calculates the partition for the given key by applying the hash code method (`key.hashCode()`) and then uses bitwise AND with `Integer.MAX_VALUE` followed by modulo operation (`% numReduceTasks`) to determine the partition number.\n\nINPUTS/OUTPUTS:\n- Inputs: The method takes three inputs - `K key`, `V value`, and `int numReduceTasks`.\n- Outputs: The method returns an integer representing the partition number.\n\nDEPENDENCIES:\n- The class imports `org.apache.hadoop.classification.InterfaceAudience` and `org.apache.hadoop.classification.InterfaceStability` for annotations.\n- It extends `org.apache.hadoop.mapreduce.Partitioner<K, V>`, indicating it is a custom partitioner for MapReduce jobs.\n- It uses `Object#hashCode()` to compute the hash code of the key.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 85,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.RehashPartitioner",
+    "path": "lib/partition/RehashPartitioner.java",
+    "file_name": "RehashPartitioner.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\nThe main functionality of this code chunk is to define a custom partitioner for Apache Hadoop MapReduce, named `RehashPartitioner`, which rehashes the hash code of input keys to achieve a more uniform distribution across reduce tasks.\n\nCORE LOGIC:\nThe core logic of this partitioner revolves around the `getPartition` method. It takes the key, value, and the number of reduce tasks as inputs. It first computes a hash value for the key using `key.hashCode()`. This hash value is then rehashed using a series of XOR and bit-shift operations involving a prime number (SEED) to improve the distribution quality. Finally, the rehashed value is masked and taken modulo the number of reduce tasks to determine the partition number for the key-value pair.\n\nINPUTS/OUTPUTS:\nInputs:\n1. `key` of type `K`\n2. `value` of type `V`\n3. `numReduceTasks` of type `int` (number of reduce tasks)\n\nOutputs:\n1. An `int` representing the partition number for the given key-value pair\n\nDEPENDENCIES:\nThis code chunk depends on the following classes:\n1. `org.apache.hadoop.mapreduce.Partitioner<K, V>` (the abstract class for implementing custom partitioners)\n2. `org.apache.hadoop.classification` (for annotations like `@InterfaceAudience` and `@InterfaceStability`)",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

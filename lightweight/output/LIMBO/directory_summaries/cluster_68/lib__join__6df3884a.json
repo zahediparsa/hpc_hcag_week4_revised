@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 68,
+  "directory": "lib/join",
+  "title": "StreamBackedIterator for Join Operations",
+  "description": "The StreamBackedIterator.java file provides an implementation of the ResetableIterator interface, utilizing a ByteArrayOutputStream to store elements as bytes. It incorporates a custom ReplayableByteInputStream for resetting the stream position, enabling add, next, hasNext, and reset operations. This class works with Hadoop's Writable interface for serialization and uses standard Java classes for handling byte streams. It is designed for use within Hadoop's MapReduce library, specifically in the org.apache.hadoop.mapreduce.lib.join package, for join operations involving Writable objects.",
+  "summary": "TITLE: StreamBackedIterator for Join Operations\nDESCRIPTION: The StreamBackedIterator.java file provides an implementation of the ResetableIterator interface, utilizing a ByteArrayOutputStream to store elements as bytes. It incorporates a custom ReplayableByteInputStream for resetting the stream position, enabling add, next, hasNext, and reset operations. This class works with Hadoop's Writable interface for serialization and uses standard Java classes for handling byte streams. It is designed for use within Hadoop's MapReduce library, specifically in the org.apache.hadoop.mapreduce.lib.join package, for join operations involving Writable objects.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ArrayListBackedIterator.java"
+    },
+    {
+      "type": "file",
+      "name": "StreamBackedIterator.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: StreamBackedIterator for Join Operations\n\nDESCRIPTION:\nThe StreamBackedIterator.java file provides an implementation of the ResetableIterator interface, utilizing a ByteArrayOutputStream to store elements as bytes. It incorporates a custom ReplayableByteInputStream for resetting the stream position, enabling add, next, hasNext, and reset operations. This class works with Hadoop's Writable interface for serialization and uses standard Java classes for handling byte streams. It is designed for use within Hadoop's MapReduce library, specifically in the org.apache.hadoop.mapreduce.lib.join package, for join operations involving Writable objects."
+}

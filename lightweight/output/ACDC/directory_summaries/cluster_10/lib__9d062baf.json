@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 10,
+  "directory": "lib",
+  "title": "SequenceFile Management in MapReduce",
+  "description": "The 'lib/output/committer' directory manages 'FileEntry' objects in Hadoop's MapReduce. It uses 'EntryFileIO' for SequenceFile operations. The 'EntryWriter' class, employing Factory and Worker patterns, ensures efficient file entry management. This directory collaborates with other classes, demonstrating Layered Architecture. It guarantees data integrity and consistency during MapReduce processes.",
+  "summary": "TITLE: SequenceFile Management in MapReduce\nDESCRIPTION: The 'lib/output/committer' directory manages 'FileEntry' objects in Hadoop's MapReduce. It uses 'EntryFileIO' for SequenceFile operations. The 'EntryWriter' class, employing Factory and Worker patterns, ensures efficient file entry management. This directory collaborates with other classes, demonstrating Layered Architecture. It guarantees data integrity and consistency during MapReduce processes.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: SequenceFile Management in MapReduce\n\nDESCRIPTION: The 'lib/output/committer' directory manages 'FileEntry' objects in Hadoop's MapReduce. It uses 'EntryFileIO' for SequenceFile operations. The 'EntryWriter' class, employing Factory and Worker patterns, ensures efficient file entry management. This directory collaborates with other classes, demonstrating Layered Architecture. It guarantees data integrity and consistency during MapReduce processes."
+}

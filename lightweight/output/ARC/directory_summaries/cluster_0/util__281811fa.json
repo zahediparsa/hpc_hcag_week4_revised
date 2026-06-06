@@ -1,0 +1,30 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "util",
+  "title": "MRJobConfUtil.java",
+  "description": "The MRJobConfUtil class in Apache Hadoop MapReduce offers utility methods for configuring MapReduce jobs. It includes functionalities for redacting sensitive properties, calculating task progress report intervals, and setting thresholds for logging task progress. The redact method replaces specified properties with a placeholder. The getTaskProgressReportInterval method computes the interval as a ratio of the task timeout. The setTaskLogProgressDeltaThresholds method loads min delta progress and max wait delta time thresholds. The convertTaskProgressToFactor scales progress values for logging. The initEncryptedIntermediateConfigsForTesting and setLocalDirectoriesConfigForTesting methods configure settings for testing encrypted intermediate data and local directories, respectively. The class depends on slf4j for logging, File and TimeUnit for file and time operations, Configuration for managing Hadoop configuration, and Path for path-related operations.",
+  "summary": "TITLE: MRJobConfUtil.java\nDESCRIPTION: The MRJobConfUtil class in Apache Hadoop MapReduce offers utility methods for configuring MapReduce jobs. It includes functionalities for redacting sensitive properties, calculating task progress report intervals, and setting thresholds for logging task progress. The redact method replaces specified properties with a placeholder. The getTaskProgressReportInterval method computes the interval as a ratio of the task timeout. The setTaskLogProgressDeltaThresholds method loads min delta progress and max wait delta time thresholds. The convertTaskProgressToFactor scales progress values for logging. The initEncryptedIntermediateConfigsForTesting and setLocalDirectoriesConfigForTesting methods configure settings for testing encrypted intermediate data and local directories, respectively. The class depends on slf4j for logging, File and TimeUnit for file and time operations, Configuration for managing Hadoop configuration, and Path for path-related operations.",
+  "number_of_children": 4,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ConfigUtil.java"
+    },
+    {
+      "type": "file",
+      "name": "HostUtil.java"
+    },
+    {
+      "type": "file",
+      "name": "MRJobConfUtil.java"
+    },
+    {
+      "type": "file",
+      "name": "ProcessTree.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MRJobConfUtil.java\n\nDESCRIPTION:\nThe MRJobConfUtil class in Apache Hadoop MapReduce offers utility methods for configuring MapReduce jobs. It includes functionalities for redacting sensitive properties, calculating task progress report intervals, and setting thresholds for logging task progress. The redact method replaces specified properties with a placeholder. The getTaskProgressReportInterval method computes the interval as a ratio of the task timeout. The setTaskLogProgressDeltaThresholds method loads min delta progress and max wait delta time thresholds. The convertTaskProgressToFactor scales progress values for logging. The initEncryptedIntermediateConfigsForTesting and setLocalDirectoriesConfigForTesting methods configure settings for testing encrypted intermediate data and local directories, respectively. The class depends on slf4j for logging, File and TimeUnit for file and time operations, Configuration for managing Hadoop configuration, and Path for path-related operations."
+}

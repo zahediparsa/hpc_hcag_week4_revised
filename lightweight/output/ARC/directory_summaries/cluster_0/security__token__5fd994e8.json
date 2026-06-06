@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "security/token",
+  "title": "JobTokenIdentifier.java",
+  "description": "This Java file defines the JobTokenIdentifier class, which represents a job token identifier for Hadoop MapReduce. It extends TokenIdentifier, storing job IDs as Text objects. The class provides methods for creating, reading, writing, and renewing job tokens, utilizing Hadoop's security and token management libraries. It's designed for serialization, interacting with DataInput and DataOutput for byte stream handling. The class is part of Hadoop's security framework, ensuring secure job token management.",
+  "summary": "TITLE: JobTokenIdentifier.java\nDESCRIPTION: This Java file defines the JobTokenIdentifier class, which represents a job token identifier for Hadoop MapReduce. It extends TokenIdentifier, storing job IDs as Text objects. The class provides methods for creating, reading, writing, and renewing job tokens, utilizing Hadoop's security and token management libraries. It's designed for serialization, interacting with DataInput and DataOutput for byte stream handling. The class is part of Hadoop's security framework, ensuring secure job token management.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobTokenIdentifier.java"
+    },
+    {
+      "type": "file",
+      "name": "JobTokenSecretManager.java"
+    },
+    {
+      "type": "file",
+      "name": "JobTokenSelector.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobTokenIdentifier.java\n\nDESCRIPTION: \nThis Java file defines the JobTokenIdentifier class, which represents a job token identifier for Hadoop MapReduce. It extends TokenIdentifier, storing job IDs as Text objects. The class provides methods for creating, reading, writing, and renewing job tokens, utilizing Hadoop's security and token management libraries. It's designed for serialization, interacting with DataInput and DataOutput for byte stream handling. The class is part of Hadoop's security framework, ensuring secure job token management."
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 66,
+  "directory": ".",
+  "title": "Job Control Management",
+  "description": "The 'lib/jobcontrol' directory manages MapReduce jobs, handling submission, execution, and dependency checks. It uses 'JobControl.java' for job state maintenance, ID generation, and circular dependency detection. The class interacts with Hadoop's job management, employing Java collections and threading. It provides job state information via getter methods for external access.",
+  "summary": "TITLE: Job Control Management\nDESCRIPTION: The 'lib/jobcontrol' directory manages MapReduce jobs, handling submission, execution, and dependency checks. It uses 'JobControl.java' for job state maintenance, ID generation, and circular dependency detection. The class interacts with Hadoop's job management, employing Java collections and threading. It provides job state information via getter methods for external access.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job Control Management\nDESCRIPTION: The 'lib/jobcontrol' directory manages MapReduce jobs, handling submission, execution, and dependency checks. It uses 'JobControl.java' for job state maintenance, ID generation, and circular dependency detection. The class interacts with Hadoop's job management, employing Java collections and threading. It provides job state information via getter methods for external access."
+}

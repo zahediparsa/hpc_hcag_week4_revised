@@ -1,0 +1,62 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 76,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.DirEntry",
+    "path": "lib/output/committer/manifest/files/DirEntry.java",
+    "file_name": "DirEntry.java",
+    "directory": "lib/output/committer/manifest/files",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a class `DirEntry` that represents a directory entry in the task manifest of Apache Hadoop MapReduce. It is designed to be serializable and compatible with Hadoop's `Writable` interface, allowing it to be used in Hadoop's data processing pipeline.\n\nCORE LOGIC:\nThe class `DirEntry` has three main fields: `dir` (destination directory), `type` (type of destination entry as found during task commit), and `level` (level in the tree walk). It provides constructors to initialize these fields, getter and setter methods, and methods to convert between `Path` and string representations of the directory. The class also includes methods for validation, comparison, and serialization/deserialization.\n\nINPUTS/OUTPUTS:\nThe class does not directly handle input or output of data. Instead, it encapsulates metadata about directory entries within a task manifest, which is an output of the MapReduce job. This metadata can later be used for various purposes, such as task recovery or job commit protocols.\n\nDEPENDENCIES:\nThe code chunk depends on several classes from the Apache Hadoop project:\n- `java.io.DataInput`, `java.io.DataOutput`, `java.io.IOException`, `java.io.Serializable`, and `java.util.Objects` from the Java standard library for input/output operations and serialization.\n- `com.fasterxml.jackson.annotation.JsonIgnore`, `com.fasterxml.jackson.annotation.JsonProperty` from the Jackson library for handling JSON serialization/deserialization annotations.\n- `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`, `org.apache.hadoop.fs.Path`, and `org.apache.hadoop.io.Writable` from the Hadoop library for defining interfaces, stability, file paths, and Hadoop Writable interface compatibility.\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.AbstractManifestData` for utility methods related to manifest data.\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.EntryStatus` for representing the status of a directory entry.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 76,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.FileEntry",
+    "path": "lib/output/committer/manifest/files/FileEntry.java",
+    "file_name": "FileEntry.java",
+    "directory": "lib/output/committer/manifest/files",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to represent a file entry in the task manifest of Apache Hadoop MapReduce. It serves as a Hadoop Writable for serialization and deserialization during job commit.\n\nCORE LOGIC:\nThe class `FileEntry` implements the `Serializable` and `Writable` interfaces. It contains fields for source path (`source`), destination path (`dest`), file size (`size`), and an optional ETag (`etag`). Constructors are provided for initializing these fields. The `validate` method checks for the validity of the source, destination, and size. The `toString`, `equals`, and `hashCode` methods are overridden for proper string representation and equality checks. The `write` and `readFields` methods handle serialization and deserialization using Hadoop's `DataOutput` and `DataInput`.\n\nINPUTS/OUTPUTS:\n- Inputs: Source path (String), Destination path (String), File size (long), Optional ETag (String)\n- Outputs: Serialized representation of the file entry for storage in an intermediate file during job commit.\n\nDEPENDENCIES:\n- `java.io.DataInput`, `java.io.DataOutput`, `java.io.IOException`, `java.io.Serializable`, `java.util.Objects`\n- `com.fasterxml.jackson.annotation.JsonIgnore`, `com.fasterxml.jackson.annotation.JsonInclude`, `com.fasterxml.jackson.annotation.JsonProperty`\n- `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`\n- `org.apache.hadoop.fs.Path`\n- `org.apache.hadoop.io.Text`, `org.apache.hadoop.io.Writable`, `org.apache.hadoop.io.WritableUtils`\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.AbstractManifestData` (for marshalling/unmarshalling paths and verification)",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 76,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.ManifestSuccessData",
+    "path": "lib/output/committer/manifest/files/ManifestSuccessData.java",
+    "file_name": "ManifestSuccessData.java",
+    "directory": "lib/output/committer/manifest/files",
+    "summary": "KEY FUNCTIONALITY:\nThis Java class, `ManifestSuccessData`, is part of Apache Hadoop MapReduce's output committer library. Its main purpose is to encapsulate summary data that gets saved into a special `_SUCCESS` marker file. This data format is designed to be compatible with Amazon S3A committer's format, facilitating easier parsing for tests in downstream modules.\n\nCORE LOGIC:\nThe class defines several fields to store metadata about the job execution, such as creation timestamp, success status, hostname, committer name, description, job ID, and various metrics and diagnostics. It includes methods for serialization (toBytes, toJson), deserialization (load), validation (validate), and utility methods for dumping metrics and diagnostics into a human-readable string format.\n\nINPUTS/OUTPUTS:\n- Inputs: The class doesn't directly take input data. It stores metadata about a job execution.\n- Outputs: The class outputs its data into a JSON-formatted string or byte array, which is then written to a `_SUCCESS` file in the Hadoop Distributed File System (HDFS).\n\nDEPENDENCIES:\n- `java.io.IOException`\n- `java.util.ArrayList`, `java.util.Collections`, `java.util.List`, `java.util.Map`, `java.util.TreeMap`\n- `com.fasterxml.jackson.annotation.JsonIgnore`, `com.fasterxml.jackson.annotation.JsonInclude`, `com.fasterxml.jackson.annotation.JsonProperty`\n- `org.slf4j.Logger`, `org.slf4j.LoggerFactory`\n- `org.apache.commons.lang3.StringUtils`, `org.apache.commons.lang3.exception.ExceptionUtils`\n- `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`\n- `org.apache.hadoop.fs.FileSystem`, `org.apache.hadoop.fs.Path`\n- `org.apache.hadoop.fs.statistics.IOStatistics`, `org.apache.hadoop.fs.statistics.IOStatisticsSnapshot`, `org.apache.hadoop.fs.statistics.IOStatisticsSupport`\n- `org.apache.hadoop.util.JsonSerialization`\n\nThis class relies heavily on Hadoop's internal APIs and external libraries like Jackson for JSON serialization and Apache Commons Lang for utility functions. It also depends on Hadoop's logging framework (SL",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 76,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.TaskManifest",
+    "path": "lib/output/committer/manifest/files/TaskManifest.java",
+    "file_name": "TaskManifest.java",
+    "directory": "lib/output/committer/manifest/files",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class, `TaskManifest`, is to represent a manifest of files created by a specific task attempt in Apache Hadoop MapReduce. It stores metadata about these files, including their locations, sizes, and other relevant information, to facilitate task commit and data management.\n\nCORE LOGIC:\nThe class extends `AbstractManifestData<TaskManifest>`, indicating it's part of a manifest data structure. It contains several fields to store metadata: `jobId`, `jobAttemptNumber`, `taskID`, `taskAttemptID`, `taskAttemptDir`, `filesToCommit`, and `destDirectories`. The `addFileToCommit` method allows adding files to the list of files to commit, and `getTotalFileSize` calculates the total size of these files. The `validate` method ensures the integrity of the manifest data.\n\nINPUTS/OUTPUTS:\n- Inputs: The class doesn't directly take input data. It stores metadata about files generated during a task attempt.\n- Outputs: It generates a JSON representation of the task manifest using `toJson` method and can save this manifest to a file system using `save` method.\n\nDEPENDENCIES:\n- `javax.annotation.Nullable`\n- `java.io.IOException`\n- `java.util.ArrayList`\n- `java.util.HashMap`\n- `java.util.HashSet`\n- `java.util.List`\n- `java.util.Map`\n- `com.fasterxml.jackson.annotation.JsonInclude`\n- `com.fasterxml.jackson.annotation.JsonProperty`\n- `org.slf4j.Logger`\n- `org.slf4j.LoggerFactory`\n- `org.apache.hadoop.classification.InterfaceAudience`\n- `org.apache.hadoop.classification.InterfaceStability`\n- `org.apache.hadoop.fs.FileStatus`\n- `org.apache.hadoop.fs.FileSystem`\n- `org.apache.hadoop.fs.Path`\n- `org.apache.hadoop.fs.statistics.IOStatisticsSnapshot`\n- `org.apache.hadoop.util.JsonSerialization`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 76,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.LoadedManifestData",
+    "path": "lib/output/committer/manifest/impl/LoadedManifestData.java",
+    "file_name": "LoadedManifestData.java",
+    "directory": "lib/output/committer/manifest/impl",
+    "summary": "KEY FUNCTIONALITY: The main purpose of this class is to encapsulate information about loaded manifest data, which is returned from the LoadManifestsStage and then used for renaming files.\n\nCORE LOGIC: The class `LoadedManifestData` holds a collection of `DirEntry` objects, a `Path` object representing the location of an entry sequence data file, and an integer representing the number of files. It provides methods to access these data elements and to delete the entry sequence file.\n\nINPUTS/OUTPUTS: The class takes as input a collection of `DirEntry` objects, a `Path` object, and an integer. It outputs these data elements through getter methods. It also provides a method to get the corresponding file object from the path and a method to delete the entry sequence file.\n\nDEPENDENCIES: The class depends on `java.io.File`, `java.util.Collection`, `java.util.Objects`, `java.io.Path`, `org.apache.hadoop.fs.Path`, `org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.DirEntry`, and `org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.LoadManifestsStage`. It also uses `requireNonNull` from `java.util.Objects`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

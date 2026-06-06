@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 28,
+  "directory": ".",
+  "title": "GenericCounter Class for Hadoop MapReduce",
+  "description": "The GenericCounter.java in Hadoop MapReduce's 'counters' directory defines a counter management class. It extends AbstractCounter, handling counter data fields like name, display name, and value. The class implements core logic for reading and writing counter data via DataInput and DataOutput. It includes methods for incrementing, getting, and setting counter values. This class is pivotal for tracking and managing job counters within the Hadoop MapReduce framework, leveraging Hadoop and Java libraries for I/O and exception handling.",
+  "summary": "TITLE: GenericCounter Class for Hadoop MapReduce\nDESCRIPTION: The GenericCounter.java in Hadoop MapReduce's 'counters' directory defines a counter management class. It extends AbstractCounter, handling counter data fields like name, display name, and value. The class implements core logic for reading and writing counter data via DataInput and DataOutput. It includes methods for incrementing, getting, and setting counter values. This class is pivotal for tracking and managing job counters within the Hadoop MapReduce framework, leveraging Hadoop and Java libraries for I/O and exception handling.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "counters"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: GenericCounter Class for Hadoop MapReduce\n\nDESCRIPTION: The GenericCounter.java in Hadoop MapReduce's 'counters' directory defines a counter management class. It extends AbstractCounter, handling counter data fields like name, display name, and value. The class implements core logic for reading and writing counter data via DataInput and DataOutput. It includes methods for incrementing, getting, and setting counter values. This class is pivotal for tracking and managing job counters within the Hadoop MapReduce framework, leveraging Hadoop and Java libraries for I/O and exception handling."
+}

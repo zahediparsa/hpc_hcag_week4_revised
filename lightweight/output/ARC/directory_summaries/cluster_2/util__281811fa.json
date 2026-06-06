@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "util",
+  "title": "ResourceBundle Management Class",
+  "description": "The ResourceBundles.java file contains a Java class named ResourceBundle, which offers methods to manage resource bundles efficiently. It provides functionalities to retrieve resource bundles and specific resources from those bundles using static methods. The class uses the java.util.ResourceBundle class for its operations and handles exceptions using MissingResourceException. It also incorporates concurrency control with ReentrantLock for thread safety. The class accepts string inputs like bundle name, key, suffix, and default values, and returns resources of type T from the resource bundles.",
+  "summary": "TITLE: ResourceBundle Management Class\nDESCRIPTION: The ResourceBundles.java file contains a Java class named ResourceBundle, which offers methods to manage resource bundles efficiently. It provides functionalities to retrieve resource bundles and specific resources from those bundles using static methods. The class uses the java.util.ResourceBundle class for its operations and handles exceptions using MissingResourceException. It also incorporates concurrency control with ReentrantLock for thread safety. The class accepts string inputs like bundle name, key, suffix, and default values, and returns resources of type T from the resource bundles.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ResourceBundles.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ResourceBundle Management Class\n\nDESCRIPTION: The ResourceBundles.java file contains a Java class named ResourceBundle, which offers methods to manage resource bundles efficiently. It provides functionalities to retrieve resource bundles and specific resources from those bundles using static methods. The class uses the java.util.ResourceBundle class for its operations and handles exceptions using MissingResourceException. It also incorporates concurrency control with ReentrantLock for thread safety. The class accepts string inputs like bundle name, key, suffix, and default values, and returns resources of type T from the resource bundles."
+}

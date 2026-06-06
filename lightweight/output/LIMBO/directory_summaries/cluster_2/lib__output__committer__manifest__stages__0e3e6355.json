@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "lib/output/committer/manifest/stages",
+  "title": "MapReduce Output Committer Stage Directory",
+  "description": "The 'lib/output/committer/manifest/stages' directory in Hadoop MapReduce is responsible for managing stages of the output committer process. It defines interfaces like 'JobOrTaskStage' and 'StageEventCallbacks' to handle stage-related functionalities and events. The 'JobOrTaskStage' interface, extending 'FunctionRaisingIOE' and 'IOStatisticsSource', ensures stages can raise IOExceptions and provide Input/Output statistics. The 'StageEventCallbacks' interface defines methods for handling stage entry and exit events. These components collaborate within the output committer process, ensuring proper management and tracking of stages, thereby adhering to the Observer pattern for event handling in the Hadoop MapReduce architecture.",
+  "summary": "TITLE: MapReduce Output Committer Stage Directory\nDESCRIPTION: The 'lib/output/committer/manifest/stages' directory in Hadoop MapReduce is responsible for managing stages of the output committer process. It defines interfaces like 'JobOrTaskStage' and 'StageEventCallbacks' to handle stage-related functionalities and events. The 'JobOrTaskStage' interface, extending 'FunctionRaisingIOE' and 'IOStatisticsSource', ensures stages can raise IOExceptions and provide Input/Output statistics. The 'StageEventCallbacks' interface defines methods for handling stage entry and exit events. These components collaborate within the output committer process, ensuring proper management and tracking of stages, thereby adhering to the Observer pattern for event handling in the Hadoop MapReduce architecture.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobOrTaskStage.java"
+    },
+    {
+      "type": "file",
+      "name": "StageEventCallbacks.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Output Committer Stage Directory\n\nDESCRIPTION:\nThe 'lib/output/committer/manifest/stages' directory in Hadoop MapReduce is responsible for managing stages of the output committer process. It defines interfaces like 'JobOrTaskStage' and 'StageEventCallbacks' to handle stage-related functionalities and events. The 'JobOrTaskStage' interface, extending 'FunctionRaisingIOE' and 'IOStatisticsSource', ensures stages can raise IOExceptions and provide Input/Output statistics. The 'StageEventCallbacks' interface defines methods for handling stage entry and exit events. These components collaborate within the output committer process, ensuring proper management and tracking of stages, thereby adhering to the Observer pattern for event handling in the Hadoop MapReduce architecture."
+}

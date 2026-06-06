@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": "counters",
+  "title": "Counter Limit Management",
+  "description": "The 'counters' directory in Hadoop MapReduce architecture houses the Limits.java file, which is responsible for managing and enforcing limits on the number of counter groups and names. This Java class, Limits, maintains four static variables to store maximum limits for counter groups, counter names, and total counters. It reads these limits from a Configuration object during initialization. The class provides methods to retrieve these limits and to check if the actual usage exceeds these limits, throwing a LimitExceededException if it does. This directory, thus, plays a crucial role in maintaining system integrity by preventing excessive counter creation, thereby adhering to the Controller architectural pattern, ensuring controlled resource usage.",
+  "summary": "TITLE: Counter Limit Management\nDESCRIPTION: The 'counters' directory in Hadoop MapReduce architecture houses the Limits.java file, which is responsible for managing and enforcing limits on the number of counter groups and names. This Java class, Limits, maintains four static variables to store maximum limits for counter groups, counter names, and total counters. It reads these limits from a Configuration object during initialization. The class provides methods to retrieve these limits and to check if the actual usage exceeds these limits, throwing a LimitExceededException if it does. This directory, thus, plays a crucial role in maintaining system integrity by preventing excessive counter creation, thereby adhering to the Controller architectural pattern, ensuring controlled resource usage.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "Limits.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Counter Limit Management\n\nDESCRIPTION:\nThe 'counters' directory in Hadoop MapReduce architecture houses the Limits.java file, which is responsible for managing and enforcing limits on the number of counter groups and names. This Java class, Limits, maintains four static variables to store maximum limits for counter groups, counter names, and total counters. It reads these limits from a Configuration object during initialization. The class provides methods to retrieve these limits and to check if the actual usage exceeds these limits, throwing a LimitExceededException if it does. This directory, thus, plays a crucial role in maintaining system integrity by preventing excessive counter creation, thereby adhering to the Controller architectural pattern, ensuring controlled resource usage."
+}

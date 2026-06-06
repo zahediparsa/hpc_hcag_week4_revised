@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 4,
+  "directory": ".",
+  "title": "Hadoop MapReduce Output Committer",
+  "description": "This directory implements Hadoop's committer mechanism, ensuring data integrity during MapReduce output. It includes classes for auditing, SequenceFile management, constants, and file system operations. The committer mechanism maintains data consistency and reliability in Hadoop's distributed file system. It employs patterns like helper classes and abstract base classes for modularity. Collaboration with Hadoop classes ensures seamless integration for reliable task output committal.",
+  "summary": "TITLE: Hadoop MapReduce Output Committer\nDESCRIPTION: This directory implements Hadoop's committer mechanism, ensuring data integrity during MapReduce output. It includes classes for auditing, SequenceFile management, constants, and file system operations. The committer mechanism maintains data consistency and reliability in Hadoop's distributed file system. It employs patterns like helper classes and abstract base classes for modularity. Collaboration with Hadoop classes ensures seamless integration for reliable task output committal.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- DIRECTORY: lib/output/committer ---\nTITLE: Hadoop MapReduce Output Committer\nDESCRIPTION: This directory implements Hadoop's committer mechanism, ensuring data integrity during MapReduce output. It includes classes for auditing, SequenceFile management, constants, and file system operations. The committer mechanism maintains data consistency and reliability in Hadoop's distributed file system. It employs patterns like helper classes and abstract base classes for modularity. Collaboration with Hadoop classes ensures seamless integration for reliable task output committal."
+}

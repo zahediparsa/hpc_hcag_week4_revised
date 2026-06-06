@@ -1,0 +1,50 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 16,
+    "class": "org.apache.hadoop.mapreduce.Mapper",
+    "path": "Mapper.java",
+    "file_name": "Mapper.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define the abstract base class for a Mapper in Apache Hadoop MapReduce. The Mapper is responsible for transforming input key/value pairs into intermediate key/value pairs.\n\nCORE LOGIC:\nThe core logic involves four main methods: setup, map, cleanup, and run. The setup method is called once at the beginning of the task and does nothing by default. The map method is called for each key/value pair in the input split, and by default, it writes the key and value directly to the output. The cleanup method is called once at the end of the task and does nothing by default. The run method provides expert users with more complete control over the execution of the Mapper, handling the setup, processing key/value pairs, and cleanup in a single method.\n\nINPUTS/OUTPUTS:\nThe Mapper takes in input key/value pairs (KEYIN, VALUEIN) and produces intermediate key/value pairs (KEYOUT, VALUEOUT). The processing happens in the map method, where each input key/value pair is transformed into one or more output key/value pairs. The context object (of type Context) is used to write these intermediate key/value pairs.\n\nDEPENDENCIES:\nThe code chunk depends on several classes from the Apache Hadoop MapReduce library, including Configuration, RawComparator, and CompressionCodec. It also imports standard Java classes like IOException and Object. The Mapper class itself is part of the org.apache.hadoop.mapreduce package, and it defines an abstract nested Context class that implements MapContext, which is also part of the same package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 16,
+    "class": "org.apache.hadoop.mapreduce.lib.map.InverseMapper",
+    "path": "lib/map/InverseMapper.java",
+    "file_name": "InverseMapper.java",
+    "directory": "lib/map",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define an InverseMapper class that extends the Mapper class from the Hadoop MapReduce library. This mapper swaps the keys and values of the input data.\n\nCORE LOGIC:\nThe core logic is implemented in the `map` method, which is overridden from the parent Mapper class. In this method, the keys and values passed to the map function are swapped before being written to the context.\n\nINPUTS/OUTPUTS:\nThe mapper takes two types, K and V, representing the key-value pairs of the input data. It outputs key-value pairs of types V and K respectively.\n\nDEPENDENCIES:\nThe key dependencies in this chunk are:\n- `org.apache.hadoop.mapreduce.lib.map.Mapper`: The abstract class that InverseMapper extends to provide basic map functionality.\n- `org.apache.hadoop.classification.InterfaceAudience.Public`: Annotation indicating that this class is part of the public API.\n- `org.apache.hadoop.classification.InterfaceStability.Stable`: Annotation indicating that this part of the API is stable.\n- `java.io.IOException`: An exception that may be thrown by the map method.\n- `InterruptedException`: Another exception that may be thrown by the map method.\n- `Context`: An interface that provides information about the current map task and allows the task to write output.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 16,
+    "class": "org.apache.hadoop.mapreduce.lib.map.RegexMapper",
+    "path": "lib/map/RegexMapper.java",
+    "file_name": "RegexMapper.java",
+    "directory": "lib/map",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a Hadoop Mapper implementation, `RegexMapper`, that extracts text matching a regular expression from input data.\n\nCORE LOGIC:\nThe core logic involves compiling a regular expression pattern from configuration settings and using it to find matches in input text. The `map` function processes each input key-value pair (where the value is of type `Text`), finds matches using the compiled pattern, and writes matched groups as new key-value pairs to the context.\n\nINPUTS/OUTPUTS:\n- INPUT: The mapper takes three inputs: a key of type `K`, a value of type `Text`, and a `Context` object.\n- OUTPUT: For each match found in the input text, it writes a new key-value pair to the context. The key is of type `Text` (the matched group from the regular expression), and the value is a `LongWritable` with a value of `1`.\n\nDEPENDENCIES:\n- `org.apache.hadoop.classification`: For annotations like `@InterfaceAudience` and `@InterfaceStability`.\n- `org.apache.hadoop.conf`: For accessing configuration settings.\n- `org.apache.hadoop.io`: For `LongWritable` and `Text` classes.\n- `org.apache.hadoop.mapreduce`: For base classes like `Mapper` and `Context`.\n- `java.io`: For `IOException`.\n- `java.util.regex`: For `Pattern` and `Matcher` classes to handle regular expressions.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 16,
+    "class": "org.apache.hadoop.mapreduce.lib.map.TokenCounterMapper",
+    "path": "lib/map/TokenCounterMapper.java",
+    "file_name": "TokenCounterMapper.java",
+    "directory": "lib/map",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a Hadoop Mapper class, `TokenCounterMapper`, which extends the `Mapper` abstract class from the Hadoop MapReduce library. This class is designed to tokenize input text values and emit each word with a count of 1.\n\nCORE LOGIC:\nThe core logic of this Mapper class involves overriding the `map` method. Inside this method, a `StringTokenizer` is used to split the input text value into individual words. For each token (word), a new `Text` object is created and assigned the token value. Then, the context's `write` method is called with the word and a fixed `IntWritable` object (initialized to 1) as arguments, effectively emitting each word with a count of 1.\n\nINPUTS/OUTPUTS:\n- INPUT: The Mapper takes three parameters in its `map` method: an Object key, a Text value, and a Context object. The value (Text) represents the input text to be tokenized.\n- OUTPUT: The Mapper emits a pair of key-value pairs for each word in the input text. The key is of type Text (representing the word), and the value is of type IntWritable (initialized to 1, representing the count).\n\nDEPENDENCIES:\n- `java.io.IOException`: For exception handling during I/O operations.\n- `java.io.IOException`: For exception handling during I/O operations.\n- `java.util.StringTokenizer`: Used to tokenize the input text.\n- `org.apache.hadoop.classification.InterfaceAudience`: Marks the class for public audience.\n- `org.apache.hadoop.classification.InterfaceStability`: Marks the class as stable.\n- `org.apache.hadoop.io.IntWritable`: Used to store the integer count (1) for each word.\n- `org.apache.hadoop.io.Text`: Used to store the word as a key.\n- `org.apache.hadoop.mapreduce.Mapper`: The abstract class being extended to implement the Mapper functionality.\n- `org.apache.hadoop.mapreduce.Context`: Provides the context in which the map task is running, enabling the Mapper to write intermediate key-value pairs.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

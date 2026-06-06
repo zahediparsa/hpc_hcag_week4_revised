@@ -1,0 +1,22 @@
+{
+  "cluster_id": 70,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and DataNodes. The JobTracker coordinates and monitors jobs, assigning tasks to available TaskTrackers. TaskTrackers execute Map and Reduce tasks, communicating with the JobTracker for task allocation and reporting. DataNodes store and serve data blocks, replicating them across the cluster for fault tolerance. Hadoop Distributed File System (HDFS) manages data storage and access, ensuring high throughput and reliability. MapReduce's coordinator-worker pattern is evident, with the JobTracker acting as the coordinator and TaskTrackers as workers. This architecture ensures scalability, maintainability, and reliability, leveraging Java for implementation and HDFS for data management.",
+  "description_word_count": 104,
+  "number_of_files": 2,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and DataNodes. The JobTracker coordinates and monitors jobs, assigning tasks to available TaskTrackers. TaskTrackers execute Map and Reduce tasks, communicating with the JobTracker for task allocation and reporting. DataNodes store and serve data blocks, replicating them across the cluster for fault tolerance. Hadoop Distributed File System (HDFS) manages data storage and access, ensuring high throughput and reliability. MapReduce's coordinator-worker pattern is evident, with the JobTracker acting as the coordinator and TaskTrackers as workers. This architecture ensures scalability, maintainability, and reliability, leveraging Java for implementation and HDFS for data management.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/join/JoinRecordReader.java",
+    "lib/join/OverrideRecordReader.java"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "cluster_id": 28,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "This Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and a NameNode for HDFS. The JobTracker coordinates and monitors jobs, assigning tasks to available TaskTrackers. TaskTrackers execute Map and Reduce tasks, processing data in parallel across the cluster. The NameNode manages HDFS, ensuring data reliability and consistency. Hadoop's Java-based MapReduce programming model enables parallel processing of large datasets. Counters, managed by the GenericCounter class, track job progress. This architecture ensures scalability, maintainability, and reliability, leveraging Hadoop and Java technologies. The coordinator pattern is evident in the JobTracker's role, while the pipline pattern is used in data processing.",
+  "description_word_count": 103,
+  "number_of_files": 1,
+  "number_of_directories": 2,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: This Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and a NameNode for HDFS. The JobTracker coordinates and monitors jobs, assigning tasks to available TaskTrackers. TaskTrackers execute Map and Reduce tasks, processing data in parallel across the cluster. The NameNode manages HDFS, ensuring data reliability and consistency. Hadoop's Java-based MapReduce programming model enables parallel processing of large datasets. Counters, managed by the GenericCounter class, track job progress. This architecture ensures scalability, maintainability, and reliability, leveraging Hadoop and Java technologies. The coordinator pattern is evident in the JobTracker's role, while the pipline pattern is used in data processing.",
+  "algorithm": "LIMBO",
+  "files": [
+    "counters/GenericCounter.java"
+  ]
+}

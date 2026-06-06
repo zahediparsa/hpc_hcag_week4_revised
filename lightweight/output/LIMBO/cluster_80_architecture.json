@@ -1,0 +1,21 @@
+{
+  "cluster_id": 80,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and DataNodes. The JobTracker coordinates and monitors jobs, assigning tasks to available TaskTrackers. TaskTrackers execute map and reduce tasks, reporting progress back to the JobTracker. DataNodes store and process data, serving as both input and output sources/sinks.\n\nThis architecture ensures scalability through data and task parallelism, maintainability via modular design, and reliability through fault tolerance and data replication. Security is maintained through access control and encryption. Performance is optimized via efficient data processing and I/O operations, as seen in the SequenceFile Entry Management component. This component uses the Producer pattern, implementing multi-threading for efficient I/O operations, thereby enhancing the overall performance of MapReduce jobs. Technologies used include Java for programming, Hadoop's SequenceFile for data storage, and YARN for resource management.",
+  "description_word_count": 138,
+  "number_of_files": 1,
+  "number_of_directories": 6,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and DataNodes. The JobTracker coordinates and monitors jobs, assigning tasks to available TaskTrackers. TaskTrackers execute map and reduce tasks, reporting progress back to the JobTracker. DataNodes store and process data, serving as both input and output sources/sinks.\n\nThis architecture ensures scalability through data and task parallelism, maintainability via modular design, and reliability through fault tolerance and data replication. Security is maintained through access control and encryption. Performance is optimized via efficient data processing and I/O operations, as seen in the SequenceFile Entry Management component. This component uses the Producer pattern, implementing multi-threading for efficient I/O operations, thereby enhancing the overall performance of MapReduce jobs. Technologies used include Java for programming, Hadoop's SequenceFile for data storage, and YARN for resource management.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/output/committer/manifest/impl/EntryFileIO.java"
+  ]
+}

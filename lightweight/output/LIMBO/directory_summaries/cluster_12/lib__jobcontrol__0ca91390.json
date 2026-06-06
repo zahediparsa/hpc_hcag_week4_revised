@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 12,
+  "directory": "lib/jobcontrol",
+  "title": "ControlledJob Class for Job Management",
+  "description": "The `ControlledJob.java` file in the `lib/jobcontrol` directory encapsulates a MapReduce job and its dependencies, managing the job lifecycle. It defines a `State` enum to represent job states and provides methods to submit, check, kill, and fail jobs. The class maintains and returns job state information, interacting with Hadoop's file system and configuration for job submission and state management. It handles exceptions for I/O operations and uses various Hadoop libraries for file system operations and MapReduce core functionalities.",
+  "summary": "TITLE: ControlledJob Class for Job Management\nDESCRIPTION: The `ControlledJob.java` file in the `lib/jobcontrol` directory encapsulates a MapReduce job and its dependencies, managing the job lifecycle. It defines a `State` enum to represent job states and provides methods to submit, check, kill, and fail jobs. The class maintains and returns job state information, interacting with Hadoop's file system and configuration for job submission and state management. It handles exceptions for I/O operations and uses various Hadoop libraries for file system operations and MapReduce core functionalities.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ControlledJob.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ControlledJob Class for Job Management\n\nDESCRIPTION:\nThe `ControlledJob.java` file in the `lib/jobcontrol` directory encapsulates a MapReduce job and its dependencies, managing the job lifecycle. It defines a `State` enum to represent job states and provides methods to submit, check, kill, and fail jobs. The class maintains and returns job state information, interacting with Hadoop's file system and configuration for job submission and state management. It handles exceptions for I/O operations and uses various Hadoop libraries for file system operations and MapReduce core functionalities."
+}

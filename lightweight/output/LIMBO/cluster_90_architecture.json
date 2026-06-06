@@ -1,0 +1,22 @@
+{
+  "cluster_id": 90,
+  "title": "Secure Intermediate Data Management in Hadoop MapReduce",
+  "description": "Hadoop MapReduce employs a secure data management system for intermediate files, utilizing Java classes IntermediateEncryptedStream.java and SpillCallBackPathsFinder.java. IntermediateEncryptedStream.java encrypts input/output streams, while SpillCallBackPathsFinder.java tracks spilled files, distinguishing encrypted and non-encrypted ones. Both classes collaborate, adhering to the Mediator pattern, ensuring secure and efficient spill file management. This architecture prioritizes security and maintainability, leveraging Java technology. Scalability is achieved through Hadoop's distributed processing framework, while reliability is maintained by secure data handling and error management. Performance is optimized through efficient spill file tracking and encryption.",
+  "description_word_count": 89,
+  "number_of_files": 2,
+  "number_of_directories": 2,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Secure Intermediate Data Management in Hadoop MapReduce\n\nDESCRIPTION: Hadoop MapReduce employs a secure data management system for intermediate files, utilizing Java classes IntermediateEncryptedStream.java and SpillCallBackPathsFinder.java. IntermediateEncryptedStream.java encrypts input/output streams, while SpillCallBackPathsFinder.java tracks spilled files, distinguishing encrypted and non-encrypted ones. Both classes collaborate, adhering to the Mediator pattern, ensuring secure and efficient spill file management. This architecture prioritizes security and maintainability, leveraging Java technology. Scalability is achieved through Hadoop's distributed processing framework, while reliability is maintained by secure data handling and error management. Performance is optimized through efficient spill file tracking and encryption.",
+  "algorithm": "LIMBO",
+  "files": [
+    "security/IntermediateEncryptedStream.java",
+    "security/SpillCallBackPathsFinder.java"
+  ]
+}

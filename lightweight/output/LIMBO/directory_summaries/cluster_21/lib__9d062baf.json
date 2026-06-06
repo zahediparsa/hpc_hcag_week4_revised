@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 21,
+  "directory": "lib",
+  "title": "Reduce Phase Components",
+  "description": "The 'lib/reduce' directory encapsulates Java classes integral to the reduction phase of Hadoop MapReduce jobs. It includes 'FieldSelectionReducer.java' for custom field selection, 'IntSumReducer.java' and 'LongSumReducer.java' for summing integer and long values respectively, and 'WrappedReducer.java' for flexible reducer context implementation. These components, relying on Hadoop's MapReduce and IO libraries, exemplify the Reduce phase's architectural pattern, aggregating intermediate key-value pairs from the Map phase into final results. The directory underscores Hadoop's modular design, enabling custom reducers for tailored data processing and aggregation.",
+  "summary": "TITLE: Reduce Phase Components\nDESCRIPTION: The 'lib/reduce' directory encapsulates Java classes integral to the reduction phase of Hadoop MapReduce jobs. It includes 'FieldSelectionReducer.java' for custom field selection, 'IntSumReducer.java' and 'LongSumReducer.java' for summing integer and long values respectively, and 'WrappedReducer.java' for flexible reducer context implementation. These components, relying on Hadoop's MapReduce and IO libraries, exemplify the Reduce phase's architectural pattern, aggregating intermediate key-value pairs from the Map phase into final results. The directory underscores Hadoop's modular design, enabling custom reducers for tailored data processing and aggregation.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/fieldsel"
+    },
+    {
+      "type": "directory",
+      "name": "lib/reduce"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Reduce Phase Components\n\nDESCRIPTION: The 'lib/reduce' directory encapsulates Java classes integral to the reduction phase of Hadoop MapReduce jobs. It includes 'FieldSelectionReducer.java' for custom field selection, 'IntSumReducer.java' and 'LongSumReducer.java' for summing integer and long values respectively, and 'WrappedReducer.java' for flexible reducer context implementation. These components, relying on Hadoop's MapReduce and IO libraries, exemplify the Reduce phase's architectural pattern, aggregating intermediate key-value pairs from the Map phase into final results. The directory underscores Hadoop's modular design, enabling custom reducers for tailored data processing and aggregation."
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 81,
+  "directory": "lib",
+  "title": "Hadoop MapReduce Output Committer Directory",
+  "description": "The 'lib/output/committer' directory in Hadoop MapReduce is responsible for managing job and task commitment. It contains constants for manifest committer in 'impl' subdirectory and classes for commit stages in 'stages' subdirectory. The 'impl' directory holds 'InternalConstants.java', defining essential constants for job and task execution stages, error conditions, and unsupported filesystem schemas. The 'stages' directory houses classes like 'CommitJobStage' and 'CommitTaskStage', orchestrating commit processes, ensuring data integrity, and validating output. This directory follows a utility package pattern, centralizing constants and commit-related functionalities for robustness and reliability in Hadoop MapReduce.",
+  "summary": "TITLE: Hadoop MapReduce Output Committer Directory\nDESCRIPTION: The 'lib/output/committer' directory in Hadoop MapReduce is responsible for managing job and task commitment. It contains constants for manifest committer in 'impl' subdirectory and classes for commit stages in 'stages' subdirectory. The 'impl' directory holds 'InternalConstants.java', defining essential constants for job and task execution stages, error conditions, and unsupported filesystem schemas. The 'stages' directory houses classes like 'CommitJobStage' and 'CommitTaskStage', orchestrating commit processes, ensuring data integrity, and validating output. This directory follows a utility package pattern, centralizing constants and commit-related functionalities for robustness and reliability in Hadoop MapReduce.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Output Committer Directory\n\nDESCRIPTION: The 'lib/output/committer' directory in Hadoop MapReduce is responsible for managing job and task commitment. It contains constants for manifest committer in 'impl' subdirectory and classes for commit stages in 'stages' subdirectory. The 'impl' directory holds 'InternalConstants.java', defining essential constants for job and task execution stages, error conditions, and unsupported filesystem schemas. The 'stages' directory houses classes like 'CommitJobStage' and 'CommitTaskStage', orchestrating commit processes, ensuring data integrity, and validating output. This directory follows a utility package pattern, centralizing constants and commit-related functionalities for robustness and reliability in Hadoop MapReduce."
+}

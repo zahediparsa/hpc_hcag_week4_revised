@@ -1,0 +1,28 @@
+{
+  "cluster_id": 50,
+  "title": "Value Aggregation in Hadoop MapReduce",
+  "description": "This Hadoop MapReduce architecture employs value aggregation for efficient data processing. The 'ValueAggregator' interface in the 'lib/aggregate' directory facilitates tasks like summing, finding max/min, counting unique values, and computing histograms. These classes accept diverse input types, utilize Java collections, and Hadoop's aggregation libraries. They collaborate with combiners to enhance efficiency, adhering to Hadoop's interface stability guidelines. This coordinator-like role aggregates intermediate values from the map phase, reducing data transferred to the reducer, thus improving performance, scalability, and maintainability. The architecture ensures reliability through Hadoop's fault-tolerance and security via its access control mechanisms. Java and Hadoop APIs are the primary technologies used.",
+  "description_word_count": 103,
+  "number_of_files": 8,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Value Aggregation in Hadoop MapReduce\n\nDESCRIPTION: This Hadoop MapReduce architecture employs value aggregation for efficient data processing. The 'ValueAggregator' interface in the 'lib/aggregate' directory facilitates tasks like summing, finding max/min, counting unique values, and computing histograms. These classes accept diverse input types, utilize Java collections, and Hadoop's aggregation libraries. They collaborate with combiners to enhance efficiency, adhering to Hadoop's interface stability guidelines. This coordinator-like role aggregates intermediate values from the map phase, reducing data transferred to the reducer, thus improving performance, scalability, and maintainability. The architecture ensures reliability through Hadoop's fault-tolerance and security via its access control mechanisms. Java and Hadoop APIs are the primary technologies used.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/aggregate/DoubleValueSum.java",
+    "lib/aggregate/LongValueMax.java",
+    "lib/aggregate/LongValueMin.java",
+    "lib/aggregate/LongValueSum.java",
+    "lib/aggregate/StringValueMax.java",
+    "lib/aggregate/StringValueMin.java",
+    "lib/aggregate/UniqValueCount.java",
+    "lib/aggregate/ValueHistogram.java"
+  ]
+}

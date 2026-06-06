@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 15,
+  "directory": ".",
+  "title": "Custom Reducer Context Management",
+  "description": "The 'lib/reduce' directory contains WrappedReducer.java, a custom Reducer context class extending Hadoop's generic Reducer. This class manages the reducer context, indirectly affecting input processing and output generation. It leverages Hadoop's MapReduce library classes, including Reducer, InputFormat, OutputFormat, Partitioner, Mapper, Counter, Configuration, Path, RawComparator, JobID, TaskAttemptID, and Credentials. Despite not directly managing data flow, it significantly influences input processing and output generation in the MapReduce framework.",
+  "summary": "TITLE: Custom Reducer Context Management\nDESCRIPTION: The 'lib/reduce' directory contains WrappedReducer.java, a custom Reducer context class extending Hadoop's generic Reducer. This class manages the reducer context, indirectly affecting input processing and output generation. It leverages Hadoop's MapReduce library classes, including Reducer, InputFormat, OutputFormat, Partitioner, Mapper, Counter, Configuration, Path, RawComparator, JobID, TaskAttemptID, and Credentials. Despite not directly managing data flow, it significantly influences input processing and output generation in the MapReduce framework.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- DIRECTORY: lib/reduce ---\n\nTITLE: Custom Reducer Context Management\n\nDESCRIPTION: The 'lib/reduce' directory contains WrappedReducer.java, a custom Reducer context class extending Hadoop's generic Reducer. This class manages the reducer context, indirectly affecting input processing and output generation. It leverages Hadoop's MapReduce library classes, including Reducer, InputFormat, OutputFormat, Partitioner, Mapper, Counter, Configuration, Path, RawComparator, JobID, TaskAttemptID, and Credentials. Despite not directly managing data flow, it significantly influences input processing and output generation in the MapReduce framework."
+}

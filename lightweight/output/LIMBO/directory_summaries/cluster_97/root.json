@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 97,
+  "directory": ".",
+  "title": "Reduce Task Merging Manager",
+  "description": "The 'task/reduce' directory in Hadoop MapReduce manages merging of map outputs. MergeManagerImpl.java orchestrates both in-memory and on-disk merging, generating a single output file for the reduce phase. It initializes and configures merger threads, utilizing InMemoryMerger and OnDiskMerger, extending MergeThread. The manager employs TaskAttemptID, JobConf, and FileSystem components, creating internal data structures and methods to manage the merging process, leveraging Apache Hadoop MapReduce library classes.",
+  "summary": "TITLE: Reduce Task Merging Manager\nDESCRIPTION: The 'task/reduce' directory in Hadoop MapReduce manages merging of map outputs. MergeManagerImpl.java orchestrates both in-memory and on-disk merging, generating a single output file for the reduce phase. It initializes and configures merger threads, utilizing InMemoryMerger and OnDiskMerger, extending MergeThread. The manager employs TaskAttemptID, JobConf, and FileSystem components, creating internal data structures and methods to manage the merging process, leveraging Apache Hadoop MapReduce library classes.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "task"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Reduce Task Merging Manager\n\nDESCRIPTION: The 'task/reduce' directory in Hadoop MapReduce manages merging of map outputs. MergeManagerImpl.java orchestrates both in-memory and on-disk merging, generating a single output file for the reduce phase. It initializes and configures merger threads, utilizing InMemoryMerger and OnDiskMerger, extending MergeThread. The manager employs TaskAttemptID, JobConf, and FileSystem components, creating internal data structures and methods to manage the merging process, leveraging Apache Hadoop MapReduce library classes."
+}

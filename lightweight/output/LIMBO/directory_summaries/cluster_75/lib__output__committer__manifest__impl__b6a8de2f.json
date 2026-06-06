@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 75,
+  "directory": "lib/output/committer/manifest/impl",
+  "title": "Manifest Committer Implementation in Hadoop MapReduce",
+  "description": "The 'lib/output/committer/manifest/impl' directory in Hadoop MapReduce houses crucial components for the manifest committer functionality. The 'ManifestCommitterSupport.java' file provides utility methods for creating IOStatisticsStore, handling job UUIDs, managing paths for manifest files, and creating task manifests and success data. The 'ManifestStoreOperations.java' abstract class defines methods for file system operations necessary for generating a task manifest. Its subclass, 'ManifestStoreOperationsThroughFileSystem.java', implements these operations through the Hadoop Distributed File System (HDFS) API. These components collaborate to ensure reliable and efficient commit operations for tasks within the MapReduce framework, adhering to the Abstract Factory pattern to create manifest store operations based on specific object store implementations.",
+  "summary": "TITLE: Manifest Committer Implementation in Hadoop MapReduce\nDESCRIPTION: The 'lib/output/committer/manifest/impl' directory in Hadoop MapReduce houses crucial components for the manifest committer functionality. The 'ManifestCommitterSupport.java' file provides utility methods for creating IOStatisticsStore, handling job UUIDs, managing paths for manifest files, and creating task manifests and success data. The 'ManifestStoreOperations.java' abstract class defines methods for file system operations necessary for generating a task manifest. Its subclass, 'ManifestStoreOperationsThroughFileSystem.java', implements these operations through the Hadoop Distributed File System (HDFS) API. These components collaborate to ensure reliable and efficient commit operations for tasks within the MapReduce framework, adhering to the Abstract Factory pattern to create manifest store operations based on specific object store implementations.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ManifestCommitterSupport.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestStoreOperations.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestStoreOperationsThroughFileSystem.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Manifest Committer Implementation in Hadoop MapReduce\n\nDESCRIPTION:\nThe 'lib/output/committer/manifest/impl' directory in Hadoop MapReduce houses crucial components for the manifest committer functionality. The 'ManifestCommitterSupport.java' file provides utility methods for creating IOStatisticsStore, handling job UUIDs, managing paths for manifest files, and creating task manifests and success data. The 'ManifestStoreOperations.java' abstract class defines methods for file system operations necessary for generating a task manifest. Its subclass, 'ManifestStoreOperationsThroughFileSystem.java', implements these operations through the Hadoop Distributed File System (HDFS) API. These components collaborate to ensure reliable and efficient commit operations for tasks within the MapReduce framework, adhering to the Abstract Factory pattern to create manifest store operations based on specific object store implementations."
+}

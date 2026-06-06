@@ -1,0 +1,22 @@
+{
+  "cluster_id": 0,
+  "title": "Job Submission Files Management",
+  "description": "The `JobSubmissionFiles` Java class manages job submission files in Hadoop MapReduce. It ensures correct ownership and permissions for job-related files, using Hadoop's FileSystem API for file system interactions and checks directory ownership. The class provides methods to obtain paths for job configuration, job jar, distributed cache files, and staging directory. It follows a utility class pattern, encapsulating job file path management. This component contributes to maintainability and reliability, ensuring secure and correct file handling. Technologies used include Java and Hadoop's core classes. The class interacts with Hadoop's FileSystem API, demonstrating a utility pattern to support the MapReduce job submission process.",
+  "description_word_count": 100,
+  "number_of_files": 2,
+  "number_of_directories": 2,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job Submission Files Management\n\nDESCRIPTION: The `JobSubmissionFiles` Java class manages job submission files in Hadoop MapReduce. It ensures correct ownership and permissions for job-related files, using Hadoop's FileSystem API for file system interactions and checks directory ownership. The class provides methods to obtain paths for job configuration, job jar, distributed cache files, and staging directory. It follows a utility class pattern, encapsulating job file path management. This component contributes to maintainability and reliability, ensuring secure and correct file handling. Technologies used include Java and Hadoop's core classes. The class interacts with Hadoop's FileSystem API, demonstrating a utility pattern to support the MapReduce job submission process.",
+  "algorithm": "LIMBO",
+  "files": [
+    "JobSubmissionFiles.java",
+    "protocol/ClientProtocolProvider.java"
+  ]
+}

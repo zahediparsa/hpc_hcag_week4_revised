@@ -1,0 +1,22 @@
+{
+  "cluster_id": 17,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture comprises a master NodeManager and multiple slave TaskTracker nodes. The NodeManager, running on the NameNode, coordinates the process by assigning tasks to TaskTrackers. Map tasks process input data in split sections, generating intermediate key-value pairs. These are shuffled and sorted by the framework, then sent to the appropriate reducers. Reducers, executing on TaskTrackers, aggregate these intermediate values for each key, producing the final output. This architecture ensures scalability through data and task parallelism, maintainability via modular design, and reliability through fault tolerance and data replication. Technologies used include Java for programming, Hadoop Distributed File System (HDFS) for storage, and YARN (Yet Another Resource Negotiator) for resource management. The architecture employs the Coordinator pattern, with NodeManager acting as the coordinator, and the Worker pattern, with TaskTrackers functioning as workers.",
+  "description_word_count": 133,
+  "number_of_files": 2,
+  "number_of_directories": 1,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster architecture comprises a master NodeManager and multiple slave TaskTracker nodes. The NodeManager, running on the NameNode, coordinates the process by assigning tasks to TaskTrackers. Map tasks process input data in split sections, generating intermediate key-value pairs. These are shuffled and sorted by the framework, then sent to the appropriate reducers. Reducers, executing on TaskTrackers, aggregate these intermediate values for each key, producing the final output. This architecture ensures scalability through data and task parallelism, maintainability via modular design, and reliability through fault tolerance and data replication. Technologies used include Java for programming, Hadoop Distributed File System (HDFS) for storage, and YARN (Yet Another Resource Negotiator) for resource management. The architecture employs the Coordinator pattern, with NodeManager acting as the coordinator, and the Worker pattern, with TaskTrackers functioning as workers.",
+  "algorithm": "LIMBO",
+  "files": [
+    "MarkableIterator.java",
+    "Reducer.java"
+  ]
+}

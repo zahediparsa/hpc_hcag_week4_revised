@@ -1,0 +1,14 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 56,
+    "class": "org.apache.hadoop.mapreduce.lib.db.DBConfiguration",
+    "path": "lib/db/DBConfiguration.java",
+    "file_name": "DBConfiguration.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\nThis Java code defines a configuration class for Hadoop MapReduce jobs that interact with a database. It provides static methods to set up database connection properties and methods to retrieve these configurations.\n\nCORE LOGIC:\nThe core logic involves setting up database connection properties such as driver class, URL, username, and password. It also manages input and output table names, field names, and SQL queries for both input and output operations. The class uses Hadoop's Configuration class to store these properties, which can then be accessed by other components like DBInputFormat and DBOutputFormat.\n\nINPUTS/OUTPUTS:\n- Inputs: Configuration object (Job or JobConf) containing various database connection properties, input table name, input field names, input conditions, input order by, input query, input count query, input bounding query, input class, output table name, output field names, and output field count.\n- Outputs: None explicitly in this code snippet. However, the class populates a Configuration object with the provided inputs, which is then used by other components in the Hadoop MapReduce framework for database operations.\n\nDEPENDENCIES:\n- org.apache.hadoop.mapreduce.lib.db: This package is part of Hadoop's library for database integration.\n- java.sql.Connection, java.sql.DriverManager, java.sql.SQLException: Standard Java SQL classes for database connectivity.\n- org.apache.hadoop.conf.Configuration: Hadoop's configuration management class.\n- org.apache.hadoop.mapreduce.Job: Main interface for submitting jobs in Hadoop MapReduce.\n- org.apache.hadoop.mapreduce.lib.db.DBInputFormat.NullDBWritable: Interface for input data types.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

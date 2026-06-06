@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 26,
+  "directory": ".",
+  "title": "Hadoop MapReduce Checkpoint Directory",
+  "description": "The 'checkpoint' directory in Hadoop MapReduce ensures data consistency and fault tolerance by managing task checkpoints. It uses CheckpointService interface, implemented by FSCheckpointService, for checkpoint operations. Checkpoint states are stored as files in HDFS, identified by FSCheckpointID. TaskCheckpointID encapsulates metadata, including checkpoint ID, partial output paths, and task counters. This directory employs the Service Designer pattern for reliable checkpoint management in a distributed environment.",
+  "summary": "TITLE: Hadoop MapReduce Checkpoint Directory\nDESCRIPTION: The 'checkpoint' directory in Hadoop MapReduce ensures data consistency and fault tolerance by managing task checkpoints. It uses CheckpointService interface, implemented by FSCheckpointService, for checkpoint operations. Checkpoint states are stored as files in HDFS, identified by FSCheckpointID. TaskCheckpointID encapsulates metadata, including checkpoint ID, partial output paths, and task counters. This directory employs the Service Designer pattern for reliable checkpoint management in a distributed environment.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "checkpoint"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Checkpoint Directory\n\nDESCRIPTION: The 'checkpoint' directory in Hadoop MapReduce ensures data consistency and fault tolerance by managing task checkpoints. It uses CheckpointService interface, implemented by FSCheckpointService, for checkpoint operations. Checkpoint states are stored as files in HDFS, identified by FSCheckpointID. TaskCheckpointID encapsulates metadata, including checkpoint ID, partial output paths, and task counters. This directory employs the Service Designer pattern for reliable checkpoint management in a distributed environment."
+}

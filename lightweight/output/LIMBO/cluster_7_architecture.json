@@ -1,0 +1,27 @@
+{
+  "cluster_id": 7,
+  "title": "MapReduce Security and Configuration Utilities",
+  "description": "This cluster provides security and configuration utilities for Hadoop MapReduce. The CryptoUtils.java class ensures secure data processing with cryptographic stream utilities. JobACL.java categorizes job access levels using ACLs. Limits.java enforces counter usage limits, preventing excessive counter creation. ClientDistributedCacheManager.java and DistributedCache.java collaborate for efficient job cache configuration and distribution of large, read-only files. TokenCache.java manages secure token transfer for MapReduce tasks. MRJobConfUtil.java offers job configuration utilities, including sensitive property redaction and task progress report interval calculation. This architecture ensures scalability, maintainability, reliability, and security through the use of Hadoop's cryptographic libraries, sl4j for logging, and Java-based utilities. The coordinator pattern is evident in the interaction between ClientDistributedCacheManager and DistributedCache, while utility pattern is observed in the configuration and security utility classes.",
+  "description_word_count": 127,
+  "number_of_files": 7,
+  "number_of_directories": 5,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Security and Configuration Utilities\n\nDESCRIPTION: This cluster provides security and configuration utilities for Hadoop MapReduce. The CryptoUtils.java class ensures secure data processing with cryptographic stream utilities. JobACL.java categorizes job access levels using ACLs. Limits.java enforces counter usage limits, preventing excessive counter creation. ClientDistributedCacheManager.java and DistributedCache.java collaborate for efficient job cache configuration and distribution of large, read-only files. TokenCache.java manages secure token transfer for MapReduce tasks. MRJobConfUtil.java offers job configuration utilities, including sensitive property redaction and task progress report interval calculation. This architecture ensures scalability, maintainability, reliability, and security through the use of Hadoop's cryptographic libraries, sl4j for logging, and Java-based utilities. The coordinator pattern is evident in the interaction between ClientDistributedCacheManager and DistributedCache, while utility pattern is observed in the configuration and security utility classes.",
+  "algorithm": "LIMBO",
+  "files": [
+    "CryptoUtils.java",
+    "JobACL.java",
+    "counters/Limits.java",
+    "filecache/ClientDistributedCacheManager.java",
+    "filecache/DistributedCache.java",
+    "security/TokenCache.java",
+    "util/MRJobConfUtil.java"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 4,
+  "directory": "lib/reduce",
+  "title": "Reducer Classes for Integer and Long Summation",
+  "description": "The 'lib/reduce' directory in the Hadoop MapReduce architecture houses two Java classes, `IntSumReducer.java` and `LongSumReducer.java`. These classes serve as specialized Reducer implementations for summing integer and long values, respectively. Both extend Hadoop's generic Reducer class, adhering to the MapReduce's reducer design pattern. The `IntSumReducer` processes `IntWritable` values, while `LongSumReducer` handles `LongWritable` values. Both reducers accumulate values associated with a common key, compute their sum, and output a new `IntWritable` or `LongWritable` with the result, linked to the same key. This directory exemplifies Hadoop's modular design, where specific tasks (like summation) are encapsulated in distinct, reusable classes, promoting code clarity and maintainability.",
+  "summary": "TITLE: Reducer Classes for Integer and Long Summation\nDESCRIPTION: The 'lib/reduce' directory in the Hadoop MapReduce architecture houses two Java classes, `IntSumReducer.java` and `LongSumReducer.java`. These classes serve as specialized Reducer implementations for summing integer and long values, respectively. Both extend Hadoop's generic Reducer class, adhering to the MapReduce's reducer design pattern. The `IntSumReducer` processes `IntWritable` values, while `LongSumReducer` handles `LongWritable` values. Both reducers accumulate values associated with a common key, compute their sum, and output a new `IntWritable` or `LongWritable` with the result, linked to the same key. This directory exemplifies Hadoop's modular design, where specific tasks (like summation) are encapsulated in distinct, reusable classes, promoting code clarity and maintainability.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "IntSumReducer.java"
+    },
+    {
+      "type": "file",
+      "name": "LongSumReducer.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Reducer Classes for Integer and Long Summation\n\nDESCRIPTION:\nThe 'lib/reduce' directory in the Hadoop MapReduce architecture houses two Java classes, `IntSumReducer.java` and `LongSumReducer.java`. These classes serve as specialized Reducer implementations for summing integer and long values, respectively. Both extend Hadoop's generic Reducer class, adhering to the MapReduce's reducer design pattern. The `IntSumReducer` processes `IntWritable` values, while `LongSumReducer` handles `LongWritable` values. Both reducers accumulate values associated with a common key, compute their sum, and output a new `IntWritable` or `LongWritable` with the result, linked to the same key. This directory exemplifies Hadoop's modular design, where specific tasks (like summation) are encapsulated in distinct, reusable classes, promoting code clarity and maintainability."
+}

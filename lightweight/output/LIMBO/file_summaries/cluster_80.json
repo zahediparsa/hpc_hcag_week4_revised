@@ -1,0 +1,14 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 80,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.EntryFileIO",
+    "path": "lib/output/committer/manifest/impl/EntryFileIO.java",
+    "file_name": "EntryFileIO.java",
+    "directory": "lib/output/committer/manifest/impl",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to provide a class, `EntryFileIO`, for managing the writing and reading of `FileEntry` objects to and from a SequenceFile. This class offers methods to create writers and readers, iterate over entries, and manage a writer thread for queuing and processing entries for writing.\n\nCORE LOGIC:\nThe core logic revolves around the `EntryWriter` class, which is responsible for writing `FileEntry` objects to a SequenceFile. It uses a blocking queue to manage the entries to be written, with a fixed capacity. A separate thread processes this queue, writing entries to the SequenceFile. The writer thread can be started and stopped, and it handles shutdown gracefully. The `write` method in `EntryFileIO` is a static utility to write a collection of `FileEntry` objects to a `SequenceFile.Writer`.\n\nINPUTS/OUTPUTS:\n- Inputs: `File` or `Path` objects, a `Collection<FileEntry>`\n- Outputs: A `SequenceFile.Writer` for writing, a `SequenceFile.Reader` for reading, and an iterator (`EntryIterator`) for sequential reading of `FileEntry` objects.\n\nDEPENDENCIES:\n- Imported classes: `java.io.*`, `java.util.concurrent.*`, `java.util.List`, `org.slf4j.Logger`, `org.slf4j.LoggerFactory`, `org.apache.hadoop.classification.VisibleForTesting`, `org.apache.hadoop.conf.Configuration`, `org.apache.hadoop.fs.Path`, `org.apache.hadoop.fs.RemoteIterator`, `org.apache.hadoop.io.NullWritable`, `org.apache.hadoop.io.SequenceFile`, `org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.FileEntry`, `org.apache.hadoop.util.HadoopExecutors`, `org.apache.hadoop.util.functional.FutureIO`.\n- Collaborator classes: `org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl` package, specifically `EntryFileIO`, `EntryWriter`, `QueueEntry`, and `EntryIterator`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 4,
+  "directory": "lib",
+  "title": "Hadoop MapReduce Output Committer",
+  "description": "The 'lib/output/committer' directory implements Hadoop's committer mechanism, ensuring data integrity during MapReduce output. It includes classes for auditing, SequenceFile management, constants, and file system operations. This directory employs patterns like helper classes and abstract base classes for modularity. It collaborates with Hadoop classes and internal components for seamless integration, ensuring reliable task output committal. The committer mechanism is crucial for maintaining data consistency and reliability in Hadoop's distributed file system.",
+  "summary": "TITLE: Hadoop MapReduce Output Committer\nDESCRIPTION: The 'lib/output/committer' directory implements Hadoop's committer mechanism, ensuring data integrity during MapReduce output. It includes classes for auditing, SequenceFile management, constants, and file system operations. This directory employs patterns like helper classes and abstract base classes for modularity. It collaborates with Hadoop classes and internal components for seamless integration, ensuring reliable task output committal. The committer mechanism is crucial for maintaining data consistency and reliability in Hadoop's distributed file system.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Output Committer\n\nDESCRIPTION: The 'lib/output/committer' directory implements Hadoop's committer mechanism, ensuring data integrity during MapReduce output. It includes classes for auditing, SequenceFile management, constants, and file system operations. This directory employs patterns like helper classes and abstract base classes for modularity. It collaborates with Hadoop classes and internal components for seamless integration, ensuring reliable task output committal. The committer mechanism is crucial for maintaining data consistency and reliability in Hadoop's distributed file system."
+}

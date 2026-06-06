@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 92,
+    "class": "org.apache.hadoop.mapreduce.security.token.delegation.DelegationTokenSecretManager",
+    "path": "security/token/delegation/DelegationTokenSecretManager.java",
+    "file_name": "DelegationTokenSecretManager.java",
+    "directory": "security/token/delegation",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this chunk is to define a class `DelegationTokenSecretManager` that extends `AbstractDelegationTokenSecretManager` for managing MapReduce-specific delegation tokens.\n\nCORE LOGIC:\nThe core logic involves the constructor that initializes the secret manager with parameters for rolling new secret keys, maximum token lifetime, token renewal interval, and token removal scan interval. The `createIdentifier` method is overridden to create a new instance of `DelegationTokenIdentifier`.\n\nINPUTS/OUTPUTS:\nThe class does not directly handle inputs or outputs in the traditional sense as it's not part of a data processing pipeline. However, it manages the creation and lifecycle of delegation tokens, which are used for secure access in Hadoop MapReduce jobs.\n\nDEPENDENCIES:\nThe key dependencies visible in this chunk are:\n- `org.apache.hadoop.mapreduce.security.token.delegation.DelegationTokenIdentifier`\n- `org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager`\n- `org.apache.hadoop.classification.InterfaceAudience`\n- `org.apache.hadoop.classification.InterfaceStability`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 92,
+    "class": "org.apache.hadoop.mapreduce.security.token.delegation.DelegationTokenSelector",
+    "path": "security/token/delegation/DelegationTokenSelector.java",
+    "file_name": "DelegationTokenSelector.java",
+    "directory": "security/token/delegation",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this chunk is to define a specialized delegation token class for Apache Hadoop MapReduce, named `DelegationTokenSelector`, which extends the `AbstractDelegationTokenSelector` class.\n\nCORE LOGIC:\nThe core logic involves extending the `AbstractDelegationTokenSelector` class and providing a specialized delegation token kind for MapReduce jobs by passing `DelegationTokenIdentifier.MAPREDUCE_DELEGATION_KIND` to the superclass constructor.\n\nINPUTS/OUTPUTS:\nThere are no direct inputs or outputs visible in this chunk. It's a class definition with a constructor that takes an input (the delegation token kind) and doesn't produce any immediate output.\n\nDEPENDENCIES:\nThe key dependencies visible in this chunk are:\n- `org.apache.hadoop.mapreduce.security.token.delegation` package\n- `org.apache.hadoop.classification.InterfaceAudience` annotation\n- `org.apache.hadoop.classification.InterfaceStability` annotation\n- `org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSelector` class\n- `DelegationTokenIdentifier.MAPREDUCE_DELEGATION_KIND` constant",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

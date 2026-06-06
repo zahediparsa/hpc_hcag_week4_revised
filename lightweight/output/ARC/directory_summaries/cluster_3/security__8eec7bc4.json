@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "security",
+  "title": "Security Package in Hadoop MapReduce",
+  "description": "The 'security' directory in Hadoop MapReduce's architecture is dedicated to providing security-related functionalities. It includes a package for shuffle and spill encryption during MapReduce jobs, ensuring data confidentiality. The 'token' subdirectory specifically manages delegation tokens for secure resource access, with the DelegationTokenIdentifier class serving as its key component. This directory employs a metadata documentation pattern, detailing the audience, licensing, and stability of its components using classes like InterfaceAudience and InterfaceStability. It does not contain core logic or direct inputs/outputs, but rather provides essential security metadata for the MapReduce framework.",
+  "summary": "TITLE: Security Package in Hadoop MapReduce\nDESCRIPTION: The 'security' directory in Hadoop MapReduce's architecture is dedicated to providing security-related functionalities. It includes a package for shuffle and spill encryption during MapReduce jobs, ensuring data confidentiality. The 'token' subdirectory specifically manages delegation tokens for secure resource access, with the DelegationTokenIdentifier class serving as its key component. This directory employs a metadata documentation pattern, detailing the audience, licensing, and stability of its components using classes like InterfaceAudience and InterfaceStability. It does not contain core logic or direct inputs/outputs, but rather provides essential security metadata for the MapReduce framework.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "package-info.java"
+    },
+    {
+      "type": "directory",
+      "name": "security/token"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Security Package in Hadoop MapReduce\n\nDESCRIPTION: The 'security' directory in Hadoop MapReduce's architecture is dedicated to providing security-related functionalities. It includes a package for shuffle and spill encryption during MapReduce jobs, ensuring data confidentiality. The 'token' subdirectory specifically manages delegation tokens for secure resource access, with the DelegationTokenIdentifier class serving as its key component. This directory employs a metadata documentation pattern, detailing the audience, licensing, and stability of its components using classes like InterfaceAudience and InterfaceStability. It does not contain core logic or direct inputs/outputs, but rather provides essential security metadata for the MapReduce framework."
+}

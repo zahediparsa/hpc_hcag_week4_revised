@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "security",
+  "title": "MapReduce Security Token Management",
+  "description": "The 'security/token' directory in Hadoop MapReduce houses the 'DelegationTokenIdentifier' class. This class is responsible for managing MapReduce-specific delegation tokens, ensuring secure job submission and tracking. It extends 'AbstractDelegationTokenIdentifier' to provide functionality, defining 'MAPREDUCE_DELEGATION_KIND' for token identification. The class constructs identifiers with owner, renewer, and real user details, focusing on secure operations rather than traditional input/output handling. It depends on Hadoop's classification, IO, and security token delegation packages.",
+  "summary": "TITLE: MapReduce Security Token Management\nDESCRIPTION: The 'security/token' directory in Hadoop MapReduce houses the 'DelegationTokenIdentifier' class. This class is responsible for managing MapReduce-specific delegation tokens, ensuring secure job submission and tracking. It extends 'AbstractDelegationTokenIdentifier' to provide functionality, defining 'MAPREDUCE_DELEGATION_KIND' for token identification. The class constructs identifiers with owner, renewer, and real user details, focusing on secure operations rather than traditional input/output handling. It depends on Hadoop's classification, IO, and security token delegation packages.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "SpillCallBackInjector.java"
+    },
+    {
+      "type": "directory",
+      "name": "security/token"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Security Token Management\n\nDESCRIPTION:\nThe 'security/token' directory in Hadoop MapReduce houses the 'DelegationTokenIdentifier' class. This class is responsible for managing MapReduce-specific delegation tokens, ensuring secure job submission and tracking. It extends 'AbstractDelegationTokenIdentifier' to provide functionality, defining 'MAPREDUCE_DELEGATION_KIND' for token identification. The class constructs identifiers with owner, renewer, and real user details, focusing on secure operations rather than traditional input/output handling. It depends on Hadoop's classification, IO, and security token delegation packages."
+}

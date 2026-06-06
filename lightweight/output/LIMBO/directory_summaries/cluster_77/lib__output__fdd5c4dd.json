@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 77,
+  "directory": "lib/output",
+  "title": "Manifest Printing Utility",
+  "description": "The 'lib/output/committer' directory contains the 'ManifestPrinter.java' utility. This tool assists in debugging and monitoring by displaying the contents of the manifest file. It reads data from a specified file using Hadoop FileSystem, accepting the manifest file path as a command-line argument. The utility outputs diagnostics and I/O statistics, adhering to a utility pattern for system debugging and performance analysis. This directory follows a supporting role, providing ancillary functions to the main output process.",
+  "summary": "TITLE: Manifest Printing Utility\nDESCRIPTION: The 'lib/output/committer' directory contains the 'ManifestPrinter.java' utility. This tool assists in debugging and monitoring by displaying the contents of the manifest file. It reads data from a specified file using Hadoop FileSystem, accepting the manifest file path as a command-line argument. The utility outputs diagnostics and I/O statistics, adhering to a utility pattern for system debugging and performance analysis. This directory follows a supporting role, providing ancillary functions to the main output process.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Manifest Printing Utility\n\nDESCRIPTION: The 'lib/output/committer' directory contains the 'ManifestPrinter.java' utility. This tool assists in debugging and monitoring by displaying the contents of the manifest file. It reads data from a specified file using Hadoop FileSystem, accepting the manifest file path as a command-line argument. The utility outputs diagnostics and I/O statistics, adhering to a utility pattern for system debugging and performance analysis. This directory follows a supporting role, providing ancillary functions to the main output process."
+}

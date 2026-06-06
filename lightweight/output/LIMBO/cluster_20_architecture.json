@@ -1,0 +1,23 @@
+{
+  "cluster_id": 20,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture comprises a master node (NameNode) and multiple worker nodes (DataNodes). The NameNode manages file system operations and client access, while DataNodes store actual data blocks. MapReduce tasks are divided into map and reduce phases, executed across worker nodes. The MapReduce framework coordinates tasks, handles fault tolerance via task tracking, and ensures data integrity through the Output Committer interface. Technologies used include Hadoop Distributed File System (HDFS) for storage, Java for programming, and a custom API for task scheduling and management. This architecture ensures scalability, reliability, and maintainability, with the NameNode acting as a coordinator and DataNodes as workers. The Output Committer interface, implemented as PartialOutputCommitter, ensures consistent task outputs, enhancing reliability.",
+  "description_word_count": 116,
+  "number_of_files": 3,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster architecture comprises a master node (NameNode) and multiple worker nodes (DataNodes). The NameNode manages file system operations and client access, while DataNodes store actual data blocks. MapReduce tasks are divided into map and reduce phases, executed across worker nodes. The MapReduce framework coordinates tasks, handles fault tolerance via task tracking, and ensures data integrity through the Output Committer interface. Technologies used include Hadoop Distributed File System (HDFS) for storage, Java for programming, and a custom API for task scheduling and management. This architecture ensures scalability, reliability, and maintainability, with the NameNode acting as a coordinator and DataNodes as workers. The Output Committer interface, implemented as PartialOutputCommitter, ensures consistent task outputs, enhancing reliability.",
+  "algorithm": "LIMBO",
+  "files": [
+    "RecordWriter.java",
+    "TaskInputOutputContext.java",
+    "lib/output/PartialOutputCommitter.java"
+  ]
+}

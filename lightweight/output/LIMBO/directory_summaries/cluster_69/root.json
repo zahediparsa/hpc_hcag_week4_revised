@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 69,
+  "directory": ".",
+  "title": "Join Operations Management",
+  "description": "The 'lib/join' directory in Hadoop's MapReduce architecture manages complex join operations. It includes 'CompositeInputFormat.java', a custom InputFormat for handling joins over sorted, partitioned data sources. 'Parser.java' implements a shift-reduce parser for join expressions, constructing a parse tree. This tree aids in building 'CompositeInputSplit' and 'CompositeRecordReader', showcasing the Composite and Strategy design patterns for efficient and flexible join operations.",
+  "summary": "TITLE: Join Operations Management\nDESCRIPTION: The 'lib/join' directory in Hadoop's MapReduce architecture manages complex join operations. It includes 'CompositeInputFormat.java', a custom InputFormat for handling joins over sorted, partitioned data sources. 'Parser.java' implements a shift-reduce parser for join expressions, constructing a parse tree. This tree aids in building 'CompositeInputSplit' and 'CompositeRecordReader', showcasing the Composite and Strategy design patterns for efficient and flexible join operations.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Join Operations Management\n\nDESCRIPTION: The 'lib/join' directory in Hadoop's MapReduce architecture manages complex join operations. It includes 'CompositeInputFormat.java', a custom InputFormat for handling joins over sorted, partitioned data sources. 'Parser.java' implements a shift-reduce parser for join expressions, constructing a parse tree. This tree aids in building 'CompositeInputSplit' and 'CompositeRecordReader', showcasing the Composite and Strategy design patterns for efficient and flexible join operations."
+}

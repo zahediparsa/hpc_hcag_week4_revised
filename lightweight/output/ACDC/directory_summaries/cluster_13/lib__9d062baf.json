@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 13,
+  "directory": "lib",
+  "title": "Hadoop MapReduce Output Directory",
+  "description": "The 'lib/output' directory in Hadoop MapReduce is central to managing job outputs. It contains classes like FileOutputCommitter, FileOutputFormat, and SequenceFileAsBinaryOutputFormat, which ensure data integrity, flexibility, and efficiency. These components handle tasks such as moving data from temporary to final output directories, managing compression, generating unique file names, and supporting multiple outputs. This directory follows a layered architectural pattern, abstracting lower layers to provide a unified interface for diverse output requirements in MapReduce jobs. This structure ensures robust, adaptable, and efficient output handling, crucial for Hadoop's distributed processing capabilities.",
+  "summary": "TITLE: Hadoop MapReduce Output Directory\nDESCRIPTION: The 'lib/output' directory in Hadoop MapReduce is central to managing job outputs. It contains classes like FileOutputCommitter, FileOutputFormat, and SequenceFileAsBinaryOutputFormat, which ensure data integrity, flexibility, and efficiency. These components handle tasks such as moving data from temporary to final output directories, managing compression, generating unique file names, and supporting multiple outputs. This directory follows a layered architectural pattern, abstracting lower layers to provide a unified interface for diverse output requirements in MapReduce jobs. This structure ensures robust, adaptable, and efficient output handling, crucial for Hadoop's distributed processing capabilities.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- DIRECTORY: lib/output ---\n\nTITLE: Hadoop MapReduce Output Directory\n\nDESCRIPTION: The 'lib/output' directory in Hadoop MapReduce is central to managing job outputs. It contains classes like FileOutputCommitter, FileOutputFormat, and SequenceFileAsBinaryOutputFormat, which ensure data integrity, flexibility, and efficiency. These components handle tasks such as moving data from temporary to final output directories, managing compression, generating unique file names, and supporting multiple outputs. This directory follows a layered architectural pattern, abstracting lower layers to provide a unified interface for diverse output requirements in MapReduce jobs. This structure ensures robust, adaptable, and efficient output handling, crucial for Hadoop's distributed processing capabilities."
+}

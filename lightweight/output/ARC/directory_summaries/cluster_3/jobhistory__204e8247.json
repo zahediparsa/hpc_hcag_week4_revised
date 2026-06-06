@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "jobhistory",
+  "title": "Job History Directory",
+  "description": "The 'jobhistory' directory in Hadoop MapReduce is responsible for storing and serving the history of completed jobs. It contains several subdirectories and files that collaborate to achieve this functionality. The core logic resides in the classes within these subdirectories, which process and store job-related data. The 'package-info.java' file within this directory provides documentation for the package, detailing its purpose and usage, but does not contain any executable code. The directory follows a typical layered architecture pattern, with different components handling specific tasks such as data storage, retrieval, and serving. Dependencies include standard Hadoop classes for classification and stability annotations.",
+  "summary": "TITLE: Job History Directory\nDESCRIPTION: The 'jobhistory' directory in Hadoop MapReduce is responsible for storing and serving the history of completed jobs. It contains several subdirectories and files that collaborate to achieve this functionality. The core logic resides in the classes within these subdirectories, which process and store job-related data. The 'package-info.java' file within this directory provides documentation for the package, detailing its purpose and usage, but does not contain any executable code. The directory follows a typical layered architecture pattern, with different components handling specific tasks such as data storage, retrieval, and serving. Dependencies include standard Hadoop classes for classification and stability annotations.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "package-info.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job History Directory\n\nDESCRIPTION: The 'jobhistory' directory in Hadoop MapReduce is responsible for storing and serving the history of completed jobs. It contains several subdirectories and files that collaborate to achieve this functionality. The core logic resides in the classes within these subdirectories, which process and store job-related data. The 'package-info.java' file within this directory provides documentation for the package, detailing its purpose and usage, but does not contain any executable code. The directory follows a typical layered architecture pattern, with different components handling specific tasks such as data storage, retrieval, and serving. Dependencies include standard Hadoop classes for classification and stability annotations."
+}

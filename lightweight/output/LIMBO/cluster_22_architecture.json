@@ -1,0 +1,23 @@
+{
+  "cluster_id": 22,
+  "title": "JobTracker, TaskTracker, and Configuration Management",
+  "description": "In this Hadoop MapReduce cluster, the JobTracker and TaskTracker components are configured via isolated settings in 'JTConfig.java' and 'TTConfig.java' respectively, adhering to the principle of separation of concerns. The JobTracker, responsible for resource management and job scheduling, interacts with TaskTrackers, which execute map and reduce tasks. This architecture ensures scalability and maintainability through modular configuration. Technologies used include Java for configuration files and Hadoop MapReduce framework. The simple configuration interface pattern enhances readability and manageability of system-wide settings. This setup follows a coordinator-worker pattern, with JobTracker as the coordinator and TaskTrackers as workers, ensuring reliable and efficient distributed processing.",
+  "description_word_count": 101,
+  "number_of_files": 3,
+  "number_of_directories": 4,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobTracker, TaskTracker, and Configuration Management\n\nDESCRIPTION: In this Hadoop MapReduce cluster, the JobTracker and TaskTracker components are configured via isolated settings in 'JTConfig.java' and 'TTConfig.java' respectively, adhering to the principle of separation of concerns. The JobTracker, responsible for resource management and job scheduling, interacts with TaskTrackers, which execute map and reduce tasks. This architecture ensures scalability and maintainability through modular configuration. Technologies used include Java for configuration files and Hadoop MapReduce framework. The simple configuration interface pattern enhances readability and manageability of system-wide settings. This setup follows a coordinator-worker pattern, with JobTracker as the coordinator and TaskTrackers as workers, ensuring reliable and efficient distributed processing.",
+  "algorithm": "LIMBO",
+  "files": [
+    "SharedCacheConfig.java",
+    "server/jobtracker/JTConfig.java",
+    "server/tasktracker/TTConfig.java"
+  ]
+}

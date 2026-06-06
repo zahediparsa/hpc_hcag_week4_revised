@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "lib/jobcontrol",
+  "title": "Job Control Management in Hadoop MapReduce",
+  "description": "The 'lib/jobcontrol' directory in Hadoop MapReduce architecture houses the 'ControlledJob.java' and 'JobControl.java' files, which are pivotal for managing MapReduce jobs and their dependencies. The 'ControlledJob.java' class encapsulates a MapReduce job and its dependencies, managing the job lifecycle and updating its state based on dependent jobs' states. The 'JobControl.java' class oversees a set of MapReduce jobs, tracking their states, and handling submission, monitoring, and state updates. It uses lists to categorize jobs by state and a topological sorting algorithm to detect circular dependencies. Both classes rely on standard Java collections and Hadoop's mapreduce library, with 'ControlledJob.java' also utilizing Hadoop's file system and configuration classes for job management and submission.",
+  "summary": "TITLE: Job Control Management in Hadoop MapReduce\nDESCRIPTION: The 'lib/jobcontrol' directory in Hadoop MapReduce architecture houses the 'ControlledJob.java' and 'JobControl.java' files, which are pivotal for managing MapReduce jobs and their dependencies. The 'ControlledJob.java' class encapsulates a MapReduce job and its dependencies, managing the job lifecycle and updating its state based on dependent jobs' states. The 'JobControl.java' class oversees a set of MapReduce jobs, tracking their states, and handling submission, monitoring, and state updates. It uses lists to categorize jobs by state and a topological sorting algorithm to detect circular dependencies. Both classes rely on standard Java collections and Hadoop's mapreduce library, with 'ControlledJob.java' also utilizing Hadoop's file system and configuration classes for job management and submission.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ControlledJob.java"
+    },
+    {
+      "type": "file",
+      "name": "JobControl.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job Control Management in Hadoop MapReduce\n\nDESCRIPTION:\nThe 'lib/jobcontrol' directory in Hadoop MapReduce architecture houses the 'ControlledJob.java' and 'JobControl.java' files, which are pivotal for managing MapReduce jobs and their dependencies. The 'ControlledJob.java' class encapsulates a MapReduce job and its dependencies, managing the job lifecycle and updating its state based on dependent jobs' states. The 'JobControl.java' class oversees a set of MapReduce jobs, tracking their states, and handling submission, monitoring, and state updates. It uses lists to categorize jobs by state and a topological sorting algorithm to detect circular dependencies. Both classes rely on standard Java collections and Hadoop's mapreduce library, with 'ControlledJob.java' also utilizing Hadoop's file system and configuration classes for job management and submission."
+}

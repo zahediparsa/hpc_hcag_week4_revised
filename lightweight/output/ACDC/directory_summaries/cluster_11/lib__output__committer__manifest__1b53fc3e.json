@@ -1,0 +1,46 @@
+{
+  "type": "directory",
+  "cluster_id": 11,
+  "directory": "lib/output/committer/manifest",
+  "title": "Task and Job Manifest Management",
+  "description": "This directory contains Java classes crucial for managing task and job manifests in Hadoop MapReduce. The 'TaskManifest' class encapsulates metadata about task outputs, while 'DirEntry' and 'FileEntry' represent directory and file entries respectively. 'EntryStatus' enum defines entry types, and 'DiagnosticKeys' provides constants for diagnostic information. These components collaborate to ensure accurate tracking and management of task outputs, facilitating efficient job commit and recovery.\n\nTITLE: Hadoop Manifest Committer Implementation\nDESCRIPTION: This directory houses Java classes crucial for the manifest committer functionality in Hadoop MapReduce. It ensures data integrity by creating and managing manifest files during MapReduce jobs. Classes handle auditing integration, constants definition, loaded manifest data management, utility methods, and file system operations. This ensures a robust commit process, handling tasks like directory creation, file renaming, and manifest saving, while maintaining compatibility with Hadoop's auditing system.\n\nTITLE: Commit Process Stages in Hadoop MapReduce\nDESCRIPTION: The 'lib/output/committer/manifest/stages' directory manages the commit process of MapReduce jobs. It includes classes for aborting, cleaning up, committing jobs and tasks, creating output directories, renaming files, saving success markers, and setting up stages. These components collaborate to ensure a robust commit process, handling tasks like directory creation, file renaming, and manifest saving. The directory also contains stages for scanning task attempt directories and validating renamed files, ensuring data integrity. This hierarchical structure ensures clear separation of concerns, enhancing maintainability and readability.",
+  "summary": "TITLE: Task and Job Manifest Management\nDESCRIPTION: This directory contains Java classes crucial for managing task and job manifests in Hadoop MapReduce. The 'TaskManifest' class encapsulates metadata about task outputs, while 'DirEntry' and 'FileEntry' represent directory and file entries respectively. 'EntryStatus' enum defines entry types, and 'DiagnosticKeys' provides constants for diagnostic information. These components collaborate to ensure accurate tracking and management of task outputs, facilitating efficient job commit and recovery.\n\nTITLE: Hadoop Manifest Committer Implementation\nDESCRIPTION: This directory houses Java classes crucial for the manifest committer functionality in Hadoop MapReduce. It ensures data integrity by creating and managing manifest files during MapReduce jobs. Classes handle auditing integration, constants definition, loaded manifest data management, utility methods, and file system operations. This ensures a robust commit process, handling tasks like directory creation, file renaming, and manifest saving, while maintaining compatibility with Hadoop's auditing system.\n\nTITLE: Commit Process Stages in Hadoop MapReduce\nDESCRIPTION: The 'lib/output/committer/manifest/stages' directory manages the commit process of MapReduce jobs. It includes classes for aborting, cleaning up, committing jobs and tasks, creating output directories, renaming files, saving success markers, and setting up stages. These components collaborate to ensure a robust commit process, handling tasks like directory creation, file renaming, and manifest saving. The directory also contains stages for scanning task attempt directories and validating renamed files, ensuring data integrity. This hierarchical structure ensures clear separation of concerns, enhancing maintainability and readability.",
+  "number_of_children": 8,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ManifestCommitter.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestCommitterConfig.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestCommitterConstants.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestCommitterFactory.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestCommitterStatisticNames.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest/files"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest/impl"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest/stages"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Task and Job Manifest Management\nDESCRIPTION: This directory contains Java classes crucial for managing task and job manifests in Hadoop MapReduce. The 'TaskManifest' class encapsulates metadata about task outputs, while 'DirEntry' and 'FileEntry' represent directory and file entries respectively. 'EntryStatus' enum defines entry types, and 'DiagnosticKeys' provides constants for diagnostic information. These components collaborate to ensure accurate tracking and management of task outputs, facilitating efficient job commit and recovery.\n\nTITLE: Hadoop Manifest Committer Implementation\nDESCRIPTION: This directory houses Java classes crucial for the manifest committer functionality in Hadoop MapReduce. It ensures data integrity by creating and managing manifest files during MapReduce jobs. Classes handle auditing integration, constants definition, loaded manifest data management, utility methods, and file system operations. This ensures a robust commit process, handling tasks like directory creation, file renaming, and manifest saving, while maintaining compatibility with Hadoop's auditing system.\n\nTITLE: Commit Process Stages in Hadoop MapReduce\nDESCRIPTION: The 'lib/output/committer/manifest/stages' directory manages the commit process of MapReduce jobs. It includes classes for aborting, cleaning up, committing jobs and tasks, creating output directories, renaming files, saving success markers, and setting up stages. These components collaborate to ensure a robust commit process, handling tasks like directory creation, file renaming, and manifest saving. The directory also contains stages for scanning task attempt directories and validating renamed files, ensuring data integrity. This hierarchical structure ensures clear separation of concerns, enhancing maintainability and readability."
+}

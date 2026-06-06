@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 21,
+  "directory": "lib/input",
+  "title": "TextInputFormat.java",
+  "description": "This Java file defines TextInputFormat, a class extending FileInputFormat for processing text files in Hadoop MapReduce. It creates a LineRecordReader for reading lines and determines file splittability based on compression codec. It extends FileInputFormat with LongWritable as key and Text as value, and uses TaskAttemptContext for record delimiter. The isSplitable method checks for file splittability using JobContext and CompressionCodecFactory. No explicit output; it prepares input data for processing.",
+  "summary": "TITLE: TextInputFormat.java\nDESCRIPTION: This Java file defines TextInputFormat, a class extending FileInputFormat for processing text files in Hadoop MapReduce. It creates a LineRecordReader for reading lines and determines file splittability based on compression codec. It extends FileInputFormat with LongWritable as key and Text as value, and uses TaskAttemptContext for record delimiter. The isSplitable method checks for file splittability using JobContext and CompressionCodecFactory. No explicit output; it prepares input data for processing.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "TextInputFormat.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: TextInputFormat.java\n\nDESCRIPTION:\nThis Java file defines TextInputFormat, a class extending FileInputFormat for processing text files in Hadoop MapReduce. It creates a LineRecordReader for reading lines and determines file splittability based on compression codec. It extends FileInputFormat with LongWritable as key and Text as value, and uses TaskAttemptContext for record delimiter. The isSplitable method checks for file splittability using JobContext and CompressionCodecFactory. No explicit output; it prepares input data for processing."
+}

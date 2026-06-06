@@ -1,0 +1,22 @@
+{
+  "cluster_id": 27,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "This Hadoop MapReduce cluster, comprising 27 nodes, employs a Master-Worker architecture. The Master node, running the 'JobTracker' process, manages job scheduling, execution, and resource allocation. Work nodes, executing 'TaskTracker' processes, perform map and reduce tasks. The 'CheckpointNamingService' interface, implemented by 'RandomNameCNS' and 'SimpleNamingService', ensures unique checkpoint naming, demonstrating the Strategy design pattern. This pattern enhances flexibility and modularity. Hadoop Distributed File System (HDFS) provides reliable, scalable storage. YARN (Yet Another Resource Negotiator) manages resources, improving cluster utilization and performance. Security is maintained through access control and encryption. The architecture ensures scalability, reliability, and maintainability, leveraging Java for implementation and Hadoop's ecosystem of tools and APIs.",
+  "description_word_count": 105,
+  "number_of_files": 2,
+  "number_of_directories": 2,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: This Hadoop MapReduce cluster, comprising 27 nodes, employs a Master-Worker architecture. The Master node, running the 'JobTracker' process, manages job scheduling, execution, and resource allocation. Work nodes, executing 'TaskTracker' processes, perform map and reduce tasks. The 'CheckpointNamingService' interface, implemented by 'RandomNameCNS' and 'SimpleNamingService', ensures unique checkpoint naming, demonstrating the Strategy design pattern. This pattern enhances flexibility and modularity. Hadoop Distributed File System (HDFS) provides reliable, scalable storage. YARN (Yet Another Resource Negotiator) manages resources, improving cluster utilization and performance. Security is maintained through access control and encryption. The architecture ensures scalability, reliability, and maintainability, leveraging Java for implementation and Hadoop's ecosystem of tools and APIs.",
+  "algorithm": "LIMBO",
+  "files": [
+    "checkpoint/RandomNameCNS.java",
+    "checkpoint/SimpleNamingService.java"
+  ]
+}

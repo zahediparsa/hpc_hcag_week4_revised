@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 24,
+  "directory": "task",
+  "title": "Reduce Task Management in Hadoop MapReduce",
+  "description": "The 'task/reduce' directory orchestrates the reduce phase, fetching and merging map outputs. It uses multi-threading with 'EventFetcher' and 'Fetcher' for map completion event and output data retrieval. 'IFileWrappedMapOutput' and its implementations manage map outputs, while 'MapHost' and 'MapOutput' handle task states and outputs. 'ShuffleSchedulerImpl' manages the shuffle phase, demonstrating proactive fault management, ensuring efficient and reliable data transfer from map to reduce tasks.",
+  "summary": "TITLE: Reduce Task Management in Hadoop MapReduce\nDESCRIPTION: The 'task/reduce' directory orchestrates the reduce phase, fetching and merging map outputs. It uses multi-threading with 'EventFetcher' and 'Fetcher' for map completion event and output data retrieval. 'IFileWrappedMapOutput' and its implementations manage map outputs, while 'MapHost' and 'MapOutput' handle task states and outputs. 'ShuffleSchedulerImpl' manages the shuffle phase, demonstrating proactive fault management, ensuring efficient and reliable data transfer from map to reduce tasks.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "task/reduce"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Reduce Task Management in Hadoop MapReduce\n\nDESCRIPTION: The 'task/reduce' directory orchestrates the reduce phase, fetching and merging map outputs. It uses multi-threading with 'EventFetcher' and 'Fetcher' for map completion event and output data retrieval. 'IFileWrappedMapOutput' and its implementations manage map outputs, while 'MapHost' and 'MapOutput' handle task states and outputs. 'ShuffleSchedulerImpl' manages the shuffle phase, demonstrating proactive fault management, ensuring efficient and reliable data transfer from map to reduce tasks."
+}

@@ -1,0 +1,30 @@
+{
+  "type": "directory",
+  "cluster_id": 67,
+  "directory": "lib/join",
+  "title": "Directory lib/join in Hadoop MapReduce Architecture",
+  "description": "The 'lib/join' directory in Hadoop MapReduce architecture contains Java classes crucial for implementing join operations. The 'ComposableRecordReader.java' defines an abstract class extending Hadoop's RecordReader, providing methods for interacting with input data and contributing to join operations. 'CompositeRecordReader.java' is an abstract class that extends ComposableRecordReader, managing a priority queue of RecordReaders for join operations. 'MultiFilterRecordReader.java' extends CompositeRecordReader, handling composite joins. 'WrappedRecordReader.java' acts as a proxy for RecordReader, managing head key-value pairs for join operations. These classes collaborate to enable complex data joins in Hadoop MapReduce jobs, utilizing various Hadoop interfaces and classes for input/output operations and key-value comparisons.",
+  "summary": "TITLE: Directory lib/join in Hadoop MapReduce Architecture\nDESCRIPTION: The 'lib/join' directory in Hadoop MapReduce architecture contains Java classes crucial for implementing join operations. The 'ComposableRecordReader.java' defines an abstract class extending Hadoop's RecordReader, providing methods for interacting with input data and contributing to join operations. 'CompositeRecordReader.java' is an abstract class that extends ComposableRecordReader, managing a priority queue of RecordReaders for join operations. 'MultiFilterRecordReader.java' extends CompositeRecordReader, handling composite joins. 'WrappedRecordReader.java' acts as a proxy for RecordReader, managing head key-value pairs for join operations. These classes collaborate to enable complex data joins in Hadoop MapReduce jobs, utilizing various Hadoop interfaces and classes for input/output operations and key-value comparisons.",
+  "number_of_children": 4,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ComposableRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "CompositeRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "MultiFilterRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "WrappedRecordReader.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Directory lib/join in Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe 'lib/join' directory in Hadoop MapReduce architecture contains Java classes crucial for implementing join operations. The 'ComposableRecordReader.java' defines an abstract class extending Hadoop's RecordReader, providing methods for interacting with input data and contributing to join operations. 'CompositeRecordReader.java' is an abstract class that extends ComposableRecordReader, managing a priority queue of RecordReaders for join operations. 'MultiFilterRecordReader.java' extends CompositeRecordReader, handling composite joins. 'WrappedRecordReader.java' acts as a proxy for RecordReader, managing head key-value pairs for join operations. These classes collaborate to enable complex data joins in Hadoop MapReduce jobs, utilizing various Hadoop interfaces and classes for input/output operations and key-value comparisons."
+}

@@ -1,0 +1,34 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "task",
+  "title": "Reduce Phase Management",
+  "description": "The 'task/reduce' directory in Hadoop MapReduce is central to the reduce phase. It manages merging and shuffling of map-outputs via components like EventFetcher, Fetcher, IFileWrappedMapOutput, InMemoryMapOutput, InMemoryReader, InMemoryWriter, LocalFetcher, MapHost, MapOutput, MergeManager, and MergeThread. These elements collaborate for efficient data processing. ShuffleSchedulerImpl manages the shuffle process, task assignments, progress tracking, and failure management, ensuring seamless reduce phase execution within Hadoop.",
+  "summary": "TITLE: Reduce Phase Management\nDESCRIPTION: The 'task/reduce' directory in Hadoop MapReduce is central to the reduce phase. It manages merging and shuffling of map-outputs via components like EventFetcher, Fetcher, IFileWrappedMapOutput, InMemoryMapOutput, InMemoryReader, InMemoryWriter, LocalFetcher, MapHost, MapOutput, MergeManager, and MergeThread. These elements collaborate for efficient data processing. ShuffleSchedulerImpl manages the shuffle process, task assignments, progress tracking, and failure management, ensuring seamless reduce phase execution within Hadoop.",
+  "number_of_children": 5,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "MapContextImpl.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptContextImpl.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskInputOutputContextImpl.java"
+    },
+    {
+      "type": "directory",
+      "name": "task/annotation"
+    },
+    {
+      "type": "directory",
+      "name": "task/reduce"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Reduce Phase Management\nDESCRIPTION: The 'task/reduce' directory in Hadoop MapReduce is central to the reduce phase. It manages merging and shuffling of map-outputs via components like EventFetcher, Fetcher, IFileWrappedMapOutput, InMemoryMapOutput, InMemoryReader, InMemoryWriter, LocalFetcher, MapHost, MapOutput, MergeManager, and MergeThread. These elements collaborate for efficient data processing. ShuffleSchedulerImpl manages the shuffle process, task assignments, progress tracking, and failure management, ensuring seamless reduce phase execution within Hadoop."
+}

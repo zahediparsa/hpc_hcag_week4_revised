@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 12,
+  "directory": "lib/output/committer/manifest/stages",
+  "title": "Hadoop MapReduce Committer Stage Directory",
+  "description": "The 'lib/output/committer/manifest/stages' directory in Hadoop MapReduce houses classes responsible for managing job or task stages in the commit protocol. The 'AbstractJobOrTaskStage.java' class ensures single execution of stages, tracks execution duration, and updates IO statistics. 'JobOrTaskStage.java' defines an interface for stages that can raise IOExceptions and provide IO statistics. 'LoadManifestsStage.java' specifically loads task manifests from the job attempt directory, processing them in parallel for efficient commit. These components collaborate within the commit protocol, ensuring data consistency and integrity during Hadoop MapReduce job execution, exemplifying a layered architecture pattern.",
+  "summary": "TITLE: Hadoop MapReduce Committer Stage Directory\nDESCRIPTION: The 'lib/output/committer/manifest/stages' directory in Hadoop MapReduce houses classes responsible for managing job or task stages in the commit protocol. The 'AbstractJobOrTaskStage.java' class ensures single execution of stages, tracks execution duration, and updates IO statistics. 'JobOrTaskStage.java' defines an interface for stages that can raise IOExceptions and provide IO statistics. 'LoadManifestsStage.java' specifically loads task manifests from the job attempt directory, processing them in parallel for efficient commit. These components collaborate within the commit protocol, ensuring data consistency and integrity during Hadoop MapReduce job execution, exemplifying a layered architecture pattern.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AbstractJobOrTaskStage.java"
+    },
+    {
+      "type": "file",
+      "name": "JobOrTaskStage.java"
+    },
+    {
+      "type": "file",
+      "name": "LoadManifestsStage.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Committer Stage Directory\n\nDESCRIPTION:\nThe 'lib/output/committer/manifest/stages' directory in Hadoop MapReduce houses classes responsible for managing job or task stages in the commit protocol. The 'AbstractJobOrTaskStage.java' class ensures single execution of stages, tracks execution duration, and updates IO statistics. 'JobOrTaskStage.java' defines an interface for stages that can raise IOExceptions and provide IO statistics. 'LoadManifestsStage.java' specifically loads task manifests from the job attempt directory, processing them in parallel for efficient commit. These components collaborate within the commit protocol, ensuring data consistency and integrity during Hadoop MapReduce job execution, exemplifying a layered architecture pattern."
+}

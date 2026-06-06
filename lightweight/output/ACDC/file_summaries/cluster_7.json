@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "ACDC",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.lib.jobcontrol.ControlledJob",
+    "path": "lib/jobcontrol/ControlledJob.java",
+    "file_name": "ControlledJob.java",
+    "directory": "lib/jobcontrol",
+    "summary": "KEY FUNCTIONALITY:\nThe main functionality of this class, `ControlledJob`, is to encapsulate a MapReduce job and its dependencies, monitoring the states of the dependent jobs and updating the state of this job accordingly. It manages the job lifecycle, including waiting, ready, running, success, failure, and handling dependent job failures.\n\nCORE LOGIC:\n- The class defines an enum `State` to represent the possible states of a job (WAITING, RUNNING, READY, SUCCESS, FAILED, DEPENDENT_FAILED).\n- It provides constructors to initialize a `ControlledJob` with a given MapReduce job and its dependencies or from a configuration.\n- The `checkState()` method is central to the class's logic. It checks the current state of the job and updates it based on the states of its dependent jobs.\n- The `submit()` method attempts to submit the job to the Hadoop framework, updating the job state to RUNNING on success or FAILED on failure.\n- Methods like `addDependingJob()`, `isCompleted()`, `isReady()`, `killJob()`, and `failJob()` manage the job's lifecycle and state transitions.\n\nINPUTS/OUTPUTS:\n- INPUTS: The class takes a `Job` object and a list of `ControlledJob` objects (representing dependencies) as inputs. It also accepts a `Configuration` object to initialize a job.\n- OUTPUTS: The class does not produce traditional output but maintains and returns internal state information via methods like `getJobName()`, `getJobID()`, `getJobState()`, `getMessage()`, and `getDependentJobs()`. It also logs detailed job information through the `toString()` method.\n\nDEPENDENCIES:\n- `java.io.IOException`: Imported for exception handling related to I/O operations.\n- `java.util.ArrayList`, `java.util.List`: Used for managing dependent jobs.\n- `org.apache.hadoop.classification`: For class annotations related to audience and stability.\n- `org.apache.hadoop.conf.Configuration`: For accessing job configuration.\n- `org.apache.hadoop.fs`: For file system operations, specifically to create directories if they don't exist.\n- `org.apache.hadoop.fs.FileSystem`, `org.apache.hadoop.fs.Path`: For interacting with the Hadoop file system.\n- `org.apache.hadoop.mapreduce`: Core",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.lib.jobcontrol.JobControl",
+    "path": "lib/jobcontrol/JobControl.java",
+    "file_name": "JobControl.java",
+    "directory": "lib/jobcontrol",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define the `JobControl` class, which manages a set of MapReduce jobs and their dependencies. It tracks the states of jobs and handles their submission, monitoring, and state updates.\n\nCORE LOGIC:\n- The class maintains different lists (`jobsInProgress`, `successfulJobs`, `failedJobs`) to categorize jobs based on their states.\n- It uses a unique ID generator for newly added jobs.\n- The `addJob` method assigns a unique ID to a job and places it in the `jobsInProgress` list.\n- The `run` method is the main loop for a thread that monitors job states, updates them, and submits jobs when ready.\n- It uses a topological sorting algorithm (`isCircular` method) to detect circular dependencies among jobs.\n\nINPUTS/OUTPUTS:\n- INPUTS: Collection of `ControlledJob` objects (MapReduce jobs with dependencies).\n- OUTPUTS: Job states are updated within the class, and external access is provided through methods like `getWaitingJobList`, `getRunningJobList`, `getSuccessfulJobList`, and `getFailedJobList`.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapred.jobcontrol.Job`\n- `org.apache.hadoop.mapreduce.lib.jobcontrol.ControlledJob.State`\n- `org.apache.hadoop.util.StringUtils`\n- `org.slf4j.Logger` and `org.slf4j.LoggerFactory` for logging\n- Standard Java classes like `LinkedList`, `ArrayList`, `HashMap`, `HashSet`, `Iterator`, and `Thread`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

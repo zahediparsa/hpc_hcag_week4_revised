@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 6,
+  "directory": ".",
+  "title": "Counters.java - MapReduce Counter Management",
+  "description": "This Java file, Counters.java, is central to Apache Hadoop MapReduce's counter management system. It defines the Counters class, responsible for organizing per-job/task counters into distinct groups. The core logic involves three inner classes: FrameworkGroupImpl, GenericGroup, and FileSystemGroup, each extending AbstractCounterGroup<Counter> and implementing CounterGroup. These classes handle framework-defined, generic, and file system-specific counters respectively. The GroupFactory class provides methods for creating these counter groups. This file does not have explicit inputs or outputs; it serves as a container for counter data managed elsewhere in the MapReduce framework. Its dependencies include various classes from the org.apache.hadoop.mapreduce.counters package, indicating its integral role in Hadoop's counter management architecture.",
+  "summary": "TITLE: Counters.java - MapReduce Counter Management\nDESCRIPTION: This Java file, Counters.java, is central to Apache Hadoop MapReduce's counter management system. It defines the Counters class, responsible for organizing per-job/task counters into distinct groups. The core logic involves three inner classes: FrameworkGroupImpl, GenericGroup, and FileSystemGroup, each extending AbstractCounterGroup<Counter> and implementing CounterGroup. These classes handle framework-defined, generic, and file system-specific counters respectively. The GroupFactory class provides methods for creating these counter groups. This file does not have explicit inputs or outputs; it serves as a container for counter data managed elsewhere in the MapReduce framework. Its dependencies include various classes from the org.apache.hadoop.mapreduce.counters package, indicating its integral role in Hadoop's counter management architecture.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "Counters.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Counters.java - MapReduce Counter Management\n\nDESCRIPTION:\nThis Java file, Counters.java, is central to Apache Hadoop MapReduce's counter management system. It defines the Counters class, responsible for organizing per-job/task counters into distinct groups. The core logic involves three inner classes: FrameworkGroupImpl, GenericGroup, and FileSystemGroup, each extending AbstractCounterGroup<Counter> and implementing CounterGroup. These classes handle framework-defined, generic, and file system-specific counters respectively. The GroupFactory class provides methods for creating these counter groups. This file does not have explicit inputs or outputs; it serves as a container for counter data managed elsewhere in the MapReduce framework. Its dependencies include various classes from the org.apache.hadoop.mapreduce.counters package, indicating its integral role in Hadoop's counter management architecture."
+}

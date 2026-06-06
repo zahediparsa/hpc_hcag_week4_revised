@@ -1,0 +1,26 @@
+{
+  "cluster_id": 55,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster comprises a NameNode, DataNodes, and TaskTrackers. The NameNode manages file system namespace and regulates access to files, while DataNodes store data blocks. TaskTrackers execute MapReduce tasks, coordinating with the NameNode for job scheduling and data access. The Database Splitter Directory, utilizing classes like BigDecimalSplitter, facilitates parallel processing of diverse database data types. This architecture ensures scalability, maintainability, and reliability through distributed processing and fault tolerance. Technologies used include Java for programming, Hadoop framework for distributed storage and processing, and InputSplit interface for data partitioning. The Adapter pattern is evident in the Database Splitter Directory, enabling seamless integration of varied database data types into Hadoop's MapReduce framework.",
+  "description_word_count": 110,
+  "number_of_files": 6,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster comprises a NameNode, DataNodes, and TaskTrackers. The NameNode manages file system namespace and regulates access to files, while DataNodes store data blocks. TaskTrackers execute MapReduce tasks, coordinating with the NameNode for job scheduling and data access. The Database Splitter Directory, utilizing classes like BigDecimalSplitter, facilitates parallel processing of diverse database data types. This architecture ensures scalability, maintainability, and reliability through distributed processing and fault tolerance. Technologies used include Java for programming, Hadoop framework for distributed storage and processing, and InputSplit interface for data partitioning. The Adapter pattern is evident in the Database Splitter Directory, enabling seamless integration of varied database data types into Hadoop's MapReduce framework.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/db/BigDecimalSplitter.java",
+    "lib/db/BooleanSplitter.java",
+    "lib/db/DateSplitter.java",
+    "lib/db/FloatSplitter.java",
+    "lib/db/IntegerSplitter.java",
+    "lib/db/TextSplitter.java"
+  ]
+}

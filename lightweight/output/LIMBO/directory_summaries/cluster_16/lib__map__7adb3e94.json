@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 16,
+  "directory": "lib/map",
+  "title": "Hadoop MapReduce Mapper Directory",
+  "description": "The 'lib/map' directory in a Hadoop MapReduce cluster houses Java classes that implement the Mapper component of the MapReduce paradigm. These Mappers are responsible for filtering and sorting the input dataset to determine the minimal set of data needed by the Reduce task for its task. The directory contains three key Mapper classes: InverseMapper, RegexMapper, and TokenCounterMapper. \n\nInverseMapper swaps the keys and values of input data. RegexMapper extracts text matching a regular expression from input data, while TokenCounterMapper tokenizes input text values and emits each word with a count of 1. Each Mapper class extends the abstract Mapper class from the Hadoop MapReduce library, overriding the 'map' method to implement its specific functionality. They all handle exceptions like IOException and InterrupteException, and utilize classes from the Hadoop and Java standard libraries, such as Context, Text, IntWritable, LongWritable, and Pattern/Matcher for regex operations. These Mappers collaborate to process and prepare data for the Reduce phase in a Hadoop MapReduce job.",
+  "summary": "TITLE: Hadoop MapReduce Mapper Directory\nDESCRIPTION: The 'lib/map' directory in a Hadoop MapReduce cluster houses Java classes that implement the Mapper component of the MapReduce paradigm. These Mappers are responsible for filtering and sorting the input dataset to determine the minimal set of data needed by the Reduce task for its task. The directory contains three key Mapper classes: InverseMapper, RegexMapper, and TokenCounterMapper. \n\nInverseMapper swaps the keys and values of input data. RegexMapper extracts text matching a regular expression from input data, while TokenCounterMapper tokenizes input text values and emits each word with a count of 1. Each Mapper class extends the abstract Mapper class from the Hadoop MapReduce library, overriding the 'map' method to implement its specific functionality. They all handle exceptions like IOException and InterrupteException, and utilize classes from the Hadoop and Java standard libraries, such as Context, Text, IntWritable, LongWritable, and Pattern/Matcher for regex operations. These Mappers collaborate to process and prepare data for the Reduce phase in a Hadoop MapReduce job.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "InverseMapper.java"
+    },
+    {
+      "type": "file",
+      "name": "RegexMapper.java"
+    },
+    {
+      "type": "file",
+      "name": "TokenCounterMapper.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Mapper Directory\n\nDESCRIPTION:\nThe 'lib/map' directory in a Hadoop MapReduce cluster houses Java classes that implement the Mapper component of the MapReduce paradigm. These Mappers are responsible for filtering and sorting the input dataset to determine the minimal set of data needed by the Reduce task for its task. The directory contains three key Mapper classes: InverseMapper, RegexMapper, and TokenCounterMapper. \n\nInverseMapper swaps the keys and values of input data. RegexMapper extracts text matching a regular expression from input data, while TokenCounterMapper tokenizes input text values and emits each word with a count of 1. Each Mapper class extends the abstract Mapper class from the Hadoop MapReduce library, overriding the 'map' method to implement its specific functionality. They all handle exceptions like IOException and InterrupteException, and utilize classes from the Hadoop and Java standard libraries, such as Context, Text, IntWritable, LongWritable, and Pattern/Matcher for regex operations. These Mappers collaborate to process and prepare data for the Reduce phase in a Hadoop MapReduce job."
+}

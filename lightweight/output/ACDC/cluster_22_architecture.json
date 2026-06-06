@@ -1,0 +1,39 @@
+{
+  "cluster_id": 22,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "This cluster employs Hadoop MapReduce, utilizing Java classes in 'lib' for flexible data processing via Strategy, Factory, and Mapper patterns. The JobTracker and TaskTracker configurations in 'server' ensure consistent system-wide settings. 'util' directory's ConfigUtil, MRJobConfUtil, and ProcessTree classes streamline job configuration, adhering to Mediator and Strategy patterns. This architecture ensures scalability, maintainability, and reliability through distributed processing and robust configuration management, leveraging Hadoop's robust ecosystem and Java's robustness.",
+  "description_word_count": 68,
+  "number_of_files": 19,
+  "number_of_directories": 10,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: This cluster employs Hadoop MapReduce, utilizing Java classes in 'lib' for flexible data processing via Strategy, Factory, and Mapper patterns. The JobTracker and TaskTracker configurations in 'server' ensure consistent system-wide settings. 'util' directory's ConfigUtil, MRJobConfUtil, and ProcessTree classes streamline job configuration, adhering to Mediator and Strategy patterns. This architecture ensures scalability, maintainability, and reliability through distributed processing and robust configuration management, leveraging Hadoop's robust ecosystem and Java's robustness.",
+  "algorithm": "ACDC",
+  "files": [
+    "JobContext.java",
+    "MRConfig.java",
+    "MRJobConfig.java",
+    "Partitioner.java",
+    "lib/fieldsel/FieldSelectionHelper.java",
+    "lib/input/KeyValueLineRecordReader.java",
+    "lib/input/KeyValueTextInputFormat.java",
+    "lib/input/NLineInputFormat.java",
+    "lib/map/RegexMapper.java",
+    "lib/partition/BinaryPartitioner.java",
+    "lib/partition/KeyFieldBasedComparator.java",
+    "lib/partition/KeyFieldBasedPartitioner.java",
+    "lib/partition/KeyFieldHelper.java",
+    "lib/partition/RehashPartitioner.java",
+    "server/jobtracker/JTConfig.java",
+    "server/tasktracker/TTConfig.java",
+    "util/ConfigUtil.java",
+    "util/MRJobConfUtil.java",
+    "util/ProcessTree.java"
+  ]
+}

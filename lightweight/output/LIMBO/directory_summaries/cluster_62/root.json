@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 62,
+  "directory": ".",
+  "title": "Input Split Reading Mechanism",
+  "description": "The 'lib' directory in Hadoop MapReduce manages input split reading. It uses 'SplitLineReader' base class extended by 'CompressedSplitLineReader' and 'UncompressedSplitLineReader'. These handle compressed and uncompressed files respectively, showcasing the Strategy pattern. This ensures flexible, maintainable input processing, preventing data loss or duplication. It demonstrates effective use of design patterns for efficient data handling.",
+  "summary": "TITLE: Input Split Reading Mechanism\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce manages input split reading. It uses 'SplitLineReader' base class extended by 'CompressedSplitLineReader' and 'UncompressedSplitLineReader'. These handle compressed and uncompressed files respectively, showcasing the Strategy pattern. This ensures flexible, maintainable input processing, preventing data loss or duplication. It demonstrates effective use of design patterns for efficient data handling.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Input Split Reading Mechanism\n\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce manages input split reading. It uses 'SplitLineReader' base class extended by 'CompressedSplitLineReader' and 'UncompressedSplitLineReader'. These handle compressed and uncompressed files respectively, showcasing the Strategy pattern. This ensures flexible, maintainable input processing, preventing data loss or duplication. It demonstrates effective use of design patterns for efficient data handling."
+}

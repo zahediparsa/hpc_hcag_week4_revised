@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": ".",
+  "title": "Job Control Management in Hadoop MapReduce",
+  "description": "The 'lib/jobcontrol' directory houses 'ControlledJob.java' and 'JobControl.java'. 'ControlledJob.java' manages job lifecycle and state, interacting with Hadoop for submission. 'JobControl.java' oversees multiple 'ControlledJob' instances, tracking states, and managing submission. This system ensures efficient, controlled execution of MapReduce jobs, enhancing Hadoop's robustness and reliability. It uses Java collections, logging, and Hadoop-specific classes for seamless operation.",
+  "summary": "TITLE: Job Control Management in Hadoop MapReduce\nDESCRIPTION: The 'lib/jobcontrol' directory houses 'ControlledJob.java' and 'JobControl.java'. 'ControlledJob.java' manages job lifecycle and state, interacting with Hadoop for submission. 'JobControl.java' oversees multiple 'ControlledJob' instances, tracking states, and managing submission. This system ensures efficient, controlled execution of MapReduce jobs, enhancing Hadoop's robustness and reliability. It uses Java collections, logging, and Hadoop-specific classes for seamless operation.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job Control Management in Hadoop MapReduce\n\nDESCRIPTION: The 'lib/jobcontrol' directory houses 'ControlledJob.java' and 'JobControl.java'. 'ControlledJob.java' manages job lifecycle and state, interacting with Hadoop for submission. 'JobControl.java' oversees multiple 'ControlledJob' instances, tracking states, and managing submission. This system ensures efficient, controlled execution of MapReduce jobs, enhancing Hadoop's robustness and reliability. It uses Java collections, logging, and Hadoop-specific classes for seamless operation."
+}

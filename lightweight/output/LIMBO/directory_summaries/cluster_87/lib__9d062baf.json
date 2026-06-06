@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 87,
+  "directory": "lib",
+  "title": "Key-Based Partitioning and Sorting in Hadoop MapReduce",
+  "description": "The 'lib/partition' directory houses Java classes for custom key-based partitioning and sorting. 'KeyFieldBasedComparator.java' extends 'WritableComparator' for advanced sorting, including numerical sorting and key field specification. 'KeyFieldBasedPartitioner.java' uses this comparator for user-defined key-based partitioning. 'KeyFieldHelper.java' aids in parsing these specifications. 'TotalOrderPartitioner.java' builds indexing data structures for efficient total order partitioning, enhancing data distribution across reducers. These components collaborate for flexible and efficient data processing in Hadoop MapReduce jobs.",
+  "summary": "TITLE: Key-Based Partitioning and Sorting in Hadoop MapReduce\nDESCRIPTION: The 'lib/partition' directory houses Java classes for custom key-based partitioning and sorting. 'KeyFieldBasedComparator.java' extends 'WritableComparator' for advanced sorting, including numerical sorting and key field specification. 'KeyFieldBasedPartitioner.java' uses this comparator for user-defined key-based partitioning. 'KeyFieldHelper.java' aids in parsing these specifications. 'TotalOrderPartitioner.java' builds indexing data structures for efficient total order partitioning, enhancing data distribution across reducers. These components collaborate for flexible and efficient data processing in Hadoop MapReduce jobs.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/partition"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Key-Based Partitioning and Sorting in Hadoop MapReduce\n\nDESCRIPTION: The 'lib/partition' directory houses Java classes for custom key-based partitioning and sorting. 'KeyFieldBasedComparator.java' extends 'WritableComparator' for advanced sorting, including numerical sorting and key field specification. 'KeyFieldBasedPartitioner.java' uses this comparator for user-defined key-based partitioning. 'KeyFieldHelper.java' aids in parsing these specifications. 'TotalOrderPartitioner.java' builds indexing data structures for efficient total order partitioning, enhancing data distribution across reducers. These components collaborate for flexible and efficient data processing in Hadoop MapReduce jobs."
+}

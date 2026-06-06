@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 10,
+  "directory": "lib/output/committer",
+  "title": "SequenceFile Management in MapReduce",
+  "description": "The 'lib/output/committer/manifest' directory manages 'FileEntry' objects in Hadoop's MapReduce. It uses 'EntryFileIO' for writing and reading entries to/from a SequenceFile. The 'EntryWriter' class, with a blocking queue and dedicated thread, exemplifies the Factory and Worker pattern. This directory collaborates with other classes for comprehensive file entry management.",
+  "summary": "TITLE: SequenceFile Management in MapReduce\nDESCRIPTION: The 'lib/output/committer/manifest' directory manages 'FileEntry' objects in Hadoop's MapReduce. It uses 'EntryFileIO' for writing and reading entries to/from a SequenceFile. The 'EntryWriter' class, with a blocking queue and dedicated thread, exemplifies the Factory and Worker pattern. This directory collaborates with other classes for comprehensive file entry management.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: SequenceFile Management in MapReduce\n\nDESCRIPTION: The 'lib/output/committer/manifest' directory manages 'FileEntry' objects in Hadoop's MapReduce. It uses 'EntryFileIO' for writing and reading entries to/from a SequenceFile. The 'EntryWriter' class, with a blocking queue and dedicated thread, exemplifies the Factory and Worker pattern. This directory collaborates with other classes for comprehensive file entry management."
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 90,
+  "directory": ".",
+  "title": "Secure Intermediate Data Management",
+  "description": "The 'security' directory in Hadoop MapReduce houses Java classes IntermediateEncryptedStream.java and SpillCallBackPathsFinder.java. IntermediateEncryptedStream.java encrypts input/output streams and manages spill callbacks for secure intermediate file handling. SpillCallBackPathsFinder.java tracks spilled files, distinguishing encrypted and non-encrypted ones, and handles invalid access attempts. Both classes collaborate, adhering to the Mediator pattern, to ensure secure and efficient spill file management in Hadoop MapReduce.",
+  "summary": "TITLE: Secure Intermediate Data Management\nDESCRIPTION: The 'security' directory in Hadoop MapReduce houses Java classes IntermediateEncryptedStream.java and SpillCallBackPathsFinder.java. IntermediateEncryptedStream.java encrypts input/output streams and manages spill callbacks for secure intermediate file handling. SpillCallBackPathsFinder.java tracks spilled files, distinguishing encrypted and non-encrypted ones, and handles invalid access attempts. Both classes collaborate, adhering to the Mediator pattern, to ensure secure and efficient spill file management in Hadoop MapReduce.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "security"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Secure Intermediate Data Management\n\nDESCRIPTION: The 'security' directory in Hadoop MapReduce houses Java classes IntermediateEncryptedStream.java and SpillCallBackPathsFinder.java. IntermediateEncryptedStream.java encrypts input/output streams and manages spill callbacks for secure intermediate file handling. SpillCallBackPathsFinder.java tracks spilled files, distinguishing encrypted and non-encrypted ones, and handles invalid access attempts. Both classes collaborate, adhering to the Mediator pattern, to ensure secure and efficient spill file management in Hadoop MapReduce."
+}

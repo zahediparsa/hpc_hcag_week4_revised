@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 62,
+  "directory": "lib",
+  "title": "Input Split Reading Mechanism",
+  "description": "The 'lib/input' directory in Hadoop MapReduce architecture is responsible for reading data from input splits, managing both compressed and uncompressed files. 'CompressedSplitLineReader.java' extends 'SplitLineReader' to read records from compressed splits, preventing data loss or duplication via 'SplitCompressionInputStream'. 'UncompressedSplitLineReader.java' extends 'SplitLineReader' for uncompressed files, ensuring correct splitting with multi-byte delimiters. Both classes demonstrate the Strategy design pattern, encapsulating different reading strategies and allowing selection based on file type. This directory showcases a clear application of the Strategy pattern, enabling flexible and maintainable input processing.",
+  "summary": "TITLE: Input Split Reading Mechanism\nDESCRIPTION: The 'lib/input' directory in Hadoop MapReduce architecture is responsible for reading data from input splits, managing both compressed and uncompressed files. 'CompressedSplitLineReader.java' extends 'SplitLineReader' to read records from compressed splits, preventing data loss or duplication via 'SplitCompressionInputStream'. 'UncompressedSplitLineReader.java' extends 'SplitLineReader' for uncompressed files, ensuring correct splitting with multi-byte delimiters. Both classes demonstrate the Strategy design pattern, encapsulating different reading strategies and allowing selection based on file type. This directory showcases a clear application of the Strategy pattern, enabling flexible and maintainable input processing.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/input"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Input Split Reading Mechanism\n\nDESCRIPTION: The 'lib/input' directory in Hadoop MapReduce architecture is responsible for reading data from input splits, managing both compressed and uncompressed files. 'CompressedSplitLineReader.java' extends 'SplitLineReader' to read records from compressed splits, preventing data loss or duplication via 'SplitCompressionInputStream'. 'UncompressedSplitLineReader.java' extends 'SplitLineReader' for uncompressed files, ensuring correct splitting with multi-byte delimiters. Both classes demonstrate the Strategy design pattern, encapsulating different reading strategies and allowing selection based on file type. This directory showcases a clear application of the Strategy pattern, enabling flexible and maintainable input processing."
+}

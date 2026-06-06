@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 15,
+  "directory": "lib/map",
+  "title": "WrappedMapper.java - Mapper Context Wrapper",
+  "description": "The WrappedMapper.java file defines a class `WrappedMapper` that extends Hadoop's Mapper class. This wrapper facilitates custom implementations of the Mapper.Context interface through a nested static class `Context`. The Wrapper pattern is employed, allowing for extended functionality without modifying the original Mapper object. The class manages the mapper's execution context, delegating all context-related method calls to a provided MapContext object. It doesn't directly handle inputs or outputs but manages context, including task, job configuration, counters, and output methods. The implementation relies heavily on various classes from the Apache Hadoop MapReduce library, such as MapContext, Configuration, InputSplit, JobID, TaskAttemptID, Counter, OutputCommitter, OutputFormat, Reducer, Path, RawComparator, Credentials, Enum, String[], URI[], Class<?>, and IntegerRanges.",
+  "summary": "TITLE: WrappedMapper.java - Mapper Context Wrapper\nDESCRIPTION: The WrappedMapper.java file defines a class `WrappedMapper` that extends Hadoop's Mapper class. This wrapper facilitates custom implementations of the Mapper.Context interface through a nested static class `Context`. The Wrapper pattern is employed, allowing for extended functionality without modifying the original Mapper object. The class manages the mapper's execution context, delegating all context-related method calls to a provided MapContext object. It doesn't directly handle inputs or outputs but manages context, including task, job configuration, counters, and output methods. The implementation relies heavily on various classes from the Apache Hadoop MapReduce library, such as MapContext, Configuration, InputSplit, JobID, TaskAttemptID, Counter, OutputCommitter, OutputFormat, Reducer, Path, RawComparator, Credentials, Enum, String[], URI[], Class<?>, and IntegerRanges.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "WrappedMapper.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: WrappedMapper.java - Mapper Context Wrapper\n\nDESCRIPTION:\nThe WrappedMapper.java file defines a class `WrappedMapper` that extends Hadoop's Mapper class. This wrapper facilitates custom implementations of the Mapper.Context interface through a nested static class `Context`. The Wrapper pattern is employed, allowing for extended functionality without modifying the original Mapper object. The class manages the mapper's execution context, delegating all context-related method calls to a provided MapContext object. It doesn't directly handle inputs or outputs but manages context, including task, job configuration, counters, and output methods. The implementation relies heavily on various classes from the Apache Hadoop MapReduce library, such as MapContext, Configuration, InputSplit, JobID, TaskAttemptID, Counter, OutputCommitter, OutputFormat, Reducer, Path, RawComparator, Credentials, Enum, String[], URI[], Class<?>, and IntegerRanges."
+}

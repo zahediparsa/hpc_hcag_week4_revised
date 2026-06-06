@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 18,
+  "directory": ".",
+  "title": "Job Token Management",
+  "description": "The 'security/token' directory in Hadoop MapReduce is responsible for managing job tokens. JobTokenIdentifier, extending TokenIdentifier, handles token creation, reading, writing, and renewal, storing job IDs as Text. JobTokenSelector, implementing TokenSelector, locates and retrieves matching job tokens, using Text for service representation. This showcases the Strategy design pattern for token selection based on type. Both classes employ Hadoop's security token interfaces, ensuring secure job execution.",
+  "summary": "TITLE: Job Token Management\nDESCRIPTION: The 'security/token' directory in Hadoop MapReduce is responsible for managing job tokens. JobTokenIdentifier, extending TokenIdentifier, handles token creation, reading, writing, and renewal, storing job IDs as Text. JobTokenSelector, implementing TokenSelector, locates and retrieves matching job tokens, using Text for service representation. This showcases the Strategy design pattern for token selection based on type. Both classes employ Hadoop's security token interfaces, ensuring secure job execution.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "security"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job Token Management\n\nDESCRIPTION: The 'security/token' directory in Hadoop MapReduce is responsible for managing job tokens. JobTokenIdentifier, extending TokenIdentifier, handles token creation, reading, writing, and renewal, storing job IDs as Text. JobTokenSelector, implementing TokenSelector, locates and retrieves matching job tokens, using Text for service representation. This showcases the Strategy design pattern for token selection based on type. Both classes employ Hadoop's security token interfaces, ensuring secure job execution."
+}

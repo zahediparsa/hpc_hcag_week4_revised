@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 16,
+  "directory": "lib",
+  "title": "Hadoop MapReduce Mapper Directory",
+  "description": "The 'lib/map' directory in Hadoop MapReduce clusters contains Java classes for Mapper tasks. InverseMapper swaps keys and values, RegexMapper extracts regex-matched text, and TokenCounterMapper tokenizes and counts words. Each extends Hadoop's Mapper class, overriding 'map' method. They handle exceptions and use Hadoop, Java standard libraries for data processing, preparing input for Reduce phase.",
+  "summary": "TITLE: Hadoop MapReduce Mapper Directory\nDESCRIPTION: The 'lib/map' directory in Hadoop MapReduce clusters contains Java classes for Mapper tasks. InverseMapper swaps keys and values, RegexMapper extracts regex-matched text, and TokenCounterMapper tokenizes and counts words. Each extends Hadoop's Mapper class, overriding 'map' method. They handle exceptions and use Hadoop, Java standard libraries for data processing, preparing input for Reduce phase.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/map"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Mapper Directory\n\nDESCRIPTION: The 'lib/map' directory in Hadoop MapReduce clusters contains Java classes for Mapper tasks. InverseMapper swaps keys and values, RegexMapper extracts regex-matched text, and TokenCounterMapper tokenizes and counts words. Each extends Hadoop's Mapper class, overriding 'map' method. They handle exceptions and use Hadoop, Java standard libraries for data processing, preparing input for Reduce phase."
+}

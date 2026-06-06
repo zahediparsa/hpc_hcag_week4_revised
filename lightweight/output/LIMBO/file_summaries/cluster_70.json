@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 70,
+    "class": "org.apache.hadoop.mapreduce.lib.join.JoinRecordReader",
+    "path": "lib/join/JoinRecordReader.java",
+    "file_name": "JoinRecordReader.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define the abstract class `JoinRecordReader` for composite joins in Apache Hadoop MapReduce, which returns tuples of arbitrary Writables.\n\nCORE LOGIC:\nThe core logic involves managing the state of key-value pairs from child RecordReaders using a PriorityQueue (`q`). The `nextKeyValue()` method iterates over this queue, filling a `JoinCollector` (`jc`) with keys and values from the child RecordReaders until it finds a match or exhausts all options. It uses reflection to copy configuration settings from the `JoinCollector` to the key.\n\nINPUTS/OUTPUTS:\n- Inputs: Configuration (`conf`), child RecordReaders\n- Outputs: Tuples of arbitrary Writables (`TupleWritable`)\n\nDEPENDENCIES:\n- Imported classes: `java.io.IOException`, `java.util.PriorityQueue`, `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`, `org.apache.hadoop.conf.Configuration`, `org.apache.hadoop.io.Writable`, `org.apache.hadoop.io.WritableComparable`, `org.apache.hadoop.io.WritableComparator`, `org.apache.hadoop.util.ReflectionUtils`\n- Parent class: `CompositeRecordReader<K,Writable,TupleWritable>`\n- Associated classes: `JoinCollector`, `ComposableRecordReader`, `TupleWritable`, `ResetableIterator`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 70,
+    "class": "org.apache.hadoop.mapreduce.lib.join.OverrideRecordReader",
+    "path": "lib/join/OverrideRecordReader.java",
+    "file_name": "OverrideRecordReader.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to implement a specialized RecordReader for Apache Hadoop MapReduce that prioritizes the \"rightmost\" data source for a given key. This means it favors values from the last data source in a list of sources over the others.\n\nCORE LOGIC:\n1. The class extends MultiFilterRecordReader, which is a generic record reader that combines multiple record readers.\n2. It maintains a priority queue (PriorityQueue) of ComposableRecordReader instances, ordered by their position.\n3. The `fillJoinCollector` method is overridden to fill the JoinCollector with values only from the rightmost RecordReader for the given key, effectively discarding the others.\n4. It uses a PriorityQueue to keep track of the RecordReaders and a WritableComparator to compare keys.\n\nINPUTS/OUTPUTS:\nINPUTS:\n- Configuration: Hadoop job configuration.\n- Class<? extends WritableComparator>: Comparator class for key comparison.\n\nOUTPUTS:\n- Key-Value pairs: The class emits key-value pairs based on the rightmost data source for a given key.\n\nDEPENDENCIES:\n- org.apache.hadoop.mapreduce.lib.join: This class is part of the join library in Hadoop MapReduce.\n- org.apache.hadoop.io: Classes for Writable, NullWritable, and WritableComparable are imported from this package.\n- org.apache.hadoop.util: ReflectionUtils is used for creating instances of classes dynamically.\n- java.io: For IOException.\n- java.lang: For Class and Reflection.\n- java.util: For ArrayList and PriorityQueue.\n\nCollaborators:\n- MultiFilterRecordReader: The base class from which OverrideRecordReader inherits.\n- ComposableRecordReader: The type of record readers managed in the priority queue.\n- WritableComparator: Used for comparing keys.\n- JoinCollector: The target to which key-value pairs are emitted.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

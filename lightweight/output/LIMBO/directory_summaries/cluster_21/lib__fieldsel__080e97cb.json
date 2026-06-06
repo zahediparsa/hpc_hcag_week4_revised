@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 21,
+  "directory": "lib/fieldsel",
+  "title": "FieldSelectionReducer.java",
+  "description": "The FieldSelectionReducer.java file defines a reducer class that performs field selection operations, akin to Unix 'cut' command. It reads configuration parameters for field separator and reduce output key-value field specification in the setup method. The reduce method extracts specified fields from input values using FieldSelectionHelper and emits new key-value pairs. It depends on Hadoop's mapreduce library, Text class for string data, Configuration for accessing parameters, and SLF4J for logging. This class is crucial for customizing the output of the MapReduce job by selecting specific fields for the reduce output keys and values.",
+  "summary": "TITLE: FieldSelectionReducer.java\nDESCRIPTION: The FieldSelectionReducer.java file defines a reducer class that performs field selection operations, akin to Unix 'cut' command. It reads configuration parameters for field separator and reduce output key-value field specification in the setup method. The reduce method extracts specified fields from input values using FieldSelectionHelper and emits new key-value pairs. It depends on Hadoop's mapreduce library, Text class for string data, Configuration for accessing parameters, and SLF4J for logging. This class is crucial for customizing the output of the MapReduce job by selecting specific fields for the reduce output keys and values.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "FieldSelectionReducer.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: FieldSelectionReducer.java\n\nDESCRIPTION: \nThe FieldSelectionReducer.java file defines a reducer class that performs field selection operations, akin to Unix 'cut' command. It reads configuration parameters for field separator and reduce output key-value field specification in the setup method. The reduce method extracts specified fields from input values using FieldSelectionHelper and emits new key-value pairs. It depends on Hadoop's mapreduce library, Text class for string data, Configuration for accessing parameters, and SLF4J for logging. This class is crucial for customizing the output of the MapReduce job by selecting specific fields for the reduce output keys and values."
+}

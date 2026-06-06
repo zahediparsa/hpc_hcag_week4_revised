@@ -1,0 +1,25 @@
+{
+  "cluster_id": 30,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and a Job History Server. The JobTracker coordinates and monitors all jobs, dispatching tasks to NodeManagers. NodeManagers execute the tasks, reporting back to the JobTracker. The Job History Server logs and stores job details in the 'jobhistory' directory, utilizing a layered pattern for comprehensive job history and monitoring. Technologies used include Java for programming, and YARN for resource management. This architecture ensures scalability, maintainability, and reliability, with security maintained through access controls. Performance is optimized via data locality and efficient resource utilization.",
+  "description_word_count": 97,
+  "number_of_files": 5,
+  "number_of_directories": 2,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and a Job History Server. The JobTracker coordinates and monitors all jobs, dispatching tasks to NodeManagers. NodeManagers execute the tasks, reporting back to the JobTracker. The Job History Server logs and stores job details in the 'jobhistory' directory, utilizing a layered pattern for comprehensive job history and monitoring. Technologies used include Java for programming, and YARN for resource management. This architecture ensures scalability, maintainability, and reliability, with security maintained through access controls. Performance is optimized via data locality and efficient resource utilization.",
+  "algorithm": "LIMBO",
+  "files": [
+    "jobhistory/AMStartedEvent.java",
+    "jobhistory/NormalizedResourceEvent.java",
+    "jobhistory/TaskAttemptStartedEvent.java",
+    "jobhistory/TaskStartedEvent.java",
+    "jobhistory/TaskUpdatedEvent.java"
+  ]
+}

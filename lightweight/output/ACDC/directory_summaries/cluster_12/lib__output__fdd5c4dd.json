@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 12,
+  "directory": "lib/output",
+  "title": "Hadoop MapReduce Committer Stage Directory",
+  "description": "The 'lib/output/committer' directory manages Hadoop MapReduce's commit protocol, ensuring data consistency. It contains 'manifest' subdirectory with files like 'AbstractJobOrTaskStage.java' and 'JobOrTaskStage.java' defining stages. 'LoadManifestsStage.java' processes task manifests, exemplifying a layered architecture. This directory showcases a modular design, with each component collaborating to maintain commit protocol integrity.",
+  "summary": "TITLE: Hadoop MapReduce Committer Stage Directory\nDESCRIPTION: The 'lib/output/committer' directory manages Hadoop MapReduce's commit protocol, ensuring data consistency. It contains 'manifest' subdirectory with files like 'AbstractJobOrTaskStage.java' and 'JobOrTaskStage.java' defining stages. 'LoadManifestsStage.java' processes task manifests, exemplifying a layered architecture. This directory showcases a modular design, with each component collaborating to maintain commit protocol integrity.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Committer Stage Directory\n\nDESCRIPTION: The 'lib/output/committer' directory manages Hadoop MapReduce's commit protocol, ensuring data consistency. It contains 'manifest' subdirectory with files like 'AbstractJobOrTaskStage.java' and 'JobOrTaskStage.java' defining stages. 'LoadManifestsStage.java' processes task manifests, exemplifying a layered architecture. This directory showcases a modular design, with each component collaborating to maintain commit protocol integrity."
+}

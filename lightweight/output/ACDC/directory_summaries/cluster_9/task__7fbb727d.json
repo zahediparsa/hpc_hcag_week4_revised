@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 9,
+  "directory": "task",
+  "title": "MapReduce Task Context Implementation",
+  "description": "The 'task' directory in Hadoop MapReduce architecture primarily focuses on providing context to the Mapper and Reducer tasks. It includes files like MapContextImpl.java and TaskInputOutputContextImpl.java. MapContextImpl.java implements the MapContext interface, offering context to the Mapper by initializing with RecordReader and InputSplit. TaskInputOutputContextImpl.java extends TaskAttemptContextImpl and implements TaskInputOutputContext, managing input/output operations. It provides methods for key-value pair handling and output committer access. Both files collaborate to ensure Mappers and Reducers have necessary context for processing input data and producing output, adhering to the Context and Task Input/Output Context design patterns.",
+  "summary": "TITLE: MapReduce Task Context Implementation\nDESCRIPTION: The 'task' directory in Hadoop MapReduce architecture primarily focuses on providing context to the Mapper and Reducer tasks. It includes files like MapContextImpl.java and TaskInputOutputContextImpl.java. MapContextImpl.java implements the MapContext interface, offering context to the Mapper by initializing with RecordReader and InputSplit. TaskInputOutputContextImpl.java extends TaskAttemptContextImpl and implements TaskInputOutputContext, managing input/output operations. It provides methods for key-value pair handling and output committer access. Both files collaborate to ensure Mappers and Reducers have necessary context for processing input data and producing output, adhering to the Context and Task Input/Output Context design patterns.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "MapContextImpl.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskInputOutputContextImpl.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Task Context Implementation\n\nDESCRIPTION:\nThe 'task' directory in Hadoop MapReduce architecture primarily focuses on providing context to the Mapper and Reducer tasks. It includes files like MapContextImpl.java and TaskInputOutputContextImpl.java. MapContextImpl.java implements the MapContext interface, offering context to the Mapper by initializing with RecordReader and InputSplit. TaskInputOutputContextImpl.java extends TaskAttemptContextImpl and implements TaskInputOutputContext, managing input/output operations. It provides methods for key-value pair handling and output committer access. Both files collaborate to ensure Mappers and Reducers have necessary context for processing input data and producing output, adhering to the Context and Task Input/Output Context design patterns."
+}

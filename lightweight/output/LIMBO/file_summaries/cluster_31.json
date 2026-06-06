@@ -1,0 +1,14 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 31,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.HistoryEvent",
+    "path": "jobhistory/HistoryEvent.java",
+    "file_name": "HistoryEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY: This Java interface, `HistoryEvent`, serves as a blueprint for event wrapper classes in Apache Hadoop MapReduce's job history logging system. It defines methods to interact with events, convert them to TimelineEvents, and retrieve associated metrics.\n\nCORE LOGIC: The core logic of this chunk revolves around defining a contract for wrapping Avro-generated event classes. It includes methods to:\n- Retrieve and set the event type (`getEventType()` and `setDatum(Object datum)`).\n- Convert the `HistoryEvent` to a `TimelineEvent` (`toTimelineEvent()`).\n- Retrieve associated `TimelineMetric` objects (`getTimelineMetrics()`).\n\nINPUTS/OUTPUTS: The interface defines no explicit inputs or outputs, as it's an abstract contract. However, it implies that the implementing classes will handle Avro-generated event data (`Object getDatum()`) and produce `TimelineEvent` objects (`TimelineEvent toTimelineEvent()`) as output. It also deals with sets of `TimelineMetric` objects (`Set<TimelineMetric> getTimelineMetrics()`).\n\nDEPENDENCIES: This chunk depends on classes from the `org.apache.hadoop.yarn.api.records.timelineservice` package, specifically `TimelineEvent` and `TimelineMetric`. It also imports standard Java classes like `Set` and utilizes Java's generics (`Object`). Additionally, it uses annotations from `org.apache.hadoop.classification` for audience and stability information.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

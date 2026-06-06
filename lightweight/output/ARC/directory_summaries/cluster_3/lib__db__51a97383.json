@@ -1,0 +1,54 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "lib/db",
+  "title": "Hadoop MapReduce Database Integration Directory",
+  "description": "The 'lib/db' directory in Hadoop MapReduce architecture houses Java classes for integrating database operations into MapReduce jobs. The 'DBConfiguration.java' class sets up database connection properties, while 'DBInputFormat.java' and 'DBRecordReader.java' facilitate reading data from SQL tables. 'DBWritable.java' defines an interface for database-compatible data types. 'DataDrivenDBInputFormat.java' and 'DataDrivenDBRecordReader.java' enable data-driven splitting for parallel processing. Specialized classes like 'MySQLDBRecordReader.java', 'MySQLDataDrivenDBRecordReader.java', 'OracleDBRecordReader.java', and 'OracleDataDrivenDBRecordReader.java' handle specific database types, ensuring efficient and accurate data retrieval. These components collaborate to extend Hadoop's functionality for database-backed computations, adhering to the Adapter and Strategy design patterns.",
+  "summary": "TITLE: Hadoop MapReduce Database Integration Directory\nDESCRIPTION: The 'lib/db' directory in Hadoop MapReduce architecture houses Java classes for integrating database operations into MapReduce jobs. The 'DBConfiguration.java' class sets up database connection properties, while 'DBInputFormat.java' and 'DBRecordReader.java' facilitate reading data from SQL tables. 'DBWritable.java' defines an interface for database-compatible data types. 'DataDrivenDBInputFormat.java' and 'DataDrivenDBRecordReader.java' enable data-driven splitting for parallel processing. Specialized classes like 'MySQLDBRecordReader.java', 'MySQLDataDrivenDBRecordReader.java', 'OracleDBRecordReader.java', and 'OracleDataDrivenDBRecordReader.java' handle specific database types, ensuring efficient and accurate data retrieval. These components collaborate to extend Hadoop's functionality for database-backed computations, adhering to the Adapter and Strategy design patterns.",
+  "number_of_children": 10,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "DBConfiguration.java"
+    },
+    {
+      "type": "file",
+      "name": "DBInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "DBRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "DBWritable.java"
+    },
+    {
+      "type": "file",
+      "name": "DataDrivenDBInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "DataDrivenDBRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "MySQLDBRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "MySQLDataDrivenDBRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "OracleDBRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "OracleDataDrivenDBRecordReader.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Database Integration Directory\n\nDESCRIPTION:\nThe 'lib/db' directory in Hadoop MapReduce architecture houses Java classes for integrating database operations into MapReduce jobs. The 'DBConfiguration.java' class sets up database connection properties, while 'DBInputFormat.java' and 'DBRecordReader.java' facilitate reading data from SQL tables. 'DBWritable.java' defines an interface for database-compatible data types. 'DataDrivenDBInputFormat.java' and 'DataDrivenDBRecordReader.java' enable data-driven splitting for parallel processing. Specialized classes like 'MySQLDBRecordReader.java', 'MySQLDataDrivenDBRecordReader.java', 'OracleDBRecordReader.java', and 'OracleDataDrivenDBRecordReader.java' handle specific database types, ensuring efficient and accurate data retrieval. These components collaborate to extend Hadoop's functionality for database-backed computations, adhering to the Adapter and Strategy design patterns."
+}

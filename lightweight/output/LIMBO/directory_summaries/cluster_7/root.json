@@ -1,0 +1,38 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": ".",
+  "title": "Cryptographic Utilities",
+  "description": "The CryptoUtils.java file provides cryptographic stream utilities for Hadoop MapReduce. It offers methods to initialize cryptographic streams, handle padding, and wrap input/output streams. This class depends on Hadoop's cryptographic libraries and uses sl4j for logging.\n\nTITLE: Job Access Control Lists\n\nDESCRIPTION: The JobACL.java file defines an enumeration for job-related Access Control Lists (ACLs) in Hadoop MapReduce. It includes constants for viewing and modifying job details, serving as a categorization tool for job access levels.\n\nTITLE: Counter Usage Limits\n\nDESCRIPTION: The Limits.java file in the 'counters' directory manages and enforces limits on counter groups and names in Hadoop MapReduce. It maintains maximum limits and checks for usage exceeding these, preventing excessive counter creation.\n\nTITLE: ClientDistributedCacheManager and DistributedCache Interaction\n\nDESCRIPTION: The 'ClientDistributedCacheManager.java' and 'DistributedCache.java' files in the 'filecache' directory manage job cache configurations and distribute large, read-only files, respectively. They collaborate to ensure efficient and scalable MapReduce job execution.\n\nTITLE: TokenCache for MapReduce Security\n\nDESCRIPTION: The TokenCache.java file in the 'security' directory manages security tokens for MapReduce tasks. It provides APIs for transferring tokens, ensuring secure communication between tasks and NameNodes.\n\nTITLE: MapReduce Job Configuration Utilities\n\nDESCRIPTION: The MRJobConfUtil.java file in the 'util' directory offers utility methods for configuring MapReduce jobs. It includes functionalities for redacting sensitive properties, calculating task progress report intervals, and setting logging thresholds.",
+  "summary": "TITLE: Cryptographic Utilities\nDESCRIPTION: The CryptoUtils.java file provides cryptographic stream utilities for Hadoop MapReduce. It offers methods to initialize cryptographic streams, handle padding, and wrap input/output streams. This class depends on Hadoop's cryptographic libraries and uses sl4j for logging.\n\nTITLE: Job Access Control Lists\n\nDESCRIPTION: The JobACL.java file defines an enumeration for job-related Access Control Lists (ACLs) in Hadoop MapReduce. It includes constants for viewing and modifying job details, serving as a categorization tool for job access levels.\n\nTITLE: Counter Usage Limits\n\nDESCRIPTION: The Limits.java file in the 'counters' directory manages and enforces limits on counter groups and names in Hadoop MapReduce. It maintains maximum limits and checks for usage exceeding these, preventing excessive counter creation.\n\nTITLE: ClientDistributedCacheManager and DistributedCache Interaction\n\nDESCRIPTION: The 'ClientDistributedCacheManager.java' and 'DistributedCache.java' files in the 'filecache' directory manage job cache configurations and distribute large, read-only files, respectively. They collaborate to ensure efficient and scalable MapReduce job execution.\n\nTITLE: TokenCache for MapReduce Security\n\nDESCRIPTION: The TokenCache.java file in the 'security' directory manages security tokens for MapReduce tasks. It provides APIs for transferring tokens, ensuring secure communication between tasks and NameNodes.\n\nTITLE: MapReduce Job Configuration Utilities\n\nDESCRIPTION: The MRJobConfUtil.java file in the 'util' directory offers utility methods for configuring MapReduce jobs. It includes functionalities for redacting sensitive properties, calculating task progress report intervals, and setting logging thresholds.",
+  "number_of_children": 6,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CryptoUtils.java"
+    },
+    {
+      "type": "file",
+      "name": "JobACL.java"
+    },
+    {
+      "type": "directory",
+      "name": "counters"
+    },
+    {
+      "type": "directory",
+      "name": "filecache"
+    },
+    {
+      "type": "directory",
+      "name": "security"
+    },
+    {
+      "type": "directory",
+      "name": "util"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Cryptographic Utilities\n\nDESCRIPTION: The CryptoUtils.java file provides cryptographic stream utilities for Hadoop MapReduce. It offers methods to initialize cryptographic streams, handle padding, and wrap input/output streams. This class depends on Hadoop's cryptographic libraries and uses sl4j for logging.\n\nTITLE: Job Access Control Lists\n\nDESCRIPTION: The JobACL.java file defines an enumeration for job-related Access Control Lists (ACLs) in Hadoop MapReduce. It includes constants for viewing and modifying job details, serving as a categorization tool for job access levels.\n\nTITLE: Counter Usage Limits\n\nDESCRIPTION: The Limits.java file in the 'counters' directory manages and enforces limits on counter groups and names in Hadoop MapReduce. It maintains maximum limits and checks for usage exceeding these, preventing excessive counter creation.\n\nTITLE: ClientDistributedCacheManager and DistributedCache Interaction\n\nDESCRIPTION: The 'ClientDistributedCacheManager.java' and 'DistributedCache.java' files in the 'filecache' directory manage job cache configurations and distribute large, read-only files, respectively. They collaborate to ensure efficient and scalable MapReduce job execution.\n\nTITLE: TokenCache for MapReduce Security\n\nDESCRIPTION: The TokenCache.java file in the 'security' directory manages security tokens for MapReduce tasks. It provides APIs for transferring tokens, ensuring secure communication between tasks and NameNodes.\n\nTITLE: MapReduce Job Configuration Utilities\n\nDESCRIPTION: The MRJobConfUtil.java file in the 'util' directory offers utility methods for configuring MapReduce jobs. It includes functionalities for redacting sensitive properties, calculating task progress report intervals, and setting logging thresholds."
+}

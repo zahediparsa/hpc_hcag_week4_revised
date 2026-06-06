@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 67,
+  "directory": ".",
+  "title": "Hadoop MapReduce Join Operations Library",
+  "description": "The 'lib/join' directory contains Java classes crucial for Hadoop MapReduce join operations. 'ComposableRecordReader.java' extends Hadoop's RecordReader, aiding in join operations. 'CompositeRecordReader.java' manages multiple RecordReaders, while 'MultiFilterRecordReader.java' handles composite joins. 'WrappedRecordReader.java' proxies RecordReader for head key-value pair management. These classes collaborate, demonstrating the Adapter and Composite patterns, to facilitate complex data joins using Hadoop interfaces and classes for input/output and key-value comparisons.",
+  "summary": "TITLE: Hadoop MapReduce Join Operations Library\nDESCRIPTION: The 'lib/join' directory contains Java classes crucial for Hadoop MapReduce join operations. 'ComposableRecordReader.java' extends Hadoop's RecordReader, aiding in join operations. 'CompositeRecordReader.java' manages multiple RecordReaders, while 'MultiFilterRecordReader.java' handles composite joins. 'WrappedRecordReader.java' proxies RecordReader for head key-value pair management. These classes collaborate, demonstrating the Adapter and Composite patterns, to facilitate complex data joins using Hadoop interfaces and classes for input/output and key-value comparisons.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Join Operations Library\n\nDESCRIPTION: The 'lib/join' directory contains Java classes crucial for Hadoop MapReduce join operations. 'ComposableRecordReader.java' extends Hadoop's RecordReader, aiding in join operations. 'CompositeRecordReader.java' manages multiple RecordReaders, while 'MultiFilterRecordReader.java' handles composite joins. 'WrappedRecordReader.java' proxies RecordReader for head key-value pair management. These classes collaborate, demonstrating the Adapter and Composite patterns, to facilitate complex data joins using Hadoop interfaces and classes for input/output and key-value comparisons."
+}

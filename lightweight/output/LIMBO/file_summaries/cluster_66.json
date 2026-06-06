@@ -1,0 +1,14 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 66,
+    "class": "org.apache.hadoop.mapreduce.lib.jobcontrol.JobControl",
+    "path": "lib/jobcontrol/JobControl.java",
+    "file_name": "JobControl.java",
+    "directory": "lib/jobcontrol",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define the `JobControl` class, which manages a set of MapReduce jobs and their dependencies. It tracks the states of jobs and handles their submission, monitoring, and state updates.\n\nCORE LOGIC:\n- The class maintains different lists (`jobsInProgress`, `successfulJobs`, `failedJobs`) to categorize jobs based on their states.\n- It uses a unique ID generator for newly added jobs.\n- The `addJob` method assigns a unique ID to a job and places it in the `jobsInProgress` list.\n- The `run` method is the main loop for a thread that monitors job states, updates them, and submits jobs when ready.\n- It uses a topological sorting algorithm (`isCircular` method) to detect circular dependencies among jobs.\n\nINPUTS/OUTPUTS:\n- INPUTS: Collection of `ControlledJob` objects (MapReduce jobs with dependencies).\n- OUTPUTS: Job states are updated within the class, and external access is provided through methods like `getWaitingJobList`, `getRunningJobList`, `getSuccessfulJobList`, and `getFailedJobList`.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapred.jobcontrol.Job`\n- `org.apache.hadoop.mapreduce.lib.jobcontrol.ControlledJob.State`\n- `org.apache.hadoop.util.StringUtils`\n- `org.slf4j.Logger` and `org.slf4j.LoggerFactory` for logging\n- Standard Java classes like `LinkedList`, `ArrayList`, `HashMap`, `HashSet`, `Iterator`, and `Thread`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

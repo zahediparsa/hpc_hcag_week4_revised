@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 8,
+  "directory": "lib/join",
+  "title": "ComposableInputFormat for Custom MapReduce Input",
+  "description": "The ComposableInputFormat.java file in the lib/join directory of Hadoop MapReduce defines an abstract class that extends InputFormat. Its primary responsibility is to require subclasses to provide a ComposableRecordReader, enabling the reading of data from multiple sources in a composable manner for MapReduce jobs. This class doesn't handle inputs or outputs directly but sets the stage for custom input data reading. It depends on various classes from the Hadoop MapReduce library, including InputFormat, InputSplit, and TaskAttemptContext, to function correctly. The core logic lies in the abstract method createRecordReader, which must return a ComposableRecordReader instance.",
+  "summary": "TITLE: ComposableInputFormat for Custom MapReduce Input\nDESCRIPTION: The ComposableInputFormat.java file in the lib/join directory of Hadoop MapReduce defines an abstract class that extends InputFormat. Its primary responsibility is to require subclasses to provide a ComposableRecordReader, enabling the reading of data from multiple sources in a composable manner for MapReduce jobs. This class doesn't handle inputs or outputs directly but sets the stage for custom input data reading. It depends on various classes from the Hadoop MapReduce library, including InputFormat, InputSplit, and TaskAttemptContext, to function correctly. The core logic lies in the abstract method createRecordReader, which must return a ComposableRecordReader instance.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ComposableInputFormat.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ComposableInputFormat for Custom MapReduce Input\n\nDESCRIPTION:\nThe ComposableInputFormat.java file in the lib/join directory of Hadoop MapReduce defines an abstract class that extends InputFormat. Its primary responsibility is to require subclasses to provide a ComposableRecordReader, enabling the reading of data from multiple sources in a composable manner for MapReduce jobs. This class doesn't handle inputs or outputs directly but sets the stage for custom input data reading. It depends on various classes from the Hadoop MapReduce library, including InputFormat, InputSplit, and TaskAttemptContext, to function correctly. The core logic lies in the abstract method createRecordReader, which must return a ComposableRecordReader instance."
+}

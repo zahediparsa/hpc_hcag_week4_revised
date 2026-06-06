@@ -1,0 +1,34 @@
+{
+  "type": "directory",
+  "cluster_id": 22,
+  "directory": "lib/partition",
+  "title": "Key-Based Partitioning in Hadoop MapReduce",
+  "description": "The 'lib/partition' directory in Hadoop MapReduce contains custom partitioners that enable partitioning keys based on specific fields or subarrays. The 'BinaryPartitioner.java' defines a custom partitioner for keys of type 'BinaryComparable', allowing users to specify subarrays for partitioning. 'KeyFieldBasedComparator.java' and 'KeyFieldBasedPartitioner.java' extend Hadoop's sorting and partitioning capabilities, respectively, by supporting Unix-like sorting features and field-based partitioning. 'KeyFieldHelper.java' parses key specifications for use in 'KeyFieldBasedComparator' and 'KeyFieldBasedPartitioner'. 'RehashPartitioner.java' improves partition distribution by rehashing the key's hash code. These components collaborate to provide flexible and efficient key-based partitioning in Hadoop MapReduce jobs, adhering to the Partitioning architectural pattern.",
+  "summary": "TITLE: Key-Based Partitioning in Hadoop MapReduce\nDESCRIPTION: The 'lib/partition' directory in Hadoop MapReduce contains custom partitioners that enable partitioning keys based on specific fields or subarrays. The 'BinaryPartitioner.java' defines a custom partitioner for keys of type 'BinaryComparable', allowing users to specify subarrays for partitioning. 'KeyFieldBasedComparator.java' and 'KeyFieldBasedPartitioner.java' extend Hadoop's sorting and partitioning capabilities, respectively, by supporting Unix-like sorting features and field-based partitioning. 'KeyFieldHelper.java' parses key specifications for use in 'KeyFieldBasedComparator' and 'KeyFieldBasedPartitioner'. 'RehashPartitioner.java' improves partition distribution by rehashing the key's hash code. These components collaborate to provide flexible and efficient key-based partitioning in Hadoop MapReduce jobs, adhering to the Partitioning architectural pattern.",
+  "number_of_children": 5,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "BinaryPartitioner.java"
+    },
+    {
+      "type": "file",
+      "name": "KeyFieldBasedComparator.java"
+    },
+    {
+      "type": "file",
+      "name": "KeyFieldBasedPartitioner.java"
+    },
+    {
+      "type": "file",
+      "name": "KeyFieldHelper.java"
+    },
+    {
+      "type": "file",
+      "name": "RehashPartitioner.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Key-Based Partitioning in Hadoop MapReduce\n\nDESCRIPTION:\nThe 'lib/partition' directory in Hadoop MapReduce contains custom partitioners that enable partitioning keys based on specific fields or subarrays. The 'BinaryPartitioner.java' defines a custom partitioner for keys of type 'BinaryComparable', allowing users to specify subarrays for partitioning. 'KeyFieldBasedComparator.java' and 'KeyFieldBasedPartitioner.java' extend Hadoop's sorting and partitioning capabilities, respectively, by supporting Unix-like sorting features and field-based partitioning. 'KeyFieldHelper.java' parses key specifications for use in 'KeyFieldBasedComparator' and 'KeyFieldBasedPartitioner'. 'RehashPartitioner.java' improves partition distribution by rehashing the key's hash code. These components collaborate to provide flexible and efficient key-based partitioning in Hadoop MapReduce jobs, adhering to the Partitioning architectural pattern."
+}

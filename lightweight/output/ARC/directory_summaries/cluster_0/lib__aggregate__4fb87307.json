@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "lib/aggregate",
+  "title": "ValueAggregatorJob.java",
+  "description": "This Java file, ValueAggregatorJob.java, is responsible for creating a MapReduce job using the Aggregate framework. It facilitates simple aggregations such as sum, count, histogram, min, max, average, and standard deviation. The core logic involves setting up a MapReduce job with specific input and output formats, mapper, reducer, and combiner classes. It takes various inputs including input and output directories, number of reducers, input format, specification file for user-defined aggregator descriptors, and job name. The job outputs aggregated results in text format to the specified output directory. It heavily relies on Hadoop's MapReduce classes for job configuration and execution.",
+  "summary": "TITLE: ValueAggregatorJob.java\nDESCRIPTION: This Java file, ValueAggregatorJob.java, is responsible for creating a MapReduce job using the Aggregate framework. It facilitates simple aggregations such as sum, count, histogram, min, max, average, and standard deviation. The core logic involves setting up a MapReduce job with specific input and output formats, mapper, reducer, and combiner classes. It takes various inputs including input and output directories, number of reducers, input format, specification file for user-defined aggregator descriptors, and job name. The job outputs aggregated results in text format to the specified output directory. It heavily relies on Hadoop's MapReduce classes for job configuration and execution.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ValueAggregatorJob.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ValueAggregatorJob.java\n\nDESCRIPTION: \nThis Java file, ValueAggregatorJob.java, is responsible for creating a MapReduce job using the Aggregate framework. It facilitates simple aggregations such as sum, count, histogram, min, max, average, and standard deviation. The core logic involves setting up a MapReduce job with specific input and output formats, mapper, reducer, and combiner classes. It takes various inputs including input and output directories, number of reducers, input format, specification file for user-defined aggregator descriptors, and job name. The job outputs aggregated results in text format to the specified output directory. It heavily relies on Hadoop's MapReduce classes for job configuration and execution."
+}

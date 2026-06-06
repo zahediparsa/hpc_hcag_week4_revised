@@ -1,0 +1,25 @@
+{
+  "cluster_id": 1,
+  "title": "Hadoop MapReduce Counters Management",
+  "description": "The Hadoop MapReduce architecture employs a counter management system, encapsulated in the 'counters' directory. This system utilizes AbstractCounters.java for managing diverse counter types, FileSystemCounterGroup.java for filesystem-specific counters, and FrameworkCounterGroup.java for framework-specific counters. The Abstract Factory, Iterator, and Strategy patterns are implemented to ensure efficient tracking, modularity, and maintainability of counters. This design supports scalability, reliability, and performance, crucial for job monitoring, debugging, and performance analysis. The technology stack includes Java for programming, and Hadoop framework for distributed processing. The counters management system exemplifies the Abstract Factory pattern, facilitating the creation of families of related objects without specifying their concrete classes.",
+  "description_word_count": 103,
+  "number_of_files": 5,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Counters Management\n\nDESCRIPTION: The Hadoop MapReduce architecture employs a counter management system, encapsulated in the 'counters' directory. This system utilizes AbstractCounters.java for managing diverse counter types, FileSystemCounterGroup.java for filesystem-specific counters, and FrameworkCounterGroup.java for framework-specific counters. The Abstract Factory, Iterator, and Strategy patterns are implemented to ensure efficient tracking, modularity, and maintainability of counters. This design supports scalability, reliability, and performance, crucial for job monitoring, debugging, and performance analysis. The technology stack includes Java for programming, and Hadoop framework for distributed processing. The counters management system exemplifies the Abstract Factory pattern, facilitating the creation of families of related objects without specifying their concrete classes.",
+  "algorithm": "ACDC",
+  "files": [
+    "FileSystemCounter.java",
+    "counters/AbstractCounters.java",
+    "counters/FileSystemCounterGroup.java",
+    "counters/FrameworkCounterGroup.java",
+    "util/ResourceBundles.java"
+  ]
+}

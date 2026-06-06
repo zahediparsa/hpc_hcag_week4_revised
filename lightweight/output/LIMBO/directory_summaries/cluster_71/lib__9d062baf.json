@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 71,
+  "directory": "lib",
+  "title": "Join Operations Management",
+  "description": "The `lib/join` directory in Hadoop MapReduce manages join operations. It includes `InnerJoinRecordReader` for inner joins, ensuring only matching keys are combined. `OuterJoinRecordReader` handles full outer joins, emitting all elements. Both extend `JoinRecordReader`, operating on arrays and `TupleWritable`. The Strategy pattern allows for flexible join type implementation, enhancing system maintainability.",
+  "summary": "TITLE: Join Operations Management\nDESCRIPTION: The `lib/join` directory in Hadoop MapReduce manages join operations. It includes `InnerJoinRecordReader` for inner joins, ensuring only matching keys are combined. `OuterJoinRecordReader` handles full outer joins, emitting all elements. Both extend `JoinRecordReader`, operating on arrays and `TupleWritable`. The Strategy pattern allows for flexible join type implementation, enhancing system maintainability.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/join"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Join Operations Management\n\nDESCRIPTION: The `lib/join` directory in Hadoop MapReduce manages join operations. It includes `InnerJoinRecordReader` for inner joins, ensuring only matching keys are combined. `OuterJoinRecordReader` handles full outer joins, emitting all elements. Both extend `JoinRecordReader`, operating on arrays and `TupleWritable`. The Strategy pattern allows for flexible join type implementation, enhancing system maintainability."
+}

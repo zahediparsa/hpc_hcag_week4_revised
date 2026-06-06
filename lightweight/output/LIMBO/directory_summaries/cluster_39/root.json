@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 39,
+  "directory": ".",
+  "title": "Job History Service Directory in Hadoop MapReduce",
+  "description": "The 'jobhistory' directory in Hadoop MapReduce stores job history events. It contains Java classes for various job events, implementing the 'HistoryEvent' interface. These classes convert job details into 'TimelineEvent' objects for YARN's timeline service. The directory uses Hadoop and YARN APIs, string utilities, and Avro for job identification, integration, and UTF-8 string handling. This directory follows a layered architectural pattern, with each class focusing on a specific job event, collaborating to provide comprehensive job history logging.",
+  "summary": "TITLE: Job History Service Directory in Hadoop MapReduce\nDESCRIPTION: The 'jobhistory' directory in Hadoop MapReduce stores job history events. It contains Java classes for various job events, implementing the 'HistoryEvent' interface. These classes convert job details into 'TimelineEvent' objects for YARN's timeline service. The directory uses Hadoop and YARN APIs, string utilities, and Avro for job identification, integration, and UTF-8 string handling. This directory follows a layered architectural pattern, with each class focusing on a specific job event, collaborating to provide comprehensive job history logging.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "jobhistory"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job History Service Directory in Hadoop MapReduce\n\nDESCRIPTION: The 'jobhistory' directory in Hadoop MapReduce stores job history events. It contains Java classes for various job events, implementing the 'HistoryEvent' interface. These classes convert job details into 'TimelineEvent' objects for YARN's timeline service. The directory uses Hadoop and YARN APIs, string utilities, and Avro for job identification, integration, and UTF-8 string handling. This directory follows a layered architectural pattern, with each class focusing on a specific job event, collaborating to provide comprehensive job history logging."
+}

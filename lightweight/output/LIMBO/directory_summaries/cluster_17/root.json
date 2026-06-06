@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 17,
+  "directory": ".",
+  "title": "Reducer Class in Hadoop MapReduce",
+  "description": "The Reducer.java file defines the Reducer class in Apache Hadoop MapReduce, responsible for processing intermediate values associated with the same key. It includes methods setup, reduce, cleanup, and run. The setup method initializes the reducer, reduce processes values for each key, cleanup cleans up after processing, and run orchestrates the execution. The class takes four generic types as input parameters for key and value types on input and output. It extends the Context abstract class and interacts with Configuration, JobContext, and ReduceContext, importing java.io.IOException and java.util.Iterator. The Reducer class is pivotal in the MapReduce paradigm, aggregating data processed by Mappers to produce the final output.",
+  "summary": "TITLE: Reducer Class in Hadoop MapReduce\nDESCRIPTION: The Reducer.java file defines the Reducer class in Apache Hadoop MapReduce, responsible for processing intermediate values associated with the same key. It includes methods setup, reduce, cleanup, and run. The setup method initializes the reducer, reduce processes values for each key, cleanup cleans up after processing, and run orchestrates the execution. The class takes four generic types as input parameters for key and value types on input and output. It extends the Context abstract class and interacts with Configuration, JobContext, and ReduceContext, importing java.io.IOException and java.util.Iterator. The Reducer class is pivotal in the MapReduce paradigm, aggregating data processed by Mappers to produce the final output.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "MarkableIterator.java"
+    },
+    {
+      "type": "file",
+      "name": "Reducer.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Reducer Class in Hadoop MapReduce\n\nDESCRIPTION:\nThe Reducer.java file defines the Reducer class in Apache Hadoop MapReduce, responsible for processing intermediate values associated with the same key. It includes methods setup, reduce, cleanup, and run. The setup method initializes the reducer, reduce processes values for each key, cleanup cleans up after processing, and run orchestrates the execution. The class takes four generic types as input parameters for key and value types on input and output. It extends the Context abstract class and interacts with Configuration, JobContext, and ReduceContext, importing java.io.IOException and java.util.Iterator. The Reducer class is pivotal in the MapReduce paradigm, aggregating data processed by Mappers to produce the final output."
+}

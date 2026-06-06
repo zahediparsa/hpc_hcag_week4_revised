@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 87,
+  "directory": ".",
+  "title": "Custom Partitioning and Sorting Library",
+  "description": "The 'lib/partition' directory serves as a repository for custom Java classes used in key-based partitioning and sorting within Hadoop MapReduce. It includes 'KeyFieldBasedComparator.java' for advanced sorting, 'KeyFieldBasedPartitioner.java' for user-defined key-based partitioning, and 'KeyFieldHelper.java' for parsing specifications. 'TotalOrderPartitioner.java' constructs indexing data structures for efficient total order partitioning, ensuring optimal data distribution across reducers. These components collaborate to facilitate flexible and efficient data processing in MapReduce jobs.",
+  "summary": "TITLE: Custom Partitioning and Sorting Library\nDESCRIPTION: The 'lib/partition' directory serves as a repository for custom Java classes used in key-based partitioning and sorting within Hadoop MapReduce. It includes 'KeyFieldBasedComparator.java' for advanced sorting, 'KeyFieldBasedPartitioner.java' for user-defined key-based partitioning, and 'KeyFieldHelper.java' for parsing specifications. 'TotalOrderPartitioner.java' constructs indexing data structures for efficient total order partitioning, ensuring optimal data distribution across reducers. These components collaborate to facilitate flexible and efficient data processing in MapReduce jobs.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Custom Partitioning and Sorting Library\n\nDESCRIPTION: The 'lib/partition' directory serves as a repository for custom Java classes used in key-based partitioning and sorting within Hadoop MapReduce. It includes 'KeyFieldBasedComparator.java' for advanced sorting, 'KeyFieldBasedPartitioner.java' for user-defined key-based partitioning, and 'KeyFieldHelper.java' for parsing specifications. 'TotalOrderPartitioner.java' constructs indexing data structures for efficient total order partitioning, ensuring optimal data distribution across reducers. These components collaborate to facilitate flexible and efficient data processing in MapReduce jobs."
+}

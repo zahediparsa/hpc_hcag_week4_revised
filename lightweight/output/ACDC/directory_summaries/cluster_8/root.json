@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 8,
+  "directory": ".",
+  "title": "Join Operations Library",
+  "description": "The 'lib/join' directory in Hadoop MapReduce implements join operations. It uses classes like 'ArrayListBackedIterator', 'ComposableInputFormat', 'ComposableRecordReader', 'CompositeInputFormat', and 'JoinRecordReader'. These components collaborate to manage iterative states, serialize complex data structures, and orchestrate the reading process for joined datasets. 'ResetableIterator.java' and 'StreamBackedIterator.java' ensure efficient iteration, while 'TupleWritable.java' and 'WrappedRecordReader.java' manage key-value pairs during join operations. This directory is crucial for Hadoop's complex data join capabilities across large datasets.",
+  "summary": "TITLE: Join Operations Library\nDESCRIPTION: The 'lib/join' directory in Hadoop MapReduce implements join operations. It uses classes like 'ArrayListBackedIterator', 'ComposableInputFormat', 'ComposableRecordReader', 'CompositeInputFormat', and 'JoinRecordReader'. These components collaborate to manage iterative states, serialize complex data structures, and orchestrate the reading process for joined datasets. 'ResetableIterator.java' and 'StreamBackedIterator.java' ensure efficient iteration, while 'TupleWritable.java' and 'WrappedRecordReader.java' manage key-value pairs during join operations. This directory is crucial for Hadoop's complex data join capabilities across large datasets.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Join Operations Library\n\nDESCRIPTION: The 'lib/join' directory in Hadoop MapReduce implements join operations. It uses classes like 'ArrayListBackedIterator', 'ComposableInputFormat', 'ComposableRecordReader', 'CompositeInputFormat', and 'JoinRecordReader'. These components collaborate to manage iterative states, serialize complex data structures, and orchestrate the reading process for joined datasets. 'ResetableIterator.java' and 'StreamBackedIterator.java' ensure efficient iteration, while 'TupleWritable.java' and 'WrappedRecordReader.java' manage key-value pairs during join operations. This directory is crucial for Hadoop's complex data join capabilities across large datasets."
+}

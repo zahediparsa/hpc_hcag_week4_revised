@@ -1,0 +1,14 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 28,
+    "class": "org.apache.hadoop.mapreduce.counters.GenericCounter",
+    "path": "counters/GenericCounter.java",
+    "file_name": "GenericCounter.java",
+    "directory": "counters",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a `GenericCounter` class that extends `AbstractCounter` and implements counter functionality for Apache Hadoop MapReduce.\n\nCORE LOGIC:\nThe core logic involves reading and writing counter data fields (`name`, `displayName`, and `value`) using `DataInput` and `DataOutput`. The `readFields` method deserializes the counter data, while the `write` method serializes it. The `increment` method increases the counter's value, and `getValue` and `setValue` methods manage the counter's numerical value.\n\nINPUTS/OUTPUTS:\n- INPUTS: DataInput (for deserialization)\n- OUTPUTS: DataOutput (for serialization)\n\nDEPENDENCIES:\n- `java.io.DataInput`\n- `java.io.DataOutput`\n- `java.io.IOException`\n- `org.apache.hadoop.classification.InterfaceAudience`\n- `org.apache.hadoop.io.Text`\n- `org.apache.hadoop.io.WritableUtils`\n- `org.apache.hadoop.mapreduce.Counter`\n- `org.apache.hadoop.util.StringInterner`\n- `org.apache.hadoop.mapreduce.counters.AbstractCounter` (parent class)",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

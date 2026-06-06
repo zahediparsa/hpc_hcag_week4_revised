@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "counters",
+  "title": "LimitExceededException Class Definition",
+  "description": "The 'LimitExceededException.java' file in Hadoop MapReduce's 'counters' directory defines a custom exception class, 'LimitExceededException', that extends 'CountersExceededException'. This class is designed to signal when a limit has been exceeded in the context of Hadoop MapReduce counters. It has two constructors: one accepting a String message and another accepting a 'LimitExceededException' as its cause for exception chaining. The class uses annotations and dependencies from the Hadoop and Java standard libraries, with no explicit inputs or outputs, as it's meant to be thrown when a limit is exceeded rather than processing data.",
+  "summary": "TITLE: LimitExceededException Class Definition\nDESCRIPTION: The 'LimitExceededException.java' file in Hadoop MapReduce's 'counters' directory defines a custom exception class, 'LimitExceededException', that extends 'CountersExceededException'. This class is designed to signal when a limit has been exceeded in the context of Hadoop MapReduce counters. It has two constructors: one accepting a String message and another accepting a 'LimitExceededException' as its cause for exception chaining. The class uses annotations and dependencies from the Hadoop and Java standard libraries, with no explicit inputs or outputs, as it's meant to be thrown when a limit is exceeded rather than processing data.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "LimitExceededException.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: LimitExceededException Class Definition\n\nDESCRIPTION: The 'LimitExceededException.java' file in Hadoop MapReduce's 'counters' directory defines a custom exception class, 'LimitExceededException', that extends 'CountersExceededException'. This class is designed to signal when a limit has been exceeded in the context of Hadoop MapReduce counters. It has two constructors: one accepting a String message and another accepting a 'LimitExceededException' as its cause for exception chaining. The class uses annotations and dependencies from the Hadoop and Java standard libraries, with no explicit inputs or outputs, as it's meant to be thrown when a limit is exceeded rather than processing data."
+}

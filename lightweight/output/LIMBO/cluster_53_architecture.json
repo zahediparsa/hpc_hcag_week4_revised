@@ -1,0 +1,23 @@
+{
+  "cluster_id": 53,
+  "title": "Hadoop MapReduce Chain Class",
+  "description": "The Hadoop MapReduce Chain Class, implemented in Chain.java, orchestrates multiple mappers and a single reducer. It ensures compatibility between mappers, managing input/output via blocking queues or task contexts. The class handles thread management for mappers and reducer, utilizing ChainRecordReader and ChainRecordWriter. It supports adding mappers that read from input context, write to a queue, or read from a queue and write to output context. The runMapper and runReducer methods execute mappers and reducers, while startAllThreads, joinAllThreads, and interruptAllThreads manage thread lifecycle. This class prioritizes chain configuration over individual Mapper or Reducer settings, demonstrating a coordinator pattern. The architecture ensures scalability, maintainability, and reliability, leveraging Java and Hadoop technologies.",
+  "description_word_count": 110,
+  "number_of_files": 3,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Chain Class\n\nDESCRIPTION: The Hadoop MapReduce Chain Class, implemented in Chain.java, orchestrates multiple mappers and a single reducer. It ensures compatibility between mappers, managing input/output via blocking queues or task contexts. The class handles thread management for mappers and reducer, utilizing ChainRecordReader and ChainRecordWriter. It supports adding mappers that read from input context, write to a queue, or read from a queue and write to output context. The runMapper and runReducer methods execute mappers and reducers, while startAllThreads, joinAllThreads, and interruptAllThreads manage thread lifecycle. This class prioritizes chain configuration over individual Mapper or Reducer settings, demonstrating a coordinator pattern. The architecture ensures scalability, maintainability, and reliability, leveraging Java and Hadoop technologies.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/chain/Chain.java",
+    "lib/chain/ChainMapper.java",
+    "lib/chain/ChainReducer.java"
+  ]
+}

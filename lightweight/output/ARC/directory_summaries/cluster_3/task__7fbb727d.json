@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "task",
+  "title": "Reduce Task Package in Hadoop MapReduce",
+  "description": "The 'task/reduce' directory organizes classes for the Reduce phase in Hadoop MapReduce, ensuring a structured codebase. It establishes a class hierarchy and dependencies, adhering to separation of concerns and modular design patterns. This directory does not contain core logic but prepares the groundwork for Reduce task functionality. It collaborates with other directories, maintaining a clear, maintainable codebase.",
+  "summary": "TITLE: Reduce Task Package in Hadoop MapReduce\nDESCRIPTION: The 'task/reduce' directory organizes classes for the Reduce phase in Hadoop MapReduce, ensuring a structured codebase. It establishes a class hierarchy and dependencies, adhering to separation of concerns and modular design patterns. This directory does not contain core logic but prepares the groundwork for Reduce task functionality. It collaborates with other directories, maintaining a clear, maintainable codebase.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "package-info.java"
+    },
+    {
+      "type": "directory",
+      "name": "task/reduce"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Reduce Task Package in Hadoop MapReduce\n\nDESCRIPTION: The 'task/reduce' directory organizes classes for the Reduce phase in Hadoop MapReduce, ensuring a structured codebase. It establishes a class hierarchy and dependencies, adhering to separation of concerns and modular design patterns. This directory does not contain core logic but prepares the groundwork for Reduce task functionality. It collaborates with other directories, maintaining a clear, maintainable codebase."
+}

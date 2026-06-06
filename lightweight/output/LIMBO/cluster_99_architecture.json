@@ -1,0 +1,21 @@
+{
+  "cluster_id": 99,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and a NameNode for distributed file system management. The JobTracker coordinates and monitors jobs, delegating tasks to available TaskTrackers. TaskTrackers execute map and reduce tasks, reporting progress back to the JobTracker. The NameNode manages the file system namespace and client access, coordinating with DataNodes for block storage and replication. This architecture ensures scalability, reliability, and fault tolerance through data replication and task re-execution on failure. Technologies used include Java for programming, Hadoop APIs for framework interaction, and slf4j for logging. The JobTracker follows a Coordinator pattern, managing and monitoring tasks, while the TaskTrackers adhere to a Worker pattern, executing assigned tasks.",
+  "description_word_count": 116,
+  "number_of_files": 1,
+  "number_of_directories": 2,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and a NameNode for distributed file system management. The JobTracker coordinates and monitors jobs, delegating tasks to available TaskTrackers. TaskTrackers execute map and reduce tasks, reporting progress back to the JobTracker. The NameNode manages the file system namespace and client access, coordinating with DataNodes for block storage and replication. This architecture ensures scalability, reliability, and fault tolerance through data replication and task re-execution on failure. Technologies used include Java for programming, Hadoop APIs for framework interaction, and slf4j for logging. The JobTracker follows a Coordinator pattern, managing and monitoring tasks, while the TaskTrackers adhere to a Worker pattern, executing assigned tasks.",
+  "algorithm": "LIMBO",
+  "files": [
+    "util/ProcessTree.java"
+  ]
+}

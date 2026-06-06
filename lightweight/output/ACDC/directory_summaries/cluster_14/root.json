@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 14,
+  "directory": ".",
+  "title": "Input and Partition Management",
+  "description": "The 'lib' directory in Hadoop MapReduce architecture is responsible for managing input data sampling and partitioning. It contains 'InputSampler.java', which implements strategies like Split, Random, and Interval for selecting input data keys. 'TotalOrderPartitioner.java' within this directory reads sorted SequenceFiles to generate indexing structures for total order partitioning. This ensures optimal data distribution across reducers, enhancing MapReduce job performance. The directory employs specialized data handling and partitioning patterns, integral to Hadoop's distributed processing capabilities.",
+  "summary": "TITLE: Input and Partition Management\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce architecture is responsible for managing input data sampling and partitioning. It contains 'InputSampler.java', which implements strategies like Split, Random, and Interval for selecting input data keys. 'TotalOrderPartitioner.java' within this directory reads sorted SequenceFiles to generate indexing structures for total order partitioning. This ensures optimal data distribution across reducers, enhancing MapReduce job performance. The directory employs specialized data handling and partitioning patterns, integral to Hadoop's distributed processing capabilities.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "InputFormat.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Input and Partition Management\n\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce architecture is responsible for managing input data sampling and partitioning. It contains 'InputSampler.java', which implements strategies like Split, Random, and Interval for selecting input data keys. 'TotalOrderPartitioner.java' within this directory reads sorted SequenceFiles to generate indexing structures for total order partitioning. This ensures optimal data distribution across reducers, enhancing MapReduce job performance. The directory employs specialized data handling and partitioning patterns, integral to Hadoop's distributed processing capabilities."
+}

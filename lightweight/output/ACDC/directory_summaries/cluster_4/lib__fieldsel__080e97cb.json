@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 4,
+  "directory": "lib/fieldsel",
+  "title": "FieldSelectionReducer.java",
+  "description": "This Java file defines the FieldSelectionReducer class, which is a custom reducer for Hadoop MapReduce. It extends the generic Reducer class and is designed to mimic the Unix 'cut' command functionality. The reducer processes input key-value pairs (both of type Text), extracts specified fields from the values, and emits new key-value pairs with the selected fields. It reads configuration parameters for field separator and field specification during the setup phase. The core logic involves parsing the field specification and using a helper class, FieldSelectionHelper, to extract the required fields from each value. The class depends on Hadoop's core libraries, including Text for string handling, Configuration for accessing parameters, and Reducer as the base class. Logging is facilitated through SLF4J.",
+  "summary": "TITLE: FieldSelectionReducer.java\nDESCRIPTION: This Java file defines the FieldSelectionReducer class, which is a custom reducer for Hadoop MapReduce. It extends the generic Reducer class and is designed to mimic the Unix 'cut' command functionality. The reducer processes input key-value pairs (both of type Text), extracts specified fields from the values, and emits new key-value pairs with the selected fields. It reads configuration parameters for field separator and field specification during the setup phase. The core logic involves parsing the field specification and using a helper class, FieldSelectionHelper, to extract the required fields from each value. The class depends on Hadoop's core libraries, including Text for string handling, Configuration for accessing parameters, and Reducer as the base class. Logging is facilitated through SLF4J.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "FieldSelectionReducer.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: FieldSelectionReducer.java\n\nDESCRIPTION: \nThis Java file defines the FieldSelectionReducer class, which is a custom reducer for Hadoop MapReduce. It extends the generic Reducer class and is designed to mimic the Unix 'cut' command functionality. The reducer processes input key-value pairs (both of type Text), extracts specified fields from the values, and emits new key-value pairs with the selected fields. It reads configuration parameters for field separator and field specification during the setup phase. The core logic involves parsing the field specification and using a helper class, FieldSelectionHelper, to extract the required fields from each value. The class depends on Hadoop's core libraries, including Text for string handling, Configuration for accessing parameters, and Reducer as the base class. Logging is facilitated through SLF4J."
+}

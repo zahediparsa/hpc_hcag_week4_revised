@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 5,
+  "directory": "lib",
+  "title": "Database Integration in Hadoop MapReduce",
+  "description": "The 'lib/db' directory in Hadoop MapReduce architecture facilitates database interaction, housing classes for database-specific functionalities. It includes 'DBInputFormat', 'DBOutputFormat', and 'DBConfiguration' for database handling, alongside 'DBSplitter' and 'DBWritable' for data partitioning. Specialized splitters like 'BigDecimalSplitter' and 'DateSplitter' cater to diverse data types, ensuring efficient parallel processing. 'MySQLDBRecordReader' and 'OracleDBRecordReader' offer database-specific record reading, while 'MySQLDataDrivenDBRecordReader' and 'OracleDataDrivenDBRecordReader' handle SQL query execution. This directory's components collectively illustrate a shared responsibility in bridging Hadoop's distributed processing with relational databases, supporting multiple database systems and diverse data types, thereby enabling efficient data processing pipelines.",
+  "summary": "TITLE: Database Integration in Hadoop MapReduce\nDESCRIPTION: The 'lib/db' directory in Hadoop MapReduce architecture facilitates database interaction, housing classes for database-specific functionalities. It includes 'DBInputFormat', 'DBOutputFormat', and 'DBConfiguration' for database handling, alongside 'DBSplitter' and 'DBWritable' for data partitioning. Specialized splitters like 'BigDecimalSplitter' and 'DateSplitter' cater to diverse data types, ensuring efficient parallel processing. 'MySQLDBRecordReader' and 'OracleDBRecordReader' offer database-specific record reading, while 'MySQLDataDrivenDBRecordReader' and 'OracleDataDrivenDBRecordReader' handle SQL query execution. This directory's components collectively illustrate a shared responsibility in bridging Hadoop's distributed processing with relational databases, supporting multiple database systems and diverse data types, thereby enabling efficient data processing pipelines.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/db"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Database Integration in Hadoop MapReduce\n\nDESCRIPTION: The 'lib/db' directory in Hadoop MapReduce architecture facilitates database interaction, housing classes for database-specific functionalities. It includes 'DBInputFormat', 'DBOutputFormat', and 'DBConfiguration' for database handling, alongside 'DBSplitter' and 'DBWritable' for data partitioning. Specialized splitters like 'BigDecimalSplitter' and 'DateSplitter' cater to diverse data types, ensuring efficient parallel processing. 'MySQLDBRecordReader' and 'OracleDBRecordReader' offer database-specific record reading, while 'MySQLDataDrivenDBRecordReader' and 'OracleDataDrivenDBRecordReader' handle SQL query execution. This directory's components collectively illustrate a shared responsibility in bridging Hadoop's distributed processing with relational databases, supporting multiple database systems and diverse data types, thereby enabling efficient data processing pipelines."
+}

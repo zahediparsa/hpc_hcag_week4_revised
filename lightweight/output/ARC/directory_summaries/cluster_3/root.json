@@ -1,0 +1,70 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": ".",
+  "title": "Hadoop MapReduce Counters Architecture",
+  "description": "The 'counters' directory manages job metrics, using AbstractCounter and AbstractCounterGroup for common functionality. CounterGroupFactory creates diverse counter groups, including TaskCounter and JobCounter. FrameworkCounterGroup handles framework counters, while GenericCounter extends AbstractCounter for specific counter functionality. The architecture follows the Abstract Factory pattern, ensuring modularity and extensibility, with dependencies on Hadoop's core classes and Google's Guava library.\n\nTITLE: File Cache Package Declaration\nDESCRIPTION: The 'filecache' directory organizes file caching operations, serving as a namespace for related classes and interfaces. It imports necessary classes for audience definition, adhering to modular and maintainable software design principles.\n\nTITLE: Job History Directory\nDESCRIPTION: The 'jobhistory' directory stores and serves completed job history. It uses a layered architecture pattern with components for data storage, retrieval, and serving. Dependencies include standard Hadoop classes for classification and stability annotations.\n\nTITLE: Hadoop MapReduce Library Architecture\nDESCRIPTION: The 'lib' directory encapsulates Java libraries extending MapReduce job functionality. It follows modular and reusable design principles, employing patterns like Adapter, Strategy, Observer, and Composite.\n\nTITLE: Hadoop MapReduce Protocol Package Documentation\nDESCRIPTION: The 'protocol' directory's 'package-info.java' file provides documentation for the 'org.apache.hadoop.mapreduce.protocol' package, aiding developers in understanding its purpose and usage. It references classes like InterfaceAudience and InterfaceStability, indicating the intended audience and stability level of the package.\n\nTITLE: Security Package in Hadoop MapReduce\nDESCRIPTION: The 'security' directory provides security-related functionalities, including shuffle and spill encryption and delegation token management. It employs a metadata documentation pattern, detailing the audience, licensing, and stability of its components.\n\nTITLE: Hadoop MapReduce Split Package\nDESCRIPTION: The 'split' directory's 'package-info.java' file serves as a package declaration for Hadoop MapReduce's split functionality, preparing the groundwork for split operations.\n\nTITLE: Reduce Task Package in Hadoop MapReduce\nDESCRIPTION: The 'task/reduce' directory organizes classes for the Reduce phase, establishing a class hierarchy and dependencies, adhering to separation of concerns and modular design patterns.\n\nTITLE: Hadoop MapReduce Util Package\nDESCRIPTION: The 'util' directory provides utility classes for various functionalities, including counter string representation conversion. It adheres to the Utility pattern in software design, ensuring efficient counter management and string operations.",
+  "summary": "TITLE: Hadoop MapReduce Counters Architecture\nDESCRIPTION: The 'counters' directory manages job metrics, using AbstractCounter and AbstractCounterGroup for common functionality. CounterGroupFactory creates diverse counter groups, including TaskCounter and JobCounter. FrameworkCounterGroup handles framework counters, while GenericCounter extends AbstractCounter for specific counter functionality. The architecture follows the Abstract Factory pattern, ensuring modularity and extensibility, with dependencies on Hadoop's core classes and Google's Guava library.\n\nTITLE: File Cache Package Declaration\nDESCRIPTION: The 'filecache' directory organizes file caching operations, serving as a namespace for related classes and interfaces. It imports necessary classes for audience definition, adhering to modular and maintainable software design principles.\n\nTITLE: Job History Directory\nDESCRIPTION: The 'jobhistory' directory stores and serves completed job history. It uses a layered architecture pattern with components for data storage, retrieval, and serving. Dependencies include standard Hadoop classes for classification and stability annotations.\n\nTITLE: Hadoop MapReduce Library Architecture\nDESCRIPTION: The 'lib' directory encapsulates Java libraries extending MapReduce job functionality. It follows modular and reusable design principles, employing patterns like Adapter, Strategy, Observer, and Composite.\n\nTITLE: Hadoop MapReduce Protocol Package Documentation\nDESCRIPTION: The 'protocol' directory's 'package-info.java' file provides documentation for the 'org.apache.hadoop.mapreduce.protocol' package, aiding developers in understanding its purpose and usage. It references classes like InterfaceAudience and InterfaceStability, indicating the intended audience and stability level of the package.\n\nTITLE: Security Package in Hadoop MapReduce\nDESCRIPTION: The 'security' directory provides security-related functionalities, including shuffle and spill encryption and delegation token management. It employs a metadata documentation pattern, detailing the audience, licensing, and stability of its components.\n\nTITLE: Hadoop MapReduce Split Package\nDESCRIPTION: The 'split' directory's 'package-info.java' file serves as a package declaration for Hadoop MapReduce's split functionality, preparing the groundwork for split operations.\n\nTITLE: Reduce Task Package in Hadoop MapReduce\nDESCRIPTION: The 'task/reduce' directory organizes classes for the Reduce phase, establishing a class hierarchy and dependencies, adhering to separation of concerns and modular design patterns.\n\nTITLE: Hadoop MapReduce Util Package\nDESCRIPTION: The 'util' directory provides utility classes for various functionalities, including counter string representation conversion. It adheres to the Utility pattern in software design, ensuring efficient counter management and string operations.",
+  "number_of_children": 14,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "Counter.java"
+    },
+    {
+      "type": "file",
+      "name": "CounterGroup.java"
+    },
+    {
+      "type": "file",
+      "name": "Counters.java"
+    },
+    {
+      "type": "file",
+      "name": "JobPriority.java"
+    },
+    {
+      "type": "file",
+      "name": "QueueState.java"
+    },
+    {
+      "type": "directory",
+      "name": "counters"
+    },
+    {
+      "type": "directory",
+      "name": "filecache"
+    },
+    {
+      "type": "directory",
+      "name": "jobhistory"
+    },
+    {
+      "type": "directory",
+      "name": "lib"
+    },
+    {
+      "type": "directory",
+      "name": "protocol"
+    },
+    {
+      "type": "directory",
+      "name": "security"
+    },
+    {
+      "type": "directory",
+      "name": "split"
+    },
+    {
+      "type": "directory",
+      "name": "task"
+    },
+    {
+      "type": "directory",
+      "name": "util"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Counters Architecture\nDESCRIPTION: The 'counters' directory manages job metrics, using AbstractCounter and AbstractCounterGroup for common functionality. CounterGroupFactory creates diverse counter groups, including TaskCounter and JobCounter. FrameworkCounterGroup handles framework counters, while GenericCounter extends AbstractCounter for specific counter functionality. The architecture follows the Abstract Factory pattern, ensuring modularity and extensibility, with dependencies on Hadoop's core classes and Google's Guava library.\n\nTITLE: File Cache Package Declaration\nDESCRIPTION: The 'filecache' directory organizes file caching operations, serving as a namespace for related classes and interfaces. It imports necessary classes for audience definition, adhering to modular and maintainable software design principles.\n\nTITLE: Job History Directory\nDESCRIPTION: The 'jobhistory' directory stores and serves completed job history. It uses a layered architecture pattern with components for data storage, retrieval, and serving. Dependencies include standard Hadoop classes for classification and stability annotations.\n\nTITLE: Hadoop MapReduce Library Architecture\nDESCRIPTION: The 'lib' directory encapsulates Java libraries extending MapReduce job functionality. It follows modular and reusable design principles, employing patterns like Adapter, Strategy, Observer, and Composite.\n\nTITLE: Hadoop MapReduce Protocol Package Documentation\nDESCRIPTION: The 'protocol' directory's 'package-info.java' file provides documentation for the 'org.apache.hadoop.mapreduce.protocol' package, aiding developers in understanding its purpose and usage. It references classes like InterfaceAudience and InterfaceStability, indicating the intended audience and stability level of the package.\n\nTITLE: Security Package in Hadoop MapReduce\nDESCRIPTION: The 'security' directory provides security-related functionalities, including shuffle and spill encryption and delegation token management. It employs a metadata documentation pattern, detailing the audience, licensing, and stability of its components.\n\nTITLE: Hadoop MapReduce Split Package\nDESCRIPTION: The 'split' directory's 'package-info.java' file serves as a package declaration for Hadoop MapReduce's split functionality, preparing the groundwork for split operations.\n\nTITLE: Reduce Task Package in Hadoop MapReduce\nDESCRIPTION: The 'task/reduce' directory organizes classes for the Reduce phase, establishing a class hierarchy and dependencies, adhering to separation of concerns and modular design patterns.\n\nTITLE: Hadoop MapReduce Util Package\nDESCRIPTION: The 'util' directory provides utility classes for various functionalities, including counter string representation conversion. It adheres to the Utility pattern in software design, ensuring efficient counter management and string operations."
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 97,
+  "directory": "task",
+  "title": "Reduce Task Merging Manager",
+  "description": "The task/reduce directory in Hadoop MapReduce is responsible for managing the merging of map outputs. MergeManagerImpl.java handles both in-memory and on-disk merging, producing a single output file for the reduce phase. It initializes and configures merger threads, utilizing classes like InMemoryMerger and OnDiskMerger, extending MergeThread. The manager uses components such as TaskAttemptID, JobConf, and FileSystem, producing internal data structures and methods to manage the merging process. This implementation relies on various classes from the Apache Hadoop MapReduce library.",
+  "summary": "TITLE: Reduce Task Merging Manager\nDESCRIPTION: The task/reduce directory in Hadoop MapReduce is responsible for managing the merging of map outputs. MergeManagerImpl.java handles both in-memory and on-disk merging, producing a single output file for the reduce phase. It initializes and configures merger threads, utilizing classes like InMemoryMerger and OnDiskMerger, extending MergeThread. The manager uses components such as TaskAttemptID, JobConf, and FileSystem, producing internal data structures and methods to manage the merging process. This implementation relies on various classes from the Apache Hadoop MapReduce library.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "task/reduce"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Reduce Task Merging Manager\n\nDESCRIPTION: The task/reduce directory in Hadoop MapReduce is responsible for managing the merging of map outputs. MergeManagerImpl.java handles both in-memory and on-disk merging, producing a single output file for the reduce phase. It initializes and configures merger threads, utilizing classes like InMemoryMerger and OnDiskMerger, extending MergeThread. The manager uses components such as TaskAttemptID, JobConf, and FileSystem, producing internal data structures and methods to manage the merging process. This implementation relies on various classes from the Apache Hadoop MapReduce library."
+}

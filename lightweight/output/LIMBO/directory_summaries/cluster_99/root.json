@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 99,
+  "directory": ".",
+  "title": "Process Management Utility",
+  "description": "The 'util' directory houses 'ProcessTree.java', a utility for managing Unix-like processes. It offers methods to terminate individual processes or groups, using SIGTERM and escalating to SIGKILL. The 'destroy' method decides the termination approach, while 'terminateProcess' and 'terminateProcessGroup' send termination signals. It uses 'Shell.ShellCommandExecutor' for command execution, 'slf4j' for logging, and 'IOException' and 'Thread' for exception handling and background processes. Inputs are process IDs or group IDs, with outputs as log messages detailing termination status. This utility follows a Mediator pattern, centralizing process management.",
+  "summary": "TITLE: Process Management Utility\nDESCRIPTION: The 'util' directory houses 'ProcessTree.java', a utility for managing Unix-like processes. It offers methods to terminate individual processes or groups, using SIGTERM and escalating to SIGKILL. The 'destroy' method decides the termination approach, while 'terminateProcess' and 'terminateProcessGroup' send termination signals. It uses 'Shell.ShellCommandExecutor' for command execution, 'slf4j' for logging, and 'IOException' and 'Thread' for exception handling and background processes. Inputs are process IDs or group IDs, with outputs as log messages detailing termination status. This utility follows a Mediator pattern, centralizing process management.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "util"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Process Management Utility\n\nDESCRIPTION: The 'util' directory houses 'ProcessTree.java', a utility for managing Unix-like processes. It offers methods to terminate individual processes or groups, using SIGTERM and escalating to SIGKILL. The 'destroy' method decides the termination approach, while 'terminateProcess' and 'terminateProcessGroup' send termination signals. It uses 'Shell.ShellCommandExecutor' for command execution, 'slf4j' for logging, and 'IOException' and 'Thread' for exception handling and background processes. Inputs are process IDs or group IDs, with outputs as log messages detailing termination status. This utility follows a Mediator pattern, centralizing process management."
+}

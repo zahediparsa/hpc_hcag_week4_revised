@@ -1,0 +1,86 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 39,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.JobInfoChangeEvent",
+    "path": "jobhistory/JobInfoChangeEvent.java",
+    "file_name": "JobInfoChangeEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to represent a change event in the submit and launch time of a job in Hadoop MapReduce, specifically for the job history service.\n\nCORE LOGIC:\nThe class `JobInfoChangeEvent` implements the `HistoryEvent` interface. It contains a private field `datum` of type `JobInfoChange`. The constructor initializes this datum with job ID, submit time, and launch time. The `getJobId()`, `getSubmitTime()`, and `getLaunchTime()` methods retrieve these values. The `toTimelineEvent()` method converts the event into a `TimelineEvent` object for YARN timeline service, adding submit and launch times as information.\n\nINPUTS:\nThe class takes three inputs in its constructor: `JobID`, `long submitTime`, and `long launchTime`.\n\nOUTPUTS:\nThe main output is a `TimelineEvent` object in the `toTimelineEvent()` method, which contains job submit and launch times as information.\n\nDEPENDENCIES:\nKey dependencies include:\n- `org.apache.hadoop.mapreduce.JobID` for job identification.\n- `org.apache.hadoop.util.StringUtils` for string utilities.\n- `org.apache.hadoop.yarn.api.records.timelineservice.TimelineEvent` and `org.apache.hadoop.yarn.api.records.timelineservice.TimelineMetric` for YARN timeline service integration.\n- `org.apache.avro.util.Utf8` for handling UTF-8 strings.\n- `org.apache.hadoop.classification` annotations for class stability and audience.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 39,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.JobInitedEvent",
+    "path": "jobhistory/JobInitedEvent.java",
+    "file_name": "JobInitedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to represent an event that records the initialization of a job in Apache Hadoop MapReduce. It encapsulates job initialization details and provides methods to access these details.\n\nCORE LOGIC:\nThe core logic involves the constructor that initializes a `JobInited` datum object with job-related information such as job ID, launch time, total maps, total reduces, job status, and whether the job is uberized (i.e., if its map and reduce stages were combined). The `toTimelineEvent()` method converts the job initialization event into a `TimelineEvent` object, which can be used for timeline service representation.\n\nINPUTS:\nThe constructor of `JobInitedEvent` takes the following inputs:\n- Job ID (`JobID id`)\n- Launch time (`long launchTime`)\n- Total number of maps (`int totalMaps`)\n- Total number of reduces (`int totalReduces`)\n- Job status (`String jobStatus`)\n- Boolean indicating if the job is uberized (`boolean uberized`)\n\nOUTPUTS:\nThe class provides getter methods to access the job initialization details:\n- `getJobId()`\n- `getLaunchTime()`\n- `getTotalMaps()`\n- `getTotalReduces()`\n- `getStatus()`\n- `getUberized()`\n\nThe `toTimelineEvent()` method converts the job initialization event into a `TimelineEvent` object, which can be used for timeline service representation.\n\nDEPENDENCIES:\nThe class depends on the following imported classes:\n- `java.util.Set`\n- `org.apache.avro.util.Utf8`\n- `org.apache.hadoop.classification.InterfaceAudience`\n- `org.apache.hadoop.classification.InterfaceStability`\n- `org.apache.hadoop.mapreduce.JobID`\n- `org.apache.hadoop.util.StringUtils`\n- `org.apache.hadoop.yarn.api.records.timelineservice.TimelineEvent`\n- `org.apache.hadoop.yarn.api.records.timelineservice.TimelineMetric`\n\nAdditionally, it is part of the `org.apache.hadoop.mapreduce.jobhistory` package and implements the `HistoryEvent` interface.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 39,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.JobPriorityChangeEvent",
+    "path": "jobhistory/JobPriorityChangeEvent.java",
+    "file_name": "JobPriorityChangeEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\nThis Java class, `JobPriorityChangeEvent`, represents an event to record changes in the priority of a job within Apache Hadoop MapReduce. It implements the `HistoryEvent` interface, allowing it to be used in job history logging.\n\nCORE LOGIC:\n- The class contains a private `JobPriorityChange` datum object to store the details of the priority change.\n- A constructor that initializes this datum with the provided `JobID` and `JobPriority`.\n- Getter and setter methods for the `JobPriorityChange` datum.\n- Methods to retrieve the `JobID` and `JobPriority` from the datum.\n- The `getEventType` method returns `EventType.JOB_PRIORITY_CHANGED`, indicating the type of event.\n- The `toTimelineEvent` method converts the event into a `TimelineEvent` object, which can be used for timeline service records.\n\nINPUTS:\n- JobID (as a string)\n- JobPriority (an enum value)\n\nOUTPUTS:\n- A `JobPriorityChangeEvent` object\n- A `TimelineEvent` object (generated by the `toTimelineEvent` method)\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.jobhistory.JobID`\n- `org.apache.hadoop.mapreduce.jobhistory.JobPriority`\n- `org.apache.hadoop.util.StringUtils`\n- `org.apache.hadoop.yarn.api.records.timelineservice.TimelineEvent`\n- `org.apache.hadoop.yarn.api.records.timelineservice.TimelineMetric`\n- `org.apache.avro.util.Utf8`\n- `org.apache.hadoop.classification.InterfaceAudience`\n- `org.apache.hadoop.classification.InterfaceStability`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 39,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.JobQueueChangeEvent",
+    "path": "jobhistory/JobQueueChangeEvent.java",
+    "file_name": "JobQueueChangeEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\nThis Java class, `JobQueueChangeEvent`, represents a specific type of history event in Apache Hadoop MapReduce, specifically when a job's queue changes. It implements the `HistoryEvent` interface, providing methods to get and set event data, as well as to convert the event data into a format compatible with Hadoop YARN's timeline service.\n\nCORE LOGIC:\nThe core logic of this class revolves around encapsulating the details of a job queue change event. It uses an inner class `JobQueueChange` to hold the event data, which includes the job ID and the new queue name. The class provides getter and setter methods for these details. It also implements the `toTimelineEvent()` method to convert the event data into a `TimelineEvent` object, which can be used by YARN's timeline service.\n\nINPUTS/OUTPUTS:\nThe class takes two inputs in its constructor: a `JobID` object and a string representing the new queue name. It outputs a `HistoryEvent` object, which can be used by other parts of the Hadoop MapReduce system to track job history. The `toTimelineEvent()` method converts the event data into a `TimelineEvent` object, which can be sent to YARN's timeline service.\n\nDEPENDENCIES:\nThis class depends on several other classes from the Apache Hadoop and Hadoop YARN libraries:\n- `org.apache.hadoop.mapreduce.JobID` for representing job IDs.\n- `org.apache.hadoop.util.StringUtils` for string utilities.\n- `org.apache.hadoop.yarn.api.records.timelineservice.TimelineEvent` and `org.apache.hadoop.yarn.api.records.timelineservice.TimelineMetric` for representing events and metrics in YARN's timeline service.\n- `org.apache.avro.util.Utf8` for handling UTF-8 strings.\n- `java.util.Set` for handling sets of objects.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 39,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.JobStatusChangedEvent",
+    "path": "jobhistory/JobStatusChangedEvent.java",
+    "file_name": "JobStatusChangedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to represent an event that records the change in the status of a job in Apache Hadoop MapReduce.\n\nCORE LOGIC:\nThe class `JobStatusChangedEvent` implements the `HistoryEvent` interface. It has a private field `datum` of type `JobStatusChanged`, which is a custom Avro class. The constructor initializes this `datum` with the provided `JobID` and `jobStatus`. The `getDatum()` and `setDatum()` methods allow access to and modification of the `datum` object. The `getJobId()`, `getStatus()`, and `getEventType()` methods retrieve the job ID, status, and event type, respectively. The `toTimelineEvent()` method converts the event into a `TimelineEvent` object for YARN timeline service, and `getTimelineMetrics()` returns an empty set as this event does not contain any metrics.\n\nINPUTS/OUTPUTS:\nThe class takes two inputs in its constructor: `JobID` and `String jobStatus`. It does not take any other inputs. The main output is an instance of `JobStatusChangedEvent` itself, representing a job status change event. Additionally, it provides methods to retrieve job-related information (`getJobId()`, `getStatus()`) and to convert the event into a format suitable for YARN timeline service (`toTimelineEvent()`).\n\nDEPENDENCIES:\nThe class depends on several external classes and packages:\n- `org.apache.hadoop.mapreduce.JobID`: for representing job identifiers.\n- `org.apache.hadoop.util.StringUtils`: for string utilities.\n- `org.apache.hadoop.yarn.api.records.timelineservice.TimelineEvent`: for creating timeline events for YARN.\n- `org.apache.hadoop.yarn.api.records.timelineservice.TimelineMetric`: for timeline metrics (though not used in this class).\n- `org.apache.avro.util.Utf8`: for handling UTF-8 encoded strings in Avro data structures.\n- `@InterfaceAudience.Private` and `@InterfaceStability.Unstable` annotations for Hadoop API usage.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 39,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.JobSubmittedEvent",
+    "path": "jobhistory/JobSubmittedEvent.java",
+    "file_name": "JobSubmittedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a class `JobSubmittedEvent` that represents an event to record the submission of a job in Apache Hadoop MapReduce. This class implements the `HistoryEvent` interface and is responsible for storing and managing job submission details.\n\nCORE LOGIC:\nThe core logic involves the constructor methods of the `JobSubmittedEvent` class. There are four constructors, each capturing different levels of detail about the job submission. The most comprehensive constructor takes parameters for job ID, job name, user name, submission time, job configuration path, ACLs, job queue name, workflow-related details, and optional workflow tags. It initializes a `JobSubmitted` Avro object with these details and stores it as an instance variable.\n\nINPUTS/OUTPUTS:\nINPUTS:\n- Job ID\n- Job name\n- User name\n- Submission time\n- Job configuration path\n- Map of JobACLs to AccessControlLists\n- Job queue name\n- Workflow ID (optional)\n- Workflow name (optional)\n- Workflow node name (optional)\n- Workflow adjacencies (optional)\n- Workflow tags (optional)\n- Job configuration (optional)\n\nOUTPUTS:\n- None explicitly in this chunk, but the class is designed to store all these inputs in a `JobSubmitted` Avro object.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.jobhistory.HistoryEvent`\n- `org.apache.hadoop.mapred.JobConf`\n- `org.apache.hadoop.mapreduce.JobID`\n- `org.apache.hadoop.security.authorize.AccessControlList`\n- `org.apache.hadoop.util.StringUtils`\n- `org.apache.hadoop.yarn.api.records.timelineservice.TimelineEvent`\n- `org.apache.hadoop.yarn.api.records.timelineservice.TimelineMetric`\n- `org.apache.avro.util.Utf8`\n- `org.apache.hadoop.classification.InterfaceAudience`\n- `org.apache.hadoop.classification.InterfaceStability`\n- `org.apache.hadoop.mapreduce.JobACL`\n- `java.util.HashMap`\n- `java.util.Map`\n- `java.util.Map.Entry`\n- `java.util.Set`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 39,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.JobUnsuccessfulCompletionEvent",
+    "path": "jobhistory/JobUnsuccessfulCompletionEvent.java",
+    "file_name": "JobUnsuccessfulCompletionEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\nThis Java class, `JobUnsuccessfulCompletionEvent`, is part of Apache Hadoop MapReduce's job history logging system. It represents an event to record unsuccessful completion of jobs, specifically when a job has failed or been killed.\n\nCORE LOGIC:\nThe class has a constructor that initializes a `JobUnsuccessfulCompletion` data object with various job completion details such as job ID, finish time, counts of succeeded, failed, and killed maps and reduces, and the job status. It also includes a method `toTimelineEvent()` that converts the event data into a `TimelineEvent` object, which is used for timeline service records.\n\nINPUTS/OUTPUTS:\n- Inputs: Job ID, finish time, counts of succeeded, failed, and killed maps and reduces, job status, and optional diagnostics.\n- Outputs: A `JobUnsuccessfulCompletionEvent` object initialized with the provided data. The `toTimelineEvent()` method converts this event into a `TimelineEvent` object, which includes job completion details and diagnostics.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.jobhistory.JobUnsuccessfulCompletion`\n- `org.apache.hadoop.yarn.api.records.timelineservice.TimelineEvent`\n- `org.apache.hadoop.yarn.api.records.timelineservice.TimelineMetric`\n- `org.apache.hadoop.util.StringUtils`\n- `org.apache.hadoop.classification.InterfaceAudience`\n- `org.apache.hadoop.classification.InterfaceStability`\n- `org.apache.hadoop.mapreduce.JobID`\n- `org.apache.avro.util.Utf8`\n- `java.util.Collections`\n- `java.util.Set`\n- `java.util.Iterable`\n- `java.lang.String`\n- `java.util.Joiner`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

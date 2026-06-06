@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 70,
+  "directory": ".",
+  "title": "Hadoop MapReduce Join Operations",
+  "description": "The 'lib/join' directory contains specialized RecordReaders for composite joins. 'JoinRecordReader.java' uses PriorityQueue and reflection for managing key-value pairs. 'OverrideRecordReader.java' prioritizes the rightmost data source per key, showcasing Composite and Priority Queue patterns. These enhance Hadoop's handling of complex data relationships during join operations.",
+  "summary": "TITLE: Hadoop MapReduce Join Operations\nDESCRIPTION: The 'lib/join' directory contains specialized RecordReaders for composite joins. 'JoinRecordReader.java' uses PriorityQueue and reflection for managing key-value pairs. 'OverrideRecordReader.java' prioritizes the rightmost data source per key, showcasing Composite and Priority Queue patterns. These enhance Hadoop's handling of complex data relationships during join operations.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Join Operations\n\nDESCRIPTION: The 'lib/join' directory contains specialized RecordReaders for composite joins. 'JoinRecordReader.java' uses PriorityQueue and reflection for managing key-value pairs. 'OverrideRecordReader.java' prioritizes the rightmost data source per key, showcasing Composite and Priority Queue patterns. These enhance Hadoop's handling of complex data relationships during join operations."
+}

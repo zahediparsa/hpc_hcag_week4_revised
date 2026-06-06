@@ -1,0 +1,29 @@
+{
+  "cluster_id": 6,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture, comprising six nodes, employs a master-slave model. The master node, or JobTracker, coordinates tasks and assigns them to slave nodes, or TaskTrackers. Input data is split into InputSplits by database splitter classes in the 'lib/db' directory, facilitating parallel processing. MapReduce jobs are executed in two phases: Map and Reduce. The Map phase processes data in parallel across TaskTrackers, while the Reduce phase collects, sorts, and aggregates the Map outputs. This architecture ensures scalability, maintainability, and reliability, leveraging Java and Hadoop technologies. The Data-Driven pattern is evident in the database splitter classes, optimizing Hadoop's efficiency. Security is maintained through Hadoop's access control mechanisms. Performance is enhanced by data locality optimization, where tasks are scheduled near the data they process.",
+  "description_word_count": 124,
+  "number_of_files": 9,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster architecture, comprising six nodes, employs a master-slave model. The master node, or JobTracker, coordinates tasks and assigns them to slave nodes, or TaskTrackers. Input data is split into InputSplits by database splitter classes in the 'lib/db' directory, facilitating parallel processing. MapReduce jobs are executed in two phases: Map and Reduce. The Map phase processes data in parallel across TaskTrackers, while the Reduce phase collects, sorts, and aggregates the Map outputs. This architecture ensures scalability, maintainability, and reliability, leveraging Java and Hadoop technologies. The Data-Driven pattern is evident in the database splitter classes, optimizing Hadoop's efficiency. Security is maintained through Hadoop's access control mechanisms. Performance is enhanced by data locality optimization, where tasks are scheduled near the data they process.",
+  "algorithm": "ARC",
+  "files": [
+    "lib/db/BigDecimalSplitter.java",
+    "lib/db/BooleanSplitter.java",
+    "lib/db/DBSplitter.java",
+    "lib/db/DateSplitter.java",
+    "lib/db/FloatSplitter.java",
+    "lib/db/IntegerSplitter.java",
+    "lib/db/OracleDataDrivenDBInputFormat.java",
+    "lib/db/OracleDateSplitter.java",
+    "lib/db/TextSplitter.java"
+  ]
+}

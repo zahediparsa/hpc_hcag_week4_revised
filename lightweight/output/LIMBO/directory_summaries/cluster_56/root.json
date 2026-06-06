@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 56,
+  "directory": ".",
+  "title": "Database Configuration for Hadoop MapReduce",
+  "description": "This directory contains 'DBConfiguration.java', responsible for setting up Hadoop MapReduce jobs for database interactions. It configures connection properties such as driver class, URL, credentials, and SQL queries using Hadoop's Configuration class. The class is not directly involved in data output but prepares a Configuration object for database operations. It depends on Hadoop's database integration library, standard Java SQL classes, Hadoop's configuration management class, and interfaces for job submission and input data types.",
+  "summary": "TITLE: Database Configuration for Hadoop MapReduce\nDESCRIPTION: This directory contains 'DBConfiguration.java', responsible for setting up Hadoop MapReduce jobs for database interactions. It configures connection properties such as driver class, URL, credentials, and SQL queries using Hadoop's Configuration class. The class is not directly involved in data output but prepares a Configuration object for database operations. It depends on Hadoop's database integration library, standard Java SQL classes, Hadoop's configuration management class, and interfaces for job submission and input data types.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- DIRECTORY: lib/db ---\nTITLE: Database Configuration for Hadoop MapReduce\nDESCRIPTION: This directory contains 'DBConfiguration.java', responsible for setting up Hadoop MapReduce jobs for database interactions. It configures connection properties such as driver class, URL, credentials, and SQL queries using Hadoop's Configuration class. The class is not directly involved in data output but prepares a Configuration object for database operations. It depends on Hadoop's database integration library, standard Java SQL classes, Hadoop's configuration management class, and interfaces for job submission and input data types."
+}

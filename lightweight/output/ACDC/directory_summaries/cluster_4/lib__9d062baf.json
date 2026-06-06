@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 4,
+  "directory": "lib",
+  "title": "Hadoop MapReduce Library Directory",
+  "description": "The 'lib' directory in Hadoop MapReduce serves as a repository for custom classes extending Hadoop's core MapReduce functionalities. It includes 'chain' for chaining Mappers or Mapper-Reducer tasks, 'fieldsel' for custom field selection in Reducers, and 'reduce' for specialized reducers like integer and long summation. These components collaborate to enhance MapReduce's flexibility and efficiency, showcasing Hadoop's modular design and adherence to the Open/Closed Principle, where software entities should be open for extension but closed for modification. The directory exemplifies the Adaptability architectural pattern, allowing Hadoop to adapt to diverse data processing needs without altering its core architecture.",
+  "summary": "TITLE: Hadoop MapReduce Library Directory\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce serves as a repository for custom classes extending Hadoop's core MapReduce functionalities. It includes 'chain' for chaining Mappers or Mapper-Reducer tasks, 'fieldsel' for custom field selection in Reducers, and 'reduce' for specialized reducers like integer and long summation. These components collaborate to enhance MapReduce's flexibility and efficiency, showcasing Hadoop's modular design and adherence to the Open/Closed Principle, where software entities should be open for extension but closed for modification. The directory exemplifies the Adaptability architectural pattern, allowing Hadoop to adapt to diverse data processing needs without altering its core architecture.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/chain"
+    },
+    {
+      "type": "directory",
+      "name": "lib/fieldsel"
+    },
+    {
+      "type": "directory",
+      "name": "lib/reduce"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Library Directory\n\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce serves as a repository for custom classes extending Hadoop's core MapReduce functionalities. It includes 'chain' for chaining Mappers or Mapper-Reducer tasks, 'fieldsel' for custom field selection in Reducers, and 'reduce' for specialized reducers like integer and long summation. These components collaborate to enhance MapReduce's flexibility and efficiency, showcasing Hadoop's modular design and adherence to the Open/Closed Principle, where software entities should be open for extension but closed for modification. The directory exemplifies the Adaptability architectural pattern, allowing Hadoop to adapt to diverse data processing needs without altering its core architecture."
+}

@@ -1,0 +1,24 @@
+{
+  "cluster_id": 16,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture, comprising 16 nodes, is a distributed system for processing large datasets. The Mapper nodes, residing in the 'lib/map' directory, contain custom Java classes extending Hadoop's Mapper class for data processing. These Mappers, such as InverseMapper, RegexMapper, and TokenCounterMapper, handle specific data transformations, setting the stage for the Reduce phase. The Coordinator node, typically the NameNode, manages job scheduling, data partitioning, and task allocation. Worker nodes, DataNodes, execute MapReduce tasks. Hadoop's Distributed File System (HDFS) ensures data reliability and scalability. The architecture employs Java and Hadoop APIs, demonstrating a Factory pattern for Mapper instantiation. This design ensures maintainability, reliability, and performance, leveraging Hadoop's robust ecosystem for distributed computing.",
+  "description_word_count": 113,
+  "number_of_files": 4,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster architecture, comprising 16 nodes, is a distributed system for processing large datasets. The Mapper nodes, residing in the 'lib/map' directory, contain custom Java classes extending Hadoop's Mapper class for data processing. These Mappers, such as InverseMapper, RegexMapper, and TokenCounterMapper, handle specific data transformations, setting the stage for the Reduce phase. The Coordinator node, typically the NameNode, manages job scheduling, data partitioning, and task allocation. Worker nodes, DataNodes, execute MapReduce tasks. Hadoop's Distributed File System (HDFS) ensures data reliability and scalability. The architecture employs Java and Hadoop APIs, demonstrating a Factory pattern for Mapper instantiation. This design ensures maintainability, reliability, and performance, leveraging Hadoop's robust ecosystem for distributed computing.",
+  "algorithm": "LIMBO",
+  "files": [
+    "Mapper.java",
+    "lib/map/InverseMapper.java",
+    "lib/map/RegexMapper.java",
+    "lib/map/TokenCounterMapper.java"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 32,
+  "directory": ".",
+  "title": "JobHistory Directory in Hadoop MapReduce",
+  "description": "The 'jobhistory' directory stores job history files, managed by EventReader.java and EventWriter.java. EventReader deserializes Avro-encoded job events, while EventWriter serializes them into JSON or binary formats. JobFinishedEvent.java represents job completion, encapsulating job-specific data. JobHistoryParser.java parses history files, populating JobInfo with detailed job, task, and counter information. The directory uses Strategy pattern for event handling and Adapter pattern for data format conversion.",
+  "summary": "TITLE: JobHistory Directory in Hadoop MapReduce\nDESCRIPTION: The 'jobhistory' directory stores job history files, managed by EventReader.java and EventWriter.java. EventReader deserializes Avro-encoded job events, while EventWriter serializes them into JSON or binary formats. JobFinishedEvent.java represents job completion, encapsulating job-specific data. JobHistoryParser.java parses history files, populating JobInfo with detailed job, task, and counter information. The directory uses Strategy pattern for event handling and Adapter pattern for data format conversion.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "jobhistory"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobHistory Directory in Hadoop MapReduce\n\nDESCRIPTION: The 'jobhistory' directory stores job history files, managed by EventReader.java and EventWriter.java. EventReader deserializes Avro-encoded job events, while EventWriter serializes them into JSON or binary formats. JobFinishedEvent.java represents job completion, encapsulating job-specific data. JobHistoryParser.java parses history files, populating JobInfo with detailed job, task, and counter information. The directory uses Strategy pattern for event handling and Adapter pattern for data format conversion."
+}

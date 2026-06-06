@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 70,
+  "directory": "lib/join",
+  "title": "JoinRecordReader and OverrideRecordReader in Hadoop MapReduce",
+  "description": "The 'lib/join' directory in Hadoop MapReduce contains specialized RecordReaders for handling composite joins. The 'JoinRecordReader.java' file defines an abstract class for managing key-value pairs from child RecordReaders using a PriorityQueue. It returns tuples of arbitrary Writables, using reflection to copy configuration settings. The 'OverrideRecordReader.java' file implements a RecordReader that prioritizes the \"rightmost\" data source for a given key, maintaining a priority queue of ComposableRecordReader instances. Both files are integral to the join operation in Hadoop MapReduce, facilitating complex data joins by managing and prioritizing key-value pairs from multiple sources. They exemplify the Composite and Priority Queue design patterns, enhancing the system's ability to handle intricate data relationships.",
+  "summary": "TITLE: JoinRecordReader and OverrideRecordReader in Hadoop MapReduce\nDESCRIPTION: The 'lib/join' directory in Hadoop MapReduce contains specialized RecordReaders for handling composite joins. The 'JoinRecordReader.java' file defines an abstract class for managing key-value pairs from child RecordReaders using a PriorityQueue. It returns tuples of arbitrary Writables, using reflection to copy configuration settings. The 'OverrideRecordReader.java' file implements a RecordReader that prioritizes the \"rightmost\" data source for a given key, maintaining a priority queue of ComposableRecordReader instances. Both files are integral to the join operation in Hadoop MapReduce, facilitating complex data joins by managing and prioritizing key-value pairs from multiple sources. They exemplify the Composite and Priority Queue design patterns, enhancing the system's ability to handle intricate data relationships.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JoinRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "OverrideRecordReader.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JoinRecordReader and OverrideRecordReader in Hadoop MapReduce\n\nDESCRIPTION:\nThe 'lib/join' directory in Hadoop MapReduce contains specialized RecordReaders for handling composite joins. The 'JoinRecordReader.java' file defines an abstract class for managing key-value pairs from child RecordReaders using a PriorityQueue. It returns tuples of arbitrary Writables, using reflection to copy configuration settings. The 'OverrideRecordReader.java' file implements a RecordReader that prioritizes the \"rightmost\" data source for a given key, maintaining a priority queue of ComposableRecordReader instances. Both files are integral to the join operation in Hadoop MapReduce, facilitating complex data joins by managing and prioritizing key-value pairs from multiple sources. They exemplify the Composite and Priority Queue design patterns, enhancing the system's ability to handle intricate data relationships."
+}

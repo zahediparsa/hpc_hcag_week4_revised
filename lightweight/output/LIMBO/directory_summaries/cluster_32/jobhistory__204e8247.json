@@ -1,0 +1,30 @@
+{
+  "type": "directory",
+  "cluster_id": 32,
+  "directory": "jobhistory",
+  "title": "JobHistory Directory in Hadoop MapReduce",
+  "description": "The 'jobhistory' directory in Hadoop MapReduce is responsible for storing and managing job history files. It contains critical components like EventReader.java and EventWriter.java, which handle the reading and writing of Avro-encoded job events. The EventReader deserializes events, while EventWriter serializes them into JSON or binary formats. JobFinishedEvent.java represents job completion events, encapsulating job-specific data and converting it into timeline events and metrics. JobHistoryParser.java parses these history files, populating a JobInfo object with detailed job, task, and counter information. This directory employs the Strategy pattern, with different handler methods for various event types, and the Adapter pattern to convert between Hadoop's internal data structures and Avro's external data format.",
+  "summary": "TITLE: JobHistory Directory in Hadoop MapReduce\nDESCRIPTION: The 'jobhistory' directory in Hadoop MapReduce is responsible for storing and managing job history files. It contains critical components like EventReader.java and EventWriter.java, which handle the reading and writing of Avro-encoded job events. The EventReader deserializes events, while EventWriter serializes them into JSON or binary formats. JobFinishedEvent.java represents job completion events, encapsulating job-specific data and converting it into timeline events and metrics. JobHistoryParser.java parses these history files, populating a JobInfo object with detailed job, task, and counter information. This directory employs the Strategy pattern, with different handler methods for various event types, and the Adapter pattern to convert between Hadoop's internal data structures and Avro's external data format.",
+  "number_of_children": 4,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "EventReader.java"
+    },
+    {
+      "type": "file",
+      "name": "EventWriter.java"
+    },
+    {
+      "type": "file",
+      "name": "JobFinishedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "JobHistoryParser.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobHistory Directory in Hadoop MapReduce\n\nDESCRIPTION:\nThe 'jobhistory' directory in Hadoop MapReduce is responsible for storing and managing job history files. It contains critical components like EventReader.java and EventWriter.java, which handle the reading and writing of Avro-encoded job events. The EventReader deserializes events, while EventWriter serializes them into JSON or binary formats. JobFinishedEvent.java represents job completion events, encapsulating job-specific data and converting it into timeline events and metrics. JobHistoryParser.java parses these history files, populating a JobInfo object with detailed job, task, and counter information. This directory employs the Strategy pattern, with different handler methods for various event types, and the Adapter pattern to convert between Hadoop's internal data structures and Avro's external data format."
+}

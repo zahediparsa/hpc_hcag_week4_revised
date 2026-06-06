@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 73,
+  "directory": "lib/output/committer",
+  "title": "ManifestCommitterConstants.java - Hadoop MapReduce Constants",
+  "description": "This Java file, ManifestCommitterConstants.java, serves as a repository of static final variables for Hadoop MapReduce's manifest committer. It defines configuration options, default values, file naming conventions, and class names. These constants are utilized for managing and organizing job-related files and directories. The file relies on Hadoop's manifest committer package for functionality, providing declarative inputs for internal operations.",
+  "summary": "TITLE: ManifestCommitterConstants.java - Hadoop MapReduce Constants\nDESCRIPTION: This Java file, ManifestCommitterConstants.java, serves as a repository of static final variables for Hadoop MapReduce's manifest committer. It defines configuration options, default values, file naming conventions, and class names. These constants are utilized for managing and organizing job-related files and directories. The file relies on Hadoop's manifest committer package for functionality, providing declarative inputs for internal operations.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ManifestCommitterConstants.java - Hadoop MapReduce Constants\n\nDESCRIPTION: This Java file, ManifestCommitterConstants.java, serves as a repository of static final variables for Hadoop MapReduce's manifest committer. It defines configuration options, default values, file naming conventions, and class names. These constants are utilized for managing and organizing job-related files and directories. The file relies on Hadoop's manifest committer package for functionality, providing declarative inputs for internal operations."
+}

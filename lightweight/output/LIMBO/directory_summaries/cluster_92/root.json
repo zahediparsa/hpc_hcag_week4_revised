@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 92,
+  "directory": ".",
+  "title": "MapReduce Delegation Token Management",
+  "description": "The 'security/token/delegation' directory manages MapReduce tokens. 'DelegationTokenSecretManager' oversees token lifecycle. 'DelegationTokenSelector' ensures secure job access. Collaboration prevents unauthorized HDFS access. The 'Manager' pattern is implemented for controlled access in Hadoop MapReduce.",
+  "summary": "TITLE: MapReduce Delegation Token Management\nDESCRIPTION: The 'security/token/delegation' directory manages MapReduce tokens. 'DelegationTokenSecretManager' oversees token lifecycle. 'DelegationTokenSelector' ensures secure job access. Collaboration prevents unauthorized HDFS access. The 'Manager' pattern is implemented for controlled access in Hadoop MapReduce.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "security"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Delegation Token Management\n\nDESCRIPTION: The 'security/token/delegation' directory manages MapReduce tokens. 'DelegationTokenSecretManager' oversees token lifecycle. 'DelegationTokenSelector' ensures secure job access. Collaboration prevents unauthorized HDFS access. The 'Manager' pattern is implemented for controlled access in Hadoop MapReduce."
+}

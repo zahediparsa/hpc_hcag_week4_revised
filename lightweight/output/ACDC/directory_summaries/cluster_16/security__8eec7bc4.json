@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 16,
+  "directory": "security",
+  "title": "MapReduce Delegation Token Management",
+  "description": "The 'security/token/delegation' directory manages MapReduce-specific delegation tokens. It includes 'DelegationTokenIdentifier.java' for token creation, 'DelegationTokenSecretManager.java' for token lifecycle, and 'DelegationTokenSelector.java' for token selection. These components ensure secure job submission and tracking, adhering to the Delegate pattern. The system leverages Hadoop security and token delegation classes, playing a crucial role in enhancing MapReduce security.",
+  "summary": "TITLE: MapReduce Delegation Token Management\nDESCRIPTION: The 'security/token/delegation' directory manages MapReduce-specific delegation tokens. It includes 'DelegationTokenIdentifier.java' for token creation, 'DelegationTokenSecretManager.java' for token lifecycle, and 'DelegationTokenSelector.java' for token selection. These components ensure secure job submission and tracking, adhering to the Delegate pattern. The system leverages Hadoop security and token delegation classes, playing a crucial role in enhancing MapReduce security.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "security/token"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Delegation Token Management\n\nDESCRIPTION: The 'security/token/delegation' directory manages MapReduce-specific delegation tokens. It includes 'DelegationTokenIdentifier.java' for token creation, 'DelegationTokenSecretManager.java' for token lifecycle, and 'DelegationTokenSelector.java' for token selection. These components ensure secure job submission and tracking, adhering to the Delegate pattern. The system leverages Hadoop security and token delegation classes, playing a crucial role in enhancing MapReduce security."
+}

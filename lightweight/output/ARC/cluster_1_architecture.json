@@ -1,0 +1,30 @@
+{
+  "cluster_id": 1,
+  "title": "Hadoop MapReduce Partitioning and Security",
+  "description": "This Hadoop MapReduce architecture employs a partitioning mechanism for efficient data distribution and a secure job execution model. The Partitioner.java class, an abstract base, uses hash functions to partition keys, with custom partitioners like BinaryPartitioner, HashPartitioner, and KeyFieldBasedPartitioner in the 'lib/partition' directory, demonstrating the Strategy pattern for varied partitioning strategies. The 'security/token/delegation' directory manages MapReduce tokens for secure job submission and tracking, implementing the Delegate pattern for secure access and job management. This design ensures scalability, maintainability, and reliability, leveraging Java and Hadoop's framework. It supports performance through efficient data distribution and security through token-based access control.",
+  "description_word_count": 101,
+  "number_of_files": 10,
+  "number_of_directories": 6,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Partitioning and Security\n\nDESCRIPTION: This Hadoop MapReduce architecture employs a partitioning mechanism for efficient data distribution and a secure job execution model. The Partitioner.java class, an abstract base, uses hash functions to partition keys, with custom partitioners like BinaryPartitioner, HashPartitioner, and KeyFieldBasedPartitioner in the 'lib/partition' directory, demonstrating the Strategy pattern for varied partitioning strategies. The 'security/token/delegation' directory manages MapReduce tokens for secure job submission and tracking, implementing the Delegate pattern for secure access and job management. This design ensures scalability, maintainability, and reliability, leveraging Java and Hadoop's framework. It supports performance through efficient data distribution and security through token-based access control.",
+  "algorithm": "ARC",
+  "files": [
+    "Partitioner.java",
+    "lib/partition/BinaryPartitioner.java",
+    "lib/partition/HashPartitioner.java",
+    "lib/partition/KeyFieldBasedComparator.java",
+    "lib/partition/KeyFieldBasedPartitioner.java",
+    "lib/partition/KeyFieldHelper.java",
+    "lib/partition/RehashPartitioner.java",
+    "security/token/delegation/DelegationTokenIdentifier.java",
+    "security/token/delegation/DelegationTokenSecretManager.java",
+    "security/token/delegation/DelegationTokenSelector.java"
+  ]
+}

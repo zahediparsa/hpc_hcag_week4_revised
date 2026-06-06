@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 77,
+  "directory": "lib/output/committer",
+  "title": "Manifest Printing Utility",
+  "description": "The 'lib/output/committer/manifest' directory houses the 'ManifestPrinter.java' utility. This tool aids in debugging and monitoring by printing manifest file contents to an output stream. It loads data from a specified file using Hadoop FileSystem, taking the manifest file path as a command-line argument. The utility outputs diagnostics and I/O statistics, following a utility pattern for system debugging and performance analysis.",
+  "summary": "TITLE: Manifest Printing Utility\nDESCRIPTION: The 'lib/output/committer/manifest' directory houses the 'ManifestPrinter.java' utility. This tool aids in debugging and monitoring by printing manifest file contents to an output stream. It loads data from a specified file using Hadoop FileSystem, taking the manifest file path as a command-line argument. The utility outputs diagnostics and I/O statistics, following a utility pattern for system debugging and performance analysis.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Manifest Printing Utility\n\nDESCRIPTION: The 'lib/output/committer/manifest' directory houses the 'ManifestPrinter.java' utility. This tool aids in debugging and monitoring by printing manifest file contents to an output stream. It loads data from a specified file using Hadoop FileSystem, taking the manifest file path as a command-line argument. The utility outputs diagnostics and I/O statistics, following a utility pattern for system debugging and performance analysis."
+}

@@ -1,0 +1,36 @@
+{
+  "cluster_id": 8,
+  "title": "Join Operations Library",
+  "description": "Hadoop's 'lib/join' directory facilitates complex data joins via 'ArrayListBackedIterator', 'ComposableInputFormat', 'ComposableRecordReader', 'CompositeInputFormat', and 'JoinRecordReader'. These components manage iterative states, serialize data, and orchestrate joined dataset reading. 'ResetableIterator.java' and 'StreamBackedIterator.java' ensure efficient iteration, while 'TupleWritable' and 'WrappedRecordReader' handle key-value pairs. This directory, employing Java, ensures scalability and maintainability, crucial for Hadoop's large-scale data join operations. It follows a Coordinator pattern, with 'JoinRecordReader' acting as the coordinator, managing data flow between inputs.",
+  "description_word_count": 73,
+  "number_of_files": 16,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Join Operations Library\n\nDESCRIPTION: Hadoop's 'lib/join' directory facilitates complex data joins via 'ArrayListBackedIterator', 'ComposableInputFormat', 'ComposableRecordReader', 'CompositeInputFormat', and 'JoinRecordReader'. These components manage iterative states, serialize data, and orchestrate joined dataset reading. 'ResetableIterator.java' and 'StreamBackedIterator.java' ensure efficient iteration, while 'TupleWritable' and 'WrappedRecordReader' handle key-value pairs. This directory, employing Java, ensures scalability and maintainability, crucial for Hadoop's large-scale data join operations. It follows a Coordinator pattern, with 'JoinRecordReader' acting as the coordinator, managing data flow between inputs.",
+  "algorithm": "ACDC",
+  "files": [
+    "lib/join/ArrayListBackedIterator.java",
+    "lib/join/ComposableInputFormat.java",
+    "lib/join/ComposableRecordReader.java",
+    "lib/join/CompositeInputFormat.java",
+    "lib/join/CompositeInputSplit.java",
+    "lib/join/CompositeRecordReader.java",
+    "lib/join/InnerJoinRecordReader.java",
+    "lib/join/JoinRecordReader.java",
+    "lib/join/MultiFilterRecordReader.java",
+    "lib/join/OuterJoinRecordReader.java",
+    "lib/join/OverrideRecordReader.java",
+    "lib/join/Parser.java",
+    "lib/join/ResetableIterator.java",
+    "lib/join/StreamBackedIterator.java",
+    "lib/join/TupleWritable.java",
+    "lib/join/WrappedRecordReader.java"
+  ]
+}

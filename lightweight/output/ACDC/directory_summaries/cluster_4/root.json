@@ -1,0 +1,46 @@
+{
+  "type": "directory",
+  "cluster_id": 4,
+  "directory": ".",
+  "title": "Hadoop MapReduce Library Directory",
+  "description": "The 'lib' directory houses custom classes extending Hadoop's MapReduce functionalities. It includes 'chain' for task chaining, 'fieldsel' for custom field selection, and 'reduce' for specialized reducers. This directory exemplifies adaptability, allowing Hadoop to adapt to diverse data processing needs without altering its core architecture, adhering to the Open/Closed Principle. It showcases Hadoop's modular design, enabling flexibility and efficiency in MapReduce operations.",
+  "summary": "TITLE: Hadoop MapReduce Library Directory\nDESCRIPTION: The 'lib' directory houses custom classes extending Hadoop's MapReduce functionalities. It includes 'chain' for task chaining, 'fieldsel' for custom field selection, and 'reduce' for specialized reducers. This directory exemplifies adaptability, allowing Hadoop to adapt to diverse data processing needs without altering its core architecture, adhering to the Open/Closed Principle. It showcases Hadoop's modular design, enabling flexibility and efficiency in MapReduce operations.",
+  "number_of_children": 8,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ContextFactory.java"
+    },
+    {
+      "type": "file",
+      "name": "OutputCommitter.java"
+    },
+    {
+      "type": "file",
+      "name": "RecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "RecordWriter.java"
+    },
+    {
+      "type": "file",
+      "name": "Reducer.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptContext.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskInputOutputContext.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Library Directory\n\nDESCRIPTION: The 'lib' directory houses custom classes extending Hadoop's MapReduce functionalities. It includes 'chain' for task chaining, 'fieldsel' for custom field selection, and 'reduce' for specialized reducers. This directory exemplifies adaptability, allowing Hadoop to adapt to diverse data processing needs without altering its core architecture, adhering to the Open/Closed Principle. It showcases Hadoop's modular design, enabling flexibility and efficiency in MapReduce operations."
+}

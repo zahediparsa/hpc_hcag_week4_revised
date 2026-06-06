@@ -1,0 +1,62 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 30,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.AMStartedEvent",
+    "path": "jobhistory/AMStartedEvent.java",
+    "file_name": "AMStartedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\nThis Java class, `AMStartedEvent`, represents an event to record the start of a task attempt in Apache Hadoop MapReduce. It implements the `HistoryEvent` interface and is used to store and retrieve information about the start of a MapReduce Application Master (AM).\n\nCORE LOGIC:\nThe core logic of this class revolves around its constructor and getter/setter methods. The constructor initializes an `AMStarted` object with various details about the AM start event, such as `ApplicationAttemptId`, start time, container ID, node manager host, ports, and an optional forced job state on shutdown. The `getDatum()` and `setDatum()` methods allow access to the `AMStarted` object, which encapsulates the event data.\n\nINPUTS/OUTPUTS:\nINPUTS:\n- `ApplicationAttemptId`\n- `long startTime`\n- `ContainerId`\n- `String nodeManagerHost`\n- `int nodeManagerPort`\n- `int nodeManagerHttpPort`\n- `String forcedJobStateOnShutDown` (optional)\n- `long submitTime`\n\nOUTPUTS:\n- The class provides getter methods to retrieve the event data, such as `getAppAttemptId()`, `getStartTime()`, `getContainerId()`, `getNodeManagerHost()`, `getNodeManagerPort()`, `getNodeManagerHttpPort()`, `getForcedJobStateOnShutDown()`, and `getSubmitTime()`.\n- The `toTimelineEvent()` method converts the event data into a `TimelineEvent` object, which can be used for timeline service purposes.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.jobhistory` package\n- `org.apache.hadoop.classification` classes: `InterfaceAudience`, `InterfaceStability`\n- `org.apache.hadoop.util` class: `StringUtils`\n- `org.apache.hadoop.yarn.api.records` classes: `ApplicationAttemptId`, `ContainerId`, `TimelineEvent`, `TimelineMetric`\n- `org.apache.avro.util` class: `Utf8`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 30,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.NormalizedResourceEvent",
+    "path": "jobhistory/NormalizedResourceEvent.java",
+    "file_name": "NormalizedResourceEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\nThis Java class, `NormalizedResourceEvent`, is an implementation of the `HistoryEvent` interface in Apache Hadoop MapReduce. Its main purpose is to record and encapsulate the normalized resource requirements for map or reduce tasks, which are then sent to the Resource Manager.\n\nCORE LOGIC:\nThe core logic of this class involves the constructor that initializes the `memory` and `taskType` fields based on the input parameters. The `getTaskType()` and `getMemory()` methods provide access to these fields. The `toTimelineEvent()` method converts the event data into a `TimelineEvent` object, which includes setting the event type, memory, and task type as information.\n\nINPUTS/OUTPUTS:\n- Inputs: `TaskType` (enum representing the type of task, e.g., MAP, REDUCE) and `long memory` (normalized memory requirements in bytes).\n- Outputs: A `TimelineEvent` object containing the normalized resource requirements, which includes the memory and task type information.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.jobhistory.HistoryEvent`: The interface implemented by this class.\n- `org.apache.hadoop.mapreduce.TaskType`: Enum for task types (MAP, REDUCE, etc.).\n- `org.apache.hadoop.util.StringUtils`: Utility class for string operations.\n- `org.apache.hadoop.yarn.api.records.timelineservice.TimelineEvent`: Class representing an event in the timeline service.\n- `org.apache.hadoop.yarn.api.records.timelineservice.TimelineMetric`: Class representing a metric in the timeline service (not used in this class).",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 30,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.TaskAttemptStartedEvent",
+    "path": "jobhistory/TaskAttemptStartedEvent.java",
+    "file_name": "TaskAttemptStartedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to create an event object to record the start of a task attempt in Apache Hadoop MapReduce.\n\nCORE LOGIC:\nThe class `TaskAttemptStartedEvent` implements the `HistoryEvent` interface. It has a constructor that initializes a `TaskAttemptStarted` datum object with various details about the task attempt such as `attemptId`, `taskType`, `startTime`, `trackerName`, `httpPort`, `shufflePort`, `containerId`, `locality`, and `avataar`. It also provides getter methods to retrieve these details. The `toTimelineEvent()` method converts the event details into a `TimelineEvent` object, which can be used for logging or monitoring purposes.\n\nINPUTS/OUTPUTS:\nThe constructor takes several inputs: `TaskAttemptID`, `TaskType`, `long` (startTime), `String` (trackerName), `int` (httpPort), `int` (shufflePort), `ContainerId`, `String` (locality), and `String` (avataar). It outputs an instance of `TaskAttemptStartedEvent` with all these details encapsulated in a `TaskAttemptStarted` datum object. The `toTimelineEvent()` method converts this datum into a `TimelineEvent` object.\n\nDEPENDENCIES:\nThe class depends on several classes from the Apache Hadoop MapReduce and YARN libraries, including `TaskAttemptID`, `TaskType`, `ContainerId`, `TimelineEvent`, `EventType`, `TimelineMetric`, and utility classes like `StringUtils` and `Utf8`. It also imports standard Java classes like `java.util.Set`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 30,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.TaskStartedEvent",
+    "path": "jobhistory/TaskStartedEvent.java",
+    "file_name": "TaskStartedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to represent an event that records the start of a task in Apache Hadoop MapReduce. It implements the `HistoryEvent` interface and provides methods to set and retrieve task-related information.\n\nCORE LOGIC:\nThe core logic involves the constructor `TaskStartedEvent(TaskID id, long startTime, TaskType taskType, String splitLocations)`. This constructor initializes a `TaskStarted` Avro datum with task-specific information such as task ID, start time, task type, and split locations (applicable for map tasks). The `getDatum()` and `setDatum()` methods allow access to this datum object.\n\nINPUTS/OUTPUTS:\nThe class takes four inputs: `TaskID`, `long startTime`, `TaskType`, and `String splitLocations`. It outputs task-related information through getter methods like `getTaskId()`, `getSplitLocations()`, `getStartTime()`, and `getTaskType()`. The `toTimelineEvent()` method converts the event into a `TimelineEvent` object for further processing or storage.\n\nDEPENDENCIES:\nThe class depends on several classes from the Apache Hadoop and YARN APIs, including:\n- `org.apache.hadoop.mapreduce.TaskID`\n- `org.apache.hadoop.mapreduce.TaskType`\n- `org.apache.hadoop.util.StringUtils`\n- `org.apache.hadoop.yarn.api.records.timelineservice.TimelineEvent`\n- `org.apache.hadoop.yarn.api.records.timelineservice.TimelineMetric`\n- `org.apache.avro.util.Utf8`\n- `org.apache.hadoop.classification.InterfaceAudience`\n- `org.apache.hadoop.classification.InterfaceStability`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 30,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.TaskUpdatedEvent",
+    "path": "jobhistory/TaskUpdatedEvent.java",
+    "file_name": "TaskUpdatedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to represent an event that records updates to a task in Apache Hadoop MapReduce. It implements the `HistoryEvent` interface and provides methods to set and retrieve task-related information.\n\nCORE LOGIC:\nThe core logic involves the constructor that initializes a `TaskUpdated` datum with the task ID and finish time, and methods to get and set this datum. The `getTaskId()` method converts a string representation of the task ID back to a `TaskID` object. The `toTimelineEvent()` method converts the event into a `TimelineEvent` object for YARN timeline service, setting the event type and finish time.\n\nINPUTS/OUTPUTS:\nThe class takes two inputs in its constructor: `TaskID` and `long` (finish time). It doesn't directly handle any outputs, but it prepares a `TimelineEvent` object in the `toTimelineEvent()` method for potential output to the YARN timeline service.\n\nDEPENDENCIES:\nThe class depends on several imported classes:\n- `java.util.Set` for potential future use (not currently used).\n- `org.apache.avro.util.Utf8` for handling UTF-8 strings.\n- `org.apache.hadoop.classification` classes for stability and audience annotations.\n- `org.apache.hadoop.mapreduce.TaskID` for task identification.\n- `org.apache.hadoop.util.StringUtils` for string utilities.\n- `org.apache.hadoop.yarn.api.records.timelineservice` classes (`TimelineEvent`, `TimelineMetric`) for integration with YARN timeline service.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

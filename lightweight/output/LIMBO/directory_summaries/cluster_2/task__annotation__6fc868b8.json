@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "task/annotation",
+  "title": "Checkpointable Annotation Interface",
+  "description": "The Checkpointable.java file in the task/annotation directory of Hadoop MapReduce defines an annotation interface named `Checkpointable`. This interface serves as a marker for Hadoop MapReduce tasks that can be safely interrupted and restarted without loss of progress. It doesn't contain any complex logic, instead, it uses Java annotations to provide metadata about the `Checkpointable` interface. The interface depends on Java language classes and Apache Hadoop project packages for defining various annotation types and for indicating its collaboration with the Hadoop MapReduce task framework. It doesn't take any input or produce any output, it merely tags other classes annotated with it.",
+  "summary": "TITLE: Checkpointable Annotation Interface\nDESCRIPTION: The Checkpointable.java file in the task/annotation directory of Hadoop MapReduce defines an annotation interface named `Checkpointable`. This interface serves as a marker for Hadoop MapReduce tasks that can be safely interrupted and restarted without loss of progress. It doesn't contain any complex logic, instead, it uses Java annotations to provide metadata about the `Checkpointable` interface. The interface depends on Java language classes and Apache Hadoop project packages for defining various annotation types and for indicating its collaboration with the Hadoop MapReduce task framework. It doesn't take any input or produce any output, it merely tags other classes annotated with it.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "Checkpointable.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Checkpointable Annotation Interface\n\nDESCRIPTION: The Checkpointable.java file in the task/annotation directory of Hadoop MapReduce defines an annotation interface named `Checkpointable`. This interface serves as a marker for Hadoop MapReduce tasks that can be safely interrupted and restarted without loss of progress. It doesn't contain any complex logic, instead, it uses Java annotations to provide metadata about the `Checkpointable` interface. The interface depends on Java language classes and Apache Hadoop project packages for defining various annotation types and for indicating its collaboration with the Hadoop MapReduce task framework. It doesn't take any input or produce any output, it merely tags other classes annotated with it."
+}

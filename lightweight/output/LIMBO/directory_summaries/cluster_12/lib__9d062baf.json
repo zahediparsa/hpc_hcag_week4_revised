@@ -1,0 +1,30 @@
+{
+  "type": "directory",
+  "cluster_id": 12,
+  "directory": "lib",
+  "title": "Hadoop MapReduce Library",
+  "description": "The 'lib' directory in Hadoop MapReduce architecture houses several Java files that serve as crucial components for various functionalities. The 'aggregate' subdirectory contains ValueAggregatorJob.java, which facilitates simple aggregations like sum, count, and average. The 'input' directory includes FileInputFormat.java, responsible for preparing input data by generating InputSplit objects for MapReduce jobs. In the 'jobcontrol' subdirectory, ControlledJob.java manages MapReduce job lifecycles, handling submission, checking, killing, and failing jobs. Lastly, the 'partition' directory features InputSampler.java, a utility class for collecting input data samples, enhancing MapReduce job partitioning and performance. Collectively, these components illustrate Hadoop's MapReduce adherence to the Library Architecture pattern, providing reusable functionalities for efficient big data processing.",
+  "summary": "TITLE: Hadoop MapReduce Library\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce architecture houses several Java files that serve as crucial components for various functionalities. The 'aggregate' subdirectory contains ValueAggregatorJob.java, which facilitates simple aggregations like sum, count, and average. The 'input' directory includes FileInputFormat.java, responsible for preparing input data by generating InputSplit objects for MapReduce jobs. In the 'jobcontrol' subdirectory, ControlledJob.java manages MapReduce job lifecycles, handling submission, checking, killing, and failing jobs. Lastly, the 'partition' directory features InputSampler.java, a utility class for collecting input data samples, enhancing MapReduce job partitioning and performance. Collectively, these components illustrate Hadoop's MapReduce adherence to the Library Architecture pattern, providing reusable functionalities for efficient big data processing.",
+  "number_of_children": 4,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/aggregate"
+    },
+    {
+      "type": "directory",
+      "name": "lib/input"
+    },
+    {
+      "type": "directory",
+      "name": "lib/jobcontrol"
+    },
+    {
+      "type": "directory",
+      "name": "lib/partition"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Library\n\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce architecture houses several Java files that serve as crucial components for various functionalities. The 'aggregate' subdirectory contains ValueAggregatorJob.java, which facilitates simple aggregations like sum, count, and average. The 'input' directory includes FileInputFormat.java, responsible for preparing input data by generating InputSplit objects for MapReduce jobs. In the 'jobcontrol' subdirectory, ControlledJob.java manages MapReduce job lifecycles, handling submission, checking, killing, and failing jobs. Lastly, the 'partition' directory features InputSampler.java, a utility class for collecting input data samples, enhancing MapReduce job partitioning and performance. Collectively, these components illustrate Hadoop's MapReduce adherence to the Library Architecture pattern, providing reusable functionalities for efficient big data processing."
+}

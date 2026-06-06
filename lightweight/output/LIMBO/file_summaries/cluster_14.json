@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 14,
+    "class": "org.apache.hadoop.mapreduce.MapContext",
+    "path": "MapContext.java",
+    "file_name": "MapContext.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define an interface `MapContext` for providing context to the `Mapper` in Apache Hadoop MapReduce.\n\nCORE LOGIC:\nThe core logic involves defining an interface `MapContext` that extends `TaskInputOutputContext`. This interface includes a single method `getInputSplit()` which returns the `InputSplit` for the map task. This `InputSplit` represents the logical partition of the input data processed by this map task.\n\nINPUTS/OUTPUTS:\nThe interface does not directly handle any input or output data. Instead, it provides access to the `InputSplit` which is an input to the map task. The `InputSplit` represents a logical partition of the input for the map task, and it contains information about the location of the data that the map task should process.\n\nDEPENDENCIES:\nThe key dependency in this chunk is the `TaskInputOutputContext` interface from the same package `org.apache.hadoop.mapreduce`. This interface is extended by `MapContext` to provide input and output functionalities. Additionally, it imports `org.apache.hadoop.classification.InterfaceAudience` and `org.apache.hadoop.classification.InterfaceStability` for annotating the interface's audience and stability.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 14,
+    "class": "org.apache.hadoop.mapreduce.ReduceContext",
+    "path": "ReduceContext.java",
+    "file_name": "ReduceContext.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define the interface `ReduceContext` for the context passed to the `Reducer` in Apache Hadoop MapReduce.\n\nCORE LOGIC:\nThe core logic involves methods to manage the processing of unique keys and iteration through values associated with the current key. The interface extends `TaskInputOutputContext` and includes methods `nextKey()` to move to the next unique key, and `getValues()` to iterate through the values for the current key, reusing the same value object stored in the context. It also introduces a nested interface `ValueIterator` for iterating over values, which includes a `resetBackupStore()` method to handle transitions between keys.\n\nINPUTS/OUTPUTS:\nThe interface does not directly handle inputs or outputs. Instead, it prepares the context for the Reducer to process input data (keys and values) and generate output data (keys and values). The actual input and output handling would be implemented in classes that extend this interface.\n\nDEPENDENCIES:\nThe code chunk depends on several classes and packages:\n- `java.io.IOException`: For exception handling related to I/O operations.\n- `java.util.Iterator`: For the iterator functionality in the nested `ValueIterator` interface.\n- `org.apache.hadoop.classification`: For class annotations related to audience and stability.\n- `org.apache.hadoop.mapreduce`: For the MapReduce framework classes and interfaces.\n- `org.apache.hadoop.mapreduce.TaskInputOutputContext`: The parent interface that `ReduceContext` extends.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

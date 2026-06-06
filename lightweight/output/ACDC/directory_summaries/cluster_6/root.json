@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 6,
+  "directory": ".",
+  "title": "Hadoop MapReduce Input Handling",
+  "description": "The 'lib/input' directory manages diverse input formats, ensuring efficient data reading via RecordReader classes. It includes components for files, combined files, and SequenceFiles. The 'MultipleInputs' component allows for multiple input paths with custom InputFormat and Mapper classes. Collaboration adheres to Adapter and Strategy design patterns, ensuring flexible data processing in MapReduce jobs.",
+  "summary": "TITLE: Hadoop MapReduce Input Handling\nDESCRIPTION: The 'lib/input' directory manages diverse input formats, ensuring efficient data reading via RecordReader classes. It includes components for files, combined files, and SequenceFiles. The 'MultipleInputs' component allows for multiple input paths with custom InputFormat and Mapper classes. Collaboration adheres to Adapter and Strategy design patterns, ensuring flexible data processing in MapReduce jobs.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- DIRECTORY: lib ---\n\nTITLE: Hadoop MapReduce Input Handling\n\nDESCRIPTION: The 'lib/input' directory manages diverse input formats, ensuring efficient data reading via RecordReader classes. It includes components for files, combined files, and SequenceFiles. The 'MultipleInputs' component allows for multiple input paths with custom InputFormat and Mapper classes. Collaboration adheres to Adapter and Strategy design patterns, ensuring flexible data processing in MapReduce jobs."
+}

@@ -1,0 +1,29 @@
+{
+  "cluster_id": 0,
+  "title": "FSCheckpointService",
+  "description": "This Hadoop component, implemented in Java, manages HDFS checkpoints via CheckpointService. It interacts with HDFS using FileSystem, creating temporary files for writing and renaming upon commit. The class offers methods for creating, opening, committing, and aborting checkpoints, utilizing WritableByteChannel for writing and ReadableByteChannel for reading. It depends on Hadoop's FSDataInputStream, FSDataOutputStream, FileSystem, Path, and CheckpointID. This architecture ensures reliability and maintainability, leveraging Hadoop's robust framework for HDFS operations. The coordinator pattern is evident, as FSCheckpointService coordinates checkpoint creation and management, ensuring data consistency and integrity across the cluster.",
+  "description_word_count": 88,
+  "number_of_files": 9,
+  "number_of_directories": 2,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: FSCheckpointService\n\nDESCRIPTION: This Hadoop component, implemented in Java, manages HDFS checkpoints via CheckpointService. It interacts with HDFS using FileSystem, creating temporary files for writing and renaming upon commit. The class offers methods for creating, opening, committing, and aborting checkpoints, utilizing WritableByteChannel for writing and ReadableByteChannel for reading. It depends on Hadoop's FSDataInputStream, FSDataOutputStream, FileSystem, Path, and CheckpointID. This architecture ensures reliability and maintainability, leveraging Hadoop's robust framework for HDFS operations. The coordinator pattern is evident, as FSCheckpointService coordinates checkpoint creation and management, ensuring data consistency and integrity across the cluster.",
+  "algorithm": "ACDC",
+  "files": [
+    "checkpoint/CheckpointID.java",
+    "checkpoint/CheckpointNamingService.java",
+    "checkpoint/CheckpointService.java",
+    "checkpoint/EnumCounter.java",
+    "checkpoint/FSCheckpointID.java",
+    "checkpoint/FSCheckpointService.java",
+    "checkpoint/RandomNameCNS.java",
+    "checkpoint/SimpleNamingService.java",
+    "checkpoint/TaskCheckpointID.java"
+  ]
+}

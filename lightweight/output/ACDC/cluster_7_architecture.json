@@ -1,0 +1,22 @@
+{
+  "cluster_id": 7,
+  "title": "Job Control Management in Hadoop MapReduce",
+  "description": "This Hadoop MapReduce cluster employs a coordinator pattern, with 'ControlledJob.java' managing individual job lifecycles and 'JobControl.java' overseeing multiple jobs. 'ControlledJob.java' interacts with Hadoop for job submission, while 'JobControl.java' tracks job states and manages submission, enhancing reliability. Java collections and logging are utilized, ensuring scalability and maintainability. The architecture's robustness is maintained through controlled job execution, with performance optimized via efficient state tracking and management. Security is inherent in the design, leveraging Hadoop-specific classes for seamless operation.",
+  "description_word_count": 80,
+  "number_of_files": 2,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job Control Management in Hadoop MapReduce\n\nDESCRIPTION: This Hadoop MapReduce cluster employs a coordinator pattern, with 'ControlledJob.java' managing individual job lifecycles and 'JobControl.java' overseeing multiple jobs. 'ControlledJob.java' interacts with Hadoop for job submission, while 'JobControl.java' tracks job states and manages submission, enhancing reliability. Java collections and logging are utilized, ensuring scalability and maintainability. The architecture's robustness is maintained through controlled job execution, with performance optimized via efficient state tracking and management. Security is inherent in the design, leveraging Hadoop-specific classes for seamless operation.",
+  "algorithm": "ACDC",
+  "files": [
+    "lib/jobcontrol/ControlledJob.java",
+    "lib/jobcontrol/JobControl.java"
+  ]
+}

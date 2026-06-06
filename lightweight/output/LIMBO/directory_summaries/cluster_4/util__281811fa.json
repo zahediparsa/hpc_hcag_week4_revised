@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 4,
+  "directory": "util",
+  "title": "MapReduce Counter Utilities",
+  "description": "The 'util' directory in Hadoop MapReduce contains Java files that provide utility methods for handling MapReduce counters. 'CountersStrings.java' offers methods to convert counter objects into compact string formats and vice versa, primarily for older Hadoop versions. 'JobHistoryEventUtils.java' provides methods to convert MapReduce counters to JSON and TimelineMetrics, facilitating their storage and retrieval in different formats. Both files utilize various Hadoop and Jackson libraries for their functionalities, ensuring compatibility and efficient counter management within the MapReduce framework. The architectural role of this directory is to offer utility functionalities that support the core MapReduce operations, enhancing its usability and adaptability across different versions and use-cases.",
+  "summary": "TITLE: MapReduce Counter Utilities\nDESCRIPTION: The 'util' directory in Hadoop MapReduce contains Java files that provide utility methods for handling MapReduce counters. 'CountersStrings.java' offers methods to convert counter objects into compact string formats and vice versa, primarily for older Hadoop versions. 'JobHistoryEventUtils.java' provides methods to convert MapReduce counters to JSON and TimelineMetrics, facilitating their storage and retrieval in different formats. Both files utilize various Hadoop and Jackson libraries for their functionalities, ensuring compatibility and efficient counter management within the MapReduce framework. The architectural role of this directory is to offer utility functionalities that support the core MapReduce operations, enhancing its usability and adaptability across different versions and use-cases.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CountersStrings.java"
+    },
+    {
+      "type": "file",
+      "name": "JobHistoryEventUtils.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Counter Utilities\n\nDESCRIPTION:\nThe 'util' directory in Hadoop MapReduce contains Java files that provide utility methods for handling MapReduce counters. 'CountersStrings.java' offers methods to convert counter objects into compact string formats and vice versa, primarily for older Hadoop versions. 'JobHistoryEventUtils.java' provides methods to convert MapReduce counters to JSON and TimelineMetrics, facilitating their storage and retrieval in different formats. Both files utilize various Hadoop and Jackson libraries for their functionalities, ensuring compatibility and efficient counter management within the MapReduce framework. The architectural role of this directory is to offer utility functionalities that support the core MapReduce operations, enhancing its usability and adaptability across different versions and use-cases."
+}

@@ -1,0 +1,34 @@
+{
+  "cluster_id": 24,
+  "title": "Reduce Task Management in Hadoop MapReduce",
+  "description": "This Hadoop MapReduce cluster's reduce task management leverages multi-threading for efficient map output fetching and merging. The 'EventFetcher' and 'Fetcher' classes manage map completion events and data retrieval. 'IFileWrappedMapOutput' and its implementations handle map outputs, while 'MapHost' and 'MapOutput' manage task states and outputs. 'ShuffleSchedulerImpl' ensures reliable data transfer from map to reduce tasks, demonstrating proactive fault management. This architecture ensures scalability, maintainability, and reliability, utilizing Java for implementation within the Hadoop framework. The coordinator pattern is evident in the 'ShuffleSchedulerImpl', which orchestrates the shuffle phase, ensuring efficient and dependable data transfer.",
+  "description_word_count": 92,
+  "number_of_files": 14,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Reduce Task Management in Hadoop MapReduce\n\nDESCRIPTION: This Hadoop MapReduce cluster's reduce task management leverages multi-threading for efficient map output fetching and merging. The 'EventFetcher' and 'Fetcher' classes manage map completion events and data retrieval. 'IFileWrappedMapOutput' and its implementations handle map outputs, while 'MapHost' and 'MapOutput' manage task states and outputs. 'ShuffleSchedulerImpl' ensures reliable data transfer from map to reduce tasks, demonstrating proactive fault management. This architecture ensures scalability, maintainability, and reliability, utilizing Java for implementation within the Hadoop framework. The coordinator pattern is evident in the 'ShuffleSchedulerImpl', which orchestrates the shuffle phase, ensuring efficient and dependable data transfer.",
+  "algorithm": "LIMBO",
+  "files": [
+    "TaskCompletionEvent.java",
+    "task/reduce/EventFetcher.java",
+    "task/reduce/Fetcher.java",
+    "task/reduce/IFileWrappedMapOutput.java",
+    "task/reduce/InMemoryMapOutput.java",
+    "task/reduce/InMemoryReader.java",
+    "task/reduce/LocalFetcher.java",
+    "task/reduce/MapHost.java",
+    "task/reduce/MapOutput.java",
+    "task/reduce/MergeManager.java",
+    "task/reduce/OnDiskMapOutput.java",
+    "task/reduce/Shuffle.java",
+    "task/reduce/ShuffleClientMetrics.java",
+    "task/reduce/ShuffleSchedulerImpl.java"
+  ]
+}

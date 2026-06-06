@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 80,
+  "directory": ".",
+  "title": "SequenceFile Entry Management",
+  "description": "The 'lib/output/committer' directory in Hadoop MapReduce manages SequenceFile entries. It contains 'manifest/impl' handling 'FileEntry' objects. 'EntryFileIO.java' implements Producer pattern, using a thread for writing, interfacing with Hadoop's SequenceFile class. This component offers methods for creating writers and readers, managing a writer thread for queuing and processing entries. It ensures efficient I.O through multi-threading, optimizing the output commit process in MapReduce jobs.",
+  "summary": "TITLE: SequenceFile Entry Management\nDESCRIPTION: The 'lib/output/committer' directory in Hadoop MapReduce manages SequenceFile entries. It contains 'manifest/impl' handling 'FileEntry' objects. 'EntryFileIO.java' implements Producer pattern, using a thread for writing, interfacing with Hadoop's SequenceFile class. This component offers methods for creating writers and readers, managing a writer thread for queuing and processing entries. It ensures efficient I.O through multi-threading, optimizing the output commit process in MapReduce jobs.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: SequenceFile Entry Management\n\nDESCRIPTION: The 'lib/output/committer' directory in Hadoop MapReduce manages SequenceFile entries. It contains 'manifest/impl' handling 'FileEntry' objects. 'EntryFileIO.java' implements Producer pattern, using a thread for writing, interfacing with Hadoop's SequenceFile class. This component offers methods for creating writers and readers, managing a writer thread for queuing and processing entries. It ensures efficient I.O through multi-threading, optimizing the output commit process in MapReduce jobs."
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 31,
+  "directory": ".",
+  "title": "Job History Logging Interface",
+  "description": "The `HistoryEvent.java` in Hadoop's jobhistory directory defines an event interface for Avro-generated event classes. It serves as a contract for handling event data, converting to TimelineEvents, and retrieving associated metrics. This interface interacts with YARN timeline service records and standard Java classes, utilizing Java's generics and Hadoop annotations. It doesn't have explicit inputs/outputs but manages Avro-generated event data, producing TimelineEvent objects. This directory plays a crucial role in logging and retrieving job history in Hadoop, utilizing a well-defined interface pattern for maintaining consistency and extensibility.",
+  "summary": "TITLE: Job History Logging Interface\nDESCRIPTION: The `HistoryEvent.java` in Hadoop's jobhistory directory defines an event interface for Avro-generated event classes. It serves as a contract for handling event data, converting to TimelineEvents, and retrieving associated metrics. This interface interacts with YARN timeline service records and standard Java classes, utilizing Java's generics and Hadoop annotations. It doesn't have explicit inputs/outputs but manages Avro-generated event data, producing TimelineEvent objects. This directory plays a crucial role in logging and retrieving job history in Hadoop, utilizing a well-defined interface pattern for maintaining consistency and extensibility.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "jobhistory"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job History Logging Interface\n\nDESCRIPTION: The `HistoryEvent.java` in Hadoop's jobhistory directory defines an event interface for Avro-generated event classes. It serves as a contract for handling event data, converting to TimelineEvents, and retrieving associated metrics. This interface interacts with YARN timeline service records and standard Java classes, utilizing Java's generics and Hadoop annotations. It doesn't have explicit inputs/outputs but manages Avro-generated event data, producing TimelineEvent objects. This directory plays a crucial role in logging and retrieving job history in Hadoop, utilizing a well-defined interface pattern for maintaining consistency and extensibility."
+}

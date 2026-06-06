@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": "lib/reduce",
+  "title": "WrappedReducer.java - Custom Reducer Context",
+  "description": "The WrappedReducer.java file in the lib/reduce directory defines a custom Reducer context class that extends Hadoop's generic Reducer. This class allows for custom implementations of the Reducer.Context interface while still utilizing standard Hadoop Reducer functionality. It manages the context for the reducer, indirectly influencing input processing and output generation. The class depends on numerous Hadoop MapReduce library classes for its operation, including Reducer, InputFormat, OutputFormat, Partitioner, Mapper, Counter, Configuration, Path, RawComparator, JobID, TaskAttemptID, and Credentials. It does not handle direct data flow but manages the context for the reducer, affecting how input is processed and output is generated.",
+  "summary": "TITLE: WrappedReducer.java - Custom Reducer Context\nDESCRIPTION: The WrappedReducer.java file in the lib/reduce directory defines a custom Reducer context class that extends Hadoop's generic Reducer. This class allows for custom implementations of the Reducer.Context interface while still utilizing standard Hadoop Reducer functionality. It manages the context for the reducer, indirectly influencing input processing and output generation. The class depends on numerous Hadoop MapReduce library classes for its operation, including Reducer, InputFormat, OutputFormat, Partitioner, Mapper, Counter, Configuration, Path, RawComparator, JobID, TaskAttemptID, and Credentials. It does not handle direct data flow but manages the context for the reducer, affecting how input is processed and output is generated.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "WrappedReducer.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: WrappedReducer.java - Custom Reducer Context\n\nDESCRIPTION:\nThe WrappedReducer.java file in the lib/reduce directory defines a custom Reducer context class that extends Hadoop's generic Reducer. This class allows for custom implementations of the Reducer.Context interface while still utilizing standard Hadoop Reducer functionality. It manages the context for the reducer, indirectly influencing input processing and output generation. The class depends on numerous Hadoop MapReduce library classes for its operation, including Reducer, InputFormat, OutputFormat, Partitioner, Mapper, Counter, Configuration, Path, RawComparator, JobID, TaskAttemptID, and Credentials. It does not handle direct data flow but manages the context for the reducer, affecting how input is processed and output is generated."
+}

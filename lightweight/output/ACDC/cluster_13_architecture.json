@@ -1,0 +1,38 @@
+{
+  "cluster_id": 13,
+  "title": "Hadoop MapReduce Output and Security",
+  "description": "Hadoop MapReduce's output architecture, residing in the 'lib/output' directory, ensures data integrity, flexibility, and efficiency through classes like `FileOutputCommitter`, `FileOutputFormat`, and `SequenceFileAsBinaryOutputFormat`. These components abstract lower layers, providing a unified interface for diverse output requirements, adhering to a layered architectural pattern. Security is maintained via `TokenCache.java`, managing security tokens for secure task-HDFS interactions. The `Checkpointable.java` interface, using Java annotations, tags checkpointable tasks, collaborating with Hadoop's task framework for safe interruption and restart. This architecture ensures scalability, maintainability, reliability, and security, utilizing Java, Hadoop context classes, SLF4J, and Apache Commons Lang.",
+  "description_word_count": 93,
+  "number_of_files": 18,
+  "number_of_directories": 6,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Output and Security\n\nDESCRIPTION:\nHadoop MapReduce's output architecture, residing in the 'lib/output' directory, ensures data integrity, flexibility, and efficiency through classes like `FileOutputCommitter`, `FileOutputFormat`, and `SequenceFileAsBinaryOutputFormat`. These components abstract lower layers, providing a unified interface for diverse output requirements, adhering to a layered architectural pattern. Security is maintained via `TokenCache.java`, managing security tokens for secure task-HDFS interactions. The `Checkpointable.java` interface, using Java annotations, tags checkpointable tasks, collaborating with Hadoop's task framework for safe interruption and restart. This architecture ensures scalability, maintainability, reliability, and security, utilizing Java, Hadoop context classes, SLF4J, and Apache Commons Lang.",
+  "algorithm": "ACDC",
+  "files": [
+    "OutputFormat.java",
+    "lib/output/FileOutputCommitter.java",
+    "lib/output/FileOutputCommitterFactory.java",
+    "lib/output/FileOutputFormat.java",
+    "lib/output/FilterOutputFormat.java",
+    "lib/output/LazyOutputFormat.java",
+    "lib/output/MapFileOutputFormat.java",
+    "lib/output/MultipleOutputs.java",
+    "lib/output/NamedCommitterFactory.java",
+    "lib/output/NullOutputFormat.java",
+    "lib/output/PartialFileOutputCommitter.java",
+    "lib/output/PartialOutputCommitter.java",
+    "lib/output/PathOutputCommitterFactory.java",
+    "lib/output/SequenceFileAsBinaryOutputFormat.java",
+    "lib/output/SequenceFileOutputFormat.java",
+    "lib/output/TextOutputFormat.java",
+    "security/TokenCache.java",
+    "task/annotation/Checkpointable.java"
+  ]
+}

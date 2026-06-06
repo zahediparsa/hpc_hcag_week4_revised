@@ -1,0 +1,21 @@
+{
+  "cluster_id": 97,
+  "title": "Reduce Task Merging Manager",
+  "description": "The Reduce Task Merging Manager in Hadoop MapReduce orchestrates merging of map outputs, utilizing InMemoryMerger and OnDiskMerger. MergeManagerImpl.java initializes and configures merger threads, employing TaskAttemptID, JobConf, and FileSystem components. This coordinator pattern ensures scalability and reliability, managing merging process with Apache Hadoop MapReduce library classes. It maintains internal data structures, leveraging merge threads for efficient output generation, contributing to performance and maintainability.",
+  "description_word_count": 63,
+  "number_of_files": 1,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Reduce Task Merging Manager\n\nDESCRIPTION: The Reduce Task Merging Manager in Hadoop MapReduce orchestrates merging of map outputs, utilizing InMemoryMerger and OnDiskMerger. MergeManagerImpl.java initializes and configures merger threads, employing TaskAttemptID, JobConf, and FileSystem components. This coordinator pattern ensures scalability and reliability, managing merging process with Apache Hadoop MapReduce library classes. It maintains internal data structures, leveraging merge threads for efficient output generation, contributing to performance and maintainability.",
+  "algorithm": "LIMBO",
+  "files": [
+    "task/reduce/MergeManagerImpl.java"
+  ]
+}

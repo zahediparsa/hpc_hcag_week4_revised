@@ -1,0 +1,34 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": "lib/chain",
+  "title": "Chain Directory in Hadoop MapReduce",
+  "description": "The 'lib/chain' directory in Hadoop MapReduce contains classes that enable chaining multiple Mappers or a Mapper followed by a Reducer within a single Map or Reduce task. The key files include Chain.java, which defines a Chain class for managing chains of Mappers and a single Reducer, ChainMapContextImpl and ChainReduceContextImpl, which extend Map and Reduce contexts respectively, and ChainMapper and ChainReducer, which facilitate chaining Mappers after a Reducer. These classes collaborate to manage the execution of chained tasks, handle input/output, and ensure compatibility between consecutive tasks in the chain, thereby extending the flexibility of Hadoop's MapReduce model.",
+  "summary": "TITLE: Chain Directory in Hadoop MapReduce\nDESCRIPTION: The 'lib/chain' directory in Hadoop MapReduce contains classes that enable chaining multiple Mappers or a Mapper followed by a Reducer within a single Map or Reduce task. The key files include Chain.java, which defines a Chain class for managing chains of Mappers and a single Reducer, ChainMapContextImpl and ChainReduceContextImpl, which extend Map and Reduce contexts respectively, and ChainMapper and ChainReducer, which facilitate chaining Mappers after a Reducer. These classes collaborate to manage the execution of chained tasks, handle input/output, and ensure compatibility between consecutive tasks in the chain, thereby extending the flexibility of Hadoop's MapReduce model.",
+  "number_of_children": 5,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "Chain.java"
+    },
+    {
+      "type": "file",
+      "name": "ChainMapContextImpl.java"
+    },
+    {
+      "type": "file",
+      "name": "ChainMapper.java"
+    },
+    {
+      "type": "file",
+      "name": "ChainReduceContextImpl.java"
+    },
+    {
+      "type": "file",
+      "name": "ChainReducer.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Chain Directory in Hadoop MapReduce\n\nDESCRIPTION:\nThe 'lib/chain' directory in Hadoop MapReduce contains classes that enable chaining multiple Mappers or a Mapper followed by a Reducer within a single Map or Reduce task. The key files include Chain.java, which defines a Chain class for managing chains of Mappers and a single Reducer, ChainMapContextImpl and ChainReduceContextImpl, which extend Map and Reduce contexts respectively, and ChainMapper and ChainReducer, which facilitate chaining Mappers after a Reducer. These classes collaborate to manage the execution of chained tasks, handle input/output, and ensure compatibility between consecutive tasks in the chain, thereby extending the flexibility of Hadoop's MapReduce model."
+}

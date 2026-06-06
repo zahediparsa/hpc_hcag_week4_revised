@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 22,
+  "directory": "lib/map",
+  "title": "RegexMapper.java - Regular Expression Extraction Mapper",
+  "description": "RegexMapper.java is a Hadoop Mapper implementation that extracts text matching a regular expression from input data. It compiles a pattern from configuration settings and finds matches in input text. The map function processes each input key-value pair, finds matches, and writes matched groups as new key-value pairs to the context. Inputs include a key of type K, a value of type Text, and a Context object. Outputs are new key-value pairs with matched text as keys and LongWritable values of 1. Dependencies include Hadoop core classes and java.util.regex for regex handling. This Mapper follows the Mapper design pattern in Hadoop MapReduce, processing input data and producing intermediate key-value pairs for further processing in the Reduce phase.",
+  "summary": "TITLE: RegexMapper.java - Regular Expression Extraction Mapper\nDESCRIPTION: RegexMapper.java is a Hadoop Mapper implementation that extracts text matching a regular expression from input data. It compiles a pattern from configuration settings and finds matches in input text. The map function processes each input key-value pair, finds matches, and writes matched groups as new key-value pairs to the context. Inputs include a key of type K, a value of type Text, and a Context object. Outputs are new key-value pairs with matched text as keys and LongWritable values of 1. Dependencies include Hadoop core classes and java.util.regex for regex handling. This Mapper follows the Mapper design pattern in Hadoop MapReduce, processing input data and producing intermediate key-value pairs for further processing in the Reduce phase.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "RegexMapper.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: RegexMapper.java - Regular Expression Extraction Mapper\n\nDESCRIPTION:\nRegexMapper.java is a Hadoop Mapper implementation that extracts text matching a regular expression from input data. It compiles a pattern from configuration settings and finds matches in input text. The map function processes each input key-value pair, finds matches, and writes matched groups as new key-value pairs to the context. Inputs include a key of type K, a value of type Text, and a Context object. Outputs are new key-value pairs with matched text as keys and LongWritable values of 1. Dependencies include Hadoop core classes and java.util.regex for regex handling. This Mapper follows the Mapper design pattern in Hadoop MapReduce, processing input data and producing intermediate key-value pairs for further processing in the Reduce phase."
+}

@@ -1,0 +1,29 @@
+{
+  "cluster_id": 18,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and DataNodes. The JobTracker coordinates and manages jobs, assigning tasks to available TaskTrackers. TaskTrackers execute map and reduce tasks, reporting progress back to the JobTracker. DataNodes store blocks of data and serve them to tasks. Hadoop Distributed File System (HDFS) provides reliable storage and data access. The architecture ensures scalability, reliability, and fault tolerance. It uses Java for development, and Hadoop APIs for interaction. The JobTracker follows the Coordinator pattern, while TaskTrackers adhere to the Worker pattern. The ManifestCommitterFactory exemplifies the Factory Method pattern, ensuring job output management.",
+  "description_word_count": 103,
+  "number_of_files": 9,
+  "number_of_directories": 5,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and DataNodes. The JobTracker coordinates and manages jobs, assigning tasks to available TaskTrackers. TaskTrackers execute map and reduce tasks, reporting progress back to the JobTracker. DataNodes store blocks of data and serve them to tasks. Hadoop Distributed File System (HDFS) provides reliable storage and data access. The architecture ensures scalability, reliability, and fault tolerance. It uses Java for development, and Hadoop APIs for interaction. The JobTracker follows the Coordinator pattern, while TaskTrackers adhere to the Worker pattern. The ManifestCommitterFactory exemplifies the Factory Method pattern, ensuring job output management.",
+  "algorithm": "LIMBO",
+  "files": [
+    "OutputCommitter.java",
+    "TaskAttemptContext.java",
+    "lib/output/BindingPathOutputCommitter.java",
+    "lib/output/FileOutputCommitter.java",
+    "lib/output/FileOutputCommitterFactory.java",
+    "lib/output/NamedCommitterFactory.java",
+    "lib/output/PartialFileOutputCommitter.java",
+    "lib/output/PathOutputCommitterFactory.java",
+    "lib/output/committer/manifest/ManifestCommitterFactory.java"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "security/token",
+  "title": "Delegation Token Management in Hadoop MapReduce",
+  "description": "The 'security/token/delegation' directory in Hadoop MapReduce manages delegation tokens for secure resource access. The package-info.java file within provides documentation for the DelegationTokenIdentifier class, detailing its use and stability. This directory's role is primarily informational, using a metadata documentation pattern. It does not contain core logic or direct inputs/outputs, but serves as a metadata provider for the DelegationTokenIdentifier class, detailing its audience, licensing, and stability using classes like InterfaceAudience and InterfaceStability.",
+  "summary": "TITLE: Delegation Token Management in Hadoop MapReduce\nDESCRIPTION: The 'security/token/delegation' directory in Hadoop MapReduce manages delegation tokens for secure resource access. The package-info.java file within provides documentation for the DelegationTokenIdentifier class, detailing its use and stability. This directory's role is primarily informational, using a metadata documentation pattern. It does not contain core logic or direct inputs/outputs, but serves as a metadata provider for the DelegationTokenIdentifier class, detailing its audience, licensing, and stability using classes like InterfaceAudience and InterfaceStability.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "package-info.java"
+    },
+    {
+      "type": "directory",
+      "name": "security/token/delegation"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Delegation Token Management in Hadoop MapReduce\n\nDESCRIPTION: The 'security/token/delegation' directory in Hadoop MapReduce manages delegation tokens for secure resource access. The package-info.java file within provides documentation for the DelegationTokenIdentifier class, detailing its use and stability. This directory's role is primarily informational, using a metadata documentation pattern. It does not contain core logic or direct inputs/outputs, but serves as a metadata provider for the DelegationTokenIdentifier class, detailing its audience, licensing, and stability using classes like InterfaceAudience and InterfaceStability."
+}

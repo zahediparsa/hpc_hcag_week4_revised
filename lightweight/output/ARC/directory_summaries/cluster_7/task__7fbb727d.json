@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": "task",
+  "title": "On-Disk Map Output Management",
+  "description": "The `OnDiskMapOutput.java` file in the `task/reduce` directory manages temporary on-disk storage of map outputs in Hadoop MapReduce. It extends `IFileWrappedMapOutput`, handling input/output stream operations, progress tracking, and renaming temporary to final output paths upon successful commit. The class supports encryption and deletion in case of abort, utilizing various Hadoop classes and logging utilities. It's part of the internal API, subject to change.",
+  "summary": "TITLE: On-Disk Map Output Management\nDESCRIPTION: The `OnDiskMapOutput.java` file in the `task/reduce` directory manages temporary on-disk storage of map outputs in Hadoop MapReduce. It extends `IFileWrappedMapOutput`, handling input/output stream operations, progress tracking, and renaming temporary to final output paths upon successful commit. The class supports encryption and deletion in case of abort, utilizing various Hadoop classes and logging utilities. It's part of the internal API, subject to change.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobContextImpl.java"
+    },
+    {
+      "type": "file",
+      "name": "ReduceContextImpl.java"
+    },
+    {
+      "type": "directory",
+      "name": "task/reduce"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: On-Disk Map Output Management\n\nDESCRIPTION:\nThe `OnDiskMapOutput.java` file in the `task/reduce` directory manages temporary on-disk storage of map outputs in Hadoop MapReduce. It extends `IFileWrappedMapOutput`, handling input/output stream operations, progress tracking, and renaming temporary to final output paths upon successful commit. The class supports encryption and deletion in case of abort, utilizing various Hadoop classes and logging utilities. It's part of the internal API, subject to change."
+}

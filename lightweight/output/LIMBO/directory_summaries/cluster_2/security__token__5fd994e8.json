@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "security/token",
+  "title": "MapReduce Delegation Token Identifier",
+  "description": "The `DelegationTokenIdentifier` class in Hadoop MapReduce's security/token/delegation directory manages MapReduce-specific delegation tokens. It extends `AbstractDelegationTokenIdentifier`, providing functionality for job submission and tracking. The class defines `MAPREDUCE_DELEGATION_KIND` for token identification, constructing identifiers with owner, renewer, and real user details. It doesn't handle traditional inputs/outputs, instead focusing on secure job submission and tracking. The class depends on Hadoop's classification, IO, and security token delegation packages.",
+  "summary": "TITLE: MapReduce Delegation Token Identifier\nDESCRIPTION: The `DelegationTokenIdentifier` class in Hadoop MapReduce's security/token/delegation directory manages MapReduce-specific delegation tokens. It extends `AbstractDelegationTokenIdentifier`, providing functionality for job submission and tracking. The class defines `MAPREDUCE_DELEGATION_KIND` for token identification, constructing identifiers with owner, renewer, and real user details. It doesn't handle traditional inputs/outputs, instead focusing on secure job submission and tracking. The class depends on Hadoop's classification, IO, and security token delegation packages.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "security/token/delegation"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Delegation Token Identifier\n\nDESCRIPTION: The `DelegationTokenIdentifier` class in Hadoop MapReduce's security/token/delegation directory manages MapReduce-specific delegation tokens. It extends `AbstractDelegationTokenIdentifier`, providing functionality for job submission and tracking. The class defines `MAPREDUCE_DELEGATION_KIND` for token identification, constructing identifiers with owner, renewer, and real user details. It doesn't handle traditional inputs/outputs, instead focusing on secure job submission and tracking. The class depends on Hadoop's classification, IO, and security token delegation packages."
+}

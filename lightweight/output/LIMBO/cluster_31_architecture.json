@@ -1,0 +1,21 @@
+{
+  "cluster_id": 31,
+  "title": "Job History Logging Interface",
+  "description": "Hadoop's Job History Logging Interface utilizes Avro-generated event classes, defined in `HistoryEvent.java`, to manage job history data. This interface interacts with YARN's timeline service records and standard Java classes, employing Java's generics and Hadoop annotations. It serves as a contract for handling event data, converting to TimelineEvents, and retrieving associated metrics. The interface doesn't have explicit inputs/outputs but manages Avro-generated event data, producing TimelineEvent objects. This system ensures scalability and maintainability through a well-defined interface pattern, enabling extensibility and consistency. Technologies used include Avro for data serialization, Java for programming, and Hadoop annotations for framework integration. The architectural role is primarily that of a coordinator, managing job history data across the cluster.",
+  "description_word_count": 114,
+  "number_of_files": 1,
+  "number_of_directories": 2,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job History Logging Interface\n\nDESCRIPTION: Hadoop's Job History Logging Interface utilizes Avro-generated event classes, defined in `HistoryEvent.java`, to manage job history data. This interface interacts with YARN's timeline service records and standard Java classes, employing Java's generics and Hadoop annotations. It serves as a contract for handling event data, converting to TimelineEvents, and retrieving associated metrics. The interface doesn't have explicit inputs/outputs but manages Avro-generated event data, producing TimelineEvent objects. This system ensures scalability and maintainability through a well-defined interface pattern, enabling extensibility and consistency. Technologies used include Avro for data serialization, Java for programming, and Hadoop annotations for framework integration. The architectural role is primarily that of a coordinator, managing job history data across the cluster.",
+  "algorithm": "LIMBO",
+  "files": [
+    "jobhistory/HistoryEvent.java"
+  ]
+}

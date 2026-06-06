@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 12,
+  "directory": "util",
+  "title": "ConfigUtil.java - Hadoop MapReduce Configuration Management",
+  "description": "ConfigUtil.java in Hadoop MapReduce is responsible for managing configuration resources. It loads deprecated keys and their replacements into the Configuration object, and adds default configuration resources. The core functionality is encapsulated in the `loadResources()` method, which internally calls `addDeprecatedKeys()`. This class depends on various Hadoop MapReduce classes for its operations, ensuring seamless configuration management across the MapReduce framework.",
+  "summary": "TITLE: ConfigUtil.java - Hadoop MapReduce Configuration Management\nDESCRIPTION: ConfigUtil.java in Hadoop MapReduce is responsible for managing configuration resources. It loads deprecated keys and their replacements into the Configuration object, and adds default configuration resources. The core functionality is encapsulated in the `loadResources()` method, which internally calls `addDeprecatedKeys()`. This class depends on various Hadoop MapReduce classes for its operations, ensuring seamless configuration management across the MapReduce framework.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ConfigUtil.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ConfigUtil.java - Hadoop MapReduce Configuration Management\n\nDESCRIPTION:\nConfigUtil.java in Hadoop MapReduce is responsible for managing configuration resources. It loads deprecated keys and their replacements into the Configuration object, and adds default configuration resources. The core functionality is encapsulated in the `loadResources()` method, which internally calls `addDeprecatedKeys()`. This class depends on various Hadoop MapReduce classes for its operations, ensuring seamless configuration management across the MapReduce framework."
+}

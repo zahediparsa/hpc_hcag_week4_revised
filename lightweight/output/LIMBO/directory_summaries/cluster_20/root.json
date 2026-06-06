@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 20,
+  "directory": ".",
+  "title": "Hadoop MapReduce Output Committer Interface",
+  "description": "The 'lib/output' directory contains PartialOutputCommitter.java, an interface extending Hadoop's OutputCommitter. This interface, marked stable and public, facilitates partial commit of task outputs during preemption. Its primary method, 'cleanUpPartialOutputForTask', removes prior task execution outputs using a TaskAttemptContext object. This ensures output integrity, especially in scenarios of task preemption or failure. The interface's role is crucial in maintaining consistent and reliable task outputs in Hadoop MapReduce.",
+  "summary": "TITLE: Hadoop MapReduce Output Committer Interface\nDESCRIPTION: The 'lib/output' directory contains PartialOutputCommitter.java, an interface extending Hadoop's OutputCommitter. This interface, marked stable and public, facilitates partial commit of task outputs during preemption. Its primary method, 'cleanUpPartialOutputForTask', removes prior task execution outputs using a TaskAttemptContext object. This ensures output integrity, especially in scenarios of task preemption or failure. The interface's role is crucial in maintaining consistent and reliable task outputs in Hadoop MapReduce.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "RecordWriter.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskInputOutputContext.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Output Committer Interface\n\nDESCRIPTION: The 'lib/output' directory contains PartialOutputCommitter.java, an interface extending Hadoop's OutputCommitter. This interface, marked stable and public, facilitates partial commit of task outputs during preemption. Its primary method, 'cleanUpPartialOutputForTask', removes prior task execution outputs using a TaskAttemptContext object. This ensures output integrity, especially in scenarios of task preemption or failure. The interface's role is crucial in maintaining consistent and reliable task outputs in Hadoop MapReduce."
+}

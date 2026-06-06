@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 17,
+  "directory": "security/token",
+  "title": "JobTokenSecretManager.java",
+  "description": "This Java file implements a SecretManager for job tokens in Hadoop MapReduce. It extends the SecretManager class and overrides its methods to handle job tokens. The class maintains a TreeMap to cache generated job tokens. It provides methods to create, store, and retrieve job token secrets using a master key. The class interacts with other Hadoop security classes for token management. It handles JobTokenIdentifier, job IDs, and tokens as inputs, outputting job token secrets as SecretKey objects or byte arrays.",
+  "summary": "TITLE: JobTokenSecretManager.java\nDESCRIPTION: This Java file implements a SecretManager for job tokens in Hadoop MapReduce. It extends the SecretManager class and overrides its methods to handle job tokens. The class maintains a TreeMap to cache generated job tokens. It provides methods to create, store, and retrieve job token secrets using a master key. The class interacts with other Hadoop security classes for token management. It handles JobTokenIdentifier, job IDs, and tokens as inputs, outputting job token secrets as SecretKey objects or byte arrays.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobTokenSecretManager.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobTokenSecretManager.java\n\nDESCRIPTION: \nThis Java file implements a SecretManager for job tokens in Hadoop MapReduce. It extends the SecretManager class and overrides its methods to handle job tokens. The class maintains a TreeMap to cache generated job tokens. It provides methods to create, store, and retrieve job token secrets using a master key. The class interacts with other Hadoop security classes for token management. It handles JobTokenIdentifier, job IDs, and tokens as inputs, outputting job token secrets as SecretKey objects or byte arrays."
+}

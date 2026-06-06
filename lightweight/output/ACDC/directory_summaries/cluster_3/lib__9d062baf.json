@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "lib",
+  "title": "Value Aggregation in Hadoop MapReduce",
+  "description": "The 'lib/aggregate' directory houses Java classes for value aggregation. These classes implement 'ValueAggregator' interface, performing sum, max, min, and count operations. Collaboration occurs within MapReduce workflow, with components like 'ValueAggregatorMapper', 'ValueAggregatorReducer', and 'ValueHistogram'. This modular design adheres to Hadoop's API standards, showcasing a clear separation of concerns in the MapReduce process.",
+  "summary": "TITLE: Value Aggregation in Hadoop MapReduce\nDESCRIPTION: The 'lib/aggregate' directory houses Java classes for value aggregation. These classes implement 'ValueAggregator' interface, performing sum, max, min, and count operations. Collaboration occurs within MapReduce workflow, with components like 'ValueAggregatorMapper', 'ValueAggregatorReducer', and 'ValueHistogram'. This modular design adheres to Hadoop's API standards, showcasing a clear separation of concerns in the MapReduce process.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/aggregate"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Value Aggregation in Hadoop MapReduce\n\nDESCRIPTION: The 'lib/aggregate' directory houses Java classes for value aggregation. These classes implement 'ValueAggregator' interface, performing sum, max, min, and count operations. Collaboration occurs within MapReduce workflow, with components like 'ValueAggregatorMapper', 'ValueAggregatorReducer', and 'ValueHistogram'. This modular design adheres to Hadoop's API standards, showcasing a clear separation of concerns in the MapReduce process."
+}

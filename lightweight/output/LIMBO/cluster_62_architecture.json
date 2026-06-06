@@ -1,0 +1,22 @@
+{
+  "cluster_id": 62,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture comprises a master node (JobTracker) and multiple worker nodes (TaskTrackers). The JobTracker coordinates tasks, schedules jobs, and monitors progress, while TaskTrackers execute them. Data is stored in HDFS, accessed via the 'lib' directory's 'InputSplitReadingMechanism', utilizing the Strategy pattern for efficient input processing. MapReduce jobs are written in Java, using Hadoop's APIs. This architecture ensures scalability, reliability, and fault tolerance. The use of a centralized JobTracker, however, can pose a single point of failure, addressed by Hadoop Common's 'Failover' mechanism. The architecture demonstrates a clear Coordinator-Worker pattern, ensuring maintainability and performance.",
+  "description_word_count": 95,
+  "number_of_files": 2,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster architecture comprises a master node (JobTracker) and multiple worker nodes (TaskTrackers). The JobTracker coordinates tasks, schedules jobs, and monitors progress, while TaskTrackers execute them. Data is stored in HDFS, accessed via the 'lib' directory's 'InputSplitReadingMechanism', utilizing the Strategy pattern for efficient input processing. MapReduce jobs are written in Java, using Hadoop's APIs. This architecture ensures scalability, reliability, and fault tolerance. The use of a centralized JobTracker, however, can pose a single point of failure, addressed by Hadoop Common's 'Failover' mechanism. The architecture demonstrates a clear Coordinator-Worker pattern, ensuring maintainability and performance.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/input/CompressedSplitLineReader.java",
+    "lib/input/UncompressedSplitLineReader.java"
+  ]
+}

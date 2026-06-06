@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 62,
+  "directory": "lib/input",
+  "title": "Compressed and Uncompressed Split Line Reading",
+  "description": "The 'lib/input' directory in Hadoop MapReduce architecture houses classes responsible for reading data from input splits, specifically handling compressed and uncompressed files. The 'CompressedSplitLineReader.java' class extends the 'SplitLineReader' functionality to correctly read records from compressed splits, preventing data loss or duplication. It does this by overriding the 'fillBuffer' and 'readLine' methods to work with a 'SplitCompressionInputStream'. \n\nOn the other hand, 'UncompressedSplitLineReader.java' extends 'SplitLineReader' for uncompressed files, ensuring correct splitting even with multi-byte delimiters. It overrides methods to manage reading from an uncompressed file input stream, determining the number of bytes to read based on the remaining length of the current split. Both classes depend on various Hadoop core classes, demonstrating a clear application of the Strategy design pattern, where different reading strategies (compressed vs uncompressed) are encapsulated and can be selected based on the input file type.",
+  "summary": "TITLE: Compressed and Uncompressed Split Line Reading\nDESCRIPTION: The 'lib/input' directory in Hadoop MapReduce architecture houses classes responsible for reading data from input splits, specifically handling compressed and uncompressed files. The 'CompressedSplitLineReader.java' class extends the 'SplitLineReader' functionality to correctly read records from compressed splits, preventing data loss or duplication. It does this by overriding the 'fillBuffer' and 'readLine' methods to work with a 'SplitCompressionInputStream'. \n\nOn the other hand, 'UncompressedSplitLineReader.java' extends 'SplitLineReader' for uncompressed files, ensuring correct splitting even with multi-byte delimiters. It overrides methods to manage reading from an uncompressed file input stream, determining the number of bytes to read based on the remaining length of the current split. Both classes depend on various Hadoop core classes, demonstrating a clear application of the Strategy design pattern, where different reading strategies (compressed vs uncompressed) are encapsulated and can be selected based on the input file type.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CompressedSplitLineReader.java"
+    },
+    {
+      "type": "file",
+      "name": "UncompressedSplitLineReader.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Compressed and Uncompressed Split Line Reading\n\nDESCRIPTION:\nThe 'lib/input' directory in Hadoop MapReduce architecture houses classes responsible for reading data from input splits, specifically handling compressed and uncompressed files. The 'CompressedSplitLineReader.java' class extends the 'SplitLineReader' functionality to correctly read records from compressed splits, preventing data loss or duplication. It does this by overriding the 'fillBuffer' and 'readLine' methods to work with a 'SplitCompressionInputStream'. \n\nOn the other hand, 'UncompressedSplitLineReader.java' extends 'SplitLineReader' for uncompressed files, ensuring correct splitting even with multi-byte delimiters. It overrides methods to manage reading from an uncompressed file input stream, determining the number of bytes to read based on the remaining length of the current split. Both classes depend on various Hadoop core classes, demonstrating a clear application of the Strategy design pattern, where different reading strategies (compressed vs uncompressed) are encapsulated and can be selected based on the input file type."
+}

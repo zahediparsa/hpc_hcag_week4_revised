@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 93,
+  "directory": "split",
+  "title": "JobSplit Directory for Hadoop MapReduce",
+  "description": "The 'JobSplit' directory in Hadoop MapReduce architecture is responsible for managing and storing metadata related to input splits. It comprises Java classes like `JobSplit.java` (with `SplitMetaInfo`, `TaskSplitMetaInfo`, and `TaskSplitIndex`) for handling split metadata, and `JobSplitWriter.java` for creating split files. `SplitMetaInfoReader.java` reads split metadata from files. These components collaborate to ensure efficient job scheduling and task execution by providing necessary split information, such as start offsets and data lengths, to the JobTracker and map tasks. The directory employs a combination of data serialization, file handling, and metadata management, reflecting a robust architectural pattern essential for Hadoop's distributed processing capabilities.",
+  "summary": "TITLE: JobSplit Directory for Hadoop MapReduce\nDESCRIPTION: The 'JobSplit' directory in Hadoop MapReduce architecture is responsible for managing and storing metadata related to input splits. It comprises Java classes like `JobSplit.java` (with `SplitMetaInfo`, `TaskSplitMetaInfo`, and `TaskSplitIndex`) for handling split metadata, and `JobSplitWriter.java` for creating split files. `SplitMetaInfoReader.java` reads split metadata from files. These components collaborate to ensure efficient job scheduling and task execution by providing necessary split information, such as start offsets and data lengths, to the JobTracker and map tasks. The directory employs a combination of data serialization, file handling, and metadata management, reflecting a robust architectural pattern essential for Hadoop's distributed processing capabilities.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobSplit.java"
+    },
+    {
+      "type": "file",
+      "name": "JobSplitWriter.java"
+    },
+    {
+      "type": "file",
+      "name": "SplitMetaInfoReader.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobSplit Directory for Hadoop MapReduce\n\nDESCRIPTION:\nThe 'JobSplit' directory in Hadoop MapReduce architecture is responsible for managing and storing metadata related to input splits. It comprises Java classes like `JobSplit.java` (with `SplitMetaInfo`, `TaskSplitMetaInfo`, and `TaskSplitIndex`) for handling split metadata, and `JobSplitWriter.java` for creating split files. `SplitMetaInfoReader.java` reads split metadata from files. These components collaborate to ensure efficient job scheduling and task execution by providing necessary split information, such as start offsets and data lengths, to the JobTracker and map tasks. The directory employs a combination of data serialization, file handling, and metadata management, reflecting a robust architectural pattern essential for Hadoop's distributed processing capabilities."
+}

@@ -1,0 +1,147 @@
+Week 4 - HCAG-style LLM-Based Architectural Recovery
+Algorithm: ACDC
+Group 3 - Hadoop MapReduce Client Core
+Model: ibm-granite/granite-3.3-8b-instruct
+Files analyzed: 314
+Clusters: 23
+Prompting method: zero-shot
+========================================================================
+
+Cluster 0 - FSCheckpointService
+Files: 9
+Directories: 2
+Description words: 88
+Description: This Hadoop component, implemented in Java, manages HDFS checkpoints via CheckpointService. It interacts with HDFS using FileSystem, creating temporary files for writing and renaming upon commit. The class offers methods for creating, opening, committing, and aborting checkpoints, utilizing WritableByteChannel for writing and ReadableByteChannel for reading. It depends on Hadoop's FSDataInputStream, FSDataOutputStream, FileSystem, Path, and CheckpointID. This architecture ensures reliability and maintainability, leveraging Hadoop's robust framework for HDFS operations. The coordinator pattern is evident, as FSCheckpointService coordinates checkpoint creation and management, ensuring data consistency and integrity across the cluster.
+
+Cluster 1 - Hadoop MapReduce Counters Management
+Files: 5
+Directories: 3
+Description words: 103
+Description: The Hadoop MapReduce architecture employs a counter management system, encapsulated in the 'counters' directory. This system utilizes AbstractCounters.java for managing diverse counter types, FileSystemCounterGroup.java for filesystem-specific counters, and FrameworkCounterGroup.java for framework-specific counters. The Abstract Factory, Iterator, and Strategy patterns are implemented to ensure efficient tracking, modularity, and maintainability of counters. This design supports scalability, reliability, and performance, crucial for job monitoring, debugging, and performance analysis. The technology stack includes Java for programming, and Hadoop framework for distributed processing. The counters management system exemplifies the Abstract Factory pattern, facilitating the creation of families of related objects without specifying their concrete classes.
+
+Cluster 2 - Job History Management and Utility Functions
+Files: 31
+Directories: 3
+Description words: 115
+Description: This Hadoop MapReduce cluster's 'jobhistory' directory logs job execution events, utilizing Java classes implementing 'HistoryEvent' for diverse job-related events. These events are converted into Avro and YARN TimelineEvent formats for comprehensive job tracking and monitoring. The 'util' directory provides host-related operations and job history conversion methods, enhancing job tracking and logging functionality. HostUtil.java generates task log URLs and extracts hostnames, while JobHistoryEventUtils.java converts MapReduce counters into JSON and TimelineMetrics formats. This architecture ensures scalability, maintainability, and reliability, leveraging Java and Avro technologies. The coordinator pattern is evident in the JobTracker's role, while the worker pattern is seen in TaskTrackers. Data integrity and security are maintained through comprehensive job execution logging and auditable records.
+
+Cluster 3 - Hadoop MapReduce Value Aggregation
+Files: 17
+Directories: 3
+Description words: 57
+Description: This Hadoop MapReduce cluster facilitates value aggregation via Java classes in 'lib/aggregate'. Components include 'ValueAggregatorMapper', 'ValueAggregatorReducer', and 'ValueHistogram', implementing 'ValueAggregator' interface for sum, max, min, and count operations. The Strategy design pattern enables easy extension of aggregation functions. Collaboration within MapReduce workflow ensures scalability and maintainability. Technologies used: Java, Hadoop API. Quality attributes: Scalability, Maintainability, Reliability.
+
+Cluster 4 - Hadoop MapReduce Cluster Architecture
+Files: 15
+Directories: 5
+Description words: 112
+Description: This cluster employs Hadoop's MapReduce paradigm, utilizing a master-slave architecture. The master node, or JobTracker, coordinates tasks and schedules jobs across slave nodes, or TaskTrackers. The 'lib' directory extends MapReduce functionalities, demonstrating the Open/Closed Principle, ensuring adaptability without core alterations. Custom classes like 'chain' and 'reduce' facilitate task chaining and specialized reductions, respectively. Hadoop Distributed File System (HDFS) provides reliable, scalable data storage. The architecture ensures maintainability through modular design, enhances performance via parallel processing, and guarantees reliability through fault tolerance. Technologies used include Java for custom class development, and Hadoop's MapReduce framework for distributed processing. This architecture exemplifies the Adapter pattern, allowing Hadoop to work with diverse data processing needs.
+
+Cluster 5 - Database Integration in Hadoop MapReduce
+Files: 21
+Directories: 3
+Description words: 74
+Description: Hadoop MapReduce's 'lib/db' directory integrates databases, enabling efficient data processing. It includes 'DBInputFormat', 'DBOutputFormat', and 'DBConfiguration' for database-specific functionalities. Specialized splitters like 'BigDecimalSplitter' and 'DateSplitter' cater to diverse data types. 'MySQLDBRecordReader' and 'OracleDBRecordReader' read database records, while 'MySQLDataDrivenDBRecordReader' and 'OracleDataDrivenDBRecordReader' execute SQL queries. This directory showcases a coordinator pattern, bridging Hadoop's distributed processing with relational databases, supporting multiple systems and data types. The architecture ensures scalability, maintainability, and reliability, leveraging Java for implementation.
+
+Cluster 6 - Hadoop MapReduce Cluster Architecture
+Files: 26
+Directories: 3
+Description words: 111
+Description: The Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and DataNodes. The JobTracker coordinates and monitors jobs, assigning tasks to available TaskTrackers. TaskTrackers execute Map and Reduce tasks, communicating with the JobTracker for task allocation and reporting. DataNodes store and serve data blocks, replicating them across the cluster for fault tolerance. This architecture ensures scalability, reliability, and maintainability through distributed processing and data replication. Technologies used include Java for programming, Hadoop Distributed File System (HDFS) for storage, and YARN for resource management. The coordinator pattern is evident in the JobTracker's role, while the pipeline pattern is observed in data processing through Map and Reduce tasks.
+
+Cluster 7 - Job Control Management in Hadoop MapReduce
+Files: 2
+Directories: 3
+Description words: 80
+Description: This Hadoop MapReduce cluster employs a coordinator pattern, with 'ControlledJob.java' managing individual job lifecycles and 'JobControl.java' overseeing multiple jobs. 'ControlledJob.java' interacts with Hadoop for job submission, while 'JobControl.java' tracks job states and manages submission, enhancing reliability. Java collections and logging are utilized, ensuring scalability and maintainability. The architecture's robustness is maintained through controlled job execution, with performance optimized via efficient state tracking and management. Security is inherent in the design, leveraging Hadoop-specific classes for seamless operation.
+
+Cluster 8 - Join Operations Library
+Files: 16
+Directories: 3
+Description words: 73
+Description: Hadoop's 'lib/join' directory facilitates complex data joins via 'ArrayListBackedIterator', 'ComposableInputFormat', 'ComposableRecordReader', 'CompositeInputFormat', and 'JoinRecordReader'. These components manage iterative states, serialize data, and orchestrate joined dataset reading. 'ResetableIterator.java' and 'StreamBackedIterator.java' ensure efficient iteration, while 'TupleWritable' and 'WrappedRecordReader' handle key-value pairs. This directory, employing Java, ensures scalability and maintainability, crucial for Hadoop's large-scale data join operations. It follows a Coordinator pattern, with 'JoinRecordReader' acting as the coordinator, managing data flow between inputs.
+
+Cluster 9 - Hadoop MapReduce Cluster Architecture
+Files: 10
+Directories: 5
+Description words: 100
+Description: The Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and a distributed file system (HDFS). The JobTracker coordinates and monitors MapReduce tasks, while NodeManagers execute them. Mappers and Reducers, implemented in 'lib/map' and 'lib/reduce' respectively, process data in parallel across the cluster. Custom Mappers like InverseMapper, MultithreadedMapper, TokenCounterMapper, and WrappedMapper demonstrate MapReduce's adaptability. HDFS ensures data reliability and scalability. Technologies used include Java for programming, Hadoop APIs for framework interaction, and YARN for resource management. This architecture exhibits high scalability, maintainability, and reliability, leveraging the master-worker pattern for task coordination and execution.
+
+Cluster 10 - SequenceFile Management in MapReduce
+Files: 1
+Directories: 6
+Description words: 80
+Description: In Hadoop MapReduce, the 'lib/output/committer' directory manages 'FileEntry' objects using 'EntryFileIO' for SequenceFile operations, ensuring efficient file handling. The 'EntryWriter' class, applying Factory and Worker patterns, ensures data integrity and consistency. This directory interacts with other classes, illustrating a Layered Architecture. It maintains data consistency during MapReduce processes, showcasing scalability, reliability, and performance. Technologies used include Java for programming and Hadoop APIs for SequenceFile management. The committer role ensures data reliability and consistency, adhering to the Coordinator pattern.
+
+Cluster 11 - MapReduce Job Output Management
+Files: 36
+Directories: 8
+Description words: 72
+Description: The Hadoop MapReduce cluster's 'lib/output' directory manages job outputs, ensuring data integrity through manifest files. It collaborates with other components for job commit and recovery, maintaining accurate task output tracking. This directory employs the 'Hadoop Manifest Committer Implementation' for reliable data handling. The architecture demonstrates scalability, maintainability, and reliability, utilizing Java for implementation within the Hadoop framework. It follows the data integrity and job management pattern, crucial for Hadoop's distributed processing.
+
+Cluster 12 - Hadoop MapReduce Cluster Architecture
+Files: 3
+Directories: 6
+Description words: 123
+Description: This Hadoop MapReduce cluster, comprising 12 nodes, employs a layered architecture for distributed data processing. The committer stage, managed by 'lib/output/committer', ensures data consistency through manifest files, exemplifying a modular design. It uses Java for its implementation, with 'AbstractJobOrTaskStage.java' and 'JobOrTaskStage.java' defining process stages. The 'LoadManifestsStage.java' processes task manifests, demonstrating a coordinator pattern. Scalability is achieved through horizontal scaling, with each node functioning as a worker. Maintainability is ensured by modular design and clear component separation. Reliability is maintained through the commit protocol, ensuring data integrity. Performance is optimized via parallel processing across nodes. Security is implied through task isolation and data tracking. Technologies used include Hadoop MapReduce framework, Java, and specific custom code within the 'lib' directory.
+
+Cluster 13 - Hadoop MapReduce Output and Security
+Files: 18
+Directories: 6
+Description words: 93
+Description: Hadoop MapReduce's output architecture, residing in the 'lib/output' directory, ensures data integrity, flexibility, and efficiency through classes like `FileOutputCommitter`, `FileOutputFormat`, and `SequenceFileAsBinaryOutputFormat`. These components abstract lower layers, providing a unified interface for diverse output requirements, adhering to a layered architectural pattern. Security is maintained via `TokenCache.java`, managing security tokens for secure task-HDFS interactions. The `Checkpointable.java` interface, using Java annotations, tags checkpointable tasks, collaborating with Hadoop's task framework for safe interruption and restart. This architecture ensures scalability, maintainability, reliability, and security, utilizing Java, Hadoop context classes, SLF4J, and Apache Commons Lang.
+
+Cluster 14 - Hadoop MapReduce Cluster Architecture
+Files: 3
+Directories: 3
+Description words: 115
+Description: The Hadoop MapReduce cluster architecture comprises a coordinator (JobTracker), worker nodes (TaskTrackers), and a distributed file system (HDFS). The JobTracker assigns tasks to TaskTrackers, managing their progress and data flow. TaskTrackers execute Map and Reduce tasks, reporting back to the JobTracker. HDFS ensures data durability and fault tolerance. The 'lib' directory, utilizing Java, implements input sampling (Split, Random, Interval) and total order partitioning, enhancing data distribution and job performance. This architecture ensures scalability, maintainability, and reliability, leveraging Hadoop's distributed processing capabilities. Security is maintained through access control and encryption. Performance is optimized via data locality and parallel processing. The architecture follows a coordinator-worker pattern, with HDFS acting as a utility for data storage and retrieval.
+
+Cluster 15 - Custom Reducer Context Management in Hadoop MapReduce Cluster
+Files: 1
+Directories: 3
+Description words: 108
+Description: This Hadoop MapReduce cluster employs a custom Reducer context management system, encapsulated in the 'lib/reduce' directory's WrappedReducer.java. This class extends Hadoop's generic Reducer, managing the reducer context and indirectly influencing input processing and output generation. It interacts with Hadoop's core MapReduce components, including InputFormat, OutputFormat, Partitioner, Mapper, Counter, Configuration, and Credentials. The architecture ensures scalability and maintainability, leveraging Hadoop's robust framework for distributed processing. The custom Reducer context management pattern enhances flexibility and control over the MapReduce job execution, without directly handling data flow. Technologies used include Java, Hadoop's MapReduce library, and related classes. This design supports high performance and reliability in a distributed computing environment.
+
+Cluster 16 - Hadoop MapReduce Cluster Architecture
+Files: 8
+Directories: 6
+Description words: 92
+Description: The Hadoop MapReduce cluster architecture comprises multiple interconnected components for efficient distributed processing. The JobTracker manages job scheduling, delegation tokens, and communication via ClientProtocol. TaskTrackers execute tasks, with their status monitored by ClusterMetrics. QueueAclsInfo enforces access control in job queues, while TaskTrackerInfo stores TaskTracker details. LogParams in MapReduce v2 manages log parameters, aiding monitoring. The system leverages Hadoop's DataInput, DataOutput, IOException, Text, Writable interfaces, and DelegationTokenIdentifier, DelegationTokenSecretManager, and DelegationTokenSelector for secure token management. This architecture ensures scalability, maintainability, reliability, and security, utilizing a coordinator-worker pattern with Hadoop's core libraries and Java classes.
+
+Cluster 17 - JobTokenSecretManager
+Files: 2
+Directories: 3
+Description words: 94
+Description: This Hadoop MapReduce component, implemented in Java, serves as a SecretManager for job tokens, ensuring security. It uses a TreeMap cache for efficient storage and retrieval of job token secrets, interacting with Hadoop's security classes. The class manages job token creation, storage, and retrieval, utilizing a master key. It processes JobTokenIdentifier, job IDs, and tokens, outputting job token secrets as SecretKey objects or byte arrays. This component contributes to the system's reliability and security, adhering to the Coordinator pattern, as it manages and coordinates the secure handling of job tokens within the MapReduce framework.
+
+Cluster 18 - Secure Job Token Management in Hadoop MapReduce
+Files: 2
+Directories: 3
+Description words: 100
+Description: Hadoop MapReduce's security/token directory manages job tokens using JobTokenIdentifier and JobTokenSelector. JobTokenIdentifier, extending TokenIdentifier, handles token creation, reading, writing, and renewal, storing job IDs as Text. JobTokenSelector, implementing TokenSelector, retrieves matching job tokens, using Text for service representation. This implementation demonstrates the Strategy design pattern for token selection based on type, ensuring secure job execution through Hadoop's security token interfaces. This architecture enhances security, a critical quality attribute, while maintaining scalability and reliability inherent to Hadoop's distributed system. The use of Hadoop's security token interfaces and custom classes showcases the Adapter pattern, facilitating seamless integration with existing security infrastructure.
+
+Cluster 19 - Hadoop MapReduce Job Submission
+Files: 37
+Directories: 7
+Description words: 129
+Description: This directory manages job submission, ensuring correct ownership and permissions. It includes JobSubmitter.java for job submission, QueueInfo.java and QueueState.java for queue management, and SharedCacheConfig.java for parsing shared cache configurations. Task-related components like TaskCompletionEvent.java, TaskCounter.java, and TaskID.java track task completion and status. The 'counters' directory uses Abstract Factory and Factory patterns for managing counters. The 'filecache' directory, with ClientDistributedCacheManager and DistributedCache, distributes large, read-only files. ClientProtocolProvider.java adheres to the Factory pattern, while CountersStrings.java in the 'util' directory provides utility methods for counter string representation. This architecture ensures scalability, maintainability, and reliability, leveraging Java and Hadoop technologies. It employs coordinator, worker, and utility patterns, with the coordinator role for job submission and management, and the utility role for providing counter string representation.
+
+Cluster 20 - MapReduce Reduce Task Coordination
+Files: 24
+Directories: 4
+Description words: 75
+Description: The 'task' directory in Hadoop MapReduce orchestrates reduce tasks via multi-threaded components like 'EventFetcher', 'Fetcher', 'MergeThread', and 'OnDiskMapOutput'. These ensure concurrent merge operations, enhancing efficiency. Collaboration with 'TaskTracker', 'ShuffleScheduler', 'ExceptionReporter', and 'MergeManager' ensures seamless data transfer and processing. The 'Shuffle' class manages the shuffle process, while 'ShuffleClientMetrics' tracks performance. This architecture demonstrates a multi-threaded, collaborative pattern, ensuring scalability, maintainability, and performance in Hadoop MapReduce jobs. Technologies used include Java for programming and Hadoop's MapReduce framework.
+
+Cluster 21 - Hadoop MapReduce Cluster Architecture
+Files: 8
+Directories: 5
+Description words: 107
+Description: This Hadoop MapReduce cluster architecture, comprising 21 nodes, employs a distributed processing model. The 'task' directory, utilizing a layered architectural pattern, manages task-level context with JobContextImpl, ReduceContextImpl, and TaskAttemptContextImpl, ensuring modularity and separation of concerns. JobContextImpl provides job configuration, ReduceContextImpl handles key-value pairs in the reduce phase, and TaskAttemptContextImpl oversees individual task attempts. The 'lib' directory, implementing the Strategy pattern, allows for custom input and partitioning mechanisms, enhancing flexibility and extensibility. This architecture ensures scalability, maintainability, and reliability, leveraging Java for programming and Hadoop's MapReduce framework for distributed data processing. Security is maintained through Hadoop's access control mechanisms. Performance is optimized via data locality and parallel processing.
+
+Cluster 22 - Hadoop MapReduce Cluster Architecture
+Files: 19
+Directories: 10
+Description words: 68
+Description: This cluster employs Hadoop MapReduce, utilizing Java classes in 'lib' for flexible data processing via Strategy, Factory, and Mapper patterns. The JobTracker and TaskTracker configurations in 'server' ensure consistent system-wide settings. 'util' directory's ConfigUtil, MRJobConfUtil, and ProcessTree classes streamline job configuration, adhering to Mediator and Strategy patterns. This architecture ensures scalability, maintainability, and reliability through distributed processing and robust configuration management, leveraging Hadoop's robust ecosystem and Java's robustness.
+

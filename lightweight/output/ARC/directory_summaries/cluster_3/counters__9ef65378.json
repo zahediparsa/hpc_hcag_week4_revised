@@ -1,0 +1,50 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "counters",
+  "title": "Hadoop MapReduce Counters Architecture",
+  "description": "The 'counters' directory in Hadoop MapReduce architecture is responsible for managing and tracking various metrics during job execution. It includes abstract classes like AbstractCounter and AbstractCounterGroup, providing common functionality for both mapred and mapreduce packages. The CounterGroupFactory serves as an abstract factory for creating different types of counter groups, including built-in ones like TaskCounter and JobCounter, and custom counter groups. FrameworkCounterGroup manages counters for the framework, while GenericCounter extends AbstractCounter for specific counter functionality. LimitExceededException and Limits class ensure that counter group and name limits are not exceeded. The architecture follows the Abstract Factory design pattern, ensuring modularity and extensibility. It heavily relies on Hadoop's core classes and interfaces, along with Google's Guava library for certain functionalities.",
+  "summary": "TITLE: Hadoop MapReduce Counters Architecture\nDESCRIPTION: The 'counters' directory in Hadoop MapReduce architecture is responsible for managing and tracking various metrics during job execution. It includes abstract classes like AbstractCounter and AbstractCounterGroup, providing common functionality for both mapred and mapreduce packages. The CounterGroupFactory serves as an abstract factory for creating different types of counter groups, including built-in ones like TaskCounter and JobCounter, and custom counter groups. FrameworkCounterGroup manages counters for the framework, while GenericCounter extends AbstractCounter for specific counter functionality. LimitExceededException and Limits class ensure that counter group and name limits are not exceeded. The architecture follows the Abstract Factory design pattern, ensuring modularity and extensibility. It heavily relies on Hadoop's core classes and interfaces, along with Google's Guava library for certain functionalities.",
+  "number_of_children": 9,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AbstractCounter.java"
+    },
+    {
+      "type": "file",
+      "name": "AbstractCounterGroup.java"
+    },
+    {
+      "type": "file",
+      "name": "CounterGroupBase.java"
+    },
+    {
+      "type": "file",
+      "name": "CounterGroupFactory.java"
+    },
+    {
+      "type": "file",
+      "name": "FrameworkCounterGroup.java"
+    },
+    {
+      "type": "file",
+      "name": "GenericCounter.java"
+    },
+    {
+      "type": "file",
+      "name": "LimitExceededException.java"
+    },
+    {
+      "type": "file",
+      "name": "Limits.java"
+    },
+    {
+      "type": "file",
+      "name": "package-info.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Counters Architecture\n\nDESCRIPTION:\nThe 'counters' directory in Hadoop MapReduce architecture is responsible for managing and tracking various metrics during job execution. It includes abstract classes like AbstractCounter and AbstractCounterGroup, providing common functionality for both mapred and mapreduce packages. The CounterGroupFactory serves as an abstract factory for creating different types of counter groups, including built-in ones like TaskCounter and JobCounter, and custom counter groups. FrameworkCounterGroup manages counters for the framework, while GenericCounter extends AbstractCounter for specific counter functionality. LimitExceededException and Limits class ensure that counter group and name limits are not exceeded. The architecture follows the Abstract Factory design pattern, ensuring modularity and extensibility. It heavily relies on Hadoop's core classes and interfaces, along with Google's Guava library for certain functionalities."
+}

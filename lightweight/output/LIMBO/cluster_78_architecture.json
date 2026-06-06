@@ -1,0 +1,26 @@
+{
+  "cluster_id": 78,
+  "title": "Output Committer Management ---",
+  "description": "The Hadoop MapReduce cluster's output committer, located in 'lib/output/committer', ensures data consistency and integrity. Utilizing Strategy and inheritance patterns, it manages job output commitment, collaborating with Hadoop's logging and file system utilities. This component supports auditing compatibility via 'AuditingIntegration.java', adhering to Hadoop's architectural standards. The committer role ensures job output reliability, a critical quality attribute in this distributed system. Technologies used include Java for programming and Hadoop utilities for file system operations. This pattern exemplifies the Coordinator role, overseeing the commit process and ensuring data reliability across the cluster.",
+  "description_word_count": 92,
+  "number_of_files": 6,
+  "number_of_directories": 7,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- TITLE: Output Committer Management ---\n\nDESCRIPTION: The Hadoop MapReduce cluster's output committer, located in 'lib/output/committer', ensures data consistency and integrity. Utilizing Strategy and inheritance patterns, it manages job output commitment, collaborating with Hadoop's logging and file system utilities. This component supports auditing compatibility via 'AuditingIntegration.java', adhering to Hadoop's architectural standards. The committer role ensures job output reliability, a critical quality attribute in this distributed system. Technologies used include Java for programming and Hadoop utilities for file system operations. This pattern exemplifies the Coordinator role, overseeing the commit process and ensuring data reliability across the cluster.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/output/committer/manifest/impl/AuditingIntegration.java",
+    "lib/output/committer/manifest/stages/AbortTaskStage.java",
+    "lib/output/committer/manifest/stages/CleanupJobStage.java",
+    "lib/output/committer/manifest/stages/SaveSuccessFileStage.java",
+    "lib/output/committer/manifest/stages/SetupJobStage.java",
+    "lib/output/committer/manifest/stages/SetupTaskStage.java"
+  ]
+}

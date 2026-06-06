@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 68,
+  "directory": ".",
+  "title": "StreamBackedIterator for Join Operations",
+  "description": "The 'lib/join' directory houses 'StreamBackedIterator.java', a crucial component for Hadoop's MapReduce library. This class implements a ResetableIterator, utilizing ByteArrayOutputStream for byte storage. It incorporates ReplayableByteInputStream for stream resetting, supporting add, next, hasNext, and reset operations. This design is specifically tailored for join operations with Writable objects, leveraging Hadoop's Writable interface for serialization. Standard Java classes are employed for efficient byte stream handling, ensuring seamless data processing in Hadoop's MapReduce framework.",
+  "summary": "TITLE: StreamBackedIterator for Join Operations\nDESCRIPTION: The 'lib/join' directory houses 'StreamBackedIterator.java', a crucial component for Hadoop's MapReduce library. This class implements a ResetableIterator, utilizing ByteArrayOutputStream for byte storage. It incorporates ReplayableByteInputStream for stream resetting, supporting add, next, hasNext, and reset operations. This design is specifically tailored for join operations with Writable objects, leveraging Hadoop's Writable interface for serialization. Standard Java classes are employed for efficient byte stream handling, ensuring seamless data processing in Hadoop's MapReduce framework.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- DIRECTORY: lib/join ---\n\nTITLE: StreamBackedIterator for Join Operations\n\nDESCRIPTION: The 'lib/join' directory houses 'StreamBackedIterator.java', a crucial component for Hadoop's MapReduce library. This class implements a ResetableIterator, utilizing ByteArrayOutputStream for byte storage. It incorporates ReplayableByteInputStream for stream resetting, supporting add, next, hasNext, and reset operations. This design is specifically tailored for join operations with Writable objects, leveraging Hadoop's Writable interface for serialization. Standard Java classes are employed for efficient byte stream handling, ensuring seamless data processing in Hadoop's MapReduce framework."
+}

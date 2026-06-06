@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 46,
+  "directory": ".",
+  "title": "Job History Directory in Hadoop MapReduce",
+  "description": "The 'jobhistory' directory logs job-related events, including task attempts, completion, failures. It uses an event-driven architecture with dedicated Java classes for each event type. These classes encapsulate job execution details like task IDs, statuses, timestamps, and host information. The directory ensures comprehensive job history logging, aiding in monitoring, debugging, and performance analysis. It integrates with YARN's timeline service via Avro serialization and conversion to YARN TimelineEvent.",
+  "summary": "TITLE: Job History Directory in Hadoop MapReduce\nDESCRIPTION: The 'jobhistory' directory logs job-related events, including task attempts, completion, failures. It uses an event-driven architecture with dedicated Java classes for each event type. These classes encapsulate job execution details like task IDs, statuses, timestamps, and host information. The directory ensures comprehensive job history logging, aiding in monitoring, debugging, and performance analysis. It integrates with YARN's timeline service via Avro serialization and conversion to YARN TimelineEvent.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "jobhistory"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job History Directory in Hadoop MapReduce\n\nDESCRIPTION: The 'jobhistory' directory logs job-related events, including task attempts, completion, failures. It uses an event-driven architecture with dedicated Java classes for each event type. These classes encapsulate job execution details like task IDs, statuses, timestamps, and host information. The directory ensures comprehensive job history logging, aiding in monitoring, debugging, and performance analysis. It integrates with YARN's timeline service via Avro serialization and conversion to YARN TimelineEvent."
+}

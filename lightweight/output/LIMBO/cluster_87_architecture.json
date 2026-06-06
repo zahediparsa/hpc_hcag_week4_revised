@@ -1,0 +1,24 @@
+{
+  "cluster_id": 87,
+  "title": "Custom Partitioning and Sorting in Hadoop MapReduce",
+  "description": "This Hadoop MapReduce cluster employs custom Java classes in 'lib/partition' for advanced partitioning and sorting. 'KeyFieldBasedComparator.java' and 'KeyFieldBasedPartitioner.java' enable user-defined key-based partitioning and sorting, while 'KeyFieldHelper.java' parses specifications. 'TotalOrderPartitioner.java' constructs indexing data structures for efficient total order partitioning, optimizing data distribution across reducers. These components interact within the MapReduce framework, enhancing scalability, maintainability, and performance. The architecture leverages Java and Hadoop APIs, ensuring reliable and secure data processing. The custom partitioning and sorting utility pattern facilitates flexible and efficient data processing, adapting to diverse data requirements.",
+  "description_word_count": 91,
+  "number_of_files": 4,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Custom Partitioning and Sorting in Hadoop MapReduce\n\nDESCRIPTION: This Hadoop MapReduce cluster employs custom Java classes in 'lib/partition' for advanced partitioning and sorting. 'KeyFieldBasedComparator.java' and 'KeyFieldBasedPartitioner.java' enable user-defined key-based partitioning and sorting, while 'KeyFieldHelper.java' parses specifications. 'TotalOrderPartitioner.java' constructs indexing data structures for efficient total order partitioning, optimizing data distribution across reducers. These components interact within the MapReduce framework, enhancing scalability, maintainability, and performance. The architecture leverages Java and Hadoop APIs, ensuring reliable and secure data processing. The custom partitioning and sorting utility pattern facilitates flexible and efficient data processing, adapting to diverse data requirements.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/partition/KeyFieldBasedComparator.java",
+    "lib/partition/KeyFieldBasedPartitioner.java",
+    "lib/partition/KeyFieldHelper.java",
+    "lib/partition/TotalOrderPartitioner.java"
+  ]
+}

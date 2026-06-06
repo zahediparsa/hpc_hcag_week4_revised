@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 10,
+  "directory": "lib/chain",
+  "title": "ChainMapReduce Context Implementation",
+  "description": "The 'lib/chain' directory in Hadoop MapReduce contains classes that implement wrapper functionalities for Map and Reduce contexts. The 'ChainMapContextImpl.java' and 'ChainReduceContextImpl.java' files serve as wrappers for the underlying MapContext and ReduceContext respectively. These wrappers delegate most functionalities to the base contexts but provide additional features, such as record reader/writer management and configuration handling. They collaborate with various Hadoop MapReduce classes and the base context to offer extended capabilities, facilitating the reading, writing, and processing of input and output data in MapReduce tasks. This design pattern allows for enhanced functionality without altering the core Hadoop MapReduce architecture.",
+  "summary": "TITLE: ChainMapReduce Context Implementation\nDESCRIPTION: The 'lib/chain' directory in Hadoop MapReduce contains classes that implement wrapper functionalities for Map and Reduce contexts. The 'ChainMapContextImpl.java' and 'ChainReduceContextImpl.java' files serve as wrappers for the underlying MapContext and ReduceContext respectively. These wrappers delegate most functionalities to the base contexts but provide additional features, such as record reader/writer management and configuration handling. They collaborate with various Hadoop MapReduce classes and the base context to offer extended capabilities, facilitating the reading, writing, and processing of input and output data in MapReduce tasks. This design pattern allows for enhanced functionality without altering the core Hadoop MapReduce architecture.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ChainMapContextImpl.java"
+    },
+    {
+      "type": "file",
+      "name": "ChainReduceContextImpl.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ChainMapReduce Context Implementation\n\nDESCRIPTION:\nThe 'lib/chain' directory in Hadoop MapReduce contains classes that implement wrapper functionalities for Map and Reduce contexts. The 'ChainMapContextImpl.java' and 'ChainReduceContextImpl.java' files serve as wrappers for the underlying MapContext and ReduceContext respectively. These wrappers delegate most functionalities to the base contexts but provide additional features, such as record reader/writer management and configuration handling. They collaborate with various Hadoop MapReduce classes and the base context to offer extended capabilities, facilitating the reading, writing, and processing of input and output data in MapReduce tasks. This design pattern allows for enhanced functionality without altering the core Hadoop MapReduce architecture."
+}

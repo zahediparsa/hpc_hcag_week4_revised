@@ -1,0 +1,27 @@
+{
+  "cluster_id": 75,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers, and a distributed file system (HDFS). The JobTracker coordinates and assigns tasks to TaskTrackers, which execute Map and Reduce tasks. TaskTrackers report progress back to the JobTracker. The manifest committer, implemented in 'lib/output/committer/manifest', ensures reliable and efficient commit operations using the Abstract Factory and Builder patterns. It generates task manifests, handles exceptions, and ensures single execution of stages. HDFS provides scalable, reliable, and maintainable storage. Technologies used include Java for programming, and Hadoop framework for distributed processing. This architecture achieves high scalability, reliability, and maintainability, leveraging the coordinator pattern for JobTracker and worker pattern for TaskTrackers.",
+  "description_word_count": 107,
+  "number_of_files": 7,
+  "number_of_directories": 7,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers, and a distributed file system (HDFS). The JobTracker coordinates and assigns tasks to TaskTrackers, which execute Map and Reduce tasks. TaskTrackers report progress back to the JobTracker. The manifest committer, implemented in 'lib/output/committer/manifest', ensures reliable and efficient commit operations using the Abstract Factory and Builder patterns. It generates task manifests, handles exceptions, and ensures single execution of stages. HDFS provides scalable, reliable, and maintainable storage. Technologies used include Java for programming, and Hadoop framework for distributed processing. This architecture achieves high scalability, reliability, and maintainability, leveraging the coordinator pattern for JobTracker and worker pattern for TaskTrackers.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/output/committer/manifest/ManifestCommitter.java",
+    "lib/output/committer/manifest/ManifestCommitterConfig.java",
+    "lib/output/committer/manifest/impl/ManifestCommitterSupport.java",
+    "lib/output/committer/manifest/impl/ManifestStoreOperations.java",
+    "lib/output/committer/manifest/impl/ManifestStoreOperationsThroughFileSystem.java",
+    "lib/output/committer/manifest/stages/AbstractJobOrTaskStage.java",
+    "lib/output/committer/manifest/stages/StageConfig.java"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "security/token/delegation",
+  "title": "MapReduce Delegation Token Identifier",
+  "description": "The Java class `DelegationTokenIdentifier` in Hadoop MapReduce's security/token/delegation directory is responsible for managing delegation tokens specific to MapReduce jobs. It extends `AbstractDelegationTokenIdentifier` to provide MapReduce-specific functionality, defining a constant `MAPREDUCE_DELEGATION_KIND` for token identification. The class constructs token identifiers with owner, renewer, and real user details, and returns the token kind via the `getKind()` method. It doesn't handle traditional inputs/outputs but manages secure job submission and tracking by creating and identifying delegation tokens. The class depends on Hadoop's classification, IO, and security token delegation packages.",
+  "summary": "TITLE: MapReduce Delegation Token Identifier\nDESCRIPTION: The Java class `DelegationTokenIdentifier` in Hadoop MapReduce's security/token/delegation directory is responsible for managing delegation tokens specific to MapReduce jobs. It extends `AbstractDelegationTokenIdentifier` to provide MapReduce-specific functionality, defining a constant `MAPREDUCE_DELEGATION_KIND` for token identification. The class constructs token identifiers with owner, renewer, and real user details, and returns the token kind via the `getKind()` method. It doesn't handle traditional inputs/outputs but manages secure job submission and tracking by creating and identifying delegation tokens. The class depends on Hadoop's classification, IO, and security token delegation packages.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "DelegationTokenIdentifier.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Delegation Token Identifier\n\nDESCRIPTION:\nThe Java class `DelegationTokenIdentifier` in Hadoop MapReduce's security/token/delegation directory is responsible for managing delegation tokens specific to MapReduce jobs. It extends `AbstractDelegationTokenIdentifier` to provide MapReduce-specific functionality, defining a constant `MAPREDUCE_DELEGATION_KIND` for token identification. The class constructs token identifiers with owner, renewer, and real user details, and returns the token kind via the `getKind()` method. It doesn't handle traditional inputs/outputs but manages secure job submission and tracking by creating and identifying delegation tokens. The class depends on Hadoop's classification, IO, and security token delegation packages."
+}

@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 18,
+  "directory": "security/token",
+  "title": "JobTokenIdentifier and JobTokenSelector",
+  "description": "The 'security/token' directory in Hadoop MapReduce contains classes responsible for managing job tokens, which are crucial for secure job execution. The `JobTokenIdentifier.java` file defines a class that represents a job token identifier, including methods for token creation, reading, writing, and renewal. It extends `TokenIdentifier` and uses `Text` for job ID storage. The `JobTokenSelector.java` file implements a `TokenSelector` for job tokens, searching through a collection of tokens to find and return the first job token matching a specified service. Both classes rely on Hadoop's security token interfaces and utilize `Text` for service representation, demonstrating a clear implementation of the Strategy design pattern to select appropriate tokens based on their kind.",
+  "summary": "TITLE: JobTokenIdentifier and JobTokenSelector\nDESCRIPTION: The 'security/token' directory in Hadoop MapReduce contains classes responsible for managing job tokens, which are crucial for secure job execution. The `JobTokenIdentifier.java` file defines a class that represents a job token identifier, including methods for token creation, reading, writing, and renewal. It extends `TokenIdentifier` and uses `Text` for job ID storage. The `JobTokenSelector.java` file implements a `TokenSelector` for job tokens, searching through a collection of tokens to find and return the first job token matching a specified service. Both classes rely on Hadoop's security token interfaces and utilize `Text` for service representation, demonstrating a clear implementation of the Strategy design pattern to select appropriate tokens based on their kind.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobTokenIdentifier.java"
+    },
+    {
+      "type": "file",
+      "name": "JobTokenSelector.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobTokenIdentifier and JobTokenSelector\n\nDESCRIPTION:\nThe 'security/token' directory in Hadoop MapReduce contains classes responsible for managing job tokens, which are crucial for secure job execution. The `JobTokenIdentifier.java` file defines a class that represents a job token identifier, including methods for token creation, reading, writing, and renewal. It extends `TokenIdentifier` and uses `Text` for job ID storage. The `JobTokenSelector.java` file implements a `TokenSelector` for job tokens, searching through a collection of tokens to find and return the first job token matching a specified service. Both classes rely on Hadoop's security token interfaces and utilize `Text` for service representation, demonstrating a clear implementation of the Strategy design pattern to select appropriate tokens based on their kind."
+}

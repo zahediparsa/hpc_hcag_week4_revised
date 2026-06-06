@@ -1,0 +1,28 @@
+{
+  "cluster_id": 4,
+  "title": "Hadoop MapReduce Counter Management",
+  "description": "This cluster component, adhering to the Abstract Factory pattern, manages and organizes MapReduce counters in a thread-safe manner. The 'counters' directory, utilizing 'AbstractCounterGroup.java', offers a base for managing various counter types, including built-in and custom ones. 'CounterGroupFactory.java' creates different counter groups, such as 'FileSystemCounterGroup.java' and 'FrameworkCounterGroup.java'. The 'util' directory provides utility methods for handling MapReduce counters, converting them to strings or JSON formats using 'CountersStrings.java' and 'JobHistoryEventUtils.java'. These utilities leverage Hadoop and Jackson libraries, ensuring version control, extensibility, and adaptability. This architecture ensures scalability, maintainability, and reliability, crucial for large-scale data processing in Hadoop MapReduce.",
+  "description_word_count": 101,
+  "number_of_files": 8,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Counter Management\n\nDESCRIPTION: This cluster component, adhering to the Abstract Factory pattern, manages and organizes MapReduce counters in a thread-safe manner. The 'counters' directory, utilizing 'AbstractCounterGroup.java', offers a base for managing various counter types, including built-in and custom ones. 'CounterGroupFactory.java' creates different counter groups, such as 'FileSystemCounterGroup.java' and 'FrameworkCounterGroup.java'. The 'util' directory provides utility methods for handling MapReduce counters, converting them to strings or JSON formats using 'CountersStrings.java' and 'JobHistoryEventUtils.java'. These utilities leverage Hadoop and Jackson libraries, ensuring version control, extensibility, and adaptability. This architecture ensures scalability, maintainability, and reliability, crucial for large-scale data processing in Hadoop MapReduce.",
+  "algorithm": "LIMBO",
+  "files": [
+    "CounterGroup.java",
+    "counters/AbstractCounterGroup.java",
+    "counters/AbstractCounters.java",
+    "counters/CounterGroupFactory.java",
+    "counters/FileSystemCounterGroup.java",
+    "counters/FrameworkCounterGroup.java",
+    "util/CountersStrings.java",
+    "util/JobHistoryEventUtils.java"
+  ]
+}

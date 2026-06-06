@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 0,
+    "class": "org.apache.hadoop.mapreduce.JobSubmissionFiles",
+    "path": "JobSubmissionFiles.java",
+    "file_name": "JobSubmissionFiles.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThis Java class, `JobSubmissionFiles`, is a utility for managing job submission files in Apache Hadoop MapReduce. It provides methods to get paths for various job-related files and directories, such as job configuration, job jar, distributed cache files, and staging directory. It also ensures the correct ownership and permissions for these directories.\n\nCORE LOGIC:\nThe core logic revolves around static methods that return specific paths for different job submission files. The `getStagingDir` method is crucial as it initializes and validates the staging directory, ensuring it has the correct ownership and permissions. It uses Hadoop's FileSystem API to interact with the file system and checks if the directory's owner matches the login user or the current user. If not, it throws an IOException.\n\nINPUTS/OUTPUTS:\n- Inputs: Path to the job submission directory, Configuration object, and UserGroupInformation object.\n- Outputs: Various Path objects corresponding to different job submission files and directories, such as job configuration file, job jar, distributed cache files, and staging directory.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.Cluster`\n- `org.apache.hadoop.conf.Configuration`\n- `org.apache.hadoop.fs.FileSystem`\n- `org.apache.hadoop.fs.FileStatus`\n- `org.apache.hadoop.fs.Path`\n- `org.apache.hadoop.fs.permission.FsPermission`\n- `org.apache.hadoop.security.UserGroupInformation`\n- `org.slf4j.Logger`\n- `org.slf4j.LoggerFactory`\n\nThis class also imports standard Java libraries like `java.io.FileNotFoundException`, `java.io.IOException`, and `java.io.File`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 0,
+    "class": "org.apache.hadoop.mapreduce.protocol.ClientProtocolProvider",
+    "path": "protocol/ClientProtocolProvider.java",
+    "file_name": "ClientProtocolProvider.java",
+    "directory": "protocol",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define an abstract class, `ClientProtocolProvider`, which serves as a factory for creating `ClientProtocol` instances. It provides methods to create a `ClientProtocol` using either a `Configuration` object or an `InetSocketAddress` and `Configuration` object. Additionally, it includes a method to close a given `ClientProtocol` instance.\n\nCORE LOGIC:\nThe core logic of this class revolves around the abstract methods `create` and `close`. The `create` method has two overloads, one accepting a `Configuration` object and the other accepting an `InetSocketAddress` and a `Configuration` object. These methods are intended to be implemented by subclasses to provide the specific logic for creating `ClientProtocol` instances based on the given parameters. The `close` method is meant to be implemented to provide the specific logic for closing a `ClientProtocol` instance.\n\nINPUTS/OUTPUTS:\nThe inputs to the methods in this class are primarily of type `Configuration` and `InetSocketAddress`. The `create` methods take either a `Configuration` object or an `InetSocketAddress` and a `Configuration` object as input and return a `ClientProtocol` instance. The `close` method takes a `ClientProtocol` instance as input.\n\nDEPENDENCIES:\nThe key imported classes in this chunk are:\n- `java.io.IOException`: This is a standard Java class indicating that the methods in this class might throw IOExceptions.\n- `java.net.InetSocketAddress`: This class represents an Internet address specification, used in one of the `create` method signatures.\n- `org.apache.hadoop.classification.InterfaceAudience.Private`: This is a Hadoop-specific annotation indicating that the class is intended for use only within the Hadoop project.\n- `org.apache.hadoop.conf.Configuration`: This class is used to store and manage configuration parameters for a Hadoop application.\n\nThere are no direct collaborator classes visible in this chunk, as `ClientProtocolProvider` is an abstract class intended to be extended and implemented by other classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

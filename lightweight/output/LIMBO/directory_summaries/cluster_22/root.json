@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 22,
+  "directory": ".",
+  "title": "JobTracker and TaskTracker Configuration",
+  "description": "The 'server' directory manages configuration settings for JobTracker and TaskTracker in Hadoop MapReduce. It separates concerns by housing 'JTConfig.java' for JobTracker parameters like IPC address and memory limits, and 'TTConfig.java' for TaskTracker constants such as TT_INDEX_CACHE and TT_MAP_SLOTS. Both directories follow a simple configuration interface pattern, ensuring consistent and manageable system-wide settings for their respective components. This separation of configuration files into distinct directories adheres to the principle of isolated configuration settings, enhancing maintainability and readability of the codebase.",
+  "summary": "TITLE: JobTracker and TaskTracker Configuration\nDESCRIPTION: The 'server' directory manages configuration settings for JobTracker and TaskTracker in Hadoop MapReduce. It separates concerns by housing 'JTConfig.java' for JobTracker parameters like IPC address and memory limits, and 'TTConfig.java' for TaskTracker constants such as TT_INDEX_CACHE and TT_MAP_SLOTS. Both directories follow a simple configuration interface pattern, ensuring consistent and manageable system-wide settings for their respective components. This separation of configuration files into distinct directories adheres to the principle of isolated configuration settings, enhancing maintainability and readability of the codebase.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "SharedCacheConfig.java"
+    },
+    {
+      "type": "directory",
+      "name": "server"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobTracker and TaskTracker Configuration\n\nDESCRIPTION:\nThe 'server' directory manages configuration settings for JobTracker and TaskTracker in Hadoop MapReduce. It separates concerns by housing 'JTConfig.java' for JobTracker parameters like IPC address and memory limits, and 'TTConfig.java' for TaskTracker constants such as TT_INDEX_CACHE and TT_MAP_SLOTS. Both directories follow a simple configuration interface pattern, ensuring consistent and manageable system-wide settings for their respective components. This separation of configuration files into distinct directories adheres to the principle of isolated configuration settings, enhancing maintainability and readability of the codebase."
+}

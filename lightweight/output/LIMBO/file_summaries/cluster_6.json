@@ -1,0 +1,14 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 6,
+    "class": "org.apache.hadoop.mapreduce.Counters",
+    "path": "Counters.java",
+    "file_name": "Counters.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define the `Counters` class, which is responsible for managing per-job/task counters in Apache Hadoop MapReduce. These counters are categorized into `CounterGroup`s, each comprising counters from a specific enum type.\n\nCORE LOGIC:\nThe core logic involves defining three inner static classes (`FrameworkGroupImpl`, `GenericGroup`, and `FileSystemGroup`) that extend the `AbstractCounterGroup<Counter>` class and implement the `CounterGroup` interface. These classes handle different types of counter groups: framework-defined, generic, and file system-specific counters. The `GroupFactory` class provides factory methods for creating these counter groups.\n\nINPUTS/OUTPUTS:\nThere are no explicit inputs or outputs in this code chunk, as it primarily defines data structures and their relationships. The actual counter values are managed elsewhere in the MapReduce framework, and this class serves as a container for these counters.\n\nDEPENDENCIES:\nThe key imported and collaborator classes visible in this chunk are:\n- `org.apache.hadoop.mapreduce.Counters` (the main class being defined)\n- `org.apache.hadoop.mapreduce.counters.Limits`\n- `org.apache.hadoop.mapreduce.counters.GenericCounter`\n- `org.apache.hadoop.mapreduce.counters.AbstractCounterGroup`\n- `org.apache.hadoop.mapreduce.counters.FrameworkCounterGroup`\n- `org.apache.hadoop.mapreduce.counters.CounterGroupBase`\n- `org.apache.hadoop.mapreduce.counters.FileSystemCounterGroup`\n- `org.apache.hadoop.mapreduce.counters.AbstractCounters`\n- `org.apache.hadoop.mapreduce.counters.CounterGroupFactory`\n- `org.apache.hadoop.mapreduce.counters.FrameworkCounter`\n- `org.apache.hadoop.mapred.Counters` (imported indirectly via `org.apache.hadoop.mapreduce.counters.FileSystemCounterGroup`)",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

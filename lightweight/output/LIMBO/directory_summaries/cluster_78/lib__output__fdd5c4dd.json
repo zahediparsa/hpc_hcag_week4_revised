@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 78,
+  "directory": "lib/output",
+  "title": "Hadoop MapReduce Output Committer Management",
+  "description": "The 'lib/output/committer' directory is responsible for managing job output committer stages in Hadoop MapReduce. It ensures job output commitment and cleanup, maintaining job consistency and integrity. The 'AuditingIntegration.java' file supports auditing compatibility, while 'manifest/stages' contains various committer stages utilizing Strategy and inheritance patterns. This directory collaborates with Hadoop's logging and file system utilities, ensuring adherence to Hadoop's architectural standards.",
+  "summary": "TITLE: Hadoop MapReduce Output Committer Management\nDESCRIPTION: The 'lib/output/committer' directory is responsible for managing job output committer stages in Hadoop MapReduce. It ensures job output commitment and cleanup, maintaining job consistency and integrity. The 'AuditingIntegration.java' file supports auditing compatibility, while 'manifest/stages' contains various committer stages utilizing Strategy and inheritance patterns. This directory collaborates with Hadoop's logging and file system utilities, ensuring adherence to Hadoop's architectural standards.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Output Committer Management\n\nDESCRIPTION: The 'lib/output/committer' directory is responsible for managing job output committer stages in Hadoop MapReduce. It ensures job output commitment and cleanup, maintaining job consistency and integrity. The 'AuditingIntegration.java' file supports auditing compatibility, while 'manifest/stages' contains various committer stages utilizing Strategy and inheritance patterns. This directory collaborates with Hadoop's logging and file system utilities, ensuring adherence to Hadoop's architectural standards."
+}

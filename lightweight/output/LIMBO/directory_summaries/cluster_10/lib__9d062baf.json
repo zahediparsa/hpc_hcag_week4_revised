@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 10,
+  "directory": "lib",
+  "title": "ChainMapReduce Context Implementation",
+  "description": "The 'lib/chain' directory houses classes that extend Map and Reduce contexts. 'ChainMapContextImpl.java' and 'ChainReduceContextImpl.java' wrap base contexts, managing record readers/writers and configurations. They delegate most tasks to base contexts, offering extended features without altering core Hadoop MapReduce architecture. This pattern allows for enhanced functionality in MapReduce tasks, facilitating data processing and configuration handling. Collaboration with Hadoop classes ensures seamless integration and extended capabilities.",
+  "summary": "TITLE: ChainMapReduce Context Implementation\nDESCRIPTION: The 'lib/chain' directory houses classes that extend Map and Reduce contexts. 'ChainMapContextImpl.java' and 'ChainReduceContextImpl.java' wrap base contexts, managing record readers/writers and configurations. They delegate most tasks to base contexts, offering extended features without altering core Hadoop MapReduce architecture. This pattern allows for enhanced functionality in MapReduce tasks, facilitating data processing and configuration handling. Collaboration with Hadoop classes ensures seamless integration and extended capabilities.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/chain"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ChainMapReduce Context Implementation\n\nDESCRIPTION: The 'lib/chain' directory houses classes that extend Map and Reduce contexts. 'ChainMapContextImpl.java' and 'ChainReduceContextImpl.java' wrap base contexts, managing record readers/writers and configurations. They delegate most tasks to base contexts, offering extended features without altering core Hadoop MapReduce architecture. This pattern allows for enhanced functionality in MapReduce tasks, facilitating data processing and configuration handling. Collaboration with Hadoop classes ensures seamless integration and extended capabilities."
+}

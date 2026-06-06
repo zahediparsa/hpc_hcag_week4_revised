@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": ".",
+  "title": "Job History Management",
+  "description": "The 'jobhistory' directory logs job execution events, using Java classes implementing 'HistoryEvent' for diverse job-related events. These classes convert events into Avro and YARN TimelineEvent formats for comprehensive job tracking and monitoring. This directory maintains an auditable record of job executions, aiding in monitoring, debugging, and performance analysis.\n\nTITLE: Utility Methods for Host and Job History\nDESCRIPTION: The 'util' directory provides host-related operations and job history conversion methods. HostUtil.java generates task log URLs and extracts hostnames. JobHistoryEventUtils.java converts MapReduce counters into JSON and TimelineMetrics formats. These utilities enhance job tracking and logging functionality.",
+  "summary": "TITLE: Job History Management\nDESCRIPTION: The 'jobhistory' directory logs job execution events, using Java classes implementing 'HistoryEvent' for diverse job-related events. These classes convert events into Avro and YARN TimelineEvent formats for comprehensive job tracking and monitoring. This directory maintains an auditable record of job executions, aiding in monitoring, debugging, and performance analysis.\n\nTITLE: Utility Methods for Host and Job History\nDESCRIPTION: The 'util' directory provides host-related operations and job history conversion methods. HostUtil.java generates task log URLs and extracts hostnames. JobHistoryEventUtils.java converts MapReduce counters into JSON and TimelineMetrics formats. These utilities enhance job tracking and logging functionality.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "jobhistory"
+    },
+    {
+      "type": "directory",
+      "name": "util"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job History Management\nDESCRIPTION: The 'jobhistory' directory logs job execution events, using Java classes implementing 'HistoryEvent' for diverse job-related events. These classes convert events into Avro and YARN TimelineEvent formats for comprehensive job tracking and monitoring. This directory maintains an auditable record of job executions, aiding in monitoring, debugging, and performance analysis.\n\nTITLE: Utility Methods for Host and Job History\nDESCRIPTION: The 'util' directory provides host-related operations and job history conversion methods. HostUtil.java generates task log URLs and extracts hostnames. JobHistoryEventUtils.java converts MapReduce counters into JSON and TimelineMetrics formats. These utilities enhance job tracking and logging functionality."
+}

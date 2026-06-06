@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 27,
+  "directory": ".",
+  "title": "Checkpoint Naming Service Directory",
+  "description": "This directory contains classes for generating unique checkpoint names in Hadoop MapReduce. The 'RandomNameCNS.java' file implements a strategy to produce random alphanumeric names prefixed with 'checkpoint_'. 'SimpleNamingService.java' generates names by appending 'checkpoint_' to an initial name. Both classes adhere to the 'CheckpointNamingService' interface, demonstrating the Strategy design pattern. This pattern allows for flexible and modular checkpoint naming strategies.",
+  "summary": "TITLE: Checkpoint Naming Service Directory\nDESCRIPTION: This directory contains classes for generating unique checkpoint names in Hadoop MapReduce. The 'RandomNameCNS.java' file implements a strategy to produce random alphanumeric names prefixed with 'checkpoint_'. 'SimpleNamingService.java' generates names by appending 'checkpoint_' to an initial name. Both classes adhere to the 'CheckpointNamingService' interface, demonstrating the Strategy design pattern. This pattern allows for flexible and modular checkpoint naming strategies.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "checkpoint"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Checkpoint Naming Service Directory\n\nDESCRIPTION: This directory contains classes for generating unique checkpoint names in Hadoop MapReduce. The 'RandomNameCNS.java' file implements a strategy to produce random alphanumeric names prefixed with 'checkpoint_'. 'SimpleNamingService.java' generates names by appending 'checkpoint_' to an initial name. Both classes adhere to the 'CheckpointNamingService' interface, demonstrating the Strategy design pattern. This pattern allows for flexible and modular checkpoint naming strategies."
+}

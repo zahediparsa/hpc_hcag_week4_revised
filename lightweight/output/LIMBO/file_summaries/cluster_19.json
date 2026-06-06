@@ -1,0 +1,74 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 19,
+    "class": "org.apache.hadoop.mapreduce.OutputFormat",
+    "path": "OutputFormat.java",
+    "file_name": "OutputFormat.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define the abstract class `OutputFormat` for specifying the output specifications of a MapReduce job. It outlines the responsibilities of this class, which include providing a `RecordWriter` for writing output files, validating the output specification, and managing output committers.\n\nCORE LOGIC:\nThe core logic revolves around three abstract methods:\n1. `getRecordWriter(TaskAttemptContext context)`: This method is responsible for returning a `RecordWriter` instance to write the output files of the job.\n2. `checkOutputSpecs(JobContext context)`: This method validates the output specification for the job, ensuring it doesn't already exist and throwing an exception if it does to prevent overwriting.\n3. `getOutputCommitter(TaskAttemptContext context)`: This method returns an `OutputCommitter` instance responsible for ensuring the output is committed correctly.\n\nINPUTS/OUTPUTS:\n- Inputs: `TaskAttemptContext` and `JobContext` objects, which contain information about the current task and the job, respectively.\n- Outputs: An abstract `RecordWriter<K, V>` instance for writing job outputs, and an `OutputCommitter` instance for managing output committers.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.TaskAttemptContext`\n- `org.apache.hadoop.mapreduce.JobContext`\n- `org.apache.hadoop.fs.FileSystem` (imported indirectly via `RecordWriter`)\n- `org.apache.hadoop.classification.InterfaceAudience`\n- `org.apache.hadoop.classification.InterfaceStability`\n- `java.io.IOException`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 19,
+    "class": "org.apache.hadoop.mapreduce.lib.db.DBOutputFormat",
+    "path": "lib/db/DBOutputFormat.java",
+    "file_name": "DBOutputFormat.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a custom Hadoop OutputFormat, `DBOutputFormat`, which writes the MapReduce reduce output to a SQL table.\n\nCORE LOGIC:\nThe core logic involves creating a `DBRecordWriter` class that extends Hadoop's `RecordWriter`. This writer uses a `PreparedStatement` to batch insert key data into a specified SQL table. The `close()` method of `DBRecordWriter` executes the batch and commits the transaction. The `write()` method writes key data to the prepared statement, adding it to the batch.\n\nINPUTS/OUTPUTS:\n- INPUTS: The `DBOutputFormat` accepts key-value pairs where the key extends `DBWritable`.\n- OUTPUTS: The reduce output is written to a SQL table, with only the key being inserted using a batch SQL query.\n\nDEPENDENCIES:\n- `java.io.IOException`\n- `java.sql.Connection`\n- `java.sql.DatabaseMetaData`\n- `java.sql.PreparedStatement`\n- `java.sql.SQLException`\n- `org.apache.hadoop.classification.InterfaceAudience`\n- `org.apache.hadoop.classification.InterfaceStability`\n- `org.apache.hadoop.mapreduce.Job`\n- `org.apache.hadoop.mapreduce.JobContext`\n- `org.apache.hadoop.mapreduce.OutputCommitter`\n- `org.apache.hadoop.mapreduce.OutputFormat`\n- `org.apache.hadoop.mapreduce.RecordWriter`\n- `org.apache.hadoop.mapreduce.TaskAttemptContext`\n- `org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter`\n- `org.apache.hadoop.mapreduce.lib.output.FileOutputFormat`\n- `org.apache.hadoop.util.StringUtils`\n- `org.slf4j.Logger`\n- `org.slf4j.LoggerFactory`\n- `org.apache.hadoop.mapreduce.lib.db.DBConfiguration`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 19,
+    "class": "org.apache.hadoop.mapreduce.lib.output.FilterOutputFormat",
+    "path": "lib/output/FilterOutputFormat.java",
+    "file_name": "FilterOutputFormat.java",
+    "directory": "lib/output",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a convenience class, `FilterOutputFormat`, that wraps around another `OutputFormat`. It allows for extending the functionality of an existing output format by adding additional filters or modifications.\n\nCORE LOGIC:\nThe core logic involves extending the `OutputFormat` class and overriding its methods to delegate calls to a nested `baseOut` `OutputFormat` instance. This delegation is managed by the `getBaseOut()` method. Additionally, it introduces a nested static class `FilterRecordWriter` that extends `RecordWriter` to further filter or modify the output at the record level.\n\nINPUTS/OUTPUTS:\n- Inputs: `JobContext` and `TaskAttemptContext` objects are received in the `checkOutputSpecs` method.\n- Outputs: It delegates the creation of `RecordWriter` instances to the `baseOut` `OutputFormat` and does not introduce new output types.\n\nDEPENDENCIES:\n- Imported classes: `java.io.IOException`\n- Collaborator classes: `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`, `org.apache.hadoop.mapreduce.JobContext`, `org.apache.hadoop.mapreduce.OutputCommitter`, `org.apache.hadoop.mapreduce.OutputFormat`, `org.apache.hadoop.mapreduce.RecordWriter`, `org.apache.hadoop.mapreduce.TaskAttemptContext`.\n- Superclass: `org.apache.hadoop.mapreduce.lib.output.OutputFormat<K, V>`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 19,
+    "class": "org.apache.hadoop.mapreduce.lib.output.LazyOutputFormat",
+    "path": "lib/output/LazyOutputFormat.java",
+    "file_name": "LazyOutputFormat.java",
+    "directory": "lib/output",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a convenience class, `LazyOutputFormat`, that creates output lazily. It is used in conjunction with `MultipleOutputs` to recreate the behavior of `MultipleTextOutputFormat` from the old Hadoop API.\n\nCORE LOGIC:\nThe core logic involves setting and managing an underlying output format class for `LazyOutputFormat`. It uses reflection to instantiate the underlying output format class specified in the configuration. The `LazyRecordWriter` class is used to delegate write operations to the underlying output format, ensuring that the actual writing happens lazily.\n\nINPUTS/OUTPUTS:\nThe class takes no direct inputs other than the JobContext and TaskAttemptContext objects. The main output is a `RecordWriter` instance that writes key-value pairs to the configured underlying output format.\n\nDEPENDENCIES:\nThe code chunk depends on several classes from the Hadoop MapReduce library:\n- `org.apache.hadoop.mapreduce.Job`\n- `org.apache.hadoop.mapreduce.JobContext`\n- `org.apache.hadoop.mapreduce.OutputCommitter`\n- `org.apache.hadoop.mapreduce.OutputFormat`\n- `org.apache.hadoop.mapreduce.RecordWriter`\n- `org.apache.hadoop.mapreduce.TaskAttemptContext`\n- `org.apache.hadoop.util.ReflectionUtils`\n\nAdditionally, it imports standard Java classes like `java.io.IOException` and `java.lang.Class`. The class also extends `FilterOutputFormat<K, V>` and implements methods from `OutputFormat<K, V>`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 19,
+    "class": "org.apache.hadoop.mapreduce.lib.output.NullOutputFormat",
+    "path": "lib/output/NullOutputFormat.java",
+    "file_name": "NullOutputFormat.java",
+    "directory": "lib/output",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a class `NullOutputFormat` that extends `OutputFormat<K, V>` from the Apache Hadoop MapReduce library. This class is designed to consume all outputs and discard them, effectively writing all data to `/dev/null`.\n\nCORE LOGIC:\nThe core logic involves overriding methods from the `OutputFormat` abstract class. The `getRecordWriter` method returns a custom `RecordWriter` implementation that does nothing when `write` is called, essentially discarding any data written to it. The `getOutputCommitter` method returns a custom `OutputCommitter` that also does nothing, fulfilling the requirements of the `OutputCommitter` interface without performing any actual commit operations.\n\nINPUTS/OUTPUTS:\n- INPUTS: The class accepts key-value pairs (`K` and `V`) as input, where `K` is the key class and `V` is the value class. These are provided by the Map task in the form of `RecordWriter`.\n- OUTPUTS: All written key-value pairs are discarded, effectively written to `/dev/null`.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.lib.output.OutputFormat`: The abstract class being extended.\n- `org.apache.hadoop.mapreduce.JobContext`: The context for the job.\n- `org.apache.hadoop.mapreduce.TaskAttemptContext`: The context for the task attempt.\n- `org.apache.hadoop.mapreduce.RecordWriter<K, V>`: The interface for writing key-value pairs.\n- `org.apache.hadoop.mapreduce.OutputCommitter`: The interface for committing output.\n- `org.apache.hadoop.classification.InterfaceAudience` and `org.apache.hadoop.classification.InterfaceStability`: Annotation classes for specifying the audience and stability of the interface.\n\nThis class does not depend on any external libraries or classes beyond those in the Hadoop MapReduce library.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 19,
+    "class": "org.apache.hadoop.mapreduce.lib.output.PathOutputCommitter",
+    "path": "lib/output/PathOutputCommitter.java",
+    "file_name": "PathOutputCommitter.java",
+    "directory": "lib/output",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define an abstract class `PathOutputCommitter` that extends `OutputCommitter` from Apache Hadoop MapReduce. This class serves as a base for committers that manage data written to a working directory and commit it to a final directory during the commit process.\n\nCORE LOGIC:\nThe core logic of this class involves constructors for both task attempt and job attempt contexts, methods to get the final output path (`getOutputPath`) and work path (`getWorkPath`), and a predicate to check if an output path is set (`hasOutputPath`). The class also includes logging using SLF4J and input validation using Apache Commons Lang's `Preconditions`.\n\nINPUTS/OUTPUTS:\nThe class doesn't directly handle any data flow. Instead, it manages paths for output and work directories. The inputs are the output path (which can be null) and the context (either `TaskAttemptContext` or `JobContext`). The outputs are abstract methods `getOutputPath()` and `getWorkPath()`, which should be implemented by subclasses, and a string representation of the object (`toString()`).\n\nDEPENDENCIES:\nThe code chunk depends on several classes from the Apache Hadoop and Apache Commons libraries:\n\n- `org.apache.hadoop.mapreduce.lib.output.OutputCommitter`: The parent class from which `PathOutputCommitter` inherits.\n- `org.apache.hadoop.util.Preconditions`: Used for input validation.\n- `org.slf4j.Logger` and `org.slf4j.LoggerFactory`: For logging.\n- `org.apache.hadoop.fs.Path`: For handling file paths.\n- `org.apache.hadoop.mapreduce.JobContext` and `org.apache.hadoop.mapreduce.TaskAttemptContext`: Context objects for job and task attempts, respectively.\n- `java.io.IOException`: For exception handling related to I/O operations.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

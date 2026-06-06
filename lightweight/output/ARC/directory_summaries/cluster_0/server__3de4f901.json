@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "server",
+  "title": "JobTracker and TaskTracker Configuration",
+  "description": "The 'server' directory in Hadoop MapReduce architecture houses configuration interfaces for JobTracker and TaskTracker components. 'JTConfig.java' in 'server/jobtracker' defines JobTracker configuration parameters, extending 'MRConfig'. It serves as a configuration holder, providing constants for IPC address, job status persistence, and memory limits, adhering to the Strategy pattern. 'TTConfig.java' in 'server/tasktracker' offers TaskTracker-specific configuration constants, like TT_MAP_SLOTS and TT_RESOURCE_CALCULATOR_PLUGIN, also extending 'MRConfig'. Both files function as configuration placeholders, with no direct inputs or outputs, and depend on 'MRConfig', illustrating a consistent configuration management approach across Hadoop MapReduce components.",
+  "summary": "TITLE: JobTracker and TaskTracker Configuration\nDESCRIPTION: The 'server' directory in Hadoop MapReduce architecture houses configuration interfaces for JobTracker and TaskTracker components. 'JTConfig.java' in 'server/jobtracker' defines JobTracker configuration parameters, extending 'MRConfig'. It serves as a configuration holder, providing constants for IPC address, job status persistence, and memory limits, adhering to the Strategy pattern. 'TTConfig.java' in 'server/tasktracker' offers TaskTracker-specific configuration constants, like TT_MAP_SLOTS and TT_RESOURCE_CALCULATOR_PLUGIN, also extending 'MRConfig'. Both files function as configuration placeholders, with no direct inputs or outputs, and depend on 'MRConfig', illustrating a consistent configuration management approach across Hadoop MapReduce components.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "server/jobtracker"
+    },
+    {
+      "type": "directory",
+      "name": "server/tasktracker"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobTracker and TaskTracker Configuration\n\nDESCRIPTION: The 'server' directory in Hadoop MapReduce architecture houses configuration interfaces for JobTracker and TaskTracker components. 'JTConfig.java' in 'server/jobtracker' defines JobTracker configuration parameters, extending 'MRConfig'. It serves as a configuration holder, providing constants for IPC address, job status persistence, and memory limits, adhering to the Strategy pattern. 'TTConfig.java' in 'server/tasktracker' offers TaskTracker-specific configuration constants, like TT_MAP_SLOTS and TT_RESOURCE_CALCULATOR_PLUGIN, also extending 'MRConfig'. Both files function as configuration placeholders, with no direct inputs or outputs, and depend on 'MRConfig', illustrating a consistent configuration management approach across Hadoop MapReduce components."
+}

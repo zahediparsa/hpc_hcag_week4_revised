@@ -1,0 +1,41 @@
+{
+  "cluster_id": 5,
+  "title": "Database Integration in Hadoop MapReduce",
+  "description": "Hadoop MapReduce's 'lib/db' directory integrates databases, enabling efficient data processing. It includes 'DBInputFormat', 'DBOutputFormat', and 'DBConfiguration' for database-specific functionalities. Specialized splitters like 'BigDecimalSplitter' and 'DateSplitter' cater to diverse data types. 'MySQLDBRecordReader' and 'OracleDBRecordReader' read database records, while 'MySQLDataDrivenDBRecordReader' and 'OracleDataDrivenDBRecordReader' execute SQL queries. This directory showcases a coordinator pattern, bridging Hadoop's distributed processing with relational databases, supporting multiple systems and data types. The architecture ensures scalability, maintainability, and reliability, leveraging Java for implementation.",
+  "description_word_count": 74,
+  "number_of_files": 21,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Database Integration in Hadoop MapReduce\n\nDESCRIPTION: Hadoop MapReduce's 'lib/db' directory integrates databases, enabling efficient data processing. It includes 'DBInputFormat', 'DBOutputFormat', and 'DBConfiguration' for database-specific functionalities. Specialized splitters like 'BigDecimalSplitter' and 'DateSplitter' cater to diverse data types. 'MySQLDBRecordReader' and 'OracleDBRecordReader' read database records, while 'MySQLDataDrivenDBRecordReader' and 'OracleDataDrivenDBRecordReader' execute SQL queries. This directory showcases a coordinator pattern, bridging Hadoop's distributed processing with relational databases, supporting multiple systems and data types. The architecture ensures scalability, maintainability, and reliability, leveraging Java for implementation.",
+  "algorithm": "ACDC",
+  "files": [
+    "InputSplit.java",
+    "lib/db/BigDecimalSplitter.java",
+    "lib/db/BooleanSplitter.java",
+    "lib/db/DBConfiguration.java",
+    "lib/db/DBInputFormat.java",
+    "lib/db/DBOutputFormat.java",
+    "lib/db/DBRecordReader.java",
+    "lib/db/DBSplitter.java",
+    "lib/db/DBWritable.java",
+    "lib/db/DataDrivenDBInputFormat.java",
+    "lib/db/DataDrivenDBRecordReader.java",
+    "lib/db/DateSplitter.java",
+    "lib/db/FloatSplitter.java",
+    "lib/db/IntegerSplitter.java",
+    "lib/db/MySQLDBRecordReader.java",
+    "lib/db/MySQLDataDrivenDBRecordReader.java",
+    "lib/db/OracleDBRecordReader.java",
+    "lib/db/OracleDataDrivenDBInputFormat.java",
+    "lib/db/OracleDataDrivenDBRecordReader.java",
+    "lib/db/OracleDateSplitter.java",
+    "lib/db/TextSplitter.java"
+  ]
+}

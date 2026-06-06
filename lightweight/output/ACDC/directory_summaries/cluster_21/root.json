@@ -1,0 +1,34 @@
+{
+  "type": "directory",
+  "cluster_id": 21,
+  "directory": ".",
+  "title": "MapReduce Context and Iterator Management",
+  "description": "The 'task' directory focuses on task-level context management in Hadoop MapReduce. It includes classes like JobContextImpl, ReduceContextImpl, and TaskAttemptContextImpl. JobContextImpl provides job configuration details, while ReduceContextImpl handles key-value pairs during the reduce phase. TaskAttemptContextImpl manages individual task attempts, including task ID, status, and reporting mechanisms. This directory exemplifies a layered architectural pattern, ensuring a clear separation of concerns and modularity. The 'lib' directory, on the other hand, houses Java files defining custom input and partitioning mechanisms, showcasing the Strategy pattern for flexibility and extensibility in MapReduce processing.",
+  "summary": "TITLE: MapReduce Context and Iterator Management\nDESCRIPTION: The 'task' directory focuses on task-level context management in Hadoop MapReduce. It includes classes like JobContextImpl, ReduceContextImpl, and TaskAttemptContextImpl. JobContextImpl provides job configuration details, while ReduceContextImpl handles key-value pairs during the reduce phase. TaskAttemptContextImpl manages individual task attempts, including task ID, status, and reporting mechanisms. This directory exemplifies a layered architectural pattern, ensuring a clear separation of concerns and modularity. The 'lib' directory, on the other hand, houses Java files defining custom input and partitioning mechanisms, showcasing the Strategy pattern for flexibility and extensibility in MapReduce processing.",
+  "number_of_children": 5,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "MarkableIterator.java"
+    },
+    {
+      "type": "file",
+      "name": "MarkableIteratorInterface.java"
+    },
+    {
+      "type": "file",
+      "name": "ReduceContext.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib"
+    },
+    {
+      "type": "directory",
+      "name": "task"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Context and Iterator Management\n\nDESCRIPTION:\nThe 'task' directory focuses on task-level context management in Hadoop MapReduce. It includes classes like JobContextImpl, ReduceContextImpl, and TaskAttemptContextImpl. JobContextImpl provides job configuration details, while ReduceContextImpl handles key-value pairs during the reduce phase. TaskAttemptContextImpl manages individual task attempts, including task ID, status, and reporting mechanisms. This directory exemplifies a layered architectural pattern, ensuring a clear separation of concerns and modularity. The 'lib' directory, on the other hand, houses Java files defining custom input and partitioning mechanisms, showcasing the Strategy pattern for flexibility and extensibility in MapReduce processing."
+}

@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 16,
+  "directory": "security/token/delegation",
+  "title": "MapReduce Delegation Token Management",
+  "description": "The 'security/token/delegation' directory in Hadoop MapReduce architecture is dedicated to managing delegation tokens for secure job submission and tracking. The core components include 'DelegationTokenIdentifier.java', which creates and manages MapReduce-specific delegation tokens, 'DelegationTokenSecretManager.java', responsible for the lifecycle of these tokens, and 'DelegationTokenSelector.java', which specializes in selecting MapReduce delegation tokens. These components collaborate to ensure secure access and job tracking in Hadoop MapReduce jobs, adhering to the Delegate pattern for secure token management. The system relies on various Hadoop security and token delegation classes for functionality, demonstrating a clear architectural role in enhancing MapReduce security.",
+  "summary": "TITLE: MapReduce Delegation Token Management\nDESCRIPTION: The 'security/token/delegation' directory in Hadoop MapReduce architecture is dedicated to managing delegation tokens for secure job submission and tracking. The core components include 'DelegationTokenIdentifier.java', which creates and manages MapReduce-specific delegation tokens, 'DelegationTokenSecretManager.java', responsible for the lifecycle of these tokens, and 'DelegationTokenSelector.java', which specializes in selecting MapReduce delegation tokens. These components collaborate to ensure secure access and job tracking in Hadoop MapReduce jobs, adhering to the Delegate pattern for secure token management. The system relies on various Hadoop security and token delegation classes for functionality, demonstrating a clear architectural role in enhancing MapReduce security.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "DelegationTokenIdentifier.java"
+    },
+    {
+      "type": "file",
+      "name": "DelegationTokenSecretManager.java"
+    },
+    {
+      "type": "file",
+      "name": "DelegationTokenSelector.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Delegation Token Management\n\nDESCRIPTION:\nThe 'security/token/delegation' directory in Hadoop MapReduce architecture is dedicated to managing delegation tokens for secure job submission and tracking. The core components include 'DelegationTokenIdentifier.java', which creates and manages MapReduce-specific delegation tokens, 'DelegationTokenSecretManager.java', responsible for the lifecycle of these tokens, and 'DelegationTokenSelector.java', which specializes in selecting MapReduce delegation tokens. These components collaborate to ensure secure access and job tracking in Hadoop MapReduce jobs, adhering to the Delegate pattern for secure token management. The system relies on various Hadoop security and token delegation classes for functionality, demonstrating a clear architectural role in enhancing MapReduce security."
+}

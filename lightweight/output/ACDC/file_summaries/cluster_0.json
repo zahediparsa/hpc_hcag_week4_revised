@@ -1,0 +1,110 @@
+[
+  {
+    "algorithm": "ACDC",
+    "cluster": 0,
+    "class": "org.apache.hadoop.mapreduce.checkpoint.CheckpointID",
+    "path": "checkpoint/CheckpointID.java",
+    "file_name": "CheckpointID.java",
+    "directory": "checkpoint",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define an interface named `CheckpointID` that extends `Writable` and represents an identifier for a checkpoint in Apache Hadoop MapReduce.\n\nCORE LOGIC:\nThis chunk does not contain any key algorithms or processing patterns as it's merely a definition of an interface. The core logic would be implemented by classes that extend this interface, providing the necessary methods to manage checkpoint metadata.\n\nINPUTS/OUTPUTS:\nThere are no explicit inputs or outputs in this code chunk, as it's an interface definition. Classes implementing this interface would handle the input (checkpoint metadata) and output (serialization via the `Writable` interface) aspects.\n\nDEPENDENCIES:\nThe key dependency in this chunk is the `org.apache.hadoop.io.Writable` interface, which is imported and extended by the `CheckpointID` interface. This dependency indicates that any class implementing `CheckpointID` must also implement the `Writable` interface, enabling serialization for checkpoint metadata.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 0,
+    "class": "org.apache.hadoop.mapreduce.checkpoint.CheckpointNamingService",
+    "path": "checkpoint/CheckpointNamingService.java",
+    "file_name": "CheckpointNamingService.java",
+    "directory": "checkpoint",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this chunk is to define an interface, `CheckpointNamingService`, for generating new checkpoint names.\n\nCORE LOGIC:\nThe core logic involves a single method, `getNewName()`, which is declared to return a String representing a new checkpoint name. There is no complex algorithm or processing pattern visible in this chunk, as it's merely a definition of an interface.\n\nINPUTS/OUTPUTS:\nThere are no inputs specified in this chunk as it's an interface definition. The output is a String, which represents a newly generated checkpoint name, as indicated by the `getNewName()` method.\n\nDEPENDENCIES:\nThe chunk imports and depends on the `org.apache.hadoop.mapreduce` package, specifically defining an interface within the `Checkpoint` sub-package. It doesn't directly depend on any other classes, as it's an abstract definition. Implementations of this interface would provide the actual logic for generating checkpoint names.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 0,
+    "class": "org.apache.hadoop.mapreduce.checkpoint.CheckpointService",
+    "path": "checkpoint/CheckpointService.java",
+    "file_name": "CheckpointService.java",
+    "directory": "checkpoint",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define the interface for the CheckpointService in Apache Hadoop MapReduce. This service is designed to store and retrieve the state of a task, ensuring atomicity, single-writer, write-once, multiple-readers, and ready-many properties for checkpoints.\n\nCORE LOGIC:\nThe core logic revolves around the methods of the CheckpointService interface, which includes:\n- `create()`: Initiates a checkpoint and provides a writable channel for writing to it.\n- `commit(CheckpointWriteChannel ch)`: Finalizes an existing checkpoint, returning a CheckpointID for future read-only access, ensuring atomicity.\n- `abort(CheckpointWriteChannel ch)`: Aborts the current checkpoint, not releasing the CheckpointID, thus making it inaccessible.\n- `open(CheckpointID id)`: Given a CheckpointID, returns a readable channel to access the checkpoint.\n- `delete(CheckpointID id)`: Discards an existing checkpoint identified by its CheckpointID.\n\nINPUTS/OUTPUTS:\n- Inputs: CheckpointWriteChannel (for write operations), CheckpointID (for read operations), and exceptions (IOException, InterruptedException).\n- Outputs: CheckpointWriteChannel (for writing to checkpoints), CheckpointID (for identifying checkpoints), CheckpointReadChannel (for reading checkpoints), and boolean (for deletion confirmation).\n\nDEPENDENCIES:\n- The code chunk depends on classes and interfaces from the Java NIO package: ReadableByteChannel and WritableByteChannel.\n- It also depends on the CheckpointID and CheckpointWriteChannel, CheckpointReadChannel interfaces defined within the same package (org.apache.hadoop.mapreduce.checkpoint).\n- Standard Java exceptions: IOException and InterruptedException.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 0,
+    "class": "org.apache.hadoop.mapreduce.checkpoint.EnumCounter",
+    "path": "checkpoint/EnumCounter.java",
+    "file_name": "EnumCounter.java",
+    "directory": "checkpoint",
+    "summary": "KEY FUNCTIONALITY: This code chunk defines an enumeration (Enum) named `EnumCounter` in the `org.apache.hadoop.mapreduce.checkpoint` package. The enumeration lists specific string constants that likely represent different types of counters or metrics used in the context of Hadoop MapReduce's checkpointing functionality.\n\nCORE LOGIC: The core logic in this chunk is the definition of an enumeration (Enum) called `EnumCounter`. This Enum lists several string values: `INPUTKEY`, `INPUTVALUE`, `OUTPUTRECORDS`, `CHECKPOINT_BYTES`, and `CHECKPOINT_MS`. These string constants likely represent different categories or types of counters or metrics used in the MapReduce framework, specifically in the context of checkpoints.\n\nINPUTS/OUTPUTS: There are no direct inputs or outputs in this code chunk as it's just defining a set of constants. These constants (`EnumCounter` values) can be used throughout the MapReduce system to categorize or identify different types of counters or metrics.\n\nDEPENDENCIES: The key imported class visible in this chunk is `java.lang.Enum`, as it's extending this class to create the `EnumCounter`. There are no direct collaborator classes mentioned in this chunk, as it's self-contained in defining the enumeration. However, this Enum is part of the broader `org.apache.hadoop.mapreduce.checkpoint` package, implying it collaborates with other classes in this package and potentially in the `org.apache.hadoop.mapreduce` package for general MapReduce functionality.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 0,
+    "class": "org.apache.hadoop.mapreduce.checkpoint.FSCheckpointID",
+    "path": "checkpoint/FSCheckpointID.java",
+    "file_name": "FSCheckpointID.java",
+    "directory": "checkpoint",
+    "summary": "KEY FUNCTIONALITY: This Java class, `FSCheckpointID`, implements the `CheckpointID` interface from Apache Hadoop MapReduce. It is used to store and manage the location (Path) of a checkpoint in a file system (FileSystem).\n\nCORE LOGIC: The class contains a single field `path` of type `Path` to store the location of the checkpoint. It provides methods to create a `FSCheckpointID` object with a given Path, retrieve the Path, convert the object to a string (its path), write its state to a DataOutput, read its state from a DataInput, and check for equality with another `FSCheckpointID` object.\n\nINPUTS/OUTPUTS: The class takes a `Path` object as input during its construction. It outputs a string representation of the Path when `toString()` is called, and writes its state (the Path) to a `DataOutput` when `write()` is invoked. Conversely, it reads its state (Path) from a `DataInput` when `readFields()` is called.\n\nDEPENDENCIES: The class depends on several classes from the Hadoop common library: `DataInput`, `DataOutput`, `IOException`, `Path`, and `Text`. It is part of the package `org.apache.hadoop.mapreduce.checkpoint`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 0,
+    "class": "org.apache.hadoop.mapreduce.checkpoint.FSCheckpointService",
+    "path": "checkpoint/FSCheckpointService.java",
+    "file_name": "FSCheckpointService.java",
+    "directory": "checkpoint",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to implement a FileSystem-based CheckpointService for Apache Hadoop MapReduce. This service is responsible for creating, opening, committing, and aborting checkpoints stored in the Hadoop Distributed File System (HDFS).\n\nCORE LOGIC:\n1. The `FSCheckpointService` class implements the `CheckpointService` interface.\n2. It uses a `FileSystem` instance to interact with HDFS.\n3. The `create` method generates a new checkpoint name using a `CheckpointNamingService` and creates a temporary file for writing.\n4. The `createInternal` method creates a `FSCheckpointWriteChannel` instance, which wraps a `WritableByteChannel` for writing data to the temporary file in HDFS.\n5. The `open` method opens an existing checkpoint for reading, returning a `FSCheckpointReadChannel` instance that wraps a `ReadableByteChannel`.\n6. The `commit` method finalizes a checkpoint by renaming the temporary file to its final destination in HDFS.\n7. The `abort` method deletes the temporary file if the checkpoint is not successfully committed.\n8. The `delete` method removes a checkpoint from HDFS.\n\nINPUTS/OUTPUTS:\n- Inputs: `FileSystem`, `Path` (base directory), `CheckpointNamingService`, replication factor.\n- Outputs: `CheckpointWriteChannel` (for creating new checkpoints), `CheckpointReadChannel` (for opening existing checkpoints), `CheckpointID` (for committed checkpoints).\n\nDEPENDENCIES:\n- `java.io.IOException`\n- `java.nio.ByteBuffer`\n- `java.nio.channels.ReadableByteChannel`\n- `java.nio.channels.WritableByteChannel`\n- `java.nio.channels.Channels`\n- `java.nio.file.Paths`\n- `org.apache.hadoop.fs.FSDataInputStream`\n- `org.apache.hadoop.fs.FSDataOutputStream`\n- `org.apache.hadoop.fs.FileSystem`\n- `org.apache.hadoop.fs.Path`\n- `org.apache.hadoop.mapreduce.CheckpointService`\n- `org.apache.hadoop.mapreduce.CheckpointNamingService`\n- `org.apache.hadoop.mapreduce.CheckpointID`\n- `org.apache.hadoop.map",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 0,
+    "class": "org.apache.hadoop.mapreduce.checkpoint.RandomNameCNS",
+    "path": "checkpoint/RandomNameCNS.java",
+    "file_name": "RandomNameCNS.java",
+    "directory": "checkpoint",
+    "summary": "KEY FUNCTIONALITY: The main purpose of this chunk is to implement the `getNewName()` method of the `CheckpointNamingService` interface, which generates a random alphanumeric string to be used as a checkpoint name.\n\nCORE LOGIC: The core logic of this class revolves around the `getNewName()` method. It uses the `RandomStringUtils.randomAlphanumeric(8)` method from the Apache Commons Lang library to generate an 8-character long random alphanumeric string and prefixes it with \"checkpoint_\".\n\nINPUTS: The method `getNewName()` does not take any explicit inputs. It relies on the internal logic to generate the random string.\n\nOUTPUTS: The method `getNewName()` returns a String, which is a randomly generated name prefixed with \"checkpoint_\".\n\nDEPENDENCIES: The key dependency for this class is the `org.apache.commons.lang3.RandomStringUtils` class from the Apache Commons Lang library, which is used to generate the random alphanumeric string. Additionally, it implements the `org.apache.hadoop.mapreduce.checkpoint.CheckpointNamingService` interface.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 0,
+    "class": "org.apache.hadoop.mapreduce.checkpoint.SimpleNamingService",
+    "path": "checkpoint/SimpleNamingService.java",
+    "file_name": "SimpleNamingService.java",
+    "directory": "checkpoint",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this chunk is to define a class `SimpleNamingService` that implements the `CheckpointNamingService` interface. This class generates checkpoint names by appending the string \"checkpoint_\" to a given name during initialization.\n\nCORE LOGIC:\nThe core logic of this class involves a constructor that takes a String argument, `name`, and stores it as an instance variable. The `getNewName()` method returns a new checkpoint name by concatenating the stored `name` with the string \"checkpoint_\".\n\nINPUTS:\nThe class takes a single input, a String argument named `name`, during initialization.\n\nOUTPUTS:\nThe class provides a method `getNewName()` that returns a String, which is a new checkpoint name generated by concatenating \"checkpoint_\" with the stored `name`.\n\nDEPENDENCIES:\nThe class depends on the `org.apache.hadoop.mapreduce.checkpoint` package and implements the `CheckpointNamingService` interface. It does not explicitly show dependencies on other classes within this snippet, but it's clear that it's part of the Apache Hadoop MapReduce library.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 0,
+    "class": "org.apache.hadoop.mapreduce.checkpoint.TaskCheckpointID",
+    "path": "checkpoint/TaskCheckpointID.java",
+    "file_name": "TaskCheckpointID.java",
+    "directory": "checkpoint",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class, `TaskCheckpointID`, is to encapsulate metadata related to checkpoints in a Hadoop MapReduce task. This includes a reference to a file system-based checkpoint (`FSCheckpointID`), a list of partially committed output paths (`List<Path>`), and various counters (`Counters`).\n\nCORE LOGIC:\n- The class implements `CheckpointID` interface, providing methods to write and read its state using `DataOutput` and `DataInput`.\n- The `writeFields` method serializes the `TaskCheckpointID` object, writing the counters, the size of the partial output list, each path in the list, and the raw checkpoint ID.\n- The `readFields` method deserializes the `TaskCheckpointID` object, reading the counters, the number of partial output paths, each path, and the raw checkpoint ID.\n- The `equals` method checks for equality between two `TaskCheckpointID` objects by comparing their `rawId`, `counters`, and `partialOutput`.\n- Methods `getCheckpointBytes` and `getCheckpointTime` retrieve the size in bytes and the time taken for the checkpoint, respectively, using the counters.\n\nINPUTS/OUTPUTS:\n- Inputs: `FSCheckpointID`, `List<Path>`, `Counters` (during construction).\n- Outputs: None directly. The class is designed to serialize its state using `DataOutput` for storage or transmission.\n\nDEPENDENCIES:\n- `java.io.DataInput`, `java.io.DataOutput`, `java.io.IOException`\n- `java.util.ArrayList`, `java.util.List`\n- `java.util.Text`\n- `org.apache.hadoop.fs.Path`\n- `org.apache.hadoop.io.WritableUtils`\n- `org.apache.hadoop.mapred.Counters`\n- `org.apache.hadoop.mapreduce.checkpoint.FSCheckpointID` (implicitly, through `rawId`)\n- `org.apache.hadoop.mapreduce.CheckpointID` (interface implemented by this class)",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

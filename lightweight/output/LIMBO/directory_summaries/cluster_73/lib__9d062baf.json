@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 73,
+  "directory": "lib",
+  "title": "Hadoop MapReduce Library for Join Operations and Output Management",
+  "description": "The 'lib' directory in Hadoop MapReduce houses crucial libraries for managing complex data structures and job outputs. The 'join' subdirectory contains the TupleWritable class, which facilitates the handling of multiple Writable objects in a tuple format, essential for intricate data manipulations like join operations. Meanwhile, the 'output' directory includes ManifestCommitterConstants.java, a configuration repository defining constants for job-related files and directories, ensuring consistent and predictable file handling across the MapReduce framework. These components collectively support the MapReduce's architectural pattern of distributed data processing and storage.",
+  "summary": "TITLE: Hadoop MapReduce Library for Join Operations and Output Management\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce houses crucial libraries for managing complex data structures and job outputs. The 'join' subdirectory contains the TupleWritable class, which facilitates the handling of multiple Writable objects in a tuple format, essential for intricate data manipulations like join operations. Meanwhile, the 'output' directory includes ManifestCommitterConstants.java, a configuration repository defining constants for job-related files and directories, ensuring consistent and predictable file handling across the MapReduce framework. These components collectively support the MapReduce's architectural pattern of distributed data processing and storage.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/join"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Library for Join Operations and Output Management\n\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce houses crucial libraries for managing complex data structures and job outputs. The 'join' subdirectory contains the TupleWritable class, which facilitates the handling of multiple Writable objects in a tuple format, essential for intricate data manipulations like join operations. Meanwhile, the 'output' directory includes ManifestCommitterConstants.java, a configuration repository defining constants for job-related files and directories, ensuring consistent and predictable file handling across the MapReduce framework. These components collectively support the MapReduce's architectural pattern of distributed data processing and storage."
+}

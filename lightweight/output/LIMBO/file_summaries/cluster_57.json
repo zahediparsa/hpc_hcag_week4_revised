@@ -1,0 +1,110 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 57,
+    "class": "org.apache.hadoop.mapreduce.lib.db.DBInputFormat",
+    "path": "lib/db/DBInputFormat.java",
+    "file_name": "DBInputFormat.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\nThis code defines a custom Hadoop InputFormat, `DBInputFormat`, which reads input data from an SQL table. It emits LongWritable keys containing record numbers and DBWritable values representing the SQL table rows. The SQL query and input class are configured using one of the two `setInput` methods.\n\nCORE LOGIC:\n1. The `DBInputFormat` class extends `InputFormat<LongWritable, T>` where `T` extends `DBWritable`.\n2. It uses a `DBConfiguration` object to store configuration parameters like input table name, field names, conditions, and query.\n3. The `setConf` method initializes the connection to the database, retrieves metadata, and sets up the table name, field names, and conditions.\n4. The `createDBRecordReader` method creates a specific `RecordReader` based on the database product (Oracle, MySQL, or generic).\n5. The `getSplits` method divides the total rows into chunks for parallel processing by MapReduce.\n6. The `getCountQuery` method constructs a SQL query to count the total number of rows in the table.\n7. The `setInput` methods configure the input settings for the MapReduce job, including the input class, table name, conditions, and optional query.\n\nINPUTS/OUTPUTS:\n- INPUTS: Configuration parameters (table name, field names, conditions, query) are read from the Hadoop job configuration.\n- OUTPUTS: `DBInputFormat` emits pairs of `LongWritable` (record number) and `DBWritable` (SQL table row).\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.lib.db`: This class is part of the Hadoop DB library, which depends on standard Hadoop classes like `InputFormat`, `RecordReader`, `Configuration`, `Job`, `JobContext`, and `TaskAttemptContext`.\n- `java.sql.*`: For interacting with SQL databases.\n- `org.apache.hadoop.io`: For `Writable` interface and `LongWritable` class.\n- `org.apache.hadoop.classification`: For interface annotations.\n- `org.slf4j`: For logging.\n- `org.apache.hadoop.util`: For utility methods like `StringUtils`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 57,
+    "class": "org.apache.hadoop.mapreduce.lib.db.DBRecordReader",
+    "path": "lib/db/DBRecordReader.java",
+    "file_name": "DBRecordReader.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define the `DBRecordReader` class, which is a specialized `RecordReader` for reading records from a SQL table in Apache Hadoop MapReduce.\n\nCORE LOGIC:\nThe core logic involves initializing the reader with necessary parameters (like SQL query, table name, conditions, field names, database configuration, and connection), executing a SQL query to fetch records based on the provided split, conditions, and order, and then reading these records in the `nextKeyValue()` method. It emits `LongWritable` keys (representing record numbers) and `DBWritable` values (representing the actual record data).\n\nINPUTS/OUTPUTS:\n- Inputs: `DBInputFormat.DBInputSplit`, `Class<T> inputClass`, `Configuration conf`, `Connection conn`, `DBConfiguration dbConfig`, `String cond`, `String [] fields`, `String table`\n- Outputs: `LongWritable` keys and `T` values (where `T` extends `DBWritable`)\n\nDEPENDENCIES:\n- Imported classes: `java.io.IOException`, `java.sql.Connection`, `java.sql.PreparedStatement`, `java.sql.ResultSet`, `java.sql.SQLException`\n- Parent/Collaborator classes: `org.apache.hadoop.mapreduce.lib.db.DBInputFormat`, `org.apache.hadoop.io.LongWritable`, `org.apache.hadoop.mapreduce.RecordReader`, `org.apache.hadoop.mapreduce.TaskAttemptContext`, `org.apache.hadoop.util.ReflectionUtils`, `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`, `org.apache.hadoop.conf.Configuration`, `org.slf4j.Logger`, `org.slf4j.LoggerFactory`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 57,
+    "class": "org.apache.hadoop.mapreduce.lib.db.DataDrivenDBInputFormat",
+    "path": "lib/db/DataDrivenDBInputFormat.java",
+    "file_name": "DataDrivenDBInputFormat.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\nThe main functionality of this code chunk is to define a custom InputFormat for Hadoop MapReduce jobs that reads input data from an SQL table. It generates WHERE clauses to separate data into roughly equivalent shards for parallel processing.\n\nCORE LOGIC:\nThe core logic involves creating a custom InputSplit, `DataDrivenDBInputSplit`, which holds lower and upper bound clauses for splitting data. The `getSplits` method constructs a bounding query based on the table's order-by column and SQL data type, then uses a `DBSplitter` to divide the table into InputSplits. The splitter type is determined by the SQL data type.\n\nINPUTS/OUTPUTS:\n- Inputs: Job context (`JobContext job`), Configuration (`Configuration conf`), and a `DBConfiguration` object containing database connection details, table name, conditions, order-by column, field names, and custom queries.\n- Outputs: A list of `InputSplit` objects (`List<InputSplit> splits`), which are used by the MapReduce framework to distribute tasks across nodes.\n\nDEPENDENCIES:\n- Imported classes: `java.io.DataInput`, `java.io.DataOutput`, `java.io.IOException`, `java.sql.ResultSet`, `java.sql.SQLException`, `java.sql.Statement`, `java.sql.Types`, `java.util.ArrayList`, `java.util.List`, `org.slf4j.Logger`, `org.slf4j.LoggerFactory`, `org.apache.hadoop.io.LongWritable`, `org.apache.hadoop.io.Text`, `org.apache.hadoop.mapreduce.InputSplit`, `org.apache.hadoop.mapreduce.Job`, `org.apache.hadoop.mapreduce.JobContext`, `org.apache.hadoop.mapreduce.MRJobConfig`, `org.apache.hadoop.mapreduce.RecordReader`, `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`, `org.apache.hadoop.conf.Configurable`, `org.apache.hadoop.conf.Configuration`.\n- Parent/collaborator classes: `org.apache.hadoop.mapreduce.lib.db.DBInputFormat<T>` and `org.apache.hadoop.mapreduce.lib.db.DBSplitter`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 57,
+    "class": "org.apache.hadoop.mapreduce.lib.db.DataDrivenDBRecordReader",
+    "path": "lib/db/DataDrivenDBRecordReader.java",
+    "file_name": "DataDrivenDBRecordReader.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a constructor and a method for the `DataDrivenDBRecordReader` class, which is a part of Apache Hadoop MapReduce library. This class extends `DBRecordReader` and is designed to read records from a SQL table using data-driven WHERE clause splits. It emits LongWritable keys (representing record numbers) and DBWritable values.\n\nCORE LOGIC:\nThe core logic of this chunk revolves around the `getSelectQuery` method. This method constructs a SQL SELECT query based on the provided parameters, including the lower and upper bounds of the data split, user-defined conditions, table name, and database product. It handles two scenarios: when the user provides a complete query with a substitution token for the WHERE clause, and when the library needs to generate the entire query.\n\nINPUTS/OUTPUTS:\n- INPUTS: The method takes several inputs, including `DBInputFormat.DataDrivenDBInputSplit` (representing the data split), `Class<T> inputClass` (the type of DBWritable to read), `Configuration conf` (Hadoop configuration), `Connection conn` (database connection), `DBConfiguration dbConfig` (database-specific configuration), `String cond` (user-defined conditions), `String[] fields` (field names), `String table` (table name), and `String dbProduct` (database manufacturer string).\n- OUTPUTS: The method returns a `String` representing the constructed SQL SELECT query.\n\nDEPENDENCIES:\n- Imported classes: `java.sql.Connection`, `java.sql.SQLException`\n- Parent class: `org.apache.hadoop.mapreduce.lib.db.DBRecordReader<T>`\n- Collaborator classes: `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`, `org.apache.hadoop.conf.Configuration`, `org.slf4j.Logger`, `org.slf4j.LoggerFactory`, `org.apache.hadoop.mapreduce.lib.db.DBInputFormat.DataDrivenDBInputSplit`, `org.apache.hadoop.mapreduce.lib.db.DBConfiguration`, and `org.apache.hadoop.io.DBWritable`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 57,
+    "class": "org.apache.hadoop.mapreduce.lib.db.MySQLDBRecordReader",
+    "path": "lib/db/MySQLDBRecordReader.java",
+    "file_name": "MySQLDBRecordReader.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define the constructor and a method for the `MySQLDBRecordReader` class, which is a part of Apache Hadoop MapReduce library. This class extends `DBRecordReader` and is designed to read records from a MySQL table.\n\nCORE LOGIC:\nThe core logic involves initializing the superclass `DBRecordReader` with specific parameters in the constructor and implementing a method `executeQuery` to execute SQL queries on a MySQL database. This method configures the SQL statement to be executed in unbuffered mode for row-at-a-time reading, which is efficient for large datasets.\n\nINPUTS/OUTPUTS:\nInputs:\n- `DBInputFormat.DBInputSplit split`: Split information for the database input.\n- `Class<T> inputClass`: The class type of the data to be read.\n- `Configuration conf`: Hadoop configuration settings.\n- `Connection conn`: Database connection.\n- `DBConfiguration dbConfig`: Database-specific configuration.\n- `String cond`: Optional condition for the query.\n- `String [] fields`: Array of fields to be read.\n- `String table`: Name of the database table.\n\nOutputs: None explicitly shown in this chunk, but the method `executeQuery` returns a `ResultSet` object containing the records fetched from the MySQL database.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.lib.db.DBRecordReader<T>`: Parent class for reading records from a database.\n- `java.sql.Connection`: Represents a connection to a database.\n- `java.sql.ResultSet`: Represents a set of rows fetched from the database.\n- `java.sql.SQLException`: Represents the exceptions that can occur when dealing with SQL operations.\n- `org.apache.hadoop.conf.Configuration`: Configuration interface for Hadoop.\n- `org.apache.hadoop.mapreduce.lib.db.DBInputFormat.DBInputSplit`: Split information for database input.\n- `org.apache.hadoop.mapreduce.lib.db.DBConfiguration`: Database-specific configuration.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 57,
+    "class": "org.apache.hadoop.mapreduce.lib.db.MySQLDataDrivenDBRecordReader",
+    "path": "lib/db/MySQLDataDrivenDBRecordReader.java",
+    "file_name": "MySQLDataDrivenDBRecordReader.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\nThe main functionality of this code chunk is to define a specialized `MySQLDataDrivenDBRecordReader` class that extends `DataDrivenDBRecordReader` for reading records from a MySQL database.\n\nCORE LOGIC:\nThe core logic involves the constructor that initializes the superclass `DataDrivenDBRecordReader` with specific parameters including a `DBInputSplit`, the input class, configuration, database connection, database configuration, condition, fields, table name, and a string identifier for MySQL. The key algorithm is the `executeQuery` method, which prepares and executes a SQL query in unbuffered mode for efficient row-at-a-time reading in MySQL.\n\nINPUTS/OUTPUTS:\nInputs:\n- `DBInputFormat.DBInputSplit split`: Represents the split information for the input.\n- `Class<T> inputClass`: The class type of the data to be read.\n- `Configuration conf`: The Hadoop configuration.\n- `Connection conn`: The database connection.\n- `DBConfiguration dbConfig`: Database-specific configuration.\n- `String cond`: A condition string for filtering data.\n- `String[] fields`: An array of field names to read.\n- `String table`: The name of the database table.\n\nOutputs:\n- `ResultSet executeQuery(String query)`: Executes the given SQL query and returns a `ResultSet` for iterating over the result.\n\nDEPENDENCIES:\n- `java.sql.Connection`\n- `java.sql.ResultSet`\n- `java.sql.SQLException`\n- `org.apache.hadoop.mapreduce.lib.db.DBInputFormat.DBInputSplit`\n- `org.apache.hadoop.classification.InterfaceAudience`\n- `org.apache.hadoop.classification.InterfaceStability`\n- `org.apache.hadoop.conf.Configuration`\n- `org.apache.hadoop.mapreduce.lib.db.DataDrivenDBRecordReader`\n- `org.apache.hadoop.mapreduce.lib.db.DBConfiguration`\n- `org.apache.hadoop.mapreduce.lib.db.DBWritable`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 57,
+    "class": "org.apache.hadoop.mapreduce.lib.db.OracleDBRecordReader",
+    "path": "lib/db/OracleDBRecordReader.java",
+    "file_name": "OracleDBRecordReader.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define the OracleDBRecordReader class, which extends the DBRecordReader class. This class is designed to read records from an Oracle SQL table as part of a Hadoop MapReduce job.\n\nCORE LOGIC:\nThe core logic involves the construction of a SQL query in the `getSelectQuery()` method. This method constructs a query string based on the provided configuration, conditions, table name, and field names. If a prebuilt query is not specified, it generates a standard Oracle SQL query. If the split length is greater than zero, it modifies the query to use Oracle's ROWNUM pseudocolumn for pagination, ensuring that only a specific range of records is read. The `setSessionTimeZone()` method uses Java reflection to set the session time zone on the Oracle database connection, ensuring correct handling of TIMESTAMP WITH LOCAL TIME ZONE columns.\n\nINPUTS/OUTPUTS:\nThe class takes several inputs, including a DBInputFormat.DBInputSplit object, a Class object representing the input data type (which must extend DBWritable), a Configuration object, a Connection object, a DBConfiguration object, a condition string, an array of field names, and a table name.\n\nThe main output is a String representing the SQL query to be executed against the Oracle database.\n\nDEPENDENCIES:\nThis chunk depends on several classes from the Apache Hadoop and Java standard libraries:\n\n1. org.apache.hadoop.mapreduce.lib.db.DBRecordReader: The parent class for reading records from a database.\n2. java.io.IOException: For handling input/output exceptions.\n3. java.sql.Connection: For establishing a connection to the Oracle database.\n4. java.sql.SQLException: For handling SQL-related exceptions.\n5. java.lang.reflect.Method: For using reflection to call the setSessionTimeZone method on the OracleConnection class.\n6. org.apache.hadoop.classification.InterfaceAudience and org.apache.hadoop.classification.InterfaceStability: For specifying the audience and stability interface of the class.\n7. org.apache.hadoop.conf.Configuration: For accessing Hadoop configuration settings.\n8. org.slf4j.Logger and org.slf4j.LoggerFactory: For logging messages.\n9. java.util.StringBuilder: For constructing the SQL query string.\n\nAdditionally, it assumes the existence of",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 57,
+    "class": "org.apache.hadoop.mapreduce.lib.db.OracleDataDrivenDBInputFormat",
+    "path": "lib/db/OracleDataDrivenDBInputFormat.java",
+    "file_name": "OracleDataDrivenDBInputFormat.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define the OracleDataDrivenDBInputFormat class, which extends DataDrivenDBInputFormat and implements Configurable. This class is designed to read input data from an SQL table in an Oracle database.\n\nCORE LOGIC:\nThe core logic involves overriding two methods from the parent class DataDrivenDBInputFormat. The first method, getSplitter, returns an instance of OracleDateSplitter if the SQL data type is DATE, TIME, or TIMESTAMP; otherwise, it calls the parent class's implementation. The second method, createDBRecordReader, creates and returns an instance of OracleDataDrivenDBRecordReader, which is an Oracle-specific record reader for the given DBInputSplit, configuration, and database connection.\n\nINPUTS/OUTPUTS:\nThe class does not directly handle input or output data flow. Instead, it prepares the environment for reading data from an Oracle SQL table. The input comes in the form of a DBInputSplit, Configuration, and other parameters, which are used to create a RecordReader instance (OracleDataDrivenDBRecordReader) that will handle the actual data reading from the database.\n\nDEPENDENCIES:\nThe code chunk depends on several classes and packages:\n\n1. java.io.IOException: For handling and propagating database-related exceptions.\n2. java.sql.SQLException: For handling SQL-specific exceptions.\n3. java.sql.Types: For determining the SQL data type.\n4. org.apache.hadoop.io.LongWritable: A Hadoop key class.\n5. org.apache.hadoop.mapreduce.RecordReader: A Hadoop interface for reading data.\n6. org.apache.hadoop.classification: Various annotation classes for audience and stability.\n7. org.apache.hadoop.conf.Configurable: A Hadoop interface for configuration handling.\n8. org.apache.hadoop.conf.Configuration: A Hadoop class for managing configuration data.\n9. org.apache.hadoop.mapreduce.lib.db: The parent package for database input format classes.\n10. org.apache.hadoop.mapreduce.lib.db.DataDrivenDBInputFormat: The parent class implementing basic database input format functionality.\n11. org.apache.hadoop.mapreduce.lib.db.DBSplitter: An interface for splitting database queries into InputSplits.\n12.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 57,
+    "class": "org.apache.hadoop.mapreduce.lib.db.OracleDataDrivenDBRecordReader",
+    "path": "lib/db/OracleDataDrivenDBRecordReader.java",
+    "file_name": "OracleDataDrivenDBRecordReader.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this chunk is to define the constructor for the `OracleDataDrivenDBRecordReader` class, which is a specialized `DataDrivenDBRecordReader` for reading records from Oracle tables.\n\nCORE LOGIC:\nThe core logic involves initializing the superclass `DataDrivenDBRecordReader` with various parameters such as `DBInputSplit`, `inputClass`, `conf`, `conn`, `dbConfig`, `cond`, `fields`, and `table`. Additionally, it calls the static method `OracleDBRecordReader.setSessionTimeZone(conf, conn)` to set the time zone for the Oracle database connection.\n\nINPUTS/OUTPUTS:\nThe constructor takes the following inputs:\n- `DBInputFormat.DBInputSplit split`: Information about the split for reading data.\n- `Class<T> inputClass`: The class type of the data to be read.\n- `Configuration conf`: The Hadoop configuration object.\n- `Connection conn`: The database connection.\n- `DBConfiguration dbConfig`: The database configuration.\n- `String cond`: The condition string for querying data.\n- `String[] fields`: The array of fields to be read.\n- `String table`: The name of the database table.\n\nThere are no explicit outputs in this constructor chunk, as its purpose is initialization rather than producing data.\n\nDEPENDENCIES:\nThe key imported or collaborator classes visible in this chunk are:\n- `java.sql.Connection`: Represents a connection to a database.\n- `java.sql.SQLException`: Represents the exception that may be thrown when there is an error with the SQL operations.\n- `org.apache.hadoop.conf.Configuration`: The configuration object for Hadoop.\n- `org.apache.hadoop.mapreduce.lib.db.DataDrivenDBRecordReader`: The superclass being extended.\n- `org.apache.hadoop.mapreduce.lib.db.DBInputFormat.DBInputSplit`: Represents a split for reading data from a database.\n- `org.apache.hadoop.mapreduce.lib.db.DBConfiguration`: Configuration settings for database connections.\n- `org.apache.hadoop.mapreduce.lib.db.OracleDBRecordReader`: A class presumably used for setting the session time zone for Oracle databases.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

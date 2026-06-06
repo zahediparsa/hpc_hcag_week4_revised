@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 73,
+  "directory": ".",
+  "title": "Hadoop MapReduce Library for Join Operations and Output Management",
+  "description": "The 'lib' directory contains libraries for join operations and output management. It includes TupleWritable for handling multiple Writable objects in a tuple format, essential for complex data manipulations. ManifestCommitterConstants.java ensures consistent file handling across the MapReduce framework, supporting distributed data processing and storage.\n\nTITLE: JobTokenIdentifier for MapReduce Security\nDESCRIPTION: JobTokenIdentifier.java in 'security' defines a class for job token identifiers. It extends TokenIdentifier, storing job IDs as Text objects. The class facilitates secure access control by creating, reading, writing, and renewing job tokens. It integrates with Hadoop's security components, ensuring seamless interaction with Hadoop's security architecture.",
+  "summary": "TITLE: Hadoop MapReduce Library for Join Operations and Output Management\nDESCRIPTION: The 'lib' directory contains libraries for join operations and output management. It includes TupleWritable for handling multiple Writable objects in a tuple format, essential for complex data manipulations. ManifestCommitterConstants.java ensures consistent file handling across the MapReduce framework, supporting distributed data processing and storage.\n\nTITLE: JobTokenIdentifier for MapReduce Security\nDESCRIPTION: JobTokenIdentifier.java in 'security' defines a class for job token identifiers. It extends TokenIdentifier, storing job IDs as Text objects. The class facilitates secure access control by creating, reading, writing, and renewing job tokens. It integrates with Hadoop's security components, ensuring seamless interaction with Hadoop's security architecture.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    },
+    {
+      "type": "directory",
+      "name": "security"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Library for Join Operations and Output Management\nDESCRIPTION: The 'lib' directory contains libraries for join operations and output management. It includes TupleWritable for handling multiple Writable objects in a tuple format, essential for complex data manipulations. ManifestCommitterConstants.java ensures consistent file handling across the MapReduce framework, supporting distributed data processing and storage.\n\nTITLE: JobTokenIdentifier for MapReduce Security\nDESCRIPTION: JobTokenIdentifier.java in 'security' defines a class for job token identifiers. It extends TokenIdentifier, storing job IDs as Text objects. The class facilitates secure access control by creating, reading, writing, and renewing job tokens. It integrates with Hadoop's security components, ensuring seamless interaction with Hadoop's security architecture."
+}

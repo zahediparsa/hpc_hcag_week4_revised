@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "filecache",
+  "title": "ClientDistributedCacheManager",
+  "description": "The ClientDistributedCacheManager.java file is responsible for managing the internal configuration of the cache for job submission in Apache Hadoop MapReduce. It determines the timestamps of files to be cached and stores them in the job configuration. It also checks the visibility of distributed cache files and archives. The core logic involves several static methods within the ClientDistributedCacheManager class, including determineTimestampsAndCacheVisibilities, determineTimestamps, determineCacheVisibilities, isPublic, ancestorsHaveExecutePermissions, and checkPermissionOfOther. These methods use various Hadoop classes and Java standard library classes for their operations. The inputs are primarily the job configuration, URIs of cache files and archives, and a map of cached file status objects. The outputs are modifications to the job configuration with cache file sizes, timestamps, and visibility information.",
+  "summary": "TITLE: ClientDistributedCacheManager\nDESCRIPTION: The ClientDistributedCacheManager.java file is responsible for managing the internal configuration of the cache for job submission in Apache Hadoop MapReduce. It determines the timestamps of files to be cached and stores them in the job configuration. It also checks the visibility of distributed cache files and archives. The core logic involves several static methods within the ClientDistributedCacheManager class, including determineTimestampsAndCacheVisibilities, determineTimestamps, determineCacheVisibilities, isPublic, ancestorsHaveExecutePermissions, and checkPermissionOfOther. These methods use various Hadoop classes and Java standard library classes for their operations. The inputs are primarily the job configuration, URIs of cache files and archives, and a map of cached file status objects. The outputs are modifications to the job configuration with cache file sizes, timestamps, and visibility information.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ClientDistributedCacheManager.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ClientDistributedCacheManager\n\nDESCRIPTION:\nThe ClientDistributedCacheManager.java file is responsible for managing the internal configuration of the cache for job submission in Apache Hadoop MapReduce. It determines the timestamps of files to be cached and stores them in the job configuration. It also checks the visibility of distributed cache files and archives. The core logic involves several static methods within the ClientDistributedCacheManager class, including determineTimestampsAndCacheVisibilities, determineTimestamps, determineCacheVisibilities, isPublic, ancestorsHaveExecutePermissions, and checkPermissionOfOther. These methods use various Hadoop classes and Java standard library classes for their operations. The inputs are primarily the job configuration, URIs of cache files and archives, and a map of cached file status objects. The outputs are modifications to the job configuration with cache file sizes, timestamps, and visibility information."
+}

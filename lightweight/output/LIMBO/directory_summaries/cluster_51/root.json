@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 51,
+  "directory": ".",
+  "title": "Aggregate Library",
+  "description": "The 'lib/aggregate' directory in Hadoop MapReduce contains the ValueAggregator library. This library offers custom aggregation of map output values through dynamic loading of user-defined aggregators. It includes base classes for user-defined aggregators, a generic combiner, and a reducer. The components collaborate to provide flexible, interchangeable aggregation strategies, exemplifying the Strategy design pattern.",
+  "summary": "TITLE: Aggregate Library\nDESCRIPTION: The 'lib/aggregate' directory in Hadoop MapReduce contains the ValueAggregator library. This library offers custom aggregation of map output values through dynamic loading of user-defined aggregators. It includes base classes for user-defined aggregators, a generic combiner, and a reducer. The components collaborate to provide flexible, interchangeable aggregation strategies, exemplifying the Strategy design pattern.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Aggregate Library\nDESCRIPTION: The 'lib/aggregate' directory in Hadoop MapReduce contains the ValueAggregator library. This library offers custom aggregation of map output values through dynamic loading of user-defined aggregators. It includes base classes for user-defined aggregators, a generic combiner, and a reducer. The components collaborate to provide flexible, interchangeable aggregation strategies, exemplifying the Strategy design pattern."
+}

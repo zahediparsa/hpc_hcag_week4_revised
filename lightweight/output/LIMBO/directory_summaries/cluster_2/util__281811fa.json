@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "util",
+  "title": "Hadoop MapReduce Utility Package",
+  "description": "The 'util' directory in Hadoop MapReduce houses utility classes that provide essential functionalities for various operations. The 'HostUtil.java' file offers methods for generating task log URLs and converting tracker names to hostnames, aiding in job tracking and logging. Meanwhile, 'ResourceBundle.java' simplifies resource bundle management, providing methods to retrieve resources from bundles efficiently. These utilities, while not directly dependent on other Hadoop components, play a crucial role in enhancing the framework's usability and functionality, exemplifying the utility pattern in software architecture.",
+  "summary": "TITLE: Hadoop MapReduce Utility Package\nDESCRIPTION: The 'util' directory in Hadoop MapReduce houses utility classes that provide essential functionalities for various operations. The 'HostUtil.java' file offers methods for generating task log URLs and converting tracker names to hostnames, aiding in job tracking and logging. Meanwhile, 'ResourceBundle.java' simplifies resource bundle management, providing methods to retrieve resources from bundles efficiently. These utilities, while not directly dependent on other Hadoop components, play a crucial role in enhancing the framework's usability and functionality, exemplifying the utility pattern in software architecture.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "HostUtil.java"
+    },
+    {
+      "type": "file",
+      "name": "ResourceBundles.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Utility Package\n\nDESCRIPTION:\nThe 'util' directory in Hadoop MapReduce houses utility classes that provide essential functionalities for various operations. The 'HostUtil.java' file offers methods for generating task log URLs and converting tracker names to hostnames, aiding in job tracking and logging. Meanwhile, 'ResourceBundle.java' simplifies resource bundle management, providing methods to retrieve resources from bundles efficiently. These utilities, while not directly dependent on other Hadoop components, play a crucial role in enhancing the framework's usability and functionality, exemplifying the utility pattern in software architecture."
+}

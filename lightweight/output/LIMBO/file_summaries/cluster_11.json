@@ -1,0 +1,53 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 11,
+    "class": "org.apache.hadoop.mapreduce.JobID",
+    "path": "JobID.java",
+    "file_name": "JobID.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY: The main purpose of this chunk is to define the `JobID` class, which represents a unique identifier for a job in Apache Hadoop MapReduce.\n\nCORE LOGIC: The `JobID` class extends `org.apache.hadoop.mapred.ID` and implements `Comparable<ID>`. It consists of two parts: `jtIdentifier` (jobtracker identifier) and `id` (job number). The class provides constructors to initialize these parts, methods to get and compare `JobID` objects, and a static method `forName` to create a `JobID` from a string.\n\nINPUTS/OUTPUTS: The class does not directly handle input or output data flow. However, it does provide methods to read and write fields using `DataInput` and `DataOutput` for serialization purposes.\n\nDEPENDENCIES: The class depends on several imported classes: `java.io.DataInput`, `java.io.DataOutput`, `java.io.IOException`, `java.text.NumberFormat`, `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`, and `org.apache.hadoop.io.Text`. Additionally, it has associations with parent classes `org.apache.hadoop.mapred.ID` and collaborates with the `TaskID` and `TaskAttemptID` classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 11,
+    "class": "org.apache.hadoop.mapreduce.JobStatus",
+    "path": "JobStatus.java",
+    "file_name": "JobStatus.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class, `JobStatus.java`, is to encapsulate and manage the status of a job in Apache Hadoop MapReduce. It provides a comprehensive representation of job-related information, including job ID, progress of different stages, job state, timestamps, user, queue, priority, scheduling information, failure information, and more.\n\nCORE LOGIC:\nThe core logic of this class revolves around implementing the `Writable` interface to serialize and deserialize job status data. It includes methods to set and get various job status attributes, ensuring that values are within valid ranges. The class maintains encapsulation by providing synchronized access to most of its fields. It also includes a method to generate a string representation of the `JobStatus` object, aggregating various job status attributes into a human-readable format.\n\nINPUTS/OUTPUTS:\n- Inputs: Job-related data such as job ID, progress values, state, timestamps, user, queue, priority, scheduling information, failure information, etc.\n- Outputs: The job status object can be serialized to data streams for storage or transmission. It can also be deserialized from data streams to reconstruct job status information. The `toString()` method generates a string representation of the job status for logging or display purposes.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.JobID`\n- `org.apache.hadoop.mapreduce.JobPriority`\n- `org.apache.hadoop.io.Text`\n- `org.apache.hadoop.io.Writable`\n- `org.apache.hadoop.io.WritableFactories`\n- `org.apache.hadoop.io.WritableFactory`\n- `org.apache.hadoop.io.WritableUtils`\n- `org.apache.hadoop.security.authorize.AccessControlList`\n- `org.apache.hadoop.util.StringInterner`\n- `java.io.DataInput`\n- `java.io.DataOutput`\n- `java.io.IOException`\n- `java.util.HashMap`\n- `java.util.Map`\n- `java.util.Map.Entry`\n- `java.lang.Float`\n- `java.lang.Math`\n- `java.lang.Object`\n- `java.lang.Cloneable`\n- `java.lang.String`\n- `java.lang.IllegalArgumentException",
+    "chunked": true,
+    "number_of_code_chunks": 2,
+    "chunk_summaries": [
+      "KEY FUNCTIONALITY:\nThis code defines the `JobStatus` class, which describes the current status of a job in Apache Hadoop MapReduce. It includes various fields to store job-related information such as job ID, progress of different stages (setup, map, reduce, cleanup), job state, start and finish times, user, queue, priority, scheduling information, failure information, and more.\n\nCORE LOGIC:\nThe class implements the `Writable` interface, providing methods to write and read the job status object to and from data streams. It also includes methods to set and get various job status attributes, ensuring that values are within valid ranges (e.g., progress values between 0 and 1). The class maintains encapsulation by providing synchronized access to most of its fields.\n\nINPUTS/OUTPUTS:\n- Inputs: Job-related data such as job ID, progress values, state, timestamps, user, queue, priority, scheduling information, failure information, etc.\n- Outputs: The job status object can be serialized to data streams for storage or transmission. It can also be deserialized from data streams to reconstruct job status information.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.JobID`\n- `org.apache.hadoop.mapreduce.JobPriority`\n- `org.apache.hadoop.io.Text`\n- `org.apache.hadoop.io.Writable`\n- `org.apache.hadoop.io.WritableFactories`\n- `org.apache.hadoop.io.WritableFactory`\n- `org.apache.hadoop.io.WritableUtils`\n- `org.apache.hadoop.security.authorize.AccessControlList`\n- `org.apache.hadoop.util.StringInterner`\n- `java.io.DataInput`\n- `java.io.DataOutput`\n- `java.io.IOException`\n- `java.util.HashMap`\n- `java.util.Map`\n- `java.util.Map.Entry`\n- `java.lang.Float`\n- `java.lang.Math`\n- `java.lang.Object`\n- `java.lang.Cloneable`\n- `java.lang.String`\n- `java.lang.IllegalArgumentException`\n- `java.lang.InternalError`\n- `java.util.Map`\n- `java.util.HashMap`",
+      "KEY FUNCTIONALITY: The main purpose of this code chunk is to create a string representation of the JobStatus object, which includes various attributes related to the job's status and resource usage.\n\nCORE LOGIC: The core logic involves appending different attributes of the JobStatus object to a StringBuffer (buffer) and then converting the buffer to a string. These attributes include setup progress, job run state, start time, user name, priority, scheduling information, number of used slots, reserved slots, used memory, reserved memory, and needed memory.\n\nINPUTS: The inputs to this function are the attributes of the JobStatus object, which are local variables within the class.\n\nOUTPUTS: The output of this function is a String that represents the JobStatus object's attributes.\n\nDEPENDENCIES: The key dependencies in this chunk are the instance variables of the JobStatus class, such as setupProgress, runState, startTime, user, priority, schedulingInfo, numUsedSlots, numReservedSlots, usedMem, reservedMem, and neededMem. There are no explicit dependencies on other classes, as these are all internal to the JobStatus class."
+    ]
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 11,
+    "class": "org.apache.hadoop.mapreduce.TaskAttemptID",
+    "path": "TaskAttemptID.java",
+    "file_name": "TaskAttemptID.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY: The main purpose of this class is to represent the unique identifier for a task attempt in a MapReduce job, consisting of a TaskID and a task attempt number.\n\nCORE LOGIC: The class `TaskAttemptID` extends `org.apache.hadoop.mapred.ID` and includes constructors to create `TaskAttemptID` objects from a `TaskID` and its attempt number, or from separate parts like jobTracker identifier, job ID, task type, task ID, and attempt number. It provides methods to retrieve the associated `JobID` and `TaskID`, check if it's a map task, and compare `TaskAttemptID` objects. The class also includes methods to serialize and deserialize the object, as well as a static method `forName` to create a `TaskAttemptID` from a string.\n\nINPUTS/OUTPUTS: The class takes input in the form of various parameters for its constructors (e.g., `TaskID`, jobTracker identifier, job ID, task type, task ID, and attempt number) and also accepts a string representation of a `TaskAttemptID` in its `forName` method. The class outputs the `JobID` and `TaskID` through getter methods and can serialize/deserialize the object using `DataInput` and `DataOutput`.\n\nDEPENDENCIES: The class depends on `java.io.DataInput`, `java.io.DataOutput`, `java.io.IOException`, `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`, `org.apache.hadoop.mapred.ID`, and `org.apache.hadoop.mapreduce.TaskType`. It also references the nested `TaskID` class and the static import of `org.apache.hadoop.mapred.TaskID`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 11,
+    "class": "org.apache.hadoop.mapreduce.TaskID",
+    "path": "TaskID.java",
+    "file_name": "TaskID.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define the `TaskID` class, which represents the unique identifier for a Map or Reduce task in Apache Hadoop MapReduce. It encapsulates the job ID, task type (map or reduce), and task number. The class ensures that Task IDs are immutable and uniquely identify a task within a job.\n\nCORE LOGIC:\nThe core logic involves the construction of `TaskID` objects using different methods, such as providing a `JobID`, job tracker identifier, job ID, task type, and task number. The class also includes methods to retrieve the job ID, task type, and to compare TaskIDs. The `toString()` method formats the TaskID into a human-readable string, and `compareTo()` method allows for ordering TaskIDs. The `forName(String)` static method constructs a `TaskID` from a formatted string, validating its correctness.\n\nINPUTS/OUTPUTS:\n- INPUTS: JobID, TaskType, int (task number), and String (for the constructor that takes job tracker identifier, job ID, task type, and task number).\n- OUTPUTS: TaskID object representing a Map or Reduce task, with methods to retrieve its components (job ID, task type, and task number) and to compare TaskIDs.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapred.ID` (parent class)\n- `java.io.DataInput`, `java.io.DataOutput`, `java.io.IOException` (for serialization)\n- `java.text.NumberFormat`\n- `java.util.EnumMap`, `java.util.HashMap`, `java.util.Map`\n- `java.util.regex.Matcher`, `java.util.regex.Pattern`\n- `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`\n- `org.apache.hadoop.io.WritableUtils`\n- `org.apache.hadoop.mapreduce.JobID` (for job ID)\n- `org.apache.hadoop.mapreduce.TaskType` (for task type enumeration)",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

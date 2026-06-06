@@ -1,0 +1,23 @@
+{
+  "cluster_id": 12,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "This Hadoop MapReduce cluster, comprising 12 nodes, employs a layered architecture for distributed data processing. The committer stage, managed by 'lib/output/committer', ensures data consistency through manifest files, exemplifying a modular design. It uses Java for its implementation, with 'AbstractJobOrTaskStage.java' and 'JobOrTaskStage.java' defining process stages. The 'LoadManifestsStage.java' processes task manifests, demonstrating a coordinator pattern. Scalability is achieved through horizontal scaling, with each node functioning as a worker. Maintainability is ensured by modular design and clear component separation. Reliability is maintained through the commit protocol, ensuring data integrity. Performance is optimized via parallel processing across nodes. Security is implied through task isolation and data tracking. Technologies used include Hadoop MapReduce framework, Java, and specific custom code within the 'lib' directory.",
+  "description_word_count": 123,
+  "number_of_files": 3,
+  "number_of_directories": 6,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: This Hadoop MapReduce cluster, comprising 12 nodes, employs a layered architecture for distributed data processing. The committer stage, managed by 'lib/output/committer', ensures data consistency through manifest files, exemplifying a modular design. It uses Java for its implementation, with 'AbstractJobOrTaskStage.java' and 'JobOrTaskStage.java' defining process stages. The 'LoadManifestsStage.java' processes task manifests, demonstrating a coordinator pattern. Scalability is achieved through horizontal scaling, with each node functioning as a worker. Maintainability is ensured by modular design and clear component separation. Reliability is maintained through the commit protocol, ensuring data integrity. Performance is optimized via parallel processing across nodes. Security is implied through task isolation and data tracking. Technologies used include Hadoop MapReduce framework, Java, and specific custom code within the 'lib' directory.",
+  "algorithm": "ACDC",
+  "files": [
+    "lib/output/committer/manifest/stages/AbstractJobOrTaskStage.java",
+    "lib/output/committer/manifest/stages/JobOrTaskStage.java",
+    "lib/output/committer/manifest/stages/LoadManifestsStage.java"
+  ]
+}

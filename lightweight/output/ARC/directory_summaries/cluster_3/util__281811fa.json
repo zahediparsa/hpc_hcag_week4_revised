@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "util",
+  "title": "Hadoop MapReduce Util Package",
+  "description": "The 'util' directory in Hadoop MapReduce provides utility classes for various functionalities. It includes 'CountersStrings.java', which offers methods for converting counter objects into compact string representations and vice versa, primarily for older Hadoop versions. 'package-info.java' serves as the package documentation, detailing the audience and stability of the package. These utilities collaborate to support the broader MapReduce framework, ensuring efficient counter management and string operations, thereby adhering to the Utility pattern in software design.",
+  "summary": "TITLE: Hadoop MapReduce Util Package\nDESCRIPTION: The 'util' directory in Hadoop MapReduce provides utility classes for various functionalities. It includes 'CountersStrings.java', which offers methods for converting counter objects into compact string representations and vice versa, primarily for older Hadoop versions. 'package-info.java' serves as the package documentation, detailing the audience and stability of the package. These utilities collaborate to support the broader MapReduce framework, ensuring efficient counter management and string operations, thereby adhering to the Utility pattern in software design.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CountersStrings.java"
+    },
+    {
+      "type": "file",
+      "name": "package-info.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Util Package\n\nDESCRIPTION: The 'util' directory in Hadoop MapReduce provides utility classes for various functionalities. It includes 'CountersStrings.java', which offers methods for converting counter objects into compact string representations and vice versa, primarily for older Hadoop versions. 'package-info.java' serves as the package documentation, detailing the audience and stability of the package. These utilities collaborate to support the broader MapReduce framework, ensuring efficient counter management and string operations, thereby adhering to the Utility pattern in software design."
+}

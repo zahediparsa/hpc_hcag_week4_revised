@@ -1,0 +1,24 @@
+{
+  "cluster_id": 10,
+  "title": "Job Context Management in Hadoop MapReduce",
+  "description": "In Hadoop MapReduce, the 'JobContext' directory manages job-specific configurations, providing a read-only view of job information to tasks during execution. The 'JobContext.java' interface offers job ID, reduce tasks count, working directory, input/output classes, job name, etc. The 'Chain' directory extends Map and Reduce contexts, managing record readers/writers and configurations via 'ChainMapContextImpl.java' and 'ChainReduceContextImpl.java'. 'Task/JobContextImpl.java' implements 'JobContext', initializing with a Hadoop Configuration object and JobID, providing necessary configuration details. This abstraction ensures tasks have required settings for seamless execution within the Hadoop MapReduce architecture, promoting scalability, maintainability, and reliability. Technologies used include Java, Hadoop core classes, and Apache Commons Lang's StringUtils.",
+  "description_word_count": 107,
+  "number_of_files": 4,
+  "number_of_directories": 4,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job Context Management in Hadoop MapReduce\n\nDESCRIPTION: In Hadoop MapReduce, the 'JobContext' directory manages job-specific configurations, providing a read-only view of job information to tasks during execution. The 'JobContext.java' interface offers job ID, reduce tasks count, working directory, input/output classes, job name, etc. The 'Chain' directory extends Map and Reduce contexts, managing record readers/writers and configurations via 'ChainMapContextImpl.java' and 'ChainReduceContextImpl.java'. 'Task/JobContextImpl.java' implements 'JobContext', initializing with a Hadoop Configuration object and JobID, providing necessary configuration details. This abstraction ensures tasks have required settings for seamless execution within the Hadoop MapReduce architecture, promoting scalability, maintainability, and reliability. Technologies used include Java, Hadoop core classes, and Apache Commons Lang's StringUtils.",
+  "algorithm": "LIMBO",
+  "files": [
+    "JobContext.java",
+    "lib/chain/ChainMapContextImpl.java",
+    "lib/chain/ChainReduceContextImpl.java",
+    "task/JobContextImpl.java"
+  ]
+}

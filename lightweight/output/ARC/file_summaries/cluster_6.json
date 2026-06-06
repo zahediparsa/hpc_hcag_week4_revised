@@ -1,0 +1,110 @@
+[
+  {
+    "algorithm": "ARC",
+    "cluster": 6,
+    "class": "org.apache.hadoop.mapreduce.lib.db.BigDecimalSplitter",
+    "path": "lib/db/BigDecimalSplitter.java",
+    "file_name": "BigDecimalSplitter.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to implement the `split` method of the `DBSplitter` interface for handling BigDecimal values. This method divides a range of BigDecimal values into a specified number of splits, generating SQL WHERE clause conditions for each split.\n\nCORE LOGIC:\n1. The `split` method retrieves minimum and maximum BigDecimal values from the `ResultSet`.\n2. It checks if the range is null (both minVal and maxVal are null) and returns a single split for NULL values.\n3. If only one end of the range is known, it logs an error and returns null.\n4. It calculates split points using the `split` method, which divides the range into a specified number of splits.\n5. It then converts these split points into intervals, generating SQL WHERE clause conditions for each interval.\n6. The `tryDivide` method handles division of BigDecimals, using rounding if exact division is not possible.\n\nINPUTS/OUTPUTS:\n- Inputs: Configuration (conf), ResultSet (results), column name (colName)\n- Outputs: A List of InputSplit objects, each containing a WHERE clause condition for a range of BigDecimal values\n\nDEPENDENCIES:\n- Imported classes: java.math.BigDecimal, java.sql.ResultSet, java.sql.SQLException, java.util.ArrayList, java.util.List\n- Parent/Collaborator classes: org.apache.hadoop.mapreduce.lib.db.DBSplitter, org.apache.hadoop.mapreduce.InputSplit, org.apache.hadoop.mapreduce.MRJobConfig\n- Logging: org.slf4j.Logger, org.slf4j.LoggerFactory",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 6,
+    "class": "org.apache.hadoop.mapreduce.lib.db.BooleanSplitter",
+    "path": "lib/db/BooleanSplitter.java",
+    "file_name": "BooleanSplitter.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class, as indicated by its name and the method it implements, is to split data based on boolean values from a ResultSet. It extends the functionality of DBSplitter for handling boolean data types.\n\nCORE LOGIC:\nThe core logic of this class revolves around the `split` method. It takes a Configuration object, a ResultSet, and a column name as inputs. Based on the boolean values in the specified column of the ResultSet, it generates InputSplit objects. These InputSplit objects define the data ranges to be processed by MapReduce tasks. The logic checks for null values and boolean true/false values, creating appropriate SQL conditions for each InputSplit.\n\nINPUTS/OUTPUTS:\nInputs:\n- Configuration conf: Hadoop configuration settings.\n- ResultSet results: A result set containing data from a database query.\n- String colName: The name of the column in the result set to split on.\n\nOutputs:\n- List<InputSplit> splits: A list of InputSplit objects, each representing a range of data to be processed by a MapReduce task.\n\nDEPENDENCIES:\nThis class depends on the following classes:\n- java.sql.ResultSet: Represents a result set, which is a table of data representing the result of a SQL query.\n- java.sql.SQLException: Represents an error that occurs during database access.\n- java.util.ArrayList: A resizable-array implementation of the List interface.\n- java.util.List: A list-based implementation of the Sequence interface, providing functionality to maintain the order of its elements.\n- org.apache.hadoop.mapreduce.InputSplit: An interface that represents a single unit of work that will be executed by a MapReduce job.\n- org.apache.hadoop.mapreduce.lib.db.DataDrivenDBInputFormat: A class that provides input format for reading data from a database driven by a query result set.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 6,
+    "class": "org.apache.hadoop.mapreduce.lib.db.DBSplitter",
+    "path": "lib/db/DBSplitter.java",
+    "file_name": "DBSplitter.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define an interface `DBSplitter` for generating `DBInputSplits` to be used with `DataDrivenDBInputFormat`. This interface is part of the Apache Hadoop MapReduce library, specifically under the `org.apache.hadoop.mapreduce.lib.db` package.\n\nCORE LOGIC:\nThe core logic of this chunk is the definition of a single method `split()`. This method takes in three parameters: a `Configuration` object, a `ResultSet` containing one record with two columns (representing low and high values), and a `String` representing the column name. It returns a `List<InputSplit>`, which are essentially logical divisions of the data to be processed. The method is intended to determine a set of splits that span the given low and high values, based on the data type of the specified column.\n\nINPUTS/OUTPUTS:\n- Inputs: \n  - `Configuration conf`: Hadoop configuration settings.\n  - `ResultSet results`: A result set containing one record with two columns representing low and high values.\n  - `String colName`: The name of the column to use for determining the splits.\n- Outputs: \n  - `List<InputSplit>`: A list of `InputSplit` objects, which represent logical divisions of the data to be processed.\n\nDEPENDENCIES:\n- Imported classes: `java.sql.ResultSet`, `java.sql.SQLException`, `java.util.List`\n- Parent/Collaborator classes: `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`, `org.apache.hadoop.conf.Configuration`, `org.apache.hadoop.mapreduce.InputSplit`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 6,
+    "class": "org.apache.hadoop.mapreduce.lib.db.DateSplitter",
+    "path": "lib/db/DateSplitter.java",
+    "file_name": "DateSplitter.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to implement the `split` method of the `DateSplitter` class, which is responsible for splitting input data based on date/time values.\n\nCORE LOGIC:\n1. The method `split` takes in a `Configuration` object, a `ResultSet` object, and a column name as inputs.\n2. It retrieves the minimum (`minVal`) and maximum (`maxVal`) date/time values from the `ResultSet`.\n3. It determines the number of splits (`numSplits`) based on the configuration.\n4. It converts these date/time values into longs using the `resultSetColToLong` method.\n5. It generates a list of split points using the `split` method inherited from `IntegerSplitter`.\n6. It then converts these split points into intervals, creating `DataDrivenDBInputSplit` objects for each interval.\n7. The `longToDate` method is used to convert long-valued timestamps into appropriate SQL date types.\n8. The `dateToString` method formats dates into strings suitable for SQL comparisons.\n\nINPUTS/OUTPUTS:\n- INPUTS: Configuration object (`conf`), ResultSet object (`results`), and a column name (`colName`).\n- OUTPUTS: A list of `InputSplit` objects, each representing a range of dates for a map task to process.\n\nDEPENDENCIES:\n- Imported classes: `java.sql.*`, `java.sql.Types`, `java.util.ArrayList`, `java.util.Date`, `java.util.List`, `org.slf4j.Logger`, `org.slf4j.LoggerFactory`, `org.apache.hadoop.classification.*`, `org.apache.hadoop.conf.Configuration`, `org.apache.hadoop.mapreduce.InputSplit`, `org.apache.hadoop.mapreduce.MRJobConfig`.\n- Collaborator classes: `DataDrivenDBInputFormat.DataDrivenDBInputSplit`.\n- Inherited from parent class: `IntegerSplitter`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 6,
+    "class": "org.apache.hadoop.mapreduce.lib.db.FloatSplitter",
+    "path": "lib/db/FloatSplitter.java",
+    "file_name": "FloatSplitter.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to implement a `FloatSplitter` class that generates input splits for a floating-point index column in a database. It divides the range of floating-point values into equal-sized splits based on the configuration parameter `MRJobConfig.NUM_MAPS`.\n\nCORE LOGIC:\n1. The `split` method takes in a `Configuration` object, a `ResultSet` object, and a column name as inputs.\n2. It checks if the minimum and maximum values in the `ResultSet` are null and adds a split for that case.\n3. It calculates the size of each split (`splitSize`) by dividing the range (`maxVal - minVal`) by the number of splits (`numSplits`).\n4. It ensures that `splitSize` is not less than a minimum threshold (`MIN_INCREMENT`) to avoid precision issues.\n5. It generates split clauses (`lowClausePrefix` and `highClausePrefix`) for each split and adds `DataDrivenDBInputFormat.DataDrivenDBInputSplit` objects to the `splits` list.\n6. It handles cases where the minimum or maximum values are null by adding an additional split.\n\nINPUTS/OUTPUTS:\n- INPUTS: Configuration object (`conf`), ResultSet object (`results`), and a column name (`colName`).\n- OUTPUTS: A `List<InputSplit>` object containing generated splits based on the floating-point range.\n\nDEPENDENCIES:\n- Imported classes: `java.sql.ResultSet`, `java.sql.SQLException`, `java.util.ArrayList`, `java.util.List`, `org.slf4j.Logger`, `org.slf4j.LoggerFactory`, `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`, `org.apache.hadoop.conf.Configuration`, and `org.apache.hadoop.mapreduce.InputSplit`.\n- Collaborator classes: `org.apache.hadoop.mapreduce.lib.db.DBSplitter`, `org.apache.hadoop.mapreduce.lib.db.DataDrivenDBInputFormat.DataDrivenDBInputSplit`, and `org.apache.hadoop.mapreduce.MRJobConfig`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 6,
+    "class": "org.apache.hadoop.mapreduce.lib.db.IntegerSplitter",
+    "path": "lib/db/IntegerSplitter.java",
+    "file_name": "IntegerSplitter.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY: The main purpose of this code chunk is to implement the `split` method of the `DBSplitter` interface, which divides a range of integer values into multiple splits for processing in a MapReduce job.\n\nCORE LOGIC: The core logic involves calculating split points based on the desired number of splits (`numSplits`), the minimum value (`minVal`), and the maximum value (`maxVal`) from a `ResultSet`. It then generates `DataDrivenDBInputSplit` objects, each representing an interval defined by these split points, and returns a list of these splits.\n\nINPUTS/OUTPUTS:\n- INPUTS: Configuration (`conf`), `ResultSet` (`results`), and column name (`colName`) as inputs.\n- OUTPUTS: A list of `InputSplit` objects (`List<InputSplit> splits`), which represent the divided ranges for processing in a MapReduce job.\n\nDEPENDENCIES:\n- Imported classes: `java.sql.ResultSet`, `java.sql.SQLException`, `java.util.ArrayList`, `java.util.List`, `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`, `org.apache.hadoop.conf.Configuration`, and `org.apache.hadoop.mapreduce.InputSplit`.\n- Collaborator classes: `org.apache.hadoop.mapreduce.MRJobConfig` and `org.apache.hadoop.mapreduce.lib.db.DataDrivenDBInputFormat.DataDrivenDBInputSplit`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 6,
+    "class": "org.apache.hadoop.mapreduce.lib.db.OracleDataDrivenDBInputFormat",
+    "path": "lib/db/OracleDataDrivenDBInputFormat.java",
+    "file_name": "OracleDataDrivenDBInputFormat.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define the OracleDataDrivenDBInputFormat class, which extends DataDrivenDBInputFormat and implements Configurable. This class is designed to read input data from an SQL table in an Oracle database.\n\nCORE LOGIC:\nThe core logic involves overriding two methods from the parent class DataDrivenDBInputFormat. The first method, getSplitter, returns an instance of OracleDateSplitter if the SQL data type is DATE, TIME, or TIMESTAMP; otherwise, it calls the parent class's implementation. The second method, createDBRecordReader, creates and returns an instance of OracleDataDrivenDBRecordReader, which is an Oracle-specific record reader for the given DBInputSplit, configuration, and database connection.\n\nINPUTS/OUTPUTS:\nThe class does not directly handle input or output data flow. Instead, it prepares the environment for reading data from an Oracle SQL table. The input comes in the form of a DBInputSplit, Configuration, and other parameters, which are used to create a RecordReader instance (OracleDataDrivenDBRecordReader) that will handle the actual data reading from the database.\n\nDEPENDENCIES:\nThe code chunk depends on several classes and packages:\n\n1. java.io.IOException: For handling and propagating database-related exceptions.\n2. java.sql.SQLException: For handling SQL-specific exceptions.\n3. java.sql.Types: For determining the SQL data type.\n4. org.apache.hadoop.io.LongWritable: A Hadoop key class.\n5. org.apache.hadoop.mapreduce.RecordReader: A Hadoop interface for reading data.\n6. org.apache.hadoop.classification: Various annotation classes for audience and stability.\n7. org.apache.hadoop.conf.Configurable: A Hadoop interface for configuration handling.\n8. org.apache.hadoop.conf.Configuration: A Hadoop class for managing configuration data.\n9. org.apache.hadoop.mapreduce.lib.db: The parent package for database input format classes.\n10. org.apache.hadoop.mapreduce.lib.db.DataDrivenDBInputFormat: The parent class implementing basic database input format functionality.\n11. org.apache.hadoop.mapreduce.lib.db.DBSplitter: An interface for splitting database queries into InputSplits.\n12.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 6,
+    "class": "org.apache.hadoop.mapreduce.lib.db.OracleDateSplitter",
+    "path": "lib/db/OracleDateSplitter.java",
+    "file_name": "OracleDateSplitter.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to extend the functionality of the `DateSplitter` class from the Apache Hadoop MapReduce library to handle Oracle-specific date/time formatting.\n\nCORE LOGIC:\nThe core logic involves overriding the `dateToString` method from the parent `DateSplitter` class. This method converts a `Date` object into a string format suitable for Oracle's `TO_TIMESTAMP` function, which is used to interpret date/time values.\n\nINPUTS/OUTPUTS:\nThe input to this method is a `Date` object, `d`. The output is a string formatted as 'TO_TIMESTAMP(''YYYY-MM-DD HH24:MI:SS.FF'')', which is then used to generate InputSplits for data processing.\n\nDEPENDENCIES:\nThe key imported or collaborator classes visible in this chunk are:\n- `java.util.Date`: The class representing date and time.\n- `org.apache.hadoop.mapreduce.lib.db.DateSplitter`: The parent class from which `OracleDateSplitter` inherits.\n- `org.apache.hadoop.classification.InterfaceAudience` and `org.apache.hadoop.classification.InterfaceStability`: These are annotations for interface usage policies, not dependencies on other classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 6,
+    "class": "org.apache.hadoop.mapreduce.lib.db.TextSplitter",
+    "path": "lib/db/TextSplitter.java",
+    "file_name": "TextSplitter.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\nThe main functionality of this code chunk is to split a range of text strings into multiple sub-ranges for processing in a distributed manner. This is done by converting the text strings into a numerical representation, splitting the numerical range, and then converting the split points back into text strings.\n\nCORE LOGIC:\nThe core logic involves interpreting text strings as numbers in base 65536, splitting these numerical representations into multiple points using the BigDecimalSplitter, and then converting these split points back into text strings. The algorithm ensures that even complex text ranges, like \"Ham\" and \"Haze\", can be split correctly based on the differing characters.\n\nINPUTS/OUTPUTS:\n- INPUTS: The method takes in a Configuration object, a ResultSet from a database query, and a column name.\n- OUTPUTS: It returns a List of InputSplit objects, each representing a sub-range of the input text strings.\n\nDEPENDENCIES:\n- The class imports and uses classes from java.sql for database operations, java.math for BigDecimal operations, java.util for list handling, org.slf4j for logging, and org.apache.hadoop.* for Hadoop-specific classes like Configuration, MRJobConfig, and InputSplit.\n- It also depends on the BigDecimalSplitter class, which is not shown in this chunk but is part of the same package org.apache.hadoop.mapreduce.lib.db.\n- The class itself is annotated with @InterfaceAudience.Public and @InterfaceStability.Evolving, indicating its public API stability.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 69,
+    "class": "org.apache.hadoop.mapreduce.lib.join.CompositeInputFormat",
+    "path": "lib/join/CompositeInputFormat.java",
+    "file_name": "CompositeInputFormat.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a CompositeInputFormat class that extends InputFormat for Apache Hadoop MapReduce. This class is designed to handle joins over a set of data sources that are sorted and partitioned in the same way. It allows users to define new join types by setting specific properties.\n\nCORE LOGIC:\nThe core logic involves parsing a user-defined join expression and creating a parse tree (root) to represent this expression. This parse tree is then used to build CompositeInputSplit from child InputFormats and to construct a CompositeRecordReader for these children. The parsing of the join expression follows a specific format, allowing for nested join operations and user-defined types.\n\nINPUTS/OUTPUTS:\nThe inputs to this class are configuration parameters (like mapreduce.join.expr and mapreduce.join.define.<ident>) that define the join operations and the data sources. The outputs are CompositeInputSplit objects, which represent the logical splits of the input data for processing, and RecordReader objects, which are used to read data from these splits.\n\nDEPENDENCIES:\nThe key dependencies in this chunk are:\n- org.apache.hadoop.mapreduce.InputFormat\n- org.apache.hadoop.mapreduce.InputSplit\n- org.apache.hadoop.mapreduce.JobContext\n- org.apache.hadoop.mapreduce.RecordReader\n- org.apache.hadoop.mapreduce.TaskAttemptContext\n- org.apache.hadoop.io.WritableComparable\n- org.apache.hadoop.fs.Path\n- org.apache.hadoop.classification.InterfaceAudience\n- org.apache.hadoop.classification.InterfaceStability\n- org.apache.hadoop.conf.Configuration\n- java.util.List\n- java.util.ArrayList\n- java.util.Map\n- java.util.regex.Matcher\n- java.util.regex.Pattern\n- org.apache.hadoop.mapreduce.lib.join.Parser.Node\n- org.apache.hadoop.mapreduce.lib.join.Parser.CNode\n- org.apache.hadoop.mapreduce.lib.join.Parser.WNode\n- org.apache.hadoop.mapreduce.lib.join.InnerJoinRecordReader\n- org.apache.hadoop.mapreduce.lib.join.OuterJoinRecordReader\n- org.apache.hadoop.mapreduce.lib",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 69,
+    "class": "org.apache.hadoop.mapreduce.lib.join.Parser",
+    "path": "lib/join/Parser.java",
+    "file_name": "Parser.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a simple shift-reduce parser for join expressions in Apache Hadoop MapReduce. This parser is used to build a tree of InputFormats based on a given expression and an optional comparator, which is used to sort keys.\n\nCORE LOGIC:\nThe core logic revolves around the Parser class and its nested classes, which implement a shift-reduce parsing strategy. The Lexer class tokenizes the input string into a series of Token objects, each representing a different part of the join expression (like identifiers, numbers, commas, parentheses, etc.). The Parser class then uses a stack to manage these tokens and reduce them according to the grammar rules of the join expressions. The reduce method processes a stack of tokens, grouping them into nodes (either WNode or CNode) based on the type of token encountered.\n\nINPUTS/OUTPUTS:\n- INPUTS: The primary input is a String 'expr' representing the join expression. An optional Class 'cmpcl' representing the comparator for sorting keys can also be provided via the Configuration object.\n- OUTPUTS: The parser outputs a Node object, which represents a part of the parse tree for the join expression. This Node can be either a WNode (for \"wrapped\" InputFormats) or a CNode (for \"composite\" InputFormats).\n\nDEPENDENCIES:\n- Imported classes: The chunk imports a wide range of classes from java.io, java.lang.reflect, java.util, org.apache.hadoop.classification, org.apache.hadoop.conf, org.apache.hadoop.io, org.apache.hadoop.mapreduce, org.apache.hadoop.mapreduce.lib.input, org.apache.hadoop.mapreduce.task.\n- Collaborator classes: The Parser class collaborates with several nested and inner classes, including Lexer, Token, NumToken, NodeToken, StrToken, WNode, CNode, WrappedStatusReporter, and CompositeInputSplit. It also interacts with classes from the Hadoop MapReduce framework like Job, JobContext, TaskAttemptContext, InputFormat, RecordReader, Counter, and StatusReporter.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

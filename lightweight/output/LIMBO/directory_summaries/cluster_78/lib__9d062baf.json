@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 78,
+  "directory": "lib",
+  "title": "Hadoop MapReduce Output Committer Management",
+  "description": "The 'lib/output/committer' directory manages job output commitment in Hadoop MapReduce. It ensures job output consistency and integrity, utilizing Strategy and inheritance patterns. The 'AuditingIntegration.java' supports auditing compatibility. Collaborating with Hadoop's logging and file system utilities, it adheres to Hadoop's architectural standards.",
+  "summary": "TITLE: Hadoop MapReduce Output Committer Management\nDESCRIPTION: The 'lib/output/committer' directory manages job output commitment in Hadoop MapReduce. It ensures job output consistency and integrity, utilizing Strategy and inheritance patterns. The 'AuditingIntegration.java' supports auditing compatibility. Collaborating with Hadoop's logging and file system utilities, it adheres to Hadoop's architectural standards.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Output Committer Management\n\nDESCRIPTION: The 'lib/output/committer' directory manages job output commitment in Hadoop MapReduce. It ensures job output consistency and integrity, utilizing Strategy and inheritance patterns. The 'AuditingIntegration.java' supports auditing compatibility. Collaborating with Hadoop's logging and file system utilities, it adheres to Hadoop's architectural standards."
+}

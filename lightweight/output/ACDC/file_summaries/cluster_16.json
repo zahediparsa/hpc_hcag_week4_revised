@@ -1,0 +1,98 @@
+[
+  {
+    "algorithm": "ACDC",
+    "cluster": 16,
+    "class": "org.apache.hadoop.mapreduce.ClusterMetrics",
+    "path": "ClusterMetrics.java",
+    "file_name": "ClusterMetrics.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main functionality of this code chunk is to define a class `ClusterMetrics` that provides status information about the current state of a MapReduce cluster.\n\nCORE LOGIC:\nThe core logic involves the declaration and initialization of various attributes that represent different metrics of the cluster, such as the number of running map and reduce tasks, occupied and reserved slots, total slots, job submissions, and the count of different types of trackers (active, blacklisted, graylisted, decommissioned). The class implements the `Writable` interface to allow for serialization and deserialization of these metrics.\n\nINPUTS/OUTPUTS:\nThe class does not take any inputs. It maintains various internal state variables representing cluster metrics. The data is output via getter methods for each metric, which can be used to retrieve the current state of the cluster.\n\nDEPENDENCIES:\nThe key dependencies visible in this chunk are:\n- `java.io.DataInput` and `java.io.DataOutput`: For reading and writing the object's state.\n- `java.io.IOException`: For exception handling during I/O operations.\n- `org.apache.hadoop.io.Writable`: An interface implemented by classes that want to have their instances written by the Hadoop serialization system.\n- `org.apache.hadoop.classification`: For class and method annotations related to stability and audience.\n- `org.apache.hadoop.mapreduce`: The Hadoop MapReduce package from which this class is derived.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 16,
+    "class": "org.apache.hadoop.mapreduce.QueueAclsInfo",
+    "path": "QueueAclsInfo.java",
+    "file_name": "QueueAclsInfo.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to encapsulate Access Control Lists (ACLs) for a specific job queue in Apache Hadoop MapReduce. It provides a way to store and retrieve the name of the queue and the operations allowed on it.\n\nCORE LOGIC:\nThe class `QueueAclsInfo` implements the `Writable` interface from Hadoop's I/O package, allowing it to be serialized and deserialized. It has two constructors - a default one and a parameterized one that takes a queue name and an array of allowed operations. It provides getter and setter methods for the queue name and operations. The `readFields` method reads the queue name and operations from a `DataInput` object, while the `write` method writes these fields to a `DataOutput` object.\n\nINPUTS/OUTPUTS:\nThe class takes in a queue name (String) and an array of allowed operations (String[]) in its constructor. It outputs these fields when written to a `DataOutput` object, and can read these fields from a `DataInput` object.\n\nDEPENDENCIES:\nThe class depends on several Hadoop classes:\n- `DataInput` and `DataOutput`: Interfaces for reading from and writing to data streams.\n- `IOException`: Exception thrown when an I/O error occurs.\n- `Text`: A class for reading and writing text to streams.\n- `Writable`: An interface for classes that can be written and read.\n- `WritableUtils`: A utility class for working with Writable objects.\n- `StringInterner`: A utility class for interning strings.\n\nIt also imports standard Java classes like `java.io.*` and `java.util.*`. The class is part of the `org.apache.hadoop.mapreduce` package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 16,
+    "class": "org.apache.hadoop.mapreduce.TaskTrackerInfo",
+    "path": "TaskTrackerInfo.java",
+    "file_name": "TaskTrackerInfo.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY: This Java class, `TaskTrackerInfo`, represents information about a TaskTracker in Apache Hadoop MapReduce. It implements the `Writable` interface to enable serialization.\n\nCORE LOGIC: The class has four fields: `name` (String), `isBlacklisted` (boolean), `reasonForBlacklist` (String), and `blacklistReport` (String). It provides constructors to initialize these fields, getter methods for each field, and implementations for the `readFields` and `write` methods required by the `Writable` interface to handle serialization and deserialization.\n\nINPUTS/OUTPUTS: The class does not directly take any input during its instantiation. However, during serialization (write operation), it takes the fields' values and converts them into a format suitable for storage or transmission. During deserialization (read operation), it takes input in the form of a `DataInput` object and populates its fields.\n\nDEPENDENCIES: The class depends on several classes from the `org.apache.hadoop` package:\n- `DataInput` and `DataOutput` for input/output operations.\n- `IOException` for exception handling during I/O operations.\n- `Text` class from `org.apache.hadoop.io` for reading and writing string fields in a binary format.\n- `Writable` interface from `org.apache.hadoop.io` for serialization support.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 16,
+    "class": "org.apache.hadoop.mapreduce.protocol.ClientProtocol",
+    "path": "protocol/ClientProtocol.java",
+    "file_name": "ClientProtocol.java",
+    "directory": "protocol",
+    "summary": "KEY FUNCTIONALITY:\nThis Java interface, `ClientProtocol`, defines the communication protocol between a JobClient and the JobTracker in Apache Hadoop MapReduce. It allows a JobClient to submit jobs, monitor their status, and manage resources.\n\nCORE LOGIC:\nThe core logic involves methods for job submission (`submitJob`), job status retrieval (`getJobStatus`, `getTaskReports`), job killing (`killJob`, `killTask`), priority setting (`setJobPriority`), and cluster status inquiry (`getClusterMetrics`, `getJobTrackerStatus`). It also includes methods for managing delegation tokens (`getDelegationToken`, `renewDelegationToken`, `cancelDelegationToken`) and retrieving system directory paths (`getSystemDir`, `getStagingAreaDir`, `getJobHistoryDir`).\n\nINPUTS/OUTPUTS:\n- Inputs: JobID, Credentials (for security tokens), JobSubmitDir, TaskAttemptID, JobType, Text (for renewer in delegation token methods), JobID, TaskAttemptID (for log file location).\n- Outputs: JobStatus, ClusterMetrics, JobTrackerStatus, TaskReport[], String (filesystem name), JobStatus[], TaskCompletionEvent[], String[], TaskTrackerInfo[], String (system directory), String (staging area directory), String (job history directory), QueueInfo[], QueueInfo, QueueAclsInfo[], QueueInfo[], Token (for delegation tokens).\n\nDEPENDENCIES:\n- Imported classes: `IOException`, `VersionedProtocol`, `Text`, `Credentials`, `JobID`, `JobStatus`, `TaskAttemptID`, `TaskCompletionEvent`, `TaskReport`, `TaskType`, `DelegationTokenSelector`, `DelegationTokenIdentifier`, `JTConfig`, `LogParams`, `AccessControlList`, `Token`, `BlackListInfo`.\n- Collaborator classes: `org.apache.hadoop.mapreduce.Cluster`, `org.apache.hadoop.mapreduce.Job`, `org.apache.hadoop.mapreduce.JobTracker`, `org.apache.hadoop.mapreduce.TaskTracker`, `org.apache.hadoop.mapreduce.security.token.delegation.DelegationTokenSelector`, `org.apache.hadoop.mapreduce.security.token.Token`, `org.apache.hadoop.security.authorize.AccessControlList`, `org.apache.hadoop.security.token.TokenInfo`, `org.apache.hadoop.mapreduce.v2.LogParams`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 16,
+    "class": "org.apache.hadoop.mapreduce.security.token.delegation.DelegationTokenIdentifier",
+    "path": "security/token/delegation/DelegationTokenIdentifier.java",
+    "file_name": "DelegationTokenIdentifier.java",
+    "directory": "security/token/delegation",
+    "summary": "KEY FUNCTIONALITY:\nThis Java class, `DelegationTokenIdentifier`, is part of the Apache Hadoop MapReduce security module. Its main purpose is to create and manage delegation tokens specific to MapReduce jobs.\n\nCORE LOGIC:\nThe class extends `AbstractDelegationTokenIdentifier`, overriding its methods to provide MapReduce-specific functionality. It defines a constant `MAPREDUCE_DELEGATION_KIND` of type `Text` to identify MapReduce delegation tokens. It has a constructor that initializes an empty token identifier for reading and another that creates a new token identifier with owner, renewer, and real user details. The `getKind()` method returns the kind of delegation token, which is set to `MAPREDUCE_DELEGATION_KIND`.\n\nINPUTS/OUTPUTS:\nThe class does not directly handle inputs or outputs in the traditional sense (like reading from files or writing to databases). Instead, it manages the creation and identification of delegation tokens, which are used for secure job submission and tracking in Hadoop MapReduce.\n\nDEPENDENCIES:\nThe class depends on several external classes and packages:\n- `org.apache.hadoop.classification`: For annotations like `@InterfaceAudience` and `@InterfaceStability`.\n- `org.apache.hadoop.io.Text`: For the `Text` class used to represent strings in Hadoop.\n- `org.apache.hadoop.security.token.delegation.AbstractDelegationTokenIdentifier`: The abstract class being extended to provide basic delegation token identifier functionality.\n- `org.apache.hadoop.mapreduce.security.token.delegation`: The package that this class belongs to, indicating its role within the MapReduce security token delegation subsystem.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 16,
+    "class": "org.apache.hadoop.mapreduce.security.token.delegation.DelegationTokenSecretManager",
+    "path": "security/token/delegation/DelegationTokenSecretManager.java",
+    "file_name": "DelegationTokenSecretManager.java",
+    "directory": "security/token/delegation",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this chunk is to define a class `DelegationTokenSecretManager` that extends `AbstractDelegationTokenSecretManager` for managing MapReduce-specific delegation tokens.\n\nCORE LOGIC:\nThe core logic involves the constructor that initializes the secret manager with parameters for rolling new secret keys, maximum token lifetime, token renewal interval, and token removal scan interval. The `createIdentifier` method is overridden to create a new instance of `DelegationTokenIdentifier`.\n\nINPUTS/OUTPUTS:\nThe class does not directly handle inputs or outputs in the traditional sense as it's not part of a data processing pipeline. However, it manages the creation and lifecycle of delegation tokens, which are used for secure access in Hadoop MapReduce jobs.\n\nDEPENDENCIES:\nThe key dependencies visible in this chunk are:\n- `org.apache.hadoop.mapreduce.security.token.delegation.DelegationTokenIdentifier`\n- `org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager`\n- `org.apache.hadoop.classification.InterfaceAudience`\n- `org.apache.hadoop.classification.InterfaceStability`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 16,
+    "class": "org.apache.hadoop.mapreduce.security.token.delegation.DelegationTokenSelector",
+    "path": "security/token/delegation/DelegationTokenSelector.java",
+    "file_name": "DelegationTokenSelector.java",
+    "directory": "security/token/delegation",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this chunk is to define a specialized delegation token class for Apache Hadoop MapReduce, named `DelegationTokenSelector`, which extends the `AbstractDelegationTokenSelector` class.\n\nCORE LOGIC:\nThe core logic involves extending the `AbstractDelegationTokenSelector` class and providing a specialized delegation token kind for MapReduce jobs by passing `DelegationTokenIdentifier.MAPREDUCE_DELEGATION_KIND` to the superclass constructor.\n\nINPUTS/OUTPUTS:\nThere are no direct inputs or outputs visible in this chunk. It's a class definition with a constructor that takes an input (the delegation token kind) and doesn't produce any immediate output.\n\nDEPENDENCIES:\nThe key dependencies visible in this chunk are:\n- `org.apache.hadoop.mapreduce.security.token.delegation` package\n- `org.apache.hadoop.classification.InterfaceAudience` annotation\n- `org.apache.hadoop.classification.InterfaceStability` annotation\n- `org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSelector` class\n- `DelegationTokenIdentifier.MAPREDUCE_DELEGATION_KIND` constant",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 16,
+    "class": "org.apache.hadoop.mapreduce.v2.LogParams",
+    "path": "v2/LogParams.java",
+    "file_name": "LogParams.java",
+    "directory": "v2",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class, as evident from this chunk, is to encapsulate and manage log parameters for a Hadoop MapReduce job. It stores and retrieves container ID, application ID, node ID, and owner information.\n\nCORE LOGIC:\nThe core logic involves a simple data storage mechanism using private instance variables (`containerId`, `applicationId`, `nodeId`, `owner`). The class provides a constructor to initialize these variables and getter/setter methods to retrieve and modify their values.\n\nINPUTS/OUTPUTS:\nThe class does not directly handle inputs or outputs. Instead, it stores input parameters (`containerId`, `applicationId`, `nodeId`, `owner`) that are likely used elsewhere in the Hadoop MapReduce framework for logging or tracking purposes.\n\nDEPENDENCIES:\nThe chunk imports classes from the `org.apache.hadoop.mapreduce.v2` package, indicating that this class is part of the Hadoop MapReduce v2 library. It doesn't explicitly show dependencies on other classes, but it's implied that this class is used in conjunction with other components of the Hadoop MapReduce framework for managing logs or job-related information.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

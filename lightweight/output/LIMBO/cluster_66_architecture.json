@@ -1,0 +1,21 @@
+{
+  "cluster_id": 66,
+  "title": "Job Control Management",
+  "description": "The Hadoop MapReduce cluster's job control management, located in 'lib/jobcontrol', orchestrates job submission, execution, and dependency checks. 'JobControl.java' maintains job states, generates IDs, and detects circular dependencies, utilizing Java collections and threading. It interfaces with Hadoop's job management system, providing job state information via getter methods for external access. This coordinator pattern ensures scalability and maintainability, with reliability enhanced by dependency checks. Java is the primary technology, demonstrating a utility architectural role. Performance is optimized through efficient job state management and dependency resolution. Security is implied through controlled access to job states.",
+  "description_word_count": 94,
+  "number_of_files": 1,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job Control Management\n\nDESCRIPTION: The Hadoop MapReduce cluster's job control management, located in 'lib/jobcontrol', orchestrates job submission, execution, and dependency checks. 'JobControl.java' maintains job states, generates IDs, and detects circular dependencies, utilizing Java collections and threading. It interfaces with Hadoop's job management system, providing job state information via getter methods for external access. This coordinator pattern ensures scalability and maintainability, with reliability enhanced by dependency checks. Java is the primary technology, demonstrating a utility architectural role. Performance is optimized through efficient job state management and dependency resolution. Security is implied through controlled access to job states.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/jobcontrol/JobControl.java"
+  ]
+}

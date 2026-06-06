@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 17,
+  "directory": "security",
+  "title": "JobTokenSecretManager.java",
+  "description": "This Java file implements a SecretManager for job tokens in Hadoop MapReduce. It extends the SecretManager class, overriding methods to handle job tokens. A TreeMap caches generated job tokens. Methods create, store, and retrieve job token secrets using a master key. The class interacts with Hadoop security classes for token management, handling JobTokenIdentifier, job IDs, and tokens as inputs, outputting job token secrets as SecretKey objects or byte arrays.",
+  "summary": "TITLE: JobTokenSecretManager.java\nDESCRIPTION: This Java file implements a SecretManager for job tokens in Hadoop MapReduce. It extends the SecretManager class, overriding methods to handle job tokens. A TreeMap caches generated job tokens. Methods create, store, and retrieve job token secrets using a master key. The class interacts with Hadoop security classes for token management, handling JobTokenIdentifier, job IDs, and tokens as inputs, outputting job token secrets as SecretKey objects or byte arrays.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "SecureShuffleUtils.java"
+    },
+    {
+      "type": "directory",
+      "name": "security/token"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobTokenSecretManager.java\n\nDESCRIPTION:\nThis Java file implements a SecretManager for job tokens in Hadoop MapReduce. It extends the SecretManager class, overriding methods to handle job tokens. A TreeMap caches generated job tokens. Methods create, store, and retrieve job token secrets using a master key. The class interacts with Hadoop security classes for token management, handling JobTokenIdentifier, job IDs, and tokens as inputs, outputting job token secrets as SecretKey objects or byte arrays."
+}

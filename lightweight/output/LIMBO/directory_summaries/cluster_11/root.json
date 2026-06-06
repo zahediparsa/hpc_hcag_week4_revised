@@ -1,0 +1,30 @@
+{
+  "type": "directory",
+  "cluster_id": 11,
+  "directory": ".",
+  "title": "MapReduce Job and Task Identification",
+  "description": "The directory contains Java classes responsible for uniquely identifying jobs and tasks in Apache Hadoop MapReduce. The JobID.java class defines a unique identifier for a job, consisting of a job tracker identifier and a job number. The JobStatus.java class encapsulates and manages the status of a job, providing comprehensive information about job-related attributes. TaskAttemptID.java represents the unique identifier for a task attempt, combining a TaskID and a task attempt number. TaskID.java defines the unique identifier for a Map or Reduce task, encapsulating the job ID, task type, and task number. These classes collaborate to ensure proper identification and tracking of jobs and tasks within the MapReduce framework, adhering to the principles of encapsulation, inheritance, and serialization.",
+  "summary": "TITLE: MapReduce Job and Task Identification\nDESCRIPTION: The directory contains Java classes responsible for uniquely identifying jobs and tasks in Apache Hadoop MapReduce. The JobID.java class defines a unique identifier for a job, consisting of a job tracker identifier and a job number. The JobStatus.java class encapsulates and manages the status of a job, providing comprehensive information about job-related attributes. TaskAttemptID.java represents the unique identifier for a task attempt, combining a TaskID and a task attempt number. TaskID.java defines the unique identifier for a Map or Reduce task, encapsulating the job ID, task type, and task number. These classes collaborate to ensure proper identification and tracking of jobs and tasks within the MapReduce framework, adhering to the principles of encapsulation, inheritance, and serialization.",
+  "number_of_children": 4,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobID.java"
+    },
+    {
+      "type": "file",
+      "name": "JobStatus.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptID.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskID.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Job and Task Identification\n\nDESCRIPTION:\nThe directory contains Java classes responsible for uniquely identifying jobs and tasks in Apache Hadoop MapReduce. The JobID.java class defines a unique identifier for a job, consisting of a job tracker identifier and a job number. The JobStatus.java class encapsulates and manages the status of a job, providing comprehensive information about job-related attributes. TaskAttemptID.java represents the unique identifier for a task attempt, combining a TaskID and a task attempt number. TaskID.java defines the unique identifier for a Map or Reduce task, encapsulating the job ID, task type, and task number. These classes collaborate to ensure proper identification and tracking of jobs and tasks within the MapReduce framework, adhering to the principles of encapsulation, inheritance, and serialization."
+}

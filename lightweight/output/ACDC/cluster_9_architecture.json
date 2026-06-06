@@ -1,0 +1,30 @@
+{
+  "cluster_id": 9,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and a distributed file system (HDFS). The JobTracker coordinates and monitors MapReduce tasks, while NodeManagers execute them. Mappers and Reducers, implemented in 'lib/map' and 'lib/reduce' respectively, process data in parallel across the cluster. Custom Mappers like InverseMapper, MultithreadedMapper, TokenCounterMapper, and WrappedMapper demonstrate MapReduce's adaptability. HDFS ensures data reliability and scalability. Technologies used include Java for programming, Hadoop APIs for framework interaction, and YARN for resource management. This architecture exhibits high scalability, maintainability, and reliability, leveraging the master-worker pattern for task coordination and execution.",
+  "description_word_count": 100,
+  "number_of_files": 10,
+  "number_of_directories": 5,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and a distributed file system (HDFS). The JobTracker coordinates and monitors MapReduce tasks, while NodeManagers execute them. Mappers and Reducers, implemented in 'lib/map' and 'lib/reduce' respectively, process data in parallel across the cluster. Custom Mappers like InverseMapper, MultithreadedMapper, TokenCounterMapper, and WrappedMapper demonstrate MapReduce's adaptability. HDFS ensures data reliability and scalability. Technologies used include Java for programming, Hadoop APIs for framework interaction, and YARN for resource management. This architecture exhibits high scalability, maintainability, and reliability, leveraging the master-worker pattern for task coordination and execution.",
+  "algorithm": "ACDC",
+  "files": [
+    "MapContext.java",
+    "Mapper.java",
+    "StatusReporter.java",
+    "lib/fieldsel/FieldSelectionMapper.java",
+    "lib/map/InverseMapper.java",
+    "lib/map/MultithreadedMapper.java",
+    "lib/map/TokenCounterMapper.java",
+    "lib/map/WrappedMapper.java",
+    "task/MapContextImpl.java",
+    "task/TaskInputOutputContextImpl.java"
+  ]
+}

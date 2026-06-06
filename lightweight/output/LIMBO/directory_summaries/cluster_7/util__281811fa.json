@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": "util",
+  "title": "MapReduce Job Configuration Utilities",
+  "description": "The `MRJobConfUtil.java` file provides utility methods for configuring MapReduce jobs in Apache Hadoop. It includes functionalities for redacting sensitive properties, calculating task progress report intervals, and setting logging thresholds. The class utilizes various Hadoop and Java libraries for its operations, ensuring secure and efficient job configurations. It modifies the input Configuration object and returns it with updated settings, serving as a crucial component in managing MapReduce job configurations.",
+  "summary": "TITLE: MapReduce Job Configuration Utilities\nDESCRIPTION: The `MRJobConfUtil.java` file provides utility methods for configuring MapReduce jobs in Apache Hadoop. It includes functionalities for redacting sensitive properties, calculating task progress report intervals, and setting logging thresholds. The class utilizes various Hadoop and Java libraries for its operations, ensuring secure and efficient job configurations. It modifies the input Configuration object and returns it with updated settings, serving as a crucial component in managing MapReduce job configurations.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "MRJobConfUtil.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Job Configuration Utilities\n\nDESCRIPTION:\nThe `MRJobConfUtil.java` file provides utility methods for configuring MapReduce jobs in Apache Hadoop. It includes functionalities for redacting sensitive properties, calculating task progress report intervals, and setting logging thresholds. The class utilizes various Hadoop and Java libraries for its operations, ensuring secure and efficient job configurations. It modifies the input Configuration object and returns it with updated settings, serving as a crucial component in managing MapReduce job configurations."
+}

@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 91,
+  "directory": "security/token",
+  "title": "JobTokenSecretManager and JobTokenSelector",
+  "description": "The 'security/token' directory in Hadoop MapReduce architecture contains two key components for managing job tokens: JobTokenSecretManager.java and JobTokenSelector.java. \n\nJobTokenSecretManager.java serves as a SecretManager for job tokens, providing methods to create, store, and retrieve job token secrets. It extends the SecretManager interface and maintains a cache of generated job tokens using a TreeMap.\n\nJobTokenSelector.java, on the other hand, acts as a TokenSelector for job tokens. Its primary function is to locate and return the first job token from a collection of tokens that matches a specified service. It does this by iterating over the provided tokens and checking if the token's kind matches JobTokenIdentifier.KIND_NAME and if the token's service matches the given service.\n\nBoth components collaborate to ensure secure and efficient management and retrieval of job tokens in the Hadoop MapReduce framework, adhering to the Secret Manager and Token Selector architectural patterns respectively.",
+  "summary": "TITLE: JobTokenSecretManager and JobTokenSelector\nDESCRIPTION: The 'security/token' directory in Hadoop MapReduce architecture contains two key components for managing job tokens: JobTokenSecretManager.java and JobTokenSelector.java. \n\nJobTokenSecretManager.java serves as a SecretManager for job tokens, providing methods to create, store, and retrieve job token secrets. It extends the SecretManager interface and maintains a cache of generated job tokens using a TreeMap.\n\nJobTokenSelector.java, on the other hand, acts as a TokenSelector for job tokens. Its primary function is to locate and return the first job token from a collection of tokens that matches a specified service. It does this by iterating over the provided tokens and checking if the token's kind matches JobTokenIdentifier.KIND_NAME and if the token's service matches the given service.\n\nBoth components collaborate to ensure secure and efficient management and retrieval of job tokens in the Hadoop MapReduce framework, adhering to the Secret Manager and Token Selector architectural patterns respectively.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobTokenSecretManager.java"
+    },
+    {
+      "type": "file",
+      "name": "JobTokenSelector.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobTokenSecretManager and JobTokenSelector\n\nDESCRIPTION:\nThe 'security/token' directory in Hadoop MapReduce architecture contains two key components for managing job tokens: JobTokenSecretManager.java and JobTokenSelector.java. \n\nJobTokenSecretManager.java serves as a SecretManager for job tokens, providing methods to create, store, and retrieve job token secrets. It extends the SecretManager interface and maintains a cache of generated job tokens using a TreeMap.\n\nJobTokenSelector.java, on the other hand, acts as a TokenSelector for job tokens. Its primary function is to locate and return the first job token from a collection of tokens that matches a specified service. It does this by iterating over the provided tokens and checking if the token's kind matches JobTokenIdentifier.KIND_NAME and if the token's service matches the given service.\n\nBoth components collaborate to ensure secure and efficient management and retrieval of job tokens in the Hadoop MapReduce framework, adhering to the Secret Manager and Token Selector architectural patterns respectively."
+}

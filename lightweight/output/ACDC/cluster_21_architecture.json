@@ -1,0 +1,28 @@
+{
+  "cluster_id": 21,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "This Hadoop MapReduce cluster architecture, comprising 21 nodes, employs a distributed processing model. The 'task' directory, utilizing a layered architectural pattern, manages task-level context with JobContextImpl, ReduceContextImpl, and TaskAttemptContextImpl, ensuring modularity and separation of concerns. JobContextImpl provides job configuration, ReduceContextImpl handles key-value pairs in the reduce phase, and TaskAttemptContextImpl oversees individual task attempts. The 'lib' directory, implementing the Strategy pattern, allows for custom input and partitioning mechanisms, enhancing flexibility and extensibility. This architecture ensures scalability, maintainability, and reliability, leveraging Java for programming and Hadoop's MapReduce framework for distributed data processing. Security is maintained through Hadoop's access control mechanisms. Performance is optimized via data locality and parallel processing.",
+  "description_word_count": 107,
+  "number_of_files": 8,
+  "number_of_directories": 5,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: This Hadoop MapReduce cluster architecture, comprising 21 nodes, employs a distributed processing model. The 'task' directory, utilizing a layered architectural pattern, manages task-level context with JobContextImpl, ReduceContextImpl, and TaskAttemptContextImpl, ensuring modularity and separation of concerns. JobContextImpl provides job configuration, ReduceContextImpl handles key-value pairs in the reduce phase, and TaskAttemptContextImpl oversees individual task attempts. The 'lib' directory, implementing the Strategy pattern, allows for custom input and partitioning mechanisms, enhancing flexibility and extensibility. This architecture ensures scalability, maintainability, and reliability, leveraging Java for programming and Hadoop's MapReduce framework for distributed data processing. Security is maintained through Hadoop's access control mechanisms. Performance is optimized via data locality and parallel processing.",
+  "algorithm": "ACDC",
+  "files": [
+    "MarkableIterator.java",
+    "MarkableIteratorInterface.java",
+    "ReduceContext.java",
+    "lib/input/TextInputFormat.java",
+    "lib/partition/HashPartitioner.java",
+    "task/JobContextImpl.java",
+    "task/ReduceContextImpl.java",
+    "task/TaskAttemptContextImpl.java"
+  ]
+}

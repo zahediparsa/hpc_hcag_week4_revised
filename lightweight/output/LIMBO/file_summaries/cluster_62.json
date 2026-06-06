@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 62,
+    "class": "org.apache.hadoop.mapreduce.lib.input.CompressedSplitLineReader",
+    "path": "lib/input/CompressedSplitLineReader.java",
+    "file_name": "CompressedSplitLineReader.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class, `CompressedSplitLineReader`, is to extend the functionality of `SplitLineReader` to handle reading records from compressed splits correctly, avoiding data loss or duplication.\n\nCORE LOGIC:\nThe core logic revolves around the `fillBuffer` method, which is overridden to handle reading from a `SplitCompressionInputStream`. It checks if the split ended in the middle of a record or delimiter and decides whether to read an additional record to prevent data loss or duplication. The `readLine` method is also overridden to limit reading to one additional record after the split has ended.\n\nINPUTS/OUTPUTS:\n- INPUTS: The class takes a `SplitCompressionInputStream`, a `Configuration` object, and a byte array `recordDelimiterBytes` as inputs.\n- OUTPUTS: It reads lines of text from a compressed split, handling edge cases where the split ends in the middle of a record or delimiter.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.lib.input.SplitLineReader`\n- `java.io.IOException`\n- `java.io.InputStream`\n- `org.apache.hadoop.io.Text`\n- `org.apache.hadoop.io.compress.SplitCompressionInputStream`\n- `org.apache.hadoop.conf.Configuration`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 62,
+    "class": "org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader",
+    "path": "lib/input/UncompressedSplitLineReader.java",
+    "file_name": "UncompressedSplitLineReader.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY: The main purpose of this class is to extend the functionality of the SplitLineReader for uncompressed files, ensuring correct splitting even with multi-byte delimiters. It also handles reading an additional record if the split ends in the middle of a record delimiter.\n\nCORE LOGIC: The core logic involves overriding methods from the parent class SplitLineReader to manage reading from an uncompressed file input stream. The `fillBuffer` method determines how many bytes to read from the input stream based on the remaining length of the current split. If the split ends in the middle of a record delimiter, it sets a flag to read an additional record in the next read operation.\n\nINPUTS/OUTPUTS: The class takes a `FSDataInputStream` (an input stream for reading HDFS files), a `Configuration` object (for Hadoop configuration), a byte array `recordDelimiterBytes` (to define the record delimiter), and a `long splitLength` (the length of the current split to read). It outputs `Text` objects, which represent lines read from the input stream.\n\nDEPENDENCIES: The class depends on several Hadoop core classes:\n- `org.apache.hadoop.classification`: For annotations like `@InterfaceAudience` and `@InterfaceStability`.\n- `org.apache.hadoop.conf`: For the `Configuration` class.\n- `org.apache.hadoop.fs`: For `FSDataInputStream`.\n- `org.apache.hadoop.io`: For the `Text` class.\n- `org.apache.hadoop.mapreduce.lib.input`: For the parent class `SplitLineReader`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 73,
+  "directory": "security/token",
+  "title": "JobTokenIdentifier for MapReduce Security",
+  "description": "The JobTokenIdentifier.java file in Hadoop's security/token directory defines a class for representing job token identifiers in MapReduce tasks. It extends TokenIdentifier, storing job IDs as Text objects. The class provides methods for creating, reading, writing, and renewing job tokens, facilitating secure access control. It interacts with Hadoop's security components, including UserGroupInformation, and adheres to Hadoop's data serialization standards. Dependencies include core Hadoop classes for token management and security, ensuring seamless integration with Hadoop's security architecture.",
+  "summary": "TITLE: JobTokenIdentifier for MapReduce Security\nDESCRIPTION: The JobTokenIdentifier.java file in Hadoop's security/token directory defines a class for representing job token identifiers in MapReduce tasks. It extends TokenIdentifier, storing job IDs as Text objects. The class provides methods for creating, reading, writing, and renewing job tokens, facilitating secure access control. It interacts with Hadoop's security components, including UserGroupInformation, and adheres to Hadoop's data serialization standards. Dependencies include core Hadoop classes for token management and security, ensuring seamless integration with Hadoop's security architecture.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobTokenIdentifier.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobTokenIdentifier for MapReduce Security\n\nDESCRIPTION:\nThe JobTokenIdentifier.java file in Hadoop's security/token directory defines a class for representing job token identifiers in MapReduce tasks. It extends TokenIdentifier, storing job IDs as Text objects. The class provides methods for creating, reading, writing, and renewing job tokens, facilitating secure access control. It interacts with Hadoop's security components, including UserGroupInformation, and adheres to Hadoop's data serialization standards. Dependencies include core Hadoop classes for token management and security, ensuring seamless integration with Hadoop's security architecture."
+}

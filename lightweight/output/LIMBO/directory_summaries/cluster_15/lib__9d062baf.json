@@ -1,0 +1,30 @@
+{
+  "type": "directory",
+  "cluster_id": 15,
+  "directory": "lib",
+  "title": "Hadoop MapReduce Library Integration",
+  "description": "The 'lib' directory in the Hadoop MapReduce architecture houses Java files that serve as crucial components for extending and customizing the MapReduce functionality. These files implement various mapper classes, each serving a distinct purpose. The 'aggregate' subdirectory contains the ValueAggregatorMapper.java, a generic mapper for Apache Hadoop's ValueAggregator, facilitating data aggregation. The 'fieldsel' subdirectory includes FieldSelectionMapper.java, a custom mapper for field selection, akin to Unix 'cut' command. The 'input' directory showcases the DelegatingMapper and TaggedInputSplit collaboration, enabling the use of different mappers for diverse input paths within a single MapReduce job. Lastly, the 'map' directory features WrappedMapper.java, a wrapper class for extending Mapper functionality without altering the original object, managing the mapper's execution context. These components collectively illustrate the Directory-Level Architectural Abstraction, demonstrating how Hadoop MapReduce leverages custom mappers to cater to varied data processing needs, thereby exemplifying the Adapter and Wrapper patterns.",
+  "summary": "TITLE: Hadoop MapReduce Library Integration\nDESCRIPTION: The 'lib' directory in the Hadoop MapReduce architecture houses Java files that serve as crucial components for extending and customizing the MapReduce functionality. These files implement various mapper classes, each serving a distinct purpose. The 'aggregate' subdirectory contains the ValueAggregatorMapper.java, a generic mapper for Apache Hadoop's ValueAggregator, facilitating data aggregation. The 'fieldsel' subdirectory includes FieldSelectionMapper.java, a custom mapper for field selection, akin to Unix 'cut' command. The 'input' directory showcases the DelegatingMapper and TaggedInputSplit collaboration, enabling the use of different mappers for diverse input paths within a single MapReduce job. Lastly, the 'map' directory features WrappedMapper.java, a wrapper class for extending Mapper functionality without altering the original object, managing the mapper's execution context. These components collectively illustrate the Directory-Level Architectural Abstraction, demonstrating how Hadoop MapReduce leverages custom mappers to cater to varied data processing needs, thereby exemplifying the Adapter and Wrapper patterns.",
+  "number_of_children": 4,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/aggregate"
+    },
+    {
+      "type": "directory",
+      "name": "lib/fieldsel"
+    },
+    {
+      "type": "directory",
+      "name": "lib/input"
+    },
+    {
+      "type": "directory",
+      "name": "lib/map"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Library Integration\n\nDESCRIPTION: The 'lib' directory in the Hadoop MapReduce architecture houses Java files that serve as crucial components for extending and customizing the MapReduce functionality. These files implement various mapper classes, each serving a distinct purpose. The 'aggregate' subdirectory contains the ValueAggregatorMapper.java, a generic mapper for Apache Hadoop's ValueAggregator, facilitating data aggregation. The 'fieldsel' subdirectory includes FieldSelectionMapper.java, a custom mapper for field selection, akin to Unix 'cut' command. The 'input' directory showcases the DelegatingMapper and TaggedInputSplit collaboration, enabling the use of different mappers for diverse input paths within a single MapReduce job. Lastly, the 'map' directory features WrappedMapper.java, a wrapper class for extending Mapper functionality without altering the original object, managing the mapper's execution context. These components collectively illustrate the Directory-Level Architectural Abstraction, demonstrating how Hadoop MapReduce leverages custom mappers to cater to varied data processing needs, thereby exemplifying the Adapter and Wrapper patterns."
+}

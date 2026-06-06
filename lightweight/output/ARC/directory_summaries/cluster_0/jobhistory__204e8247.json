@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "jobhistory",
+  "title": "Job History Directory in Hadoop MapReduce",
+  "description": "The 'jobhistory' directory in Hadoop MapReduce's cluster level is pivotal for tracking and recording job-related events. It contains several Java files, each serving unique purposes. \n\nAvroArrayUtils.java provides utility methods for converting between standard Java arrays and Avro format, crucial for Avro-based data serialization. \n\nJobSubmittedEvent.java defines the JobSubmittedEvent class, representing job submission events. It implements the HistoryEvent interface, capturing and storing job submission details like job ID, name, user, submission time, and job configuration path.\n\nMapAttemptFinishedEvent.java encapsulates the successful completion of a map attempt, detailing task ID, type, status, timestamps, host, rack, counters, and split data. It converts internal data structures to Avro format and TimelineEvent for YARN timeline service integration.\n\nThese components collaborate to maintain a comprehensive history of job executions, aiding in job tracking, debugging, and performance analysis within the Hadoop MapReduce framework. The directory's architecture follows a layered pattern, with each file handling specific responsibilities, thereby ensuring a modular and maintainable system.",
+  "summary": "TITLE: Job History Directory in Hadoop MapReduce\nDESCRIPTION: The 'jobhistory' directory in Hadoop MapReduce's cluster level is pivotal for tracking and recording job-related events. It contains several Java files, each serving unique purposes. \n\nAvroArrayUtils.java provides utility methods for converting between standard Java arrays and Avro format, crucial for Avro-based data serialization. \n\nJobSubmittedEvent.java defines the JobSubmittedEvent class, representing job submission events. It implements the HistoryEvent interface, capturing and storing job submission details like job ID, name, user, submission time, and job configuration path.\n\nMapAttemptFinishedEvent.java encapsulates the successful completion of a map attempt, detailing task ID, type, status, timestamps, host, rack, counters, and split data. It converts internal data structures to Avro format and TimelineEvent for YARN timeline service integration.\n\nThese components collaborate to maintain a comprehensive history of job executions, aiding in job tracking, debugging, and performance analysis within the Hadoop MapReduce framework. The directory's architecture follows a layered pattern, with each file handling specific responsibilities, thereby ensuring a modular and maintainable system.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AvroArrayUtils.java"
+    },
+    {
+      "type": "file",
+      "name": "JobSubmittedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "MapAttemptFinishedEvent.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job History Directory in Hadoop MapReduce\n\nDESCRIPTION:\nThe 'jobhistory' directory in Hadoop MapReduce's cluster level is pivotal for tracking and recording job-related events. It contains several Java files, each serving unique purposes. \n\nAvroArrayUtils.java provides utility methods for converting between standard Java arrays and Avro format, crucial for Avro-based data serialization. \n\nJobSubmittedEvent.java defines the JobSubmittedEvent class, representing job submission events. It implements the HistoryEvent interface, capturing and storing job submission details like job ID, name, user, submission time, and job configuration path.\n\nMapAttemptFinishedEvent.java encapsulates the successful completion of a map attempt, detailing task ID, type, status, timestamps, host, rack, counters, and split data. It converts internal data structures to Avro format and TimelineEvent for YARN timeline service integration.\n\nThese components collaborate to maintain a comprehensive history of job executions, aiding in job tracking, debugging, and performance analysis within the Hadoop MapReduce framework. The directory's architecture follows a layered pattern, with each file handling specific responsibilities, thereby ensuring a modular and maintainable system."
+}

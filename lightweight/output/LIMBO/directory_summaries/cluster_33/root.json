@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 33,
+  "directory": ".",
+  "title": "Job History Processing in Hadoop MapReduce",
+  "description": "The 'jobhistory' directory in Hadoop MapReduce stores and processes job history data. It uses 'HistoryViewer' to summarize, analyze, and retrieve job details. Utility classes like 'SummarizedJob', 'AnalyzedJob', and 'JobInfo', 'TaskAttemptInfo' aid this process. 'HumanReadableHistoryViewerPrinter' and 'JSONHistoryViewerPrinter' format outputs in human-readable and machine-readable formats respectively. This directory employs Command and Observer design patterns for job history processing and output formatting.",
+  "summary": "TITLE: Job History Processing in Hadoop MapReduce\nDESCRIPTION: The 'jobhistory' directory in Hadoop MapReduce stores and processes job history data. It uses 'HistoryViewer' to summarize, analyze, and retrieve job details. Utility classes like 'SummarizedJob', 'AnalyzedJob', and 'JobInfo', 'TaskAttemptInfo' aid this process. 'HumanReadableHistoryViewerPrinter' and 'JSONHistoryViewerPrinter' format outputs in human-readable and machine-readable formats respectively. This directory employs Command and Observer design patterns for job history processing and output formatting.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "jobhistory"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job History Processing in Hadoop MapReduce\n\nDESCRIPTION: The 'jobhistory' directory in Hadoop MapReduce stores and processes job history data. It uses 'HistoryViewer' to summarize, analyze, and retrieve job details. Utility classes like 'SummarizedJob', 'AnalyzedJob', and 'JobInfo', 'TaskAttemptInfo' aid this process. 'HumanReadableHistoryViewerPrinter' and 'JSONHistoryViewerPrinter' format outputs in human-readable and machine-readable formats respectively. This directory employs Command and Observer design patterns for job history processing and output formatting."
+}

@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "counters",
+  "title": "Hadoop MapReduce Counters Management",
+  "description": "The 'counters' directory in Hadoop MapReduce architecture houses crucial components for managing counters, which are used to track various metrics during job execution. The 'AbstractCounters.java' file defines an abstract class 'AbstractCounters' that serves as a base for managing different types of counters and their groups, using a 'Map' for quick retrieval. The 'FileSystemCounterGroup.java' file provides an abstract class 'FileSystemCounterGroup' for managing filesystem counters using a 'ConcurrentSkipListMap'. Both files implement methods for adding, finding, incrementing counters, and handling serialization/deserialization. They depend on various Hadoop and Google Guava library classes for their functionalities. This directory's role aligns with the Abstract Factory and Bridge architectural patterns, providing a unified interface for diverse counter types and facilitating their management across different Hadoop versions.",
+  "summary": "TITLE: Hadoop MapReduce Counters Management\nDESCRIPTION: The 'counters' directory in Hadoop MapReduce architecture houses crucial components for managing counters, which are used to track various metrics during job execution. The 'AbstractCounters.java' file defines an abstract class 'AbstractCounters' that serves as a base for managing different types of counters and their groups, using a 'Map' for quick retrieval. The 'FileSystemCounterGroup.java' file provides an abstract class 'FileSystemCounterGroup' for managing filesystem counters using a 'ConcurrentSkipListMap'. Both files implement methods for adding, finding, incrementing counters, and handling serialization/deserialization. They depend on various Hadoop and Google Guava library classes for their functionalities. This directory's role aligns with the Abstract Factory and Bridge architectural patterns, providing a unified interface for diverse counter types and facilitating their management across different Hadoop versions.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AbstractCounters.java"
+    },
+    {
+      "type": "file",
+      "name": "FileSystemCounterGroup.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Counters Management\n\nDESCRIPTION:\nThe 'counters' directory in Hadoop MapReduce architecture houses crucial components for managing counters, which are used to track various metrics during job execution. The 'AbstractCounters.java' file defines an abstract class 'AbstractCounters' that serves as a base for managing different types of counters and their groups, using a 'Map' for quick retrieval. The 'FileSystemCounterGroup.java' file provides an abstract class 'FileSystemCounterGroup' for managing filesystem counters using a 'ConcurrentSkipListMap'. Both files implement methods for adding, finding, incrementing counters, and handling serialization/deserialization. They depend on various Hadoop and Google Guava library classes for their functionalities. This directory's role aligns with the Abstract Factory and Bridge architectural patterns, providing a unified interface for diverse counter types and facilitating their management across different Hadoop versions."
+}

@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 15,
+  "directory": "lib/input",
+  "title": "DelegatingMapper and TaggedInputSplit Collaboration",
+  "description": "The DelegatingMapper.java class serves as a delegator for multiple mappers, enabling the use of different mappers for various input paths within a single MapReduce job. It relies on TaggedInputSplit.java, which extends Hadoop's InputSplit, to tag input splits with additional data like InputFormat and Mapper classes. TaggedInputSplit facilitates serialization and deserialization, allowing the DelegatingMapper to retrieve and initialize the appropriate Mapper class based on the input split's tag. This collaboration enhances flexibility in handling diverse data processing requirements within a single MapReduce job.",
+  "summary": "TITLE: DelegatingMapper and TaggedInputSplit Collaboration\nDESCRIPTION: The DelegatingMapper.java class serves as a delegator for multiple mappers, enabling the use of different mappers for various input paths within a single MapReduce job. It relies on TaggedInputSplit.java, which extends Hadoop's InputSplit, to tag input splits with additional data like InputFormat and Mapper classes. TaggedInputSplit facilitates serialization and deserialization, allowing the DelegatingMapper to retrieve and initialize the appropriate Mapper class based on the input split's tag. This collaboration enhances flexibility in handling diverse data processing requirements within a single MapReduce job.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "DelegatingMapper.java"
+    },
+    {
+      "type": "file",
+      "name": "TaggedInputSplit.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: DelegatingMapper and TaggedInputSplit Collaboration\n\nDESCRIPTION:\nThe DelegatingMapper.java class serves as a delegator for multiple mappers, enabling the use of different mappers for various input paths within a single MapReduce job. It relies on TaggedInputSplit.java, which extends Hadoop's InputSplit, to tag input splits with additional data like InputFormat and Mapper classes. TaggedInputSplit facilitates serialization and deserialization, allowing the DelegatingMapper to retrieve and initialize the appropriate Mapper class based on the input split's tag. This collaboration enhances flexibility in handling diverse data processing requirements within a single MapReduce job."
+}

@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 58,
+  "directory": "lib/input",
+  "title": "Hadoop MapReduce Input Splitting Mechanism",
+  "description": "The 'lib/input' directory in Hadoop MapReduce architecture houses crucial classes for input data splitting, namely 'CombineFileSplit.java' and 'FileSplit.java'. 'CombineFileSplit.java' represents a sub-collection of input files, splitting them into smaller sets that can contain blocks from different files. It extends 'InputSplit' and implements 'Writable', storing file paths, start offsets, lengths, and locations. 'FileSplit.java', on the other hand, represents a section or \"split\" of an input file, maintaining metadata such as file path, start position, length, and host information. Both classes implement the 'Writable' interface for serialization, playing a pivotal role in Hadoop's MapReduce architecture by preparing input data for parallel processing. They collaborate by providing detailed input data splits, which are then utilized by 'InputFormat' to feed data into 'Map' tasks, thereby enabling distributed processing across the cluster.",
+  "summary": "TITLE: Hadoop MapReduce Input Splitting Mechanism\nDESCRIPTION: The 'lib/input' directory in Hadoop MapReduce architecture houses crucial classes for input data splitting, namely 'CombineFileSplit.java' and 'FileSplit.java'. 'CombineFileSplit.java' represents a sub-collection of input files, splitting them into smaller sets that can contain blocks from different files. It extends 'InputSplit' and implements 'Writable', storing file paths, start offsets, lengths, and locations. 'FileSplit.java', on the other hand, represents a section or \"split\" of an input file, maintaining metadata such as file path, start position, length, and host information. Both classes implement the 'Writable' interface for serialization, playing a pivotal role in Hadoop's MapReduce architecture by preparing input data for parallel processing. They collaborate by providing detailed input data splits, which are then utilized by 'InputFormat' to feed data into 'Map' tasks, thereby enabling distributed processing across the cluster.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CombineFileSplit.java"
+    },
+    {
+      "type": "file",
+      "name": "FileSplit.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Input Splitting Mechanism\n\nDESCRIPTION:\nThe 'lib/input' directory in Hadoop MapReduce architecture houses crucial classes for input data splitting, namely 'CombineFileSplit.java' and 'FileSplit.java'. 'CombineFileSplit.java' represents a sub-collection of input files, splitting them into smaller sets that can contain blocks from different files. It extends 'InputSplit' and implements 'Writable', storing file paths, start offsets, lengths, and locations. 'FileSplit.java', on the other hand, represents a section or \"split\" of an input file, maintaining metadata such as file path, start position, length, and host information. Both classes implement the 'Writable' interface for serialization, playing a pivotal role in Hadoop's MapReduce architecture by preparing input data for parallel processing. They collaborate by providing detailed input data splits, which are then utilized by 'InputFormat' to feed data into 'Map' tasks, thereby enabling distributed processing across the cluster."
+}

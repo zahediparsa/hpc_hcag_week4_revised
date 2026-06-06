@@ -1,0 +1,14 @@
+[
+  {
+    "algorithm": "ACDC",
+    "cluster": 15,
+    "class": "org.apache.hadoop.mapreduce.lib.reduce.WrappedReducer",
+    "path": "lib/reduce/WrappedReducer.java",
+    "file_name": "WrappedReducer.java",
+    "directory": "lib/reduce",
+    "summary": "KEY FUNCTIONALITY:\nThis Java code defines a class `WrappedReducer` that extends the generic `Reducer` class from Apache Hadoop MapReduce library. The main purpose of this class is to wrap a given reducer to allow for custom implementations of the `Reducer.Context` interface.\n\nCORE LOGIC:\nThe core logic of this class revolves around the nested static class `Context`, which extends the `Reducer.Context` interface. This nested class implements all the methods of `Reducer.Context` and delegates each call to the corresponding method in the wrapped `ReduceContext` object. This allows for custom context implementations while still using the standard Hadoop Reducer functionality.\n\nINPUTS/OUTPUTS:\nThe class does not directly handle any input or output data flow. Instead, it manages the context for the reducer, which indirectly influences how the reducer processes its input and generates output. The inputs are the key-value pairs produced by the Map phase, and the outputs are the reduced key-value pairs that are passed to the OutputFormat.\n\nDEPENDENCIES:\nThis class depends on several classes from the Apache Hadoop MapReduce library, including:\n\n- `org.apache.hadoop.mapreduce.Reducer`\n- `org.apache.hadoop.mapreduce.InputFormat`\n- `org.apache.hadoop.mapreduce.OutputFormat`\n- `org.apache.hadoop.mapreduce.Partitioner`\n- `org.apache.hadoop.mapreduce.Mapper`\n- `org.apache.hadoop.mapreduce.Counter`\n- `org.apache.hadoop.conf.Configuration`\n- `org.apache.hadoop.fs.Path`\n- `org.apache.hadoop.io.RawComparator`\n- `org.apache.hadoop.mapreduce.JobID`\n- `org.apache.hadoop.mapreduce.TaskAttemptID`\n- `org.apache.hadoop.security.Credentials`\n- `org.apache.hadoop.mapreduce.ReduceContext`\n\nThese dependencies are crucial for the functionality of `WrappedReducer`, as they provide the necessary interfaces and classes for Hadoop's MapReduce paradigm.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

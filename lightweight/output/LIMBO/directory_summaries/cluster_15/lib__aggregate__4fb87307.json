@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 15,
+  "directory": "lib/aggregate",
+  "title": "ValueAggregatorMapper.java",
+  "description": "This Java file defines a generic mapper for Apache Hadoop's ValueAggregator. It extends the Mapper class from the MapReduce framework, processing key-value pairs and generating aggregation ID/value pairs. The core logic revolves around the 'map' function, iterating through a list of value aggregator descriptors to emit key-value pairs. It takes key-value pairs and a Context object as inputs, and emits Text type key-value pairs as outputs. Dependencies include Hadoop's core classes and ValueAggregatorJobBase for setup functionality.",
+  "summary": "TITLE: ValueAggregatorMapper.java\nDESCRIPTION: This Java file defines a generic mapper for Apache Hadoop's ValueAggregator. It extends the Mapper class from the MapReduce framework, processing key-value pairs and generating aggregation ID/value pairs. The core logic revolves around the 'map' function, iterating through a list of value aggregator descriptors to emit key-value pairs. It takes key-value pairs and a Context object as inputs, and emits Text type key-value pairs as outputs. Dependencies include Hadoop's core classes and ValueAggregatorJobBase for setup functionality.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ValueAggregatorMapper.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ValueAggregatorMapper.java\n\nDESCRIPTION: \nThis Java file defines a generic mapper for Apache Hadoop's ValueAggregator. It extends the Mapper class from the MapReduce framework, processing key-value pairs and generating aggregation ID/value pairs. The core logic revolves around the 'map' function, iterating through a list of value aggregator descriptors to emit key-value pairs. It takes key-value pairs and a Context object as inputs, and emits Text type key-value pairs as outputs. Dependencies include Hadoop's core classes and ValueAggregatorJobBase for setup functionality."
+}

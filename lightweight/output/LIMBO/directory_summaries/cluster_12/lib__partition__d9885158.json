@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 12,
+  "directory": "lib/partition",
+  "title": "InputSampler.java - MapReduce Input Sampling Utility",
+  "description": "This Java file, InputSampler.java, is part of Apache Hadoop MapReduce's lib/partition directory. It defines a utility class, InputSampler, for collecting input data samples. The class includes three sampler types: SplitSampler, RandomSampler, and IntervalSampler, each implementing a Sampler interface with distinct sampling strategies. The core logic involves using a chosen sampler to obtain a sample keyset, sorting it, and writing it to a partition file. This process supports efficient data partitioning in MapReduce jobs, enhancing performance and resource utilization. The class depends on various Hadoop and Java standard library classes for its functionality.",
+  "summary": "TITLE: InputSampler.java - MapReduce Input Sampling Utility\nDESCRIPTION: This Java file, InputSampler.java, is part of Apache Hadoop MapReduce's lib/partition directory. It defines a utility class, InputSampler, for collecting input data samples. The class includes three sampler types: SplitSampler, RandomSampler, and IntervalSampler, each implementing a Sampler interface with distinct sampling strategies. The core logic involves using a chosen sampler to obtain a sample keyset, sorting it, and writing it to a partition file. This process supports efficient data partitioning in MapReduce jobs, enhancing performance and resource utilization. The class depends on various Hadoop and Java standard library classes for its functionality.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "InputSampler.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: InputSampler.java - MapReduce Input Sampling Utility\n\nDESCRIPTION:\nThis Java file, InputSampler.java, is part of Apache Hadoop MapReduce's lib/partition directory. It defines a utility class, InputSampler, for collecting input data samples. The class includes three sampler types: SplitSampler, RandomSampler, and IntervalSampler, each implementing a Sampler interface with distinct sampling strategies. The core logic involves using a chosen sampler to obtain a sample keyset, sorting it, and writing it to a partition file. This process supports efficient data partitioning in MapReduce jobs, enhancing performance and resource utilization. The class depends on various Hadoop and Java standard library classes for its functionality."
+}

@@ -1,0 +1,46 @@
+{
+  "type": "directory",
+  "cluster_id": 50,
+  "directory": "lib/aggregate",
+  "title": "Value Aggregation in Hadoop MapReduce",
+  "description": "The 'lib/aggregate' directory in Hadoop MapReduce contains classes responsible for aggregating values during the Map and Reduce phases. These classes implement the 'ValueAggregator' interface, facilitating operations like summing, finding maximum/minimum, counting unique values, and computing histograms. Each class, such as 'DoubleValueSum', 'LongValueMax', 'StringValueMax', etc., is designed for specific aggregation tasks. They accept various input types (strings, longs, doubles, objects), perform aggregations, and provide methods to retrieve results or intermediate states. These aggregators collaborate within the MapReduce framework, often used in conjunction with combiners for partial aggregation before data is sent to reducers, enhancing efficiency. The classes depend on standard Java collections and Apache Hadoop's classification and aggregation libraries, adhering to Hadoop's interface stability guidelines.",
+  "summary": "TITLE: Value Aggregation in Hadoop MapReduce\nDESCRIPTION: The 'lib/aggregate' directory in Hadoop MapReduce contains classes responsible for aggregating values during the Map and Reduce phases. These classes implement the 'ValueAggregator' interface, facilitating operations like summing, finding maximum/minimum, counting unique values, and computing histograms. Each class, such as 'DoubleValueSum', 'LongValueMax', 'StringValueMax', etc., is designed for specific aggregation tasks. They accept various input types (strings, longs, doubles, objects), perform aggregations, and provide methods to retrieve results or intermediate states. These aggregators collaborate within the MapReduce framework, often used in conjunction with combiners for partial aggregation before data is sent to reducers, enhancing efficiency. The classes depend on standard Java collections and Apache Hadoop's classification and aggregation libraries, adhering to Hadoop's interface stability guidelines.",
+  "number_of_children": 8,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "DoubleValueSum.java"
+    },
+    {
+      "type": "file",
+      "name": "LongValueMax.java"
+    },
+    {
+      "type": "file",
+      "name": "LongValueMin.java"
+    },
+    {
+      "type": "file",
+      "name": "LongValueSum.java"
+    },
+    {
+      "type": "file",
+      "name": "StringValueMax.java"
+    },
+    {
+      "type": "file",
+      "name": "StringValueMin.java"
+    },
+    {
+      "type": "file",
+      "name": "UniqValueCount.java"
+    },
+    {
+      "type": "file",
+      "name": "ValueHistogram.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Value Aggregation in Hadoop MapReduce\n\nDESCRIPTION:\nThe 'lib/aggregate' directory in Hadoop MapReduce contains classes responsible for aggregating values during the Map and Reduce phases. These classes implement the 'ValueAggregator' interface, facilitating operations like summing, finding maximum/minimum, counting unique values, and computing histograms. Each class, such as 'DoubleValueSum', 'LongValueMax', 'StringValueMax', etc., is designed for specific aggregation tasks. They accept various input types (strings, longs, doubles, objects), perform aggregations, and provide methods to retrieve results or intermediate states. These aggregators collaborate within the MapReduce framework, often used in conjunction with combiners for partial aggregation before data is sent to reducers, enhancing efficiency. The classes depend on standard Java collections and Apache Hadoop's classification and aggregation libraries, adhering to Hadoop's interface stability guidelines."
+}

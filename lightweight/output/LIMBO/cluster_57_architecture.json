@@ -1,0 +1,29 @@
+{
+  "cluster_id": 57,
+  "title": "Hadoop MapReduce Database Input Format",
+  "description": "The Hadoop MapReduce Database Input Format architecture facilitates data ingestion from SQL databases. It comprises custom InputFormat (DBInputFormat) and RecordReader (DBRecordReader) classes, extending Hadoop's generic versions for database-specific functionalities. DBInputFormat reads SQL table data, emitting LongWritable keys and DBWritable values. DBRecordReader reads SQL records, also emitting LongWritable keys and DBWritable values. Specialized versions like DataDrivenDBInputFormat and DataDrivenDBRecordReader generate data-driven WHERE clauses for parallel processing. MySQLDBRecordReader and OracleDBRecordReader provide MySQL and Oracle-specific implementations, respectively. This architecture follows a layered design, abstracting database-specifics in higher layers and providing concrete implementations in lower layers. It ensures scalability by enabling parallel processing of database records, maintainability through abstraction, and reliability via Hadoop's fault-tolerance mechanisms. Technologies used include Java for programming, and Hadoop framework for distributed processing. The architectural pattern observed is layered, with coordinator role assumed by the InputFormat and RecordReader classes.",
+  "description_word_count": 138,
+  "number_of_files": 9,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Database Input Format\n\nDESCRIPTION: The Hadoop MapReduce Database Input Format architecture facilitates data ingestion from SQL databases. It comprises custom InputFormat (DBInputFormat) and RecordReader (DBRecordReader) classes, extending Hadoop's generic versions for database-specific functionalities. DBInputFormat reads SQL table data, emitting LongWritable keys and DBWritable values. DBRecordReader reads SQL records, also emitting LongWritable keys and DBWritable values. Specialized versions like DataDrivenDBInputFormat and DataDrivenDBRecordReader generate data-driven WHERE clauses for parallel processing. MySQLDBRecordReader and OracleDBRecordReader provide MySQL and Oracle-specific implementations, respectively. This architecture follows a layered design, abstracting database-specifics in higher layers and providing concrete implementations in lower layers. It ensures scalability by enabling parallel processing of database records, maintainability through abstraction, and reliability via Hadoop's fault-tolerance mechanisms. Technologies used include Java for programming, and Hadoop framework for distributed processing. The architectural pattern observed is layered, with coordinator role assumed by the InputFormat and RecordReader classes.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/db/DBInputFormat.java",
+    "lib/db/DBRecordReader.java",
+    "lib/db/DataDrivenDBInputFormat.java",
+    "lib/db/DataDrivenDBRecordReader.java",
+    "lib/db/MySQLDBRecordReader.java",
+    "lib/db/MySQLDataDrivenDBRecordReader.java",
+    "lib/db/OracleDBRecordReader.java",
+    "lib/db/OracleDataDrivenDBInputFormat.java",
+    "lib/db/OracleDataDrivenDBRecordReader.java"
+  ]
+}

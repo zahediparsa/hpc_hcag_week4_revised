@@ -1,0 +1,25 @@
+{
+  "cluster_id": 76,
+  "title": "Task Manifest Management in Hadoop MapReduce",
+  "description": "This Hadoop MapReduce component, located in 'lib/output/committer', manages task manifests using classes like 'DirEntry', 'FileEntry', 'ManifestSuccessData', and 'TaskManifest'. The 'LoadedManifestData' class ensures data integrity. This directory exemplifies a maintainable, efficient pattern, employing object-oriented design, serialization, and adherence to Hadoop standards. It demonstrates a 'Mediator' pattern, with each class having a specific role, ensuring clear separation of concerns and reliable data management. The architecture supports scalability, reliability, and performance, leveraging Java for implementation.",
+  "description_word_count": 74,
+  "number_of_files": 5,
+  "number_of_directories": 7,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Task Manifest Management in Hadoop MapReduce\n\nDESCRIPTION: This Hadoop MapReduce component, located in 'lib/output/committer', manages task manifests using classes like 'DirEntry', 'FileEntry', 'ManifestSuccessData', and 'TaskManifest'. The 'LoadedManifestData' class ensures data integrity. This directory exemplifies a maintainable, efficient pattern, employing object-oriented design, serialization, and adherence to Hadoop standards. It demonstrates a 'Mediator' pattern, with each class having a specific role, ensuring clear separation of concerns and reliable data management. The architecture supports scalability, reliability, and performance, leveraging Java for implementation.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/output/committer/manifest/files/DirEntry.java",
+    "lib/output/committer/manifest/files/FileEntry.java",
+    "lib/output/committer/manifest/files/ManifestSuccessData.java",
+    "lib/output/committer/manifest/files/TaskManifest.java",
+    "lib/output/committer/manifest/impl/LoadedManifestData.java"
+  ]
+}

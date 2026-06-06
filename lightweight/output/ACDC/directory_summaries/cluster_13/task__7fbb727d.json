@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 13,
+  "directory": "task",
+  "title": "Checkpointable Annotation Interface",
+  "description": "The task/annotation/Checkpointable.java file in Hadoop MapReduce defines a marker interface for tasks that can be checkpointed. This interface, using Java annotations, tags other classes to indicate they can be safely interrupted and restarted. It collaborates with Hadoop's task framework, providing metadata without altering task behavior. The interface depends on Java language classes and Apache Hadoop project packages. It doesn't process input or generate output, merely annotating other classes for checkpointing.",
+  "summary": "TITLE: Checkpointable Annotation Interface\nDESCRIPTION: The task/annotation/Checkpointable.java file in Hadoop MapReduce defines a marker interface for tasks that can be checkpointed. This interface, using Java annotations, tags other classes to indicate they can be safely interrupted and restarted. It collaborates with Hadoop's task framework, providing metadata without altering task behavior. The interface depends on Java language classes and Apache Hadoop project packages. It doesn't process input or generate output, merely annotating other classes for checkpointing.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "task/annotation"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Checkpointable Annotation Interface\n\nDESCRIPTION: The task/annotation/Checkpointable.java file in Hadoop MapReduce defines a marker interface for tasks that can be checkpointed. This interface, using Java annotations, tags other classes to indicate they can be safely interrupted and restarted. It collaborates with Hadoop's task framework, providing metadata without altering task behavior. The interface depends on Java language classes and Apache Hadoop project packages. It doesn't process input or generate output, merely annotating other classes for checkpointing."
+}

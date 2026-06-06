@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 55,
+  "directory": "lib",
+  "title": "Hadoop MapReduce Database Splitter Directory",
+  "description": "The 'lib/db' directory in Hadoop MapReduce architecture contains classes for splitting database data. These include BigDecimalSplitter, BooleanSplitter, DateSplitter, FloatSplitter, IntegerSplitter, and TextSplitter. Each class implements the 'split' method of the 'DBSplitter' interface, generating InputSplit objects for specific data types. They adapt Hadoop's InputSplit interface to work with specific database data types, exemplifying the Adapter pattern. This enables efficient parallel processing in Hadoop MapReduce jobs by converting database values into numerical or textual representations, splitting them into intervals, and converting back to their original formats.",
+  "summary": "TITLE: Hadoop MapReduce Database Splitter Directory\nDESCRIPTION: The 'lib/db' directory in Hadoop MapReduce architecture contains classes for splitting database data. These include BigDecimalSplitter, BooleanSplitter, DateSplitter, FloatSplitter, IntegerSplitter, and TextSplitter. Each class implements the 'split' method of the 'DBSplitter' interface, generating InputSplit objects for specific data types. They adapt Hadoop's InputSplit interface to work with specific database data types, exemplifying the Adapter pattern. This enables efficient parallel processing in Hadoop MapReduce jobs by converting database values into numerical or textual representations, splitting them into intervals, and converting back to their original formats.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/db"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Database Splitter Directory\n\nDESCRIPTION: The 'lib/db' directory in Hadoop MapReduce architecture contains classes for splitting database data. These include BigDecimalSplitter, BooleanSplitter, DateSplitter, FloatSplitter, IntegerSplitter, and TextSplitter. Each class implements the 'split' method of the 'DBSplitter' interface, generating InputSplit objects for specific data types. They adapt Hadoop's InputSplit interface to work with specific database data types, exemplifying the Adapter pattern. This enables efficient parallel processing in Hadoop MapReduce jobs by converting database values into numerical or textual representations, splitting them into intervals, and converting back to their original formats."
+}

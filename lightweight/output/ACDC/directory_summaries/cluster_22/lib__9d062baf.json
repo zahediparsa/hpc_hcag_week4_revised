@@ -1,0 +1,30 @@
+{
+  "type": "directory",
+  "cluster_id": 22,
+  "directory": "lib",
+  "title": "Hadoop MapReduce Library",
+  "description": "The 'lib' directory in Hadoop MapReduce architecture houses various Java classes that serve as crucial components of the MapReduce library. These components include field selection helpers, key-value text input formats, regular expression extraction mappers, and custom partitioners. The FieldSelectionHelper.java aids in selecting specific data fields for processing, enhancing efficiency. KeyValueLineRecordReader.java and KeyValueTextInputFormat.java handle key-value pairs in text files, while RegexMapper.java extracts text matching a regular expression. Custom partitioners like BinaryPartitioner.java and KeyFieldBasedPartitioner.java offer flexible key-based partitioning. These elements collaborate, employing patterns like Strategy, Factory, and Mapper, to read, split, prepare, and process data for MapReduce jobs, ensuring efficient and flexible data processing.",
+  "summary": "TITLE: Hadoop MapReduce Library\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce architecture houses various Java classes that serve as crucial components of the MapReduce library. These components include field selection helpers, key-value text input formats, regular expression extraction mappers, and custom partitioners. The FieldSelectionHelper.java aids in selecting specific data fields for processing, enhancing efficiency. KeyValueLineRecordReader.java and KeyValueTextInputFormat.java handle key-value pairs in text files, while RegexMapper.java extracts text matching a regular expression. Custom partitioners like BinaryPartitioner.java and KeyFieldBasedPartitioner.java offer flexible key-based partitioning. These elements collaborate, employing patterns like Strategy, Factory, and Mapper, to read, split, prepare, and process data for MapReduce jobs, ensuring efficient and flexible data processing.",
+  "number_of_children": 4,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/fieldsel"
+    },
+    {
+      "type": "directory",
+      "name": "lib/input"
+    },
+    {
+      "type": "directory",
+      "name": "lib/map"
+    },
+    {
+      "type": "directory",
+      "name": "lib/partition"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Library\n\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce architecture houses various Java classes that serve as crucial components of the MapReduce library. These components include field selection helpers, key-value text input formats, regular expression extraction mappers, and custom partitioners. The FieldSelectionHelper.java aids in selecting specific data fields for processing, enhancing efficiency. KeyValueLineRecordReader.java and KeyValueTextInputFormat.java handle key-value pairs in text files, while RegexMapper.java extracts text matching a regular expression. Custom partitioners like BinaryPartitioner.java and KeyFieldBasedPartitioner.java offer flexible key-based partitioning. These elements collaborate, employing patterns like Strategy, Factory, and Mapper, to read, split, prepare, and process data for MapReduce jobs, ensuring efficient and flexible data processing."
+}

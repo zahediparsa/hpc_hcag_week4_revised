@@ -1,0 +1,103 @@
+{
+  "type": "directory",
+  "cluster_id": 20,
+  "directory": "task/reduce",
+  "title": "Reduce Task Processing in Hadoop MapReduce",
+  "description": "The 'task/reduce' directory in Hadoop MapReduce is responsible for merging and processing map outputs. It utilizes multiple threads and classes, including 'EventFetcher', 'Fetcher', 'MergeThread', and 'OnDiskMapOutput', to efficiently manage and execute merge operations concurrently. These components collaborate with 'TaskTracker', 'ShuffleScheduler', 'ExceptionReporter', and 'MergeManager' to ensure seamless data transfer and processing. The 'Shuffle' class orchestrates the shuffle process, while 'ShuffleClientMetrics' tracks shuffle client performance. 'ShuffleHeader' and 'ShuffleSchedulerImpl' manage shuffle data metadata and scheduling, respectively. This directory employs a multi-threaded, collaborative architectural pattern to optimize the reduce phase in Hadoop MapReduce jobs.",
+  "summary": "TITLE: Reduce Task Processing in Hadoop MapReduce\nDESCRIPTION: The 'task/reduce' directory in Hadoop MapReduce is responsible for merging and processing map outputs. It utilizes multiple threads and classes, including 'EventFetcher', 'Fetcher', 'MergeThread', and 'OnDiskMapOutput', to efficiently manage and execute merge operations concurrently. These components collaborate with 'TaskTracker', 'ShuffleScheduler', 'ExceptionReporter', and 'MergeManager' to ensure seamless data transfer and processing. The 'Shuffle' class orchestrates the shuffle process, while 'ShuffleClientMetrics' tracks shuffle client performance. 'ShuffleHeader' and 'ShuffleSchedulerImpl' manage shuffle data metadata and scheduling, respectively. This directory employs a multi-threaded, collaborative architectural pattern to optimize the reduce phase in Hadoop MapReduce jobs.",
+  "number_of_children": 19,
+  "number_of_intermediate_summaries": 2,
+  "children": [
+    {
+      "type": "file",
+      "name": "EventFetcher.java"
+    },
+    {
+      "type": "file",
+      "name": "ExceptionReporter.java"
+    },
+    {
+      "type": "file",
+      "name": "Fetcher.java"
+    },
+    {
+      "type": "file",
+      "name": "IFileWrappedMapOutput.java"
+    },
+    {
+      "type": "file",
+      "name": "InMemoryMapOutput.java"
+    },
+    {
+      "type": "file",
+      "name": "InMemoryReader.java"
+    },
+    {
+      "type": "file",
+      "name": "InMemoryWriter.java"
+    },
+    {
+      "type": "file",
+      "name": "LocalFetcher.java"
+    },
+    {
+      "type": "file",
+      "name": "MapHost.java"
+    },
+    {
+      "type": "file",
+      "name": "MapOutput.java"
+    },
+    {
+      "type": "file",
+      "name": "MergeManager.java"
+    },
+    {
+      "type": "file",
+      "name": "MergeManagerImpl.java"
+    },
+    {
+      "type": "file",
+      "name": "MergeThread.java"
+    },
+    {
+      "type": "file",
+      "name": "OnDiskMapOutput.java"
+    },
+    {
+      "type": "file",
+      "name": "Shuffle.java"
+    },
+    {
+      "type": "file",
+      "name": "ShuffleClientMetrics.java"
+    },
+    {
+      "type": "file",
+      "name": "ShuffleHeader.java"
+    },
+    {
+      "type": "file",
+      "name": "ShuffleScheduler.java"
+    },
+    {
+      "type": "file",
+      "name": "ShuffleSchedulerImpl.java"
+    }
+  ],
+  "intermediate_summaries": [
+    {
+      "type": "intermediate",
+      "name": "task/reduce chunk 0",
+      "summary": "The `task/reduce` node focuses on the merging and processing of map outputs in a Hadoop MapReduce job. The `EventFetcher` class, extending `Thread`, fetches map completion events from `TaskTracker`, collaborating with `TaskUmbilicalProtocol`, `ShuffleScheduler`, and `ExceptionReporter`. `ExceptionReporter` interface, defined separately, allows reporting exceptions to other threads. `Fetcher` class, also a thread, fetches map-outputs from remote hosts, utilizing `MergeManager`, `ShuffleSchedulerImpl`, and `ExceptionReporter`. `IFileWrappedMapOutput` abstract class handles streams, extending `MapOutput`, with `doShuffle` method for shuffling. `InMemoryMapOutput` manages in-memory storage, while `InMemoryReader` reads map-outputs in memory. `InMemoryWriter` writes key-value pairs into an in-memory byte array stream. `LocalFetcher` fetches map outputs from the local filesystem, interacting with `JobConf`, `ShuffleSchedulerImpl`, `MergeManager`, and `ExceptionReporter`. `MapHost` manages host state for map outputs, using `TaskAttemptID`. `MapOutput` abstract class manages map outputs, with `MapOutputComparator` for comparison. `MergeManager` interface manages resources during the shuffle phase, with `MergeManagerImpl` implementing it, handling in-memory and on-disk merging. These components collectively ensure efficient merging and processing of map outputs for the reduce phase in Hadoop MapReduce.",
+      "number_of_children": 12
+    },
+    {
+      "type": "intermediate",
+      "name": "task/reduce chunk 1",
+      "summary": "The `MergeThread` class, as part of the Hadoop MapReduce reduce phase, is responsible for managing and executing merge operations concurrently, enhancing performance. It extends the `Thread` class, maintaining a queue of inputs to be merged and providing methods to start and wait for merge tasks. The `OnDiskMapOutput` class manages temporary on-disk storage of map outputs before merging and writing to final output, using Hadoop's `FileSystem` and `Path` classes. The `Shuffle` class's `run()` method orchestrates the shuffle process, fetching map-completion events and outputs, and merging them. `ShuffleClientMetrics` manages and exposes shuffle client metrics using the Metrics2 library, tracking fetch success, failure, and thread status. `ShuffleHeader` represents shuffle data metadata, serializable for transfer between map and reduce tasks. `ShuffleScheduler` defines shuffle management, while `ShuffleSchedulerImpl` implements this, managing host assignment, task progress, failure handling, and penalties. These components collaborate within the Hadoop MapReduce framework, sharing responsibilities for efficient data processing and management.",
+      "number_of_children": 7
+    }
+  ],
+  "raw_response": "TITLE: Reduce Task Processing in Hadoop MapReduce\n\nDESCRIPTION:\nThe 'task/reduce' directory in Hadoop MapReduce is responsible for merging and processing map outputs. It utilizes multiple threads and classes, including 'EventFetcher', 'Fetcher', 'MergeThread', and 'OnDiskMapOutput', to efficiently manage and execute merge operations concurrently. These components collaborate with 'TaskTracker', 'ShuffleScheduler', 'ExceptionReporter', and 'MergeManager' to ensure seamless data transfer and processing. The 'Shuffle' class orchestrates the shuffle process, while 'ShuffleClientMetrics' tracks shuffle client performance. 'ShuffleHeader' and 'ShuffleSchedulerImpl' manage shuffle data metadata and scheduling, respectively. This directory employs a multi-threaded, collaborative architectural pattern to optimize the reduce phase in Hadoop MapReduce jobs."
+}

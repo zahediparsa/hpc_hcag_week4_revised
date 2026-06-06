@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 30,
+  "directory": ".",
+  "title": "Job History Directory in Hadoop MapReduce",
+  "description": "The 'jobhistory' directory logs MapReduce job histories. It contains classes for job lifecycle events, like AMStartedEvent and TaskAttemptStartedEvent. These classes convert event data into TimelineEvent objects for YARN timeline service. This directory showcases a layered architectural pattern, ensuring comprehensive job history and monitoring. It collaborates by encapsulating specific job-related data, such as application attempt IDs and task finish times.",
+  "summary": "TITLE: Job History Directory in Hadoop MapReduce\nDESCRIPTION: The 'jobhistory' directory logs MapReduce job histories. It contains classes for job lifecycle events, like AMStartedEvent and TaskAttemptStartedEvent. These classes convert event data into TimelineEvent objects for YARN timeline service. This directory showcases a layered architectural pattern, ensuring comprehensive job history and monitoring. It collaborates by encapsulating specific job-related data, such as application attempt IDs and task finish times.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "jobhistory"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job History Directory in Hadoop MapReduce\n\nDESCRIPTION: The 'jobhistory' directory logs MapReduce job histories. It contains classes for job lifecycle events, like AMStartedEvent and TaskAttemptStartedEvent. These classes convert event data into TimelineEvent objects for YARN timeline service. This directory showcases a layered architectural pattern, ensuring comprehensive job history and monitoring. It collaborates by encapsulating specific job-related data, such as application attempt IDs and task finish times."
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 22,
+    "class": "org.apache.hadoop.mapreduce.SharedCacheConfig",
+    "path": "SharedCacheConfig.java",
+    "file_name": "SharedCacheConfig.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class, as indicated by its name and methods, is to parse configuration parameters associated with the shared cache in Apache Hadoop MapReduce. It initializes and manages the state of different shared cache modes (files, libjars, archives, jobjar) based on the provided configuration.\n\nCORE LOGIC:\n- The class uses a Configuration object to read settings.\n- It checks if the job is running on YARN (using MRConfig.YARN_FRAMEWORK_NAME and YarnConfiguration.SHARED_CACHE_ENABLED).\n- It retrieves a collection of strings from MRJobConfig.SHARED_CACHE_MODE, which can contain \"files\", \"libjars\", \"archives\", \"jobjar\", \"enabled\", or \"disabled\".\n- Based on the presence of these strings in the collection, it sets the corresponding boolean flags (sharedCacheFilesEnabled, sharedCacheLibjarsEnabled, sharedCacheArchivesEnabled, sharedCacheJobjarEnabled).\n- It provides getter methods to check the status of each cache mode and an overall isSharedCacheEnabled() method.\n\nINPUTS/OUTPUTS:\n- INPUTS: Configuration object (from which it reads shared cache mode settings)\n- OUTPUTS: Boolean values indicating the status of different shared cache modes and an overall shared cache status\n\nDEPENDENCIES:\n- org.apache.hadoop.mapreduce.MRConfig\n- org.apache.hadoop.yarn.conf.YarnConfiguration\n- org.apache.hadoop.util.StringUtils\n- org.slf4j.Logger\n- org.slf4j.LoggerFactory\n- java.util.Collection\n- java.util.List (implicitly via StringUtils.getTrimmedStringCollection)",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 22,
+    "class": "org.apache.hadoop.mapreduce.server.jobtracker.JTConfig",
+    "path": "server/jobtracker/JTConfig.java",
+    "file_name": "JTConfig.java",
+    "directory": "server/jobtracker",
+    "summary": "KEY FUNCTIONALITY: This Java interface, `JTConfig`, serves as a configuration holder for the JobTracker component in Apache Hadoop MapReduce. It extends `MRConfig` and provides constants for various JobTracker configuration parameters.\n\nCORE LOGIC: The core logic in this chunk is the declaration of static final String constants. These constants represent different configuration parameters for the JobTracker, such as its IPC address, job status persistence, task caching levels, system directory, staging area root, maximum map and reduce memory, and Kerberos principal name.\n\nINPUTS/OUTPUTS: There are no direct inputs or outputs in this chunk as it's purely a configuration interface. It doesn't take any input and doesn't produce any output. Instead, it defines constants that will be used elsewhere in the Hadoop MapReduce system to configure the JobTracker.\n\nDEPENDENCIES: The key imported class visible in this chunk is `MRConfig`. Additionally, it belongs to the package `org.apache.hadoop.mapreduce.server.jobtracker`, indicating its collaboration with other classes in the JobTracker component. It also references the Apache Hadoop license information, showing its association with the Apache Software Foundation's Hadoop project.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 22,
+    "class": "org.apache.hadoop.mapreduce.server.tasktracker.TTConfig",
+    "path": "server/tasktracker/TTConfig.java",
+    "file_name": "TTConfig.java",
+    "directory": "server/tasktracker",
+    "summary": "KEY FUNCTIONALITY: This Java interface, TTConfig, serves as a placeholder for MapReduce server-level configuration settings, previously known as TaskTracker configuration. It extends the MRConfig interface, providing specific configuration constants for MapReduce tasks.\n\nCORE LOGIC: The core logic in this snippet is the declaration of static final String constants representing different configuration parameters for MapReduce tasks. These include TT_INDEX_CACHE (deprecated in favor of MRJobConfig.SHUFFLE_INDEX_CACHE), TT_MAP_SLOTS, and TT_RESOURCE_CALCULATOR_PLUGIN.\n\nINPUTS/OUTPUTS: There are no direct inputs or outputs in this code snippet as it's purely a configuration interface. It doesn't read or write any data; instead, it defines constants that will be used by other parts of the Hadoop MapReduce system to configure tasktracker settings.\n\nDEPENDENCIES: The key imported class visible in this chunk is MRConfig, which TTConfig extends. Additionally, it imports org.apache.hadoop.classification.InterfaceAudience and org.apache.hadoop.classification.InterfaceStability for annotating the interface's audience and stability.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

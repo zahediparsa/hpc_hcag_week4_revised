@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "checkpoint",
+  "title": "Checkpoint Directory in Hadoop MapReduce",
+  "description": "The 'checkpoint' directory in Hadoop MapReduce is responsible for managing checkpoint metadata. It contains files like CheckpointID.java and CheckpointNamingService.java, defining interfaces for checkpoint identifiers and naming services. EnumCounter.java lists constants for different types of counters or metrics. These components collaborate to ensure unique checkpoint identification, generation of new checkpoint names, and categorization of related metrics. This directory employs the Interface Segregation Principle, with each file defining an interface or enumeration, contributing to the overall checkpoint management in Hadoop MapReduce. The directory's role aligns with the MapReduce's fault-tolerance mechanism, enabling periodic saving of intermediate data to stable storage for recovery purposes.",
+  "summary": "TITLE: Checkpoint Directory in Hadoop MapReduce\nDESCRIPTION: The 'checkpoint' directory in Hadoop MapReduce is responsible for managing checkpoint metadata. It contains files like CheckpointID.java and CheckpointNamingService.java, defining interfaces for checkpoint identifiers and naming services. EnumCounter.java lists constants for different types of counters or metrics. These components collaborate to ensure unique checkpoint identification, generation of new checkpoint names, and categorization of related metrics. This directory employs the Interface Segregation Principle, with each file defining an interface or enumeration, contributing to the overall checkpoint management in Hadoop MapReduce. The directory's role aligns with the MapReduce's fault-tolerance mechanism, enabling periodic saving of intermediate data to stable storage for recovery purposes.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CheckpointID.java"
+    },
+    {
+      "type": "file",
+      "name": "CheckpointNamingService.java"
+    },
+    {
+      "type": "file",
+      "name": "EnumCounter.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Checkpoint Directory in Hadoop MapReduce\n\nDESCRIPTION:\nThe 'checkpoint' directory in Hadoop MapReduce is responsible for managing checkpoint metadata. It contains files like CheckpointID.java and CheckpointNamingService.java, defining interfaces for checkpoint identifiers and naming services. EnumCounter.java lists constants for different types of counters or metrics. These components collaborate to ensure unique checkpoint identification, generation of new checkpoint names, and categorization of related metrics. This directory employs the Interface Segregation Principle, with each file defining an interface or enumeration, contributing to the overall checkpoint management in Hadoop MapReduce. The directory's role aligns with the MapReduce's fault-tolerance mechanism, enabling periodic saving of intermediate data to stable storage for recovery purposes."
+}

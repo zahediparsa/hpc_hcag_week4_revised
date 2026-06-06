@@ -1,0 +1,62 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 3,
+    "class": "org.apache.hadoop.mapreduce.ContextFactory",
+    "path": "ContextFactory.java",
+    "file_name": "ContextFactory.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to provide a factory for creating MapReduce Context Objects, handling inconsistencies between versions 0.20 and later of Hadoop.\n\nCORE LOGIC:\nThe code initializes static constructors and fields for different types of MapReduce Contexts (JobContext, TaskAttemptContext, TaskInputOutputContext, MapContext) based on the Hadoop version. It then provides static methods to clone JobContext and TaskAttemptContext with a new configuration and to clone a custom WrappedMapper.Context, optionally replacing the input and output.\n\nINPUTS/OUTPUTS:\n- Inputs: Configuration object, JobID, TaskAttemptID, RecordReader, RecordWriter, OutputCommitter, StatusReporter, InputSplit.\n- Outputs: New instances of JobContext, TaskAttemptContext, or Mapper.Context based on the original context and provided parameters.\n\nDEPENDENCIES:\n- Imported classes: java.io.IOException, java.lang.reflect.Constructor, java.lang.reflect.Field, java.lang.reflect.InvocationTargetException, java.lang.reflect.AccessibleAttribute.\n- Collaborator classes: org.apache.hadoop.conf.Configuration, org.apache.hadoop.mapreduce.JobID, org.apache.hadoop.mapreduce.TaskAttemptID, org.apache.hadoop.mapreduce.RecordReader, org.apache.hadoop.mapreduce.RecordWriter, org.apache.hadoop.mapreduce.OutputCommitter, org.apache.hadoop.mapreduce.StatusReporter, org.apache.hadoop.mapreduce.InputSplit.\n- Inner classes and interfaces: org.apache.hadoop.mapreduce.JobContext, org.apache.hadoop.mapreduce.TaskAttemptContext, org.apache.hadoop.mapreduce.TaskInputOutputContext, org.apache.hadoop.mapreduce.MapContext, org.apache.hadoop.mapreduce.Mapper.Context, org.apache.hadoop.mapred.WrappedMapper.Context.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 3,
+    "class": "org.apache.hadoop.mapreduce.lib.map.MultithreadedMapper",
+    "path": "lib/map/MultithreadedMapper.java",
+    "file_name": "MultithreadedMapper.java",
+    "directory": "lib/map",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a multithreaded implementation for the Hadoop Mapper interface, allowing for improved throughput when the map operation is not CPU-bound.\n\nCORE LOGIC:\nThe core logic involves creating a thread pool to run the map function concurrently. It initializes a list of MapRunner threads, each running an instance of the specified Mapper class. The run method starts these threads, and the main thread waits for their completion, handling any exceptions that may arise. The SubMapRecordReader and SubMapRecordWriter classes handle reading and writing key-value pairs, respectively, while ensuring thread safety.\n\nINPUTS/OUTPUTS:\nThe code does not explicitly show input or output data flow. However, it prepares the environment for handling input data (K1, V1) and producing output data (K2, V2) by managing thread-safe record readers and writers. The actual input and output operations would be handled by the Mapper implementation that extends MultithreadedMapper.\n\nDEPENDENCIES:\nThe code chunk depends on several Hadoop classes and interfaces, including:\n- org.apache.hadoop.mapreduce.Mapper\n- org.apache.hadoop.mapreduce.InputSplit\n- org.apache.hadoop.mapreduce.JobContext\n- org.apache.hadoop.mapreduce.TaskAttemptContext\n- org.apache.hadoop.mapreduce.MapContext\n- org.apache.hadoop.mapreduce.Counter\n- org.apache.hadoop.mapreduce.RecordReader\n- org.apache.hadoop.mapreduce.RecordWriter\n- org.apache.hadoop.mapreduce.StatusReporter\n- org.apache.hadoop.util.ReflectionUtils\n- org.slf4j.Logger\n- org.slf4j.LoggerFactory\n- org.apache.hadoop.conf.Configuration\n- java.io.IOException\n- java.util.List\n- java.util.ArrayList\n\nThese dependencies are crucial for the multithreaded mapper to function correctly within the Hadoop MapReduce framework.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 3,
+    "class": "org.apache.hadoop.mapreduce.task.MapContextImpl",
+    "path": "task/MapContextImpl.java",
+    "file_name": "MapContextImpl.java",
+    "directory": "task",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to implement the `MapContext` interface for providing context to the `Mapper` in Apache Hadoop MapReduce.\n\nCORE LOGIC:\nThe core logic involves the initialization of the `MapContextImpl` class with a `RecordReader` and an `InputSplit`. The `RecordReader` is used to read the input data, and the `InputSplit` provides information about the portion of input data processed by this map task. The class extends `TaskInputOutputContextImpl` to inherit input/output functionalities and implements `MapContext` to provide methods for accessing current key and value, and to move to the next key-value pair.\n\nINPUTS/OUTPUTS:\n- Inputs: `Configuration` (Hadoop configuration), `TaskAttemptID` (identifier for the task attempt), `RecordReader<KEYIN,VALUEIN>` (for reading input data), `RecordWriter<KEYOUT,VALUEOUT>` (for writing output data), `OutputCommitter` (for committing output), `StatusReporter` (for reporting status), and `InputSplit` (describing the data to be processed by this task).\n- Outputs: None explicitly in this chunk, but it prepares the context for the `Mapper` to read input data and produce output.\n\nDEPENDENCIES:\n- Imported classes: `java.io.IOException`\n- Collaborator classes: `org.apache.hadoop.mapreduce.InputSplit`, `org.apache.hadoop.mapreduce.Mapper`, `org.apache.hadoop.mapreduce.OutputCommitter`, `org.apache.hadoop.mapreduce.RecordReader`, `org.apache.hadoop.mapreduce.RecordWriter`, `org.apache.hadoop.mapreduce.StatusReporter`, `org.apache.hadoop.mapreduce.TaskAttemptID`, and `org.apache.hadoop.conf.Configuration`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 3,
+    "class": "org.apache.hadoop.mapreduce.task.ReduceContextImpl",
+    "path": "task/ReduceContextImpl.java",
+    "file_name": "ReduceContextImpl.java",
+    "directory": "task",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to implement the `ReduceContext` interface for Apache Hadoop MapReduce, providing methods to handle key-value pairs during the reduce phase.\n\nCORE LOGIC:\n- The class `ReduceContextImpl` extends `TaskInputOutputContextImpl` and implements `ReduceContext`.\n- It maintains state for the current key-value pair (`key` and `value`), counters for keys and values, and a comparator for keys.\n- The `nextKey()` method advances to the next unique key, while `nextKeyValue()` retrieves the next key-value pair.\n- It includes a nested `ValueIterator` class to provide an iterator over values for a given key, supporting `hasNext()`, `next()`, `remove()`, `mark()`, `reset()`, and `clearMark()` methods.\n- The `getValues()` method returns an iterable over the values for the current key.\n\nINPUTS/OUTPUTS:\n- Inputs: `RawKeyValueIterator` for key-value pairs, `Counter` instances for input keys and values, `RecordWriter` for output, `OutputCommitter`, `StatusReporter`, `RawComparator` for keys, `Configuration`, `Deserialization` for key and value classes, and `TaskAttemptID`.\n- Outputs: Current key (`KEYIN`) and value (`VALUEIN`) through `getCurrentKey()` and `getCurrentValue()` methods, and an iterable of values (`Iterable<VALUEIN>`) via `getValues()`.\n\nDEPENDENCIES:\n- Key imported classes: `java.io.DataOutputStream`, `java.io.IOException`, `java.util.Iterator`, `java.util.NoSuchElementException`, `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`, `org.apache.hadoop.conf.Configuration`, `org.apache.hadoop.io.BytesWritable`, `org.apache.hadoop.io.DataInputBuffer`, `org.apache.hadoop.io.RawComparator`, `org.apache.hadoop.io.WritableUtils`, `org.apache.hadoop.io.serializer.Deserializer`, `org.apache.hadoop.io.serializer.SerializationFactory`, `org.apache.hadoop.io.serializer.Serializer`, `org.apache.hadoop.mapred.BackupStore`, `org.apache.hadoop.mapred.RawKeyValueIterator`, `org.apache.hadoop.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 3,
+    "class": "org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl",
+    "path": "task/TaskAttemptContextImpl.java",
+    "file_name": "TaskAttemptContextImpl.java",
+    "directory": "task",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to provide a concrete implementation of the TaskAttemptContext interface in Apache Hadoop MapReduce. It holds the context for individual task attempts, including task ID, status, and reporting mechanisms.\n\nCORE LOGIC:\n- The class extends JobContextImpl and implements TaskAttemptContext.\n- It initializes a TaskAttemptID and a StatusReporter in its constructor.\n- It provides methods to get the task attempt ID, current status, and to set/report status.\n- It includes a nested static class, DummyReporter, which is a minimal implementation of StatusReporter used when no actual reporter is provided.\n- It offers methods to get counters and to report progress.\n\nINPUTS:\n- Configuration: Hadoop configuration object containing job settings.\n- TaskAttemptID: Unique identifier for the task attempt.\n\nOUTPUTS:\n- TaskAttemptContextImpl: An instance of this class with set task attempt context.\n- Status: Current status of the task, which can be set and retrieved.\n- Counters: Methods to get counters for specific groups and names.\n\nDEPENDENCIES:\n- org.apache.hadoop.mapreduce.TaskAttemptID\n- org.apache.hadoop.mapreduce.StatusReporter\n- org.apache.hadoop.mapreduce.Counter\n- org.apache.hadoop.mapreduce.Counters\n- org.apache.hadoop.mapred.Task\n- org.apache.hadoop.conf.Configuration\n- org.apache.hadoop.classification.InterfaceAudience\n- org.apache.hadoop.classification.InterfaceStability\n- java.util.Enum\n\nThis class is crucial for managing the context of individual task attempts within a MapReduce job, providing access to task-specific information and reporting capabilities.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

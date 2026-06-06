@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": "lib",
+  "title": "Hadoop MapReduce Library Directories",
+  "description": "The 'lib' directory in Hadoop MapReduce architecture houses specialized libraries that extend and optimize the core MapReduce functionalities. The 'lib/chain' directory contains classes enabling chaining of Mappers or Mapper-Reducer pairs within a single Map or Reduce task, enhancing flexibility. The 'lib/map' directory includes multithreaded mapper implementation for improved throughput, utilizing thread pools and custom record readers/writers. The 'lib/reduce' directory features 'WrappedReducer.java', a custom Reducer context class allowing for tailored Reducer.Context implementations while leveraging standard Hadoop Reducer functions. These directories collectively demonstrate architectural patterns such as Chain, Decorator, and Thread Pool, optimizing Hadoop's MapReduce model for diverse processing needs.",
+  "summary": "TITLE: Hadoop MapReduce Library Directories\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce architecture houses specialized libraries that extend and optimize the core MapReduce functionalities. The 'lib/chain' directory contains classes enabling chaining of Mappers or Mapper-Reducer pairs within a single Map or Reduce task, enhancing flexibility. The 'lib/map' directory includes multithreaded mapper implementation for improved throughput, utilizing thread pools and custom record readers/writers. The 'lib/reduce' directory features 'WrappedReducer.java', a custom Reducer context class allowing for tailored Reducer.Context implementations while leveraging standard Hadoop Reducer functions. These directories collectively demonstrate architectural patterns such as Chain, Decorator, and Thread Pool, optimizing Hadoop's MapReduce model for diverse processing needs.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/chain"
+    },
+    {
+      "type": "directory",
+      "name": "lib/map"
+    },
+    {
+      "type": "directory",
+      "name": "lib/reduce"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Library Directories\n\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce architecture houses specialized libraries that extend and optimize the core MapReduce functionalities. The 'lib/chain' directory contains classes enabling chaining of Mappers or Mapper-Reducer pairs within a single Map or Reduce task, enhancing flexibility. The 'lib/map' directory includes multithreaded mapper implementation for improved throughput, utilizing thread pools and custom record readers/writers. The 'lib/reduce' directory features 'WrappedReducer.java', a custom Reducer context class allowing for tailored Reducer.Context implementations while leveraging standard Hadoop Reducer functions. These directories collectively demonstrate architectural patterns such as Chain, Decorator, and Thread Pool, optimizing Hadoop's MapReduce model for diverse processing needs."
+}

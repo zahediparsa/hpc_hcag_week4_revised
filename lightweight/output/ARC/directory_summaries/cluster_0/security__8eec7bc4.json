@@ -1,0 +1,38 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "security",
+  "title": "JobTokenIdentifier Class",
+  "description": "The JobTokenIdentifier.java file defines a class that extends TokenIdentifier, storing job IDs as Text objects. This class is integral to Hadoop MapReduce's security framework, facilitating job token creation, reading, writing, and renewal. It ensures secure job token management by utilizing Hadoop's security and token management libraries. The class is designed for serialization, interacting with DataInput and DataOutput for byte stream handling. It plays a crucial role in maintaining the integrity and security of job tokens within the Hadoop ecosystem.",
+  "summary": "TITLE: JobTokenIdentifier Class\nDESCRIPTION: The JobTokenIdentifier.java file defines a class that extends TokenIdentifier, storing job IDs as Text objects. This class is integral to Hadoop MapReduce's security framework, facilitating job token creation, reading, writing, and renewal. It ensures secure job token management by utilizing Hadoop's security and token management libraries. The class is designed for serialization, interacting with DataInput and DataOutput for byte stream handling. It plays a crucial role in maintaining the integrity and security of job tokens within the Hadoop ecosystem.",
+  "number_of_children": 6,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "IntermediateEncryptedStream.java"
+    },
+    {
+      "type": "file",
+      "name": "SecureShuffleUtils.java"
+    },
+    {
+      "type": "file",
+      "name": "SpillCallBackInjector.java"
+    },
+    {
+      "type": "file",
+      "name": "SpillCallBackPathsFinder.java"
+    },
+    {
+      "type": "file",
+      "name": "TokenCache.java"
+    },
+    {
+      "type": "directory",
+      "name": "security/token"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobTokenIdentifier Class\n\nDESCRIPTION:\nThe JobTokenIdentifier.java file defines a class that extends TokenIdentifier, storing job IDs as Text objects. This class is integral to Hadoop MapReduce's security framework, facilitating job token creation, reading, writing, and renewal. It ensures secure job token management by utilizing Hadoop's security and token management libraries. The class is designed for serialization, interacting with DataInput and DataOutput for byte stream handling. It plays a crucial role in maintaining the integrity and security of job tokens within the Hadoop ecosystem."
+}

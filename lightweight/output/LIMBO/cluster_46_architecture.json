@@ -1,0 +1,26 @@
+{
+  "cluster_id": 46,
+  "title": "Hadoop MapReduce Job History Logging",
+  "description": "Hadoop's MapReduce Job History Logging employs an event-driven architecture, with Java classes for each job event type. These encapsulate task IDs, statuses, timestamps, and host data. The system logs job-related events, including task attempts, completion, and failures, ensuring comprehensive job history. It integrates with YARN's timeline service using Avro serialization and conversion to YARN TimelineEvent, enhancing scalability, maintainability, and reliability. This architecture supports performance analysis and debugging, crucial for large-scale data processing. The coordinator role is played by the JobHistory server, while worker roles are assumed by nodes executing tasks. Technologies used include Java, Avro, and YARN TimelineEvent.",
+  "description_word_count": 98,
+  "number_of_files": 6,
+  "number_of_directories": 2,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Job History Logging\n\nDESCRIPTION: Hadoop's MapReduce Job History Logging employs an event-driven architecture, with Java classes for each job event type. These encapsulate task IDs, statuses, timestamps, and host data. The system logs job-related events, including task attempts, completion, and failures, ensuring comprehensive job history. It integrates with YARN's timeline service using Avro serialization and conversion to YARN TimelineEvent, enhancing scalability, maintainability, and reliability. This architecture supports performance analysis and debugging, crucial for large-scale data processing. The coordinator role is played by the JobHistory server, while worker roles are assumed by nodes executing tasks. Technologies used include Java, Avro, and YARN TimelineEvent.",
+  "algorithm": "LIMBO",
+  "files": [
+    "jobhistory/MapAttemptFinishedEvent.java",
+    "jobhistory/ReduceAttemptFinishedEvent.java",
+    "jobhistory/TaskAttemptFinishedEvent.java",
+    "jobhistory/TaskAttemptUnsuccessfulCompletionEvent.java",
+    "jobhistory/TaskFailedEvent.java",
+    "jobhistory/TaskFinishedEvent.java"
+  ]
+}

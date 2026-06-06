@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 6,
+  "directory": "lib",
+  "title": "Hadoop MapReduce Input Handling",
+  "description": "The 'lib/input' directory in Hadoop MapReduce architecture is responsible for managing diverse input formats and structures. It includes classes for handling files, combined files, and SequenceFiles, ensuring efficient data reading through RecordReader classes. The 'MultipleInputs' component allows for multiple input paths with custom InputFormat and Mapper classes. This directory's components collaborate, adhering to Adapter and Strategy design patterns, to ensure seamless and flexible data processing in MapReduce jobs.",
+  "summary": "TITLE: Hadoop MapReduce Input Handling\nDESCRIPTION: The 'lib/input' directory in Hadoop MapReduce architecture is responsible for managing diverse input formats and structures. It includes classes for handling files, combined files, and SequenceFiles, ensuring efficient data reading through RecordReader classes. The 'MultipleInputs' component allows for multiple input paths with custom InputFormat and Mapper classes. This directory's components collaborate, adhering to Adapter and Strategy design patterns, to ensure seamless and flexible data processing in MapReduce jobs.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/input"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Input Handling\n\nDESCRIPTION: The 'lib/input' directory in Hadoop MapReduce architecture is responsible for managing diverse input formats and structures. It includes classes for handling files, combined files, and SequenceFiles, ensuring efficient data reading through RecordReader classes. The 'MultipleInputs' component allows for multiple input paths with custom InputFormat and Mapper classes. This directory's components collaborate, adhering to Adapter and Strategy design patterns, to ensure seamless and flexible data processing in MapReduce jobs."
+}

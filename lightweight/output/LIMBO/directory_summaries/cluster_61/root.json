@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 61,
+  "directory": ".",
+  "title": "Hadoop MapReduce Input Format Directory",
+  "description": "This directory houses custom input formats for Hadoop MapReduce jobs. It includes classes like 'CombineSequenceFileInputFormat.java', 'CombineTextInputFormat.java', 'SequenceFileAsBinaryInputFormat.java', 'SequenceFileAsTextInputFormat.java', and 'SequenceFileInputFilter.java'. These classes extend or implement Hadoop's RecordReader interface, enabling MapReduce jobs to read diverse data sources. This directory exemplifies the Strategy design pattern, promoting flexibility and extensibility in data processing. Each class encapsulates a unique strategy for reading data, allowing seamless handling of specific file types or filtering requirements.",
+  "summary": "TITLE: Hadoop MapReduce Input Format Directory\nDESCRIPTION: This directory houses custom input formats for Hadoop MapReduce jobs. It includes classes like 'CombineSequenceFileInputFormat.java', 'CombineTextInputFormat.java', 'SequenceFileAsBinaryInputFormat.java', 'SequenceFileAsTextInputFormat.java', and 'SequenceFileInputFilter.java'. These classes extend or implement Hadoop's RecordReader interface, enabling MapReduce jobs to read diverse data sources. This directory exemplifies the Strategy design pattern, promoting flexibility and extensibility in data processing. Each class encapsulates a unique strategy for reading data, allowing seamless handling of specific file types or filtering requirements.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- DIRECTORY: lib/input ---\n\nTITLE: Hadoop MapReduce Input Format Directory\n\nDESCRIPTION: This directory houses custom input formats for Hadoop MapReduce jobs. It includes classes like 'CombineSequenceFileInputFormat.java', 'CombineTextInputFormat.java', 'SequenceFileAsBinaryInputFormat.java', 'SequenceFileAsTextInputFormat.java', and 'SequenceFileInputFilter.java'. These classes extend or implement Hadoop's RecordReader interface, enabling MapReduce jobs to read diverse data sources. This directory exemplifies the Strategy design pattern, promoting flexibility and extensibility in data processing. Each class encapsulates a unique strategy for reading data, allowing seamless handling of specific file types or filtering requirements."
+}

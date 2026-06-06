@@ -1,0 +1,34 @@
+{
+  "type": "directory",
+  "cluster_id": 30,
+  "directory": "jobhistory",
+  "title": "Job History Directory in Hadoop MapReduce",
+  "description": "The 'jobhistory' directory in Hadoop MapReduce's cluster is pivotal for job tracking and history logging. It contains several Java classes, each representing different events in the MapReduce job lifecycle. These include AMStartedEvent, NormalizedResourceEvent, TaskAttemptStartedEvent, TaskStartedEvent, and TaskUpdatedEvent. Each class encapsulates specific job-related data, such as application attempt IDs, task types, start times, memory requirements, and task finish times. They collaborate by converting their event data into TimelineEvent objects for the YARN timeline service, ensuring comprehensive job history and monitoring capabilities. This directory exemplifies a layered architectural pattern, with each class representing a distinct layer of job event details, all interconnected to provide a holistic view of MapReduce job executions.",
+  "summary": "TITLE: Job History Directory in Hadoop MapReduce\nDESCRIPTION: The 'jobhistory' directory in Hadoop MapReduce's cluster is pivotal for job tracking and history logging. It contains several Java classes, each representing different events in the MapReduce job lifecycle. These include AMStartedEvent, NormalizedResourceEvent, TaskAttemptStartedEvent, TaskStartedEvent, and TaskUpdatedEvent. Each class encapsulates specific job-related data, such as application attempt IDs, task types, start times, memory requirements, and task finish times. They collaborate by converting their event data into TimelineEvent objects for the YARN timeline service, ensuring comprehensive job history and monitoring capabilities. This directory exemplifies a layered architectural pattern, with each class representing a distinct layer of job event details, all interconnected to provide a holistic view of MapReduce job executions.",
+  "number_of_children": 5,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AMStartedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "NormalizedResourceEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptStartedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskStartedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskUpdatedEvent.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job History Directory in Hadoop MapReduce\n\nDESCRIPTION:\nThe 'jobhistory' directory in Hadoop MapReduce's cluster is pivotal for job tracking and history logging. It contains several Java classes, each representing different events in the MapReduce job lifecycle. These include AMStartedEvent, NormalizedResourceEvent, TaskAttemptStartedEvent, TaskStartedEvent, and TaskUpdatedEvent. Each class encapsulates specific job-related data, such as application attempt IDs, task types, start times, memory requirements, and task finish times. They collaborate by converting their event data into TimelineEvent objects for the YARN timeline service, ensuring comprehensive job history and monitoring capabilities. This directory exemplifies a layered architectural pattern, with each class representing a distinct layer of job event details, all interconnected to provide a holistic view of MapReduce job executions."
+}

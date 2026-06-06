@@ -1,0 +1,30 @@
+{
+  "type": "directory",
+  "cluster_id": 9,
+  "directory": "lib/map",
+  "title": "Hadoop MapReduce Mapper Implementations",
+  "description": "The 'lib/map' directory in a Hadoop MapReduce cluster contains several Java files that implement various Mapper classes. InverseMapper.java defines a Mapper that swaps input keys and values. MultithreadedMapper.java implements a multithreaded Mapper for enhanced throughput. TokenCounterMapper.java tokenizes input text and emits each word with a count of 1. WrappedMapper.java is a wrapper class that allows for custom implementations of the Mapper.Context interface, utilizing the Decorator pattern. These Mapper implementations are crucial for the Map phase of Hadoop MapReduce jobs, processing input data and preparing it for the Reduce phase. They collaborate by transforming input data into intermediate key-value pairs, which are then shuffled and sorted before being fed into the Reducers. The directory showcases the flexibility and extensibility of Hadoop's Mapper component, enabling diverse data processing tasks within the MapReduce framework.",
+  "summary": "TITLE: Hadoop MapReduce Mapper Implementations\nDESCRIPTION: The 'lib/map' directory in a Hadoop MapReduce cluster contains several Java files that implement various Mapper classes. InverseMapper.java defines a Mapper that swaps input keys and values. MultithreadedMapper.java implements a multithreaded Mapper for enhanced throughput. TokenCounterMapper.java tokenizes input text and emits each word with a count of 1. WrappedMapper.java is a wrapper class that allows for custom implementations of the Mapper.Context interface, utilizing the Decorator pattern. These Mapper implementations are crucial for the Map phase of Hadoop MapReduce jobs, processing input data and preparing it for the Reduce phase. They collaborate by transforming input data into intermediate key-value pairs, which are then shuffled and sorted before being fed into the Reducers. The directory showcases the flexibility and extensibility of Hadoop's Mapper component, enabling diverse data processing tasks within the MapReduce framework.",
+  "number_of_children": 4,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "InverseMapper.java"
+    },
+    {
+      "type": "file",
+      "name": "MultithreadedMapper.java"
+    },
+    {
+      "type": "file",
+      "name": "TokenCounterMapper.java"
+    },
+    {
+      "type": "file",
+      "name": "WrappedMapper.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Mapper Implementations\n\nDESCRIPTION:\nThe 'lib/map' directory in a Hadoop MapReduce cluster contains several Java files that implement various Mapper classes. InverseMapper.java defines a Mapper that swaps input keys and values. MultithreadedMapper.java implements a multithreaded Mapper for enhanced throughput. TokenCounterMapper.java tokenizes input text and emits each word with a count of 1. WrappedMapper.java is a wrapper class that allows for custom implementations of the Mapper.Context interface, utilizing the Decorator pattern. These Mapper implementations are crucial for the Map phase of Hadoop MapReduce jobs, processing input data and preparing it for the Reduce phase. They collaborate by transforming input data into intermediate key-value pairs, which are then shuffled and sorted before being fed into the Reducers. The directory showcases the flexibility and extensibility of Hadoop's Mapper component, enabling diverse data processing tasks within the MapReduce framework."
+}

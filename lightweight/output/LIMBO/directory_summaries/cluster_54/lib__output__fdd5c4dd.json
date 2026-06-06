@@ -1,0 +1,30 @@
+{
+  "type": "directory",
+  "cluster_id": 54,
+  "directory": "lib/output",
+  "title": "Hadoop MapReduce Output Format Directory",
+  "description": "The 'lib/output' directory in Hadoop MapReduce architecture houses classes responsible for defining various output formats, including MapFileOutputFormat, SequenceFileAsBinaryOutputFormat, SequenceFileOutputFormat, and TextOutputFormat. These classes extend the FileOutputFormat and provide specialized functionalities for writing key-value pairs to different file formats like MapFiles, SequenceFiles, and plain text files. The MapFileOutputFormat writes key-value pairs to MapFiles, SequenceFileAsBinaryOutputFormat writes in binary format to SequenceFiles, SequenceFileOutputFormat writes to SequenceFiles with configurable compression, and TextOutputFormat writes to plain text files with optional Gzip compression. These classes collaborate by extending the common FileOutputFormat, implementing custom RecordWriter classes, and managing compression settings, ensuring flexibility and efficiency in storing MapReduce job outputs.",
+  "summary": "TITLE: Hadoop MapReduce Output Format Directory\nDESCRIPTION: The 'lib/output' directory in Hadoop MapReduce architecture houses classes responsible for defining various output formats, including MapFileOutputFormat, SequenceFileAsBinaryOutputFormat, SequenceFileOutputFormat, and TextOutputFormat. These classes extend the FileOutputFormat and provide specialized functionalities for writing key-value pairs to different file formats like MapFiles, SequenceFiles, and plain text files. The MapFileOutputFormat writes key-value pairs to MapFiles, SequenceFileAsBinaryOutputFormat writes in binary format to SequenceFiles, SequenceFileOutputFormat writes to SequenceFiles with configurable compression, and TextOutputFormat writes to plain text files with optional Gzip compression. These classes collaborate by extending the common FileOutputFormat, implementing custom RecordWriter classes, and managing compression settings, ensuring flexibility and efficiency in storing MapReduce job outputs.",
+  "number_of_children": 4,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "MapFileOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileAsBinaryOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "TextOutputFormat.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Output Format Directory\n\nDESCRIPTION:\nThe 'lib/output' directory in Hadoop MapReduce architecture houses classes responsible for defining various output formats, including MapFileOutputFormat, SequenceFileAsBinaryOutputFormat, SequenceFileOutputFormat, and TextOutputFormat. These classes extend the FileOutputFormat and provide specialized functionalities for writing key-value pairs to different file formats like MapFiles, SequenceFiles, and plain text files. The MapFileOutputFormat writes key-value pairs to MapFiles, SequenceFileAsBinaryOutputFormat writes in binary format to SequenceFiles, SequenceFileOutputFormat writes to SequenceFiles with configurable compression, and TextOutputFormat writes to plain text files with optional Gzip compression. These classes collaborate by extending the common FileOutputFormat, implementing custom RecordWriter classes, and managing compression settings, ensuring flexibility and efficiency in storing MapReduce job outputs."
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 77,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.ManifestPrinter",
+    "path": "lib/output/committer/manifest/files/ManifestPrinter.java",
+    "file_name": "ManifestPrinter.java",
+    "directory": "lib/output/committer/manifest/files",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a tool, `ManifestPrinter`, that prints the contents of a manifest file to a specified output stream, typically System.out or a user-provided stream.\n\nCORE LOGIC:\nThe core logic involves the `run` method, which checks the command-line arguments, initializes the output stream, and calls `loadAndPrintManifest`. The `loadAndPrintManifest` method loads the manifest data from the specified file using the provided FileSystem and then prints it using the `printManifest` method. The `printManifest` method formats and prints various fields of the `ManifestSuccessData` object, including diagnostics and I/O statistics.\n\nINPUTS/OUTPUTS:\n- INPUTS: The tool takes a single command-line argument, which is the path to the manifest file.\n- OUTPUTS: The tool prints the manifest data to the configured output stream, typically System.out.\n\nDEPENDENCIES:\n- `org.apache.hadoop.conf.Configuration`: For accessing configuration parameters.\n- `org.apache.hadoop.conf.Configured`: Superclass for components that need to access configuration.\n- `org.apache.hadoop.fs.FileSystem`: For interacting with the Hadoop FileSystem.\n- `org.apache.hadoop.fs.Path`: For representing file system paths.\n- `org.apache.hadoop.util.ExitUtil`: For handling program termination.\n- `org.apache.hadoop.util.Tool`: Superclass for command-line tools.\n- `org.apache.hadoop.util.ToolRunner`: For running Hadoop tools.\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.ManifestSuccessData`: The class containing the manifest data to be printed.\n- `java.io.PrintStream`: The output stream to which the manifest is printed.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

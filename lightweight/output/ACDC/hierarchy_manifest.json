@@ -1,0 +1,269 @@
+{
+  "algorithm": "ACDC",
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "number_of_files": 9,
+      "number_of_directories": 2,
+      "directories": [
+        ".",
+        "checkpoint"
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "number_of_files": 5,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "counters",
+        "util"
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "number_of_files": 31,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "jobhistory",
+        "util"
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "number_of_files": 17,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/aggregate"
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "number_of_files": 15,
+      "number_of_directories": 5,
+      "directories": [
+        ".",
+        "lib",
+        "lib/chain",
+        "lib/fieldsel",
+        "lib/reduce"
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "number_of_files": 21,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/db"
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "number_of_files": 26,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/input"
+      ]
+    },
+    {
+      "cluster_id": 7,
+      "number_of_files": 2,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/jobcontrol"
+      ]
+    },
+    {
+      "cluster_id": 8,
+      "number_of_files": 16,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/join"
+      ]
+    },
+    {
+      "cluster_id": 9,
+      "number_of_files": 10,
+      "number_of_directories": 5,
+      "directories": [
+        ".",
+        "lib",
+        "lib/fieldsel",
+        "lib/map",
+        "task"
+      ]
+    },
+    {
+      "cluster_id": 10,
+      "number_of_files": 1,
+      "number_of_directories": 6,
+      "directories": [
+        ".",
+        "lib",
+        "lib/output",
+        "lib/output/committer",
+        "lib/output/committer/manifest",
+        "lib/output/committer/manifest/impl"
+      ]
+    },
+    {
+      "cluster_id": 11,
+      "number_of_files": 36,
+      "number_of_directories": 8,
+      "directories": [
+        ".",
+        "lib",
+        "lib/output",
+        "lib/output/committer",
+        "lib/output/committer/manifest",
+        "lib/output/committer/manifest/files",
+        "lib/output/committer/manifest/impl",
+        "lib/output/committer/manifest/stages"
+      ]
+    },
+    {
+      "cluster_id": 12,
+      "number_of_files": 3,
+      "number_of_directories": 6,
+      "directories": [
+        ".",
+        "lib",
+        "lib/output",
+        "lib/output/committer",
+        "lib/output/committer/manifest",
+        "lib/output/committer/manifest/stages"
+      ]
+    },
+    {
+      "cluster_id": 13,
+      "number_of_files": 18,
+      "number_of_directories": 6,
+      "directories": [
+        ".",
+        "lib",
+        "lib/output",
+        "security",
+        "task",
+        "task/annotation"
+      ]
+    },
+    {
+      "cluster_id": 14,
+      "number_of_files": 3,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/partition"
+      ]
+    },
+    {
+      "cluster_id": 15,
+      "number_of_files": 1,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/reduce"
+      ]
+    },
+    {
+      "cluster_id": 16,
+      "number_of_files": 8,
+      "number_of_directories": 6,
+      "directories": [
+        ".",
+        "protocol",
+        "security",
+        "security/token",
+        "security/token/delegation",
+        "v2"
+      ]
+    },
+    {
+      "cluster_id": 17,
+      "number_of_files": 2,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "security",
+        "security/token"
+      ]
+    },
+    {
+      "cluster_id": 18,
+      "number_of_files": 2,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "security",
+        "security/token"
+      ]
+    },
+    {
+      "cluster_id": 19,
+      "number_of_files": 37,
+      "number_of_directories": 7,
+      "directories": [
+        ".",
+        "counters",
+        "filecache",
+        "protocol",
+        "split",
+        "tools",
+        "util"
+      ]
+    },
+    {
+      "cluster_id": 20,
+      "number_of_files": 24,
+      "number_of_directories": 4,
+      "directories": [
+        ".",
+        "security",
+        "task",
+        "task/reduce"
+      ]
+    },
+    {
+      "cluster_id": 21,
+      "number_of_files": 8,
+      "number_of_directories": 5,
+      "directories": [
+        ".",
+        "lib",
+        "lib/input",
+        "lib/partition",
+        "task"
+      ]
+    },
+    {
+      "cluster_id": 22,
+      "number_of_files": 19,
+      "number_of_directories": 10,
+      "directories": [
+        ".",
+        "lib",
+        "lib/fieldsel",
+        "lib/input",
+        "lib/map",
+        "lib/partition",
+        "server",
+        "server/jobtracker",
+        "server/tasktracker",
+        "util"
+      ]
+    }
+  ]
+}

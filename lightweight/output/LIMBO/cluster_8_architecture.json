@@ -1,0 +1,38 @@
+{
+  "cluster_id": 8,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture consists of a Job Tracker, Task Trackers, and a distributed file system (HDFS). The Job Tracker orchestrates MapReduce job execution, delegating tasks to Task Trackers. Task Trackers, functioning as Mappers or Reducers, process data in parallel. The `OutputFormat.java` class formats Reducer output, and `Task.java` oversees task lifecycle, including setup, execution, and cleanup. This architecture, implemented in Java and using Hadoop APIs, ensures scalability via parallel processing, maintainability through modularity, and reliability through fault tolerance. Security is upheld via access controls and encryption, while performance is enhanced through efficient data distribution and scheduling. The pattern embodies a coordinator-worker model, with the Job Tracker as the coordinator and Task Trackers as workers.",
+  "description_word_count": 117,
+  "number_of_files": 18,
+  "number_of_directories": 4,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster architecture comprises a Job Tracker, Task Trackers, and a distributed file system (HDFS). The Job Tracker coordinates and manages the execution of MapReduce jobs, assigning tasks to available Task Trackers. Task Trackers execute these tasks, either as Mappers or Reducers, processing data in parallel across the cluster. The `OutputFormat.java` class, part of the MapReduce framework, formats the Reducer's output into a file, while `Task.java` manages the lifecycle of a single task, handling setup, execution, and cleanup phases. These components interact within the Hadoop ecosystem, utilizing Java for implementation and leveraging standard Hadoop APIs. The architecture ensures scalability through parallel processing, maintainability via modular design, and reliability through fault tolerance. Security is maintained through access controls and data encryption. Performance is optimized through efficient data distribution and task scheduling. The overall pattern reflects a coordinator-worker model, with the Job Tracker acting as the coordinator and Task Trackers as workers.",
+  "algorithm": "LIMBO",
+  "files": [
+    "InputFormat.java",
+    "RecordReader.java",
+    "lib/input/CombineFileInputFormat.java",
+    "lib/input/CombineFileRecordReader.java",
+    "lib/input/CombineFileRecordReaderWrapper.java",
+    "lib/input/DelegatingInputFormat.java",
+    "lib/input/DelegatingRecordReader.java",
+    "lib/input/FixedLengthInputFormat.java",
+    "lib/input/FixedLengthRecordReader.java",
+    "lib/input/KeyValueLineRecordReader.java",
+    "lib/input/KeyValueTextInputFormat.java",
+    "lib/input/LineRecordReader.java",
+    "lib/input/NLineInputFormat.java",
+    "lib/input/SequenceFileAsTextRecordReader.java",
+    "lib/input/SequenceFileInputFormat.java",
+    "lib/input/SequenceFileRecordReader.java",
+    "lib/input/TextInputFormat.java",
+    "lib/join/ComposableInputFormat.java"
+  ]
+}

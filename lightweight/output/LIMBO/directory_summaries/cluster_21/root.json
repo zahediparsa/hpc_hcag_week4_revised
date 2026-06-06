@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 21,
+  "directory": ".",
+  "title": "Reduce Phase Components",
+  "description": "The 'lib/reduce' directory houses Java classes crucial for Hadoop's reduction phase. It includes custom field selection, summing reducers for integers and longs, and a flexible reducer context implementation. These components, leveraging Hadoop's libraries, illustrate the reduction pattern, consolidating Map phase outputs. This directory exemplifies Hadoop's modular design, facilitating tailored data aggregation via custom reducers.",
+  "summary": "TITLE: Reduce Phase Components\nDESCRIPTION: The 'lib/reduce' directory houses Java classes crucial for Hadoop's reduction phase. It includes custom field selection, summing reducers for integers and longs, and a flexible reducer context implementation. These components, leveraging Hadoop's libraries, illustrate the reduction pattern, consolidating Map phase outputs. This directory exemplifies Hadoop's modular design, facilitating tailored data aggregation via custom reducers.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Reduce Phase Components\n\nDESCRIPTION: The 'lib/reduce' directory houses Java classes crucial for Hadoop's reduction phase. It includes custom field selection, summing reducers for integers and longs, and a flexible reducer context implementation. These components, leveraging Hadoop's libraries, illustrate the reduction pattern, consolidating Map phase outputs. This directory exemplifies Hadoop's modular design, facilitating tailored data aggregation via custom reducers."
+}

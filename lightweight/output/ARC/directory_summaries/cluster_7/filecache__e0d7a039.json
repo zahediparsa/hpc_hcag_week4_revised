@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": "filecache",
+  "title": "DistributedCache.java",
+  "description": "This Java file, DistributedCache.java, is integral to Hadoop MapReduce's file distribution mechanism. It enables efficient caching of large, read-only files across a cluster. The class provides methods to add and manage files/archives, ensuring they're copied once per job and accessible by all nodes. It handles symlinks, permissions, and visibility settings, adding cached files to the task's classpath for access by mappers and reducers. Dependencies include core Hadoop classes and standard Java libraries.",
+  "summary": "TITLE: DistributedCache.java\nDESCRIPTION: This Java file, DistributedCache.java, is integral to Hadoop MapReduce's file distribution mechanism. It enables efficient caching of large, read-only files across a cluster. The class provides methods to add and manage files/archives, ensuring they're copied once per job and accessible by all nodes. It handles symlinks, permissions, and visibility settings, adding cached files to the task's classpath for access by mappers and reducers. Dependencies include core Hadoop classes and standard Java libraries.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "DistributedCache.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: DistributedCache.java\n\nDESCRIPTION:\nThis Java file, DistributedCache.java, is integral to Hadoop MapReduce's file distribution mechanism. It enables efficient caching of large, read-only files across a cluster. The class provides methods to add and manage files/archives, ensuring they're copied once per job and accessible by all nodes. It handles symlinks, permissions, and visibility settings, adding cached files to the task's classpath for access by mappers and reducers. Dependencies include core Hadoop classes and standard Java libraries."
+}

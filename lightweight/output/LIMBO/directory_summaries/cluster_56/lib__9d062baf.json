@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 56,
+  "directory": "lib",
+  "title": "Database Configuration for Hadoop MapReduce",
+  "description": "The 'lib/db' directory houses 'DBConfiguration.java', which configures Hadoop MapReduce jobs for database interactions. It sets up connection properties like driver class, URL, credentials, and SQL queries. This Java class uses Hadoop's Configuration class to store these properties, accessed by components like DBInputFormat and DBOutputFormat. It doesn't directly output data but populates a Configuration object for database operations. Dependencies include Hadoop's database integration library, standard Java SQL classes, Hadoop's configuration management class, and interfaces for job submission and input data types.",
+  "summary": "TITLE: Database Configuration for Hadoop MapReduce\nDESCRIPTION: The 'lib/db' directory houses 'DBConfiguration.java', which configures Hadoop MapReduce jobs for database interactions. It sets up connection properties like driver class, URL, credentials, and SQL queries. This Java class uses Hadoop's Configuration class to store these properties, accessed by components like DBInputFormat and DBOutputFormat. It doesn't directly output data but populates a Configuration object for database operations. Dependencies include Hadoop's database integration library, standard Java SQL classes, Hadoop's configuration management class, and interfaces for job submission and input data types.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/db"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Database Configuration for Hadoop MapReduce\n\nDESCRIPTION: The 'lib/db' directory houses 'DBConfiguration.java', which configures Hadoop MapReduce jobs for database interactions. It sets up connection properties like driver class, URL, credentials, and SQL queries. This Java class uses Hadoop's Configuration class to store these properties, accessed by components like DBInputFormat and DBOutputFormat. It doesn't directly output data but populates a Configuration object for database operations. Dependencies include Hadoop's database integration library, standard Java SQL classes, Hadoop's configuration management class, and interfaces for job submission and input data types."
+}

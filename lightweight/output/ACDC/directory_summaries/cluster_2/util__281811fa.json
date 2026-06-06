@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "util",
+  "title": "Hadoop MapReduce Utility Methods for Host and Job History",
+  "description": "The 'util' directory in Hadoop MapReduce houses utility classes that provide host-related operations and job history conversion methods. HostUtil.java offers methods for generating task log URLs and extracting hostnames from tracker names. JobHistoryEventUtils.java contains methods to convert MapReduce counters into JSON and TimelineMetrics formats, facilitating job history representation. Both classes operate independently, with HostUtil.java relying on basic string manipulations and JobHistoryEventUtils.java utilizing external JSON and TimelineMetric libraries. These utilities, though not directly dependent on other Hadoop components, play crucial roles in job tracking and logging, enhancing the framework's functionality and usability.",
+  "summary": "TITLE: Hadoop MapReduce Utility Methods for Host and Job History\nDESCRIPTION: The 'util' directory in Hadoop MapReduce houses utility classes that provide host-related operations and job history conversion methods. HostUtil.java offers methods for generating task log URLs and extracting hostnames from tracker names. JobHistoryEventUtils.java contains methods to convert MapReduce counters into JSON and TimelineMetrics formats, facilitating job history representation. Both classes operate independently, with HostUtil.java relying on basic string manipulations and JobHistoryEventUtils.java utilizing external JSON and TimelineMetric libraries. These utilities, though not directly dependent on other Hadoop components, play crucial roles in job tracking and logging, enhancing the framework's functionality and usability.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "HostUtil.java"
+    },
+    {
+      "type": "file",
+      "name": "JobHistoryEventUtils.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Utility Methods for Host and Job History\n\nDESCRIPTION:\nThe 'util' directory in Hadoop MapReduce houses utility classes that provide host-related operations and job history conversion methods. HostUtil.java offers methods for generating task log URLs and extracting hostnames from tracker names. JobHistoryEventUtils.java contains methods to convert MapReduce counters into JSON and TimelineMetrics formats, facilitating job history representation. Both classes operate independently, with HostUtil.java relying on basic string manipulations and JobHistoryEventUtils.java utilizing external JSON and TimelineMetric libraries. These utilities, though not directly dependent on other Hadoop components, play crucial roles in job tracking and logging, enhancing the framework's functionality and usability."
+}

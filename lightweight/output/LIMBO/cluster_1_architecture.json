@@ -1,0 +1,24 @@
+{
+  "cluster_id": 1,
+  "title": "ClientProtocol.java",
+  "description": "This Java interface, ClientProtocol, serves as a coordinator in Hadoop MapReduce, facilitating communication between JobClient and JobTracker. It enables job submission, status monitoring, and resource management via methods like job submission, status retrieval, job killing, priority setting, and cluster status inquiry. It also manages delegation tokens and retrieves system directory paths. The interface ensures scalability and maintainability by standardizing communication, adhering to the Remote Procedure Call (RPC) pattern. It uses Java, IOException, VersionedProtocol, Text, Credentials, JobID, JobStatus, TaskAttemptID, TaskCompletionEvent, TaskReport, TaskType, DelegationTokenSelector, DelegationTokenIdentifier, JTConfig, LogParams, AccessControlList, and Token. This design supports reliability and security through standardized, controlled communication between cluster components.",
+  "description_word_count": 101,
+  "number_of_files": 4,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ClientProtocol.java\n\nDESCRIPTION: This Java interface, ClientProtocol, serves as a coordinator in Hadoop MapReduce, facilitating communication between JobClient and JobTracker. It enables job submission, status monitoring, and resource management via methods like job submission, status retrieval, job killing, priority setting, and cluster status inquiry. It also manages delegation tokens and retrieves system directory paths. The interface ensures scalability and maintainability by standardizing communication, adhering to the Remote Procedure Call (RPC) pattern. It uses Java, IOException, VersionedProtocol, Text, Credentials, JobID, JobStatus, TaskAttemptID, TaskCompletionEvent, TaskReport, TaskType, DelegationTokenSelector, DelegationTokenIdentifier, JTConfig, LogParams, AccessControlList, and Token. This design supports reliability and security through standardized, controlled communication between cluster components.",
+  "algorithm": "LIMBO",
+  "files": [
+    "Cluster.java",
+    "Job.java",
+    "protocol/ClientProtocol.java",
+    "tools/CLI.java"
+  ]
+}

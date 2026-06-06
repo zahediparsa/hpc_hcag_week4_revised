@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "lib/output/committer/manifest/files",
+  "title": "Hadoop MapReduce Committer Manifest Directory",
+  "description": "The 'lib/output/committer/manifest/files' directory in Hadoop MapReduce houses Java classes crucial for the committer's functionality. The 'AbstractManifestData.java' file defines an abstract base for data structures used in committer manifests, offering methods for data validation, serialization, and saving to the Hadoop filesystem. 'DiagnosticKeys.java' provides constant strings for diagnostic information storage in manifest files. 'EntryStatus.java' enumerates the status of file or directory entries, converting integer types or 'FileStatus' objects into corresponding enum values. These components collaborate to ensure the committer's reliable operation, adhering to the Abstract Factory architectural pattern by providing an interface for creating families of related or dependent objects without specifying their concrete classes.",
+  "summary": "TITLE: Hadoop MapReduce Committer Manifest Directory\nDESCRIPTION: The 'lib/output/committer/manifest/files' directory in Hadoop MapReduce houses Java classes crucial for the committer's functionality. The 'AbstractManifestData.java' file defines an abstract base for data structures used in committer manifests, offering methods for data validation, serialization, and saving to the Hadoop filesystem. 'DiagnosticKeys.java' provides constant strings for diagnostic information storage in manifest files. 'EntryStatus.java' enumerates the status of file or directory entries, converting integer types or 'FileStatus' objects into corresponding enum values. These components collaborate to ensure the committer's reliable operation, adhering to the Abstract Factory architectural pattern by providing an interface for creating families of related or dependent objects without specifying their concrete classes.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AbstractManifestData.java"
+    },
+    {
+      "type": "file",
+      "name": "DiagnosticKeys.java"
+    },
+    {
+      "type": "file",
+      "name": "EntryStatus.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Committer Manifest Directory\n\nDESCRIPTION:\nThe 'lib/output/committer/manifest/files' directory in Hadoop MapReduce houses Java classes crucial for the committer's functionality. The 'AbstractManifestData.java' file defines an abstract base for data structures used in committer manifests, offering methods for data validation, serialization, and saving to the Hadoop filesystem. 'DiagnosticKeys.java' provides constant strings for diagnostic information storage in manifest files. 'EntryStatus.java' enumerates the status of file or directory entries, converting integer types or 'FileStatus' objects into corresponding enum values. These components collaborate to ensure the committer's reliable operation, adhering to the Abstract Factory architectural pattern by providing an interface for creating families of related or dependent objects without specifying their concrete classes."
+}

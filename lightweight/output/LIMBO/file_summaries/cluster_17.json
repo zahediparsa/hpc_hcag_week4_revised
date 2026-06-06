@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 17,
+    "class": "org.apache.hadoop.mapreduce.MarkableIterator",
+    "path": "MarkableIterator.java",
+    "file_name": "MarkableIterator.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to create a wrapper iterator that implements the `MarkableIteratorInterface`. This wrapper allows an underlying iterator to be marked, reset, and cleared, while still providing the standard iterator methods like `hasNext()` and `next()`.\n\nCORE LOGIC:\nThe core logic involves wrapping an existing iterator that implements `MarkableIteratorInterface` and forwarding calls to its methods. The `MarkableIterator` class does not implement any complex algorithms but delegates the implementation to the base iterator. It ensures that the base iterator supports the `MarkableIteratorInterface` methods (`mark()`, `reset()`, `clearMark()`) and forwards `hasNext()` and `next()` calls. The `remove()` method is not supported and throws an `UnsupportedOperationException`.\n\nINPUTS/OUTPUTS:\n- INPUTS: An iterator (`Iterator<VALUE>`) that implements `MarkableIteratorInterface` is passed to the constructor.\n- OUTPUTS: This class provides an iterator (`Iterator<VALUE>`) that wraps the input iterator and supports additional markable operations (`mark()`, `reset()`, `clearMark()`).\n\nDEPENDENCIES:\n- `java.io.IOException`: Imported for exception handling.\n- `java.util.Iterator`: Imported for generic iterator functionality.\n- `org.apache.hadoop.classification.InterfaceAudience`: Imported for class annotation.\n- `org.apache.hadoop.classification.InterfaceStability`: Imported for class annotation.\n- `org.apache.hadoop.mapreduce.MarkableIteratorInterface`: The interface being implemented by this class.\n- No specific collaborator classes are directly visible in this chunk, but it's part of the `org.apache.hadoop.mapreduce` package, indicating it's likely used within the Hadoop MapReduce framework.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 17,
+    "class": "org.apache.hadoop.mapreduce.Reducer",
+    "path": "Reducer.java",
+    "file_name": "Reducer.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY: The main purpose of this code chunk is to define the Reducer class in Apache Hadoop MapReduce, which is responsible for reducing a set of intermediate values sharing a key into a smaller set of values.\n\nCORE LOGIC: The Reducer class has four primary methods: setup, reduce, cleanup, and run. The setup method is called once at the start of the task and does nothing by default. The reduce method is called once for each key, where it processes a collection of values associated with that key. The cleanup method is called once at the end of the task and does nothing by default. The run method orchestrates the execution of setup, reduce, and cleanup, handling the iteration over keys and invoking reduce for each.\n\nINPUTS/OUTPUTS: The Reducer class takes in four generic types as input parameters: KEYIN (input key type), VALUEIN (input value type), KEYOUT (output key type), and VALUEOUT (output value type). It receives input from the Mapper phase, processes it, and sends output to the RecordWriter.\n\nDEPENDENCIES: This code chunk depends on several classes from the org.apache.hadoop.mapreduce package, including Configuration, JobContext, and ReduceContext. It also imports java.io.IOException and java.util.Iterator. The Reducer class extends the Context abstract class, which is also defined within this code chunk.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

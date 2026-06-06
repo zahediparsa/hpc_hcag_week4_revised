@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": ".",
+  "title": "Hadoop MapReduce Checkpoint Directory",
+  "description": "This directory manages task checkpoints in Hadoop MapReduce, ensuring atomicity, single-writer, write-once, multiple-readers, and ready-many properties. It includes components like CheckpointID.java, CheckpointNamingService.java, CheckpointService.java, EnumCounter.java, FSCheckpointID.java, FSCheckpointService.java, RandomNameCNS.java, SimpleNamingService.java, and TaskCheckpointID.java. These collaborate to ensure reliable and consistent checkpoint management, crucial for fault tolerance and job recovery.\n\nTITLE: ResourceBundle Management Class\nDESCRIPTION: The util directory's ResourceBundles.java class manages resource bundles efficiently. It provides methods to retrieve resources from bundles using static methods, handling exceptions and ensuring thread safety with ReentrantLock. The class accepts string inputs for bundle name, key, suffix, and default values, returning resources of type T from the resource bundles.",
+  "summary": "TITLE: Hadoop MapReduce Checkpoint Directory\nDESCRIPTION: This directory manages task checkpoints in Hadoop MapReduce, ensuring atomicity, single-writer, write-once, multiple-readers, and ready-many properties. It includes components like CheckpointID.java, CheckpointNamingService.java, CheckpointService.java, EnumCounter.java, FSCheckpointID.java, FSCheckpointService.java, RandomNameCNS.java, SimpleNamingService.java, and TaskCheckpointID.java. These collaborate to ensure reliable and consistent checkpoint management, crucial for fault tolerance and job recovery.\n\nTITLE: ResourceBundle Management Class\nDESCRIPTION: The util directory's ResourceBundles.java class manages resource bundles efficiently. It provides methods to retrieve resources from bundles using static methods, handling exceptions and ensuring thread safety with ReentrantLock. The class accepts string inputs for bundle name, key, suffix, and default values, returning resources of type T from the resource bundles.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "checkpoint"
+    },
+    {
+      "type": "directory",
+      "name": "util"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Checkpoint Directory\nDESCRIPTION: This directory manages task checkpoints in Hadoop MapReduce, ensuring atomicity, single-writer, write-once, multiple-readers, and ready-many properties. It includes components like CheckpointID.java, CheckpointNamingService.java, CheckpointService.java, EnumCounter.java, FSCheckpointID.java, FSCheckpointService.java, RandomNameCNS.java, SimpleNamingService.java, and TaskCheckpointID.java. These collaborate to ensure reliable and consistent checkpoint management, crucial for fault tolerance and job recovery.\n\nTITLE: ResourceBundle Management Class\nDESCRIPTION: The util directory's ResourceBundles.java class manages resource bundles efficiently. It provides methods to retrieve resources from bundles using static methods, handling exceptions and ensuring thread safety with ReentrantLock. The class accepts string inputs for bundle name, key, suffix, and default values, returning resources of type T from the resource bundles."
+}

@@ -1,0 +1,22 @@
+{
+  "cluster_id": 18,
+  "title": "Secure Job Token Management in Hadoop MapReduce",
+  "description": "Hadoop MapReduce's security/token directory manages job tokens using JobTokenIdentifier and JobTokenSelector. JobTokenIdentifier, extending TokenIdentifier, handles token creation, reading, writing, and renewal, storing job IDs as Text. JobTokenSelector, implementing TokenSelector, retrieves matching job tokens, using Text for service representation. This implementation demonstrates the Strategy design pattern for token selection based on type, ensuring secure job execution through Hadoop's security token interfaces. This architecture enhances security, a critical quality attribute, while maintaining scalability and reliability inherent to Hadoop's distributed system. The use of Hadoop's security token interfaces and custom classes showcases the Adapter pattern, facilitating seamless integration with existing security infrastructure.",
+  "description_word_count": 100,
+  "number_of_files": 2,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Secure Job Token Management in Hadoop MapReduce\n\nDESCRIPTION: Hadoop MapReduce's security/token directory manages job tokens using JobTokenIdentifier and JobTokenSelector. JobTokenIdentifier, extending TokenIdentifier, handles token creation, reading, writing, and renewal, storing job IDs as Text. JobTokenSelector, implementing TokenSelector, retrieves matching job tokens, using Text for service representation. This implementation demonstrates the Strategy design pattern for token selection based on type, ensuring secure job execution through Hadoop's security token interfaces. This architecture enhances security, a critical quality attribute, while maintaining scalability and reliability inherent to Hadoop's distributed system. The use of Hadoop's security token interfaces and custom classes showcases the Adapter pattern, facilitating seamless integration with existing security infrastructure.",
+  "algorithm": "ACDC",
+  "files": [
+    "security/token/JobTokenIdentifier.java",
+    "security/token/JobTokenSelector.java"
+  ]
+}

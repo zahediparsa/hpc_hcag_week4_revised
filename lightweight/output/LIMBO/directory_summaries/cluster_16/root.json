@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 16,
+  "directory": ".",
+  "title": "Hadoop MapReduce Mapper Directory",
+  "description": "The 'lib/map' directory houses Java classes crucial for Hadoop MapReduce tasks, specifically for Mapper roles. It includes specialized Mappers like InverseMapper, which reverses keys and values, and RegexMapper, extracting regex-matched text. TokenCounterMapper tokenizes and counts words, all extending Hadoop's Mapper class. Each overrides the 'map' method for custom processing. These Mappers handle exceptions and utilize Hadoop and Java standard libraries for data preparation, setting the stage for the Reduce phase.",
+  "summary": "TITLE: Hadoop MapReduce Mapper Directory\nDESCRIPTION: The 'lib/map' directory houses Java classes crucial for Hadoop MapReduce tasks, specifically for Mapper roles. It includes specialized Mappers like InverseMapper, which reverses keys and values, and RegexMapper, extracting regex-matched text. TokenCounterMapper tokenizes and counts words, all extending Hadoop's Mapper class. Each overrides the 'map' method for custom processing. These Mappers handle exceptions and utilize Hadoop and Java standard libraries for data preparation, setting the stage for the Reduce phase.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "Mapper.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Mapper Directory\n\nDESCRIPTION:\nThe 'lib/map' directory houses Java classes crucial for Hadoop MapReduce tasks, specifically for Mapper roles. It includes specialized Mappers like InverseMapper, which reverses keys and values, and RegexMapper, extracting regex-matched text. TokenCounterMapper tokenizes and counts words, all extending Hadoop's Mapper class. Each overrides the 'map' method for custom processing. These Mappers handle exceptions and utilize Hadoop and Java standard libraries for data preparation, setting the stage for the Reduce phase."
+}

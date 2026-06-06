@@ -1,0 +1,40 @@
+{
+  "cluster_id": 7,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "This cluster architecture leverages Hadoop MapReduce for distributed processing. The DistributedCache.java manages file caching, ensuring accessibility across nodes. Specialized libraries in the 'lib' directory extend core functionalities, employing patterns like Chain, Decorator, and Thread Pool. OnDiskMapOutput.java handles temporary map output storage, supporting encryption and deletion. The CLI.java provides a command-line interface for job management, utilizing a command pattern. This architecture ensures scalability, maintainability, and reliability through distributed caching, specialized libraries, and robust output management. It employs Java, Hadoop core classes, and standard libraries, demonstrating a coordinator-worker pattern with a focus on performance and security.",
+  "description_word_count": 97,
+  "number_of_files": 20,
+  "number_of_directories": 9,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: This cluster architecture leverages Hadoop MapReduce for distributed processing. The DistributedCache.java manages file caching, ensuring accessibility across nodes. Specialized libraries in the 'lib' directory extend core functionalities, employing patterns like Chain, Decorator, and Thread Pool. OnDiskMapOutput.java handles temporary map output storage, supporting encryption and deletion. The CLI.java provides a command-line interface for job management, utilizing a command pattern. This architecture ensures scalability, maintainability, and reliability through distributed caching, specialized libraries, and robust output management. It employs Java, Hadoop core classes, and standard libraries, demonstrating a coordinator-worker pattern with a focus on performance and security.",
+  "algorithm": "ARC",
+  "files": [
+    "Cluster.java",
+    "Job.java",
+    "JobResourceUploader.java",
+    "JobSubmitter.java",
+    "Mapper.java",
+    "Reducer.java",
+    "filecache/DistributedCache.java",
+    "lib/chain/Chain.java",
+    "lib/chain/ChainMapContextImpl.java",
+    "lib/chain/ChainMapper.java",
+    "lib/chain/ChainReduceContextImpl.java",
+    "lib/chain/ChainReducer.java",
+    "lib/map/MultithreadedMapper.java",
+    "lib/map/WrappedMapper.java",
+    "lib/reduce/WrappedReducer.java",
+    "task/JobContextImpl.java",
+    "task/ReduceContextImpl.java",
+    "task/reduce/MergeManagerImpl.java",
+    "task/reduce/OnDiskMapOutput.java",
+    "tools/CLI.java"
+  ]
+}

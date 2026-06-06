@@ -1,0 +1,74 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 78,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.AuditingIntegration",
+    "path": "lib/output/committer/manifest/impl/AuditingIntegration.java",
+    "file_name": "AuditingIntegration.java",
+    "directory": "lib/output/committer/manifest/impl",
+    "summary": "KEY FUNCTIONALITY:\nThis Java code is a helper class for integrating Hadoop MapReduce with Hadoop 3.3.2+ Auditing. It ensures that fs.audit methods are used in a single place, facilitating replacement with a stub class in case of backporting.\n\nCORE LOGIC:\nThe class provides static methods to manage the audit context for MapReduce jobs. These methods include updating the common audit context with job ID and task attempt ID, entering and exiting stages, and updating the context when committer exits. It also provides a method to set the thread context with job ID and stage name for helper threads.\n\nINPUTS/OUTPUTS:\n- Inputs: ManifestCommitterConfig object, stage name, job ID, task attempt ID.\n- Outputs: None. It directly modifies the CommonAuditContext.\n\nDEPENDENCIES:\n- org.apache.hadoop.classification.InterfaceAudience\n- org.apache.hadoop.fs.audit.CommonAuditContext\n- org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterConfig\n- org.apache.hadoop.fs.audit.AuditConstants (PARAM_JOB_ID)\n- org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterConstants (CONTEXT_ATTR_STAGE, CONTEXT_ATTR_TASK_ATTEMPT_ID)",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 78,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.AbortTaskStage",
+    "path": "lib/output/committer/manifest/stages/AbortTaskStage.java",
+    "file_name": "AbortTaskStage.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY: The main purpose of this class is to provide a functionality to abort a task in a MapReduce job by deleting its attempt directory.\n\nCORE LOGIC: The core logic involves the `executeStage` method, which takes a boolean parameter `suppressExceptions` to decide whether to ignore exceptions during the deletion process. It first retrieves the task attempt directory using `getTaskAttemptDir()`. If the directory exists, it logs the deletion action and calls either `deleteRecursiveSuppressingExceptions` (if `suppressExceptions` is true) or `deleteRecursive` (if false) to delete the directory.\n\nINPUTS/OUTPUTS: The class takes no direct inputs other than the `StageConfig` object in its constructor. The output is the `Path` object representing the task attempt directory, which is returned after deletion.\n\nDEPENDENCIES: This class depends on several external classes and packages:\n- `java.io.IOException` for handling potential IO exceptions during file operations.\n- `org.slf4j.Logger` and `org.slf4j.LoggerFactory` for logging.\n- `org.apache.hadoop.fs.Path` for representing filesystem paths.\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterStatisticNames` for constant definitions related to committer statistics.\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages` package, as this class is part of this package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 78,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.CleanupJobStage",
+    "path": "lib/output/committer/manifest/stages/CleanupJobStage.java",
+    "file_name": "CleanupJobStage.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY:\nThis Java code defines a class `CleanupJobStage` that is responsible for cleaning up a job's temporary directory in Apache Hadoop MapReduce. It performs cleanup through parallel deletion of task attempt directories, with options to attempt deletion of the base directory first to address performance issues on certain storage systems like Azure ADLS Gen2 and GCS.\n\nCORE LOGIC:\n1. The `executeStage` method is the core of this class. It determines whether cleanup should be performed based on the `enabled` flag in the `Arguments`.\n2. If cleanup is enabled, it first checks if the base directory exists. If it doesn't, it marks the operation as complete.\n3. If the directory exists, it proceeds with the cleanup process. Depending on the configuration, it either attempts to delete the base directory first or directly initiates parallel deletion of task attempt directories.\n4. The `rmTaskAttemptDir` method is used to delete individual task attempt directories in parallel tasks, updating the audit context and progress.\n5. The `deleteOneDir` method attempts to delete a directory, incrementing the delete count and noting any exceptions to potentially throw later.\n6. The `cleanupStageOptionsFromConfig` static method constructs `Arguments` from a Hadoop `Configuration` object, using settings from `FileOutputCommitter` and the manifest committer.\n\nINPUTS/OUTPUTS:\n- INPUTS: The class takes a `StageConfig` object during initialization and an `Arguments` object in the `executeStage` method, which contains configuration settings like whether cleanup is enabled, if parallel deletion should occur, and other flags.\n- OUTPUTS: The method `executeStage` returns a `Result` object, which encapsulates the outcome of the cleanup operation, the directory that was cleaned up, the number of delete calls made, and any IOException that occurred.\n\nDEPENDENCIES:\n- Imported classes: `java.io.FileNotFoundException`, `java.io.IOException`, `java.util.concurrent.atomic.AtomicInteger`, `org.slf4j.Logger`, `org.slf4j.LoggerFactory`, `org.apache.hadoop.conf.Configuration`, `org.apache.hadoop.fs.FileStatus`, `org.apache.hadoop.fs.Path`, `org.apache.hadoop.fs.RemoteIterator`, `org.apache.hadoop.util.DurationInfo`, `org.apache.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 78,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.SaveSuccessFileStage",
+    "path": "lib/output/committer/manifest/stages/SaveSuccessFileStage.java",
+    "file_name": "SaveSuccessFileStage.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a class `SaveSuccessFileStage` that extends `AbstractJobOrTaskStage` for saving the `_SUCCESS` file in Hadoop MapReduce.\n\nCORE LOGIC:\nThe core logic involves creating a temporary file with a specific suffix (`SUCCESS_MARKER + TMP_SUFFIX`) in the job attempt directory, saving the `_SUCCESS` file content to this temporary file, and then atomically renaming it to the actual `_SUCCESS` file path in the job's output directory. The `saveManifest` method is called to handle the actual saving process.\n\nINPUTS/OUTPUTS:\n- INPUTS: `ManifestSuccessData` object containing the data to be saved as the `_SUCCESS` file.\n- OUTPUTS: The path to the saved `_SUCCESS` file, which is returned by the `executeStage` method.\n\nDEPENDENCIES:\n- `org.slf4j.Logger` and `org.slf4j.LoggerFactory` for logging.\n- `org.apache.hadoop.fs.Path` for file path management.\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.ManifestSuccessData` for the data to be saved.\n- Constants from `org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterConstants` for marker and temporary file suffix.\n- Constants from `org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterStatisticNames` for statistic names.\n- `AbstractJobOrTaskStage` for inheritance and common stage functionalities.\n- `StageConfig` for configuration details of the stage.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 78,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.SetupJobStage",
+    "path": "lib/output/committer/manifest/stages/SetupJobStage.java",
+    "file_name": "SetupJobStage.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to create a job attempt directory and its task manifest directory, and optionally delete a success marker file.\n\nCORE LOGIC:\n- The `SetupJobStage` class extends `AbstractJobOrTaskStage`.\n- It has a constructor that takes a `StageConfig` object.\n- The `executeStage` method is overridden to perform the job setup. It creates the job attempt directory, the task manifest directory, and optionally deletes a success marker file based on the `deleteMarker` boolean input.\n\nINPUTS:\n- `StageConfig` object for configuration details.\n- A boolean `deleteMarker` indicating whether to delete the success marker file.\n\nOUTPUTS:\n- The job attempt directory path as a `Path` object.\n\nDEPENDENCIES:\n- `org.slf4j.Logger` and `org.slf4j.LoggerFactory` for logging.\n- `org.apache.hadoop.fs.Path` for file path operations.\n- `org.apache.hadoop.fs.statistics.StoreStatisticNames.OP_DELETE` for operation delete statistics.\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterStatisticNames.OP_STAGE_JOB_SETUP` for stage job setup statistics.\n- `org.apache.hadoop.fs` package for file system operations (implicitly).\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages` package (likely for other stage classes).",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 78,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.SetupTaskStage",
+    "path": "lib/output/committer/manifest/stages/SetupTaskStage.java",
+    "file_name": "SetupTaskStage.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this chunk is to define a class `SetupTaskStage` that extends `AbstractJobOrTaskStage` for setting up a task in Apache Hadoop MapReduce.\n\nCORE LOGIC:\nThe core logic involves the `executeStage` method, which is overridden from the parent class. This method creates a new directory for the task attempt, ensuring that the job attempt directory exists beforehand. It uses the `createNewDirectory` method, passing a descriptive name including \"Task setup \" concatenated with the task name (for logging purposes) and the task attempt directory path.\n\nINPUTS/OUTPUTS:\nThe class takes a `String` (task name) as input for logging purposes. The output is a `Path` object representing the newly created task attempt directory.\n\nDEPENDENCIES:\nThe key dependencies visible in this chunk are:\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages` package\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterStatisticNames` class for the constant `OP_STAGE_TASK_SETUP`\n- `java.io.IOException` for exception handling\n- `java.util.Objects.requireNonNull` for null checks\n- `java.io.Path` for directory paths\n- `AbstractJobOrTaskStage` class for inheritance",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

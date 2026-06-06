@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 4,
+  "directory": "lib/output/committer",
+  "title": "Hadoop MapReduce Manifest Committer Directory",
+  "description": "The 'lib/output/committer/manifest/impl' directory implements Hadoop's manifest committer. It ensures data integrity during MapReduce output. It includes classes for Hadoop Auditing, SequenceFile management, constants, and file system operations. The directory uses patterns like helper classes and abstract base classes for modularity. It collaborates with Hadoop classes and internal components for seamless integration.",
+  "summary": "TITLE: Hadoop MapReduce Manifest Committer Directory\nDESCRIPTION: The 'lib/output/committer/manifest/impl' directory implements Hadoop's manifest committer. It ensures data integrity during MapReduce output. It includes classes for Hadoop Auditing, SequenceFile management, constants, and file system operations. The directory uses patterns like helper classes and abstract base classes for modularity. It collaborates with Hadoop classes and internal components for seamless integration.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Manifest Committer Directory\n\nDESCRIPTION: The 'lib/output/committer/manifest/impl' directory implements Hadoop's manifest committer. It ensures data integrity during MapReduce output. It includes classes for Hadoop Auditing, SequenceFile management, constants, and file system operations. The directory uses patterns like helper classes and abstract base classes for modularity. It collaborates with Hadoop classes and internal components for seamless integration."
+}

@@ -1,0 +1,21 @@
+{
+  "cluster_id": 6,
+  "title": "Hadoop MapReduce Counter Management",
+  "description": "Hadoop MapReduce employs a counter management system, encapsulated in the Counters.java file. This system organizes per-job/task counters into distinct groups via three inner classes: FrameworkGroupImpl, GenericGroup, and FileSystemGroup. These classes extend AbstractCounterGroup<Counter> and implement CounterGroup, handling framework-defined, generic, and file system-specific counters respectively. The GroupFactory class creates these counter groups. This architecture ensures maintainability and reliability, with counters managed centrally yet applicable per-job/task, demonstrating a Coordinator pattern. Java is the primary technology used, with dependencies on the org.apache.hadoop.mapreduce.counters package. Scalability is achieved through the modular design, allowing for easy addition of new counter groups. Security is implied through controlled access to counter data. Performance is optimized via efficient counter management, minimizing overhead during job execution.",
+  "description_word_count": 123,
+  "number_of_files": 1,
+  "number_of_directories": 1,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Counter Management\n\nDESCRIPTION: Hadoop MapReduce employs a counter management system, encapsulated in the Counters.java file. This system organizes per-job/task counters into distinct groups via three inner classes: FrameworkGroupImpl, GenericGroup, and FileSystemGroup. These classes extend AbstractCounterGroup<Counter> and implement CounterGroup, handling framework-defined, generic, and file system-specific counters respectively. The GroupFactory class creates these counter groups. This architecture ensures maintainability and reliability, with counters managed centrally yet applicable per-job/task, demonstrating a Coordinator pattern. Java is the primary technology used, with dependencies on the org.apache.hadoop.mapreduce.counters package. Scalability is achieved through the modular design, allowing for easy addition of new counter groups. Security is implied through controlled access to counter data. Performance is optimized via efficient counter management, minimizing overhead during job execution.",
+  "algorithm": "LIMBO",
+  "files": [
+    "Counters.java"
+  ]
+}

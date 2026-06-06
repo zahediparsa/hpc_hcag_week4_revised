@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": ".",
+  "title": "JobSubmissionFiles.java",
+  "description": "This Java class, `JobSubmissionFiles`, manages job submission files in Hadoop MapReduce. It provides methods to obtain paths for job-related files, ensuring correct ownership and permissions. The core logic involves static methods returning specific paths for job files. It uses Hadoop's FileSystem API for file system interactions and checks directory ownership. Inputs include the job submission directory, Configuration, and UserGroupInformation. Outputs are Path objects for job configuration, job jar, distributed cache files, and staging directory. Dependencies include Hadoop's core classes and standard Java libraries. It follows a utility class pattern, encapsulating job file path management.",
+  "summary": "TITLE: JobSubmissionFiles.java\nDESCRIPTION: This Java class, `JobSubmissionFiles`, manages job submission files in Hadoop MapReduce. It provides methods to obtain paths for job-related files, ensuring correct ownership and permissions. The core logic involves static methods returning specific paths for job files. It uses Hadoop's FileSystem API for file system interactions and checks directory ownership. Inputs include the job submission directory, Configuration, and UserGroupInformation. Outputs are Path objects for job configuration, job jar, distributed cache files, and staging directory. Dependencies include Hadoop's core classes and standard Java libraries. It follows a utility class pattern, encapsulating job file path management.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobSubmissionFiles.java"
+    },
+    {
+      "type": "directory",
+      "name": "protocol"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobSubmissionFiles.java\n\nDESCRIPTION:\nThis Java class, `JobSubmissionFiles`, manages job submission files in Hadoop MapReduce. It provides methods to obtain paths for job-related files, ensuring correct ownership and permissions. The core logic involves static methods returning specific paths for job files. It uses Hadoop's FileSystem API for file system interactions and checks directory ownership. Inputs include the job submission directory, Configuration, and UserGroupInformation. Outputs are Path objects for job configuration, job jar, distributed cache files, and staging directory. Dependencies include Hadoop's core classes and standard Java libraries. It follows a utility class pattern, encapsulating job file path management."
+}

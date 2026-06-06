@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": "tools",
+  "title": "Hadoop MapReduce Command-Line Interface",
+  "description": "The CLI.java file in the tools directory of Hadoop MapReduce serves as the command-line interface for managing MapReduce jobs. It processes command-line arguments to perform various actions such as job submission, status checks, killing jobs or tasks, setting priorities, viewing job history, listing job events, and displaying logs. The core logic revolves around the `run` method, which interprets the command and executes the corresponding action. It heavily relies on classes from the Apache Hadoop MapReduce library to interact with job and task details, status, and logs. This directory implements a command pattern, enabling users to manage MapReduce jobs through command-line instructions.",
+  "summary": "TITLE: Hadoop MapReduce Command-Line Interface\nDESCRIPTION: The CLI.java file in the tools directory of Hadoop MapReduce serves as the command-line interface for managing MapReduce jobs. It processes command-line arguments to perform various actions such as job submission, status checks, killing jobs or tasks, setting priorities, viewing job history, listing job events, and displaying logs. The core logic revolves around the `run` method, which interprets the command and executes the corresponding action. It heavily relies on classes from the Apache Hadoop MapReduce library to interact with job and task details, status, and logs. This directory implements a command pattern, enabling users to manage MapReduce jobs through command-line instructions.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CLI.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Command-Line Interface\n\nDESCRIPTION:\nThe CLI.java file in the tools directory of Hadoop MapReduce serves as the command-line interface for managing MapReduce jobs. It processes command-line arguments to perform various actions such as job submission, status checks, killing jobs or tasks, setting priorities, viewing job history, listing job events, and displaying logs. The core logic revolves around the `run` method, which interprets the command and executes the corresponding action. It heavily relies on classes from the Apache Hadoop MapReduce library to interact with job and task details, status, and logs. This directory implements a command pattern, enabling users to manage MapReduce jobs through command-line instructions."
+}

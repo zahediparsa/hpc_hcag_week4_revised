@@ -1,0 +1,42 @@
+{
+  "type": "directory",
+  "cluster_id": 39,
+  "directory": "jobhistory",
+  "title": "Job History Service Directory in Hadoop MapReduce",
+  "description": "The 'jobhistory' directory in Hadoop MapReduce serves as a repository for job history events, crucial for monitoring and debugging. It contains several Java classes, each representing a specific job event type, such as job submission, job initialization, priority change, queue change, status change, and unsuccessful completion. These classes implement the 'HistoryEvent' interface, encapsulating job-related details and converting them into 'TimelineEvent' objects for YARN's timeline service. The classes depend on Hadoop and YARN APIs for job identification, string utilities, timeline service integration, and Avro for handling UTF-8 strings. This directory exemplifies a layered architectural pattern, with each class focusing on a specific job event, collaborating to provide comprehensive job history logging.",
+  "summary": "TITLE: Job History Service Directory in Hadoop MapReduce\nDESCRIPTION: The 'jobhistory' directory in Hadoop MapReduce serves as a repository for job history events, crucial for monitoring and debugging. It contains several Java classes, each representing a specific job event type, such as job submission, job initialization, priority change, queue change, status change, and unsuccessful completion. These classes implement the 'HistoryEvent' interface, encapsulating job-related details and converting them into 'TimelineEvent' objects for YARN's timeline service. The classes depend on Hadoop and YARN APIs for job identification, string utilities, timeline service integration, and Avro for handling UTF-8 strings. This directory exemplifies a layered architectural pattern, with each class focusing on a specific job event, collaborating to provide comprehensive job history logging.",
+  "number_of_children": 7,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobInfoChangeEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "JobInitedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "JobPriorityChangeEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "JobQueueChangeEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "JobStatusChangedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "JobSubmittedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "JobUnsuccessfulCompletionEvent.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job History Service Directory in Hadoop MapReduce\n\nDESCRIPTION:\nThe 'jobhistory' directory in Hadoop MapReduce serves as a repository for job history events, crucial for monitoring and debugging. It contains several Java classes, each representing a specific job event type, such as job submission, job initialization, priority change, queue change, status change, and unsuccessful completion. These classes implement the 'HistoryEvent' interface, encapsulating job-related details and converting them into 'TimelineEvent' objects for YARN's timeline service. The classes depend on Hadoop and YARN APIs for job identification, string utilities, timeline service integration, and Avro for handling UTF-8 strings. This directory exemplifies a layered architectural pattern, with each class focusing on a specific job event, collaborating to provide comprehensive job history logging."
+}

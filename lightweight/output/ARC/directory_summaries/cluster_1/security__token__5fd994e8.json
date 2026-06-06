@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 1,
+  "directory": "security/token",
+  "title": "MapReduce Delegation Token Management",
+  "description": "The 'security/token/delegation' directory manages MapReduce-specific tokens for secure job submission and tracking. It includes 'DelegationTokenIdentifier.java' for token creation and management, 'DelegationTokenSecretManager.java' for token lifecycle, and 'DelegationTokenSelector.java' for token identification. These components collaborate under the Delegate pattern, ensuring secure access and job management in Hadoop MapReduce. The system utilizes Hadoop's security packages and classification annotations for stability and audience specification.",
+  "summary": "TITLE: MapReduce Delegation Token Management\nDESCRIPTION: The 'security/token/delegation' directory manages MapReduce-specific tokens for secure job submission and tracking. It includes 'DelegationTokenIdentifier.java' for token creation and management, 'DelegationTokenSecretManager.java' for token lifecycle, and 'DelegationTokenSelector.java' for token identification. These components collaborate under the Delegate pattern, ensuring secure access and job management in Hadoop MapReduce. The system utilizes Hadoop's security packages and classification annotations for stability and audience specification.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "security/token/delegation"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Delegation Token Management\n\nDESCRIPTION: The 'security/token/delegation' directory manages MapReduce-specific tokens for secure job submission and tracking. It includes 'DelegationTokenIdentifier.java' for token creation and management, 'DelegationTokenSecretManager.java' for token lifecycle, and 'DelegationTokenSelector.java' for token identification. These components collaborate under the Delegate pattern, ensuring secure access and job management in Hadoop MapReduce. The system utilizes Hadoop's security packages and classification annotations for stability and audience specification."
+}

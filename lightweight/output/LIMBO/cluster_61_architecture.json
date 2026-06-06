@@ -1,0 +1,25 @@
+{
+  "cluster_id": 61,
+  "title": "Hadoop MapReduce Input Format",
+  "description": "This directory contains custom input formats for Hadoop MapReduce jobs, exemplifying the Strategy design pattern. Classes like 'CombineSequenceFileInputFormat.java', 'CombineTextInputFormat.java', 'SequenceFileAsBinaryInputFormat.java', 'SequenceFileAsTextInputFormat.java', and 'SequenceFileInputFilter.java' extend or implement Hadoop's RecordReader interface. This enables MapReduce jobs to read diverse data sources, promoting flexibility and extensibility. Each class encapsulates a unique strategy for reading data, facilitating seamless handling of specific file types or filtering requirements. The architecture ensures scalability and maintainability, as new input formats can be added without modifying existing code. Java is the primary programming language used, leveraging Hadoop's APIs for RecordReader interface implementation.",
+  "description_word_count": 97,
+  "number_of_files": 5,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Input Format\n\nDESCRIPTION: This directory contains custom input formats for Hadoop MapReduce jobs, exemplifying the Strategy design pattern. Classes like 'CombineSequenceFileInputFormat.java', 'CombineTextInputFormat.java', 'SequenceFileAsBinaryInputFormat.java', 'SequenceFileAsTextInputFormat.java', and 'SequenceFileInputFilter.java' extend or implement Hadoop's RecordReader interface. This enables MapReduce jobs to read diverse data sources, promoting flexibility and extensibility. Each class encapsulates a unique strategy for reading data, facilitating seamless handling of specific file types or filtering requirements. The architecture ensures scalability and maintainability, as new input formats can be added without modifying existing code. Java is the primary programming language used, leveraging Hadoop's APIs for RecordReader interface implementation.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/input/CombineSequenceFileInputFormat.java",
+    "lib/input/CombineTextInputFormat.java",
+    "lib/input/SequenceFileAsBinaryInputFormat.java",
+    "lib/input/SequenceFileAsTextInputFormat.java",
+    "lib/input/SequenceFileInputFilter.java"
+  ]
+}

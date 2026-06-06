@@ -1,0 +1,25 @@
+{
+  "cluster_id": 73,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and a distributed file system (HDFS). The JobTracker coordinates and manages jobs, assigning tasks to available TaskTrackers. TaskTrackers execute map and reduce tasks, reporting progress back to the JobTracker. HDFS ensures data durability and fault tolerance. Libraries in the 'lib' directory, such as TupleWritable and ManifestCommitterConstants.java, facilitate complex data manipulations and consistent file handling. JobTokenIdentifier.java secures job access control. This architecture ensures scalability, maintainability, reliability, and security, leveraging Java for implementation and integrating with Hadoop's security components. The coordinator pattern is evident in the JobTracker's role, while the pipeline pattern is used in data processing.",
+  "description_word_count": 112,
+  "number_of_files": 5,
+  "number_of_directories": 8,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and a distributed file system (HDFS). The JobTracker coordinates and manages jobs, assigning tasks to available TaskTrackers. TaskTrackers execute map and reduce tasks, reporting progress back to the JobTracker. HDFS ensures data durability and fault tolerance. Libraries in the 'lib' directory, such as TupleWritable and ManifestCommitterConstants.java, facilitate complex data manipulations and consistent file handling. JobTokenIdentifier.java secures job access control. This architecture ensures scalability, maintainability, reliability, and security, leveraging Java for implementation and integrating with Hadoop's security components. The coordinator pattern is evident in the JobTracker's role, while the pipeline pattern is used in data processing.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/join/ResetableIterator.java",
+    "lib/join/TupleWritable.java",
+    "lib/output/committer/manifest/ManifestCommitterConstants.java",
+    "security/SecureShuffleUtils.java",
+    "security/token/JobTokenIdentifier.java"
+  ]
+}

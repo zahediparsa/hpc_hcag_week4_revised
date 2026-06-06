@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 75,
+  "directory": "lib/output/committer",
+  "title": "Manifest Committer Implementation",
+  "description": "The 'lib/output/committer/manifest' directory in Hadoop MapReduce houses components for manifest committer functionality. 'ManifestCommitterSupport.java' provides utility methods for IOStatisticsStore, job UUIDs, paths for manifest files, and task manifests. 'ManifestStoreOperations.java' and its HDFS-based subclass 'ManifestStoreOperationsThroughFileSystem.java' define file system operations for generating task manifests, using the Abstract Factory pattern for creating manifest store operations based on object store implementations. The 'manifest/stages' directory manages commit stages, ensuring data durability and consistency. 'AbstractJobOrTaskStage.java' ensures single execution of a stage, logs stage entry/exit, updates IO statistics, and handles exceptions. 'StageConfig.java' uses a builder pattern for creating immutable configurations, setting up stage parameters. This collaboration ensures reliable and efficient commit operations within the MapReduce framework, employing the Builder pattern and robust error handling mechanisms.",
+  "summary": "TITLE: Manifest Committer Implementation\nDESCRIPTION: The 'lib/output/committer/manifest' directory in Hadoop MapReduce houses components for manifest committer functionality. 'ManifestCommitterSupport.java' provides utility methods for IOStatisticsStore, job UUIDs, paths for manifest files, and task manifests. 'ManifestStoreOperations.java' and its HDFS-based subclass 'ManifestStoreOperationsThroughFileSystem.java' define file system operations for generating task manifests, using the Abstract Factory pattern for creating manifest store operations based on object store implementations. The 'manifest/stages' directory manages commit stages, ensuring data durability and consistency. 'AbstractJobOrTaskStage.java' ensures single execution of a stage, logs stage entry/exit, updates IO statistics, and handles exceptions. 'StageConfig.java' uses a builder pattern for creating immutable configurations, setting up stage parameters. This collaboration ensures reliable and efficient commit operations within the MapReduce framework, employing the Builder pattern and robust error handling mechanisms.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Manifest Committer Implementation\n\nDESCRIPTION: The 'lib/output/committer/manifest' directory in Hadoop MapReduce houses components for manifest committer functionality. 'ManifestCommitterSupport.java' provides utility methods for IOStatisticsStore, job UUIDs, paths for manifest files, and task manifests. 'ManifestStoreOperations.java' and its HDFS-based subclass 'ManifestStoreOperationsThroughFileSystem.java' define file system operations for generating task manifests, using the Abstract Factory pattern for creating manifest store operations based on object store implementations. The 'manifest/stages' directory manages commit stages, ensuring data durability and consistency. 'AbstractJobOrTaskStage.java' ensures single execution of a stage, logs stage entry/exit, updates IO statistics, and handles exceptions. 'StageConfig.java' uses a builder pattern for creating immutable configurations, setting up stage parameters. This collaboration ensures reliable and efficient commit operations within the MapReduce framework, employing the Builder pattern and robust error handling mechanisms."
+}

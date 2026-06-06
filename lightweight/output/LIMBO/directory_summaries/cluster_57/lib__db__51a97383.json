@@ -1,0 +1,50 @@
+{
+  "type": "directory",
+  "cluster_id": 57,
+  "directory": "lib/db",
+  "title": "Hadoop MapReduce Database Input Format and Record Reader Architecture",
+  "description": "The 'lib/db' directory in Hadoop MapReduce contains specialized classes for reading data from SQL databases. The core components are custom InputFormat and RecordReader classes, such as DBInputFormat, DBRecordReader, DataDrivenDBInputFormat, and DataDrivenDBRecordReader. These classes extend Hadoop's generic InputFormat and RecordReader, adding database-specific functionalities. \n\nDBInputFormat defines a custom InputFormat, DBInputFormat, which reads data from SQL tables, emitting LongWritable keys and DBWritable values. It uses a DBConfiguration object to store database connection parameters and query configurations. The DBRecordReader class, extending RecordReader, reads records from SQL tables, emitting LongWritable keys and DBWritable values.\n\nDataDrivenDBInputFormat and DataDrivenDBRecordReader are specialized versions that generate data-driven WHERE clauses for parallel processing. They divide the data into chunks for MapReduce tasks, ensuring roughly equal data distribution. The MySQLDBRecordReader and OracleDBRecordReader extend DBRecordReader, providing MySQL and Oracle-specific implementations, respectively.\n\nThese components collaborate to enable Hadoop MapReduce jobs to read and process data directly from SQL databases, leveraging database-specific functionalities for efficient data extraction and handling. The architecture follows a layered design, with higher layers (InputFormat, RecordReader) abstracting database-specifics, and lower layers (MySQLDBRecordReader, OracleDBRecordReader) providing concrete implementations.",
+  "summary": "TITLE: Hadoop MapReduce Database Input Format and Record Reader Architecture\nDESCRIPTION: The 'lib/db' directory in Hadoop MapReduce contains specialized classes for reading data from SQL databases. The core components are custom InputFormat and RecordReader classes, such as DBInputFormat, DBRecordReader, DataDrivenDBInputFormat, and DataDrivenDBRecordReader. These classes extend Hadoop's generic InputFormat and RecordReader, adding database-specific functionalities. \n\nDBInputFormat defines a custom InputFormat, DBInputFormat, which reads data from SQL tables, emitting LongWritable keys and DBWritable values. It uses a DBConfiguration object to store database connection parameters and query configurations. The DBRecordReader class, extending RecordReader, reads records from SQL tables, emitting LongWritable keys and DBWritable values.\n\nDataDrivenDBInputFormat and DataDrivenDBRecordReader are specialized versions that generate data-driven WHERE clauses for parallel processing. They divide the data into chunks for MapReduce tasks, ensuring roughly equal data distribution. The MySQLDBRecordReader and OracleDBRecordReader extend DBRecordReader, providing MySQL and Oracle-specific implementations, respectively.\n\nThese components collaborate to enable Hadoop MapReduce jobs to read and process data directly from SQL databases, leveraging database-specific functionalities for efficient data extraction and handling. The architecture follows a layered design, with higher layers (InputFormat, RecordReader) abstracting database-specifics, and lower layers (MySQLDBRecordReader, OracleDBRecordReader) providing concrete implementations.",
+  "number_of_children": 9,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "DBInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "DBRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "DataDrivenDBInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "DataDrivenDBRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "MySQLDBRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "MySQLDataDrivenDBRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "OracleDBRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "OracleDataDrivenDBInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "OracleDataDrivenDBRecordReader.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Database Input Format and Record Reader Architecture\n\nDESCRIPTION:\nThe 'lib/db' directory in Hadoop MapReduce contains specialized classes for reading data from SQL databases. The core components are custom InputFormat and RecordReader classes, such as DBInputFormat, DBRecordReader, DataDrivenDBInputFormat, and DataDrivenDBRecordReader. These classes extend Hadoop's generic InputFormat and RecordReader, adding database-specific functionalities. \n\nDBInputFormat defines a custom InputFormat, DBInputFormat, which reads data from SQL tables, emitting LongWritable keys and DBWritable values. It uses a DBConfiguration object to store database connection parameters and query configurations. The DBRecordReader class, extending RecordReader, reads records from SQL tables, emitting LongWritable keys and DBWritable values.\n\nDataDrivenDBInputFormat and DataDrivenDBRecordReader are specialized versions that generate data-driven WHERE clauses for parallel processing. They divide the data into chunks for MapReduce tasks, ensuring roughly equal data distribution. The MySQLDBRecordReader and OracleDBRecordReader extend DBRecordReader, providing MySQL and Oracle-specific implementations, respectively.\n\nThese components collaborate to enable Hadoop MapReduce jobs to read and process data directly from SQL databases, leveraging database-specific functionalities for efficient data extraction and handling. The architecture follows a layered design, with higher layers (InputFormat, RecordReader) abstracting database-specifics, and lower layers (MySQLDBRecordReader, OracleDBRecordReader) providing concrete implementations."
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "algorithm": "ACDC",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.MarkableIterator",
+    "path": "MarkableIterator.java",
+    "file_name": "MarkableIterator.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to create a wrapper iterator that implements the `MarkableIteratorInterface`. This wrapper allows an underlying iterator to be marked, reset, and cleared, while still providing the standard iterator methods like `hasNext()` and `next()`.\n\nCORE LOGIC:\nThe core logic involves wrapping an existing iterator that implements `MarkableIteratorInterface` and forwarding calls to its methods. The `MarkableIterator` class does not implement any complex algorithms but delegates the implementation to the base iterator. It ensures that the base iterator supports the `MarkableIteratorInterface` methods (`mark()`, `reset()`, `clearMark()`) and forwards `hasNext()` and `next()` calls. The `remove()` method is not supported and throws an `UnsupportedOperationException`.\n\nINPUTS/OUTPUTS:\n- INPUTS: An iterator (`Iterator<VALUE>`) that implements `MarkableIteratorInterface` is passed to the constructor.\n- OUTPUTS: This class provides an iterator (`Iterator<VALUE>`) that wraps the input iterator and supports additional markable operations (`mark()`, `reset()`, `clearMark()`).\n\nDEPENDENCIES:\n- `java.io.IOException`: Imported for exception handling.\n- `java.util.Iterator`: Imported for generic iterator functionality.\n- `org.apache.hadoop.classification.InterfaceAudience`: Imported for class annotation.\n- `org.apache.hadoop.classification.InterfaceStability`: Imported for class annotation.\n- `org.apache.hadoop.mapreduce.MarkableIteratorInterface`: The interface being implemented by this class.\n- No specific collaborator classes are directly visible in this chunk, but it's part of the `org.apache.hadoop.mapreduce` package, indicating it's likely used within the Hadoop MapReduce framework.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.MarkableIteratorInterface",
+    "path": "MarkableIteratorInterface.java",
+    "file_name": "MarkableIteratorInterface.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define an interface, `MarkableIteratorInterface`, for iterators that support mark-reset functionality in Apache Hadoop MapReduce.\n\nCORE LOGIC:\nThe core logic involves three methods:\n1. `mark()`: This method is used to mark the current record during iteration. This allows the iterator to remember its state so it can be rewound to this record later.\n2. `reset()`: This method rewinds the iterator to the last record before the call to the previous `mark()`.\n3. `clearMark()`: This method clears any previously set mark, effectively removing the saved state.\n\nINPUTS/OUTPUTS:\nThere are no explicit inputs or outputs in this code snippet as it's an interface definition. It specifies methods that implementing classes must provide, without detailing how they should be implemented or what data they will handle.\n\nDEPENDENCIES:\nThe key dependencies in this chunk are:\n1. `java.io.IOException`: This is a checked exception that the methods in this interface can throw, indicating that an I/O error has occurred.\n2. `java.util.Iterator<VALUE>`: This is the iterator interface that `MarkableIteratorInterface` extends, providing standard iterator functionalities.\n3. `org.apache.hadoop.classification.InterfaceAudience`: This is a Hadoop-specific annotation indicating the intended audience for this interface.\n4. `org.apache.hadoop.classification.InterfaceStability`: Another Hadoop-specific annotation indicating the stability level of this interface, which is marked as evolving.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.ReduceContext",
+    "path": "ReduceContext.java",
+    "file_name": "ReduceContext.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define the interface `ReduceContext` for the context passed to the `Reducer` in Apache Hadoop MapReduce.\n\nCORE LOGIC:\nThe core logic involves methods to manage the processing of unique keys and iteration through values associated with the current key. The interface extends `TaskInputOutputContext` and includes methods `nextKey()` to move to the next unique key, and `getValues()` to iterate through the values for the current key, reusing the same value object stored in the context. It also introduces a nested interface `ValueIterator` for iterating over values, which includes a `resetBackupStore()` method to handle transitions between keys.\n\nINPUTS/OUTPUTS:\nThe interface does not directly handle inputs or outputs. Instead, it prepares the context for the Reducer to process input data (keys and values) and generate output data (keys and values). The actual input and output handling would be implemented in classes that extend this interface.\n\nDEPENDENCIES:\nThe code chunk depends on several classes and packages:\n- `java.io.IOException`: For exception handling related to I/O operations.\n- `java.util.Iterator`: For the iterator functionality in the nested `ValueIterator` interface.\n- `org.apache.hadoop.classification`: For class annotations related to audience and stability.\n- `org.apache.hadoop.mapreduce`: For the MapReduce framework classes and interfaces.\n- `org.apache.hadoop.mapreduce.TaskInputOutputContext`: The parent interface that `ReduceContext` extends.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.lib.input.TextInputFormat",
+    "path": "lib/input/TextInputFormat.java",
+    "file_name": "TextInputFormat.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define the `TextInputFormat` class, which extends `FileInputFormat` for processing plain text files in Apache Hadoop MapReduce. It provides methods to create a `RecordReader` for reading lines from the text files and to determine if a file is splittable based on its compression codec.\n\nCORE LOGIC:\n1. The `TextInputFormat` class extends `FileInputFormat<LongWritable, Text>`, indicating that it processes text files, with LongWritable as the key and Text as the value.\n2. The `createRecordReader` method creates a `LineRecordReader` instance, which reads lines from the input files. It takes a `TaskAttemptContext` as an argument to get the record delimiter, which is used to identify the end of a line.\n3. The `isSplitable` method checks if a file can be split into smaller chunks for parallel processing. It determines this by checking the compression codec of the file. If the file is not compressed or if it uses a `SplittableCompressionCodec`, it can be split.\n\nINPUTS/OUTPUTS:\n- INPUTS: The class takes `InputSplit` and `TaskAttemptContext` as inputs for the `createRecordReader` method. It also uses `JobContext` in the `isSplitable` method to get configuration settings and file information.\n- OUTPUTS: The class does not explicitly produce any output. Instead, it prepares the input data for processing by creating a `RecordReader` instance that reads lines from text files and determines if files can be split for parallel processing.\n\nDEPENDENCIES:\n- Imported classes: `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`, `org.apache.hadoop.fs.Path`, `org.apache.hadoop.io.LongWritable`, `org.apache.hadoop.io.Text`, `org.apache.hadoop.io.compress.CompressionCodec`, `org.apache.hadoop.io.compress.CompressionCodecFactory`, `org.apache.hadoop.io.compress.SplittableCompressionCodec`, `org.apache.hadoop.mapreduce.InputFormat`, `org.apache.hadoop.mapreduce.InputSplit`, `org.apache.hadoop.mapreduce.JobContext`, `org.apache.hadoop.mapreduce.RecordReader`, `org.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.HashPartitioner",
+    "path": "lib/partition/HashPartitioner.java",
+    "file_name": "HashPartitioner.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a custom partitioner for Apache Hadoop MapReduce, named `HashPartitioner`, which partitions keys based on their hash code.\n\nCORE LOGIC:\nThe core logic of this class is the `getPartition` method, which takes a key and a value, and an integer `numReduceTasks`. It calculates the partition for the given key by applying the hash code method (`key.hashCode()`) and then uses bitwise AND with `Integer.MAX_VALUE` followed by modulo operation (`% numReduceTasks`) to determine the partition number.\n\nINPUTS/OUTPUTS:\n- Inputs: The method takes three inputs - `K key`, `V value`, and `int numReduceTasks`.\n- Outputs: The method returns an integer representing the partition number.\n\nDEPENDENCIES:\n- The class imports `org.apache.hadoop.classification.InterfaceAudience` and `org.apache.hadoop.classification.InterfaceStability` for annotations.\n- It extends `org.apache.hadoop.mapreduce.Partitioner<K, V>`, indicating it is a custom partitioner for MapReduce jobs.\n- It uses `Object#hashCode()` to compute the hash code of the key.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.task.JobContextImpl",
+    "path": "task/JobContextImpl.java",
+    "file_name": "JobContextImpl.java",
+    "directory": "task",
+    "summary": "KEY FUNCTIONALITY:\nThis Java class, `JobContextImpl`, is a part of Apache Hadoop MapReduce framework. It provides a read-only view of the job configuration to the tasks while they are running.\n\nCORE LOGIC:\n- The class initializes with a Hadoop `Configuration` object and a `JobID`.\n- It provides getter methods for various job configuration parameters like input format, mapper, reducer classes, output format, partitioner, key and value classes, job name, job setup and cleanup needs, task cleanup needs, job jar path, cache archives and files, localized cache archives and files, timestamps, maximum attempts for map and reduce tasks, profiling settings, and user credentials.\n- It uses Hadoop's `Configuration` class to retrieve these settings, which are typically set in the job configuration.\n\nINPUTS/OUTPUTS:\n- Inputs: The class primarily uses a `Configuration` object and a `JobID` to initialize.\n- Outputs: It provides various job configuration details as outputs through its getter methods. These include job-specific classes (like InputFormat, Mapper, Reducer, OutputFormat, Partitioner), key and value classes, job name, job jar path, cache details (archives, files, localized archives, localized files), timestamps, maximum attempts for map and reduce tasks, profiling settings, and user credentials.\n\nDEPENDENCIES:\n- The class depends on several Hadoop core classes and interfaces, including `Configuration`, `JobID`, `UserGroupInformation`, `Credentials`, `Path`, `RawComparator`, `Mapper`, `Reducer`, `OutputFormat`, `InputFormat`, `Partitioner`, and various Hadoop-specific configuration constants and attributes (`MRJobConfig`).\n- It also uses Apache Commons Lang's `StringUtils` for string operations.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.task.ReduceContextImpl",
+    "path": "task/ReduceContextImpl.java",
+    "file_name": "ReduceContextImpl.java",
+    "directory": "task",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to implement the `ReduceContext` interface for Apache Hadoop MapReduce, providing methods to handle key-value pairs during the reduce phase.\n\nCORE LOGIC:\n- The class `ReduceContextImpl` extends `TaskInputOutputContextImpl` and implements `ReduceContext`.\n- It maintains state for the current key-value pair (`key` and `value`), counters for keys and values, and a comparator for keys.\n- The `nextKey()` method advances to the next unique key, while `nextKeyValue()` retrieves the next key-value pair.\n- It includes a nested `ValueIterator` class to provide an iterator over values for a given key, supporting `hasNext()`, `next()`, `remove()`, `mark()`, `reset()`, and `clearMark()` methods.\n- The `getValues()` method returns an iterable over the values for the current key.\n\nINPUTS/OUTPUTS:\n- Inputs: `RawKeyValueIterator` for key-value pairs, `Counter` instances for input keys and values, `RecordWriter` for output, `OutputCommitter`, `StatusReporter`, `RawComparator` for keys, `Configuration`, `Deserialization` for key and value classes, and `TaskAttemptID`.\n- Outputs: Current key (`KEYIN`) and value (`VALUEIN`) through `getCurrentKey()` and `getCurrentValue()` methods, and an iterable of values (`Iterable<VALUEIN>`) via `getValues()`.\n\nDEPENDENCIES:\n- Key imported classes: `java.io.DataOutputStream`, `java.io.IOException`, `java.util.Iterator`, `java.util.NoSuchElementException`, `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`, `org.apache.hadoop.conf.Configuration`, `org.apache.hadoop.io.BytesWritable`, `org.apache.hadoop.io.DataInputBuffer`, `org.apache.hadoop.io.RawComparator`, `org.apache.hadoop.io.WritableUtils`, `org.apache.hadoop.io.serializer.Deserializer`, `org.apache.hadoop.io.serializer.SerializationFactory`, `org.apache.hadoop.io.serializer.Serializer`, `org.apache.hadoop.mapred.BackupStore`, `org.apache.hadoop.mapred.RawKeyValueIterator`, `org.apache.hadoop.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl",
+    "path": "task/TaskAttemptContextImpl.java",
+    "file_name": "TaskAttemptContextImpl.java",
+    "directory": "task",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to provide a concrete implementation of the TaskAttemptContext interface in Apache Hadoop MapReduce. It holds the context for individual task attempts, including task ID, status, and reporting mechanisms.\n\nCORE LOGIC:\n- The class extends JobContextImpl and implements TaskAttemptContext.\n- It initializes a TaskAttemptID and a StatusReporter in its constructor.\n- It provides methods to get the task attempt ID, current status, and to set/report status.\n- It includes a nested static class, DummyReporter, which is a minimal implementation of StatusReporter used when no actual reporter is provided.\n- It offers methods to get counters and to report progress.\n\nINPUTS:\n- Configuration: Hadoop configuration object containing job settings.\n- TaskAttemptID: Unique identifier for the task attempt.\n\nOUTPUTS:\n- TaskAttemptContextImpl: An instance of this class with set task attempt context.\n- Status: Current status of the task, which can be set and retrieved.\n- Counters: Methods to get counters for specific groups and names.\n\nDEPENDENCIES:\n- org.apache.hadoop.mapreduce.TaskAttemptID\n- org.apache.hadoop.mapreduce.StatusReporter\n- org.apache.hadoop.mapreduce.Counter\n- org.apache.hadoop.mapreduce.Counters\n- org.apache.hadoop.mapred.Task\n- org.apache.hadoop.conf.Configuration\n- org.apache.hadoop.classification.InterfaceAudience\n- org.apache.hadoop.classification.InterfaceStability\n- java.util.Enum\n\nThis class is crucial for managing the context of individual task attempts within a MapReduce job, providing access to task-specific information and reporting capabilities.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

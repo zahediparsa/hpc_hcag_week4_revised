@@ -1,0 +1,25 @@
+{
+  "cluster_id": 15,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture comprises a NameNode for file system directory and namespace management, a JobTracker for job scheduling and execution, and TaskTrackers (DataNodes) for task execution. Data is processed in parallel across nodes, with MapReduce jobs splitting into independent tasks. Custom mappers, defined in the 'lib' directory, extend functionality using Java adapters and wrappers. This architecture ensures scalability, reliability, and fault tolerance through data replication and automatic failover. Hadoop Distributed File System (HDFS) provides fault-tolerant storage, while YARN (Yet Another Resource Negotiator) manages resources and job scheduling, showcasing a Coordinator pattern. The architecture supports diverse data processing needs, demonstrating flexibility and maintainability, achieved through Java and customizable MapReduce libraries.",
+  "description_word_count": 111,
+  "number_of_files": 5,
+  "number_of_directories": 6,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster architecture comprises a NameNode for file system directory and namespace management, a JobTracker for job scheduling and execution, and TaskTrackers (DataNodes) for task execution. Data is processed in parallel across nodes, with MapReduce jobs splitting into independent tasks. Custom mappers, defined in the 'lib' directory, extend functionality using Java adapters and wrappers. This architecture ensures scalability, reliability, and fault tolerance through data replication and automatic failover. Hadoop Distributed File System (HDFS) provides fault-tolerant storage, while YARN (Yet Another Resource Negotiator) manages resources and job scheduling, showcasing a Coordinator pattern. The architecture supports diverse data processing needs, demonstrating flexibility and maintainability, achieved through Java and customizable MapReduce libraries.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/aggregate/ValueAggregatorMapper.java",
+    "lib/fieldsel/FieldSelectionMapper.java",
+    "lib/input/DelegatingMapper.java",
+    "lib/input/TaggedInputSplit.java",
+    "lib/map/WrappedMapper.java"
+  ]
+}

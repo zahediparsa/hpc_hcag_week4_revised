@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 76,
+  "directory": "lib/output/committer/manifest/impl",
+  "title": "LoadedManifestData Class for Hadoop Committer",
+  "description": "The LoadedManifestData.java file encapsulates loaded manifest data in Hadoop's committer. It holds DirEntry objects, a Path for sequence data file location, and an integer for file count. This class provides methods to access these elements and delete the sequence file. It depends on several Java and Hadoop-specific classes for its functionality. The class is crucial for the committer's operation, ensuring data integrity during the output phase of MapReduce jobs.",
+  "summary": "TITLE: LoadedManifestData Class for Hadoop Committer\nDESCRIPTION: The LoadedManifestData.java file encapsulates loaded manifest data in Hadoop's committer. It holds DirEntry objects, a Path for sequence data file location, and an integer for file count. This class provides methods to access these elements and delete the sequence file. It depends on several Java and Hadoop-specific classes for its functionality. The class is crucial for the committer's operation, ensuring data integrity during the output phase of MapReduce jobs.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "LoadedManifestData.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: LoadedManifestData Class for Hadoop Committer\n\nDESCRIPTION:\nThe LoadedManifestData.java file encapsulates loaded manifest data in Hadoop's committer. It holds DirEntry objects, a Path for sequence data file location, and an integer for file count. This class provides methods to access these elements and delete the sequence file. It depends on several Java and Hadoop-specific classes for its functionality. The class is crucial for the committer's operation, ensuring data integrity during the output phase of MapReduce jobs."
+}

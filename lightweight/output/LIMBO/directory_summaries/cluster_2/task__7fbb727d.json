@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "task",
+  "title": "Reduce Task Component in Hadoop MapReduce",
+  "description": "The 'task/reduce' directory in Hadoop MapReduce contains components for the reduce phase. ExceptionReporter.java handles exception reporting across threads. InMemoryWriter.java writes key-value pairs into memory. ShuffleHeader.java provides shuffle data metadata. ShuffleScheduler.java manages shuffle phase, showcasing a modular, well-structured architecture with clear separation of concerns.",
+  "summary": "TITLE: Reduce Task Component in Hadoop MapReduce\nDESCRIPTION: The 'task/reduce' directory in Hadoop MapReduce contains components for the reduce phase. ExceptionReporter.java handles exception reporting across threads. InMemoryWriter.java writes key-value pairs into memory. ShuffleHeader.java provides shuffle data metadata. ShuffleScheduler.java manages shuffle phase, showcasing a modular, well-structured architecture with clear separation of concerns.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "task/annotation"
+    },
+    {
+      "type": "directory",
+      "name": "task/reduce"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Reduce Task Component in Hadoop MapReduce\nDESCRIPTION: The 'task/reduce' directory in Hadoop MapReduce contains components for the reduce phase. ExceptionReporter.java handles exception reporting across threads. InMemoryWriter.java writes key-value pairs into memory. ShuffleHeader.java provides shuffle data metadata. ShuffleScheduler.java manages shuffle phase, showcasing a modular, well-structured architecture with clear separation of concerns."
+}

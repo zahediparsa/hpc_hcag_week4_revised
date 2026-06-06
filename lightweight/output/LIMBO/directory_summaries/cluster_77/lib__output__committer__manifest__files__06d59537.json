@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 77,
+  "directory": "lib/output/committer/manifest/files",
+  "title": "Manifest Printing Utility",
+  "description": "The 'lib/output/committer/manifest/files' directory in Hadoop MapReduce architecture houses the 'ManifestPrinter.java' file. This utility is designed to print the contents of a manifest file to a specified output stream, typically System.out or a user-provided stream. The core functionality is encapsulated in the 'ManifestPrinter' tool, which loads manifest data from a specified file using the Hadoop FileSystem and then prints it. The tool takes a single command-line argument, the path to the manifest file, and prints the manifest data, including diagnostics and I/O statistics, to the configured output stream. Its dependencies include various Hadoop classes for configuration, file system interaction, and tool running, along with the 'ManifestSuccessData' class that contains the manifest data. This directory follows a utility pattern, providing a tool for debugging and monitoring purposes.",
+  "summary": "TITLE: Manifest Printing Utility\nDESCRIPTION: The 'lib/output/committer/manifest/files' directory in Hadoop MapReduce architecture houses the 'ManifestPrinter.java' file. This utility is designed to print the contents of a manifest file to a specified output stream, typically System.out or a user-provided stream. The core functionality is encapsulated in the 'ManifestPrinter' tool, which loads manifest data from a specified file using the Hadoop FileSystem and then prints it. The tool takes a single command-line argument, the path to the manifest file, and prints the manifest data, including diagnostics and I/O statistics, to the configured output stream. Its dependencies include various Hadoop classes for configuration, file system interaction, and tool running, along with the 'ManifestSuccessData' class that contains the manifest data. This directory follows a utility pattern, providing a tool for debugging and monitoring purposes.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ManifestPrinter.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Manifest Printing Utility\n\nDESCRIPTION: \nThe 'lib/output/committer/manifest/files' directory in Hadoop MapReduce architecture houses the 'ManifestPrinter.java' file. This utility is designed to print the contents of a manifest file to a specified output stream, typically System.out or a user-provided stream. The core functionality is encapsulated in the 'ManifestPrinter' tool, which loads manifest data from a specified file using the Hadoop FileSystem and then prints it. The tool takes a single command-line argument, the path to the manifest file, and prints the manifest data, including diagnostics and I/O statistics, to the configured output stream. Its dependencies include various Hadoop classes for configuration, file system interaction, and tool running, along with the 'ManifestSuccessData' class that contains the manifest data. This directory follows a utility pattern, providing a tool for debugging and monitoring purposes."
+}

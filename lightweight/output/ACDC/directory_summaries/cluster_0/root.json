@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": ".",
+  "title": "FSCheckpointService.java",
+  "description": "This Java class implements Hadoop's CheckpointService, managing HDFS checkpoints. It uses FileSystem for HDFS interaction, creating temporary files for writing and renaming upon commit. The class provides methods for creating, opening, committing, and aborting checkpoints, utilizing WritableByteChannel for writing and ReadableByteChannel for reading. It depends on Hadoop's FSDataInputStream, FSDataOutputStream, FileSystem, Path, and CheckpointID, among others.",
+  "summary": "TITLE: FSCheckpointService.java\nDESCRIPTION: This Java class implements Hadoop's CheckpointService, managing HDFS checkpoints. It uses FileSystem for HDFS interaction, creating temporary files for writing and renaming upon commit. The class provides methods for creating, opening, committing, and aborting checkpoints, utilizing WritableByteChannel for writing and ReadableByteChannel for reading. It depends on Hadoop's FSDataInputStream, FSDataOutputStream, FileSystem, Path, and CheckpointID, among others.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "checkpoint"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: FSCheckpointService.java\n\nDESCRIPTION: This Java class implements Hadoop's CheckpointService, managing HDFS checkpoints. It uses FileSystem for HDFS interaction, creating temporary files for writing and renaming upon commit. The class provides methods for creating, opening, committing, and aborting checkpoints, utilizing WritableByteChannel for writing and ReadableByteChannel for reading. It depends on Hadoop's FSDataInputStream, FSDataOutputStream, FileSystem, Path, and CheckpointID, among others."
+}

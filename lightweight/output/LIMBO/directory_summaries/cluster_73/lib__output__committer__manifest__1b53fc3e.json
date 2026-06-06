@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 73,
+  "directory": "lib/output/committer/manifest",
+  "title": "ManifestCommitterConstants.java - Hadoop MapReduce Constants",
+  "description": "This Java file, ManifestCommitterConstants.java, defines a class with static final variables used by the manifest committer in Apache Hadoop MapReduce. These constants include configuration options, default values, file naming conventions, and class names. They are used for managing and organizing files and directories related to job commits and manifests. The constants are purely declarative, serving as inputs for internal Hadoop MapReduce operations. The file depends on Hadoop's manifest committer package and related classes for its functionality.",
+  "summary": "TITLE: ManifestCommitterConstants.java - Hadoop MapReduce Constants\nDESCRIPTION: This Java file, ManifestCommitterConstants.java, defines a class with static final variables used by the manifest committer in Apache Hadoop MapReduce. These constants include configuration options, default values, file naming conventions, and class names. They are used for managing and organizing files and directories related to job commits and manifests. The constants are purely declarative, serving as inputs for internal Hadoop MapReduce operations. The file depends on Hadoop's manifest committer package and related classes for its functionality.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ManifestCommitterConstants.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ManifestCommitterConstants.java - Hadoop MapReduce Constants\n\nDESCRIPTION: This Java file, ManifestCommitterConstants.java, defines a class with static final variables used by the manifest committer in Apache Hadoop MapReduce. These constants include configuration options, default values, file naming conventions, and class names. They are used for managing and organizing files and directories related to job commits and manifests. The constants are purely declarative, serving as inputs for internal Hadoop MapReduce operations. The file depends on Hadoop's manifest committer package and related classes for its functionality."
+}

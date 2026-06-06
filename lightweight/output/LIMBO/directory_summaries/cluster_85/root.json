@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 85,
+  "directory": ".",
+  "title": "Custom Partitioners in Hadoop MapReduce",
+  "description": "The 'lib/partition' directory houses custom partitioners for Hadoop MapReduce. These partitioners, including BinaryPartitioner.java and HashPartitioner.java, extend the base Partitioner<K, V> class. They implement unique data distribution strategies, such as BinaryPartitioner using a byte subarray, HashPartitioner using key hash code, and RehashPartitioner rehashing for uniform distribution. These partitioners collaborate within MapReduce jobs, directing key-value pairs to appropriate reducers. This implementation follows the Partitioner architectural pattern, ensuring efficient data processing in Hadoop clusters.",
+  "summary": "TITLE: Custom Partitioners in Hadoop MapReduce\nDESCRIPTION: The 'lib/partition' directory houses custom partitioners for Hadoop MapReduce. These partitioners, including BinaryPartitioner.java and HashPartitioner.java, extend the base Partitioner<K, V> class. They implement unique data distribution strategies, such as BinaryPartitioner using a byte subarray, HashPartitioner using key hash code, and RehashPartitioner rehashing for uniform distribution. These partitioners collaborate within MapReduce jobs, directing key-value pairs to appropriate reducers. This implementation follows the Partitioner architectural pattern, ensuring efficient data processing in Hadoop clusters.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Custom Partitioners in Hadoop MapReduce\n\nDESCRIPTION: The 'lib/partition' directory houses custom partitioners for Hadoop MapReduce. These partitioners, including BinaryPartitioner.java and HashPartitioner.java, extend the base Partitioner<K, V> class. They implement unique data distribution strategies, such as BinaryPartitioner using a byte subarray, HashPartitioner using key hash code, and RehashPartitioner rehashing for uniform distribution. These partitioners collaborate within MapReduce jobs, directing key-value pairs to appropriate reducers. This implementation follows the Partitioner architectural pattern, ensuring efficient data processing in Hadoop clusters."
+}

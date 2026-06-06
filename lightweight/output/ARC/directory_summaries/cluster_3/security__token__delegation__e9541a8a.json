@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "security/token/delegation",
+  "title": "Delegation Token Management in Hadoop MapReduce",
+  "description": "The 'security/token/delegation' directory in Hadoop MapReduce is responsible for managing delegation tokens, which are used to delegate access to specific resources in a secure manner. The package-info.java file within this directory provides documentation for the DelegationTokenIdentifier class, offering insights into its intended use and stability. This file does not contain any core logic or direct inputs/outputs, but rather serves as a metadata provider for the package, detailing its audience, licensing, and stability using classes like InterfaceAudience and InterfaceStability. The directory's architectural role is primarily informational, employing a metadata documentation pattern to facilitate understanding and usage of the DelegationTokenIdentifier class.",
+  "summary": "TITLE: Delegation Token Management in Hadoop MapReduce\nDESCRIPTION: The 'security/token/delegation' directory in Hadoop MapReduce is responsible for managing delegation tokens, which are used to delegate access to specific resources in a secure manner. The package-info.java file within this directory provides documentation for the DelegationTokenIdentifier class, offering insights into its intended use and stability. This file does not contain any core logic or direct inputs/outputs, but rather serves as a metadata provider for the package, detailing its audience, licensing, and stability using classes like InterfaceAudience and InterfaceStability. The directory's architectural role is primarily informational, employing a metadata documentation pattern to facilitate understanding and usage of the DelegationTokenIdentifier class.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "package-info.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Delegation Token Management in Hadoop MapReduce\n\nDESCRIPTION: The 'security/token/delegation' directory in Hadoop MapReduce is responsible for managing delegation tokens, which are used to delegate access to specific resources in a secure manner. The package-info.java file within this directory provides documentation for the DelegationTokenIdentifier class, offering insights into its intended use and stability. This file does not contain any core logic or direct inputs/outputs, but rather serves as a metadata provider for the package, detailing its audience, licensing, and stability using classes like InterfaceAudience and InterfaceStability. The directory's architectural role is primarily informational, employing a metadata documentation pattern to facilitate understanding and usage of the DelegationTokenIdentifier class."
+}

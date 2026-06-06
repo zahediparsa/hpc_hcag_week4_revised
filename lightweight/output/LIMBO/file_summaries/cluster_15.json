@@ -1,0 +1,62 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 15,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregatorMapper",
+    "path": "lib/aggregate/ValueAggregatorMapper.java",
+    "file_name": "ValueAggregatorMapper.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a generic mapper class for Apache Hadoop's ValueAggregator, which extends the Mapper class from the MapReduce framework. This mapper processes key-value pairs, iterates through a list of value aggregator descriptors, and generates aggregation ID/value pairs to be emitted.\n\nCORE LOGIC:\nThe core logic of this class revolves around the `map` function. This function iterates through the `ValueAggregatorDescriptor` list obtained from `ValueAggregatorJobBase.aggregatorDescriptorList`. For each descriptor, it generates key-value pairs using the `generateKeyValPairs` method. These pairs are then emitted using the `context.write` method.\n\nINPUTS/OUTPUTS:\n- INPUTS: The mapper takes three inputs - a key of type `K1` (which extends `WritableComparable`), a value of type `V1` (which extends `Writable`), and a `Context` object for interaction with the framework.\n- OUTPUTS: The mapper emits key-value pairs of type `Text`. These pairs are generated based on the aggregator descriptors and the input key-value pairs.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.Mapper`: The base class for implementing a mapper in Hadoop MapReduce.\n- `org.apache.hadoop.io.Text`: A class for storing string keys and values.\n- `org.apache.hadoop.io.Writable`: An interface for serializable objects in Hadoop.\n- `org.apache.hadoop.io.WritableComparable`: An interface for serializable, comparable objects in Hadoop.\n- `org.apache.hadoop.classification.InterfaceAudience`: Annotation for specifying the audience for an API.\n- `org.apache.hadoop.classification.InterfaceStability`: Annotation for specifying the stability level of an API.\n- `org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregatorJobBase`: A class providing setup functionality for the ValueAggregator job.\n- `java.io.IOException`: Exception thrown on I/O errors.\n- `java.util.Iterator`: An iterator for traversing a collection.\n- `java.util.Map.Entry`: Represents a mapping of keys to values.\n- `java.util.Iterator`: An iterator for traversing a collection.\n- `java.lang.InterruptedException`: Exception thrown when a",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 15,
+    "class": "org.apache.hadoop.mapreduce.lib.fieldsel.FieldSelectionMapper",
+    "path": "lib/fieldsel/FieldSelectionMapper.java",
+    "file_name": "FieldSelectionMapper.java",
+    "directory": "lib/fieldsel",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a custom Hadoop Mapper class, `FieldSelectionMapper`, that performs field selection similar to the Unix `cut` command. It allows users to specify which fields from the input data should be used as keys and values for the map output.\n\nCORE LOGIC:\nThe core logic of this class revolves around the `setup` and `map` methods. In the `setup` method, it reads configuration parameters from the Hadoop job configuration, initializes field separator, and parses the map output key-value field specification. The `map` method extracts the specified fields from the input key-value pair using the `FieldSelectionHelper` class and writes the extracted fields as the map output key-value pair.\n\nINPUTS/OUTPUTS:\n- INPUTS: The mapper receives key-value pairs as input, where the key and value types are generic (K, V).\n- OUTPUTS: The mapper outputs Text key-value pairs, where both key and value are of type Text.\n\nDEPENDENCIES:\n- `org.apache.hadoop.classification`: For annotations.\n- `org.apache.hadoop.conf.Configuration`: For accessing job configuration.\n- `org.apache.hadoop.io.Text`: For using Text class as key and value types.\n- `org.apache.hadoop.mapreduce.Mapper`: The base class for implementing a mapper.\n- `org.apache.hadoop.mapreduce.lib.input.TextInputFormat`: For determining if the input format is TextInputFormat.\n- `org.slf4j.Logger` and `org.slf4j.LoggerFactory`: For logging.\n- `org.apache.hadoop.mapreduce.lib.fieldsel`: Custom package for field selection logic.\n- `org.apache.hadoop.mapreduce.lib.fieldsel.FieldSelectionHelper`: Helper class for extracting fields.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 15,
+    "class": "org.apache.hadoop.mapreduce.lib.input.DelegatingMapper",
+    "path": "lib/input/DelegatingMapper.java",
+    "file_name": "DelegatingMapper.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to act as a delegator for multiple mappers, allowing the use of different mappers for different input paths within a single MapReduce job.\n\nCORE LOGIC:\nThe core logic involves the setup and run methods. In the setup method, it retrieves the specific Mapper class based on the input split's tag and initializes it using reflection. The run method then delegates the setup and cleanup tasks to the actual Mapper instance and executes its run method.\n\nINPUTS/OUTPUTS:\n- INPUTS: The DelegatingMapper takes in no direct inputs in this chunk but relies on the Context object provided by the MapReduce framework, which contains information about the input split and job configuration.\n- OUTPUTS: It does not produce any direct outputs in this chunk. Its role is to delegate tasks to another Mapper instance, which will handle the actual mapping of input key-value pairs to produce output key-value pairs.\n\nDEPENDENCIES:\n- Imported classes: java.io.IOException, org.apache.hadoop.classification.InterfaceAudience, org.apache.hadoop.classification.InterfaceStability, org.apache.hadoop.fs.Path, org.apache.hadoop.mapreduce.Mapper, org.apache.hadoop.util.ReflectionUtils.\n- Collaborator classes: org.apache.hadoop.mapreduce.lib.input.TaggedInputSplit (implicitly through context.getInputSplit()) and the unspecified Mapper class that is determined at runtime based on the input split's configuration.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 15,
+    "class": "org.apache.hadoop.mapreduce.lib.input.TaggedInputSplit",
+    "path": "lib/input/TaggedInputSplit.java",
+    "file_name": "TaggedInputSplit.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to extend the functionality of Hadoop's InputSplit by tagging it with additional data (InputFormat and Mapper classes) for use by DelegatingInputFormat and DelegatingMapper.\n\nCORE LOGIC:\nThe class implements the Writable interface to handle serialization and deserialization. It stores the original InputSplit, its class, and additional job-specific classes (InputFormat and Mapper) in private fields. The readFields method deserializes the InputSplit using a Deserializer, and the writeFields method serializes the InputSplit along with the class information.\n\nINPUTS/OUTPUTS:\n- Inputs: InputSplit, Configuration, Class instances of InputFormat and Mapper.\n- Outputs: A TaggedInputSplit object that contains the original InputSplit and additional job-specific class information.\n\nDEPENDENCIES:\n- Imported classes: java.io.DataInput, java.io.DataInputStream, java.io.DataOutput, java.io.DataOutputStream, java.io.IOException, org.apache.hadoop.conf.Configurable, org.apache.hadoop.conf.Configuration, org.apache.hadoop.io.Text, org.apache.hadoop.io.Writable, org.apache.hadoop.io.serializer.Deserializer, org.apache.hadoop.io.serializer.SerializationFactory, org.apache.hadoop.io.serializer.Serializer, org.apache.hadoop.mapreduce.InputFormat, org.apache.hadoop.mapreduce.InputSplit, org.apache.hadoop.mapreduce.Mapper, org.apache.hadoop.util.ReflectionUtils, org.apache.hadoop.util.StringInterner.\n- Collaborator classes: The class extends InputSplit and implements Configurable and Writable interfaces. It also uses Hadoop's SerializationFactory for deserialization and serialization.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 15,
+    "class": "org.apache.hadoop.mapreduce.lib.map.WrappedMapper",
+    "path": "lib/map/WrappedMapper.java",
+    "file_name": "WrappedMapper.java",
+    "directory": "lib/map",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a class `WrappedMapper` that extends the `Mapper` class from Apache Hadoop MapReduce. This wrapper allows for custom implementations of the `Mapper.Context` interface.\n\nCORE LOGIC:\nThe core logic involves creating a nested static class `Context` within `WrappedMapper`. This class extends `Mapper.Context` and delegates all its methods to the provided `MapContext<KEYIN, VALUEIN, KEYOUT, VALUEOUT>` object. This design pattern is known as the Wrapper or Decorator pattern, allowing for the extension of functionality without altering the behavior of the object being wrapped.\n\nINPUTS/OUTPUTS:\nThe class does not directly handle inputs or outputs. Instead, it manages the context in which a mapper operates, delegating all context-related method calls to the provided `MapContext` object. This context includes information about the task, job configuration, counters, and methods to write output key-value pairs.\n\nDEPENDENCIES:\nThe code chunk depends on several classes from the Apache Hadoop MapReduce library:\n\n- `MapContext`\n- `Mapper`\n- `Configuration`\n- `InputSplit`\n- `JobID`\n- `TaskAttemptID`\n- `Counter`\n- `OutputCommitter`\n- `OutputFormat`\n- `Reducer`\n- `Path`\n- `RawComparator`\n- `Credentials`\n- `Enum`\n- `String[]`\n- `URI[]`\n- `Class<?>`\n- `IntegerRanges`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

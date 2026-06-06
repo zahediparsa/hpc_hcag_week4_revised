@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "ACDC",
+    "cluster": 18,
+    "class": "org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier",
+    "path": "security/token/JobTokenIdentifier.java",
+    "file_name": "JobTokenIdentifier.java",
+    "directory": "security/token",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to represent a job token identifier for Hadoop MapReduce, which includes methods to create, read, and write job token identifiers, as well as a renewer class for token renewal.\n\nCORE LOGIC:\n- The class `JobTokenIdentifier` extends `TokenIdentifier` and includes a `Text` object `jobid` to store the job identifier.\n- It provides a constructor that initializes `jobid` and another constructor that accepts a `Text` object for the job ID.\n- The `getKind()` method returns a static `Text` object representing the kind of token, \"mapreduce.job\".\n- The `getUser()` method creates a `UserGroupInformation` object using the job ID.\n- The `getJobId()` method returns the job ID.\n- The `readFields()` and `write()` methods handle serialization and deserialization of the job ID.\n- A nested static class `Renewer` extends `Token.TrivialRenewer` to provide token renewal functionality.\n\nINPUTS/OUTPUTS:\n- Inputs: The job ID, which is a `Text` object.\n- Outputs: None explicitly shown in this chunk, but the class is designed to be serialized and deserialized, which implies output in the form of byte streams.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.security.token.TokenIdentifier`\n- `org.apache.hadoop.io.Text`\n- `org.apache.hadoop.security.token.Token`\n- `org.apache.hadoop.security.UserGroupInformation`\n- `org.apache.hadoop.io.DataInput`\n- `org.apache.hadoop.io.DataOutput`\n- `org.apache.hadoop.classification.InterfaceAudience`\n- `org.apache.hadoop.classification.InterfaceStability`\n- `java.io.IOException`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 18,
+    "class": "org.apache.hadoop.mapreduce.security.token.JobTokenSelector",
+    "path": "security/token/JobTokenSelector.java",
+    "file_name": "JobTokenSelector.java",
+    "directory": "security/token",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class, as indicated by its name and the implementation, is to act as a TokenSelector for job tokens in Apache Hadoop MapReduce. It is designed to find and return the first job token from a collection of tokens that matches a given service.\n\nCORE LOGIC:\nThe core logic of this class revolves around the `selectToken` method, which takes a `Text` object representing the service and a `Collection` of `Token` objects as inputs. It iterates over each token in the collection, checking if the token's kind matches `JobTokenIdentifier.KIND_NAME` and if the token's service matches the provided service. If a matching token is found, it casts the token to `Token<JobTokenIdentifier>` and returns it. If no matching token is found, it returns `null`.\n\nINPUTS/OUTPUTS:\nInputs:\n1. `Text service`: Represents the service for which the job token is being selected.\n2. `Collection<Token<? extends TokenIdentifier>> tokens`: A collection of tokens to search through for the job token.\n\nOutputs:\n- `Token<JobTokenIdentifier>`: The job token that matches the given service, or `null` if no matching token is found.\n\nDEPENDENCIES:\nThis class depends on the following classes:\n- `org.apache.hadoop.io.Text`: Used for the service representation.\n- `org.apache.hadoop.security.token.Token`: The base interface for all security tokens.\n- `org.apache.hadoop.security.token.TokenIdentifier`: The identifier for a token.\n- `org.apache.hadoop.security.token.TokenSelector`: An interface for selecting tokens based on a specific identifier.\n- `org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier`: A specific identifier for job tokens.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

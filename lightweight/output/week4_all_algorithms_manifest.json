@@ -1,0 +1,33 @@
+{
+  "model": "ibm-granite/granite-3.3-8b-instruct",
+  "prompting_method": "zero-shot",
+  "algorithms": [
+    {
+      "algorithm": "ARC",
+      "input_csv": "/scratch/hpc-prf-dssecs/zahedi/ds4se_group3/input/clusters_arc.csv",
+      "output_dir": "/scratch/hpc-prf-dssecs/zahedi/ds4se_group3/week4_hcag_lightweight_output/ARC",
+      "required_csv": "/scratch/hpc-prf-dssecs/zahedi/ds4se_group3/week4_hcag_lightweight_output/ARC_hierarchical_summarization_results.csv",
+      "detailed_csv": "/scratch/hpc-prf-dssecs/zahedi/ds4se_group3/week4_hcag_lightweight_output/ARC/week4_cluster_descriptions.csv",
+      "number_of_files": 332,
+      "number_of_clusters": 8
+    },
+    {
+      "algorithm": "ACDC",
+      "input_csv": "/scratch/hpc-prf-dssecs/zahedi/ds4se_group3/input/clusters_acdc.csv",
+      "output_dir": "/scratch/hpc-prf-dssecs/zahedi/ds4se_group3/week4_hcag_lightweight_output/ACDC",
+      "required_csv": "/scratch/hpc-prf-dssecs/zahedi/ds4se_group3/week4_hcag_lightweight_output/ACDC_hierarchical_summarization_results.csv",
+      "detailed_csv": "/scratch/hpc-prf-dssecs/zahedi/ds4se_group3/week4_hcag_lightweight_output/ACDC/week4_cluster_descriptions.csv",
+      "number_of_files": 314,
+      "number_of_clusters": 23
+    },
+    {
+      "algorithm": "LIMBO",
+      "input_csv": "/scratch/hpc-prf-dssecs/zahedi/ds4se_group3/input/clusters_limbo.csv",
+      "output_dir": "/scratch/hpc-prf-dssecs/zahedi/ds4se_group3/week4_hcag_lightweight_output/LIMBO",
+      "required_csv": "/scratch/hpc-prf-dssecs/zahedi/ds4se_group3/week4_hcag_lightweight_output/LIMBO_hierarchical_summarization_results.csv",
+      "detailed_csv": "/scratch/hpc-prf-dssecs/zahedi/ds4se_group3/week4_hcag_lightweight_output/LIMBO/week4_cluster_descriptions.csv",
+      "number_of_files": 314,
+      "number_of_clusters": 65
+    }
+  ]
+}

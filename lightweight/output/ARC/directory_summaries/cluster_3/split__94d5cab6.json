@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "split",
+  "title": "Hadoop MapReduce Split Package",
+  "description": "The 'package-info.java' file in the 'org.apache.hadoop.mapreduce.split' directory serves as a package declaration for Hadoop MapReduce's split functionality. It does not contain any core logic but sets the stage for the classes and interfaces that define this functionality. This file imports and depends on 'InterfaceAudience' and 'InterfaceStability' classes, and declares '@InterfaceAudience.Private' and '@InterfaceStability.Unstable' annotations. It prepares the groundwork for the split operations in Hadoop MapReduce, which are crucial for dividing input data into chunks that can be processed in parallel.",
+  "summary": "TITLE: Hadoop MapReduce Split Package\nDESCRIPTION: The 'package-info.java' file in the 'org.apache.hadoop.mapreduce.split' directory serves as a package declaration for Hadoop MapReduce's split functionality. It does not contain any core logic but sets the stage for the classes and interfaces that define this functionality. This file imports and depends on 'InterfaceAudience' and 'InterfaceStability' classes, and declares '@InterfaceAudience.Private' and '@InterfaceStability.Unstable' annotations. It prepares the groundwork for the split operations in Hadoop MapReduce, which are crucial for dividing input data into chunks that can be processed in parallel.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "package-info.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Split Package\n\nDESCRIPTION: The 'package-info.java' file in the 'org.apache.hadoop.mapreduce.split' directory serves as a package declaration for Hadoop MapReduce's split functionality. It does not contain any core logic but sets the stage for the classes and interfaces that define this functionality. This file imports and depends on 'InterfaceAudience' and 'InterfaceStability' classes, and declares '@InterfaceAudience.Private' and '@InterfaceStability.Unstable' annotations. It prepares the groundwork for the split operations in Hadoop MapReduce, which are crucial for dividing input data into chunks that can be processed in parallel."
+}

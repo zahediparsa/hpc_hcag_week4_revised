@@ -1,0 +1,62 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 73,
+    "class": "org.apache.hadoop.mapreduce.lib.join.ResetableIterator",
+    "path": "lib/join/ResetableIterator.java",
+    "file_name": "ResetableIterator.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\nThis Java interface, `ResetableIterator<T extends Writable>`, defines a stateful iterator that can replay elements added to it. It's part of Apache Hadoop MapReduce library, specifically in the `lib.join` package, and is intended for use with Writable types.\n\nCORE LOGIC:\nThe core logic of this interface revolves around managing and iterating over a collection of elements, with the added capability of resetting the iterator to its initial state. Key methods include:\n\n- `hasNext()`: Checks if there are more elements to iterate over.\n- `next(T val)`: Assigns the next value to the provided reference, `val`.\n- `replay(T val)`: Assigns the last returned value to the provided reference, `val`.\n- `reset()`: Resets the iterator to the start of its range, allowing for re-iteration.\n- `add(T item)`: Adds an element to the collection to be iterated over.\n- `close()`: Closes datasources and releases resources, making the iterator unusable afterwards.\n- `clear()`: Closes datasources but retains internal resources, allowing the iterator to be reused with a different datasource.\n\nINPUTS/OUTPUTS:\nThe iterator works with elements of type `T`, which extends `Writable`. There are no explicit inputs or outputs described in this chunk, as it's an interface definition. The interaction would involve adding elements (`add(T item)`) and then iterating over them using `hasNext()`, `next(T val)`, or `replay(T val)`, followed by resetting the iterator with `reset()`. Finally, resources are managed through `close()` or `clear()`.\n\nDEPENDENCIES:\nThe key dependencies visible in this chunk are:\n\n- `org.apache.hadoop.mapreduce.lib.join`: This package is part of Hadoop MapReduce, specifically dealing with join operations.\n- `org.apache.hadoop.io.Writable`: An interface defining a Hadoop-compatible writable type, which `T` extends.\n- `java.io.IOException`: Standard Java exception for input/output operations, indicating that methods throwing this exception handle potential I/O errors.\n\nThis interface is marked as `@InterfaceStability.Stable`, indicating it's part of a public API and should not be changed in a backward-incompatible way.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 73,
+    "class": "org.apache.hadoop.mapreduce.lib.join.TupleWritable",
+    "path": "lib/join/TupleWritable.java",
+    "file_name": "TupleWritable.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a class `TupleWritable` that implements the `Writable` interface from Apache Hadoop. This class is used to store multiple `Writable` objects in a tuple, which can be iterated over and serialized.\n\nCORE LOGIC:\nThe core logic involves managing a bit set (`written`) to track which elements in the tuple array (`values`) have been initialized. The class provides methods to check if an element exists at a given index (`has`), retrieve an element (`get`), iterate over the elements (`iterator`), and convert the tuple to a string (`toString`). The `write` and `readFields` methods handle serialization and deserialization, respectively.\n\nINPUTS/OUTPUTS:\n- Inputs: The class accepts an array of `Writable` objects during initialization.\n- Outputs: The class provides methods to retrieve `Writable` objects, iterate over them, and serialize/deserialize the tuple.\n\nDEPENDENCIES:\n- The class depends on several Hadoop classes:\n  - `DataOutput` and `DataInput` for serialization/deserialization.\n  - `BitSet` for tracking written elements.\n  - `Writable`, `NullWritable`, `Text`, and `WritableUtils` for interoperability with Hadoop's data model.\n  - `IOException` for exception handling during I/O operations.\n  - `Iterator` and `NoSuchElementException` for implementing the iterator.\n  - `String` and `StringBuffer` for string representation.\n  - `ClassNotFoundException`, `IllegalAccessException`, and `InstantiationException` for handling class loading during deserialization.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 73,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterConstants",
+    "path": "lib/output/committer/manifest/ManifestCommitterConstants.java",
+    "file_name": "ManifestCommitterConstants.java",
+    "directory": "lib/output/committer/manifest",
+    "summary": "KEY FUNCTIONALITY: This Java code defines a class `ManifestCommitterConstants` that serves as a container for public constants used by the manifest committer in Apache Hadoop MapReduce. These constants include configuration options, default values, file naming conventions, and class names.\n\nCORE LOGIC: The core logic in this chunk is the declaration and initialization of static final variables. These constants are used throughout the Hadoop MapReduce framework for tasks such as naming manifest and summary files, defining job and attempt directories, setting default values for options, and specifying class names for committer factories and store operations.\n\nINPUTS/OUTPUTS: There are no direct inputs or outputs in this code snippet as it's purely a declaration of constants. These constants are used internally by the Hadoop MapReduce framework to manage and organize files and directories related to job commits and manifests.\n\nDEPENDENCIES: The chunk imports and uses classes from the `org.apache.hadoop.mapreduce.lib.output.committer.manifest` package and also references `ManifestStoreOperationsThroughFileSystem` from the same package. It also uses `org.apache.hadoop.classification` for annotations and `java.lang` for the `String` class. Additionally, it references `org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.ManifestCommitter` and `org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterFactory` classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 73,
+    "class": "org.apache.hadoop.mapreduce.security.SecureShuffleUtils",
+    "path": "security/SecureShuffleUtils.java",
+    "file_name": "SecureShuffleUtils.java",
+    "directory": "security",
+    "summary": "KEY FUNCTIONALITY: This Java code snippet is part of Apache Hadoop MapReduce's security utilities for generating, verifying hashes, and encoding messages for secure shuffle operations.\n\nCORE LOGIC:\n1. The class `SecureShuffleUtils` provides utility methods for secure shuffle operations.\n2. It includes methods for generating a hash (`generateHash`) and verifying it (`verifyHash`) using a secret key.\n3. It also provides methods to encode strings to Base64 (`hashFromString`) and decode Base64 to byte arrays (`verifyReply`).\n4. The class includes utility methods to build a message string from a URL (`buildMsgFrom`) or an HTTP request (`buildMsgFrom`), and to convert a byte array to a hexadecimal string (`toHex`).\n\nINPUTS/OUTPUTS:\n- INPUTS: The methods take various inputs such as byte arrays, strings, URLs, HTTP requests, and secret keys.\n- OUTPUTS: The methods return Base64 encoded hashes, verification results (boolean), exceptions (in case of verification failure), and hexadecimal string representations of byte arrays.\n\nDEPENDENCIES:\n- The class depends on several classes from the Java standard library (`ByteArrayOutputStream`, `IOException`, `PrintStream`, `UnsupportedEncodingException`, `Base64`, `Logger`, `LoggerFactory`).\n- It also depends on Hadoop-specific classes: `WritableComparator`, `JobTokenSecretManager`, and interfaces `InterfaceAudience`, `InterfaceStability`.\n- `HttpServletRequest` is from the Servlet API, indicating this class might be used in a web context for secure shuffle operations.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 73,
+    "class": "org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier",
+    "path": "security/token/JobTokenIdentifier.java",
+    "file_name": "JobTokenIdentifier.java",
+    "directory": "security/token",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to represent a job token identifier for Hadoop MapReduce, which includes methods to create, read, and write job token identifiers, as well as a renewer class for token renewal.\n\nCORE LOGIC:\n- The class `JobTokenIdentifier` extends `TokenIdentifier` and includes a `Text` object `jobid` to store the job identifier.\n- It provides a constructor that initializes `jobid` and another constructor that accepts a `Text` object for the job ID.\n- The `getKind()` method returns a static `Text` object representing the kind of token, \"mapreduce.job\".\n- The `getUser()` method creates a `UserGroupInformation` object using the job ID.\n- The `getJobId()` method returns the job ID.\n- The `readFields()` and `write()` methods handle serialization and deserialization of the job ID.\n- A nested static class `Renewer` extends `Token.TrivialRenewer` to provide token renewal functionality.\n\nINPUTS/OUTPUTS:\n- Inputs: The job ID, which is a `Text` object.\n- Outputs: None explicitly shown in this chunk, but the class is designed to be serialized and deserialized, which implies output in the form of byte streams.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.security.token.TokenIdentifier`\n- `org.apache.hadoop.io.Text`\n- `org.apache.hadoop.security.token.Token`\n- `org.apache.hadoop.security.UserGroupInformation`\n- `org.apache.hadoop.io.DataInput`\n- `org.apache.hadoop.io.DataOutput`\n- `org.apache.hadoop.classification.InterfaceAudience`\n- `org.apache.hadoop.classification.InterfaceStability`\n- `java.io.IOException`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

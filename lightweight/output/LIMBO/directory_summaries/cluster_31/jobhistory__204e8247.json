@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 31,
+  "directory": "jobhistory",
+  "title": "Job History Logging Interface",
+  "description": "The `HistoryEvent.java` file in Hadoop's jobhistory directory defines an interface for event wrapper classes. It serves as a contract for Avro-generated event classes, providing methods to interact with events, convert them to TimelineEvents, and retrieve associated metrics. This interface doesn't have explicit inputs or outputs but implies handling of Avro-generated event data and production of TimelineEvent objects. It depends on YARN timeline service records and standard Java classes, utilizing Java's generics and Hadoop classification annotations.",
+  "summary": "TITLE: Job History Logging Interface\nDESCRIPTION: The `HistoryEvent.java` file in Hadoop's jobhistory directory defines an interface for event wrapper classes. It serves as a contract for Avro-generated event classes, providing methods to interact with events, convert them to TimelineEvents, and retrieve associated metrics. This interface doesn't have explicit inputs or outputs but implies handling of Avro-generated event data and production of TimelineEvent objects. It depends on YARN timeline service records and standard Java classes, utilizing Java's generics and Hadoop classification annotations.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "HistoryEvent.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job History Logging Interface\n\nDESCRIPTION: The `HistoryEvent.java` file in Hadoop's jobhistory directory defines an interface for event wrapper classes. It serves as a contract for Avro-generated event classes, providing methods to interact with events, convert them to TimelineEvents, and retrieve associated metrics. This interface doesn't have explicit inputs or outputs but implies handling of Avro-generated event data and production of TimelineEvent objects. It depends on YARN timeline service records and standard Java classes, utilizing Java's generics and Hadoop classification annotations."
+}

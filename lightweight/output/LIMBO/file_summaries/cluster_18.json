@@ -1,0 +1,113 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 18,
+    "class": "org.apache.hadoop.mapreduce.OutputCommitter",
+    "path": "OutputCommitter.java",
+    "file_name": "OutputCommitter.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define the abstract class `OutputCommitter` for managing the commit of task output in a MapReduce job. This class outlines the responsibilities for setting up, cleaning up, and committing/discarding job and task outputs.\n\nCORE LOGIC:\nThe core logic revolves around abstract methods that need to be implemented by concrete subclasses. These methods include:\n- `setupJob(JobContext jobContext)`: Sets up the job output during initialization.\n- `cleanupJob(JobContext jobContext)`: Cleans up the job's output after job completion (deprecated).\n- `commitJob(JobContext jobContext)`: Commits the job's output after successful job completion.\n- `abortJob(JobContext jobContext, JobStatus.State state)`: Aborts an unsuccessful job's output.\n- `setupTask(TaskAttemptContext taskContext)`: Sets up output for the task.\n- `needsTaskCommit(TaskAttemptContext taskContext)`: Checks if a task needs a commit.\n- `commitTask(TaskAttemptContext taskContext)`: Commits an individual task's output.\n- `abortTask(TaskAttemptContext taskContext)`: Discards the task's output.\n- `isRecoverySupported(JobContext jobContext)`: Determines if task output recovery is supported for restarting jobs.\n- `recoverTask(TaskAttemptContext taskContext)`: Recovers the task output.\n\nINPUTS/OUTPUTS:\n- Inputs: JobContext and TaskAttemptContext objects, which encapsulate information about the job and task respectively.\n- Outputs: None explicitly in this class; outputs are managed through interactions with the Hadoop file system and job tracking services.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.JobContext`: Provides context for the job whose output is being written.\n- `org.apache.hadoop.mapreduce.TaskAttemptContext`: Provides context for the task whose output is being written.\n- `org.apache.hadoop.mapreduce.JobStatus.State`: Enum for job states (FAILED, KILLED, SUCCESSFUL).\n- `org.apache.hadoop.classification.InterfaceAudience` and `org.apache.hadoop.classification.InterfaceStability`: Used for class annotation.\n- `java.io.IOException`: Thrown for I/O-related errors.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 18,
+    "class": "org.apache.hadoop.mapreduce.TaskAttemptContext",
+    "path": "TaskAttemptContext.java",
+    "file_name": "TaskAttemptContext.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY: This code chunk defines the `TaskAttemptContext` interface in Apache Hadoop MapReduce, which provides methods to interact with the context of a task attempt.\n\nCORE LOGIC: The interface extends `JobContext` and `Progressable`, indicating it inherits functionalities related to job context and progress reporting. It includes methods to get and set the task attempt ID, status, progress, and counters.\n\nINPUTS/OUTPUTS: The interface does not directly handle any data inputs or outputs. Instead, it provides methods to manage and retrieve information about the task attempt, such as its ID, status, progress, and counters.\n\nDEPENDENCIES: The primary dependencies are `org.apache.hadoop.classification` for annotations and `org.apache.hadoop.util` for the `Progressable` interface. The interface is part of the `org.apache.hadoop.mapreduce` package, indicating its collaboration with other classes in this package for MapReduce functionalities.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 18,
+    "class": "org.apache.hadoop.mapreduce.lib.output.BindingPathOutputCommitter",
+    "path": "lib/output/BindingPathOutputCommitter.java",
+    "file_name": "BindingPathOutputCommitter.java",
+    "directory": "lib/output",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class, `BindingPathOutputCommitter`, is to act as a wrapper for a dynamically determined output committer. It allows for explicit instantiation of this committer while still enabling the actual implementation to be driven by factory options and the destination filesystem. This simplifies integration with existing code that requires a committer classname.\n\nCORE LOGIC:\nThe class extends `PathOutputCommitter` and implements `IOStatisticsSource` and `StreamCapabilities`. In its constructor, it creates an instance of `PathOutputCommitter` using a factory mechanism based on the output path and configuration. All commit protocol methods and accessors are delegated to the wrapped committer.\n\nINPUTS/OUTPUTS:\n- Inputs: `Path outputPath` and `TaskAttemptContext context` are passed to the constructor.\n- Outputs: None explicitly in this chunk, but it sets up and delegates methods to the wrapped `PathOutputCommitter` instance, which handles the actual output commit operations.\n\nDEPENDENCIES:\n- Imported classes: `java.io.IOException`, `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`, `org.apache.hadoop.fs.Path`, `org.apache.hadoop.fs.StreamCapabilities`, `org.apache.hadoop.fs.statistics.IOStatistics`, `org.apache.hadoop.fs.statistics.IOStatisticsSource`, `org.apache.hadoop.fs.statistics.IOStatisticsSupport`, `org.apache.hadoop.mapreduce.JobContext`, `org.apache.hadoop.mapreduce.JobStatus`, `org.apache.hadoop.mapreduce.TaskAttemptContext`.\n- Collaborator classes: `PathOutputCommitter`, `PathOutputCommitterFactory`, and methods from `JobContext`, `TaskAttemptContext`, and `JobStatus`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 18,
+    "class": "org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter",
+    "path": "lib/output/FileOutputCommitter.java",
+    "file_name": "FileOutputCommitter.java",
+    "directory": "lib/output",
+    "summary": "FILE-LEVEL SEMANTIC SUMMARY:\n\nKEY FUNCTIONALITY:\nThe `FileOutputCommitter.java` file in Apache Hadoop MapReduce defines the `FileOutputCommitter` class, which is responsible for managing the commit process of job outputs. Its main purpose is to ensure that data is correctly moved from temporary to the final output directory upon job completion, and to handle cleanup tasks like deleting temporary directories.\n\nCORE LOGIC:\nThe core logic of `FileOutputCommitter` revolves around the `commitJobInternal` method, which handles the actual commit process. Depending on the version of the algorithm (1 or 2), it either moves committed task outputs to the final output directory or performs additional cleanup tasks. The `mergePaths` method is used to handle the merging of files and directories, favoring the contents of the 'from' path in case of conflicts. The `commitTask` method manages the process of moving files from the task's temporary directory to the job's output directory, with different strategies based on the `algorithmVersion`. The `abortTask` method deletes the task's temporary directory, `needsTaskCommit` checks for task output files, and `recoverTask` attempts to recover task output for previous attempts.\n\nINPUTS/OUTPUTS:\n- Inputs: Job context (`JobContext`), Task attempt context (`TaskAttemptContext`), Configuration (`Configuration`), and File System (`FileSystem`).\n- Outputs: The final output directory (`Path`) where the job's successful output is stored, and a `_SUCCESS` marker file if required.\n\nDEPENDENCIES:\n- Imported classes: `java.io.FileNotFoundException`, `java.io.IOException`, `org.apache.hadoop.classification.*`, `org.apache.hadoop.conf.Configuration`, `org.apache.hadoop.fs.FileStatus`, `org.apache.hadoop.fs.FileSystem`, `org.apache.hadoop.fs.Path`, `org.apache.hadoop.fs.PathFilter`, `org.apache.hadoop.mapreduce.JobContext`, `org.apache.hadoop.mapreduce.JobStatus`, `org.apache.hadoop.mapreduce.MRJobConfig`, `org.apache.hadoop.mapreduce.OutputCommitter`, `org.apache.hadoop.mapreduce.TaskAttemptContext`, `org.apache.hadoop.mapreduce.TaskAttemptID`, `org.apache.hadoop.util.DurationInfo`, `org",
+    "chunked": true,
+    "number_of_code_chunks": 2,
+    "chunk_summaries": [
+      "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define the `FileOutputCommitter` class, which is an implementation of the `OutputCommitter` interface in Apache Hadoop MapReduce. This class is responsible for managing the commit process of job outputs, ensuring that data is correctly moved from temporary to the final output directory upon job completion.\n\nCORE LOGIC:\nThe core logic revolves around the `commitJobInternal` method, which handles the actual commit process. Depending on the version of the algorithm (1 or 2), it either moves committed task outputs to the final output directory or performs additional cleanup tasks like deleting temporary directories. The `mergePaths` method is used to handle the merging of files and directories, ensuring that any conflicts are resolved by favoring the contents of the 'from' path.\n\nINPUTS/OUTPUTS:\n- Inputs: Job context (`JobContext`), Task attempt context (`TaskAttemptContext`), Configuration (`Configuration`), and File System (`FileSystem`).\n- Outputs: The final output directory (`Path`) where the job's successful output is stored, and a `_SUCCESS` marker file if required.\n\nDEPENDENCIES:\n- Imported classes: `java.io.FileNotFoundException`, `java.io.IOException`, `org.apache.hadoop.classification.*`, `org.apache.hadoop.conf.Configuration`, `org.apache.hadoop.fs.FileStatus`, `org.apache.hadoop.fs.FileSystem`, `org.apache.hadoop.fs.Path`, `org.apache.hadoop.fs.PathFilter`, `org.apache.hadoop.mapreduce.JobContext`, `org.apache.hadoop.mapreduce.JobStatus`, `org.apache.hadoop.mapreduce.MRJobConfig`, `org.apache.hadoop.mapreduce.OutputCommitter`, `org.apache.hadoop.mapreduce.TaskAttemptContext`, `org.apache.hadoop.mapreduce.TaskAttemptID`, `org.apache.hadoop.util.DurationInfo`, `org.apache.hadoop.util.Progressable`, `org.slf4j.Logger`, `org.slf4j.LoggerFactory`.\n- Collaborator classes: `PathOutputCommitter`, `FileOutputCommitter.CommittedTaskFilter`.",
+      "KEY FUNCTIONALITY:\nThis code chunk is part of the `FileOutputCommitter` class in Apache Hadoop MapReduce, responsible for managing the commit and cleanup of task and job outputs.\n\nCORE LOGIC:\n1. The `commitTask` method handles the process of moving files from the task's temporary directory to the job's output directory. It checks the `algorithmVersion` to decide between two strategies: version 1, which involves renaming a temporary file to a committed task path, and version 2, which directly merges the task's directory with the job's output directory.\n2. The `abortTask` method deletes the task's temporary directory.\n3. The `needsTaskCommit` method checks if the task has written any files in the work directory.\n4. The `recoverTask` method attempts to recover the task output for a previous attempt, primarily for backward compatibility after upgrading to a new file output committer algorithm.\n\nINPUTS/OUTPUTS:\n- Inputs: JobContext, TaskAttemptContext, FileSystem, Path\n- Outputs: Files are moved or deleted in the job's output directory based on the task's temporary directory.\n\nDEPENDENCIES:\n- Imported classes: `org.apache.hadoop.conf.Configuration`, `org.apache.hadoop.fs.FileSystem`, `org.apache.hadoop.fs.FileStatus`, `org.apache.hadoop.mapreduce.TaskAttemptID`, `org.apache.hadoop.mapreduce.TaskAttemptContext`, `org.apache.hadoop.mapreduce.JobContext`, `org.apache.hadoop.mapreduce.Job`, `org.apache.hadoop.mapreduce.TaskInputOutputContext`, `org.apache.hadoop.mapreduce.TaskAttemptContext`, `org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter`\n- Parent/collaborator classes: `FileOutputCommitter` (extends `OutputCommitter`), `TaskAttemptContext`, `JobContext`, `Job`, `Configuration`"
+    ]
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 18,
+    "class": "org.apache.hadoop.mapreduce.lib.output.FileOutputCommitterFactory",
+    "path": "lib/output/FileOutputCommitterFactory.java",
+    "file_name": "FileOutputCommitterFactory.java",
+    "directory": "lib/output",
+    "summary": "KEY FUNCTIONALITY: The main purpose of this code chunk is to create an instance of `FileOutputCommitter` using the `createOutputCommitter` method.\n\nCORE LOGIC: This class, `FileOutputCommitterFactory`, extends `PathOutputCommitterFactory` and overrides its `createOutputCommitter` method. It takes a `Path` object representing the output path and a `TaskAttemptContext` object as inputs. It then calls the `createFileOutputCommitter` method, passing the same parameters, and returns the resulting `FileOutputCommitter` instance.\n\nINPUTS/OUTPUTS: The inputs to this code are a `Path` object representing the output path and a `TaskAttemptContext` object providing context for the task. The output is a `FileOutputCommitter` instance, which is used for committing task outputs to the filesystem.\n\nDEPENDENCIES: This code chunk depends on the `Path` class from the `org.apache.hadoop.fs` package and the `TaskAttemptContext` class from the `org.apache.hadoop.mapreduce` package. It also extends the `PathOutputCommitterFactory` class and implements the `FileOutputCommitterFactory` interface, both from the `org.apache.hadoop.mapreduce.lib.output` package. The `IOException` class is imported for potential exception handling.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 18,
+    "class": "org.apache.hadoop.mapreduce.lib.output.NamedCommitterFactory",
+    "path": "lib/output/NamedCommitterFactory.java",
+    "file_name": "NamedCommitterFactory.java",
+    "directory": "lib/output",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to serve as a factory for creating a named committer in Apache Hadoop MapReduce. The named committer is identified by a class name specified in the configuration.\n\nCORE LOGIC:\nThe core logic involves loading the committer class from the configuration and creating an instance of it using reflection. The `createOutputCommitter` method uses the `loadCommitterClass` method to get the committer class, then attempts to instantiate it with the provided output path and task attempt context. If the instantiation fails, it throws an IOException.\n\nINPUTS/OUTPUTS:\nInputs:\n- `outputPath`: The path where the output files will be written.\n- `context`: The task attempt context, which includes job configuration and other job-related information.\n\nOutputs:\n- An instance of the named committer class, which is used to manage the output commit process.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.lib.output.PathOutputCommitter`: The base class for output committers that write to a file system path.\n- `org.apache.hadoop.conf.Configuration`: Used to read configuration properties.\n- `org.apache.hadoop.fs.Path`: Represents a file system path.\n- `org.apache.hadoop.mapreduce.JobContext` and `org.apache.hadoop.mapreduce.TaskAttemptContext`: Provide access to job and task attempt configuration and state.\n- `org.slf4j.Logger` and `org.slf4j.LoggerFactory`: For logging.\n- `java.lang.reflect.Constructor` and `java.lang.reflect.InvocationTargetException`: Used for reflection-based object instantiation.\n- `java.io.IOException`: Thrown for input/output exceptions.\n- `java.lang.Preconditions`: For input validation.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 18,
+    "class": "org.apache.hadoop.mapreduce.lib.output.PartialFileOutputCommitter",
+    "path": "lib/output/PartialFileOutputCommitter.java",
+    "file_name": "PartialFileOutputCommitter.java",
+    "directory": "lib/output",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define the `PartialFileOutputCommitter` class, which extends `FileOutputCommitter` and implements `PartialOutputCommitter`. This class is responsible for committing files specified in the job output directory, specifically handling partial output cleanup for tasks.\n\nCORE LOGIC:\nThe core logic involves the `cleanUpPartialOutputForTask` method, which is responsible for removing any committed output belonging to a specific task attempt. It iterates through all previous task attempts for the same task ID and deletes their directories. The method uses the `fsFor` helper function to obtain a FileSystem instance for the given path and configuration.\n\nINPUTS/OUTPUTS:\nThe class takes `TaskAttemptContext` as input and does not explicitly return any value. Internally, it interacts with the Hadoop FileSystem API to delete directories.\n\nDEPENDENCIES:\nThe code chunk depends on several classes from the Apache Hadoop MapReduce library:\n\n- `org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter`\n- `org.apache.hadoop.mapreduce.TaskAttemptContext`\n- `org.apache.hadoop.mapreduce.TaskAttemptID`\n- `org.apache.hadoop.mapreduce.TaskID`\n- `org.apache.hadoop.fs.FileSystem`\n- `org.apache.hadoop.fs.Path`\n- `org.apache.hadoop.conf.Configuration`\n- `org.slf4j.Logger`\n- `org.slf4j.LoggerFactory`\n- `org.apache.hadoop.mapreduce.JobContext`\n- `org.apache.hadoop.classification.InterfaceAudience`\n- `org.apache.hadoop.classification.InterfaceStability`\n- `org.apache.hadoop.mapreduce.task.annotation.Checkpointable`\n- `org.apache.hadoop.classification.VisibleForTesting`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 18,
+    "class": "org.apache.hadoop.mapreduce.lib.output.PathOutputCommitterFactory",
+    "path": "lib/output/PathOutputCommitterFactory.java",
+    "file_name": "PathOutputCommitterFactory.java",
+    "directory": "lib/output",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a factory for creating committers implementing the PathOutputCommitter interface, which can be used by FileOutputFormat. It provides a default implementation using FileOutputCommitter and allows for custom committer factories based on output path schemes.\n\nCORE LOGIC:\n1. The code defines constants for configuration options related to committer factories.\n2. It provides a createOutputCommitter method that either creates a FileOutputCommitter or a custom committer based on configuration settings.\n3. The getCommitterFactory method determines the committer factory class to use based on configuration settings and output path scheme.\n4. The createCommitter method combines getCommitterFactory and createOutputCommitter to create and return a committer for a given task attempt and output path.\n\nINPUTS/OUTPUTS:\n- INPUTS: Configuration (for retrieving settings), Path (output path), TaskAttemptContext (for task-specific information)\n- OUTPUTS: An instance of PathOutputCommitter (either FileOutputCommitter or a custom committer)\n\nDEPENDENCIES:\n- Imported classes: java.io.IOException, java.lang.StringUtils, org.slf4j.Logger, org.slf4j.LoggerFactory, org.apache.commons.lang3.ClassUtils, org.apache.hadoop.conf.Configuration, org.apache.hadoop.conf.Configured, org.apache.hadoop.fs.Path, org.apache.hadoop.mapreduce.TaskAttemptContext, org.apache.hadoop.util.ReflectionUtils\n- Collaborator classes: FileOutputCommitter, PathOutputCommitter, TaskAttemptContext, Configuration, org.apache.hadoop.mapreduce.lib.output.NamedCommitterFactory",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 18,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterFactory",
+    "path": "lib/output/committer/manifest/ManifestCommitterFactory.java",
+    "file_name": "ManifestCommitterFactory.java",
+    "directory": "lib/output/committer/manifest",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a committer factory for creating manifest committers in Apache Hadoop MapReduce. This factory, `ManifestCommitterFactory`, extends `PathOutputCommitterFactory` and overrides its `createOutputCommitter` method to create a `ManifestCommitter` instance if the filesystem schema is supported.\n\nCORE LOGIC:\nThe core logic of this class revolves around the `createOutputCommitter` method. It takes an `outputPath` (a Path object) and a `TaskAttemptContext` context as inputs. It first checks if the filesystem schema (scheme) of the provided output path is supported. If the scheme is in the list of unsupported schemes (`UNSUPPORTED_FS_SCHEMES`), it throws a `PathIOException`. If the scheme is supported, it returns a new instance of `ManifestCommitter`, initialized with the provided output path and context.\n\nINPUTS/OUTPUTS:\n- INPUTS: The method `createOutputCommitter` takes two inputs:\n  1. `outputPath` of type `Path` representing the output directory for the job.\n  2. `context` of type `TaskAttemptContext` containing information about the current task attempt.\n- OUTPUTS: The method returns an instance of `ManifestCommitter`, which is responsible for managing the job's output and performing the commit (i.e., making the output files accessible to other users).\n\nDEPENDENCIES:\n- `org.apache.hadoop.fs.Path`: Used for representing filesystem paths.\n- `org.apache.hadoop.fs.PathIOException`: Thrown when there is an I/O error related to a filesystem path.\n- `org.apache.hadoop.mapreduce.TaskAttemptContext`: Provides context information for a single attempt of a map-reduce task.\n- `org.apache.hadoop.mapreduce.lib.output.PathOutputCommitterFactory`: The base class for creating output committers based on the filesystem path.\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.InternalConstants`: A class containing constants related to manifest committer, including unsupported filesystem schemas.\n- `org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitter`: The class responsible for creating and managing manifest files for the job's output.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

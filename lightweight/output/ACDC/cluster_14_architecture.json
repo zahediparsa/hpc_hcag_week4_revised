@@ -1,0 +1,23 @@
+{
+  "cluster_id": 14,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture comprises a coordinator (JobTracker), worker nodes (TaskTrackers), and a distributed file system (HDFS). The JobTracker assigns tasks to TaskTrackers, managing their progress and data flow. TaskTrackers execute Map and Reduce tasks, reporting back to the JobTracker. HDFS ensures data durability and fault tolerance. The 'lib' directory, utilizing Java, implements input sampling (Split, Random, Interval) and total order partitioning, enhancing data distribution and job performance. This architecture ensures scalability, maintainability, and reliability, leveraging Hadoop's distributed processing capabilities. Security is maintained through access control and encryption. Performance is optimized via data locality and parallel processing. The architecture follows a coordinator-worker pattern, with HDFS acting as a utility for data storage and retrieval.",
+  "description_word_count": 115,
+  "number_of_files": 3,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster architecture comprises a coordinator (JobTracker), worker nodes (TaskTrackers), and a distributed file system (HDFS). The JobTracker assigns tasks to TaskTrackers, managing their progress and data flow. TaskTrackers execute Map and Reduce tasks, reporting back to the JobTracker. HDFS ensures data durability and fault tolerance. The 'lib' directory, utilizing Java, implements input sampling (Split, Random, Interval) and total order partitioning, enhancing data distribution and job performance. This architecture ensures scalability, maintainability, and reliability, leveraging Hadoop's distributed processing capabilities. Security is maintained through access control and encryption. Performance is optimized via data locality and parallel processing. The architecture follows a coordinator-worker pattern, with HDFS acting as a utility for data storage and retrieval.",
+  "algorithm": "ACDC",
+  "files": [
+    "InputFormat.java",
+    "lib/partition/InputSampler.java",
+    "lib/partition/TotalOrderPartitioner.java"
+  ]
+}

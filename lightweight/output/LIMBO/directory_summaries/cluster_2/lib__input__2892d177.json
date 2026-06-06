@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "lib/input",
+  "title": "SplitLineReader Class in Hadoop MapReduce",
+  "description": "The SplitLineReader class, located in the lib/input directory of Hadoop MapReduce, is part of the input library. It extends the LineReader class, providing specialized line reading with record delimiter handling. The class has two constructors, one accepting an InputStream and record delimiter bytes, and another including a Configuration object. It always returns false in the needAdditionalRecordAfterSplit method, indicating no additional record is needed post-split. Its key dependencies include LineReader for basic line reading, IOException for exception handling, InputStream for data input, and Configuration for parameter storage. This class plays a crucial role in the input processing phase of MapReduce jobs by enabling efficient line-based record reading with customizable delimiters.",
+  "summary": "TITLE: SplitLineReader Class in Hadoop MapReduce\nDESCRIPTION: The SplitLineReader class, located in the lib/input directory of Hadoop MapReduce, is part of the input library. It extends the LineReader class, providing specialized line reading with record delimiter handling. The class has two constructors, one accepting an InputStream and record delimiter bytes, and another including a Configuration object. It always returns false in the needAdditionalRecordAfterSplit method, indicating no additional record is needed post-split. Its key dependencies include LineReader for basic line reading, IOException for exception handling, InputStream for data input, and Configuration for parameter storage. This class plays a crucial role in the input processing phase of MapReduce jobs by enabling efficient line-based record reading with customizable delimiters.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "InvalidInputException.java"
+    },
+    {
+      "type": "file",
+      "name": "SplitLineReader.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: SplitLineReader Class in Hadoop MapReduce\n\nDESCRIPTION:\nThe SplitLineReader class, located in the lib/input directory of Hadoop MapReduce, is part of the input library. It extends the LineReader class, providing specialized line reading with record delimiter handling. The class has two constructors, one accepting an InputStream and record delimiter bytes, and another including a Configuration object. It always returns false in the needAdditionalRecordAfterSplit method, indicating no additional record is needed post-split. Its key dependencies include LineReader for basic line reading, IOException for exception handling, InputStream for data input, and Configuration for parameter storage. This class plays a crucial role in the input processing phase of MapReduce jobs by enabling efficient line-based record reading with customizable delimiters."
+}

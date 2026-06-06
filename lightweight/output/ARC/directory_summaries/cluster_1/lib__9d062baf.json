@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 1,
+  "directory": "lib",
+  "title": "Key-Based Partitioning in Hadoop MapReduce",
+  "description": "The 'lib/partition' directory in Hadoop MapReduce architecture contains custom partitioners for data distribution. These partitioners, including BinaryPartitioner, HashPartitioner, KeyFieldBasedPartitioner, and RehashPartitioner, employ various strategies like byte subarray, hash code, Unix-like sorting, and rehashing. They extend the Hadoop 'Partitioner' class, showcasing the Strategy design pattern for diverse partitioning needs. Collaboration is achieved through extending a common superclass, enabling flexible data distribution across reduce tasks.",
+  "summary": "TITLE: Key-Based Partitioning in Hadoop MapReduce\nDESCRIPTION: The 'lib/partition' directory in Hadoop MapReduce architecture contains custom partitioners for data distribution. These partitioners, including BinaryPartitioner, HashPartitioner, KeyFieldBasedPartitioner, and RehashPartitioner, employ various strategies like byte subarray, hash code, Unix-like sorting, and rehashing. They extend the Hadoop 'Partitioner' class, showcasing the Strategy design pattern for diverse partitioning needs. Collaboration is achieved through extending a common superclass, enabling flexible data distribution across reduce tasks.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/partition"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Key-Based Partitioning in Hadoop MapReduce\n\nDESCRIPTION: The 'lib/partition' directory in Hadoop MapReduce architecture contains custom partitioners for data distribution. These partitioners, including BinaryPartitioner, HashPartitioner, KeyFieldBasedPartitioner, and RehashPartitioner, employ various strategies like byte subarray, hash code, Unix-like sorting, and rehashing. They extend the Hadoop 'Partitioner' class, showcasing the Strategy design pattern for diverse partitioning needs. Collaboration is achieved through extending a common superclass, enabling flexible data distribution across reduce tasks."
+}

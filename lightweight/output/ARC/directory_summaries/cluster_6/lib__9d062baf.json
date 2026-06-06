@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 6,
+  "directory": "lib",
+  "title": "Hadoop MapReduce Database Splitter Directory",
+  "description": "The 'lib/db' directory in Hadoop MapReduce architecture contains classes for splitting database queries. Files like 'BigDecimalSplitter.java' and 'IntegerSplitter.java' convert query results into InputSplits. Each file implements a specific data type splitter, extending 'DBSplitter' interface. They collaborate with Hadoop's InputSplit and Oracle-specific classes for database-driven input formats, exemplifying the Data-Driven approach in Hadoop. This enables efficient parallel processing of large databases.",
+  "summary": "TITLE: Hadoop MapReduce Database Splitter Directory\nDESCRIPTION: The 'lib/db' directory in Hadoop MapReduce architecture contains classes for splitting database queries. Files like 'BigDecimalSplitter.java' and 'IntegerSplitter.java' convert query results into InputSplits. Each file implements a specific data type splitter, extending 'DBSplitter' interface. They collaborate with Hadoop's InputSplit and Oracle-specific classes for database-driven input formats, exemplifying the Data-Driven approach in Hadoop. This enables efficient parallel processing of large databases.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/db"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Database Splitter Directory\n\nDESCRIPTION: The 'lib/db' directory in Hadoop MapReduce architecture contains classes for splitting database queries. Files like 'BigDecimalSplitter.java' and 'IntegerSplitter.java' convert query results into InputSplits. Each file implements a specific data type splitter, extending 'DBSplitter' interface. They collaborate with Hadoop's InputSplit and Oracle-specific classes for database-driven input formats, exemplifying the Data-Driven approach in Hadoop. This enables efficient parallel processing of large databases."
+}

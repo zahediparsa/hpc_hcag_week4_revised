@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 22,
+  "directory": "server",
+  "title": "JobTracker and TaskTracker Configuration",
+  "description": "The 'server/jobtracker' directory houses 'JTConfig.java', defining JobTracker configuration parameters like IPC address and memory limits, adhering to separation of concerns. The 'server/tasktracker' directory contains 'TTConfig.java', providing TaskTracker configuration constants such as TT_INDEX_CACHE and TT_MAP_SLOTS, also following the principle of isolated configuration settings. Both directories employ a simple configuration interface pattern, ensuring consistent and manageable system-wide settings for their respective components in Hadoop MapReduce.",
+  "summary": "TITLE: JobTracker and TaskTracker Configuration\nDESCRIPTION: The 'server/jobtracker' directory houses 'JTConfig.java', defining JobTracker configuration parameters like IPC address and memory limits, adhering to separation of concerns. The 'server/tasktracker' directory contains 'TTConfig.java', providing TaskTracker configuration constants such as TT_INDEX_CACHE and TT_MAP_SLOTS, also following the principle of isolated configuration settings. Both directories employ a simple configuration interface pattern, ensuring consistent and manageable system-wide settings for their respective components in Hadoop MapReduce.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "server/jobtracker"
+    },
+    {
+      "type": "directory",
+      "name": "server/tasktracker"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobTracker and TaskTracker Configuration\n\nDESCRIPTION: The 'server/jobtracker' directory houses 'JTConfig.java', defining JobTracker configuration parameters like IPC address and memory limits, adhering to separation of concerns. The 'server/tasktracker' directory contains 'TTConfig.java', providing TaskTracker configuration constants such as TT_INDEX_CACHE and TT_MAP_SLOTS, also following the principle of isolated configuration settings. Both directories employ a simple configuration interface pattern, ensuring consistent and manageable system-wide settings for their respective components in Hadoop MapReduce."
+}

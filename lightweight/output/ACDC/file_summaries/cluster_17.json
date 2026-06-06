@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "ACDC",
+    "cluster": 17,
+    "class": "org.apache.hadoop.mapreduce.security.SecureShuffleUtils",
+    "path": "security/SecureShuffleUtils.java",
+    "file_name": "SecureShuffleUtils.java",
+    "directory": "security",
+    "summary": "KEY FUNCTIONALITY: This Java code snippet is part of Apache Hadoop MapReduce's security utilities for generating, verifying hashes, and encoding messages for secure shuffle operations.\n\nCORE LOGIC:\n1. The class `SecureShuffleUtils` provides utility methods for secure shuffle operations.\n2. It includes methods for generating a hash (`generateHash`) and verifying it (`verifyHash`) using a secret key.\n3. It also provides methods to encode strings to Base64 (`hashFromString`) and decode Base64 to byte arrays (`verifyReply`).\n4. The class includes utility methods to build a message string from a URL (`buildMsgFrom`) or an HTTP request (`buildMsgFrom`), and to convert a byte array to a hexadecimal string (`toHex`).\n\nINPUTS/OUTPUTS:\n- INPUTS: The methods take various inputs such as byte arrays, strings, URLs, HTTP requests, and secret keys.\n- OUTPUTS: The methods return Base64 encoded hashes, verification results (boolean), exceptions (in case of verification failure), and hexadecimal string representations of byte arrays.\n\nDEPENDENCIES:\n- The class depends on several classes from the Java standard library (`ByteArrayOutputStream`, `IOException`, `PrintStream`, `UnsupportedEncodingException`, `Base64`, `Logger`, `LoggerFactory`).\n- It also depends on Hadoop-specific classes: `WritableComparator`, `JobTokenSecretManager`, and interfaces `InterfaceAudience`, `InterfaceStability`.\n- `HttpServletRequest` is from the Servlet API, indicating this class might be used in a web context for secure shuffle operations.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 17,
+    "class": "org.apache.hadoop.mapreduce.security.token.JobTokenSecretManager",
+    "path": "security/token/JobTokenSecretManager.java",
+    "file_name": "JobTokenSecretManager.java",
+    "directory": "security/token",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to serve as a SecretManager for job tokens in Apache Hadoop MapReduce, providing methods to create, store, and retrieve job token secrets.\n\nCORE LOGIC:\n- The class extends `SecretManager<JobTokenIdentifier>` and overrides its methods to handle job tokens.\n- It maintains a `TreeMap` called `currentJobTokens` to cache generated job tokens.\n- The `createPassword` method generates a password/secret for a given job token identifier using a master key.\n- Methods `addTokenForJob`, `removeTokenForJob`, and `retrieveTokenSecret` manage the job tokens in the cache.\n- `retrievePassword` retrieves the token password/secret for a given job token identifier.\n- `createIdentifier` creates a new, empty job token identifier.\n\nINPUTS/OUTPUTS:\n- Inputs: Job token identifiers, job IDs, and tokens.\n- Outputs: Job token secrets as `SecretKey` objects or byte arrays.\n\nDEPENDENCIES:\n- Imported classes: `java.util.Map`, `java.util.TreeMap`, `javax.crypto.SecretKey`.\n- Collaborator classes: `org.apache.hadoop.security.token.SecretManager`, `org.apache.hadoop.security.token.Token`, `org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

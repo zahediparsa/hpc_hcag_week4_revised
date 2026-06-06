@@ -1,0 +1,62 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 61,
+    "class": "org.apache.hadoop.mapreduce.lib.input.CombineSequenceFileInputFormat",
+    "path": "lib/input/CombineSequenceFileInputFormat.java",
+    "file_name": "CombineSequenceFileInputFormat.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a custom input format, `CombineSequenceFileInputFormat`, which extends `CombineFileInputFormat`. This class is designed to work as an equivalent for `CombineFileInputFormat` when used with `SequenceFileInputFormat`.\n\nCORE LOGIC:\nThe core logic involves creating a `RecordReader` for the input split in the `createRecordReader` method. This `RecordReader` is an instance of `CombineFileRecordReader`, which utilizes a wrapper class `SequenceFileRecordReaderWrapper` to handle `SequenceFileInputFormat`. The `SequenceFileRecordReaderWrapper` class is designed to work with `CombineFileRecordReader` and is initialized with a `SequenceFileInputFormat`.\n\nINPUTS/OUTPUTS:\n- Inputs: The code takes an `InputSplit` object and a `TaskAttemptContext` object.\n- Outputs: It returns a `RecordReader<K,V>` object, which reads key-value pairs from the input files.\n\nDEPENDENCIES:\n- Imported classes: `java.io.IOException`\n- Collaborator classes: `CombineFileInputFormat`, `RecordReader`, `TaskAttemptContext`, `CombineFileSplit`, `SequenceFileInputFormat`, `CombineFileRecordReader`, `CombineFileRecordReaderWrapper`\n- Apache Hadoop classes: `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`, `org.apache.hadoop.mapreduce.InputSplit`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 61,
+    "class": "org.apache.hadoop.mapreduce.lib.input.CombineTextInputFormat",
+    "path": "lib/input/CombineTextInputFormat.java",
+    "file_name": "CombineTextInputFormat.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a custom input format, `CombineTextInputFormat`, which extends `CombineFileInputFormat` and is designed to work as an equivalent for `TextInputFormat` in a Hadoop MapReduce job.\n\nCORE LOGIC:\nThe core logic involves creating a `RecordReader` for input splits in the form of `CombineFileSplit` objects. This is done in the `createRecordReader` method, which instantiates a `CombineFileRecordReader` with a custom `TextRecordReaderWrapper`. This wrapper is responsible for handling the reading of text files, similar to `TextInputFormat`.\n\nINPUTS/OUTPUTS:\n- Inputs: The input to this class primarily comes in the form of `InputSplit` objects of type `CombineFileSplit`.\n- Outputs: The output is a `RecordReader` instance of type `RecordReader<LongWritable, Text>`, which reads key-value pairs where the key is of type `LongWritable` and the value is of type `Text`.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.lib.input.CombineFileInputFormat<LongWritable,Text>`\n- `org.apache.hadoop.io.LongWritable`\n- `org.apache.hadoop.io.Text`\n- `org.apache.hadoop.mapreduce.InputSplit`\n- `org.apache.hadoop.mapreduce.RecordReader<LongWritable,Text>`\n- `org.apache.hadoop.mapreduce.TaskAttemptContext`\n- `org.apache.hadoop.classification.InterfaceAudience.Public`\n- `org.apache.hadoop.classification.InterfaceStability.Stable`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 61,
+    "class": "org.apache.hadoop.mapreduce.lib.input.SequenceFileAsBinaryInputFormat",
+    "path": "lib/input/SequenceFileAsBinaryInputFormat.java",
+    "file_name": "SequenceFileAsBinaryInputFormat.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a custom RecordReader for reading key-value pairs from a SequenceFile in binary format. This RecordReader, named SequenceFileAsBinaryRecordReader, is part of the SequenceFileAsBinaryInputFormat class, which extends SequenceFileInputFormat.\n\nCORE LOGIC:\nThe core logic involves initializing the SequenceFile reader in the constructor, creating a new instance of SequenceFileAsBinaryRecordReader in the createRecordReader method, and implementing the logic for reading raw key-value pairs from the SequenceFile in the nested SequenceFileAsBinaryRecordReader class. This includes methods for initializing the reader, retrieving current key and value, advancing to the next key-value pair, and closing the reader.\n\nINPUTS/OUTPUTS:\nThe inputs to this code are an InputSplit and a TaskAttemptContext, which are used to initialize the SequenceFile reader in the createRecordReader method. The SequenceFileAsBinaryRecordReader reads raw key-value pairs from the SequenceFile. The key and value are instances of BytesWritable, and the output is the current key and value, which can be retrieved via the getCurrentKey and getCurrentValue methods.\n\nDEPENDENCIES:\nThe key dependencies in this code chunk are:\n- org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat: The superclass for this custom InputFormat.\n- org.apache.hadoop.io.BytesWritable: The class used for keys and values.\n- org.apache.hadoop.io.SequenceFile: The class used for reading from SequenceFiles.\n- org.apache.hadoop.mapreduce.InputSplit: Represents a logical chunk of the input for an InputFormat.\n- org.apache.hadoop.mapreduce.RecordReader: The interface for reading key-value pairs from an InputSplit.\n- org.apache.hadoop.mapreduce.TaskAttemptContext: Provides information about the task attempt context.\n- org.apache.hadoop.fs.FileSystem: The Java Hadoop API for accessing the HDFS.\n- org.apache.hadoop.fs.Path: Represents a file system path.\n- org.apache.hadoop.conf.Configuration: The central configuration object for a Hadoop job.\n- org.apache.hadoop.io.DataOutputBuffer: A buffer for writing data.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 61,
+    "class": "org.apache.hadoop.mapreduce.lib.input.SequenceFileAsTextInputFormat",
+    "path": "lib/input/SequenceFileAsTextInputFormat.java",
+    "file_name": "SequenceFileAsTextInputFormat.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a class `SequenceFileAsTextInputFormat` that extends `SequenceFileInputFormat<Text, Text>`. This class is designed to generate a `SequenceFileAsTextRecordReader` which converts input keys and values to their String forms using the `toString()` method.\n\nCORE LOGIC:\nThe core logic of this chunk is the `createRecordReader` method, which takes an `InputSplit` and a `TaskAttemptContext` as parameters and returns a `RecordReader<Text, Text>`. Inside this method, it sets the status of the context to the string representation of the input split and then returns a new instance of `SequenceFileAsTextRecordReader`.\n\nINPUTS/OUTPUTS:\nThe class takes no direct inputs in this chunk apart from the `InputSplit` and `TaskAttemptContext` objects passed to the `createRecordReader` method. The output is a `RecordReader<Text, Text>` instance that reads key-value pairs as Text objects.\n\nDEPENDENCIES:\nThe key dependencies in this chunk are:\n- `org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat<Text, Text>`: The parent class from which `SequenceFileAsTextInputFormat` inherits.\n- `org.apache.hadoop.io.Text`: The class used for text keys and values.\n- `org.apache.hadoop.mapreduce.InputSplit`: Represents a single map task that the JobTracker will submit to a NodeManager to be run.\n- `org.apache.hadoop.mapreduce.RecordReader<Text, Text>`: The class that reads data from the input files.\n- `org.apache.hadoop.mapreduce.TaskAttemptContext`: Provides information about the task attempt.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 61,
+    "class": "org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFilter",
+    "path": "lib/input/SequenceFileInputFilter.java",
+    "file_name": "SequenceFileInputFilter.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY:\nThis code chunk defines a class `SequenceFileInputFilter` that extends `SequenceFileInputFormat` in Apache Hadoop MapReduce. It allows a job to process a subset of sequence files based on a filter class set by the job. The filter class can be one of three types: `RegexFilter`, `PercentFilter`, or `MD5Filter`.\n\nCORE LOGIC:\n1. The `createRecordReader` method creates a `FilterRecordReader` instance, which extends `SequenceFileRecordReader`.\n2. The `FilterRecordReader` reads records from the sequence file and applies the filter logic.\n3. The `Filter` interface defines a method `accept(Object key)`, which determines if a record should be included or excluded based on the filter type.\n4. The `RegexFilter` class filters records based on a regular expression.\n5. The `PercentFilter` class filters records based on a frequency, keeping a certain percentage of records.\n6. The `MD5Filter` class filters records based on the MD5 hash of the key, using a frequency similar to `PercentFilter`.\n\nINPUTS/OUTPUTS:\n- INPUTS: The class takes an `InputSplit` and a `TaskAttemptContext` as inputs.\n- OUTPUTS: It outputs filtered key-value pairs conforming to the chosen filter logic.\n\nDEPENDENCIES:\n- Imported classes: `java.io.IOException`, `java.nio.ByteBuffer`, `java.security.DigestException`, `java.security.MessageDigest`, `java.security.NoSuchAlgorithmException`, `java.util.regex.Pattern`, `java.util.regex.PatternSyntaxException`, `org.apache.hadoop.classification.InterfaceAudience`, `org.apache.hadoop.classification.InterfaceStability`, `org.apache.hadoop.conf.Configurable`, `org.apache.hadoop.conf.Configuration`, `org.apache.hadoop.io.BytesWritable`, `org.apache.hadoop.io.Text`, `org.apache.hadoop.mapreduce.InputSplit`, `org.apache.hadoop.mapreduce.Job`, `org.apache.hadoop.mapreduce.RecordReader`, `org.apache.hadoop.mapreduce.TaskAttemptContext`, `org.apache.hadoop.util.ReflectionUtils`, `org.slf4j.Logger`, `org.slf4j.LoggerFactory`.\n- Collabor",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

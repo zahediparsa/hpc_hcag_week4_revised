@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 50,
+  "directory": ".",
+  "title": "Value Aggregation in Hadoop MapReduce",
+  "description": "The 'lib/aggregate' directory contains classes for Hadoop MapReduce value aggregation. These classes, implementing the 'ValueAggregator' interface, perform tasks such as summing, finding max/min, counting unique values, and computing histograms. They accept diverse input types, utilize Java collections, and Hadoop's aggregation libraries. Collaboration with combiners enhances efficiency, adhering to Hadoop's interface stability guidelines. This directory plays a crucial role in data processing by aggregating intermediate values generated during the map phase, thereby reducing the amount of data transferred to the reducer, thus improving overall performance.",
+  "summary": "TITLE: Value Aggregation in Hadoop MapReduce\nDESCRIPTION: The 'lib/aggregate' directory contains classes for Hadoop MapReduce value aggregation. These classes, implementing the 'ValueAggregator' interface, perform tasks such as summing, finding max/min, counting unique values, and computing histograms. They accept diverse input types, utilize Java collections, and Hadoop's aggregation libraries. Collaboration with combiners enhances efficiency, adhering to Hadoop's interface stability guidelines. This directory plays a crucial role in data processing by aggregating intermediate values generated during the map phase, thereby reducing the amount of data transferred to the reducer, thus improving overall performance.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Value Aggregation in Hadoop MapReduce\n\nDESCRIPTION: The 'lib/aggregate' directory contains classes for Hadoop MapReduce value aggregation. These classes, implementing the 'ValueAggregator' interface, perform tasks such as summing, finding max/min, counting unique values, and computing histograms. They accept diverse input types, utilize Java collections, and Hadoop's aggregation libraries. Collaboration with combiners enhances efficiency, adhering to Hadoop's interface stability guidelines. This directory plays a crucial role in data processing by aggregating intermediate values generated during the map phase, thereby reducing the amount of data transferred to the reducer, thus improving overall performance."
+}

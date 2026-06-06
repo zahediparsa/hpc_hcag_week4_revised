@@ -1,0 +1,24 @@
+{
+  "cluster_id": 21,
+  "title": "Reduce Phase Interaction & Architecture",
+  "description": "In Hadoop MapReduce, the Reduce phase components, located in 'lib/reduce', are pivotal for data consolidation. These Java classes, utilizing Hadoop's libraries, embody the reduction pattern, aggregating Map phase outputs. They include custom field selectors and summing reducers for integers and longs, alongside a flexible reducer context implementation. This modular design allows tailored data aggregation via custom reducers, ensuring scalability and maintainability. The architecture's reliability is bolstered by Hadoop's fault-tolerant framework. Security is maintained through Hadoop's access control mechanisms. Performance is optimized via parallel processing and efficient data distribution across the cluster. Technologies used include Java and Hadoop's MapReduce framework.",
+  "description_word_count": 100,
+  "number_of_files": 4,
+  "number_of_directories": 4,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Reduce Phase Interaction & Architecture\n\nDESCRIPTION: In Hadoop MapReduce, the Reduce phase components, located in 'lib/reduce', are pivotal for data consolidation. These Java classes, utilizing Hadoop's libraries, embody the reduction pattern, aggregating Map phase outputs. They include custom field selectors and summing reducers for integers and longs, alongside a flexible reducer context implementation. This modular design allows tailored data aggregation via custom reducers, ensuring scalability and maintainability. The architecture's reliability is bolstered by Hadoop's fault-tolerant framework. Security is maintained through Hadoop's access control mechanisms. Performance is optimized via parallel processing and efficient data distribution across the cluster. Technologies used include Java and Hadoop's MapReduce framework.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/fieldsel/FieldSelectionReducer.java",
+    "lib/reduce/IntSumReducer.java",
+    "lib/reduce/LongSumReducer.java",
+    "lib/reduce/WrappedReducer.java"
+  ]
+}

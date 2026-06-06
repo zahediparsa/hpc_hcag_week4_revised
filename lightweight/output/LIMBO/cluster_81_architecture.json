@@ -1,0 +1,29 @@
+{
+  "cluster_id": 81,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers, and a NameNode. The JobTracker coordinates and manages the execution of jobs, assigning tasks to available TaskTrackers. TaskTrackers execute these tasks, processing data in tandem with the NameNode, which manages data storage in HDFS. This architecture ensures scalability, reliability, and fault tolerance. MapReduce jobs are programmed in Java, utilizing Hadoop's API for input/output operations. The Output Committer, located in the 'lib/output/committer' directory, ensures data integrity and validation during the commit stage, following a utility package pattern. This design supports large-scale data processing, maintaining data consistency and reliability across the cluster.",
+  "description_word_count": 102,
+  "number_of_files": 9,
+  "number_of_directories": 7,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers, and a NameNode. The JobTracker coordinates and manages the execution of jobs, assigning tasks to available TaskTrackers. TaskTrackers execute these tasks, processing data in tandem with the NameNode, which manages data storage in HDFS. This architecture ensures scalability, reliability, and fault tolerance. MapReduce jobs are programmed in Java, utilizing Hadoop's API for input/output operations. The Output Committer, located in the 'lib/output/committer' directory, ensures data integrity and validation during the commit stage, following a utility package pattern. This design supports large-scale data processing, maintaining data consistency and reliability across the cluster.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/output/committer/manifest/impl/InternalConstants.java",
+    "lib/output/committer/manifest/stages/CommitJobStage.java",
+    "lib/output/committer/manifest/stages/CommitTaskStage.java",
+    "lib/output/committer/manifest/stages/CreateOutputDirectoriesStage.java",
+    "lib/output/committer/manifest/stages/LoadManifestsStage.java",
+    "lib/output/committer/manifest/stages/RenameFilesStage.java",
+    "lib/output/committer/manifest/stages/SaveTaskManifestStage.java",
+    "lib/output/committer/manifest/stages/TaskAttemptScanDirectoryStage.java",
+    "lib/output/committer/manifest/stages/ValidateRenamedFilesStage.java"
+  ]
+}

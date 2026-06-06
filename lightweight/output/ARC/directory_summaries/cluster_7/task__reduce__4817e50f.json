@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": "task/reduce",
+  "title": "On-Disk Map Output Management",
+  "description": "The task/reduce/OnDiskMapOutput.java file is responsible for managing temporary on-disk storage of map outputs in Hadoop MapReduce. It extends IFileWrappedMapOutput and handles reading from input streams, writing to disk streams, and tracking progress. The class uses a temporary output path and a final output path, renaming the former to the latter upon successful commit. It also supports encryption and deletion in case of abort. Dependencies include various Hadoop classes and logging utilities. The class is part of the internal API and subject to change.",
+  "summary": "TITLE: On-Disk Map Output Management\nDESCRIPTION: The task/reduce/OnDiskMapOutput.java file is responsible for managing temporary on-disk storage of map outputs in Hadoop MapReduce. It extends IFileWrappedMapOutput and handles reading from input streams, writing to disk streams, and tracking progress. The class uses a temporary output path and a final output path, renaming the former to the latter upon successful commit. It also supports encryption and deletion in case of abort. Dependencies include various Hadoop classes and logging utilities. The class is part of the internal API and subject to change.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "MergeManagerImpl.java"
+    },
+    {
+      "type": "file",
+      "name": "OnDiskMapOutput.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: On-Disk Map Output Management\n\nDESCRIPTION:\nThe task/reduce/OnDiskMapOutput.java file is responsible for managing temporary on-disk storage of map outputs in Hadoop MapReduce. It extends IFileWrappedMapOutput and handles reading from input streams, writing to disk streams, and tracking progress. The class uses a temporary output path and a final output path, renaming the former to the latter upon successful commit. It also supports encryption and deletion in case of abort. Dependencies include various Hadoop classes and logging utilities. The class is part of the internal API and subject to change."
+}

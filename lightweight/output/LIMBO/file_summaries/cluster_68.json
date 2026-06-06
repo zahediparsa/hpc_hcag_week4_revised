@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 68,
+    "class": "org.apache.hadoop.mapreduce.lib.join.ArrayListBackedIterator",
+    "path": "lib/join/ArrayListBackedIterator.java",
+    "file_name": "ArrayListBackedIterator.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\nThe main functionality of this class is to provide an implementation of the ResetableIterator interface using an ArrayList to store elements, replaying them as requested. It also offers methods to add, reset, and clear the stored elements.\n\nCORE LOGIC:\nThe core logic revolves around the use of an ArrayList to store Writable objects. The hasNext() method checks if there are more elements in the iterator. The next() method copies the next element from the iterator into the provided Writable object, optionally holding the previous element for replay. The replay() method copies the held element into the provided Writable object. The reset() method resets the iterator to the beginning of the ArrayList, add() method adds a new Writable object to the ArrayList, and close() method releases resources by setting the iterator and ArrayList to null. The clear() method clears all elements and resets the iterator.\n\nINPUTS/OUTPUTS:\nInputs: Writable objects of type X.\nOutputs: None explicitly stated in this chunk, but the class implements methods to retrieve and manipulate these Writable objects.\n\nDEPENDENCIES:\nThe class depends on several external classes and packages:\n- java.io.IOException: For exception handling related to I/O operations.\n- java.util.Iterator: For implementing the iterator functionality.\n- java.util.ArrayList: For storing the elements.\n- org.apache.hadoop.classification.InterfaceAudience and org.apache.hadoop.classification.InterfaceStability: For annotating the class's audience and stability.\n- org.apache.hadoop.conf.Configuration: For configuration settings.\n- org.apache.hadoop.io.Writable and org.apache.hadoop.io.WritableUtils: For handling writable objects and utility methods related to them.\n- org.apache.hadoop.util.ReflectionUtils: For reflection-based copying of fields.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 68,
+    "class": "org.apache.hadoop.mapreduce.lib.join.StreamBackedIterator",
+    "path": "lib/join/StreamBackedIterator.java",
+    "file_name": "StreamBackedIterator.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to provide an implementation of the ResetableIterator interface for storing elements in a byte array, allowing for adding, next, hasNext, and reset operations.\n\nCORE LOGIC:\n- The class uses a ByteArrayOutputStream to store elements as bytes.\n- It employs a custom ReplayableByteInputStream class that extends ByteArrayInputStream to allow resetting the stream position.\n- The add method writes the given Writable object to the ByteArrayOutputStream.\n- The next method reads a Writable object from the DataInputStream associated with the ReplayableByteInputStream.\n- The hasNext method checks if there are more elements to read.\n- The reset method clears the internal state, preparing the iterator for reuse.\n\nINPUTS/OUTPUTS:\n- Inputs: Writable objects of type X (where X extends Writable).\n- Outputs: None explicitly stated in this chunk, but the class is designed to store and retrieve Writable objects.\n\nDEPENDENCIES:\n- The class depends on org.apache.hadoop.io.Writable, indicating that it works with Hadoop's Writable interface for serializing objects.\n- It also uses standard Java classes like ByteArrayInputStream, ByteArrayOutputStream, DataInputStream, and DataOutputStream for handling byte streams.\n- There are no explicitly declared collaborator classes in this chunk, but the implementation suggests it will be used within the broader context of Hadoop's MapReduce library, specifically in the org.apache.hadoop.mapreduce.lib.join package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

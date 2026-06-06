@@ -1,0 +1,38 @@
+{
+  "type": "directory",
+  "cluster_id": 46,
+  "directory": "jobhistory",
+  "title": "Job History Directory in Hadoop MapReduce",
+  "description": "The 'jobhistory' directory in Hadoop MapReduce serves as a repository for job-related events, including task attempts, task completion, failures, and more. It employs an event-driven architecture, with each event type represented by a dedicated Java class (e.g., MapAttemptFinishedEvent, ReduceAttemptFinishedEvent, TaskAttemptFinishedEvent, TaskFailedEvent, TaskFinishedEvent, TaskAttemptUnsuccessfulCompletionEvent). These classes encapsulate details of job execution, such as task IDs, types, statuses, timestamps, host and rack information, counters, and split data. They also provide methods for Avro serialization and conversion to YARN TimelineEvent for integration with YARN's timeline service. This directory-level abstraction ensures comprehensive job history logging, aiding in job monitoring, debugging, and performance analysis.",
+  "summary": "TITLE: Job History Directory in Hadoop MapReduce\nDESCRIPTION: The 'jobhistory' directory in Hadoop MapReduce serves as a repository for job-related events, including task attempts, task completion, failures, and more. It employs an event-driven architecture, with each event type represented by a dedicated Java class (e.g., MapAttemptFinishedEvent, ReduceAttemptFinishedEvent, TaskAttemptFinishedEvent, TaskFailedEvent, TaskFinishedEvent, TaskAttemptUnsuccessfulCompletionEvent). These classes encapsulate details of job execution, such as task IDs, types, statuses, timestamps, host and rack information, counters, and split data. They also provide methods for Avro serialization and conversion to YARN TimelineEvent for integration with YARN's timeline service. This directory-level abstraction ensures comprehensive job history logging, aiding in job monitoring, debugging, and performance analysis.",
+  "number_of_children": 6,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "MapAttemptFinishedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "ReduceAttemptFinishedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptFinishedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptUnsuccessfulCompletionEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskFailedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskFinishedEvent.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job History Directory in Hadoop MapReduce\n\nDESCRIPTION:\nThe 'jobhistory' directory in Hadoop MapReduce serves as a repository for job-related events, including task attempts, task completion, failures, and more. It employs an event-driven architecture, with each event type represented by a dedicated Java class (e.g., MapAttemptFinishedEvent, ReduceAttemptFinishedEvent, TaskAttemptFinishedEvent, TaskFailedEvent, TaskFinishedEvent, TaskAttemptUnsuccessfulCompletionEvent). These classes encapsulate details of job execution, such as task IDs, types, statuses, timestamps, host and rack information, counters, and split data. They also provide methods for Avro serialization and conversion to YARN TimelineEvent for integration with YARN's timeline service. This directory-level abstraction ensures comprehensive job history logging, aiding in job monitoring, debugging, and performance analysis."
+}

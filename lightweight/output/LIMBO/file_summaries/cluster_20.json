@@ -1,0 +1,38 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 20,
+    "class": "org.apache.hadoop.mapreduce.RecordWriter",
+    "path": "RecordWriter.java",
+    "file_name": "RecordWriter.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY: The main purpose of this code chunk is to define an abstract class `RecordWriter` that serves as an interface for writing key-value pairs to an output file in Apache Hadoop MapReduce.\n\nCORE LOGIC: The core logic involves two abstract methods: `write(K key, V value)` and `close(TaskAttemptContext context)`. The `write` method is intended to write a key-value pair to the output file, while the `close` method is used to finalize and close the output operations, ensuring all data is properly flushed and the resource is released.\n\nINPUTS/OUTPUTS: The `RecordWriter` class takes no direct inputs other than the context of the task (`TaskAttemptContext`) in the `close` method. Its primary output is the writing of key-value pairs to an output file system (`FileSystem`), as defined by its implementing classes.\n\nDEPENDENCIES: The key imported class visible in this chunk is `java.io.IOException`. Additionally, it depends on `org.apache.hadoop.fs.FileSystem` for file system operations and `org.apache.hadoop.mapreduce.TaskAttemptContext` for task-specific context. The class itself is annotated with `@InterfaceAudience.Public` and `@InterfaceStability.Stable`, indicating its public API stability.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 20,
+    "class": "org.apache.hadoop.mapreduce.TaskInputOutputContext",
+    "path": "TaskInputOutputContext.java",
+    "file_name": "TaskInputOutputContext.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this interface, `TaskInputOutputContext`, is to provide a context for input and output operations within a MapReduce task, specifically for `Mapper` and `Reducer`.\n\nCORE LOGIC:\nThis interface defines methods for navigating key-value pairs (`nextKeyValue`), retrieving the current key and value (`getCurrentKey`, `getCurrentValue`), writing output key-value pairs (`write`), and obtaining the `OutputCommitter` for task-attempt (`getOutputCommitter`).\n\nINPUTS/OUTPUTS:\n- Inputs: None explicitly defined in this interface. It's assumed that the implementing classes would handle input data streams.\n- Outputs: Key-value pairs (`KEYOUT`, `VALUEOUT`) for writing output data.\n\nDEPENDENCIES:\n- `org.apache.hadoop.mapreduce.TaskAttemptContext`: This interface extends `TaskAttemptContext`, indicating it inherits context-related functionalities from this parent class.\n- `java.io.IOException`: This is a checked exception indicating that methods in this interface may throw exceptions related to input/output operations.\n- `java.util.concurrent.InterruptedException`: This is a runtime exception indicating that methods in this interface may throw exceptions if the thread is interrupted while waiting.\n- `org.apache.hadoop.mapreduce.OutputCommitter`: This class is referenced, indicating that the context provides access to an `OutputCommitter` object for committing task outputs.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 20,
+    "class": "org.apache.hadoop.mapreduce.lib.output.PartialOutputCommitter",
+    "path": "lib/output/PartialOutputCommitter.java",
+    "file_name": "PartialOutputCommitter.java",
+    "directory": "lib/output",
+    "summary": "KEY FUNCTIONALITY: The main purpose of this code chunk is to define an interface for an `OutputCommitter` that implements partial commit of task output, particularly during preemption.\n\nCORE LOGIC: The core logic involves a single method, `cleanUpPartialOutputForTask`, which is intended to remove all previously committed outputs from prior executions of a task. This method takes a `TaskAttemptContext` object as input and throws an `IOException` if the cleanup process fails.\n\nINPUTS/OUTPUTS: The method `cleanUpPartialOutputForTask` takes a `TaskAttemptContext` object as input, which contains contextual information about the task attempt. There are no explicit outputs in this code snippet, as the method's purpose is to perform a cleanup operation.\n\nDEPENDENCIES: The key imported class visible in this chunk is `org.apache.hadoop.mapreduce.TaskAttemptContext`. Additionally, the interface extends `org.apache.hadoop.mapreduce.lib.output.OutputCommitter`, though the implementation of that class is not shown in this chunk. The interface is annotated with `@InterfaceAudience.Public` and `@InterfaceStability.Evolving`, indicating its intended audience and stability level.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

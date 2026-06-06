@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 93,
+  "directory": ".",
+  "title": "JobSplit Directory for Hadoop MapReduce",
+  "description": "The 'JobSplit' directory manages input split metadata, including classes for split information handling and file creation. It ensures efficient job scheduling and task execution by providing necessary split data to JobTracker and map tasks, showcasing a robust metadata management pattern crucial for Hadoop's distributed processing. Key components include `JobSplit.java`, `TaskSplitMetaInfo`, `TaskSplitIndex`, and `JobSplitWriter.java`, collaborating with `SplitMetaInfoReader.java` to read and write split metadata files. This directory exemplifies a blend of data serialization, file handling, and metadata management, essential for Hadoop MapReduce architecture.",
+  "summary": "TITLE: JobSplit Directory for Hadoop MapReduce\nDESCRIPTION: The 'JobSplit' directory manages input split metadata, including classes for split information handling and file creation. It ensures efficient job scheduling and task execution by providing necessary split data to JobTracker and map tasks, showcasing a robust metadata management pattern crucial for Hadoop's distributed processing. Key components include `JobSplit.java`, `TaskSplitMetaInfo`, `TaskSplitIndex`, and `JobSplitWriter.java`, collaborating with `SplitMetaInfoReader.java` to read and write split metadata files. This directory exemplifies a blend of data serialization, file handling, and metadata management, essential for Hadoop MapReduce architecture.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "split"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobSplit Directory for Hadoop MapReduce\n\nDESCRIPTION: The 'JobSplit' directory manages input split metadata, including classes for split information handling and file creation. It ensures efficient job scheduling and task execution by providing necessary split data to JobTracker and map tasks, showcasing a robust metadata management pattern crucial for Hadoop's distributed processing. Key components include `JobSplit.java`, `TaskSplitMetaInfo`, `TaskSplitIndex`, and `JobSplitWriter.java`, collaborating with `SplitMetaInfoReader.java` to read and write split metadata files. This directory exemplifies a blend of data serialization, file handling, and metadata management, essential for Hadoop MapReduce architecture."
+}

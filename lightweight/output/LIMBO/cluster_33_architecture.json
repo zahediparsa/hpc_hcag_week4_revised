@@ -1,0 +1,23 @@
+{
+  "cluster_id": 33,
+  "title": "Hadoop MapReduce Cluster Architecture ---",
+  "description": "This Hadoop MapReduce cluster architecture comprises a NameNode, Secondary NameNode, DataNodes, and TaskTracker nodes. The NameNode manages file system namespace, regulates access to files, and oversees client requests. The Secondary NameNode periodically backs up the fsImage and edits log, preparing for NameNode recovery. DataNodes store HDFS data and report to the NameNode. TaskTracker nodes execute MapReduce tasks, reporting to the JobTracker. This architecture ensures scalability, reliability, and maintainability through redundancy and distributed processing. It uses Java for development and Hadoop's MapReduce API for task execution. The coordinator pattern is evident in the JobTracker's role, while the pipeline pattern is used in data processing.",
+  "description_word_count": 103,
+  "number_of_files": 3,
+  "number_of_directories": 2,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- TITLE: Hadoop MapReduce Cluster Architecture ---\n\nDESCRIPTION: This Hadoop MapReduce cluster architecture comprises a NameNode, Secondary NameNode, DataNodes, and TaskTracker nodes. The NameNode manages file system namespace, regulates access to files, and oversees client requests. The Secondary NameNode periodically backs up the fsImage and edits log, preparing for NameNode recovery. DataNodes store HDFS data and report to the NameNode. TaskTracker nodes execute MapReduce tasks, reporting to the JobTracker. This architecture ensures scalability, reliability, and maintainability through redundancy and distributed processing. It uses Java for development and Hadoop's MapReduce API for task execution. The coordinator pattern is evident in the JobTracker's role, while the pipeline pattern is used in data processing.",
+  "algorithm": "LIMBO",
+  "files": [
+    "jobhistory/HistoryViewer.java",
+    "jobhistory/HumanReadableHistoryViewerPrinter.java",
+    "jobhistory/JSONHistoryViewerPrinter.java"
+  ]
+}

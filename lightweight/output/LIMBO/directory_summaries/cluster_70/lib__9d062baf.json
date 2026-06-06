@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 70,
+  "directory": "lib",
+  "title": "Hadoop MapReduce Join Operations",
+  "description": "The 'lib/join' directory houses specialized RecordReaders for managing composite joins. 'JoinRecordReader.java' defines an abstract class using PriorityQueue to handle key-value pairs from child RecordReaders, employing reflection for configuration. 'OverrideRecordReader.java' prioritizes the \"rightmost\" data source for a given key, maintaining a priority queue of ComposableRecordReader instances. These files exemplify the Composite and Priority Queue design patterns, enhancing Hadoop's ability to handle complex data relationships during join operations.",
+  "summary": "TITLE: Hadoop MapReduce Join Operations\nDESCRIPTION: The 'lib/join' directory houses specialized RecordReaders for managing composite joins. 'JoinRecordReader.java' defines an abstract class using PriorityQueue to handle key-value pairs from child RecordReaders, employing reflection for configuration. 'OverrideRecordReader.java' prioritizes the \"rightmost\" data source for a given key, maintaining a priority queue of ComposableRecordReader instances. These files exemplify the Composite and Priority Queue design patterns, enhancing Hadoop's ability to handle complex data relationships during join operations.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/join"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Join Operations\n\nDESCRIPTION: The 'lib/join' directory houses specialized RecordReaders for managing composite joins. 'JoinRecordReader.java' defines an abstract class using PriorityQueue to handle key-value pairs from child RecordReaders, employing reflection for configuration. 'OverrideRecordReader.java' prioritizes the \"rightmost\" data source for a given key, maintaining a priority queue of ComposableRecordReader instances. These files exemplify the Composite and Priority Queue design patterns, enhancing Hadoop's ability to handle complex data relationships during join operations."
+}

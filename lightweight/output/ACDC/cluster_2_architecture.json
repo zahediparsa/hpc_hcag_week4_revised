@@ -1,0 +1,51 @@
+{
+  "cluster_id": 2,
+  "title": "Job History Management and Utility Functions",
+  "description": "This Hadoop MapReduce cluster's 'jobhistory' directory logs job execution events, utilizing Java classes implementing 'HistoryEvent' for diverse job-related events. These events are converted into Avro and YARN TimelineEvent formats for comprehensive job tracking and monitoring. The 'util' directory provides host-related operations and job history conversion methods, enhancing job tracking and logging functionality. HostUtil.java generates task log URLs and extracts hostnames, while JobHistoryEventUtils.java converts MapReduce counters into JSON and TimelineMetrics formats. This architecture ensures scalability, maintainability, and reliability, leveraging Java and Avro technologies. The coordinator pattern is evident in the JobTracker's role, while the worker pattern is seen in TaskTrackers. Data integrity and security are maintained through comprehensive job execution logging and auditable records.",
+  "description_word_count": 115,
+  "number_of_files": 31,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Job History Management and Utility Functions\n\nDESCRIPTION: This Hadoop MapReduce cluster's 'jobhistory' directory logs job execution events, utilizing Java classes implementing 'HistoryEvent' for diverse job-related events. These events are converted into Avro and YARN TimelineEvent formats for comprehensive job tracking and monitoring. The 'util' directory provides host-related operations and job history conversion methods, enhancing job tracking and logging functionality. HostUtil.java generates task log URLs and extracts hostnames, while JobHistoryEventUtils.java converts MapReduce counters into JSON and TimelineMetrics formats. This architecture ensures scalability, maintainability, and reliability, leveraging Java and Avro technologies. The coordinator pattern is evident in the JobTracker's role, while the worker pattern is seen in TaskTrackers. Data integrity and security are maintained through comprehensive job execution logging and auditable records.",
+  "algorithm": "ACDC",
+  "files": [
+    "jobhistory/AMStartedEvent.java",
+    "jobhistory/AvroArrayUtils.java",
+    "jobhistory/EventReader.java",
+    "jobhistory/EventWriter.java",
+    "jobhistory/HistoryEvent.java",
+    "jobhistory/HistoryEventHandler.java",
+    "jobhistory/HistoryViewer.java",
+    "jobhistory/HistoryViewerPrinter.java",
+    "jobhistory/HumanReadableHistoryViewerPrinter.java",
+    "jobhistory/JSONHistoryViewerPrinter.java",
+    "jobhistory/JobFinishedEvent.java",
+    "jobhistory/JobHistoryParser.java",
+    "jobhistory/JobInfoChangeEvent.java",
+    "jobhistory/JobInitedEvent.java",
+    "jobhistory/JobPriorityChangeEvent.java",
+    "jobhistory/JobQueueChangeEvent.java",
+    "jobhistory/JobStatusChangedEvent.java",
+    "jobhistory/JobSubmittedEvent.java",
+    "jobhistory/JobUnsuccessfulCompletionEvent.java",
+    "jobhistory/MapAttemptFinishedEvent.java",
+    "jobhistory/NormalizedResourceEvent.java",
+    "jobhistory/ReduceAttemptFinishedEvent.java",
+    "jobhistory/TaskAttemptFinishedEvent.java",
+    "jobhistory/TaskAttemptStartedEvent.java",
+    "jobhistory/TaskAttemptUnsuccessfulCompletionEvent.java",
+    "jobhistory/TaskFailedEvent.java",
+    "jobhistory/TaskFinishedEvent.java",
+    "jobhistory/TaskStartedEvent.java",
+    "jobhistory/TaskUpdatedEvent.java",
+    "util/HostUtil.java",
+    "util/JobHistoryEventUtils.java"
+  ]
+}

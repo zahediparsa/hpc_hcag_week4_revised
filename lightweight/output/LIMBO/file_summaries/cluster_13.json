@@ -1,0 +1,14 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 13,
+    "class": "org.apache.hadoop.mapreduce.QueueInfo",
+    "path": "QueueInfo.java",
+    "file_name": "QueueInfo.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to store and manage information about job queues in the Hadoop MapReduce framework. This includes the queue name, scheduling information, queue state, job statuses, and child queues.\n\nCORE LOGIC:\nThe class implements the Writable interface to handle serialization and deserialization. It has several constructors to initialize the queue information with different levels of detail. It also includes methods to set and get the queue name, scheduling information, state, job statuses, and children. The readFields and write methods are used for deserializing and serializing the object, respectively.\n\nINPUTS/OUTPUTS:\nThe class takes in several inputs during initialization, including queue name, scheduling information, queue state, job statuses, and a list of child queues. It outputs this information via getter methods and also implements serialization through the readFields and write methods for DataInput and DataOutput.\n\nDEPENDENCIES:\nThe class depends on several Hadoop classes, including Text, Writable, WritableUtils, and Properties. It also uses java.util.ArrayList, java.util.List, and java.util.Properties from the standard Java library. The QueueState enum is assumed to be defined elsewhere in the Hadoop MapReduce codebase.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

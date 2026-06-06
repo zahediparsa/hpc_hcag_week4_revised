@@ -1,0 +1,50 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 10,
+    "class": "org.apache.hadoop.mapreduce.JobContext",
+    "path": "JobContext.java",
+    "file_name": "JobContext.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY: This code chunk defines the `JobContext` interface in Apache Hadoop MapReduce. It provides a read-only view of job information to tasks while they are running.\n\nCORE LOGIC: The interface includes methods to retrieve various job configurations, such as job ID, number of reduce tasks, working directory, input/output classes, job name, input/output formats, partitioner, comparator, job setup/cleanup requirements, profiling settings, user information, distributed cache entries, maximum task attempts, etc.\n\nINPUTS/OUTPUTS: The interface does not directly handle data inputs or outputs. Instead, it provides access to configuration parameters and settings that influence how data is processed during a MapReduce job.\n\nDEPENDENCIES: The interface depends on several Hadoop classes, including `Configuration`, `Credentials`, `JobID`, `Path`, `RawComparator`, `Mapper`, `Reducer`, `InputFormat`, `OutputFormat`, and `Partitioner`. It also uses classes from Java's standard library, such as `IOException`, `URI`, and `ClassNotFoundException`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 10,
+    "class": "org.apache.hadoop.mapreduce.lib.chain.ChainMapContextImpl",
+    "path": "lib/chain/ChainMapContextImpl.java",
+    "file_name": "ChainMapContextImpl.java",
+    "directory": "lib/chain",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class, `ChainMapContextImpl`, is to serve as a wrapper for the underlying `MapContext` in Apache Hadoop MapReduce, providing additional functionality related to record readers, record writers, and configuration.\n\nCORE LOGIC:\nThis class implements the `MapContext` interface, delegating most of its functionality to the underlying `base` context. It overrides methods related to record readers (`reader`), record writers (`output`), and configuration (`conf`). It provides methods to get and set current key and value, advance to the next key-value pair, get input split, counters, output committer, write key-value pairs, and retrieve various context-related information.\n\nINPUTS/OUTPUTS:\n- Inputs: The class takes in a `TaskInputOutputContext<KEYIN, VALUEIN, KEYOUT, VALUEOUT> base` context, a `RecordReader<KEYIN, VALUEIN>` for reading input data, a `RecordWriter<KEYOUT, VALUEOUT>` for writing output data, and a `Configuration` object for configuration settings.\n- Outputs: It does not produce any new outputs beyond delegating calls to the underlying `base` context and providing additional functionality through its overridden methods.\n\nDEPENDENCIES:\n- Imported classes: The class imports a wide range of Hadoop MapReduce classes, including `Configuration`, `Counter`, `InputFormat`, `InputSplit`, `JobID`, `Mapper`, `MapContext`, `OutputCommitter`, `OutputFormat`, `Partitioner`, `RecordReader`, `RecordWriter`, `Reducer`, `TaskAttemptID`, `TaskInputOutputContext`, and `Credentials`.\n- Collaborator classes: The primary collaborator is the `base` context of type `TaskInputOutputContext<KEYIN, VALUEIN, KEYOUT, VALUEOUT>`, along with other Hadoop MapReduce classes for various functionalities.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 10,
+    "class": "org.apache.hadoop.mapreduce.lib.chain.ChainReduceContextImpl",
+    "path": "lib/chain/ChainReduceContextImpl.java",
+    "file_name": "ChainReduceContextImpl.java",
+    "directory": "lib/chain",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to serve as a wrapper for the ReduceContext interface, delegating most of its functionality to the underlying context while overriding methods related to record writer and configuration.\n\nCORE LOGIC:\nThe class ChainReduceContextImpl implements the ReduceContext interface, which is part of Apache Hadoop MapReduce. It holds a reference to a base ReduceContext object and a RecordWriter object. It overrides several methods from ReduceContext, delegating most of them to the base object, but overriding methods like write(KEYOUT key, VALUEOUT value) to use the provided RecordWriter object.\n\nINPUTS/OUTPUTS:\nThe class takes a ReduceContext object and a RecordWriter object as inputs. It does not directly handle input or output data flow, but it facilitates the writing of output data by delegating calls to the write method to the provided RecordWriter object.\n\nDEPENDENCIES:\nThe class depends on several classes from the Apache Hadoop MapReduce library, including:\n\n- Configuration\n- Counter\n- InputFormat\n- JobID\n- Mapper\n- OutputCommitter\n- OutputFormat\n- Partitioner\n- RecordWriter\n- ReduceContext\n- Reducer\n- TaskAttemptID\n- Credentials\n\nIt also uses classes from the Java standard library, such as Path, URI, and Enum.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 10,
+    "class": "org.apache.hadoop.mapreduce.task.JobContextImpl",
+    "path": "task/JobContextImpl.java",
+    "file_name": "JobContextImpl.java",
+    "directory": "task",
+    "summary": "KEY FUNCTIONALITY:\nThis Java class, `JobContextImpl`, is a part of Apache Hadoop MapReduce framework. It provides a read-only view of the job configuration to the tasks while they are running.\n\nCORE LOGIC:\n- The class initializes with a Hadoop `Configuration` object and a `JobID`.\n- It provides getter methods for various job configuration parameters like input format, mapper, reducer classes, output format, partitioner, key and value classes, job name, job setup and cleanup needs, task cleanup needs, job jar path, cache archives and files, localized cache archives and files, timestamps, maximum attempts for map and reduce tasks, profiling settings, and user credentials.\n- It uses Hadoop's `Configuration` class to retrieve these settings, which are typically set in the job configuration.\n\nINPUTS/OUTPUTS:\n- Inputs: The class primarily uses a `Configuration` object and a `JobID` to initialize.\n- Outputs: It provides various job configuration details as outputs through its getter methods. These include job-specific classes (like InputFormat, Mapper, Reducer, OutputFormat, Partitioner), key and value classes, job name, job jar path, cache details (archives, files, localized archives, localized files), timestamps, maximum attempts for map and reduce tasks, profiling settings, and user credentials.\n\nDEPENDENCIES:\n- The class depends on several Hadoop core classes and interfaces, including `Configuration`, `JobID`, `UserGroupInformation`, `Credentials`, `Path`, `RawComparator`, `Mapper`, `Reducer`, `OutputFormat`, `InputFormat`, `Partitioner`, and various Hadoop-specific configuration constants and attributes (`MRJobConfig`).\n- It also uses Apache Commons Lang's `StringUtils` for string operations.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

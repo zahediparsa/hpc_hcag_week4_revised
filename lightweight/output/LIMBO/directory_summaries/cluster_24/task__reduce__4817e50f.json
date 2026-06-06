@@ -1,0 +1,79 @@
+{
+  "type": "directory",
+  "cluster_id": 24,
+  "directory": "task/reduce",
+  "title": "Reduce Task Management in Hadoop MapReduce",
+  "description": "The 'task/reduce' directory in Hadoop MapReduce is pivotal for the reduce phase, focusing on fetching and merging map outputs. It employs a multi-threaded approach with 'EventFetcher' and 'Fetcher' classes for continuous map completion event fetching and map output data retrieval. 'IFileWrappedMapOutput' and its implementations manage map outputs, while 'MapHost' and 'MapOutput' handle map task states and outputs. 'ShuffleSchedulerImpl' manages the shuffle phase, assigning tasks, tracking progress, and handling failures, demonstrating proactive fault management. This architecture ensures efficient and reliable data transfer from map to reduce tasks, integrating seamlessly within Hadoop's broader framework.",
+  "summary": "TITLE: Reduce Task Management in Hadoop MapReduce\nDESCRIPTION: The 'task/reduce' directory in Hadoop MapReduce is pivotal for the reduce phase, focusing on fetching and merging map outputs. It employs a multi-threaded approach with 'EventFetcher' and 'Fetcher' classes for continuous map completion event fetching and map output data retrieval. 'IFileWrappedMapOutput' and its implementations manage map outputs, while 'MapHost' and 'MapOutput' handle map task states and outputs. 'ShuffleSchedulerImpl' manages the shuffle phase, assigning tasks, tracking progress, and handling failures, demonstrating proactive fault management. This architecture ensures efficient and reliable data transfer from map to reduce tasks, integrating seamlessly within Hadoop's broader framework.",
+  "number_of_children": 13,
+  "number_of_intermediate_summaries": 2,
+  "children": [
+    {
+      "type": "file",
+      "name": "EventFetcher.java"
+    },
+    {
+      "type": "file",
+      "name": "Fetcher.java"
+    },
+    {
+      "type": "file",
+      "name": "IFileWrappedMapOutput.java"
+    },
+    {
+      "type": "file",
+      "name": "InMemoryMapOutput.java"
+    },
+    {
+      "type": "file",
+      "name": "InMemoryReader.java"
+    },
+    {
+      "type": "file",
+      "name": "LocalFetcher.java"
+    },
+    {
+      "type": "file",
+      "name": "MapHost.java"
+    },
+    {
+      "type": "file",
+      "name": "MapOutput.java"
+    },
+    {
+      "type": "file",
+      "name": "MergeManager.java"
+    },
+    {
+      "type": "file",
+      "name": "OnDiskMapOutput.java"
+    },
+    {
+      "type": "file",
+      "name": "Shuffle.java"
+    },
+    {
+      "type": "file",
+      "name": "ShuffleClientMetrics.java"
+    },
+    {
+      "type": "file",
+      "name": "ShuffleSchedulerImpl.java"
+    }
+  ],
+  "intermediate_summaries": [
+    {
+      "type": "intermediate",
+      "name": "task/reduce chunk 0",
+      "summary": "The `task/reduce` node focuses on the reduce phase of a MapReduce job in Apache Hadoop, specifically on fetching and merging map outputs. The `EventFetcher` class, extending `Thread`, is responsible for continuously fetching map completion events from `TaskTracker` using `TaskUmbilicalProtocol` and `ShuffleScheduler`. The `Fetcher` class, also a thread, manages fetching map outputs from remote hosts via `ShuffleSchedulerImpl`, handling errors and retries. \n\n`IFileWrappedMapOutput` and its in-memory (`InMemoryMapOutput`) and on-disk (`OnDiskMapOutput`) implementations provide a common interface for handling map outputs, with the former extending `MapOutput` and the latter wrapping `IFileWrappedMapOutput`. `InMemoryReader` reads map-outputs stored in memory, while `LocalFetcher` facilitates local filesystem fetch operations for `LocalJobRunner`.\n\n`MapHost` manages the state of a host in a MapReduce task, tracking map outputs and handling host availability. `MapOutput` is an abstract class for managing map outputs, including methods for shuffling, committing, and aborting operations. `MergeManager` is an interface for managing resources during the shuffle phase, with methods for waiting for resources, reserving resources for shuffling, and closing the merge process.\n\nThese components collaborate to ensure efficient and reliable data transfer from map tasks to reduce tasks, with shared responsibilities in fetching, merging, and managing map outputs. The architecture relies heavily on Hadoop's internal classes and adheres to its API, indicating an internal, potentially unstable implementation.",
+      "number_of_children": 12
+    },
+    {
+      "type": "intermediate",
+      "name": "task/reduce chunk 1",
+      "summary": "The `ShuffleSchedulerImpl` class in Apache Hadoop MapReduce plays a crucial role in managing the shuffle phase, a critical part of the MapReduce process. It's responsible for assigning map tasks to hosts, tracking their progress, and handling failures, thereby ensuring efficient data processing. This class collaborates with several other components, including `TaskCompletionEvent`, `MapHost`, `TaskAttemptID`, `MapOutput`, and `Counters`, to maintain the integrity and efficiency of the shuffle process. It also incorporates a penalty system for hosts that repeatedly fail, demonstrating its proactive fault management capability. The class's dependencies, such as `ShuffleScheduler<K,V>`, `TaskStatus`, and `ExceptionReporter`, highlight its integration within the broader Hadoop MapReduce framework, showcasing its shared responsibility in maintaining the overall system's performance and reliability.",
+      "number_of_children": 1
+    }
+  ],
+  "raw_response": "TITLE: Reduce Task Management in Hadoop MapReduce\n\nDESCRIPTION:\nThe 'task/reduce' directory in Hadoop MapReduce is pivotal for the reduce phase, focusing on fetching and merging map outputs. It employs a multi-threaded approach with 'EventFetcher' and 'Fetcher' classes for continuous map completion event fetching and map output data retrieval. 'IFileWrappedMapOutput' and its implementations manage map outputs, while 'MapHost' and 'MapOutput' handle map task states and outputs. 'ShuffleSchedulerImpl' manages the shuffle phase, assigning tasks, tracking progress, and handling failures, demonstrating proactive fault management. This architecture ensures efficient and reliable data transfer from map to reduce tasks, integrating seamlessly within Hadoop's broader framework."
+}

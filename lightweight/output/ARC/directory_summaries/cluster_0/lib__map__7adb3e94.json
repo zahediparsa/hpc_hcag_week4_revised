@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "lib/map",
+  "title": "Hadoop MapReduce Inverse and Token Counter Mappers",
+  "description": "The 'lib/map' directory in Hadoop MapReduce architecture houses two key Mapper classes: InverseMapper and TokenCounterMapper. The InverseMapper swaps the keys and values of input data, serving as a utility mapper for specific use-cases. It extends the Mapper abstract class from Hadoop's MapReduce library, with its core logic implemented in the overridden 'map' method. The TokenCounterMapper, on the other hand, tokenizes input text values and emits each word with a count of 1. It also extends the Mapper abstract class, with the 'map' method utilizing a StringTokenizer for word extraction and emitting each word with a count of 1 using IntWritable. Both Mappers depend on Hadoop's core classes for exception handling, text and integer writable objects, and context management, adhering to Hadoop's public and stable API guidelines.",
+  "summary": "TITLE: Hadoop MapReduce Inverse and Token Counter Mappers\nDESCRIPTION: The 'lib/map' directory in Hadoop MapReduce architecture houses two key Mapper classes: InverseMapper and TokenCounterMapper. The InverseMapper swaps the keys and values of input data, serving as a utility mapper for specific use-cases. It extends the Mapper abstract class from Hadoop's MapReduce library, with its core logic implemented in the overridden 'map' method. The TokenCounterMapper, on the other hand, tokenizes input text values and emits each word with a count of 1. It also extends the Mapper abstract class, with the 'map' method utilizing a StringTokenizer for word extraction and emitting each word with a count of 1 using IntWritable. Both Mappers depend on Hadoop's core classes for exception handling, text and integer writable objects, and context management, adhering to Hadoop's public and stable API guidelines.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "InverseMapper.java"
+    },
+    {
+      "type": "file",
+      "name": "TokenCounterMapper.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Inverse and Token Counter Mappers\n\nDESCRIPTION:\nThe 'lib/map' directory in Hadoop MapReduce architecture houses two key Mapper classes: InverseMapper and TokenCounterMapper. The InverseMapper swaps the keys and values of input data, serving as a utility mapper for specific use-cases. It extends the Mapper abstract class from Hadoop's MapReduce library, with its core logic implemented in the overridden 'map' method. The TokenCounterMapper, on the other hand, tokenizes input text values and emits each word with a count of 1. It also extends the Mapper abstract class, with the 'map' method utilizing a StringTokenizer for word extraction and emitting each word with a count of 1 using IntWritable. Both Mappers depend on Hadoop's core classes for exception handling, text and integer writable objects, and context management, adhering to Hadoop's public and stable API guidelines."
+}

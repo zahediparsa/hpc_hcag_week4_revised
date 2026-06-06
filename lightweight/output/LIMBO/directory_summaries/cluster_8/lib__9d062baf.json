@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 8,
+  "directory": "lib",
+  "title": "Hadoop MapReduce Output Directory",
+  "description": "The 'lib/output' directory in Hadoop MapReduce architecture is responsible for managing the output of MapReduce jobs. It contains custom output formats like 'FileOutputFormat', 'SequenceFileOutputFormat', and 'SkipAdaptiveOutputFormat'. These formats collaborate by extending the OutputFormat class and overriding methods such as getOutputName and getOutputCompressorClass to specify the output file's name and compression type. The directory also includes 'SequenceFileOutputFormat' and 'SequenceFileAsInputFormat' for handling Sequence Files. This structure exemplifies a clear architectural role in formatting and preparing the output data post-MapReduce processing, demonstrating the use of the Strategy pattern for handling diverse output requirements.",
+  "summary": "TITLE: Hadoop MapReduce Output Directory\nDESCRIPTION: The 'lib/output' directory in Hadoop MapReduce architecture is responsible for managing the output of MapReduce jobs. It contains custom output formats like 'FileOutputFormat', 'SequenceFileOutputFormat', and 'SkipAdaptiveOutputFormat'. These formats collaborate by extending the OutputFormat class and overriding methods such as getOutputName and getOutputCompressorClass to specify the output file's name and compression type. The directory also includes 'SequenceFileOutputFormat' and 'SequenceFileAsInputFormat' for handling Sequence Files. This structure exemplifies a clear architectural role in formatting and preparing the output data post-MapReduce processing, demonstrating the use of the Strategy pattern for handling diverse output requirements.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/input"
+    },
+    {
+      "type": "directory",
+      "name": "lib/join"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Output Directory\n\nDESCRIPTION: The 'lib/output' directory in Hadoop MapReduce architecture is responsible for managing the output of MapReduce jobs. It contains custom output formats like 'FileOutputFormat', 'SequenceFileOutputFormat', and 'SkipAdaptiveOutputFormat'. These formats collaborate by extending the OutputFormat class and overriding methods such as getOutputName and getOutputCompressorClass to specify the output file's name and compression type. The directory also includes 'SequenceFileOutputFormat' and 'SequenceFileAsInputFormat' for handling Sequence Files. This structure exemplifies a clear architectural role in formatting and preparing the output data post-MapReduce processing, demonstrating the use of the Strategy pattern for handling diverse output requirements."
+}

@@ -1,0 +1,21 @@
+{
+  "cluster_id": 77,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture comprises a NameNode, DataNodes, and TaskTrackers, forming a master-worker pattern. The NameNode, utilizing Java and Hadoop APIs, manages file system namespace, regulates access, and oversees job scheduling and execution. DataNodes store HDFS data blocks, interacting with the NameNode for data retrieval and storage. TaskTrackers execute MapReduce tasks, reporting to the JobTracker (now integrated into the NameNode). This architecture ensures scalability through data and task parallelism, maintainability via modular design, and reliability through fault tolerance and data replication. The ManifestPrinter utility, adhering to the utility pattern, supports debugging and monitoring, enhancing transparency and troubleshooting. It uses command-line arguments and Java, demonstrating the Observer pattern by reacting to MapReduce job state changes.",
+  "description_word_count": 115,
+  "number_of_files": 1,
+  "number_of_directories": 6,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster architecture comprises a NameNode, DataNodes, and TaskTrackers, forming a master-worker pattern. The NameNode, utilizing Java and Hadoop APIs, manages file system namespace, regulates access, and oversees job scheduling and execution. DataNodes store HDFS data blocks, interacting with the NameNode for data retrieval and storage. TaskTrackers execute MapReduce tasks, reporting to the JobTracker (now integrated into the NameNode). This architecture ensures scalability through data and task parallelism, maintainability via modular design, and reliability through fault tolerance and data replication. The ManifestPrinter utility, adhering to the utility pattern, supports debugging and monitoring, enhancing transparency and troubleshooting. It uses command-line arguments and Java, demonstrating the Observer pattern by reacting to MapReduce job state changes.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/output/committer/manifest/files/ManifestPrinter.java"
+  ]
+}

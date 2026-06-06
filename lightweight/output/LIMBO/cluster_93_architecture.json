@@ -1,0 +1,23 @@
+{
+  "cluster_id": 93,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "This Hadoop MapReduce cluster architecture comprises distinct components that work collaboratively for distributed data processing. The JobTracker and TaskTrackers form the core, with JobTracker managing job scheduling and TaskTrackers executing map and reduce tasks. The JobSplit directory manages input split metadata, ensuring efficient job scheduling and task execution. It includes components like `JobSplit.java`, `TaskSplitMetaInfo`, `TaskSplitIndex`, and `JobSplitWriter.java`, demonstrating a robust metadata management pattern. Hadoop Distributed File System (HDFS) provides reliable, scalable data storage, while the MapReduce programming model enables parallel processing. This architecture ensures high scalability, maintainability, and reliability, leveraging Java for development and Hadoop APIs for interaction. It exemplifies a coordinator-worker pattern, with JobTracker as the coordinator and TaskTrackers as workers, crucial for Hadoop's distributed processing capabilities.",
+  "description_word_count": 120,
+  "number_of_files": 3,
+  "number_of_directories": 2,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: This Hadoop MapReduce cluster architecture comprises distinct components that work collaboratively for distributed data processing. The JobTracker and TaskTrackers form the core, with JobTracker managing job scheduling and TaskTrackers executing map and reduce tasks. The JobSplit directory manages input split metadata, ensuring efficient job scheduling and task execution. It includes components like `JobSplit.java`, `TaskSplitMetaInfo`, `TaskSplitIndex`, and `JobSplitWriter.java`, demonstrating a robust metadata management pattern. Hadoop Distributed File System (HDFS) provides reliable, scalable data storage, while the MapReduce programming model enables parallel processing. This architecture ensures high scalability, maintainability, and reliability, leveraging Java for development and Hadoop APIs for interaction. It exemplifies a coordinator-worker pattern, with JobTracker as the coordinator and TaskTrackers as workers, crucial for Hadoop's distributed processing capabilities.",
+  "algorithm": "LIMBO",
+  "files": [
+    "split/JobSplit.java",
+    "split/JobSplitWriter.java",
+    "split/SplitMetaInfoReader.java"
+  ]
+}

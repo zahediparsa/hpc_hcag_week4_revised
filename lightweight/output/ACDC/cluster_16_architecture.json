@@ -1,0 +1,28 @@
+{
+  "cluster_id": 16,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture comprises multiple interconnected components for efficient distributed processing. The JobTracker manages job scheduling, delegation tokens, and communication via ClientProtocol. TaskTrackers execute tasks, with their status monitored by ClusterMetrics. QueueAclsInfo enforces access control in job queues, while TaskTrackerInfo stores TaskTracker details. LogParams in MapReduce v2 manages log parameters, aiding monitoring. The system leverages Hadoop's DataInput, DataOutput, IOException, Text, Writable interfaces, and DelegationTokenIdentifier, DelegationTokenSecretManager, and DelegationTokenSelector for secure token management. This architecture ensures scalability, maintainability, reliability, and security, utilizing a coordinator-worker pattern with Hadoop's core libraries and Java classes.",
+  "description_word_count": 92,
+  "number_of_files": 8,
+  "number_of_directories": 6,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: The Hadoop MapReduce cluster architecture comprises multiple interconnected components for efficient distributed processing. The JobTracker manages job scheduling, delegation tokens, and communication via ClientProtocol. TaskTrackers execute tasks, with their status monitored by ClusterMetrics. QueueAclsInfo enforces access control in job queues, while TaskTrackerInfo stores TaskTracker details. LogParams in MapReduce v2 manages log parameters, aiding monitoring. The system leverages Hadoop's DataInput, DataOutput, IOException, Text, Writable interfaces, and DelegationTokenIdentifier, DelegationTokenSecretManager, and DelegationTokenSelector for secure token management. This architecture ensures scalability, maintainability, reliability, and security, utilizing a coordinator-worker pattern with Hadoop's core libraries and Java classes.",
+  "algorithm": "ACDC",
+  "files": [
+    "ClusterMetrics.java",
+    "QueueAclsInfo.java",
+    "TaskTrackerInfo.java",
+    "protocol/ClientProtocol.java",
+    "security/token/delegation/DelegationTokenIdentifier.java",
+    "security/token/delegation/DelegationTokenSecretManager.java",
+    "security/token/delegation/DelegationTokenSelector.java",
+    "v2/LogParams.java"
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 99,
+    "class": "org.apache.hadoop.mapreduce.util.ProcessTree",
+    "path": "util/ProcessTree.java",
+    "file_name": "ProcessTree.java",
+    "directory": "util",
+    "summary": "KEY FUNCTIONALITY:\nThe main functionality of this code chunk is to manage and terminate process trees and process groups in a Unix-like system using shell commands.\n\nCORE LOGIC:\nThe core logic revolves around the `destroy` method, which determines whether to destroy a process or a process group based on the `isProcessGroup` flag. It then calls either `destroyProcess` or `destroyProcessGroup` methods. These methods in turn call `terminateProcess` or `terminateProcessGroup` to send a SIGTERM signal, allowing the processes to gracefully shut down. If the processes do not terminate within a specified time, a SIGKILL signal is sent. The `sigKill` method handles this, optionally running in a separate thread. The `isAlive` and `isProcessGroupAlive` methods check if a process or process group is still running by attempting to send a SIG-0 signal, which does not cause any action but returns an exit code indicating success (0) if the process or any member of the process group exists.\n\nINPUTS/OUTPUTS:\nThe inputs to these methods are process IDs (pids) or process group IDs, along with parameters controlling the termination process, such as sleep time before sending SIGKILL. The outputs are primarily logged messages indicating the status of the termination process, including whether signals were successfully sent and received exit codes from shell commands.\n\nDEPENDENCIES:\nThe key dependencies in this chunk are:\n- `org.apache.hadoop.util.Shell.ShellCommandExecutor`: Used to execute shell commands for sending signals to processes.\n- `org.slf4j.Logger` and `org.slf4j.LoggerFactory`: For logging messages during the process termination.\n- `java.io.IOException`: For handling potential I/O exceptions when executing shell commands.\n- `java.lang.Thread` and `java.lang.Thread.sleep`: For implementing background process termination.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

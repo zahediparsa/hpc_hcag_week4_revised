@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 15,
+  "directory": ".",
+  "title": "Hadoop MapReduce Library Integration",
+  "description": "The 'lib' directory in Hadoop MapReduce architecture contains Java files for customizing MapReduce functionality. It includes ValueAggregatorMapper.java for data aggregation, FieldSelectionMapper.java for field selection, DelegatingMapper and TaggedInputSplit for diverse input paths, and WrappedMapper for extending Mapper functionality. This directory exemplifies the Adapter and Wrapper patterns, showcasing how Hadoop MapReduce uses custom mappers to cater to varied data processing needs.",
+  "summary": "TITLE: Hadoop MapReduce Library Integration\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce architecture contains Java files for customizing MapReduce functionality. It includes ValueAggregatorMapper.java for data aggregation, FieldSelectionMapper.java for field selection, DelegatingMapper and TaggedInputSplit for diverse input paths, and WrappedMapper for extending Mapper functionality. This directory exemplifies the Adapter and Wrapper patterns, showcasing how Hadoop MapReduce uses custom mappers to cater to varied data processing needs.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Library Integration\n\nDESCRIPTION: The 'lib' directory in Hadoop MapReduce architecture contains Java files for customizing MapReduce functionality. It includes ValueAggregatorMapper.java for data aggregation, FieldSelectionMapper.java for field selection, DelegatingMapper and TaggedInputSplit for diverse input paths, and WrappedMapper for extending Mapper functionality. This directory exemplifies the Adapter and Wrapper patterns, showcasing how Hadoop MapReduce uses custom mappers to cater to varied data processing needs."
+}

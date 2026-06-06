@@ -1,0 +1,26 @@
+{
+  "cluster_id": 19,
+  "title": "Hadoop MapReduce OutputFormat Library",
+  "description": "The Hadoop MapReduce OutputFormat Library, located in the 'lib/output' directory, offers diverse output functionalities through Java classes extending Hadoop's OutputFormat. Components include FilterOutputFormat, LazyOutputFormat, NullOutputFormat, and PathOutputCommitter, facilitating customizable output handling. These classes interact within the MapReduce framework, demonstrating the Strategy pattern, enabling interchangeable output strategies. The library ensures scalability and maintainability, leveraging Hadoop's core classes for seamless integration. It supports performance optimization through delayed output generation and data filtering, while ensuring reliability via robust committer management. Technologies used include Java and Hadoop's MapReduce framework.",
+  "description_word_count": 86,
+  "number_of_files": 6,
+  "number_of_directories": 4,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce OutputFormat Library\n\nDESCRIPTION: The Hadoop MapReduce OutputFormat Library, located in the 'lib/output' directory, offers diverse output functionalities through Java classes extending Hadoop's OutputFormat. Components include FilterOutputFormat, LazyOutputFormat, NullOutputFormat, and PathOutputCommitter, facilitating customizable output handling. These classes interact within the MapReduce framework, demonstrating the Strategy pattern, enabling interchangeable output strategies. The library ensures scalability and maintainability, leveraging Hadoop's core classes for seamless integration. It supports performance optimization through delayed output generation and data filtering, while ensuring reliability via robust committer management. Technologies used include Java and Hadoop's MapReduce framework.",
+  "algorithm": "LIMBO",
+  "files": [
+    "OutputFormat.java",
+    "lib/db/DBOutputFormat.java",
+    "lib/output/FilterOutputFormat.java",
+    "lib/output/LazyOutputFormat.java",
+    "lib/output/NullOutputFormat.java",
+    "lib/output/PathOutputCommitter.java"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "cluster_id": 5,
+  "title": "Task Identification and Logging in Hadoop MapReduce",
+  "description": "Hadoop MapReduce employs a robust task identification system, utilizing 'TaskAttemptID.java' and 'TaskID.java' classes for unique task tracking within jobs. 'TaskAttemptID' combines 'TaskID' and an attempt number, ensuring each task attempt's uniqueness. 'TaskID' identifies Map or Reduce tasks, encapsulating job ID, task type, and task number. Both classes ensure immutability and provide methods for comparison, serialization, and deserialization. 'TaskType.java' defines task types, including MAP, REDUCE, JOB_SETUP, JOB_CLEANUP, and TASK_CLEANUP. This system, built with Java, ensures scalability, maintainability, and reliability by enabling efficient task tracking and management in Hadoop MapReduce jobs.",
+  "description_word_count": 92,
+  "number_of_files": 30,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Task Identification and Logging in Hadoop MapReduce\n\nDESCRIPTION: Hadoop MapReduce employs a robust task identification system, utilizing 'TaskAttemptID.java' and 'TaskID.java' classes for unique task tracking within jobs. 'TaskAttemptID' combines 'TaskID' and an attempt number, ensuring each task attempt's uniqueness. 'TaskID' identifies Map or Reduce tasks, encapsulating job ID, task type, and task number. Both classes ensure immutability and provide methods for comparison, serialization, and deserialization. 'TaskType.java' defines task types, including MAP, REDUCE, JOB_SETUP, JOB_CLEANUP, and TASK_CLEANUP. This system, built with Java, ensures scalability, maintainability, and reliability by enabling efficient task tracking and management in Hadoop MapReduce jobs.",
+  "algorithm": "ARC",
+  "files": [
+    "TaskAttemptID.java",
+    "TaskID.java",
+    "TaskType.java",
+    "jobhistory/AMStartedEvent.java",
+    "jobhistory/EventReader.java",
+    "jobhistory/EventWriter.java",
+    "jobhistory/HistoryEvent.java",
+    "jobhistory/HistoryEventHandler.java",
+    "jobhistory/HistoryViewer.java",
+    "jobhistory/HistoryViewerPrinter.java",
+    "jobhistory/HumanReadableHistoryViewerPrinter.java",
+    "jobhistory/JSONHistoryViewerPrinter.java",
+    "jobhistory/JobFinishedEvent.java",
+    "jobhistory/JobHistoryParser.java",
+    "jobhistory/JobInfoChangeEvent.java",
+    "jobhistory/JobInitedEvent.java",
+    "jobhistory/JobPriorityChangeEvent.java",
+    "jobhistory/JobQueueChangeEvent.java",
+    "jobhistory/JobStatusChangedEvent.java",
+    "jobhistory/JobUnsuccessfulCompletionEvent.java",
+    "jobhistory/NormalizedResourceEvent.java",
+    "jobhistory/ReduceAttemptFinishedEvent.java",
+    "jobhistory/TaskAttemptFinishedEvent.java",
+    "jobhistory/TaskAttemptStartedEvent.java",
+    "jobhistory/TaskAttemptUnsuccessfulCompletionEvent.java",
+    "jobhistory/TaskFailedEvent.java",
+    "jobhistory/TaskFinishedEvent.java",
+    "jobhistory/TaskStartedEvent.java",
+    "jobhistory/TaskUpdatedEvent.java",
+    "util/JobHistoryEventUtils.java"
+  ]
+}

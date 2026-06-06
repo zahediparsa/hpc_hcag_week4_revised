@@ -1,0 +1,38 @@
+{
+  "type": "directory",
+  "cluster_id": 1,
+  "directory": "lib/partition",
+  "title": "Key-Based Partitioning in Hadoop MapReduce",
+  "description": "The 'lib/partition' directory in Hadoop MapReduce architecture houses custom partitioners that enable key-based partitioning for data distribution across reduce tasks. These partitioners include BinaryPartitioner, HashPartitioner, KeyFieldBasedPartitioner, and RehashPartitioner, each with unique partitioning strategies. BinaryPartitioner and HashPartitioner use simple byte subarray and hash code methods, respectively. KeyFieldBasedPartitioner offers Unix-like sorting features, allowing users to specify key fields for partitioning. RehashPartitioner enhances the uniformity of data distribution by rehashing the key's hash code. All partitioners extend the Hadoop `Partitioner` class and utilize Hadoop's configuration and logging utilities, demonstrating a clear application of the Strategy design pattern to accommodate diverse partitioning needs.",
+  "summary": "TITLE: Key-Based Partitioning in Hadoop MapReduce\nDESCRIPTION: The 'lib/partition' directory in Hadoop MapReduce architecture houses custom partitioners that enable key-based partitioning for data distribution across reduce tasks. These partitioners include BinaryPartitioner, HashPartitioner, KeyFieldBasedPartitioner, and RehashPartitioner, each with unique partitioning strategies. BinaryPartitioner and HashPartitioner use simple byte subarray and hash code methods, respectively. KeyFieldBasedPartitioner offers Unix-like sorting features, allowing users to specify key fields for partitioning. RehashPartitioner enhances the uniformity of data distribution by rehashing the key's hash code. All partitioners extend the Hadoop `Partitioner` class and utilize Hadoop's configuration and logging utilities, demonstrating a clear application of the Strategy design pattern to accommodate diverse partitioning needs.",
+  "number_of_children": 6,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "BinaryPartitioner.java"
+    },
+    {
+      "type": "file",
+      "name": "HashPartitioner.java"
+    },
+    {
+      "type": "file",
+      "name": "KeyFieldBasedComparator.java"
+    },
+    {
+      "type": "file",
+      "name": "KeyFieldBasedPartitioner.java"
+    },
+    {
+      "type": "file",
+      "name": "KeyFieldHelper.java"
+    },
+    {
+      "type": "file",
+      "name": "RehashPartitioner.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Key-Based Partitioning in Hadoop MapReduce\n\nDESCRIPTION:\nThe 'lib/partition' directory in Hadoop MapReduce architecture houses custom partitioners that enable key-based partitioning for data distribution across reduce tasks. These partitioners include BinaryPartitioner, HashPartitioner, KeyFieldBasedPartitioner, and RehashPartitioner, each with unique partitioning strategies. BinaryPartitioner and HashPartitioner use simple byte subarray and hash code methods, respectively. KeyFieldBasedPartitioner offers Unix-like sorting features, allowing users to specify key fields for partitioning. RehashPartitioner enhances the uniformity of data distribution by rehashing the key's hash code. All partitioners extend the Hadoop `Partitioner` class and utilize Hadoop's configuration and logging utilities, demonstrating a clear application of the Strategy design pattern to accommodate diverse partitioning needs."
+}

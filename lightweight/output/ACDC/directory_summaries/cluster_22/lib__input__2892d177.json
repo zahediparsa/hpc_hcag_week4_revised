@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 22,
+  "directory": "lib/input",
+  "title": "Key-Value Text Input Format",
+  "description": "The 'lib/input' directory in Hadoop MapReduce architecture contains classes responsible for handling key-value pairs in plain text files. The 'KeyValueLineRecordReader.java' class implements a RecordReader for key-value pairs, parsing lines based on a specified separator. 'KeyValueTextInputFormat.java' extends 'FileInputFormat' to handle text files, determining file splittability and creating 'KeyValueLineRecordReader' instances. 'NLineInputFormat.java' is a custom input format that splits input files into splits, each containing a specified number of lines. These components collaborate to read, split, and prepare text files for MapReduce processing, employing patterns like Strategy and Factory.",
+  "summary": "TITLE: Key-Value Text Input Format\nDESCRIPTION: The 'lib/input' directory in Hadoop MapReduce architecture contains classes responsible for handling key-value pairs in plain text files. The 'KeyValueLineRecordReader.java' class implements a RecordReader for key-value pairs, parsing lines based on a specified separator. 'KeyValueTextInputFormat.java' extends 'FileInputFormat' to handle text files, determining file splittability and creating 'KeyValueLineRecordReader' instances. 'NLineInputFormat.java' is a custom input format that splits input files into splits, each containing a specified number of lines. These components collaborate to read, split, and prepare text files for MapReduce processing, employing patterns like Strategy and Factory.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "KeyValueLineRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "KeyValueTextInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "NLineInputFormat.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Key-Value Text Input Format\n\nDESCRIPTION:\nThe 'lib/input' directory in Hadoop MapReduce architecture contains classes responsible for handling key-value pairs in plain text files. The 'KeyValueLineRecordReader.java' class implements a RecordReader for key-value pairs, parsing lines based on a specified separator. 'KeyValueTextInputFormat.java' extends 'FileInputFormat' to handle text files, determining file splittability and creating 'KeyValueLineRecordReader' instances. 'NLineInputFormat.java' is a custom input format that splits input files into splits, each containing a specified number of lines. These components collaborate to read, split, and prepare text files for MapReduce processing, employing patterns like Strategy and Factory."
+}

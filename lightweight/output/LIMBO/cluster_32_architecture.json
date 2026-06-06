@@ -1,0 +1,24 @@
+{
+  "cluster_id": 32,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "This Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and a NameNode for distributed file system management. The JobTracker coordinates and monitors jobs, assigning tasks to available TaskTrackers. TaskTrackers execute map and reduce tasks, reporting progress back to the JobTracker. The NameNode manages data storage and access, ensuring data reliability and consistency. Hadoop's distributed file system (HDFS) provides scalability and fault tolerance. MapReduce jobs process data in parallel across the cluster, enhancing performance. The architecture employs the Coordinator pattern (JobTracker), Worker pattern (TaskTrackers), and Data model (HDFS). Technologies used include Java for programming, Avro and JSON for data serialization, and YARN for resource management. The architecture ensures maintainability through modular design and reliability via data replication in HDFS. Security is maintained through access control lists and encryption.",
+  "description_word_count": 133,
+  "number_of_files": 4,
+  "number_of_directories": 2,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION: This Hadoop MapReduce cluster architecture comprises a JobTracker, TaskTrackers (now replaced by NodeManagers in YARN), and a NameNode for distributed file system management. The JobTracker coordinates and monitors jobs, assigning tasks to available TaskTrackers. TaskTrackers execute map and reduce tasks, reporting progress back to the JobTracker. The NameNode manages data storage and access, ensuring data reliability and consistency. Hadoop's distributed file system (HDFS) provides scalability and fault tolerance. MapReduce jobs process data in parallel across the cluster, enhancing performance. The architecture employs the Coordinator pattern (JobTracker), Worker pattern (TaskTrackers), and Data model (HDFS). Technologies used include Java for programming, Avro and JSON for data serialization, and YARN for resource management. The architecture ensures maintainability through modular design and reliability via data replication in HDFS. Security is maintained through access control lists and encryption.",
+  "algorithm": "LIMBO",
+  "files": [
+    "jobhistory/EventReader.java",
+    "jobhistory/EventWriter.java",
+    "jobhistory/JobFinishedEvent.java",
+    "jobhistory/JobHistoryParser.java"
+  ]
+}

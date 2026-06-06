@@ -1,0 +1,34 @@
+{
+  "type": "directory",
+  "cluster_id": 5,
+  "directory": ".",
+  "title": "Task Identification and Logging in Hadoop MapReduce",
+  "description": "The 'TaskAttemptID.java' and 'TaskID.java' files define crucial classes for uniquely identifying tasks in a MapReduce job. 'TaskAttemptID' represents a task attempt, combining a 'TaskID' and an attempt number, ensuring each task attempt within a job is uniquely identifiable. 'TaskID', on the other hand, uniquely identifies a Map or Reduce task within a job, encapsulating job ID, task type, and task number. Both classes ensure immutability and provide methods for comparison, serialization, and deserialization. The 'TaskType.java' file defines an enumeration for task types in MapReduce jobs, including MAP, REDUCE, JOB_SETUP, JOB_CLEANUP, and TASK_CLEANUP. These components collaborate to provide a robust task identification system, essential for tracking and managing tasks in Hadoop MapReduce jobs.",
+  "summary": "TITLE: Task Identification and Logging in Hadoop MapReduce\nDESCRIPTION: The 'TaskAttemptID.java' and 'TaskID.java' files define crucial classes for uniquely identifying tasks in a MapReduce job. 'TaskAttemptID' represents a task attempt, combining a 'TaskID' and an attempt number, ensuring each task attempt within a job is uniquely identifiable. 'TaskID', on the other hand, uniquely identifies a Map or Reduce task within a job, encapsulating job ID, task type, and task number. Both classes ensure immutability and provide methods for comparison, serialization, and deserialization. The 'TaskType.java' file defines an enumeration for task types in MapReduce jobs, including MAP, REDUCE, JOB_SETUP, JOB_CLEANUP, and TASK_CLEANUP. These components collaborate to provide a robust task identification system, essential for tracking and managing tasks in Hadoop MapReduce jobs.",
+  "number_of_children": 5,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "TaskAttemptID.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskID.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskType.java"
+    },
+    {
+      "type": "directory",
+      "name": "jobhistory"
+    },
+    {
+      "type": "directory",
+      "name": "util"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Task Identification and Logging in Hadoop MapReduce\n\nDESCRIPTION:\nThe 'TaskAttemptID.java' and 'TaskID.java' files define crucial classes for uniquely identifying tasks in a MapReduce job. 'TaskAttemptID' represents a task attempt, combining a 'TaskID' and an attempt number, ensuring each task attempt within a job is uniquely identifiable. 'TaskID', on the other hand, uniquely identifies a Map or Reduce task within a job, encapsulating job ID, task type, and task number. Both classes ensure immutability and provide methods for comparison, serialization, and deserialization. The 'TaskType.java' file defines an enumeration for task types in MapReduce jobs, including MAP, REDUCE, JOB_SETUP, JOB_CLEANUP, and TASK_CLEANUP. These components collaborate to provide a robust task identification system, essential for tracking and managing tasks in Hadoop MapReduce jobs."
+}

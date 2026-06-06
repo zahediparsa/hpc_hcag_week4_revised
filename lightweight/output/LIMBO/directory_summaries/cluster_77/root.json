@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 77,
+  "directory": ".",
+  "title": "Manifest Printing Utility",
+  "description": "The 'lib/output' directory contains 'ManifestPrinter.java', aiding in debugging and monitoring. It reads manifest files, displaying their contents via command-line arguments. This utility, following a utility pattern, outputs diagnostics and I/O statistics, supporting the main output process with ancillary functions. It collaborates with the MapReduce tasks by providing insights into the job's progress and status, ensuring transparency and facilitating troubleshooting. The utility's role aligns with the Observer pattern, as it observes the MapReduce process and reacts to its state changes by printing relevant information.",
+  "summary": "TITLE: Manifest Printing Utility\nDESCRIPTION: The 'lib/output' directory contains 'ManifestPrinter.java', aiding in debugging and monitoring. It reads manifest files, displaying their contents via command-line arguments. This utility, following a utility pattern, outputs diagnostics and I/O statistics, supporting the main output process with ancillary functions. It collaborates with the MapReduce tasks by providing insights into the job's progress and status, ensuring transparency and facilitating troubleshooting. The utility's role aligns with the Observer pattern, as it observes the MapReduce process and reacts to its state changes by printing relevant information.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- DIRECTORY: lib ---\n\nTITLE: Manifest Printing Utility\n\nDESCRIPTION: The 'lib/output' directory contains 'ManifestPrinter.java', aiding in debugging and monitoring. It reads manifest files, displaying their contents via command-line arguments. This utility, following a utility pattern, outputs diagnostics and I/O statistics, supporting the main output process with ancillary functions. It collaborates with the MapReduce tasks by providing insights into the job's progress and status, ensuring transparency and facilitating troubleshooting. The utility's role aligns with the Observer pattern, as it observes the MapReduce process and reacts to its state changes by printing relevant information."
+}

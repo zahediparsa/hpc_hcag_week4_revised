@@ -1,0 +1,46 @@
+{
+  "type": "directory",
+  "cluster_id": 81,
+  "directory": "lib/output/committer/manifest/stages",
+  "title": "Committer Stage Directory in Hadoop MapReduce",
+  "description": "The 'lib/output/committer/manifest/stages' directory in Hadoop MapReduce houses classes responsible for committing jobs and tasks. The 'CommitJobStage.java' class orchestrates the commit process, loading manifests, creating output directories, renaming files, and validating output. 'CommitTaskStage.java' focuses on committing task attempts, scanning directories, and saving task manifests. 'CreateOutputDirectoriesStage.java' prepares destination directories, while 'LoadManifestsStage.java' loads task manifests efficiently. 'RenameFilesStage.java' renames committed files, and 'SaveTaskManifestStage.java' saves task manifests atomically. 'TaskAttemptScanDirectoryStage.java' scans directories to build task manifests, and 'ValidateRenamedFilesStage.java' validates committed files. These components collaborate to ensure data integrity and successful job completion in Hadoop MapReduce. The directory employs parallel processing, atomic file operations, and comprehensive validation to maintain robustness and reliability in the commit process.",
+  "summary": "TITLE: Committer Stage Directory in Hadoop MapReduce\nDESCRIPTION: The 'lib/output/committer/manifest/stages' directory in Hadoop MapReduce houses classes responsible for committing jobs and tasks. The 'CommitJobStage.java' class orchestrates the commit process, loading manifests, creating output directories, renaming files, and validating output. 'CommitTaskStage.java' focuses on committing task attempts, scanning directories, and saving task manifests. 'CreateOutputDirectoriesStage.java' prepares destination directories, while 'LoadManifestsStage.java' loads task manifests efficiently. 'RenameFilesStage.java' renames committed files, and 'SaveTaskManifestStage.java' saves task manifests atomically. 'TaskAttemptScanDirectoryStage.java' scans directories to build task manifests, and 'ValidateRenamedFilesStage.java' validates committed files. These components collaborate to ensure data integrity and successful job completion in Hadoop MapReduce. The directory employs parallel processing, atomic file operations, and comprehensive validation to maintain robustness and reliability in the commit process.",
+  "number_of_children": 8,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CommitJobStage.java"
+    },
+    {
+      "type": "file",
+      "name": "CommitTaskStage.java"
+    },
+    {
+      "type": "file",
+      "name": "CreateOutputDirectoriesStage.java"
+    },
+    {
+      "type": "file",
+      "name": "LoadManifestsStage.java"
+    },
+    {
+      "type": "file",
+      "name": "RenameFilesStage.java"
+    },
+    {
+      "type": "file",
+      "name": "SaveTaskManifestStage.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptScanDirectoryStage.java"
+    },
+    {
+      "type": "file",
+      "name": "ValidateRenamedFilesStage.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Committer Stage Directory in Hadoop MapReduce\n\nDESCRIPTION:\nThe 'lib/output/committer/manifest/stages' directory in Hadoop MapReduce houses classes responsible for committing jobs and tasks. The 'CommitJobStage.java' class orchestrates the commit process, loading manifests, creating output directories, renaming files, and validating output. 'CommitTaskStage.java' focuses on committing task attempts, scanning directories, and saving task manifests. 'CreateOutputDirectoriesStage.java' prepares destination directories, while 'LoadManifestsStage.java' loads task manifests efficiently. 'RenameFilesStage.java' renames committed files, and 'SaveTaskManifestStage.java' saves task manifests atomically. 'TaskAttemptScanDirectoryStage.java' scans directories to build task manifests, and 'ValidateRenamedFilesStage.java' validates committed files. These components collaborate to ensure data integrity and successful job completion in Hadoop MapReduce. The directory employs parallel processing, atomic file operations, and comprehensive validation to maintain robustness and reliability in the commit process."
+}

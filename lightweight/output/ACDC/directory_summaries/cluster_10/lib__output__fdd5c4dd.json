@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 10,
+  "directory": "lib/output",
+  "title": "SequenceFile Management in MapReduce",
+  "description": "The 'lib/output/committer' directory is responsible for managing 'FileEntry' objects in Hadoop's MapReduce. It employs 'EntryFileIO' for writing and reading entries to/from a SequenceFile. The 'EntryWriter' class, utilizing a blocking queue and dedicated thread, illustrates the Factory and Worker pattern. This directory collaborates with other classes for thorough file entry management, exemplifying the Layered Architecture pattern. It ensures data integrity and consistency during the MapReduce process.",
+  "summary": "TITLE: SequenceFile Management in MapReduce\nDESCRIPTION: The 'lib/output/committer' directory is responsible for managing 'FileEntry' objects in Hadoop's MapReduce. It employs 'EntryFileIO' for writing and reading entries to/from a SequenceFile. The 'EntryWriter' class, utilizing a blocking queue and dedicated thread, illustrates the Factory and Worker pattern. This directory collaborates with other classes for thorough file entry management, exemplifying the Layered Architecture pattern. It ensures data integrity and consistency during the MapReduce process.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: SequenceFile Management in MapReduce\n\nDESCRIPTION: The 'lib/output/committer' directory is responsible for managing 'FileEntry' objects in Hadoop's MapReduce. It employs 'EntryFileIO' for writing and reading entries to/from a SequenceFile. The 'EntryWriter' class, utilizing a blocking queue and dedicated thread, illustrates the Factory and Worker pattern. This directory collaborates with other classes for thorough file entry management, exemplifying the Layered Architecture pattern. It ensures data integrity and consistency during the MapReduce process."
+}

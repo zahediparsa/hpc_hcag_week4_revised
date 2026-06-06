@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 71,
+    "class": "org.apache.hadoop.mapreduce.lib.join.InnerJoinRecordReader",
+    "path": "lib/join/InnerJoinRecordReader.java",
+    "file_name": "InnerJoinRecordReader.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define the `InnerJoinRecordReader` class, which is a part of Apache Hadoop MapReduce library, specifically designed for handling inner joins.\n\nCORE LOGIC:\nThe core logic involves the constructor that initializes the superclass `JoinRecordReader` with given parameters and a `combine` method that checks if a tuple is full for an inner join. The `combine` method iterates through the array of sources (`srcs`) and checks if the tuple has data from each source. If any source is missing data for the current key, it returns `false`, indicating the tuple is not full. If all sources have data for the key, it returns `true`, indicating the tuple is full.\n\nINPUTS/OUTPUTS:\nThe class does not directly handle input or output data flow. Instead, it operates on arrays of objects (`srcs`) and a `TupleWritable` object (`dst`). The `srcs` array contains data from different sources, and `dst` is used to store the combined data for the join operation.\n\nDEPENDENCIES:\nThe code chunk depends on several classes from the Apache Hadoop project:\n- `org.apache.hadoop.mapreduce.lib.join.JoinRecordReader`: The superclass for handling join operations.\n- `org.apache.hadoop.io.WritableComparable`: An interface for writable, comparable key objects.\n- `org.apache.hadoop.io.WritableComparator`: An interface for writable comparators.\n- `org.apache.hadoop.conf.Configuration`: A class for handling Hadoop configuration.\n- `java.io.IOException`: A common exception class for input/output operations.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 71,
+    "class": "org.apache.hadoop.mapreduce.lib.join.OuterJoinRecordReader",
+    "path": "lib/join/OuterJoinRecordReader.java",
+    "file_name": "OuterJoinRecordReader.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to define a class `OuterJoinRecordReader` that extends `JoinRecordReader` for performing a full outer join operation in Apache Hadoop MapReduce.\n\nCORE LOGIC:\nThis class is designed to handle full outer joins by extending the `JoinRecordReader` class. It has a constructor that takes in parameters for its identifier, configuration, capacity, and comparator class. The key logic is in the `combine` method, which is responsible for emitting all elements from the collector to the destination tuple writable. It asserts that the number of sources equals the size of the destination tuple.\n\nINPUTS/OUTPUTS:\nInputs: The class takes in multiple sources (Object[] srcs) and a TupleWritable destination (dst).\nOutputs: It returns a boolean value indicating whether the combination was successful.\n\nDEPENDENCIES:\nKey imported classes visible in this chunk:\n- `java.io.IOException`\n- `org.apache.hadoop.classification.InterfaceAudience`\n- `org.apache.hadoop.classification.InterfaceStability`\n- `org.apache.hadoop.conf.Configuration`\n- `org.apache.hadoop.io.WritableComparable`\n- `org.apache.hadoop.io.WritableComparator`\n- `org.apache.hadoop.mapreduce.lib.join.JoinRecordReader`\n\nParent class:\n- `org.apache.hadoop.mapreduce.lib.join.JoinRecordReader<K>` where `K extends WritableComparable<?>`",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 69,
+  "directory": "lib",
+  "title": "Join Operations Management in Hadoop",
+  "description": "The 'lib/join' directory in Hadoop's MapReduce architecture is responsible for managing complex join operations. It contains 'CompositeInputFormat.java', a custom InputFormat that handles joins over sorted, partitioned data sources, configurable via properties. 'Parser.java' implements a shift-reduce parser for join expressions, constructing a parse tree. This tree aids in building 'CompositeInputSplit' and 'CompositeRecordReader', enabling efficient and flexible join operations, exemplifying the Composite and Strategy patterns.",
+  "summary": "TITLE: Join Operations Management in Hadoop\nDESCRIPTION: The 'lib/join' directory in Hadoop's MapReduce architecture is responsible for managing complex join operations. It contains 'CompositeInputFormat.java', a custom InputFormat that handles joins over sorted, partitioned data sources, configurable via properties. 'Parser.java' implements a shift-reduce parser for join expressions, constructing a parse tree. This tree aids in building 'CompositeInputSplit' and 'CompositeRecordReader', enabling efficient and flexible join operations, exemplifying the Composite and Strategy patterns.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/join"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Join Operations Management in Hadoop\n\nDESCRIPTION: The 'lib/join' directory in Hadoop's MapReduce architecture is responsible for managing complex join operations. It contains 'CompositeInputFormat.java', a custom InputFormat that handles joins over sorted, partitioned data sources, configurable via properties. 'Parser.java' implements a shift-reduce parser for join expressions, constructing a parse tree. This tree aids in building 'CompositeInputSplit' and 'CompositeRecordReader', enabling efficient and flexible join operations, exemplifying the Composite and Strategy patterns."
+}

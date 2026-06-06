@@ -1,0 +1,34 @@
+{
+  "type": "directory",
+  "cluster_id": 9,
+  "directory": ".",
+  "title": "Hadoop MapReduce Mapper Implementations",
+  "description": "The 'lib/map' directory contains custom Mapper implementations for Hadoop MapReduce. InverseMapper swaps input keys and values. MultithreadedMapper enhances throughput using multithreading. TokenCounterMapper tokenizes text, emitting each word with a count. WrappedMapper allows custom Mapper.Context implementations, demonstrating Hadoop's flexibility for diverse data processing tasks within the MapReduce framework. Each Mapper serves a unique purpose, illustrating the adaptability of MapReduce for various data processing needs.",
+  "summary": "TITLE: Hadoop MapReduce Mapper Implementations\nDESCRIPTION: The 'lib/map' directory contains custom Mapper implementations for Hadoop MapReduce. InverseMapper swaps input keys and values. MultithreadedMapper enhances throughput using multithreading. TokenCounterMapper tokenizes text, emitting each word with a count. WrappedMapper allows custom Mapper.Context implementations, demonstrating Hadoop's flexibility for diverse data processing tasks within the MapReduce framework. Each Mapper serves a unique purpose, illustrating the adaptability of MapReduce for various data processing needs.",
+  "number_of_children": 5,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "MapContext.java"
+    },
+    {
+      "type": "file",
+      "name": "Mapper.java"
+    },
+    {
+      "type": "file",
+      "name": "StatusReporter.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib"
+    },
+    {
+      "type": "directory",
+      "name": "task"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Mapper Implementations\n\nDESCRIPTION: The 'lib/map' directory contains custom Mapper implementations for Hadoop MapReduce. InverseMapper swaps input keys and values. MultithreadedMapper enhances throughput using multithreading. TokenCounterMapper tokenizes text, emitting each word with a count. WrappedMapper allows custom Mapper.Context implementations, demonstrating Hadoop's flexibility for diverse data processing tasks within the MapReduce framework. Each Mapper serves a unique purpose, illustrating the adaptability of MapReduce for various data processing needs."
+}

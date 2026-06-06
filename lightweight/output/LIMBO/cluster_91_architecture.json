@@ -1,0 +1,22 @@
+{
+  "cluster_id": 91,
+  "title": "Secure Job Token Management",
+  "description": "Hadoop MapReduce's security architecture employs JobTokenSecretManager.java and JobTokenSelector.java for secure job token management. The former, adhering to the Secret Manager pattern, generates, stores, and retrieves job token secrets using a TreeMap cache. The latter, following the Token Selector pattern, identifies and returns the first matching job token, verifying JobTokenIdentifier.KIND_NAME and service compatibility. This system ensures secure, efficient token management, contributing to the overall reliability and security of the MapReduce cluster. Technologies used include Java and Hadoop's secret management framework.",
+  "description_word_count": 82,
+  "number_of_files": 2,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Secure Job Token Management\n\nDESCRIPTION: Hadoop MapReduce's security architecture employs JobTokenSecretManager.java and JobTokenSelector.java for secure job token management. The former, adhering to the Secret Manager pattern, generates, stores, and retrieves job token secrets using a TreeMap cache. The latter, following the Token Selector pattern, identifies and returns the first matching job token, verifying JobTokenIdentifier.KIND_NAME and service compatibility. This system ensures secure, efficient token management, contributing to the overall reliability and security of the MapReduce cluster. Technologies used include Java and Hadoop's secret management framework.",
+  "algorithm": "LIMBO",
+  "files": [
+    "security/token/JobTokenSecretManager.java",
+    "security/token/JobTokenSelector.java"
+  ]
+}

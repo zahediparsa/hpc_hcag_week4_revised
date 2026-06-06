@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 91,
+    "class": "org.apache.hadoop.mapreduce.security.token.JobTokenSecretManager",
+    "path": "security/token/JobTokenSecretManager.java",
+    "file_name": "JobTokenSecretManager.java",
+    "directory": "security/token",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to serve as a SecretManager for job tokens in Apache Hadoop MapReduce, providing methods to create, store, and retrieve job token secrets.\n\nCORE LOGIC:\n- The class extends `SecretManager<JobTokenIdentifier>` and overrides its methods to handle job tokens.\n- It maintains a `TreeMap` called `currentJobTokens` to cache generated job tokens.\n- The `createPassword` method generates a password/secret for a given job token identifier using a master key.\n- Methods `addTokenForJob`, `removeTokenForJob`, and `retrieveTokenSecret` manage the job tokens in the cache.\n- `retrievePassword` retrieves the token password/secret for a given job token identifier.\n- `createIdentifier` creates a new, empty job token identifier.\n\nINPUTS/OUTPUTS:\n- Inputs: Job token identifiers, job IDs, and tokens.\n- Outputs: Job token secrets as `SecretKey` objects or byte arrays.\n\nDEPENDENCIES:\n- Imported classes: `java.util.Map`, `java.util.TreeMap`, `javax.crypto.SecretKey`.\n- Collaborator classes: `org.apache.hadoop.security.token.SecretManager`, `org.apache.hadoop.security.token.Token`, `org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier`.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 91,
+    "class": "org.apache.hadoop.mapreduce.security.token.JobTokenSelector",
+    "path": "security/token/JobTokenSelector.java",
+    "file_name": "JobTokenSelector.java",
+    "directory": "security/token",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class, as indicated by its name and the implementation, is to act as a TokenSelector for job tokens in Apache Hadoop MapReduce. It is designed to find and return the first job token from a collection of tokens that matches a given service.\n\nCORE LOGIC:\nThe core logic of this class revolves around the `selectToken` method, which takes a `Text` object representing the service and a `Collection` of `Token` objects as inputs. It iterates over each token in the collection, checking if the token's kind matches `JobTokenIdentifier.KIND_NAME` and if the token's service matches the provided service. If a matching token is found, it casts the token to `Token<JobTokenIdentifier>` and returns it. If no matching token is found, it returns `null`.\n\nINPUTS/OUTPUTS:\nInputs:\n1. `Text service`: Represents the service for which the job token is being selected.\n2. `Collection<Token<? extends TokenIdentifier>> tokens`: A collection of tokens to search through for the job token.\n\nOutputs:\n- `Token<JobTokenIdentifier>`: The job token that matches the given service, or `null` if no matching token is found.\n\nDEPENDENCIES:\nThis class depends on the following classes:\n- `org.apache.hadoop.io.Text`: Used for the service representation.\n- `org.apache.hadoop.security.token.Token`: The base interface for all security tokens.\n- `org.apache.hadoop.security.token.TokenIdentifier`: The identifier for a token.\n- `org.apache.hadoop.security.token.TokenSelector`: An interface for selecting tokens based on a specific identifier.\n- `org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier`: A specific identifier for job tokens.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]
