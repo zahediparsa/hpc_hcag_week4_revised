@@ -75,15 +75,14 @@ hpc_hcag_week4_revised/
 │   └── clusters_limbo.csv
 │
 ├── output/
-│   └── week4_hcag_all_algorithms_output/
-│       ├── ARC/
-│       ├── ACDC/
-│       ├── LIMBO/
-│       ├── ARC_hierarchical_summarization_results.csv
-│       ├── ACDC_hierarchical_summarization_results.csv
-│       ├── LIMBO_hierarchical_summarization_results.csv
-│       ├── week4_all_algorithms_manifest.json
-│       └── week4_rq2_zero_shot_report.md
+│    ├── ARC/
+│    ├── ACDC/
+│    ├── LIMBO/
+│    ├── ARC_hierarchical_summarization_results.csv
+│    ├── ACDC_hierarchical_summarization_results.csv
+│    ├── LIMBO_hierarchical_summarization_results.csv
+│    ├── week4_all_algorithms_manifest.json
+│    └── week4_rq2_zero_shot_report.md
 │
 ├── prereqs/
 │   └── prerequisite/reference files, if included
@@ -136,36 +135,35 @@ Expected structure:
 
 ```text
 output/
-└── week4_hcag_all_algorithms_output/
-    ├── ARC/
-    │   ├── file_summaries/
-    │   ├── directory_summaries/
-    │   ├── cluster_<id>_architecture.json
-    │   ├── hierarchy_manifest.json
-    │   ├── week4_cluster_descriptions.csv
-    │   └── week4_report.txt
-    │
-    ├── ACDC/
-    │   ├── file_summaries/
-    │   ├── directory_summaries/
-    │   ├── cluster_<id>_architecture.json
-    │   ├── hierarchy_manifest.json
-    │   ├── week4_cluster_descriptions.csv
-    │   └── week4_report.txt
-    │
-    ├── LIMBO/
-    │   ├── file_summaries/
-    │   ├── directory_summaries/
-    │   ├── cluster_<id>_architecture.json
-    │   ├── hierarchy_manifest.json
-    │   ├── week4_cluster_descriptions.csv
-    │   └── week4_report.txt
-    │
-    ├── ARC_hierarchical_summarization_results.csv
-    ├── ACDC_hierarchical_summarization_results.csv
-    ├── LIMBO_hierarchical_summarization_results.csv
-    ├── week4_all_algorithms_manifest.json
-    └── week4_rq2_zero_shot_report.md
+├── ARC/
+│   ├── file_summaries/
+│   ├── directory_summaries/
+│   ├── cluster_<id>_architecture.json
+│   ├── hierarchy_manifest.json
+│   ├── week4_cluster_descriptions.csv
+│   └── week4_report.txt
+│
+├── ACDC/
+│   ├── file_summaries/
+│   ├── directory_summaries/
+│   ├── cluster_<id>_architecture.json
+│   ├── hierarchy_manifest.json
+│   ├── week4_cluster_descriptions.csv
+│   └── week4_report.txt
+│
+├── LIMBO/
+│   ├── file_summaries/
+│   ├── directory_summaries/
+│   ├── cluster_<id>_architecture.json
+│   ├── hierarchy_manifest.json
+│   ├── week4_cluster_descriptions.csv
+│   └── week4_report.txt
+│
+├── ARC_hierarchical_summarization_results.csv
+├── ACDC_hierarchical_summarization_results.csv
+├── LIMBO_hierarchical_summarization_results.csv
+├── week4_all_algorithms_manifest.json
+└── week4_rq2_zero_shot_report.md
 ```
 
 The three top-level CSV files are the main Week 4 submission outputs:
