@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "util",
+  "title": "org.apache.hadoop.mapreduce.util",
+  "description": "This directory contains utilities for the Hadoop MapReduce framework. It includes classes for converting counter data to and from a compact string format, as well as package-info files for the org.apache.hadoop.mapreduce.util package.",
+  "summary": "TITLE: org.apache.hadoop.mapreduce.util\nDESCRIPTION: This directory contains utilities for the Hadoop MapReduce framework. It includes classes for converting counter data to and from a compact string format, as well as package-info files for the org.apache.hadoop.mapreduce.util package.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CountersStrings.java"
+    },
+    {
+      "type": "file",
+      "name": "package-info.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: org.apache.hadoop.mapreduce.util\n\nDESCRIPTION:\nThis directory contains utilities for the Hadoop MapReduce framework. It includes classes for converting counter data to and from a compact string format, as well as package-info files for the org.apache.hadoop.mapreduce.util package."
+}

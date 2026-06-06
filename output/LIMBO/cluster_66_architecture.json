@@ -1,0 +1,21 @@
+{
+  "cluster_id": 66,
+  "title": "Hadoop MapReduce",
+  "description": "Hadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes).\n- The system is divided into two main components: the Hadoop Distributed File System (HDFS) and MapReduce.\n- HDFS provides the distributed storage for the system, while MapReduce provides the parallel processing of data across the cluster.\n- The system is designed to scale up from single servers to thousands of machines, each offering local computation and storage.\n- MapReduce is based on the concept of mapping data to a set of intermediate key-value pairs, followed by a reduce step to aggregate the values to a smaller set of output key-value pairs.\n- The system is fault-tolerant and provides high-throughput, low-latency processing of data.\n- The system is written in Java and uses the Google protobuf data serialization format.",
+  "description_word_count": 138,
+  "number_of_files": 1,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce\n\nDESCRIPTION:\nHadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes).\n- The system is divided into two main components: the Hadoop Distributed File System (HDFS) and MapReduce.\n- HDFS provides the distributed storage for the system, while MapReduce provides the parallel processing of data across the cluster.\n- The system is designed to scale up from single servers to thousands of machines, each offering local computation and storage.\n- MapReduce is based on the concept of mapping data to a set of intermediate key-value pairs, followed by a reduce step to aggregate the values to a smaller set of output key-value pairs.\n- The system is fault-tolerant and provides high-throughput, low-latency processing of data.\n- The system is written in Java and uses the Google protobuf data serialization format.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/jobcontrol/JobControl.java"
+  ]
+}

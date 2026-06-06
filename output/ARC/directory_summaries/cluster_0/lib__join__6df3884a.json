@@ -1,0 +1,78 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "lib/join",
+  "title": "",
+  "description": "Cluster: 0\nDirectory: lib/join\n\n responsibility:\n- manage the join of multiple data sources\n- provide a way to combine data from different sources based on a common key\n\ncollaboration:\n- use a priority queue to sort the RecordReaders based on their keys\n- use a JoinCollector to collect values for a given key from the child RecordReaders\n\narchitectural role/pattern:\n- implement the join operation using a priority queue and a JoinCollector\n- provide a way to combine data from different sources based on a common key",
+  "summary": "TITLE: \nDESCRIPTION: Cluster: 0\nDirectory: lib/join\n\n responsibility:\n- manage the join of multiple data sources\n- provide a way to combine data from different sources based on a common key\n\ncollaboration:\n- use a priority queue to sort the RecordReaders based on their keys\n- use a JoinCollector to collect values for a given key from the child RecordReaders\n\narchitectural role/pattern:\n- implement the join operation using a priority queue and a JoinCollector\n- provide a way to combine data from different sources based on a common key",
+  "number_of_children": 16,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ArrayListBackedIterator.java"
+    },
+    {
+      "type": "file",
+      "name": "ComposableInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "ComposableRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "CompositeInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "CompositeInputSplit.java"
+    },
+    {
+      "type": "file",
+      "name": "CompositeRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "InnerJoinRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "JoinRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "MultiFilterRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "OuterJoinRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "OverrideRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "Parser.java"
+    },
+    {
+      "type": "file",
+      "name": "ResetableIterator.java"
+    },
+    {
+      "type": "file",
+      "name": "StreamBackedIterator.java"
+    },
+    {
+      "type": "file",
+      "name": "TupleWritable.java"
+    },
+    {
+      "type": "file",
+      "name": "WrappedRecordReader.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "Cluster: 0\nDirectory: lib/join\n\n responsibility:\n- manage the join of multiple data sources\n- provide a way to combine data from different sources based on a common key\n\ncollaboration:\n- use a priority queue to sort the RecordReaders based on their keys\n- use a JoinCollector to collect values for a given key from the child RecordReaders\n\narchitectural role/pattern:\n- implement the join operation using a priority queue and a JoinCollector\n- provide a way to combine data from different sources based on a common key"
+}

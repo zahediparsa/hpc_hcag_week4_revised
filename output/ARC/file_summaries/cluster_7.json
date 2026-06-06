@@ -1,0 +1,259 @@
+[
+  {
+    "algorithm": "ARC",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.Cluster",
+    "path": "Cluster.java",
+    "file_name": "Cluster.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\n\nThe Cluster class provides a way to access information about the map/reduce cluster.\n\nCORE LOGIC:\n\nThe Cluster class initializes the clientProtocolProvider and client based on the configuration and jobTrackAddr. It also provides methods to get the file system, job, cluster status, task trackers, staging area directory, job history file path, queue ACLs, root queues, child queues, job tracker status, and task tracker expiry interval.\n\nINPUTS/OUTPUTS:\n\nThe Cluster class takes a Configuration object as input and provides methods to get the file system, job, cluster status, task trackers, staging area directory, job history file path, queue ACLs, root queues, child queues, job tracker status, and task tracker expiry interval as output.\n\nDEPENDENCIES:\n\nThe Cluster class depends on the ClientProtocolProvider, ClientProtocol, UserGroupInformation, Configuration, FileSystem, Path, JobConf, JobID, TaskAttemptID, ClusterMetrics, TaskTrackerInfo, QueueInfo, QueueAclsInfo, JobStatus, and Token classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.Job",
+    "path": "Job.java",
+    "file_name": "Job.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\n- main purpose of this class or file: The main purpose of this class is to manage and execute MapReduce jobs.\n- setupProgress(): returns the progress of the job's setup-tasks.\n- isComplete(): checks if the job is finished or not.\n- isSuccessful(): checks if the job completed successfully.\n- killJob(): kills the running job.\n- setPriority(): sets the priority of a running job.\n- setPriorityAsInteger(): sets the priority of a running job.\n- getTaskCompletionEvents(): gets events indicating completion (success/failure) of component tasks.\n- killTask(): kills indicated task attempt.\n- failTask(): fails indicated task attempt.\n- getCounters(): gets the counters for this job.\n- getTaskDiagnostics(): gets the diagnostic messages for a given task attempt.\n- setNumReduceTasks(): sets the number of reduce tasks for the job.\n- setWorkingDirectory(): sets the current working directory for the default file system.\n- setInputFormatClass(): sets the InputFormat for the job.\n- setOutputFormatClass(): sets the OutputFormat for the job.\n- setMapperClass(): sets the Mapper for the job.\n- setJarByClass(): sets the Jar by finding where a given class came from.\n- setJar(): sets the job jar.\n- setUser(): sets the reported username for this job.\n- setCombinerClass(): sets the combiner class for the job.\n- setReducerClass(): sets the Reducer for the job.\n- setPartitionerClass(): sets the Partitioner for the job.\n- setMapOutputKeyClass(): sets the key class for the map output data.\n- setMapOutputValueClass(): sets the value class for the map output data.\n- setOutputKeyClass(): sets the key class for the job output data.\n- setOutputValueClass(): sets the value class for job outputs.\n- setCombinerKeyGroupingComparatorClass(): defines the comparator that controls which keys are grouped together for a single call to combiner.\n- setSortComparatorClass(): defines the comparator that controls how the keys are sorted before they are passed to the Reducer.\n- setGroupingComparatorClass(): defines the comparator that controls which keys are grouped together for a single call to Reducer.reduce().\n- setJobName(): sets the user-specified job name.\n- setSpeculative",
+    "chunked": true,
+    "number_of_code_chunks": 4,
+    "chunk_summaries": [
+      "KEY FUNCTIONALITY: main purpose visible in this chunk\nCORE LOGIC: key algorithms or processing patterns visible in this chunk\nINPUTS/OUTPUTS: data flowing in and out\nDEPENDENCIES: key imported, parent, or collaborator classes visible in this chunk\n\nCode chunk:\n/**\n * Licensed to the Apache Software Foundation (ASF) under one\n * or more contributor license agreements.  See the NOTICE file\n * distributed with this work for additional information\n * regarding copyright ownership.  The ASF licenses this file\n * to you under the Apache License, Version 2.0 (the\n * \"License\"); you may not use this file except in compliance\n * with the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\n\npackage org.apache.hadoop.mapreduce;\n\nimport java.io.IOException;\nimport java.net.URI;\nimport java.security.PrivilegedExceptionAction;\nimport java.util.Collection;\nimport java.util.LinkedHashMap;\nimport java.util.Map;\n\nimport org.apache.hadoop.classification.InterfaceAudience;\nimport org.apache.hadoop.classification.InterfaceStability;\nimport org.apache.hadoop.classification.InterfaceAudience.Private;\nimport org.apache.hadoop.classification.InterfaceStability.Unstable;\nimport org.apache.hadoop.conf.Configuration;\nimport org.apache.hadoop.conf.Configuration.IntegerRanges;\nimport org.apache.hadoop.fs.FileSystem;\nimport org.apache.hadoop.fs.Path;\nimport org.apache.hadoop.io.RawComparator;\nimport org.apache.hadoop.mapred.JobConf;\nimport org.apache.hadoop.mapreduce.filecache.DistributedCache;\nimport org.apache.hadoop.mapreduce.protocol.ClientProtocol;\nimport org.apache.hadoop.mapreduce.task.JobContextImpl;\nimport org.apache.hadoop.mapreduce.util.ConfigUtil",
+      "KEY FUNCTIONALITY:\n- setupProgress(): returns the progress of the job's setup-tasks.\n- isComplete(): checks if the job is finished or not.\n- isSuccessful(): checks if the job completed successfully.\n- killJob(): kills the running job.\n- setPriority(): sets the priority of a running job.\n- setPriorityAsInteger(): sets the priority of a running job.\n- getTaskCompletionEvents(): gets events indicating completion (success/failure) of component tasks.\n- killTask(): kills indicated task attempt.\n- failTask(): fails indicated task attempt.\n- getCounters(): gets the counters for this job.\n- getTaskDiagnostics(): gets the diagnostic messages for a given task attempt.\n- setNumReduceTasks(): sets the number of reduce tasks for the job.\n- setWorkingDirectory(): sets the current working directory for the default file system.\n- setInputFormatClass(): sets the InputFormat for the job.\n- setOutputFormatClass(): sets the OutputFormat for the job.\n- setMapperClass(): sets the Mapper for the job.\n- setJarByClass(): sets the Jar by finding where a given class came from.\n- setJar(): sets the job jar.\n- setUser(): sets the reported username for this job.\n- setCombinerClass(): sets the combiner class for the job.\n- setReducerClass(): sets the Reducer for the job.\n- setPartitionerClass(): sets the Partitioner for the job.\n- setMapOutputKeyClass(): sets the key class for the map output data.\n- setMapOutputValueClass(): sets the value class for the map output data.\n- setOutputKeyClass(): sets the key class for the job output data.\n- setOutputValueClass(): sets the value class for job outputs.\n- setCombinerKeyGroupingComparatorClass(): defines the comparator that controls which keys are grouped together for a single call to combiner.\n- setSortComparatorClass(): defines the comparator that controls how the keys are sorted before they are passed to the Reducer.\n- setGroupingComparatorClass(): defines the comparator that controls which keys are grouped together for a single call to Reducer.reduce().\n- setJobName(): sets the user-specified job name.\n- setSpeculativeExecution(): turns speculative execution on or off for this job.\n- setMapSpeculativeExecution(): turns spec",
+      "KEY FUNCTIONALITY:\n- Add a file path to the current set of classpath entries.\n- Add an archive path to the current set of classpath entries.\n- Set the number of maximum attempts that will be made to run a map task.\n- Set the number of maximum attempts that will be made to run a reduce task.\n- Set whether the system should collect profiler information for some of the tasks in this job.\n- Set the profiler configuration arguments.\n- Set the ranges of maps or reduces to profile.\n\nCORE LOGIC:\n- Ensure that the configuration is consistent with the new APIs.\n- Add a file to job config for shared cache processing.\n- Add an archive to job config for shared cache processing.\n- Set the shared cache upload policies for files.\n- Set the shared cache upload policies for archives.\n\nINPUTS/OUTPUTS:\n- The inputs are the configuration and the file system.\n- The outputs are the updated configuration and the job status.\n\nDEPENDENCIES:\n- The dependencies are the Cluster class and the JobSubmitter class.",
+      "KEY FUNCTIONALITY: The main purpose of this chunk is to ensure that the job is reported as complete after it is done.\nCORE LOGIC: The key logic in this chunk is to continuously check the job's status and print progress updates.\nINPUTS/OUTPUTS: The chunk takes inputs such as the job ID, status, and configuration, and produces outputs such as progress updates and task completion events.\nDEPENDENCIES: The chunk depends on classes such as JobStatus, TaskCompletionEvent, and Counters."
+    ]
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.JobResourceUploader",
+    "path": "JobResourceUploader.java",
+    "file_name": "JobResourceUploader.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to handle the localization of resources for MapReduce jobs.\n\nCORE LOGIC:\nThe core logic of this class is to check if there are any limits set for resource localization. If there are limits, it checks if the total size of the resources exceeds the maximum size allowed. It also checks if the number of resources exceeds the maximum number allowed.\n\nINPUTS/OUTPUTS:\nThe inputs to this class are the configuration, collections of files, libjars, and archives, the job jar, and a map of URI to FileStatus. The output is a boolean value indicating whether the limits have been exceeded.\n\nDEPENDENCIES:\nThis class depends on the Apache Hadoop MapReduce framework and its dependencies.",
+    "chunked": true,
+    "number_of_code_chunks": 2,
+    "chunk_summaries": [
+      "Summarize this raw Java source-code chunk.\n\nThis is chunk 1 of 2 from file JobResourceUploader.java.\nUse only the code shown in this chunk.\n\nReturn exactly these four sections:\n\nKEY FUNCTIONALITY: main purpose visible in this chunk\nCORE LOGIC: key algorithms or processing patterns visible in this chunk\nINPUTS/OUTPUTS: data flowing in and out\nDEPENDENCIES: key imported, parent, or collaborator classes visible in this chunk\n\nCode chunk:\n/**\n * Licensed to the Apache Software Foundation (ASF) under one\n * or more contributor license agreements.  See the NOTICE file\n * distributed with this work for additional information\n * regarding copyright ownership.  The ASF licenses this file\n * to you under the Apache License, Version 2.0 (the\n * \"License\"); you may not use this file except in compliance\n * with the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.hadoop.mapreduce;\n\nimport java.io.FileNotFoundException;\nimport java.io.IOException;\nimport java.net.URI;\nimport java.net.URISyntaxException;\nimport java.util.Collection;\nimport java.util.HashMap;\nimport java.util.LinkedList;\nimport java.util.LinkedHashMap;\nimport java.util.Map;\n\nimport org.apache.hadoop.classification.InterfaceAudience.Private;\nimport org.apache.hadoop.classification.InterfaceStability.Unstable;\nimport org.apache.hadoop.conf.Configuration;\nimport org.apache.hadoop.fs.FileStatus;\nimport org.apache.hadoop.fs.FileSystem;\nimport org.apache.hadoop.fs.FileUtil;\nimport org.apache.hadoop.fs.Path;\nimport org.apache.hadoop.fs.permission.FsPermission;\nimport org.apache.hadoop.hdfs.DistributedFileSystem;\nimport org.apache.hadoop.hdfs.",
+      "KEY FUNCTIONALITY: main purpose visible in this chunk\nCORE LOGIC: key algorithms or processing patterns visible in this chunk\nINPUTS/OUTPUTS: data flowing in and out\nDEPENDENCIES: key imported, parent, or collaborator classes visible in this chunk\n\nvoid checkLocalizationLimits(Configuration conf, Collection<String> files,\n      Collection<String> libjars, Collection<String> archives, String jobJar,\n      Map<URI, FileStatus> statCache) throws IOException {\n\n    LimitChecker limitChecker = new LimitChecker(conf);\n    if (!limitChecker.hasLimits()) {\n      // there are no limits set, so we are done.\n      return;\n    }\n\n    // Get the files and archives that are already in the distributed cache\n    Collection<String> dcFiles =\n        conf.getStringCollection(MRJobConfig.CACHE_FILES);\n    Collection<String> dcArchives =\n        conf.getStringCollection(MRJobConfig.CACHE_ARCHIVES);\n\n    for (String uri : dcFiles) {\n      explorePath(conf, stringToPath(uri), limitChecker, statCache);\n    }\n\n    for (String uri : dcArchives) {\n      explorePath(conf, stringToPath(uri), limitChecker, statCache);\n    }\n\n    for (String uri : files) {\n      explorePath(conf, stringToPath(uri), limitChecker, statCache);\n    }\n\n    for (String uri : libjars) {\n      explorePath(conf, stringToPath(uri), limitChecker, statCache);\n    }\n\n    for (String uri : archives) {\n      explorePath(conf, stringToPath(uri), limitChecker, statCache);\n    }\n\n    if (jobJar != null) {\n      explorePath(conf, stringToPath(jobJar), limitChecker, statCache);\n    }\n  }\n\nCORE LOGIC:\nThe core logic of this method is to check if there are any limits set for resource localization. If there are limits, it checks if the total size of the resources exceeds the maximum size allowed. It also checks if the number of resources exceeds the maximum number allowed.\n\nINPUTS/OUTPUTS:\nThe inputs to this method are the configuration, collections of files, libjars, and archives, the job jar, and a map of URI to FileStatus. The output is a boolean value indicating whether the limits have been exceeded.\n\nDEPENDENCI"
+    ]
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.JobSubmitter",
+    "path": "JobSubmitter.java",
+    "file_name": "JobSubmitter.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY: Submits jobs to the system.\nCORE LOGIC: Computes input splits, sets accounting information, copies job jar and configuration to the distributed file-system, and submits the job to the JobTracker.\nINPUTS/OUTPUTS: Data flowing in and out includes job configuration, input splits, and accounting information.\nDEPENDENCIES: Key imported, parent, or collaborator classes visible in this chunk include FileSystem, ClientProtocol, Configuration, Path, JobID, JobStatus, JobConf, JobResourceUploader, TokenCache, KeyGenerator, SecretKey, Token, TokenIdentifier, ReservationId, AccessControlList, and InputFormat.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.Mapper",
+    "path": "Mapper.java",
+    "file_name": "Mapper.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\n\nThe Mapper class is responsible for transforming input records into intermediate records.\n\nCORE LOGIC:\n\nThe map() method is the core logic of the Mapper class, where input key/value pairs are transformed into intermediate key/value pairs.\n\nINPUTS/OUTPUTS:\n\nThe Mapper takes input key/value pairs and produces intermediate key/value pairs as output.\n\nDEPENDENCIES:\n\nThe Mapper class depends on the MapContext interface, which provides access to the input data and allows the Mapper to write output.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.Reducer",
+    "path": "Reducer.java",
+    "file_name": "Reducer.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe Reducer class is responsible for reducing a set of intermediate values that share a key to a smaller set of values.\n\nCORE LOGIC:\nThe Reducer class has three primary phases: Shuffle, Sort, and Reduce. In the Shuffle phase, the Reducer copies the sorted output from each Mapper using HTTP across the network. In the Sort phase, the framework merge sorts the Reducer inputs by keys (since different Mappers may have output the same key). In the Reduce phase, the reduce method is called for each <key, (collection of values)> in the sorted inputs.\n\nINPUTS/OUTPUTS:\nThe Reducer class takes in KEYIN, VALUEIN, KEYOUT, and VALUEOUT as input and output types. It takes in a key and an iterable of values as input and outputs a key and a value.\n\nDEPENDENCIES:\nThe Reducer class depends on the Configuration class for the job, the JobContext class, and the ReduceContext class. It also depends on the Iterable class for iterating over the values.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.filecache.DistributedCache",
+    "path": "filecache/DistributedCache.java",
+    "file_name": "DistributedCache.java",
+    "directory": "filecache",
+    "summary": "KEY FUNCTIONALITY:\n\nDistribute application-specific large, read-only files efficiently.\n\nCORE LOGIC:\n\nThe core logic of this chunk is to set up the cache for the application by copying the necessary files to the FileSystem and setting up the application's JobConf.\n\nINPUTS/OUTPUTS:\n\nThe inputs are the necessary files to be cached, specified via urls, and the JobConf. The outputs are the localized files and archives, which are used by the Mapper or Reducer.\n\nDEPENDENCIES:\n\nThe dependencies include the org.apache.hadoop.mapreduce.filecache package, the org.apache.hadoop.conf package, the org.apache.hadoop.mapreduce.task package, the org.apache.hadoop.util package, the org.apache.hadoop.fs package, the org.apache.hadoop.mapreduce package, and the java.net package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.lib.chain.Chain",
+    "path": "lib/chain/Chain.java",
+    "file_name": "Chain.java",
+    "directory": "lib/chain",
+    "summary": "KEY FUNCTIONALITY:\n\nThe Chain class is designed to manage the execution of multiple Mappers and a Reducer in a chain-like manner. It provides a way to chain multiple Mappers together and execute them sequentially, passing the output of each Mapper as the input to the next one.\n\nCORE LOGIC:\n\nThe core logic of the Chain class is to manage the execution of the Mappers and Reducer in a chain-like manner. It includes the logic for adding Mappers to the chain, setting the Reducer, and managing the execution of the chain.\n\nINPUTS/OUTPUTS:\n\nThe Chain class takes an InputSplit as input and produces the output of the Reducer as output. It passes the input to the first Mapper in the chain, and the output of each Mapper is passed as input to the next one.\n\nDEPENDENCIES:\n\nThe Chain class depends on the Mapper and Reducer classes, as well as the Configuration and ReflectionUtils classes. It also depends on the DefaultStringifier and Stringifier classes for serializing and deserializing objects.",
+    "chunked": true,
+    "number_of_code_chunks": 2,
+    "chunk_summaries": [
+      "Summarize this raw Java source-code chunk.\n\nThis is chunk 1 of 2 from file Chain.java.\nUse only the code shown in this chunk.\n\nReturn exactly these four sections:\n\nKEY FUNCTIONALITY: main purpose visible in this chunk\nCORE LOGIC: key algorithms or processing patterns visible in this chunk\nINPUTS/OUTPUTS: data flowing in and out\nDEPENDENCIES: key imported, parent, or collaborator classes visible in this chunk\n\nCode chunk:\n/**\n * Licensed to the Apache Software Foundation (ASF) under one\n * or more contributor license agreements.  See the NOTICE file\n * distributed with this work for additional information\n * regarding copyright ownership.  The ASF licenses this file\n * to you under the Apache License, Version 2.0 (the\n * \"License\"); you may not use this file except in compliance\n * with the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.hadoop.mapreduce.lib.chain;\n\nimport java.io.IOException;\nimport java.util.ArrayList;\nimport java.util.List;\nimport java.util.Map;\n\nimport org.apache.hadoop.classification.InterfaceAudience;\nimport org.apache.hadoop.classification.InterfaceStability;\nimport org.apache.hadoop.conf.Configuration;\nimport org.apache.hadoop.io.DefaultStringifier;\nimport org.apache.hadoop.io.Stringifier;\nimport org.apache.hadoop.mapreduce.InputSplit;\nimport org.apache.hadoop.mapreduce.Job;\nimport org.apache.hadoop.mapreduce.MapContext;\nimport org.apache.hadoop.mapreduce.Mapper;\nimport org.apache.hadoop.mapreduce.RecordReader;\nimport org.apache.hadoop.mapreduce.RecordWriter;\nimport org.apache.hadoop.mapreduce.ReduceContext;\nimport org.apache.hadoop.mapreduce",
+      "KEY FUNCTIONALITY:\n\nThis code chunk contains the main purpose of the Chain class, which is to manage the execution of multiple Mappers and a Reducer in a chain-like manner.\n\nCORE LOGIC:\n\nThe code chunk contains key algorithms or processing patterns visible in this chunk. It includes the logic for adding Mappers to the chain, setting the Reducer, and managing the execution of the chain.\n\nINPUTS/OUTPUTS:\n\nThe code chunk contains data flowing in and out. It includes the input parameters for adding Mappers and setting the Reducer, as well as the output of the chain execution.\n\nDEPENDENCIES:\n\nThe code chunk contains key imported, parent, or collaborator classes visible in this chunk. It includes the dependencies on the Mapper and Reducer classes, as well as the Configuration and ReflectionUtils classes."
+    ]
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.lib.chain.ChainMapContextImpl",
+    "path": "lib/chain/ChainMapContextImpl.java",
+    "file_name": "ChainMapContextImpl.java",
+    "directory": "lib/chain",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class is a wrapper for a MapContext that delegates most of its functionality to the underlying context, but overrides the methods to do with record readers, record writers, and configuration.\n\nCORE LOGIC:\n\nThe core logic of this class is to provide a wrapper for a MapContext that delegates most of its functionality to the underlying context, but overrides the methods to do with record readers, record writers, and configuration.\n\nINPUTS/OUTPUTS:\n\nThe class takes in a TaskInputOutputContext, a RecordReader, a RecordWriter, and a Configuration as inputs. It provides the same outputs as the underlying context.\n\nDEPENDENCIES:\n\nThis class depends on the TaskInputOutputContext, RecordReader, RecordWriter, and Configuration classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.lib.chain.ChainMapper",
+    "path": "lib/chain/ChainMapper.java",
+    "file_name": "ChainMapper.java",
+    "directory": "lib/chain",
+    "summary": "KEY FUNCTIONALITY:\nThe ChainMapper class allows to use multiple Mapper classes within a single Map task.\n\nCORE LOGIC:\nThe Mapper classes are invoked in a chained (or piped) fashion, the output of the first becomes the input of the second, and so on until the last Mapper, the output of the last Mapper will be written to the task's output.\n\nINPUTS/OUTPUTS:\nThe key and values are passed from one element of the chain to the next, by value.\n\nDEPENDENCIES:\nThe ChainMapper class depends on the Chain class and the Mapper class.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.lib.chain.ChainReduceContextImpl",
+    "path": "lib/chain/ChainReduceContextImpl.java",
+    "file_name": "ChainReduceContextImpl.java",
+    "directory": "lib/chain",
+    "summary": "KEY FUNCTIONALITY:\nThis class is a wrapper for a ReduceContext that delegates most of its functionality to the underlying context, but overrides the methods to do with record writer and configuration.\n\nCORE LOGIC:\nThe core logic of this class is to provide a wrapper for a ReduceContext that delegates most of its functionality to the underlying context, but overrides the methods to do with record writer and configuration.\n\nINPUTS/OUTPUTS:\nThe class takes in a ReduceContext, a RecordWriter, and a Configuration as inputs, and it provides a way to write key-value pairs to the RecordWriter using the write() method.\n\nDEPENDENCIES:\nThis class depends on the ReduceContext, RecordWriter, and Configuration classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.lib.chain.ChainReducer",
+    "path": "lib/chain/ChainReducer.java",
+    "file_name": "ChainReducer.java",
+    "directory": "lib/chain",
+    "summary": "KEY FUNCTIONALITY:\nThe ChainReducer class allows to chain multiple Mapper classes after a Reducer within the Reducer task.\n\nCORE LOGIC:\nThe key algorithms or processing patterns visible in this chunk are the piping of the output of the Reducer to the input of the first Mapper, and then piping the output of each Mapper to the input of the next.\n\nINPUTS/OUTPUTS:\nThe data flowing in and out of this chunk is the output of the Reducer becoming the input of the first Mapper, and then the output of each Mapper becoming the input of the next.\n\nDEPENDENCIES:\nThe key imported, parent, or collaborator classes visible in this chunk are the Chain class and its dependencies.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.lib.map.MultithreadedMapper",
+    "path": "lib/map/MultithreadedMapper.java",
+    "file_name": "MultithreadedMapper.java",
+    "directory": "lib/map",
+    "summary": "KEY FUNCTIONALITY:\n\nThe MultithreadedMapper class is a thread-safe implementation of the Mapper interface that can improve throughput when the Map operation is not CPU-bound.\n\nCORE LOGIC:\n\nThe MultithreadedMapper class uses a thread pool to run multiple map tasks concurrently, allowing for parallel execution of the map function.\n\nINPUTS/OUTPUTS:\n\nThe MultithreadedMapper class takes input from an InputSplit and writes output to a RecordWriter.\n\nDEPENDENCIES:\n\nThe MultithreadedMapper class depends on the Mapper interface, the MapContext interface, and the RecordReader and RecordWriter classes. It also depends on the Configuration class for configuration settings.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.lib.map.WrappedMapper",
+    "path": "lib/map/WrappedMapper.java",
+    "file_name": "WrappedMapper.java",
+    "directory": "lib/map",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class wraps a given Mapper to allow custom Mapper.Context implementations.\n\nCORE LOGIC:\n\nThe core logic of this class is to provide a wrapped Mapper.Context for custom implementations.\n\nINPUTS/OUTPUTS:\n\nThe class takes a MapContext as input and provides a wrapped Mapper.Context as output.\n\nDEPENDENCIES:\n\nThis class depends on the org.apache.hadoop.mapreduce package and its dependencies.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.lib.reduce.WrappedReducer",
+    "path": "lib/reduce/WrappedReducer.java",
+    "file_name": "WrappedReducer.java",
+    "directory": "lib/reduce",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class is a wrapper for a given Reducer to allow for custom Reducer.Context implementations.\n\nCORE LOGIC:\n\nThe getReducerContext method returns a wrapped Reducer.Context for custom implementations.\n\nINPUTS/OUTPUTS:\n\nThe WrappedReducer class takes in a ReduceContext as input and provides a wrapped Reducer.Context for custom implementations.\n\nDEPENDENCIES:\n\nThis class depends on the org.apache.hadoop.mapreduce package and its dependencies.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.task.JobContextImpl",
+    "path": "task/JobContextImpl.java",
+    "file_name": "JobContextImpl.java",
+    "directory": "task",
+    "summary": "KEY FUNCTIONALITY:\n\nThe JobContextImpl class provides a read-only view of a MapReduce job, including its configuration, input format, output format, mapper, combiner, reducer, partitioner, and other job-level information.\n\nCORE LOGIC:\n\nThe class contains methods to retrieve various job configuration parameters, such as the number of reduce tasks, the job name, the input format class, the mapper class, the combiner class, the reducer class, the output format class, the partitioner class, the raw key comparator, the combiner key grouping comparator, the grouping comparator, the job setup and cleanup needed status, the task cleanup needed status, the symlink status, the cache archives, cache files, local cache archives, local cache files, archive timestamps, file timestamps, file class paths, archive class paths, max map attempts, max reduce attempts, task profiling status, profiler configuration arguments, task profiling range, and user.\n\nINPUTS/OUTPUTS:\n\nThe class provides methods to retrieve the job configuration, job ID, and user credentials.\n\nDEPENDENCIES:\n\nThe class depends on the org.apache.hadoop.mapred.JobConf class for job configuration, the JobID class for job ID, and the Credentials class for user credentials.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.task.ReduceContextImpl",
+    "path": "task/ReduceContextImpl.java",
+    "file_name": "ReduceContextImpl.java",
+    "directory": "task",
+    "summary": "KEY FUNCTIONALITY:\nThe ReduceContextImpl class is a context object that is passed to the Reducer. It provides access to the input data, such as key-value pairs, and allows the Reducer to write output data.\n\nCORE LOGIC:\nThe class includes methods for iterating over the input data, such as nextKey() and nextKeyValue(), and for accessing the current key and value. It also includes a ValueIterable class that provides an iterable interface for iterating over the values for the current key.\n\nINPUTS/OUTPUTS:\nThe class takes input from a RawKeyValueIterator, which provides access to the key-value pairs to be processed. It also takes input from a Configuration object, which provides configuration parameters for the task. The output is written to a RecordWriter, which is responsible for writing the output data to a storage system.\n\nDEPENDENCIES:\nThe class depends on the RawKeyValueIterator, Configuration, RecordWriter, and other classes and interfaces from the Apache Hadoop MapReduce framework.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl",
+    "path": "task/reduce/MergeManagerImpl.java",
+    "file_name": "MergeManagerImpl.java",
+    "directory": "task/reduce",
+    "summary": "KEY FUNCTIONALITY:\n\nThe MergeManagerImpl class is a key component of the Apache Hadoop MapReduce framework, responsible for managing the merging of map outputs during the shuffle and sort phase of a MapReduce job.\n\nCORE LOGIC:\n\nThe MergeManagerImpl class contains logic for merging in-memory map outputs, as well as logic for merging on-disk map outputs. It also includes logic for merging intermediate results during the shuffle phase.\n\nINPUTS/OUTPUTS:\n\nThe MergeManagerImpl class takes inputs in the form of map outputs, which can be either in-memory or on-disk. It produces outputs in the form of merged map outputs, which are written to disk.\n\nDEPENDENCIES:\n\nThe MergeManagerImpl class depends on various classes and interfaces from the Apache Hadoop MapReduce framework, including MapOutputFile, RawKeyValueIterator, Reducer, CombineOutputCollector, Counters.Counter, CompressionCodec, and Progress.",
+    "chunked": true,
+    "number_of_code_chunks": 2,
+    "chunk_summaries": [
+      "KEY FUNCTIONALITY:\n\nThe MergeManagerImpl class is a key component of the Apache Hadoop MapReduce framework, responsible for managing the merging of map outputs during the shuffle and sort phase of a MapReduce job.\n\nCORE LOGIC:\n\nThe MergeManagerImpl class contains logic for merging in-memory map outputs, as well as logic for merging on-disk map outputs. It also includes logic for merging intermediate results during the shuffle phase.\n\nINPUTS/OUTPUTS:\n\nThe MergeManagerImpl class takes inputs in the form of map outputs, which can be either in-memory or on-disk. It produces outputs in the form of merged map outputs, which are written to disk.\n\nDEPENDENCIES:\n\nThe MergeManagerImpl class depends on various classes and interfaces from the Apache Hadoop MapReduce framework, including MapOutputFile, RawKeyValueIterator, Reducer, CombineOutputCollector, Counters.Counter, CompressionCodec, and Progress.",
+      "KEY FUNCTIONALITY: Merges map-outputs from in-memory and on-disk segments.\nCORE LOGIC: Merges in-memory map-outputs and on-disk map-outputs.\nINPUTS/OUTPUTS: Data flowing in and out includes in-memory map-outputs, on-disk map-outputs, and merged map-outputs.\nDEPENDENCIES: Dependencies include the MergeManagerImpl class, the JobConf class, the FileSystem class, the RawKeyValueIterator class, the InMemoryMapOutput class, the CompressAwarePath class, and the Segment class."
+    ]
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.task.reduce.OnDiskMapOutput",
+    "path": "task/reduce/OnDiskMapOutput.java",
+    "file_name": "OnDiskMapOutput.java",
+    "directory": "task/reduce",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class represents a map output that is stored on disk.\n\nCORE LOGIC:\n\nThe core logic of this class is in the doShuffle() method, which copies data from a remote map output to a local disk.\n\nINPUTS/OUTPUTS:\n\nThe class has two input parameters: mapId (the ID of the map task that produced the output) and reduceId (the ID of the reduce task that will use the output). It also has an input stream (input) and an output stream (disk) for reading and writing data.\n\nDEPENDENCIES:\n\nThis class depends on the MergeManagerImpl class for merging map outputs and the MapOutputFile class for managing map output files. It also depends on the FileSystem class for file operations.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.tools.CLI",
+    "path": "tools/CLI.java",
+    "file_name": "CLI.java",
+    "directory": "tools",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to handle command-line arguments and print out usage information for each command.\n\nCORE LOGIC:\nThe code does not contain any core logic or algorithms.\n\nINPUTS/OUTPUTS:\nThe code does not contain any inputs or outputs.\n\nDEPENDENCIES:\nThe code does not import any dependencies.",
+    "chunked": true,
+    "number_of_code_chunks": 2,
+    "chunk_summaries": [
+      "Summarize this raw Java source-code chunk.\n\nThis is chunk 1 of 2 from file CLI.java.\nUse only the code shown in this chunk.\n\nReturn exactly these four sections:\n\nKEY FUNCTIONALITY: main purpose visible in this chunk\nCORE LOGIC: key algorithms or processing patterns visible in this chunk\nINPUTS/OUTPUTS: data flowing in and out\nDEPENDENCIES: key imported, parent, or collaborator classes visible in this chunk\n\nCode chunk:\n/**\n * Licensed to the Apache Software Foundation (ASF) under one\n * or more contributor license agreements.  See the NOTICE file\n * distributed with this work for additional information\n * regarding copyright ownership.  The ASF licenses this file\n * to you under the Apache License, Version 2.0 (the\n * \"License\"); you may not use this file except in compliance\n * with the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.hadoop.mapreduce.tools;\n\nimport java.io.BufferedOutputStream;\nimport java.io.File;\nimport java.io.FileOutputStream;\nimport java.io.IOException;\nimport java.io.OutputStreamWriter;\nimport java.io.PrintStream;\nimport java.io.PrintWriter;\nimport java.nio.charset.StandardCharsets;\nimport java.util.ArrayList;\nimport java.util.List;\nimport java.util.Set;\nimport java.util.HashSet;\nimport java.util.Arrays;\n\nimport org.apache.hadoop.classification.VisibleForTesting;\nimport org.apache.commons.lang3.StringUtils;\nimport org.apache.hadoop.classification.InterfaceAudience;\nimport org.apache.hadoop.classification.InterfaceStability;\nimport org.apache.hadoop.classification.InterfaceAudience.Private;\nimport org.apache.hadoop.conf.Configuration;\nimport org.apache.hadoop.conf.Configured;\nimport org.",
+      "KEY FUNCTIONALITY:\nThis chunk contains a large if-else block that handles different command-line arguments and prints out usage information for each command.\n\nCORE LOGIC:\nThe code chunk does not contain any core logic or algorithms.\n\nINPUTS/OUTPUTS:\nThe code chunk does not contain any inputs or outputs.\n\nDEPENDENCIES:\nThe code chunk does not import any dependencies."
+    ]
+  }
+]

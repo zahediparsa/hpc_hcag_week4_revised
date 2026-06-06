@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 4,
+  "directory": ".",
+  "title": "Counters Directory",
+  "description": "The counters directory is responsible for managing the counters in the Hadoop MapReduce framework. It provides a common implementation of counter groups and counters, as well as methods for adding, finding, and incrementing counters. The directory collaborates with other files or child directories to ensure the proper functioning of the counters. The architectural role of the counters directory is to provide a centralized location for managing counters, which helps in organizing and tracking the progress of MapReduce jobs.\n\n--- DIRECTORY: util ---\nTITLE: MapReduce Counters Utilities\nDESCRIPTION: This directory contains utilities for converting counter data to and from a compact string format, as well as methods for converting counter objects to and from JSON and TimelineMetric. These utilities are used by the MapReduce framework to track and report job progress and performance metrics. The code is written in Java and depends on the Apache Hadoop MapReduce library and the Apache Hadoop classification library.",
+  "summary": "TITLE: Counters Directory\nDESCRIPTION: The counters directory is responsible for managing the counters in the Hadoop MapReduce framework. It provides a common implementation of counter groups and counters, as well as methods for adding, finding, and incrementing counters. The directory collaborates with other files or child directories to ensure the proper functioning of the counters. The architectural role of the counters directory is to provide a centralized location for managing counters, which helps in organizing and tracking the progress of MapReduce jobs.\n\n--- DIRECTORY: util ---\nTITLE: MapReduce Counters Utilities\nDESCRIPTION: This directory contains utilities for converting counter data to and from a compact string format, as well as methods for converting counter objects to and from JSON and TimelineMetric. These utilities are used by the MapReduce framework to track and report job progress and performance metrics. The code is written in Java and depends on the Apache Hadoop MapReduce library and the Apache Hadoop classification library.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CounterGroup.java"
+    },
+    {
+      "type": "directory",
+      "name": "counters"
+    },
+    {
+      "type": "directory",
+      "name": "util"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- DIRECTORY: counters ---\nTITLE: Counters Directory\nDESCRIPTION: The counters directory is responsible for managing the counters in the Hadoop MapReduce framework. It provides a common implementation of counter groups and counters, as well as methods for adding, finding, and incrementing counters. The directory collaborates with other files or child directories to ensure the proper functioning of the counters. The architectural role of the counters directory is to provide a centralized location for managing counters, which helps in organizing and tracking the progress of MapReduce jobs.\n\n--- DIRECTORY: util ---\nTITLE: MapReduce Counters Utilities\nDESCRIPTION: This directory contains utilities for converting counter data to and from a compact string format, as well as methods for converting counter objects to and from JSON and TimelineMetric. These utilities are used by the MapReduce framework to track and report job progress and performance metrics. The code is written in Java and depends on the Apache Hadoop MapReduce library and the Apache Hadoop classification library."
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 22,
+  "directory": "lib/fieldsel",
+  "title": "",
+  "description": "responsibility: This directory contains aMapper/Reducer class that can be used to perform field selections in a manner similar to unix cut.\n\ncollaboration: The input data is treated as fields separated by a user specified separator. The user can specify a list of fields that form the map output keys and a list of fields that form the map output values.\n\narchitectural role: This directory plays the role of a helper class that implements the functionality of selecting specific fields from input data. It collaborates with other classes to process the input data and generate the desired output.",
+  "summary": "TITLE: \nDESCRIPTION: responsibility: This directory contains aMapper/Reducer class that can be used to perform field selections in a manner similar to unix cut.\n\ncollaboration: The input data is treated as fields separated by a user specified separator. The user can specify a list of fields that form the map output keys and a list of fields that form the map output values.\n\narchitectural role: This directory plays the role of a helper class that implements the functionality of selecting specific fields from input data. It collaborates with other classes to process the input data and generate the desired output.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "FieldSelectionHelper.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "responsibility: This directory contains aMapper/Reducer class that can be used to perform field selections in a manner similar to unix cut.\n\ncollaboration: The input data is treated as fields separated by a user specified separator. The user can specify a list of fields that form the map output keys and a list of fields that form the map output values.\n\narchitectural role: This directory plays the role of a helper class that implements the functionality of selecting specific fields from input data. It collaborates with other classes to process the input data and generate the desired output."
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 99,
+    "class": "org.apache.hadoop.mapreduce.util.ProcessTree",
+    "path": "util/ProcessTree.java",
+    "file_name": "ProcessTree.java",
+    "directory": "util",
+    "summary": "KEY FUNCTIONALITY:\n\nDestroy the process-tree.\n\nCORE LOGIC:\n\nThe core logic of this chunk is to destroy the process-tree. It does this by sending a specified signal to the specified pid.\n\nINPUTS/OUTPUTS:\n\nThe inputs to this chunk are the pid of the root process of the subtree of processes to be killed, the time to wait before sending SIGKILL after sending SIGTERM, and whether the pid is a process group leader or not. The output is the destruction of the process-tree.\n\nDEPENDENCIES:\n\nThis chunk depends on the org.apache.hadoop.util.Shell.ShellCommandExecutor class.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

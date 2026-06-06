@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 0,
+    "class": "org.apache.hadoop.mapreduce.JobSubmissionFiles",
+    "path": "JobSubmissionFiles.java",
+    "file_name": "JobSubmissionFiles.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThis code provides utility methods for managing job submission files.\n\nCORE LOGIC:\nThe methods in this code chunk are used to manage job submission files, including setting file permissions, creating file paths, and initializing the staging directory.\n\nINPUTS/OUTPUTS:\nThe code takes in a Cluster object, a Configuration object, and a UserGroupInformation object as inputs. It returns a Path object as an output.\n\nDEPENDENCIES:\nThis code depends on the Cluster, Configuration, and UserGroupInformation classes from the Apache Hadoop MapReduce framework.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 0,
+    "class": "org.apache.hadoop.mapreduce.protocol.ClientProtocolProvider",
+    "path": "protocol/ClientProtocolProvider.java",
+    "file_name": "ClientProtocolProvider.java",
+    "directory": "protocol",
+    "summary": "KEY FUNCTIONALITY:\nThis class provides a way to create and close connections to a remote service.\n\nCORE LOGIC:\nThe create() methods create a connection to a remote service and return a ClientProtocol object.\nThe close() method closes the connection to the remote service.\n\nINPUTS/OUTPUTS:\nThe create() methods take a Configuration object as input and return a ClientProtocol object.\nThe close() method takes a ClientProtocol object as input and returns nothing.\n\nDEPENDENCIES:\nThis class depends on the ClientProtocol interface and the Configuration class.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

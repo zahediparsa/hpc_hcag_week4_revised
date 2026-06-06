@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 73,
+  "directory": "lib",
+  "title": "Lib directory",
+  "description": "The Lib directory contains classes related to the MapReduce framework.\n\nThe classes in this directory collaborate to provide essential functionality for MapReduce tasks, such as reading and writing data, managing task execution, and handling task failures.\n\nThe directory follows the architectural pattern of the Hadoop MapReduce framework, specifically the mapred package. It provides a set of classes and interfaces that enable developers to build and execute MapReduce jobs efficiently.\n\n--- DIRECTORY: lib/join ---\nTITLE: Join directory\nDESCRIPTION: The Join directory contains classes related to the MapReduce join operation.\n\nThe classes in this directory collaborate to implement the join operation by allowing MapReduce tasks to efficiently join data based on common keys.\n\nThe directory follows the architectural pattern of the Hadoop MapReduce framework, specifically the join package in the mapred.join package.\n\n--- DIRECTORY: lib/output ---\nTITLE: ManifestCommitterConstants\nDESCRIPTION: This directory contains public constants for the manifest committer. It includes configuration options and their default values. The code defines various file suffixes, prefixes, and formats for manifest and summary files. It also provides default values for various options.",
+  "summary": "TITLE: Lib directory\nDESCRIPTION: The Lib directory contains classes related to the MapReduce framework.\n\nThe classes in this directory collaborate to provide essential functionality for MapReduce tasks, such as reading and writing data, managing task execution, and handling task failures.\n\nThe directory follows the architectural pattern of the Hadoop MapReduce framework, specifically the mapred package. It provides a set of classes and interfaces that enable developers to build and execute MapReduce jobs efficiently.\n\n--- DIRECTORY: lib/join ---\nTITLE: Join directory\nDESCRIPTION: The Join directory contains classes related to the MapReduce join operation.\n\nThe classes in this directory collaborate to implement the join operation by allowing MapReduce tasks to efficiently join data based on common keys.\n\nThe directory follows the architectural pattern of the Hadoop MapReduce framework, specifically the join package in the mapred.join package.\n\n--- DIRECTORY: lib/output ---\nTITLE: ManifestCommitterConstants\nDESCRIPTION: This directory contains public constants for the manifest committer. It includes configuration options and their default values. The code defines various file suffixes, prefixes, and formats for manifest and summary files. It also provides default values for various options.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/join"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- DIRECTORY: lib ---\nTITLE: Lib directory\nDESCRIPTION: The Lib directory contains classes related to the MapReduce framework.\n\nThe classes in this directory collaborate to provide essential functionality for MapReduce tasks, such as reading and writing data, managing task execution, and handling task failures.\n\nThe directory follows the architectural pattern of the Hadoop MapReduce framework, specifically the mapred package. It provides a set of classes and interfaces that enable developers to build and execute MapReduce jobs efficiently.\n\n--- DIRECTORY: lib/join ---\nTITLE: Join directory\nDESCRIPTION: The Join directory contains classes related to the MapReduce join operation.\n\nThe classes in this directory collaborate to implement the join operation by allowing MapReduce tasks to efficiently join data based on common keys.\n\nThe directory follows the architectural pattern of the Hadoop MapReduce framework, specifically the join package in the mapred.join package.\n\n--- DIRECTORY: lib/output ---\nTITLE: ManifestCommitterConstants\nDESCRIPTION: This directory contains public constants for the manifest committer. It includes configuration options and their default values. The code defines various file suffixes, prefixes, and formats for manifest and summary files. It also provides default values for various options."
+}

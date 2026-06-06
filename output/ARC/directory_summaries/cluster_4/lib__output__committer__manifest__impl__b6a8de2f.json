@@ -1,0 +1,50 @@
+{
+  "type": "directory",
+  "cluster_id": 4,
+  "directory": "lib/output/committer/manifest/impl",
+  "title": "Implementation classes for the manifest committer.",
+  "description": "These classes are for internal use by the manifest committer.\nThey are not expected to be used by any other code.",
+  "summary": "TITLE: Implementation classes for the manifest committer.\nDESCRIPTION: These classes are for internal use by the manifest committer.\nThey are not expected to be used by any other code.",
+  "number_of_children": 9,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AuditingIntegration.java"
+    },
+    {
+      "type": "file",
+      "name": "EntryFileIO.java"
+    },
+    {
+      "type": "file",
+      "name": "InternalConstants.java"
+    },
+    {
+      "type": "file",
+      "name": "LoadedManifestData.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestCommitterSupport.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestStoreOperations.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestStoreOperationsThroughFileSystem.java"
+    },
+    {
+      "type": "file",
+      "name": "OutputValidationException.java"
+    },
+    {
+      "type": "file",
+      "name": "package-info.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Implementation classes for the manifest committer.\n\nDESCRIPTION:\nThese classes are for internal use by the manifest committer.\nThey are not expected to be used by any other code."
+}

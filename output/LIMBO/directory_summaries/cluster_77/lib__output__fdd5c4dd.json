@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 77,
+  "directory": "lib/output",
+  "title": "lib/output/committer",
+  "description": "The lib/output/committer directory is responsible for handling the committer logic in the Hadoop MapReduce framework. It collaborates with the Committer.java file to handle the committing of output data. The architectural role of this directory is to provide a way to handle the committing of output data in a scalable and fault-tolerant manner.\n\nThe directory uses the Apache Hadoop MapReduce library and the Java IO library to perform its core logic. It takes input data and handles the committing of output data in a fault-tolerant manner.\n\nOutput format exactly as:\nTITLE: <maximum 10 words>\n\nDESCRIPTION:\n<4 to 6 concise sentences>",
+  "summary": "TITLE: lib/output/committer\nDESCRIPTION: The lib/output/committer directory is responsible for handling the committer logic in the Hadoop MapReduce framework. It collaborates with the Committer.java file to handle the committing of output data. The architectural role of this directory is to provide a way to handle the committing of output data in a scalable and fault-tolerant manner.\n\nThe directory uses the Apache Hadoop MapReduce library and the Java IO library to perform its core logic. It takes input data and handles the committing of output data in a fault-tolerant manner.\n\nOutput format exactly as:\nTITLE: <maximum 10 words>\n\nDESCRIPTION:\n<4 to 6 concise sentences>",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/output/committer\n\nDESCRIPTION:\nThe lib/output/committer directory is responsible for handling the committer logic in the Hadoop MapReduce framework. It collaborates with the Committer.java file to handle the committing of output data. The architectural role of this directory is to provide a way to handle the committing of output data in a scalable and fault-tolerant manner.\n\nThe directory uses the Apache Hadoop MapReduce library and the Java IO library to perform its core logic. It takes input data and handles the committing of output data in a fault-tolerant manner.\n\nOutput format exactly as:\nTITLE: <maximum 10 words>\n\nDESCRIPTION:\n<4 to 6 concise sentences>"
+}

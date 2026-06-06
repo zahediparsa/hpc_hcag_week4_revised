@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 6,
+  "directory": ".",
+  "title": "lib/db",
+  "description": "This directory contains classes that implement the DBSplitter interface for various data types. The classes collaborate with the DataDrivenDBInputFormat class to read input data from a database table and generate input splits for processing.",
+  "summary": "TITLE: lib/db\nDESCRIPTION: This directory contains classes that implement the DBSplitter interface for various data types. The classes collaborate with the DataDrivenDBInputFormat class to read input data from a database table and generate input splits for processing.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/db\n\nDESCRIPTION:\nThis directory contains classes that implement the DBSplitter interface for various data types. The classes collaborate with the DataDrivenDBInputFormat class to read input data from a database table and generate input splits for processing."
+}

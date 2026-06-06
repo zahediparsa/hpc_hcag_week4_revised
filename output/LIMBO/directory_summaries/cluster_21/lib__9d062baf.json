@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 21,
+  "directory": "lib",
+  "title": "lib",
+  "description": "This directory contains classes that implement reducers for MapReduce jobs. The reducers take in a key and an iterable of values, and they calculate the sum of the values for that key. The result is then written to the context using the key and the sum.\n\nThe IntSumReducer class implements a reducer for integer values, while the LongSumReducer class implements a reducer for long values. Both classes use the Reducer class from the Apache Hadoop MapReduce library and the IntWritable and LongWritable classes for handling integer and long values, respectively.\n\nThe WrappedReducer class is a wrapper for a given Reducer to allow for custom Reducer.Context implementations. It provides a wrapped Reducer.Context for custom implementations.\n\nThe classes in this directory collaborate by taking in input from the Map phase of the MapReduce job, calculating the sum of the values for each key, and writing the key and the sum to the context for output in the Reduce phase.",
+  "summary": "TITLE: lib\nDESCRIPTION: This directory contains classes that implement reducers for MapReduce jobs. The reducers take in a key and an iterable of values, and they calculate the sum of the values for that key. The result is then written to the context using the key and the sum.\n\nThe IntSumReducer class implements a reducer for integer values, while the LongSumReducer class implements a reducer for long values. Both classes use the Reducer class from the Apache Hadoop MapReduce library and the IntWritable and LongWritable classes for handling integer and long values, respectively.\n\nThe WrappedReducer class is a wrapper for a given Reducer to allow for custom Reducer.Context implementations. It provides a wrapped Reducer.Context for custom implementations.\n\nThe classes in this directory collaborate by taking in input from the Map phase of the MapReduce job, calculating the sum of the values for each key, and writing the key and the sum to the context for output in the Reduce phase.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/fieldsel"
+    },
+    {
+      "type": "directory",
+      "name": "lib/reduce"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib\n\nDESCRIPTION:\nThis directory contains classes that implement reducers for MapReduce jobs. The reducers take in a key and an iterable of values, and they calculate the sum of the values for that key. The result is then written to the context using the key and the sum.\n\nThe IntSumReducer class implements a reducer for integer values, while the LongSumReducer class implements a reducer for long values. Both classes use the Reducer class from the Apache Hadoop MapReduce library and the IntWritable and LongWritable classes for handling integer and long values, respectively.\n\nThe WrappedReducer class is a wrapper for a given Reducer to allow for custom Reducer.Context implementations. It provides a wrapped Reducer.Context for custom implementations.\n\nThe classes in this directory collaborate by taking in input from the Map phase of the MapReduce job, calculating the sum of the values for each key, and writing the key and the sum to the context for output in the Reduce phase."
+}

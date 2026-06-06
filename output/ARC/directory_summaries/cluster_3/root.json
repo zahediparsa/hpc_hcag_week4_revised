@@ -1,0 +1,70 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": ".",
+  "title": "MapReduce Security Package",
+  "description": "The MapReduce security package contains classes related to authentication and authorization in the Hadoop MapReduce framework. The core logic is contained in the UserGroupInformation class, which provides methods for authentication and authorization. The package also includes classes for authentication using tokens, such as the TokenSelector and Tokenizer classes. The classes in this package depend on the classes in the org.apache.hadoop.mapreduce.security.token package.",
+  "summary": "TITLE: MapReduce Security Package\nDESCRIPTION: The MapReduce security package contains classes related to authentication and authorization in the Hadoop MapReduce framework. The core logic is contained in the UserGroupInformation class, which provides methods for authentication and authorization. The package also includes classes for authentication using tokens, such as the TokenSelector and Tokenizer classes. The classes in this package depend on the classes in the org.apache.hadoop.mapreduce.security.token package.",
+  "number_of_children": 14,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "Counter.java"
+    },
+    {
+      "type": "file",
+      "name": "CounterGroup.java"
+    },
+    {
+      "type": "file",
+      "name": "Counters.java"
+    },
+    {
+      "type": "file",
+      "name": "JobPriority.java"
+    },
+    {
+      "type": "file",
+      "name": "QueueState.java"
+    },
+    {
+      "type": "directory",
+      "name": "counters"
+    },
+    {
+      "type": "directory",
+      "name": "filecache"
+    },
+    {
+      "type": "directory",
+      "name": "jobhistory"
+    },
+    {
+      "type": "directory",
+      "name": "lib"
+    },
+    {
+      "type": "directory",
+      "name": "protocol"
+    },
+    {
+      "type": "directory",
+      "name": "security"
+    },
+    {
+      "type": "directory",
+      "name": "split"
+    },
+    {
+      "type": "directory",
+      "name": "task"
+    },
+    {
+      "type": "directory",
+      "name": "util"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Security Package\n\nDESCRIPTION: The MapReduce security package contains classes related to authentication and authorization in the Hadoop MapReduce framework. The core logic is contained in the UserGroupInformation class, which provides methods for authentication and authorization. The package also includes classes for authentication using tokens, such as the TokenSelector and Tokenizer classes. The classes in this package depend on the classes in the org.apache.hadoop.mapreduce.security.token package."
+}

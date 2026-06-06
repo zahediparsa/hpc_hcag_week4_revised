@@ -1,0 +1,98 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 50,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.DoubleValueSum",
+    "path": "lib/aggregate/DoubleValueSum.java",
+    "file_name": "DoubleValueSum.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY:\n-Aggregates a sequence of double values.\n\nCORE LOGIC:\n-Sums up the double values using the addNextValue method.\n-Returns the string representation of the aggregated value using the getReport method.\n-Resets the aggregator to its initial state using the reset method.\n-Returns an array of one element containing the string representation of the aggregated value using the getCombinerOutput method.\n\nINPUTS/OUTPUTS:\n-Accepts a double value or a string representation of a double value using the addNextValue method.\n-Returns the string representation of the aggregated value using the getReport method.\n\nDEPENDENCIES:\n-None.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 50,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.LongValueMax",
+    "path": "lib/aggregate/LongValueMax.java",
+    "file_name": "LongValueMax.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY: Maintains the maximum of a sequence of long values.\nCORE LOGIC: The addNextValue method updates the maximum value if a new value is greater than the current maximum. The reset method resets the maximum value to the minimum value.\nINPUTS/OUTPUTS: The addNextValue method takes a long value or a string representation of a long value. The getReport method returns the string representation of the maximum value. The getCombinerOutput method returns an array of one element, which is the string representation of the maximum value.\nDEPENDENCIES: None.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 50,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.LongValueMin",
+    "path": "lib/aggregate/LongValueMin.java",
+    "file_name": "LongValueMin.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY: Maintains the minimum of a sequence of long values.\nCORE LOGIC: Key algorithms or processing patterns visible in this chunk are maintaining the minimum value.\nINPUTS/OUTPUTS: Data flowing in and out includes adding values to the aggregator and getting the aggregated value.\nDEPENDENCIES: Key imported, parent, or collaborator classes visible in this chunk are not explicitly mentioned, but the code is part of the Apache Hadoop MapReduce library.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 50,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.LongValueSum",
+    "path": "lib/aggregate/LongValueSum.java",
+    "file_name": "LongValueSum.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY:\n-Aggregates a sequence of long values.\n\nCORE LOGIC:\n-Sums up a sequence of long values.\n\nINPUTS/OUTPUTS:\n-Input: a sequence of long values.\n-Output: the sum of the input values.\n\nDEPENDENCIES:\n-None.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 50,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.StringValueMax",
+    "path": "lib/aggregate/StringValueMax.java",
+    "file_name": "StringValueMax.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY: Maintains the biggest of a sequence of strings.\nCORE LOGIC: Compares each new string value to the current maximum value and updates the maximum if the new value is greater.\nINPUTS/OUTPUTS: Input is a string value, output is the maximum string value seen so far.\nDEPENDENCIES: None.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 50,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.StringValueMin",
+    "path": "lib/aggregate/StringValueMin.java",
+    "file_name": "StringValueMin.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY:\n-Aggregates the smallest string value from a sequence of strings.\n\nCORE LOGIC:\n-Keeps track of the smallest string value seen so far.\n-Updates the minimum value when a new value is added.\n\nINPUTS/OUTPUTS:\n-Input: a string value to be added to the aggregation.\n-Output: the smallest string value seen so far.\n\nDEPENDENCIES:\n-None.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 50,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.UniqValueCount",
+    "path": "lib/aggregate/UniqValueCount.java",
+    "file_name": "UniqValueCount.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY:\n- The main purpose of this code is to implement a value aggregator that deduplicates a sequence of objects.\n\nCORE LOGIC:\n- The code uses a TreeMap to store unique objects and their counts.\n- It also keeps track of the total number of items and the maximum number of unique values allowed.\n- The addNextValue method adds a value to the aggregator, and the getCombinerOutput method returns an array of the unique objects.\n\nINPUTS/OUTPUTS:\n- The code takes in a sequence of objects and returns the number of unique objects.\n\nDEPENDENCIES:\n- The code depends on the org.apache.hadoop.mapreduce.lib.aggregate package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 50,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.ValueHistogram",
+    "path": "lib/aggregate/ValueHistogram.java",
+    "file_name": "ValueHistogram.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY:\n- Computes the histogram of a sequence of strings\n\nCORE LOGIC:\n- Maintains a TreeMap of values and their frequencies\n- addNextValue() method adds a value to the aggregator, incrementing its frequency\n- getReport() method returns a string representation of the histogram, including basic statistics\n- getReportDetails() method returns a string representation of the list of value/frequency pairs\n- getCombinerOutput() method returns a list of value/frequency pairs for use by the reducer\n- reset() method resets the aggregator\n\nINPUTS/OUTPUTS:\n- addNextValue() method takes a string in the form of xxxx\\tnum, where xxxx is a value and num is its frequency\n- getReport() method returns a string representation of the histogram\n- getReportDetails() method returns a string representation of the list of value/frequency pairs\n- getCombinerOutput() method returns a list of value/frequency pairs\n\nDEPENDENCIES:\n- None",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

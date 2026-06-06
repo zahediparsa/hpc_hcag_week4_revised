@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 1,
+  "directory": "util",
+  "title": "Util",
+  "description": "This directory contains helper classes that are used by other classes in the system. These classes are used to handle resource bundles in a saner way.",
+  "summary": "TITLE: Util\nDESCRIPTION: This directory contains helper classes that are used by other classes in the system. These classes are used to handle resource bundles in a saner way.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ResourceBundles.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Util\n\nDESCRIPTION:\nThis directory contains helper classes that are used by other classes in the system. These classes are used to handle resource bundles in a saner way."
+}

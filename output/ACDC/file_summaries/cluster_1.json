@@ -1,0 +1,62 @@
+[
+  {
+    "algorithm": "ACDC",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.FileSystemCounter",
+    "path": "FileSystemCounter.java",
+    "file_name": "FileSystemCounter.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\n\nThis enum defines a set of file system counters.\n\nCORE LOGIC:\n\nThis enum does not contain any logic.\n\nINPUTS/OUTPUTS:\n\nThis enum does not define any inputs or outputs.\n\nDEPENDENCIES:\n\nThis enum does not depend on any other classes or packages.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.counters.AbstractCounters",
+    "path": "counters/AbstractCounters.java",
+    "file_name": "AbstractCounters.java",
+    "directory": "counters",
+    "summary": "KEY FUNCTIONALITY:\n- The class provides a common implementation for the Counters container in both mapred and mapreduce packages.\n- It includes methods for adding groups, finding counters, and incrementing multiple counters by their amounts in another Counters instance.\n\nCORE LOGIC:\n- The class uses a cache from enum values to the associated counter to optimize performance.\n- It also includes a method for writing the set of groups to a DataOutput.\n\nINPUTS/OUTPUTS:\n- The class takes a CounterGroupFactory as a parameter in its constructor, which is used to create new groups.\n- It also takes a Limits object as a parameter, which is used to check the limits of the number of groups and counters.\n\nDEPENDENCIES:\n- The class depends on the CounterGroupFactory and Limits classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.counters.FileSystemCounterGroup",
+    "path": "counters/FileSystemCounterGroup.java",
+    "file_name": "FileSystemCounterGroup.java",
+    "directory": "counters",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class provides a common implementation of the filesystem counter group in both mapred and mapreduce packages.\n\nCORE LOGIC:\n\nThe class initializes a map to store the file system counters and provides methods to add, find, and increment counters. It also provides methods to read and write the counters to/from a DataInput/DataOutput stream.\n\nINPUTS/OUTPUTS:\n\nThe class takes a DataInput and DataOutput stream as input/output for reading/writing the counters.\n\nDEPENDENCIES:\n\nThe class depends on the Counter and FileSystemCounter classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.counters.FrameworkCounterGroup",
+    "path": "counters/FrameworkCounterGroup.java",
+    "file_name": "FrameworkCounterGroup.java",
+    "directory": "counters",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class provides a framework for implementing counter groups in both mapred and mapreduce packages. It includes methods for adding, finding, and incrementing counters, as well as reading and writing counter data.\n\nCORE LOGIC:\n\nThe class includes a counter facade for framework counters, which allows for compatibility between old and new interfaces. It also includes methods for adding, finding, and incrementing counters, as well as reading and writing counter data.\n\nINPUTS/OUTPUTS:\n\nThe class takes in a class object representing the counter enum class, and provides methods for adding, finding, and incrementing counters. It also includes methods for reading and writing counter data.\n\nDEPENDENCIES:\n\nThe class depends on the org.apache.hadoop.mapreduce.counters package and the org.apache.hadoop.mapreduce.util package. It also depends on the org.apache.hadoop.io package for reading and writing counter data.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.util.ResourceBundles",
+    "path": "util/ResourceBundles.java",
+    "file_name": "ResourceBundles.java",
+    "directory": "util",
+    "summary": "KEY FUNCTIONALITY:\n- Helper class to handle resource bundles in a saner way\n\nCORE LOGIC:\n- Get a resource bundle\n- Get a resource given bundle name and key\n\nINPUTS/OUTPUTS:\n- Resource bundle name\n- Resource key\n- Default value for the resource\n\nDEPENDENCIES:\n- java.util.Locale\n- java.util.ResourceBundle\n- java.util.MissingResourceException",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

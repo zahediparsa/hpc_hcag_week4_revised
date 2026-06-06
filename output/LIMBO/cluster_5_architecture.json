@@ -1,0 +1,24 @@
+{
+  "cluster_id": 5,
+  "title": "Hadoop MapReduce Architecture",
+  "description": "The Hadoop MapReduce architecture is responsible for processing large-scale data sets in a distributed environment. It consists of a master node and multiple slave nodes. The master node is responsible for scheduling and monitoring the tasks, while the slave nodes execute the tasks and report their status back to the master node. The MapReduce framework provides a way to divide the input data into smaller chunks and process them in parallel. It uses a Map function to process the input data and generate intermediate key-value pairs, and a Reduce function to process the intermediate data and generate the final output. The MapReduce architecture is scalable, fault-tolerant, and provides a way to handle large-scale data processing. It depends on the Hadoop Distributed File System (HDFS) for storing the input data and the YARN (Yet Another Resource Negotiator) for resource management and task scheduling.",
+  "description_word_count": 142,
+  "number_of_files": 4,
+  "number_of_directories": 4,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is responsible for processing large-scale data sets in a distributed environment. It consists of a master node and multiple slave nodes. The master node is responsible for scheduling and monitoring the tasks, while the slave nodes execute the tasks and report their status back to the master node. The MapReduce framework provides a way to divide the input data into smaller chunks and process them in parallel. It uses a Map function to process the input data and generate intermediate key-value pairs, and a Reduce function to process the intermediate data and generate the final output. The MapReduce architecture is scalable, fault-tolerant, and provides a way to handle large-scale data processing. It depends on the Hadoop Distributed File System (HDFS) for storing the input data and the YARN (Yet Another Resource Negotiator) for resource management and task scheduling.",
+  "algorithm": "LIMBO",
+  "files": [
+    "TaskReport.java",
+    "lib/output/FileOutputFormat.java",
+    "lib/output/MultipleOutputs.java",
+    "task/TaskInputOutputContextImpl.java"
+  ]
+}

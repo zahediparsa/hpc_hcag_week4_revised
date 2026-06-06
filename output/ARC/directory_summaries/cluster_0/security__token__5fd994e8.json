@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "security/token",
+  "title": "Hadoop MapReduce Architecture: security/token Directory",
+  "description": "The security/token directory in Hadoop MapReduce architecture is responsible for managing job tokens. The JobTokenIdentifier class is used to identify a job token, while the JobTokenSecretManager class is a SecretManager for job tokens that can cache generated job tokens. The JobTokenSelector class implements a TokenSelector that looks through tokens to find the first job token that matches the service and returns it. These classes collaborate to provide secure and efficient job token management in the Hadoop MapReduce framework.",
+  "summary": "TITLE: Hadoop MapReduce Architecture: security/token Directory\nDESCRIPTION: The security/token directory in Hadoop MapReduce architecture is responsible for managing job tokens. The JobTokenIdentifier class is used to identify a job token, while the JobTokenSecretManager class is a SecretManager for job tokens that can cache generated job tokens. The JobTokenSelector class implements a TokenSelector that looks through tokens to find the first job token that matches the service and returns it. These classes collaborate to provide secure and efficient job token management in the Hadoop MapReduce framework.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobTokenIdentifier.java"
+    },
+    {
+      "type": "file",
+      "name": "JobTokenSecretManager.java"
+    },
+    {
+      "type": "file",
+      "name": "JobTokenSelector.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture: security/token Directory\n\nDESCRIPTION:\nThe security/token directory in Hadoop MapReduce architecture is responsible for managing job tokens. The JobTokenIdentifier class is used to identify a job token, while the JobTokenSecretManager class is a SecretManager for job tokens that can cache generated job tokens. The JobTokenSelector class implements a TokenSelector that looks through tokens to find the first job token that matches the service and returns it. These classes collaborate to provide secure and efficient job token management in the Hadoop MapReduce framework."
+}

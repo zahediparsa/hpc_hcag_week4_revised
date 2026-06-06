@@ -1,0 +1,26 @@
+{
+  "cluster_id": 55,
+  "title": "Cluster-level architectural abstraction for MapReduce",
+  "description": "The MapReduce cluster consists of a master node and multiple worker nodes. The master node is responsible for coordinating the execution of MapReduce tasks and managing the distribution of data across the worker nodes. The worker nodes execute the Map and Reduce tasks and communicate with the master node to report their progress and receive new tasks. The cluster uses a distributed file system to store data and intermediate results. The architecture ensures scalability, fault tolerance, and high performance for processing large-scale data. The technologies used include Java, Hadoop, and distributed file systems such as HDFS.",
+  "description_word_count": 96,
+  "number_of_files": 6,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Cluster-level architectural abstraction for MapReduce\n\nDESCRIPTION:\nThe MapReduce cluster consists of a master node and multiple worker nodes. The master node is responsible for coordinating the execution of MapReduce tasks and managing the distribution of data across the worker nodes. The worker nodes execute the Map and Reduce tasks and communicate with the master node to report their progress and receive new tasks. The cluster uses a distributed file system to store data and intermediate results. The architecture ensures scalability, fault tolerance, and high performance for processing large-scale data. The technologies used include Java, Hadoop, and distributed file systems such as HDFS.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/db/BigDecimalSplitter.java",
+    "lib/db/BooleanSplitter.java",
+    "lib/db/DateSplitter.java",
+    "lib/db/FloatSplitter.java",
+    "lib/db/IntegerSplitter.java",
+    "lib/db/TextSplitter.java"
+  ]
+}

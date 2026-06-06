@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 57,
+  "directory": "lib",
+  "title": "lib",
+  "description": "This directory contains classes for reading data from a database using MapReduce. The classes in this directory collaborate to read data from a database table and emit records as key-value pairs. The architectural role of this directory is to provide a high-level interface for reading data from a database and handling the distributed processing of the data. The classes in this directory use the Apache Hadoop MapReduce framework and the Apache Hadoop classification library.",
+  "summary": "TITLE: lib\nDESCRIPTION: This directory contains classes for reading data from a database using MapReduce. The classes in this directory collaborate to read data from a database table and emit records as key-value pairs. The architectural role of this directory is to provide a high-level interface for reading data from a database and handling the distributed processing of the data. The classes in this directory use the Apache Hadoop MapReduce framework and the Apache Hadoop classification library.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/db"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib\n\nDESCRIPTION:\nThis directory contains classes for reading data from a database using MapReduce. The classes in this directory collaborate to read data from a database table and emit records as key-value pairs. The architectural role of this directory is to provide a high-level interface for reading data from a database and handling the distributed processing of the data. The classes in this directory use the Apache Hadoop MapReduce framework and the Apache Hadoop classification library."
+}

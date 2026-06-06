@@ -1,0 +1,22 @@
+{
+  "cluster_id": 62,
+  "title": "Input",
+  "description": "The Input module is responsible for reading data from various input sources. It includes classes for reading from compressed input splits and input streams. The classes collaborate to read data from input sources, handle multi-byte delimiters correctly, and support customizable record delimiters. The module uses the SplitCompressionInputStream class to read from compressed input splits and the Configuration class to configure the behavior of the line reader. The Input module also includes a utility class for reading from input streams. The classes in this module play a crucial role in ensuring the reliability and performance of the system.",
+  "description_word_count": 97,
+  "number_of_files": 2,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Input\n\nDESCRIPTION:\nThe Input module is responsible for reading data from various input sources. It includes classes for reading from compressed input splits and input streams. The classes collaborate to read data from input sources, handle multi-byte delimiters correctly, and support customizable record delimiters. The module uses the SplitCompressionInputStream class to read from compressed input splits and the Configuration class to configure the behavior of the line reader. The Input module also includes a utility class for reading from input streams. The classes in this module play a crucial role in ensuring the reliability and performance of the system.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/input/CompressedSplitLineReader.java",
+    "lib/input/UncompressedSplitLineReader.java"
+  ]
+}

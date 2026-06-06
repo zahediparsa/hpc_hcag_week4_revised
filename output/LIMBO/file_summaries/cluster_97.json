@@ -1,0 +1,17 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 97,
+    "class": "org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl",
+    "path": "task/reduce/MergeManagerImpl.java",
+    "file_name": "MergeManagerImpl.java",
+    "directory": "task/reduce",
+    "summary": "KEY FUNCTIONALITY:\n\nThe MergeManagerImpl class is a key component of the Apache Hadoop MapReduce framework, responsible for managing the merging of map outputs during the shuffle and sort phase of a MapReduce job.\n\nCORE LOGIC:\n\nThe MergeManagerImpl class contains logic for merging in-memory map outputs, as well as logic for merging on-disk map outputs. It also includes logic for merging intermediate results during the shuffle phase.\n\nINPUTS/OUTPUTS:\n\nThe MergeManagerImpl class takes inputs in the form of map outputs, which can be either in-memory or on-disk. It produces outputs in the form of merged map outputs, which are written to disk.\n\nDEPENDENCIES:\n\nThe MergeManagerImpl class depends on various classes and interfaces from the Apache Hadoop MapReduce framework, including MapOutputFile, RawKeyValueIterator, Reducer, CombineOutputCollector, Counters.Counter, CompressionCodec, and Progress.",
+    "chunked": true,
+    "number_of_code_chunks": 2,
+    "chunk_summaries": [
+      "KEY FUNCTIONALITY:\n\nThe MergeManagerImpl class is a key component of the Apache Hadoop MapReduce framework, responsible for managing the merging of map outputs during the shuffle and sort phase of a MapReduce job.\n\nCORE LOGIC:\n\nThe MergeManagerImpl class contains logic for merging in-memory map outputs, as well as logic for merging on-disk map outputs. It also includes logic for merging intermediate results during the shuffle phase.\n\nINPUTS/OUTPUTS:\n\nThe MergeManagerImpl class takes inputs in the form of map outputs, which can be either in-memory or on-disk. It produces outputs in the form of merged map outputs, which are written to disk.\n\nDEPENDENCIES:\n\nThe MergeManagerImpl class depends on various classes and interfaces from the Apache Hadoop MapReduce framework, including MapOutputFile, RawKeyValueIterator, Reducer, CombineOutputCollector, Counters.Counter, CompressionCodec, and Progress.",
+      "KEY FUNCTIONALITY: Merges map-outputs from in-memory and on-disk segments.\nCORE LOGIC: Merges in-memory map-outputs and on-disk map-outputs.\nINPUTS/OUTPUTS: Data flowing in and out includes in-memory map-outputs, on-disk map-outputs, and merged map-outputs.\nDEPENDENCIES: Dependencies include the MergeManagerImpl class, the JobConf class, the FileSystem class, the RawKeyValueIterator class, the InMemoryMapOutput class, the CompressAwarePath class, and the Segment class."
+    ]
+  }
+]

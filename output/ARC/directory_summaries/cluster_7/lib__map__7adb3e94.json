@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": "lib/map",
+  "title": "MapReduce - lib/map",
+  "description": "The lib/map directory contains classes that are used to implement the MapReduce framework. The MultithreadedMapper class is a thread-safe implementation of the Mapper interface that can improve throughput when the Map operation is not CPU-bound. The WrappedMapper class wraps a given Mapper to allow custom Mapper.Context implementations. These classes collaborate to handle the mapping phase of the MapReduce process, which involves processing input data and generating intermediate key-value pairs. The architectural role of the lib/map directory is to provide reusable and modular components for implementing the Map function in a scalable and efficient manner.",
+  "summary": "TITLE: MapReduce - lib/map\nDESCRIPTION: The lib/map directory contains classes that are used to implement the MapReduce framework. The MultithreadedMapper class is a thread-safe implementation of the Mapper interface that can improve throughput when the Map operation is not CPU-bound. The WrappedMapper class wraps a given Mapper to allow custom Mapper.Context implementations. These classes collaborate to handle the mapping phase of the MapReduce process, which involves processing input data and generating intermediate key-value pairs. The architectural role of the lib/map directory is to provide reusable and modular components for implementing the Map function in a scalable and efficient manner.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "MultithreadedMapper.java"
+    },
+    {
+      "type": "file",
+      "name": "WrappedMapper.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce - lib/map\n\nDESCRIPTION:\nThe lib/map directory contains classes that are used to implement the MapReduce framework. The MultithreadedMapper class is a thread-safe implementation of the Mapper interface that can improve throughput when the Map operation is not CPU-bound. The WrappedMapper class wraps a given Mapper to allow custom Mapper.Context implementations. These classes collaborate to handle the mapping phase of the MapReduce process, which involves processing input data and generating intermediate key-value pairs. The architectural role of the lib/map directory is to provide reusable and modular components for implementing the Map function in a scalable and efficient manner."
+}

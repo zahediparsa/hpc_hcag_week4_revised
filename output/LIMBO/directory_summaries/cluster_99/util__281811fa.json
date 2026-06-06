@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 99,
+  "directory": "util",
+  "title": "ProcessTree",
+  "description": "The ProcessTree directory is responsible for destroying the process-tree. It collaborates with the org.apache.hadoop.util.Shell.ShellCommandExecutor class to send a specified signal to the specified pid. The core logic of this chunk is to destroy the process-tree by sending a specified signal to the specified pid. The inputs to this chunk are the pid of the root process of the subtree of processes to be killed, the time to wait before sending SIGKILL after sending SIGTERM, and whether the pid is a process group leader or not. The output is the destruction of the process-tree. This directory plays the role of the controller in the MVC architectural pattern.",
+  "summary": "TITLE: ProcessTree\nDESCRIPTION: The ProcessTree directory is responsible for destroying the process-tree. It collaborates with the org.apache.hadoop.util.Shell.ShellCommandExecutor class to send a specified signal to the specified pid. The core logic of this chunk is to destroy the process-tree by sending a specified signal to the specified pid. The inputs to this chunk are the pid of the root process of the subtree of processes to be killed, the time to wait before sending SIGKILL after sending SIGTERM, and whether the pid is a process group leader or not. The output is the destruction of the process-tree. This directory plays the role of the controller in the MVC architectural pattern.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ProcessTree.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ProcessTree\n\nDESCRIPTION:\nThe ProcessTree directory is responsible for destroying the process-tree. It collaborates with the org.apache.hadoop.util.Shell.ShellCommandExecutor class to send a specified signal to the specified pid. The core logic of this chunk is to destroy the process-tree by sending a specified signal to the specified pid. The inputs to this chunk are the pid of the root process of the subtree of processes to be killed, the time to wait before sending SIGKILL after sending SIGTERM, and whether the pid is a process group leader or not. The output is the destruction of the process-tree. This directory plays the role of the controller in the MVC architectural pattern."
+}

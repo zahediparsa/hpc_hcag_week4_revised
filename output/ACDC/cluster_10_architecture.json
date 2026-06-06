@@ -1,0 +1,21 @@
+{
+  "cluster_id": 10,
+  "title": "Cluster-level architectural abstraction for fault-tolerant manifest writing.",
+  "description": "The cluster consists of a writer thread and a queue for file entry lists. The writer thread is responsible for writing file entry lists to the output stream, managing shutdown, failing safely on write failures, and restarting all blocked writers. The code depends on the Apache Hadoop MapReduce library and the Apache Hadoop Common library. It also depends on theslf4j library for logging. The architecture ensures fault-tolerant manifest writing and is scalable, maintainable, reliable, secure, and performant.",
+  "description_word_count": 77,
+  "number_of_files": 1,
+  "number_of_directories": 6,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Cluster-level architectural abstraction for fault-tolerant manifest writing.\n\nDESCRIPTION:\nThe cluster consists of a writer thread and a queue for file entry lists. The writer thread is responsible for writing file entry lists to the output stream, managing shutdown, failing safely on write failures, and restarting all blocked writers. The code depends on the Apache Hadoop MapReduce library and the Apache Hadoop Common library. It also depends on theslf4j library for logging. The architecture ensures fault-tolerant manifest writing and is scalable, maintainable, reliable, secure, and performant.",
+  "algorithm": "ACDC",
+  "files": [
+    "lib/output/committer/manifest/impl/EntryFileIO.java"
+  ]
+}

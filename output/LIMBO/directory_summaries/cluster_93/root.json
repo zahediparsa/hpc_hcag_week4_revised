@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 93,
+  "directory": ".",
+  "title": "Hadoop MapReduce Splitting Mechanism",
+  "description": "The Hadoop MapReduce framework provides a splitting mechanism that divides the input data into smaller chunks for processing by the map tasks. The JobSplit class is responsible for reading and writing splits, including the meta information about the task split that the JobTracker creates and the raw split information that the maps use at runtime. The JobSplitWriter class is used by the Job clients to write splits (both the meta and the raw bytes parts). The SplitMetaInfoReader class reads the split meta info and creates split meta info objects. These classes collaborate to ensure that the input data is properly divided and processed by the map tasks. The architectural role of the JobSplit class is to provide a high-level interface for reading and writing splits, while the JobSplitWriter and SplitMetaInfoReader classes provide the low-level implementation for writing splits and reading split meta info, respectively. The pattern used in this directory is the Singleton pattern, as there is only one instance of the JobSplit class that needs to be accessed by all the other classes.",
+  "summary": "TITLE: Hadoop MapReduce Splitting Mechanism\nDESCRIPTION: The Hadoop MapReduce framework provides a splitting mechanism that divides the input data into smaller chunks for processing by the map tasks. The JobSplit class is responsible for reading and writing splits, including the meta information about the task split that the JobTracker creates and the raw split information that the maps use at runtime. The JobSplitWriter class is used by the Job clients to write splits (both the meta and the raw bytes parts). The SplitMetaInfoReader class reads the split meta info and creates split meta info objects. These classes collaborate to ensure that the input data is properly divided and processed by the map tasks. The architectural role of the JobSplit class is to provide a high-level interface for reading and writing splits, while the JobSplitWriter and SplitMetaInfoReader classes provide the low-level implementation for writing splits and reading split meta info, respectively. The pattern used in this directory is the Singleton pattern, as there is only one instance of the JobSplit class that needs to be accessed by all the other classes.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "split"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Splitting Mechanism\n\nDESCRIPTION: The Hadoop MapReduce framework provides a splitting mechanism that divides the input data into smaller chunks for processing by the map tasks. The JobSplit class is responsible for reading and writing splits, including the meta information about the task split that the JobTracker creates and the raw split information that the maps use at runtime. The JobSplitWriter class is used by the Job clients to write splits (both the meta and the raw bytes parts). The SplitMetaInfoReader class reads the split meta info and creates split meta info objects. These classes collaborate to ensure that the input data is properly divided and processed by the map tasks. The architectural role of the JobSplit class is to provide a high-level interface for reading and writing splits, while the JobSplitWriter and SplitMetaInfoReader classes provide the low-level implementation for writing splits and reading split meta info, respectively. The pattern used in this directory is the Singleton pattern, as there is only one instance of the JobSplit class that needs to be accessed by all the other classes."
+}

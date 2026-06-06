@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 81,
+  "directory": "lib",
+  "title": "Output",
+  "description": "The Output directory contains classes and interfaces that handle the output of data from the MapReduce framework. It includes classes for committing output data, managing output formats, and handling the writing of output data.",
+  "summary": "TITLE: Output\nDESCRIPTION: The Output directory contains classes and interfaces that handle the output of data from the MapReduce framework. It includes classes for committing output data, managing output formats, and handling the writing of output data.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Output\n\nDESCRIPTION: The Output directory contains classes and interfaces that handle the output of data from the MapReduce framework. It includes classes for committing output data, managing output formats, and handling the writing of output data."
+}

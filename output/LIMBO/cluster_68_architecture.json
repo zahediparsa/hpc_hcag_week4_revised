@@ -1,0 +1,22 @@
+{
+  "cluster_id": 68,
+  "title": "Join cluster",
+  "description": "The join cluster is responsible for implementing the join operation in Hadoop MapReduce. It consists of classes that collaborate to perform the join efficiently and effectively. The architecture of the join cluster is designed to provide high performance and scalability for joining large datasets in a distributed environment. The cluster includes components such as the join directory, which contains classes that handle the join operation, and the data model, which defines the structure of the data being joined. The architecture also includes a coordinator, which is responsible for managing the execution of the join operation, and a worker, which performs the actual join computation. The use of MapReduce framework and Java programming language is evident in the architecture, which is designed to take advantage of the scalability and fault-tolerance features of these technologies.",
+  "description_word_count": 133,
+  "number_of_files": 2,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Join cluster\n\nDESCRIPTION:\nThe join cluster is responsible for implementing the join operation in Hadoop MapReduce. It consists of classes that collaborate to perform the join efficiently and effectively. The architecture of the join cluster is designed to provide high performance and scalability for joining large datasets in a distributed environment. The cluster includes components such as the join directory, which contains classes that handle the join operation, and the data model, which defines the structure of the data being joined. The architecture also includes a coordinator, which is responsible for managing the execution of the join operation, and a worker, which performs the actual join computation. The use of MapReduce framework and Java programming language is evident in the architecture, which is designed to take advantage of the scalability and fault-tolerance features of these technologies.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/join/ArrayListBackedIterator.java",
+    "lib/join/StreamBackedIterator.java"
+  ]
+}

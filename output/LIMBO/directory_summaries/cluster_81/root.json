@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 81,
+  "directory": ".",
+  "title": "Output",
+  "description": "The Output directory contains classes and interfaces that handle the output of data from the MapReduce framework. It includes classes for committing output data, managing output formats, and handling the writing of output data.\n\nThe Output directory collaborates with the MapReduce framework to handle the output of data. It provides classes and interfaces for committing output data, managing output formats, and handling the writing of output data.\n\nThe architectural role of the Output directory is to provide a standardized interface for handling the output of data from the MapReduce framework. This allows for greater flexibility and modularity in the MapReduce implementation, as different output formats and data handling mechanisms can be easily plugged in and used as needed.\n\nThe Output directory follows the pattern of the Strategy pattern, as it provides a family of classes for handling different output formats, each with its own specific implementation. This allows for easy extension and customization of the output handling mechanism, without the need to modify the core MapReduce framework.",
+  "summary": "TITLE: Output\nDESCRIPTION: The Output directory contains classes and interfaces that handle the output of data from the MapReduce framework. It includes classes for committing output data, managing output formats, and handling the writing of output data.\n\nThe Output directory collaborates with the MapReduce framework to handle the output of data. It provides classes and interfaces for committing output data, managing output formats, and handling the writing of output data.\n\nThe architectural role of the Output directory is to provide a standardized interface for handling the output of data from the MapReduce framework. This allows for greater flexibility and modularity in the MapReduce implementation, as different output formats and data handling mechanisms can be easily plugged in and used as needed.\n\nThe Output directory follows the pattern of the Strategy pattern, as it provides a family of classes for handling different output formats, each with its own specific implementation. This allows for easy extension and customization of the output handling mechanism, without the need to modify the core MapReduce framework.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Output\n\nDESCRIPTION: The Output directory contains classes and interfaces that handle the output of data from the MapReduce framework. It includes classes for committing output data, managing output formats, and handling the writing of output data.\n\nThe Output directory collaborates with the MapReduce framework to handle the output of data. It provides classes and interfaces for committing output data, managing output formats, and handling the writing of output data.\n\nThe architectural role of the Output directory is to provide a standardized interface for handling the output of data from the MapReduce framework. This allows for greater flexibility and modularity in the MapReduce implementation, as different output formats and data handling mechanisms can be easily plugged in and used as needed.\n\nThe Output directory follows the pattern of the Strategy pattern, as it provides a family of classes for handling different output formats, each with its own specific implementation. This allows for easy extension and customization of the output handling mechanism, without the need to modify the core MapReduce framework."
+}

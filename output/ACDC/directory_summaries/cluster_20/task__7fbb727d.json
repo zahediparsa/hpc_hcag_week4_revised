@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 20,
+  "directory": "task",
+  "title": "MapReduce - Shuffle and Sort",
+  "description": "The shuffle and sort phase of a MapReduce job is responsible for merging the output of multiple map tasks into a single sorted output for the reduce task. This phase involves several key components, including the ShuffleScheduler, MergeManager, Fetcher, and EventFetcher. The ShuffleScheduler is responsible for scheduling the execution of map tasks, while the MergeManager is responsible for merging the map output files. The Fetcher and EventFetcher threads are used to fetch map output and shuffle events from the shuffle server. The shuffle and sort phase is a critical part of the MapReduce framework, as it ensures that the reduce task receives the data in the correct order and format for processing.",
+  "summary": "TITLE: MapReduce - Shuffle and Sort\nDESCRIPTION: The shuffle and sort phase of a MapReduce job is responsible for merging the output of multiple map tasks into a single sorted output for the reduce task. This phase involves several key components, including the ShuffleScheduler, MergeManager, Fetcher, and EventFetcher. The ShuffleScheduler is responsible for scheduling the execution of map tasks, while the MergeManager is responsible for merging the map output files. The Fetcher and EventFetcher threads are used to fetch map output and shuffle events from the shuffle server. The shuffle and sort phase is a critical part of the MapReduce framework, as it ensures that the reduce task receives the data in the correct order and format for processing.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "task/reduce"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce - Shuffle and Sort\n\nDESCRIPTION: The shuffle and sort phase of a MapReduce job is responsible for merging the output of multiple map tasks into a single sorted output for the reduce task. This phase involves several key components, including the ShuffleScheduler, MergeManager, Fetcher, and EventFetcher. The ShuffleScheduler is responsible for scheduling the execution of map tasks, while the MergeManager is responsible for merging the map output files. The Fetcher and EventFetcher threads are used to fetch map output and shuffle events from the shuffle server. The shuffle and sort phase is a critical part of the MapReduce framework, as it ensures that the reduce task receives the data in the correct order and format for processing."
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "algorithm": "ARC",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.Partitioner",
+    "path": "Partitioner.java",
+    "file_name": "Partitioner.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY: main purpose visible in this chunk\nCORE LOGIC: key algorithms or processing patterns visible in this chunk\nINPUTS/OUTPUTS: data flowing in and out\nDEPENDENCIES: key imported, parent, or collaborator classes visible in this chunk\n\nCode chunk:\n/**\n * Licensed to the Apache Software Foundation (ASF) under one\n * or more contributor license agreements.  See the NOTICE file\n * distributed with this work for additional information\n * regarding copyright ownership.  The ASF licenses this file\n * to you under the Apache License, Version 2.0 (the\n * \"License\"); you may not use this file except in compliance\n * with the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\n\npackage org.apache.hadoop.mapreduce;\n\nimport org.apache.hadoop.classification.InterfaceAudience;\nimport org.apache.hadoop.classification.InterfaceStability;\nimport org.apache.hadoop.conf.Configurable;\n\n/** \n * Partitions the key space.\n * \n * <p><code>Partitioner</code> controls the partitioning of the keys of the \n * intermediate map-outputs. The key (or a subset of the key) is used to derive\n * the partition, typically by a hash function. The total number of partitions\n * is the same as the number of reduce tasks for the job. Hence this controls\n * which of the <code>m</code> reduce tasks the intermediate key (and hence the \n * record) is sent for reduction.</p>\n *\n * <p>Note: A <code>Partitioner</code> is created only when there are multiple\n * reducers.</p>\n *\n * <p>Note: If you require your Partitioner class to obtain the Job's\n * configuration object, implement the {@link Configurable} interface.</p>\n * \n * @see Reducer\n */\n@InterfaceAudience.Public\n@InterfaceStability.Stable\npublic abstract",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.BinaryPartitioner",
+    "path": "lib/partition/BinaryPartitioner.java",
+    "file_name": "BinaryPartitioner.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\nThe BinaryPartitioner class is a custom partitioner for use with Apache Hadoop MapReduce. It is used to partition BinaryComparable keys based on a configurable subset of the bytes array returned by the getBytes() method.\n\nCORE LOGIC:\nThe BinaryPartitioner class uses the left and right offsets specified in the configuration to determine the subset of bytes to be used for partitioning. It then computes a hash of this subset and uses it to determine the partition.\n\nINPUTS/OUTPUTS:\nThe BinaryPartitioner class takes a BinaryComparable key, a value, and the number of partitions as input, and returns the partition index as output.\n\nDEPENDENCIES:\nThe BinaryPartitioner class implements the Configurable interface, which allows it to access configuration properties. It also uses the WritableComparator class from the Apache Hadoop framework to compute the hash of the subset of bytes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.HashPartitioner",
+    "path": "lib/partition/HashPartitioner.java",
+    "file_name": "HashPartitioner.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\n\nThe main purpose of this chunk of code is to define a class that extends the Partitioner class and implements a method to partition keys by their Object#hashCode().\n\nCORE LOGIC:\n\nThe core logic of this chunk of code is the implementation of the getPartition() method, which uses the Object#hashCode() method to generate a hash code for the key and then applies a modulo operation to determine the partition for the key-value pair.\n\nINPUTS/OUTPUTS:\n\nThe inputs to this chunk of code are the key, value, and numReduceTasks parameters passed to the getPartition() method. The output is the integer representing the partition for the key-value pair.\n\nDEPENDENCIES:\n\nThe dependencies of this chunk of code are the Partitioner class and the Object class, which are imported at the beginning of the file.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.KeyFieldBasedComparator",
+    "path": "lib/partition/KeyFieldBasedComparator.java",
+    "file_name": "KeyFieldBasedComparator.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\nThe KeyFieldBasedComparator class is a WritableComparator that provides a subset of the features provided by the Unix/GNU Sort. It supports sorting numerically and reversing the result of comparison.\n\nCORE LOGIC:\nThe compare method compares two byte sequences based on the key specifications provided. It uses the KeyFieldHelper class to parse the key specifications and extract the relevant fields from the byte sequences. It then compares the fields based on the specified options.\n\nINPUTS/OUTPUTS:\nThe compare method takes two byte sequences as input and returns an integer value indicating their relative order.\n\nDEPENDENCIES:\nThe KeyFieldBasedComparator class depends on the KeyFieldHelper class for parsing the key specifications and extracting the relevant fields from the byte sequences. It also depends on the WritableComparator class for comparing the byte sequences.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.KeyFieldBasedPartitioner",
+    "path": "lib/partition/KeyFieldBasedPartitioner.java",
+    "file_name": "KeyFieldBasedPartitioner.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\n\nThe KeyFieldBasedPartitioner class is a custom partitioner for Apache Hadoop MapReduce. It is used to partition keys based on certain key fields, as specified by the user.\n\nCORE LOGIC:\n\nThe core logic of the KeyFieldBasedPartitioner class is implemented in the getPartition() method. This method takes a key, a value, and the number of reduce tasks as input, and returns the partition number for the given key.\n\nThe method first checks if there are any key fields specified by the user. If not, it simply returns the partition number based on the hash code of the key.\n\nIf key fields are specified, the method converts the key to a byte array and calculates the start and end indices of each key field within the byte array. It then computes a hash code based on the key fields and returns the partition number based on this hash code.\n\nINPUTS/OUTPUTS:\n\nThe KeyFieldBasedPartitioner class takes a key, a value, and the number of reduce tasks as input, and returns the partition number for the given key.\n\nDEPENDENCIES:\n\nThe KeyFieldBasedPartitioner class depends on the KeyFieldHelper class, which is used to parse and process the key field specifications. It also depends on the Configuration class, which is used to retrieve the job configuration.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.KeyFieldHelper",
+    "path": "lib/partition/KeyFieldHelper.java",
+    "file_name": "KeyFieldHelper.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\n- Parse key specifications of the form -k pos1[,pos2], where pos is of the form f[.c][opts], where f is the number of the field to use, and c is the number of the first character from the beginning of the field.\n- Set key field separator.\n- Get word lengths from a given string.\n- Get start and end offsets for a given key specification.\n- Parse key options.\n\nCORE LOGIC:\n- Parse key specifications and set key field separator.\n- Get word lengths from a given string.\n- Get start and end offsets for a given key specification.\n- Parse key options.\n\nINPUTS/OUTPUTS:\n- Set key field separator: input is a string representing the key field separator.\n- Get word lengths: input is a byte array, start index, and end index. Output is an array of integers representing the lengths of the words in the string.\n- Get start and end offsets: input is a byte array, start index, end index, array of word lengths, and a KeyDescription object. Output is the start and end offsets for the given key specification.\n- Parse key options: input is a string representing the key options.\n\nDEPENDENCIES:\n- org.apache.hadoop.util.UTF8ByteArrayUtils\n- java.util.List\n- java.util.ArrayList\n- java.util.StringTokenizer\n- java.nio.charset.StandardCharsets",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.RehashPartitioner",
+    "path": "lib/partition/RehashPartitioner.java",
+    "file_name": "RehashPartitioner.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\n- The RehashPartitioner class is a custom partitioner for Apache Hadoop MapReduce.\n- It rehashes the hash code of the key object to determine the partition for the key-value pair.\n- This can help to distribute the data more evenly across partitions, potentially improving reduce time.\n\nCORE LOGIC:\n- The getPartition() method takes the key, value, and the number of reduce tasks as input.\n- It first applies a bitwise XOR operation with a prime number seed to the hash code of the key.\n- Then, it applies additional bitwise operations to improve the hash code's quality.\n- Finally, it takes the resulting hash code modulo the number of reduce tasks to determine the partition.\n\nINPUTS/OUTPUTS:\n- The getPartition() method takes the key, value, and the number of reduce tasks as input.\n- It returns the calculated partition number.\n\nDEPENDENCIES:\n- The RehashPartitioner class is part of the org.apache.hadoop.mapreduce.lib.partition package.\n- It implements the Partitioner interface, which requires the implementation of the getPartition() method.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.security.token.delegation.DelegationTokenIdentifier",
+    "path": "security/token/delegation/DelegationTokenIdentifier.java",
+    "file_name": "DelegationTokenIdentifier.java",
+    "directory": "security/token/delegation",
+    "summary": "KEY FUNCTIONALITY:\n\nThis code defines a class called DelegationTokenIdentifier that extends the AbstractDelegationTokenIdentifier class. It provides functionality for creating and managing delegation tokens specific to MapReduce.\n\nCORE LOGIC:\n\nThe code implements the necessary methods to create and manage delegation tokens. It overrides the getKind() method to return the specific kind of delegation token, which in this case is MAPREDUCE_DELEGATION_KIND.\n\nINPUTS/OUTPUTS:\n\nThe code takes in the effective username of the token owner, the username of the renewer, and the real username of the token owner as inputs when creating a new delegation token identifier.\n\nDEPENDENCIES:\n\nThe code depends on the AbstractDelegationTokenIdentifier class and the Text class from the Apache Hadoop library. It also imports the InterfaceAudience and InterfaceStability annotations from the same library.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.security.token.delegation.DelegationTokenSecretManager",
+    "path": "security/token/delegation/DelegationTokenSecretManager.java",
+    "file_name": "DelegationTokenSecretManager.java",
+    "directory": "security/token/delegation",
+    "summary": "KEY FUNCTIONALITY:\n\nThe main purpose of this chunk of code is to create a MapReduce specific delegation token secret manager. The secret manager is responsible for generating and accepting the password for each token.\n\nCORE LOGIC:\n\nThe code chunk does not contain any key algorithms or processing patterns visible in this chunk.\n\nINPUTS/OUTPUTS:\n\nThe code chunk does not contain any data flowing in or out.\n\nDEPENDENCIES:\n\nThe code chunk depends on the following classes:\n\nAbstractDelegationTokenSecretManager\nDelegationTokenIdentifier",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ARC",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.security.token.delegation.DelegationTokenSelector",
+    "path": "security/token/delegation/DelegationTokenSelector.java",
+    "file_name": "DelegationTokenSelector.java",
+    "directory": "security/token/delegation",
+    "summary": "KEY FUNCTIONALITY:\n\nThe main purpose of this chunk of code is to define a class that extends the AbstractDelegationTokenSelector class and specializes it for MapReduce.\n\nCORE LOGIC:\n\nThe code does not contain any key algorithms or processing patterns visible in this chunk.\n\nINPUTS/OUTPUTS:\n\nThe code does not contain any data flowing in or out.\n\nDEPENDENCIES:\n\nThe code depends on the AbstractDelegationTokenSelector class and the DelegationTokenIdentifier class.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

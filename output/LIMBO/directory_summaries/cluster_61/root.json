@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 61,
+  "directory": ".",
+  "title": "lib/input",
+  "description": "This directory contains classes that implement input formats for Hadoop MapReduce. These input formats define how data is read from input files and how it is processed by the map and reduce tasks. The classes in this directory collaborate to provide a flexible and extensible way to read data from various sources, such as sequence files, text files, and other custom input formats. The architectural role of this directory is to provide a modular and extensible framework for reading data from different sources, allowing users to easily plug in their own input formats and customize the data processing pipeline.",
+  "summary": "TITLE: lib/input\nDESCRIPTION: This directory contains classes that implement input formats for Hadoop MapReduce. These input formats define how data is read from input files and how it is processed by the map and reduce tasks. The classes in this directory collaborate to provide a flexible and extensible way to read data from various sources, such as sequence files, text files, and other custom input formats. The architectural role of this directory is to provide a modular and extensible framework for reading data from different sources, allowing users to easily plug in their own input formats and customize the data processing pipeline.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/input\n\nDESCRIPTION: This directory contains classes that implement input formats for Hadoop MapReduce. These input formats define how data is read from input files and how it is processed by the map and reduce tasks. The classes in this directory collaborate to provide a flexible and extensible way to read data from various sources, such as sequence files, text files, and other custom input formats. The architectural role of this directory is to provide a modular and extensible framework for reading data from different sources, allowing users to easily plug in their own input formats and customize the data processing pipeline."
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "protocol",
+  "title": "org.apache.hadoop.mapred.protocol",
+  "description": "This package contains classes for the protocol between the client and the MapReduce framework. The classes in this package define the protocol between the client and the MapReduce framework, including the data flowing in and out of the MapReduce framework. The classes in this package depend on the classes in the org.apache.hadoop.classification package.",
+  "summary": "TITLE: org.apache.hadoop.mapred.protocol\nDESCRIPTION: This package contains classes for the protocol between the client and the MapReduce framework. The classes in this package define the protocol between the client and the MapReduce framework, including the data flowing in and out of the MapReduce framework. The classes in this package depend on the classes in the org.apache.hadoop.classification package.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "package-info.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: org.apache.hadoop.mapred.protocol\n\nDESCRIPTION:\nThis package contains classes for the protocol between the client and the MapReduce framework. The classes in this package define the protocol between the client and the MapReduce framework, including the data flowing in and out of the MapReduce framework. The classes in this package depend on the classes in the org.apache.hadoop.classification package."
+}

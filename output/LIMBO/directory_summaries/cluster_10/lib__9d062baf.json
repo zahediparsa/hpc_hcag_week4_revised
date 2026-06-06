@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 10,
+  "directory": "lib",
+  "title": "lib/chain",
+  "description": "This directory contains classes that provide a way to chain multiple MapReduce jobs together. The classes in this directory collaborate by passing data between each other using the MapContext and ReduceContext classes. The architectural pattern used in this directory is the decorator pattern, which allows for additional functionality to be added to an object without changing its original implementation.",
+  "summary": "TITLE: lib/chain\nDESCRIPTION: This directory contains classes that provide a way to chain multiple MapReduce jobs together. The classes in this directory collaborate by passing data between each other using the MapContext and ReduceContext classes. The architectural pattern used in this directory is the decorator pattern, which allows for additional functionality to be added to an object without changing its original implementation.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/chain"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/chain\n\nDESCRIPTION:\nThis directory contains classes that provide a way to chain multiple MapReduce jobs together. The classes in this directory collaborate by passing data between each other using the MapContext and ReduceContext classes. The architectural pattern used in this directory is the decorator pattern, which allows for additional functionality to be added to an object without changing its original implementation."
+}

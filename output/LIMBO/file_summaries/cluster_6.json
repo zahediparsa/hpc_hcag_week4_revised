@@ -1,0 +1,14 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 6,
+    "class": "org.apache.hadoop.mapreduce.Counters",
+    "path": "Counters.java",
+    "file_name": "Counters.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\n\nHolds per job/task counters, defined either by the Map-Reduce framework or applications.\n\nCORE LOGIC:\n\nEach Counter can be of any Enum type.\nCounters are bunched into CounterGroups, each comprising of counters from a particular Enum class.\n\nINPUTS/OUTPUTS:\n\nCounters are bunched into CounterGroups.\n\nDEPENDENCIES:\n\norg.apache.hadoop.mapreduce.counters.GenericCounter\norg.apache.hadoop.mapreduce.counters.AbstractCounterGroup\norg.apache.hadoop.mapreduce.counters.CounterGroupBase\norg.apache.hadoop.mapreduce.counters.FileSystemCounterGroup\norg.apache.hadoop.mapreduce.counters.AbstractCounters\norg.apache.hadoop.mapreduce.counters.CounterGroupFactory\norg.apache.hadoop.mapreduce.counters.FrameworkCounterGroup",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

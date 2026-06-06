@@ -1,0 +1,24 @@
+{
+  "cluster_id": 58,
+  "title": "Hadoop MapReduce Architecture",
+  "description": "The Hadoop MapReduce architecture is a distributed processing framework designed for processing large data sets across clusters of computers. It consists of two main components: the Map component and the Reduce component. The Map component breaks down the input data into smaller chunks and processes them in parallel, while the Reduce component aggregates the results and produces the final output. The architecture is scalable, fault-tolerant, and provides high-throughput data processing capabilities. The use of distributed file systems, such as HDFS, and the MapReduce programming model, allows for efficient processing of large data sets in a distributed environment.",
+  "description_word_count": 97,
+  "number_of_files": 4,
+  "number_of_directories": 5,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is a distributed processing framework designed for processing large data sets across clusters of computers. It consists of two main components: the Map component and the Reduce component. The Map component breaks down the input data into smaller chunks and processes them in parallel, while the Reduce component aggregates the results and produces the final output. The architecture is scalable, fault-tolerant, and provides high-throughput data processing capabilities. The use of distributed file systems, such as HDFS, and the MapReduce programming model, allows for efficient processing of large data sets in a distributed environment.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/db/DBSplitter.java",
+    "lib/input/CombineFileSplit.java",
+    "lib/input/FileSplit.java",
+    "lib/join/CompositeInputSplit.java"
+  ]
+}

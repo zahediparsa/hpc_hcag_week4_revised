@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 4,
+  "directory": ".",
+  "title": "OutputCommitter",
+  "description": "The OutputCommitter interface is responsible for the final steps of the MapReduce job, including committing or aborting the task and committing or aborting the job. It collaborates with the TaskAttemptContext and JobContext to manage the commit process. The OutputCommitter is also used to manage the commit process of the entire job.",
+  "summary": "TITLE: OutputCommitter\nDESCRIPTION: The OutputCommitter interface is responsible for the final steps of the MapReduce job, including committing or aborting the task and committing or aborting the job. It collaborates with the TaskAttemptContext and JobContext to manage the commit process. The OutputCommitter is also used to manage the commit process of the entire job.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- DIRECTORY: lib ---\nTITLE: OutputCommitter\nDESCRIPTION: The OutputCommitter interface is responsible for the final steps of the MapReduce job, including committing or aborting the task and committing or aborting the job. It collaborates with the TaskAttemptContext and JobContext to manage the commit process. The OutputCommitter is also used to manage the commit process of the entire job."
+}

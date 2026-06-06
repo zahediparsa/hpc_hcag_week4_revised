@@ -1,0 +1,25 @@
+{
+  "cluster_id": 30,
+  "title": "Cluster-level architectural abstraction for jobhistory",
+  "description": "The jobhistory cluster consists of a single instance of the job history data stored in the directory. It collaborates with other components to ensure the proper functioning of the job history data. The cluster follows the Singleton pattern to ensure that there is only one instance of the job history data stored. The jobhistory cluster plays a crucial role in the Hadoop MapReduce architecture as it provides a centralized location for storing job history data, which is essential for monitoring and debugging purposes. The cluster is responsible for storing the job history data and collaborating with other components to ensure the proper functioning of the job history data. It follows the Singleton pattern to ensure that there is only one instance of the job history data stored. The cluster plays a crucial role in the Hadoop MapReduce architecture as it provides a centralized location for storing job history data, which.",
+  "description_word_count": 150,
+  "number_of_files": 5,
+  "number_of_directories": 2,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Cluster-level architectural abstraction for jobhistory\n\nDESCRIPTION:\nThe jobhistory cluster consists of a single instance of the job history data stored in the directory. It collaborates with other components to ensure the proper functioning of the job history data. The cluster follows the Singleton pattern to ensure that there is only one instance of the job history data stored. The jobhistory cluster plays a crucial role in the Hadoop MapReduce architecture as it provides a centralized location for storing job history data, which is essential for monitoring and debugging purposes. The cluster is responsible for storing the job history data and collaborating with other components to ensure the proper functioning of the job history data. It follows the Singleton pattern to ensure that there is only one instance of the job history data stored. The cluster plays a crucial role in the Hadoop MapReduce architecture as it provides a centralized location for storing job history data, which is essential for monitoring and debugging purposes.",
+  "algorithm": "LIMBO",
+  "files": [
+    "jobhistory/AMStartedEvent.java",
+    "jobhistory/NormalizedResourceEvent.java",
+    "jobhistory/TaskAttemptStartedEvent.java",
+    "jobhistory/TaskStartedEvent.java",
+    "jobhistory/TaskUpdatedEvent.java"
+  ]
+}

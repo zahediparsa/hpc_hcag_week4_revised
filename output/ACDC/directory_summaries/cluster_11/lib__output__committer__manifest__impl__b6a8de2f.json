@@ -1,0 +1,42 @@
+{
+  "type": "directory",
+  "cluster_id": 11,
+  "directory": "lib/output/committer/manifest/impl",
+  "title": "ManifestCommitterSupport",
+  "description": "This chunk of code provides support for manifest committer functionality. It includes methods for creating an IOStatistics Store with standard statistics, building a Job UUID, getting the location of pending job attempts, creating task attempt directories, creating task manifests, creating success/outcome data, adding heap information to IOStatisticSetters gauges, creating the filename for a report from the job ID, getting an etag from a FileStatus, and creating the manifest store operations for a given file system.",
+  "summary": "TITLE: ManifestCommitterSupport\nDESCRIPTION: This chunk of code provides support for manifest committer functionality. It includes methods for creating an IOStatistics Store with standard statistics, building a Job UUID, getting the location of pending job attempts, creating task attempt directories, creating task manifests, creating success/outcome data, adding heap information to IOStatisticSetters gauges, creating the filename for a report from the job ID, getting an etag from a FileStatus, and creating the manifest store operations for a given file system.",
+  "number_of_children": 7,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AuditingIntegration.java"
+    },
+    {
+      "type": "file",
+      "name": "InternalConstants.java"
+    },
+    {
+      "type": "file",
+      "name": "LoadedManifestData.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestCommitterSupport.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestStoreOperations.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestStoreOperationsThroughFileSystem.java"
+    },
+    {
+      "type": "file",
+      "name": "OutputValidationException.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ManifestCommitterSupport\n\nDESCRIPTION:\nThis chunk of code provides support for manifest committer functionality. It includes methods for creating an IOStatistics Store with standard statistics, building a Job UUID, getting the location of pending job attempts, creating task attempt directories, creating task manifests, creating success/outcome data, adding heap information to IOStatisticSetters gauges, creating the filename for a report from the job ID, getting an etag from a FileStatus, and creating the manifest store operations for a given file system."
+}

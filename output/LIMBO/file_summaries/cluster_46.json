@@ -1,0 +1,74 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 46,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.MapAttemptFinishedEvent",
+    "path": "jobhistory/MapAttemptFinishedEvent.java",
+    "file_name": "MapAttemptFinishedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class represents an event where a map task attempt has finished.\n\nCORE LOGIC:\n\nThe core logic of this class is to record the successful completion of a map task attempt.\n\nINPUTS/OUTPUTS:\n\nThe inputs to this class are the task attempt ID, task type, task status, map finish time, finish time, hostname, port, rack name, state, counters, and splits. The output is a data structure that represents the successful completion of the map task attempt.\n\nDEPENDENCIES:\n\nThis class depends on the org.apache.hadoop.mapreduce.jobhistory package and other classes in the same package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 46,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.ReduceAttemptFinishedEvent",
+    "path": "jobhistory/ReduceAttemptFinishedEvent.java",
+    "file_name": "ReduceAttemptFinishedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\nThis chunk of code is a class named ReduceAttemptFinishedEvent. It is used to record the successful completion of a reduce attempt.\n\nCORE LOGIC:\nThe class has a constructor that takes in various parameters such as the task attempt ID, task type, task status, shuffle finish time, sort finish time, finish time, hostname, port, rack name, state, counters, and an array of splits. It also has methods to get the task ID, attempt ID, task type, task status, finish time of the sort phase, finish time of the shuffle phase, finish time of the attempt, hostname, port, rack name, state, counters, and splits.\n\nINPUTS/OUTPUTS:\nThe class takes in input parameters such as task attempt ID, task type, task status, shuffle finish time, sort finish time, finish time, hostname, port, rack name, state, counters, and an array of splits. It also outputs the task ID, attempt ID, task type, task status, finish time of the sort phase, finish time of the shuffle phase, finish time of the attempt, hostname, port, rack name, state, counters, and splits.\n\nDEPENDENCIES:\nThe class depends on the following classes: TaskAttemptID, TaskID, TaskType, Counters, ProgressSplitsBlock, SystemClock, TimelineEvent, TimelineMetric, and various utility classes for Avro and timeline metrics.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 46,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.TaskAttemptFinishedEvent",
+    "path": "jobhistory/TaskAttemptFinishedEvent.java",
+    "file_name": "TaskAttemptFinishedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\nThis code represents an event to record successful task completion.\n\nCORE LOGIC:\nThe code sets the task ID, attempt ID, task type, task status, finish time, rack name, hostname, state, and counters for the task attempt.\n\nINPUTS/OUTPUTS:\nThe code takes inputs such as the task attempt ID, task type, task status, finish time, rack name, hostname, state, and counters, and outputs a data object representing the task attempt finished event.\n\nDEPENDENCIES:\nThe code depends on the org.apache.hadoop.mapreduce.jobhistory package and other classes and interfaces within that package. It also depends on the org.apache.hadoop.mapreduce.Counters class for handling task attempt counters.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 46,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.TaskAttemptUnsuccessfulCompletionEvent",
+    "path": "jobhistory/TaskAttemptUnsuccessfulCompletionEvent.java",
+    "file_name": "TaskAttemptUnsuccessfulCompletionEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class represents an event where a task attempt has failed or been killed.\n\nCORE LOGIC:\n\nThe core logic of this class is to record the unsuccessful completion of task attempts. It includes the task ID, task type, attempt ID, finish time, hostname, port, rack name, error, status, and counters.\n\nINPUTS/OUTPUTS:\n\nThe inputs to this class are the task ID, task type, status, finish time, hostname, port, rack name, error, counters, and splits. The outputs are the task ID, task type, attempt ID, finish time, hostname, port, rack name, error, status, and counters.\n\nDEPENDENCIES:\n\nThis class depends on the org.apache.hadoop.mapreduce.jobhistory package and the org.apache.hadoop.mapreduce.util.JobHistoryEventUtils class.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 46,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.TaskFailedEvent",
+    "path": "jobhistory/TaskFailedEvent.java",
+    "file_name": "TaskFailedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\n\nThis chunk of code is responsible for recording the failure of a task.\n\nCORE LOGIC:\n\nThe code uses the provided data to create a TaskFailedEvent object, which includes the task ID, finish time, task type, error, status, failed attempt ID, and counters.\n\nINPUTS/OUTPUTS:\n\nThe code takes in the necessary inputs to create a TaskFailedEvent object, including the task ID, finish time, task type, error, status, failed attempt ID, and counters. It then sets these inputs as the attributes of the TaskFailedEvent object.\n\nDEPENDENCIES:\n\nThe code depends on the org.apache.hadoop.mapreduce.jobhistory package and its dependencies.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 46,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.TaskFinishedEvent",
+    "path": "jobhistory/TaskFinishedEvent.java",
+    "file_name": "TaskFinishedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\n\nThis chunk of code is responsible for recording the successful completion of a task. It includes the necessary attributes and methods to create and store the event data, as well as retrieve the relevant information.\n\nCORE LOGIC:\n\nThe core logic of this code involves creating a TaskFinishedEvent object with the required parameters, such as task ID, successful task attempt ID, finish time, task type, status, and counters. The object is then serialized into an Avro data structure for storage or transmission.\n\nINPUTS/OUTPUTS:\n\nThe inputs to this code include the task ID, successful task attempt ID, finish time, task type, status, and counters. The outputs include the serialized TaskFinishedEvent object, which can be stored or transmitted.\n\nDEPENDENCIES:\n\nThis code depends on the Apache Hadoop MapReduce framework and its associated classes and interfaces, such as TaskID, TaskAttemptID, TaskType, Counters, and HistoryEvent. It also depends on external libraries such as Avro and TimelineEvent.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

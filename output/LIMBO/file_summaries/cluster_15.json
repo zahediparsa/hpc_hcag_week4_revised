@@ -1,0 +1,62 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 15,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregatorMapper",
+    "path": "lib/aggregate/ValueAggregatorMapper.java",
+    "file_name": "ValueAggregatorMapper.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this chunk of code is to implement the generic mapper of Aggregate.\n\nCORE LOGIC:\nThe code iterates through the value aggregator descriptor list to generate aggregation id/value pairs and emit them.\n\nINPUTS/OUTPUTS:\nThe code takes in a key and value of type K1 and V1 respectively, and emits Text keys and values.\n\nDEPENDENCIES:\nThe code depends on the ValueAggregatorJobBase class and its setup method, as well as the ValueAggregatorDescriptor class for aggregation logic.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 15,
+    "class": "org.apache.hadoop.mapreduce.lib.fieldsel.FieldSelectionMapper",
+    "path": "lib/fieldsel/FieldSelectionMapper.java",
+    "file_name": "FieldSelectionMapper.java",
+    "directory": "lib/fieldsel",
+    "summary": "KEY FUNCTIONALITY:\nThis code implements a mapper class that can be used to perform field selections in a manner similar to unix cut.\n\nCORE LOGIC:\nThe mapper will ignore the key to the map function and the fields are from the value only if the input format is TextInputFormat. Otherwise, the fields are the union of those from the key and those from the value.\n\nINPUTS/OUTPUTS:\nThe input data is treated as fields separated by a user specified separator (the default value is \"\\t\"). The user can specify a list of fields that form the map output keys, and a list of fields that form the map output values.\n\nDEPENDENCIES:\nThis code depends on the org.apache.hadoop.mapreduce.lib.fieldsel package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 15,
+    "class": "org.apache.hadoop.mapreduce.lib.input.DelegatingMapper",
+    "path": "lib/input/DelegatingMapper.java",
+    "file_name": "DelegatingMapper.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY:\nThis code chunk is a Mapper that delegates behavior of paths to multiple other mappers.\n\nCORE LOGIC:\nThe core logic of this code chunk is to find the appropriate Mapper from the TaggedInputSplit and then run it.\n\nINPUTS/OUTPUTS:\nThe input to this code chunk is the TaggedInputSplit, and the output is the result of running the appropriate Mapper.\n\nDEPENDENCIES:\nThis code chunk depends on the TaggedInputSplit class and the ReflectionUtils class from the Apache Hadoop MapReduce library.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 15,
+    "class": "org.apache.hadoop.mapreduce.lib.input.TaggedInputSplit",
+    "path": "lib/input/TaggedInputSplit.java",
+    "file_name": "TaggedInputSplit.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class is used to tag an InputSplit with extra data for use by DelegatingInputFormat and DelegatingMapper.\n\nCORE LOGIC:\n\nThe class contains methods to retrieve the original InputSplit, the InputFormat class to use for this split, and the Mapper class to use for this split.\n\nINPUTS/OUTPUTS:\n\nThe class takes an InputSplit, a Configuration, an InputFormat class, and a Mapper class as inputs, and it returns the original InputSplit, the InputFormat class, and the Mapper class as outputs.\n\nDEPENDENCIES:\n\nThe class depends on the InputSplit, Configuration, InputFormat, and Mapper classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 15,
+    "class": "org.apache.hadoop.mapreduce.lib.map.WrappedMapper",
+    "path": "lib/map/WrappedMapper.java",
+    "file_name": "WrappedMapper.java",
+    "directory": "lib/map",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class wraps a given Mapper to allow custom Mapper.Context implementations.\n\nCORE LOGIC:\n\nThe core logic of this class is to provide a wrapped Mapper.Context for custom implementations.\n\nINPUTS/OUTPUTS:\n\nThe class takes a MapContext as input and provides a wrapped Mapper.Context as output.\n\nDEPENDENCIES:\n\nThis class depends on the org.apache.hadoop.mapreduce package and its dependencies.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

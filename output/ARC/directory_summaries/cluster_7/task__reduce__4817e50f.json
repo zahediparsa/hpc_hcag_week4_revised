@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": "task/reduce",
+  "title": "MapReduce - Merge Manager",
+  "description": "The Merge Manager is a key component of the Hadoop MapReduce framework, responsible for managing the merging of map outputs during the shuffle and sort phase of a MapReduce job. It contains logic for merging in-memory map outputs, as well as logic for merging on-disk map outputs. The Merge Manager takes inputs in the form of map outputs, which can be either in-memory or on-disk, and produces outputs in the form of merged map outputs, which are written to disk. The Merge Manager depends on various classes and interfaces from the Apache Hadoop MapReduce framework, including MapOutputFile, RawKeyValueIterator, Reducer, CombineOutputCollector, Counters.Counter, CompressionCodec, and Progress.",
+  "summary": "TITLE: MapReduce - Merge Manager\nDESCRIPTION: The Merge Manager is a key component of the Hadoop MapReduce framework, responsible for managing the merging of map outputs during the shuffle and sort phase of a MapReduce job. It contains logic for merging in-memory map outputs, as well as logic for merging on-disk map outputs. The Merge Manager takes inputs in the form of map outputs, which can be either in-memory or on-disk, and produces outputs in the form of merged map outputs, which are written to disk. The Merge Manager depends on various classes and interfaces from the Apache Hadoop MapReduce framework, including MapOutputFile, RawKeyValueIterator, Reducer, CombineOutputCollector, Counters.Counter, CompressionCodec, and Progress.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "MergeManagerImpl.java"
+    },
+    {
+      "type": "file",
+      "name": "OnDiskMapOutput.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce - Merge Manager\n\nDESCRIPTION:\nThe Merge Manager is a key component of the Hadoop MapReduce framework, responsible for managing the merging of map outputs during the shuffle and sort phase of a MapReduce job. It contains logic for merging in-memory map outputs, as well as logic for merging on-disk map outputs. The Merge Manager takes inputs in the form of map outputs, which can be either in-memory or on-disk, and produces outputs in the form of merged map outputs, which are written to disk. The Merge Manager depends on various classes and interfaces from the Apache Hadoop MapReduce framework, including MapOutputFile, RawKeyValueIterator, Reducer, CombineOutputCollector, Counters.Counter, CompressionCodec, and Progress."
+}

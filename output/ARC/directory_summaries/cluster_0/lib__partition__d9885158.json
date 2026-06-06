@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "lib/partition",
+  "title": "TotalOrderPartitioner",
+  "description": "The TotalOrderPartitioner class implements a partitioner that effects a total order by reading split points from an externally generated source. The key algorithms or processing patterns visible in this chunk are the building of a trie of the first <code>total.order.partitioner.max.trie.depth</code>(2) + 1 bytes if the keytype is {@link org.apache.hadoop.io.BinaryComparable} and <code>total.order.partitioner.natural.order</code> is not false, and a binary search of the partition keyset using the {@link org.apache.hadoop.io.RawComparator} defined for this job otherwise. The data flowing in and out of this chunk is the input file, which must be sorted with the same comparator and contain {@link Job#getNumReduceTasks()} - 1 keys. The key imported, parent, or collaborator classes visible in this chunk are org.apache.hadoop.classification.InterfaceAudience, org.apache.hadoop.classification.InterfaceStability, org.apache.hadoop.conf.Configurable, org.apache.hadoop.conf.Configuration, org.apache.hadoop.fs.FileSystem, org.apache.hadoop.fs.Path, org.apache.hadoop.io.BinaryComparable, org.apache.hadoop.io.IOUtils, org.apache.hadoop.io.SequenceFile, org.apache.hadoop.io.RawComparator, org.apache.hadoop.mapreduce.Job, org.apache.hadoop.mapreduce.Partitioner, and org.apache.hadoop.util.ReflectionUtils.",
+  "summary": "TITLE: TotalOrderPartitioner\nDESCRIPTION: The TotalOrderPartitioner class implements a partitioner that effects a total order by reading split points from an externally generated source. The key algorithms or processing patterns visible in this chunk are the building of a trie of the first <code>total.order.partitioner.max.trie.depth</code>(2) + 1 bytes if the keytype is {@link org.apache.hadoop.io.BinaryComparable} and <code>total.order.partitioner.natural.order</code> is not false, and a binary search of the partition keyset using the {@link org.apache.hadoop.io.RawComparator} defined for this job otherwise. The data flowing in and out of this chunk is the input file, which must be sorted with the same comparator and contain {@link Job#getNumReduceTasks()} - 1 keys. The key imported, parent, or collaborator classes visible in this chunk are org.apache.hadoop.classification.InterfaceAudience, org.apache.hadoop.classification.InterfaceStability, org.apache.hadoop.conf.Configurable, org.apache.hadoop.conf.Configuration, org.apache.hadoop.fs.FileSystem, org.apache.hadoop.fs.Path, org.apache.hadoop.io.BinaryComparable, org.apache.hadoop.io.IOUtils, org.apache.hadoop.io.SequenceFile, org.apache.hadoop.io.RawComparator, org.apache.hadoop.mapreduce.Job, org.apache.hadoop.mapreduce.Partitioner, and org.apache.hadoop.util.ReflectionUtils.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "InputSampler.java"
+    },
+    {
+      "type": "file",
+      "name": "TotalOrderPartitioner.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: TotalOrderPartitioner\n\nDESCRIPTION:\nThe TotalOrderPartitioner class implements a partitioner that effects a total order by reading split points from an externally generated source. The key algorithms or processing patterns visible in this chunk are the building of a trie of the first <code>total.order.partitioner.max.trie.depth</code>(2) + 1 bytes if the keytype is {@link org.apache.hadoop.io.BinaryComparable} and <code>total.order.partitioner.natural.order</code> is not false, and a binary search of the partition keyset using the {@link org.apache.hadoop.io.RawComparator} defined for this job otherwise. The data flowing in and out of this chunk is the input file, which must be sorted with the same comparator and contain {@link Job#getNumReduceTasks()} - 1 keys. The key imported, parent, or collaborator classes visible in this chunk are org.apache.hadoop.classification.InterfaceAudience, org.apache.hadoop.classification.InterfaceStability, org.apache.hadoop.conf.Configurable, org.apache.hadoop.conf.Configuration, org.apache.hadoop.fs.FileSystem, org.apache.hadoop.fs.Path, org.apache.hadoop.io.BinaryComparable, org.apache.hadoop.io.IOUtils, org.apache.hadoop.io.SequenceFile, org.apache.hadoop.io.RawComparator, org.apache.hadoop.mapreduce.Job, org.apache.hadoop.mapreduce.Partitioner, and org.apache.hadoop.util.ReflectionUtils."
+}

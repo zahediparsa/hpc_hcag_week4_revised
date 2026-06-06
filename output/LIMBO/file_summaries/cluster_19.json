@@ -1,0 +1,74 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 19,
+    "class": "org.apache.hadoop.mapreduce.OutputFormat",
+    "path": "OutputFormat.java",
+    "file_name": "OutputFormat.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY: OutputFormat describes the output-specification for a Map-Reduce job.\nCORE LOGIC: The Map-Reduce framework relies on the OutputFormat of the job to validate the output-specification of the job and provide the RecordWriter implementation to be used to write out the output files of the job.\nINPUTS/OUTPUTS: The output files are stored in a FileSystem.\nDEPENDENCIES: The OutputFormat class depends on the RecordWriter and OutputCommitter classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 19,
+    "class": "org.apache.hadoop.mapreduce.lib.db.DBOutputFormat",
+    "path": "lib/db/DBOutputFormat.java",
+    "file_name": "DBOutputFormat.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\n- DBOutputFormat is an OutputFormat that sends the reduce output to a SQL table.\n- It accepts <key,value> pairs, where key has a type extending DBWritable.\n- The returned RecordWriter writes only the key to the database with a batch SQL query.\n\nCORE LOGIC:\n- The DBRecordWriter class is a RecordWriter that writes the reduce output to a SQL table.\n- It uses a Connection and PreparedStatement to execute batch SQL queries.\n- The close() method commits the changes and closes the statement and connection.\n- The write() method adds the key to the batch SQL query.\n\nINPUTS/OUTPUTS:\n- The DBOutputFormat class takes a Connection and PreparedStatement as inputs.\n- The DBRecordWriter class takes a Connection and PreparedStatement as inputs.\n- The close() method of the DBRecordWriter class returns no outputs.\n- The write() method of the DBRecordWriter class returns no outputs.\n\nDEPENDENCIES:\n- DBOutputFormat depends on the following classes:\n  - org.apache.hadoop.mapreduce.lib.db.DBConfiguration\n  - org.apache.hadoop.mapreduce.lib.db.DBWritable\n  - org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter\n  - org.apache.hadoop.mapreduce.lib.output.FileOutputFormat\n  - org.apache.hadoop.util.StringUtils\n- DBRecordWriter depends on the following classes:\n  - java.sql.Connection\n  - java.sql.PreparedStatement\n  - org.apache.hadoop.mapreduce.lib.db.DBConfiguration\n  - org.apache.hadoop.mapreduce.lib.db.DBWritable\n  - org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter\n  - org.apache.hadoop.mapreduce.lib.output.FileOutputFormat\n  - org.apache.hadoop.util.StringUtils",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 19,
+    "class": "org.apache.hadoop.mapreduce.lib.output.FilterOutputFormat",
+    "path": "lib/output/FilterOutputFormat.java",
+    "file_name": "FilterOutputFormat.java",
+    "directory": "lib/output",
+    "summary": "KEY FUNCTIONALITY:\nThis chunk of code is a FilterOutputFormat class that extends the OutputFormat class. It is a convenience class that wraps OutputFormat.\n\nCORE LOGIC:\nThe core logic of this chunk is to provide a way to filter the output of an OutputFormat. It does this by implementing the getRecordWriter, checkOutputSpecs, and getOutputCommitter methods, which are the key methods in the OutputFormat class.\n\nINPUTS/OUTPUTS:\nThe inputs to this chunk are the base OutputFormat and the context in which it is being used. The outputs are the filtered output of the base OutputFormat.\n\nDEPENDENCIES:\nThe dependencies of this chunk are the OutputFormat class and its parent classes. It also depends on the RecordWriter class, which is used to write the output.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 19,
+    "class": "org.apache.hadoop.mapreduce.lib.output.LazyOutputFormat",
+    "path": "lib/output/LazyOutputFormat.java",
+    "file_name": "LazyOutputFormat.java",
+    "directory": "lib/output",
+    "summary": "KEY FUNCTIONALITY: LazyOutputFormat is a convenience class that creates output lazily.\nIt is used in conjunction with org.apache.hadoop.mapreduce.lib.output.MultipleOutputs to recreate the\nbehaviour of org.apache.hadoop.mapred.lib.MultipleTextOutputFormat (etc) of the old Hadoop API.\n\nCORE LOGIC: The core logic of LazyOutputFormat is to create output lazily, i.e., only when it is needed.\nThis is achieved by using a LazyRecordWriter class that extends FilterRecordWriter and overrides the write()\nand close() methods to create the RecordWriter only when it is needed.\n\nINPUTS/OUTPUTS: LazyOutputFormat takes an OutputFormat class as input and creates an instance of it only when\nrequired. It then uses the instance to create a RecordWriter for writing the output.\n\nDEPENDENCIES: LazyOutputFormat depends on the OutputFormat class specified in the configuration. It also\ndepends on the LazyRecordWriter class for creating the RecordWriter lazily.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 19,
+    "class": "org.apache.hadoop.mapreduce.lib.output.NullOutputFormat",
+    "path": "lib/output/NullOutputFormat.java",
+    "file_name": "NullOutputFormat.java",
+    "directory": "lib/output",
+    "summary": "KEY FUNCTIONALITY:\nThis class is an implementation of the OutputFormat class, which is used to control the format of the data that is output by the MapReduce framework.\n\nCORE LOGIC:\nThe core logic of this class is to consume all outputs and put them in /dev/null.\n\nINPUTS/OUTPUTS:\nThe inputs to this class are the data that is output by the MapReduce framework, and the output is /dev/null.\n\nDEPENDENCIES:\nThis class depends on the org.apache.hadoop.mapreduce package, which provides the MapReduce framework for processing large-scale data.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 19,
+    "class": "org.apache.hadoop.mapreduce.lib.output.PathOutputCommitter",
+    "path": "lib/output/PathOutputCommitter.java",
+    "file_name": "PathOutputCommitter.java",
+    "directory": "lib/output",
+    "summary": "KEY FUNCTIONALITY:\n- The PathOutputCommitter class is an abstract class that extends the OutputCommitter class.\n- It provides a committer which commits data written to a working directory to the final directory during the commit process.\n- It has two constructors, one for a task attempt and one for a job attempt.\n- It has methods to get the final output path and the work path where the task should write results into.\n\nCORE LOGIC:\n- The committer is responsible for committing data written to a working directory to the final directory during the commit process.\n- It has methods to get the final output path and the work path where the task should write results into.\n\nINPUTS/OUTPUTS:\n- The committer takes in an output path and a context (task or job) as input.\n- It provides methods to get the final output path and the work path where the task should write results into.\n\nDEPENDENCIES:\n- The PathOutputCommitter class extends the OutputCommitter class, so it depends on the OutputCommitter class.\n- It also depends on the JobContext and TaskAttemptContext classes for the context parameter.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

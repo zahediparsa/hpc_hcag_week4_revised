@@ -1,0 +1,58 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.Cluster",
+    "path": "Cluster.java",
+    "file_name": "Cluster.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\n\nThe Cluster class provides a way to access information about the map/reduce cluster.\n\nCORE LOGIC:\n\nThe Cluster class initializes the clientProtocolProvider and client based on the configuration and jobTrackAddr. It also provides methods to get the file system, job, cluster status, task trackers, staging area directory, job history file path, queue ACLs, root queues, child queues, job tracker status, and task tracker expiry interval.\n\nINPUTS/OUTPUTS:\n\nThe Cluster class takes a Configuration object as input and provides methods to get the file system, job, cluster status, task trackers, staging area directory, job history file path, queue ACLs, root queues, child queues, job tracker status, and task tracker expiry interval as output.\n\nDEPENDENCIES:\n\nThe Cluster class depends on the ClientProtocolProvider, ClientProtocol, UserGroupInformation, Configuration, FileSystem, Path, JobConf, JobID, TaskAttemptID, ClusterMetrics, TaskTrackerInfo, QueueInfo, QueueAclsInfo, JobStatus, and Token classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.Job",
+    "path": "Job.java",
+    "file_name": "Job.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\n- The main purpose of this class is to manage and execute MapReduce jobs.\n- It provides methods for setting up and monitoring the job, as well as for controlling its execution.\n\nCORE LOGIC:\n- The core logic of this class is to handle the submission, execution, and monitoring of MapReduce jobs.\n- It includes methods for setting up the job, such as setting the input format, output format, mapper, reducer, and partitioner.\n- It also includes methods for monitoring the job, such as checking its status, progress, and task completion events.\n\nINPUTS/OUTPUTS:\n- The inputs to this class include the configuration, file system, and other job-related information.\n- The outputs include the updated configuration, job status, progress updates, and task completion events.\n\nDEPENDENCIES:\n- The dependencies of this class include the Cluster class, the JobSubmitter class, and other classes related to MapReduce execution.\n\nFile: Job.java",
+    "chunked": true,
+    "number_of_code_chunks": 4,
+    "chunk_summaries": [
+      "KEY FUNCTIONALITY: main purpose visible in this chunk\nCORE LOGIC: key algorithms or processing patterns visible in this chunk\nINPUTS/OUTPUTS: data flowing in and out\nDEPENDENCIES: key imported, parent, or collaborator classes visible in this chunk",
+      "KEY FUNCTIONALITY:\n- setupProgress(): returns the progress of the job's setup-tasks.\n- isComplete(): checks if the job is finished or not.\n- isSuccessful(): checks if the job completed successfully.\n- killJob(): kills the running job.\n- setPriority(): sets the priority of a running job.\n- setPriorityAsInteger(): sets the priority of a running job.\n- getTaskCompletionEvents(): gets events indicating completion (success/failure) of component tasks.\n- killTask(): kills indicated task attempt.\n- failTask(): fails indicated task attempt.\n- getCounters(): gets the counters for this job.\n- getTaskDiagnostics(): gets the diagnostic messages for a given task attempt.\n- setNumReduceTasks(): sets the number of reduce tasks for the job.\n- setWorkingDirectory(): sets the current working directory for the default file system.\n- setInputFormatClass(): sets the InputFormat for the job.\n- setOutputFormatClass(): sets the OutputFormat for the job.\n- setMapperClass(): sets the Mapper for the job.\n- setJarByClass(): sets the Jar by finding where a given class came from.\n- setJar(): sets the job jar.\n- setUser(): sets the reported username for this job.\n- setCombinerClass(): sets the combiner class for the job.\n- setReducerClass(): sets the Reducer for the job.\n- setPartitionerClass(): sets the Partitioner for the job.\n- setMapOutputKeyClass(): sets the key class for the map output data.\n- setMapOutputValueClass(): sets the value class for the map output data.\n- setOutputKeyClass(): sets the key class for the job output data.\n- setOutputValueClass(): sets the value class for job outputs.\n- setCombinerKeyGroupingComparatorClass(): defines the comparator that controls which keys are grouped together for a single call to combiner.\n- setSortComparatorClass(): defines the comparator that controls how the keys are sorted before they are passed to the Reducer.\n- setGroupingComparatorClass(): defines the comparator that controls which keys are grouped together for a single call to Reducer.reduce().\n- setJobName(): sets the user-specified job name.\n- setSpeculativeExecution(): turns speculative execution on or off for this job.\n- setMapSpeculativeExecution(): turns spec",
+      "KEY FUNCTIONALITY:\n- Add a file path to the current set of classpath entries.\n- Add an archive path to the current set of classpath entries.\n- Set the number of maximum attempts that will be made to run a map task.\n- Set the number of maximum attempts that will be made to run a reduce task.\n- Set whether the system should collect profiler information for some of the tasks in this job.\n- Set the profiler configuration arguments.\n- Set the ranges of maps or reduces to profile.\n\nCORE LOGIC:\n- Ensure that the configuration is consistent with the new APIs.\n- Add a file to job config for shared cache processing.\n- Add an archive to job config for shared cache processing.\n- Set the shared cache upload policies for files.\n- Set the shared cache upload policies for archives.\n\nINPUTS/OUTPUTS:\n- The inputs are the configuration and the file system.\n- The outputs are the updated configuration and the job status.\n\nDEPENDENCIES:\n- The dependencies are the Cluster class and the JobSubmitter class.",
+      "KEY FUNCTIONALITY: The main purpose of this chunk is to ensure that the job is reported as complete after it is done.\nCORE LOGIC: The key logic in this chunk is to continuously check the job's status and print progress updates.\nINPUTS/OUTPUTS: The chunk takes inputs such as the job ID, status, and configuration, and produces outputs such as progress updates and task completion events.\nDEPENDENCIES: The chunk depends on classes such as JobStatus, TaskCompletionEvent, and Counters."
+    ]
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.protocol.ClientProtocol",
+    "path": "protocol/ClientProtocol.java",
+    "file_name": "ClientProtocol.java",
+    "directory": "protocol",
+    "summary": "KEY FUNCTIONALITY: Submits a job for execution and returns the latest profile for that job.\nCORE LOGIC: None.\nINPUTS/OUTPUTS: None.\nDEPENDENCIES: None.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 1,
+    "class": "org.apache.hadoop.mapreduce.tools.CLI",
+    "path": "tools/CLI.java",
+    "file_name": "CLI.java",
+    "directory": "tools",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to handle command-line arguments and print out usage information for each command.\n\nCORE LOGIC:\nThe code does not contain any core logic or algorithms.\n\nINPUTS/OUTPUTS:\nThe code does not contain any inputs or outputs.\n\nDEPENDENCIES:\nThe code does not import any dependencies.",
+    "chunked": true,
+    "number_of_code_chunks": 2,
+    "chunk_summaries": [
+      "Summarize this raw Java source-code chunk.\n\nThis is chunk 1 of 2 from file CLI.java.\nUse only the code shown in this chunk.\n\nReturn exactly these four sections:\n\nKEY FUNCTIONALITY: main purpose visible in this chunk\nCORE LOGIC: key algorithms or processing patterns visible in this chunk\nINPUTS/OUTPUTS: data flowing in and out\nDEPENDENCIES: key imported, parent, or collaborator classes visible in this chunk\n\nCode chunk:\n/**\n * Licensed to the Apache Software Foundation (ASF) under one\n * or more contributor license agreements.  See the NOTICE file\n * distributed with this work for additional information\n * regarding copyright ownership.  The ASF licenses this file\n * to you under the Apache License, Version 2.0 (the\n * \"License\"); you may not use this file except in compliance\n * with the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.hadoop.mapreduce.tools;\n\nimport java.io.BufferedOutputStream;\nimport java.io.File;\nimport java.io.FileOutputStream;\nimport java.io.IOException;\nimport java.io.OutputStreamWriter;\nimport java.io.PrintStream;\nimport java.io.PrintWriter;\nimport java.nio.charset.StandardCharsets;\nimport java.util.ArrayList;\nimport java.util.List;\nimport java.util.Set;\nimport java.util.HashSet;\nimport java.util.Arrays;\n\nimport org.apache.hadoop.classification.VisibleForTesting;\nimport org.apache.commons.lang3.StringUtils;\nimport org.apache.hadoop.classification.InterfaceAudience;\nimport org.apache.hadoop.classification.InterfaceStability;\nimport org.apache.hadoop.classification.InterfaceAudience.Private;\nimport org.apache.hadoop.conf.Configuration;\nimport org.apache.hadoop.conf.Configured;\nimport org.",
+      "KEY FUNCTIONALITY:\nThis chunk contains a large if-else block that handles different command-line arguments and prints out usage information for each command.\n\nCORE LOGIC:\nThe code chunk does not contain any core logic or algorithms.\n\nINPUTS/OUTPUTS:\nThe code chunk does not contain any inputs or outputs.\n\nDEPENDENCIES:\nThe code chunk does not import any dependencies."
+    ]
+  }
+]

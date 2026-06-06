@@ -1,0 +1,30 @@
+{
+  "type": "directory",
+  "cluster_id": 75,
+  "directory": "lib/output/committer/manifest",
+  "title": "ManifestCommitter",
+  "description": "The ManifestCommitter class is a subclass of PathOutputCommitter that is used to commit task attempts and job output in a fault-tolerant manner. It is used in conjunction with the ManifestCommitterOutputFormat class to write output data to a manifest file.\n\nCORE LOGIC:\nThe ManifestCommitter class uses a series of stages to perform the commit process. These stages include SetupJobStage, SetupTaskStage, CommitTaskStage, CommitJobStage, AbortTaskStage, and CleanupJobStage. Each stage performs a specific task in the commit process, such as setting up the job or task, committing the task, or cleaning up the job directory.\n\nINPUTS/OUTPUTS:\nThe ManifestCommitter class takes input from the job and task context, as well as from the output path and work path. It produces output in the form of manifest files that contain information about the committed task attempts and job output.\n\nDEPENDENCIES:\nThe ManifestCommitter class depends on the following classes and interfaces:\n\n- PathOutputCommitter: The parent class of ManifestCommitter, which provides the basic functionality for committing task attempts and job output.\n- ManifestCommitterOutputFormat: The output format class that uses the ManifestCommitter class to commit task attempts and job output.\n- ManifestStoreOperations: An interface that defines the operations needed to interact with the manifest store.\n- StageConfig: A class that contains configuration information for the stages in the commit process.\n- StageEventCallbacks: An interface that defines callback methods for stage events.\n- IOStatisticsSource: An interface that defines methods for accessing IO statistics.",
+  "summary": "TITLE: ManifestCommitter\nDESCRIPTION: The ManifestCommitter class is a subclass of PathOutputCommitter that is used to commit task attempts and job output in a fault-tolerant manner. It is used in conjunction with the ManifestCommitterOutputFormat class to write output data to a manifest file.\n\nCORE LOGIC:\nThe ManifestCommitter class uses a series of stages to perform the commit process. These stages include SetupJobStage, SetupTaskStage, CommitTaskStage, CommitJobStage, AbortTaskStage, and CleanupJobStage. Each stage performs a specific task in the commit process, such as setting up the job or task, committing the task, or cleaning up the job directory.\n\nINPUTS/OUTPUTS:\nThe ManifestCommitter class takes input from the job and task context, as well as from the output path and work path. It produces output in the form of manifest files that contain information about the committed task attempts and job output.\n\nDEPENDENCIES:\nThe ManifestCommitter class depends on the following classes and interfaces:\n\n- PathOutputCommitter: The parent class of ManifestCommitter, which provides the basic functionality for committing task attempts and job output.\n- ManifestCommitterOutputFormat: The output format class that uses the ManifestCommitter class to commit task attempts and job output.\n- ManifestStoreOperations: An interface that defines the operations needed to interact with the manifest store.\n- StageConfig: A class that contains configuration information for the stages in the commit process.\n- StageEventCallbacks: An interface that defines callback methods for stage events.\n- IOStatisticsSource: An interface that defines methods for accessing IO statistics.",
+  "number_of_children": 4,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ManifestCommitter.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestCommitterConfig.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest/impl"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest/stages"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ManifestCommitter\n\nDESCRIPTION:\nThe ManifestCommitter class is a subclass of PathOutputCommitter that is used to commit task attempts and job output in a fault-tolerant manner. It is used in conjunction with the ManifestCommitterOutputFormat class to write output data to a manifest file.\n\nCORE LOGIC:\nThe ManifestCommitter class uses a series of stages to perform the commit process. These stages include SetupJobStage, SetupTaskStage, CommitTaskStage, CommitJobStage, AbortTaskStage, and CleanupJobStage. Each stage performs a specific task in the commit process, such as setting up the job or task, committing the task, or cleaning up the job directory.\n\nINPUTS/OUTPUTS:\nThe ManifestCommitter class takes input from the job and task context, as well as from the output path and work path. It produces output in the form of manifest files that contain information about the committed task attempts and job output.\n\nDEPENDENCIES:\nThe ManifestCommitter class depends on the following classes and interfaces:\n\n- PathOutputCommitter: The parent class of ManifestCommitter, which provides the basic functionality for committing task attempts and job output.\n- ManifestCommitterOutputFormat: The output format class that uses the ManifestCommitter class to commit task attempts and job output.\n- ManifestStoreOperations: An interface that defines the operations needed to interact with the manifest store.\n- StageConfig: A class that contains configuration information for the stages in the commit process.\n- StageEventCallbacks: An interface that defines callback methods for stage events.\n- IOStatisticsSource: An interface that defines methods for accessing IO statistics."
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "server/jobtracker",
+  "title": "Hadoop MapReduce - JobTracker Server",
+  "description": "The JobTracker server is the master server in the Hadoop MapReduce architecture. It is responsible for the overall control and coordination of all the MapReduce tasks. It is also responsible for the scheduling of tasks and the distribution of resources to the different nodes in the cluster. The JobTracker server collaborates with the TaskTrackers to allocate resources and schedule tasks. It also communicates with the clients to provide updates on the status of the jobs. The architectural role of the JobTracker server is to act as the central nervous system of the Hadoop MapReduce system, managing and coordinating all the tasks and resources in the cluster.",
+  "summary": "TITLE: Hadoop MapReduce - JobTracker Server\nDESCRIPTION: The JobTracker server is the master server in the Hadoop MapReduce architecture. It is responsible for the overall control and coordination of all the MapReduce tasks. It is also responsible for the scheduling of tasks and the distribution of resources to the different nodes in the cluster. The JobTracker server collaborates with the TaskTrackers to allocate resources and schedule tasks. It also communicates with the clients to provide updates on the status of the jobs. The architectural role of the JobTracker server is to act as the central nervous system of the Hadoop MapReduce system, managing and coordinating all the tasks and resources in the cluster.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JTConfig.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce - JobTracker Server\n\nDESCRIPTION:\nThe JobTracker server is the master server in the Hadoop MapReduce architecture. It is responsible for the overall control and coordination of all the MapReduce tasks. It is also responsible for the scheduling of tasks and the distribution of resources to the different nodes in the cluster. The JobTracker server collaborates with the TaskTrackers to allocate resources and schedule tasks. It also communicates with the clients to provide updates on the status of the jobs. The architectural role of the JobTracker server is to act as the central nervous system of the Hadoop MapReduce system, managing and coordinating all the tasks and resources in the cluster."
+}

@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "protocol",
+  "title": "Cluster: 0, Directory: protocol",
+  "description": "This directory contains classes that define the protocol between the client and the cluster.\nThe classes in this directory collaborate to provide a way for the client to submit jobs for execution and retrieve the latest profile for those jobs.\nThe classes in this directory use the ClientProtocol interface to define the methods that the client can use to interact with the cluster.\nThe classes in this directory also use the Configuration class to configure the connection to the cluster.",
+  "summary": "TITLE: Cluster: 0, Directory: protocol\nDESCRIPTION: This directory contains classes that define the protocol between the client and the cluster.\nThe classes in this directory collaborate to provide a way for the client to submit jobs for execution and retrieve the latest profile for those jobs.\nThe classes in this directory use the ClientProtocol interface to define the methods that the client can use to interact with the cluster.\nThe classes in this directory also use the Configuration class to configure the connection to the cluster.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ClientProtocol.java"
+    },
+    {
+      "type": "file",
+      "name": "ClientProtocolProvider.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Cluster: 0, Directory: protocol\n\nDESCRIPTION:\nThis directory contains classes that define the protocol between the client and the cluster.\nThe classes in this directory collaborate to provide a way for the client to submit jobs for execution and retrieve the latest profile for those jobs.\nThe classes in this directory use the ClientProtocol interface to define the methods that the client can use to interact with the cluster.\nThe classes in this directory also use the Configuration class to configure the connection to the cluster."
+}

@@ -1,0 +1,24 @@
+{
+  "cluster_id": 32,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture consists of a master node and multiple worker nodes. The master node is responsible for scheduling and monitoring tasks, while the worker nodes execute the tasks assigned by the master. The master node collaborates with the JobTracker class to manage the job execution process, including task assignment, task monitoring, and job completion. The worker nodes collaborate with the TaskTracker class to execute the assigned tasks and report their status back to the JobTracker. The MapReduce cluster architecture achieves scalability, fault tolerance, and high performance through the use of distributed computing and parallel processing. The architecture uses the Java programming language and the Hadoop framework to implement the master and worker nodes, and the MapReduce programming model to define and execute the tasks.",
+  "description_word_count": 127,
+  "number_of_files": 4,
+  "number_of_directories": 2,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce cluster architecture consists of a master node and multiple worker nodes. The master node is responsible for scheduling and monitoring tasks, while the worker nodes execute the tasks assigned by the master. The master node collaborates with the JobTracker class to manage the job execution process, including task assignment, task monitoring, and job completion. The worker nodes collaborate with the TaskTracker class to execute the assigned tasks and report their status back to the JobTracker. The MapReduce cluster architecture achieves scalability, fault tolerance, and high performance through the use of distributed computing and parallel processing. The architecture uses the Java programming language and the Hadoop framework to implement the master and worker nodes, and the MapReduce programming model to define and execute the tasks.",
+  "algorithm": "LIMBO",
+  "files": [
+    "jobhistory/EventReader.java",
+    "jobhistory/EventWriter.java",
+    "jobhistory/JobFinishedEvent.java",
+    "jobhistory/JobHistoryParser.java"
+  ]
+}

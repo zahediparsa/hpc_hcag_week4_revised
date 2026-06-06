@@ -1,0 +1,25 @@
+{
+  "cluster_id": 51,
+  "title": "Cluster-level architectural abstraction of lib/aggregate",
+  "description": "The directory lib/aggregate is responsible for implementing the generic combiner and reducer of Aggregate. It collaborates with the ValueAggregatorDescriptor, ValueAggregatorBaseDescriptor, and Reducer classes from the Apache Hadoop MapReduce library. The architectural role of this directory is to provide a modular and extensible framework for performing various types of aggregations on input data. The components and interactions involve the use of the ValueAggregatorDescriptor and ValueAggregatorBaseDescriptor classes to define the aggregation logic, and the Reducer class to execute the aggregation on input data. The quality attributes include scalability, maintainability, and extensibility, achieved through the use of the Apache Hadoop MapReduce library and the modular design of the directory. The technologies used include Java, Apache Hadoop MapReduce, and related APIs and tools.",
+  "description_word_count": 120,
+  "number_of_files": 5,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Cluster-level architectural abstraction of lib/aggregate\n\nDESCRIPTION:\nThe directory lib/aggregate is responsible for implementing the generic combiner and reducer of Aggregate. It collaborates with the ValueAggregatorDescriptor, ValueAggregatorBaseDescriptor, and Reducer classes from the Apache Hadoop MapReduce library. The architectural role of this directory is to provide a modular and extensible framework for performing various types of aggregations on input data. The components and interactions involve the use of the ValueAggregatorDescriptor and ValueAggregatorBaseDescriptor classes to define the aggregation logic, and the Reducer class to execute the aggregation on input data. The quality attributes include scalability, maintainability, and extensibility, achieved through the use of the Apache Hadoop MapReduce library and the modular design of the directory. The technologies used include Java, Apache Hadoop MapReduce, and related APIs and tools.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/aggregate/UserDefinedValueAggregatorDescriptor.java",
+    "lib/aggregate/ValueAggregatorBaseDescriptor.java",
+    "lib/aggregate/ValueAggregatorCombiner.java",
+    "lib/aggregate/ValueAggregatorJobBase.java",
+    "lib/aggregate/ValueAggregatorReducer.java"
+  ]
+}

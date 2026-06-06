@@ -1,0 +1,34 @@
+{
+  "cluster_id": 24,
+  "title": "MapReduce - Shuffle and Sort",
+  "description": "The shuffle and sort process is a crucial part of the MapReduce framework. It is responsible for merging the output of multiple map tasks into a single sorted output for the reduce task. The Shuffle class is responsible for managing the shuffle process and using a ShuffleSchedulerImpl to schedule the execution of map tasks. The MergeManager interface is used to merge the map output files, and the ShuffleSchedulerImpl class is responsible for scheduling the execution of map tasks. The ShuffleClientMetrics class is used to record shuffle client metrics, and the ShuffleSchedulerImpl class is responsible for scheduling the execution of map tasks.",
+  "description_word_count": 101,
+  "number_of_files": 14,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce - Shuffle and Sort\n\nDESCRIPTION:\nThe shuffle and sort process is a crucial part of the MapReduce framework. It is responsible for merging the output of multiple map tasks into a single sorted output for the reduce task. The Shuffle class is responsible for managing the shuffle process and using a ShuffleSchedulerImpl to schedule the execution of map tasks. The MergeManager interface is used to merge the map output files, and the ShuffleSchedulerImpl class is responsible for scheduling the execution of map tasks. The ShuffleClientMetrics class is used to record shuffle client metrics, and the ShuffleSchedulerImpl class is responsible for scheduling the execution of map tasks.",
+  "algorithm": "LIMBO",
+  "files": [
+    "TaskCompletionEvent.java",
+    "task/reduce/EventFetcher.java",
+    "task/reduce/Fetcher.java",
+    "task/reduce/IFileWrappedMapOutput.java",
+    "task/reduce/InMemoryMapOutput.java",
+    "task/reduce/InMemoryReader.java",
+    "task/reduce/LocalFetcher.java",
+    "task/reduce/MapHost.java",
+    "task/reduce/MapOutput.java",
+    "task/reduce/MergeManager.java",
+    "task/reduce/OnDiskMapOutput.java",
+    "task/reduce/Shuffle.java",
+    "task/reduce/ShuffleClientMetrics.java",
+    "task/reduce/ShuffleSchedulerImpl.java"
+  ]
+}

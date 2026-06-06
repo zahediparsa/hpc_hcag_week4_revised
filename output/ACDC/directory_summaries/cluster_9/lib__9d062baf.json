@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 9,
+  "directory": "lib",
+  "title": "lib",
+  "description": "This directory contains the mappers for the Hadoop MapReduce architecture. Mappers are responsible for processing the input data and transforming it into a format that can be processed by the reducers. The mappers in this directory collaborate by passing data to each other and by sharing information about the input data. The mappers follow the MapReduce pattern, which is a distributed processing framework for large data sets. The MapReduce pattern separates the task of processing data into two main phases: the map phase and the reduce phase. The mappers in this directory are responsible for the map phase, which involves transforming the input data into a format that can be processed by the reducers.",
+  "summary": "TITLE: lib\nDESCRIPTION: This directory contains the mappers for the Hadoop MapReduce architecture. Mappers are responsible for processing the input data and transforming it into a format that can be processed by the reducers. The mappers in this directory collaborate by passing data to each other and by sharing information about the input data. The mappers follow the MapReduce pattern, which is a distributed processing framework for large data sets. The MapReduce pattern separates the task of processing data into two main phases: the map phase and the reduce phase. The mappers in this directory are responsible for the map phase, which involves transforming the input data into a format that can be processed by the reducers.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/fieldsel"
+    },
+    {
+      "type": "directory",
+      "name": "lib/map"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib\n\nDESCRIPTION: This directory contains the mappers for the Hadoop MapReduce architecture. Mappers are responsible for processing the input data and transforming it into a format that can be processed by the reducers. The mappers in this directory collaborate by passing data to each other and by sharing information about the input data. The mappers follow the MapReduce pattern, which is a distributed processing framework for large data sets. The MapReduce pattern separates the task of processing data into two main phases: the map phase and the reduce phase. The mappers in this directory are responsible for the map phase, which involves transforming the input data into a format that can be processed by the reducers."
+}

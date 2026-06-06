@@ -1,0 +1,30 @@
+{
+  "cluster_id": 9,
+  "title": "MapReduce",
+  "description": "The MapReduce directory is responsible for processing the input data and transforming it into a format that can be processed by the reducers. The mappers in this directory collaborate by passing data to each other and by sharing information about the input data. The mappers follow the MapReduce pattern, which is a distributed processing framework for large data sets. The MapReduce pattern separates the task of processing data into two main phases: the map phase and the reduce phase. The mappers in this directory are responsible for the map phase, which involves transforming the input data into a format that can be processed by the reducers.",
+  "description_word_count": 106,
+  "number_of_files": 10,
+  "number_of_directories": 5,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce\n\nDESCRIPTION:\nThe MapReduce directory is responsible for processing the input data and transforming it into a format that can be processed by the reducers. The mappers in this directory collaborate by passing data to each other and by sharing information about the input data. The mappers follow the MapReduce pattern, which is a distributed processing framework for large data sets. The MapReduce pattern separates the task of processing data into two main phases: the map phase and the reduce phase. The mappers in this directory are responsible for the map phase, which involves transforming the input data into a format that can be processed by the reducers.",
+  "algorithm": "ACDC",
+  "files": [
+    "MapContext.java",
+    "Mapper.java",
+    "StatusReporter.java",
+    "lib/fieldsel/FieldSelectionMapper.java",
+    "lib/map/InverseMapper.java",
+    "lib/map/MultithreadedMapper.java",
+    "lib/map/TokenCounterMapper.java",
+    "lib/map/WrappedMapper.java",
+    "task/MapContextImpl.java",
+    "task/TaskInputOutputContextImpl.java"
+  ]
+}

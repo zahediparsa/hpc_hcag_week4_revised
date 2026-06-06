@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 77,
+  "directory": "lib/output/committer/manifest/files",
+  "title": "ManifestPrinter.java",
+  "description": "The ManifestPrinter.java file is responsible for printing a manifest file. It collaborates with other files in the same directory to load the manifest file from a given path and print its contents. The architectural role of this file is to provide a way to output manifest data in a readable format.\n\nThe file uses the Apache Hadoop MapReduce library and the Java IO library to perform its core logic. It takes a path to the manifest file as input and outputs the contents of the manifest file.",
+  "summary": "TITLE: ManifestPrinter.java\nDESCRIPTION: The ManifestPrinter.java file is responsible for printing a manifest file. It collaborates with other files in the same directory to load the manifest file from a given path and print its contents. The architectural role of this file is to provide a way to output manifest data in a readable format.\n\nThe file uses the Apache Hadoop MapReduce library and the Java IO library to perform its core logic. It takes a path to the manifest file as input and outputs the contents of the manifest file.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ManifestPrinter.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ManifestPrinter.java\n\nDESCRIPTION:\nThe ManifestPrinter.java file is responsible for printing a manifest file. It collaborates with other files in the same directory to load the manifest file from a given path and print its contents. The architectural role of this file is to provide a way to output manifest data in a readable format.\n\nThe file uses the Apache Hadoop MapReduce library and the Java IO library to perform its core logic. It takes a path to the manifest file as input and outputs the contents of the manifest file."
+}

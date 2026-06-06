@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "ACDC",
+    "cluster": 18,
+    "class": "org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier",
+    "path": "security/token/JobTokenIdentifier.java",
+    "file_name": "JobTokenIdentifier.java",
+    "directory": "security/token",
+    "summary": "KEY FUNCTIONALITY: This chunk contains the JobTokenIdentifier class, which is used to identify a job token.\n\nCORE LOGIC: The class has a constructor that takes a jobid as input and sets it as the jobid for the token. It also has methods to read and write the jobid to/from a DataInput/DataOutput stream.\n\nINPUTS/OUTPUTS: The class has a single input, the jobid, which is set in the constructor and read/written to/from a DataInput/DataOutput stream.\n\nDEPENDENCIES: The class extends the TokenIdentifier class and imports the necessary classes for serialization and user/group information.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 18,
+    "class": "org.apache.hadoop.mapreduce.security.token.JobTokenSelector",
+    "path": "security/token/JobTokenSelector.java",
+    "file_name": "JobTokenSelector.java",
+    "directory": "security/token",
+    "summary": "KEY FUNCTIONALITY:\nThis code chunk implements a TokenSelector that looks through tokens to find the first job token that matches the service and returns it.\n\nCORE LOGIC:\nThe selectToken method takes a service and a collection of tokens as input. It iterates through the tokens and checks if the token's kind is JobTokenIdentifier.KIND_NAME and if the service matches the token's service. If a match is found, the method returns the token.\n\nINPUTS/OUTPUTS:\nThe selectToken method takes a Text service and a Collection of Token<? extends TokenIdentifier> tokens as input. It returns a Token<JobTokenIdentifier> that matches the service.\n\nDEPENDENCIES:\nThis code chunk depends on the JobTokenIdentifier class from the org.apache.hadoop.mapreduce.security.token package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

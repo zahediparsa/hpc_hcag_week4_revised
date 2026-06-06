@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 10,
+  "directory": ".",
+  "title": "MapReduce Job Context",
+  "description": "The MapReduce Job Context provides a read-only view of a MapReduce job, including its configuration, input format, output format, mapper, combiner, reducer, partitioner, and other job-level information. It contains methods to retrieve various job configuration parameters, such as the number of reduce tasks, the job name, the input format class, the mapper class, the combiner class, the reducer class, the output format class, the partitioner class, the raw key comparator, the combiner key grouping comparator, the grouping comparator, the job setup and cleanup needed status, the task cleanup needed status, the symlink status, the cache archives, cache files, local cache archives, local cache files, archive timestamps, file timestamps, file class paths, archive class paths, max map attempts, max reduce attempts, task profiling status, profiler configuration arguments, task profiling range, and user. The class depends on the org.apache.hadoop.mapred.JobConf class for job configuration, the JobID class for job ID, and the Credentials class for user credentials.",
+  "summary": "TITLE: MapReduce Job Context\nDESCRIPTION: The MapReduce Job Context provides a read-only view of a MapReduce job, including its configuration, input format, output format, mapper, combiner, reducer, partitioner, and other job-level information. It contains methods to retrieve various job configuration parameters, such as the number of reduce tasks, the job name, the input format class, the mapper class, the combiner class, the reducer class, the output format class, the partitioner class, the raw key comparator, the combiner key grouping comparator, the grouping comparator, the job setup and cleanup needed status, the task cleanup needed status, the symlink status, the cache archives, cache files, local cache archives, local cache files, archive timestamps, file timestamps, file class paths, archive class paths, max map attempts, max reduce attempts, task profiling status, profiler configuration arguments, task profiling range, and user. The class depends on the org.apache.hadoop.mapred.JobConf class for job configuration, the JobID class for job ID, and the Credentials class for user credentials.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobContext.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib"
+    },
+    {
+      "type": "directory",
+      "name": "task"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Job Context\n\nDESCRIPTION: The MapReduce Job Context provides a read-only view of a MapReduce job, including its configuration, input format, output format, mapper, combiner, reducer, partitioner, and other job-level information. It contains methods to retrieve various job configuration parameters, such as the number of reduce tasks, the job name, the input format class, the mapper class, the combiner class, the reducer class, the output format class, the partitioner class, the raw key comparator, the combiner key grouping comparator, the grouping comparator, the job setup and cleanup needed status, the task cleanup needed status, the symlink status, the cache archives, cache files, local cache archives, local cache files, archive timestamps, file timestamps, file class paths, archive class paths, max map attempts, max reduce attempts, task profiling status, profiler configuration arguments, task profiling range, and user. The class depends on the org.apache.hadoop.mapred.JobConf class for job configuration, the JobID class for job ID, and the Credentials class for user credentials."
+}

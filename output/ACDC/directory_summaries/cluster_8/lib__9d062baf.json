@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 8,
+  "directory": "lib",
+  "title": "Join",
+  "description": "This directory contains classes that implement the join operation. It provides a way to combine data from multiple sources based on a common key. The classes in this directory collaborate to perform the join operation by using the RecordReader interface to read data from the sources and the JoinCollector interface to collect and manage the data. This directory follows the composite pattern, as it combines multiple RecordReaders to perform the join operation. It uses the PriorityQueue class to manage the RecordReaders and process the key, value pairs.",
+  "summary": "TITLE: Join\nDESCRIPTION: This directory contains classes that implement the join operation. It provides a way to combine data from multiple sources based on a common key. The classes in this directory collaborate to perform the join operation by using the RecordReader interface to read data from the sources and the JoinCollector interface to collect and manage the data. This directory follows the composite pattern, as it combines multiple RecordReaders to perform the join operation. It uses the PriorityQueue class to manage the RecordReaders and process the key, value pairs.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/join"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Join\n\nDESCRIPTION:\nThis directory contains classes that implement the join operation. It provides a way to combine data from multiple sources based on a common key. The classes in this directory collaborate to perform the join operation by using the RecordReader interface to read data from the sources and the JoinCollector interface to collect and manage the data. This directory follows the composite pattern, as it combines multiple RecordReaders to perform the join operation. It uses the PriorityQueue class to manage the RecordReaders and process the key, value pairs."
+}

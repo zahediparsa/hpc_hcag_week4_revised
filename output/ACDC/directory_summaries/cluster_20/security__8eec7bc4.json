@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 20,
+  "directory": "security",
+  "title": "Security",
+  "description": "The security directory is responsible for handling security-related functionality in the Hadoop MapReduce architecture. It collaborates with other files and directories to ensure the secure spilling of intermediate files. The directory uses the SpillCallBackInjector class to capture the path of spilled files and the CryptoUtils class to wrap the output and input streams if necessary. The directory also uses the SpillCallBackPathsFinder class to keep track of spilled files and their positions. Overall, the security directory plays a crucial role in ensuring the security and integrity of data during the MapReduce process.",
+  "summary": "TITLE: Security\nDESCRIPTION: The security directory is responsible for handling security-related functionality in the Hadoop MapReduce architecture. It collaborates with other files and directories to ensure the secure spilling of intermediate files. The directory uses the SpillCallBackInjector class to capture the path of spilled files and the CryptoUtils class to wrap the output and input streams if necessary. The directory also uses the SpillCallBackPathsFinder class to keep track of spilled files and their positions. Overall, the security directory plays a crucial role in ensuring the security and integrity of data during the MapReduce process.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "IntermediateEncryptedStream.java"
+    },
+    {
+      "type": "file",
+      "name": "SpillCallBackInjector.java"
+    },
+    {
+      "type": "file",
+      "name": "SpillCallBackPathsFinder.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Security\n\nDESCRIPTION:\nThe security directory is responsible for handling security-related functionality in the Hadoop MapReduce architecture. It collaborates with other files and directories to ensure the secure spilling of intermediate files. The directory uses the SpillCallBackInjector class to capture the path of spilled files and the CryptoUtils class to wrap the output and input streams if necessary. The directory also uses the SpillCallBackPathsFinder class to keep track of spilled files and their positions. Overall, the security directory plays a crucial role in ensuring the security and integrity of data during the MapReduce process."
+}

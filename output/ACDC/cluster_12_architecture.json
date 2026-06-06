@@ -1,0 +1,23 @@
+{
+  "cluster_id": 12,
+  "title": "Apache Hadoop MapReduce Architecture",
+  "description": "The lib/output/committer directory is responsible for managing the commit process of MapReduce jobs. It collaborates with the other files and directories to ensure that the output of the job is properly committed to the specified location. The architectural role of this directory is to provide a fault-tolerant and reliable commit process for MapReduce jobs, ensuring that the output is consistent and durable. This directory follows the pattern of the OutputCommitter interface, which defines the methods for committing, aborting, and cleaning up the output of a MapReduce job.",
+  "description_word_count": 89,
+  "number_of_files": 3,
+  "number_of_directories": 6,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Apache Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe lib/output/committer directory is responsible for managing the commit process of MapReduce jobs. It collaborates with the other files and directories to ensure that the output of the job is properly committed to the specified location. The architectural role of this directory is to provide a fault-tolerant and reliable commit process for MapReduce jobs, ensuring that the output is consistent and durable. This directory follows the pattern of the OutputCommitter interface, which defines the methods for committing, aborting, and cleaning up the output of a MapReduce job.",
+  "algorithm": "ACDC",
+  "files": [
+    "lib/output/committer/manifest/stages/AbstractJobOrTaskStage.java",
+    "lib/output/committer/manifest/stages/JobOrTaskStage.java",
+    "lib/output/committer/manifest/stages/LoadManifestsStage.java"
+  ]
+}

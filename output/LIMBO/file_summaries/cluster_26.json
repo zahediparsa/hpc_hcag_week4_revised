@@ -1,0 +1,50 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 26,
+    "class": "org.apache.hadoop.mapreduce.checkpoint.CheckpointService",
+    "path": "checkpoint/CheckpointService.java",
+    "file_name": "CheckpointService.java",
+    "directory": "checkpoint",
+    "summary": "KEY FUNCTIONALITY:\nThe CheckpointService provides a simple API to store and retrieve the state of a task.\n\nCORE LOGIC:\nCheckpoints are atomic, single-writer, write-once, multiple-readers, ready-many type of objects.\n\nINPUTS/OUTPUTS:\nThe CheckpointService provides a channel to write to a checkpoint and returns a CheckpointID that can be later used to access (read-only) this checkpoint.\n\nDEPENDENCIES:\nThe CheckpointService has no dependencies.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 26,
+    "class": "org.apache.hadoop.mapreduce.checkpoint.FSCheckpointID",
+    "path": "checkpoint/FSCheckpointID.java",
+    "file_name": "FSCheckpointID.java",
+    "directory": "checkpoint",
+    "summary": "KEY FUNCTIONALITY:\nThe FSCheckpointID class is used to represent a checkpoint ID that is based on a file system path.\n\nCORE LOGIC:\nThe class contains a single field, path, which represents the file system path where the checkpoint has been saved. It also provides methods to get and set the path, as well as methods to serialize and deserialize the path using the DataInput and DataOutput interfaces.\n\nINPUTS/OUTPUTS:\nThe class provides methods to read and write the path to a DataInput or DataOutput stream.\n\nDEPENDENCIES:\nThe class does not depend on any other classes or packages.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 26,
+    "class": "org.apache.hadoop.mapreduce.checkpoint.FSCheckpointService",
+    "path": "checkpoint/FSCheckpointService.java",
+    "file_name": "FSCheckpointService.java",
+    "directory": "checkpoint",
+    "summary": "KEY FUNCTIONALITY:\nThe FSCheckpointService class is a FileSystem-based implementation of the CheckpointService interface. It provides methods for creating, opening, committing, aborting, and deleting checkpoints.\n\nCORE LOGIC:\nThe class uses the FileSystem API to interact with the file system, including creating, opening, and deleting files. It also uses the CheckpointNamingService interface to generate and manage checkpoint names.\n\nINPUTS/OUTPUTS:\nThe class provides methods for creating new checkpoints, opening existing checkpoints for reading, committing checkpoints by renaming them, and aborting checkpoints by deleting them.\n\nDEPENDENCIES:\nThe class depends on the FileSystem, Path, CheckpointNamingService, and CheckpointService interfaces, as well as the FSDataInputStream, FSDataOutputStream, ByteBuffer, ReadableByteChannel, and WritableByteChannel classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 26,
+    "class": "org.apache.hadoop.mapreduce.checkpoint.TaskCheckpointID",
+    "path": "checkpoint/TaskCheckpointID.java",
+    "file_name": "TaskCheckpointID.java",
+    "directory": "checkpoint",
+    "summary": "KEY FUNCTIONALITY:\n\nThe TaskCheckpointID class is an implementation of the CheckpointID interface used in Apache Hadoop MapReduce. It contains a reference to an underlying FileSystem-based checkpoint, as well as metadata about the cost of checkpoints and other counters. This class is used to store and provide checkpoint information to the next execution of the same task.\n\nCORE LOGIC:\n\nThe class provides methods to write and read checkpoint data from DataInput and DataOutput streams, respectively. It also provides methods to check for equality and calculate the hash code of the checkpoint ID.\n\nINPUTS/OUTPUTS:\n\nThe class takes in a FileSystem-based checkpoint ID, a list of partial output paths, and a Counters object as inputs. It writes the counters, the number of partial output paths, the partial output paths, and the raw checkpoint ID to the DataOutput stream.\n\nDEPENDENCIES:\n\nThe class depends on the FSCheckpointID class, the Counters class, and the WritableUtils class from the Apache Hadoop MapReduce framework. It also depends on the Path and Text classes from the Apache Hadoop FileSystem API.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

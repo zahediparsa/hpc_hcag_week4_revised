@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 27,
+    "class": "org.apache.hadoop.mapreduce.checkpoint.RandomNameCNS",
+    "path": "checkpoint/RandomNameCNS.java",
+    "file_name": "RandomNameCNS.java",
+    "directory": "checkpoint",
+    "summary": "KEY FUNCTIONALITY: Generates a random checkpoint name.\nCORE LOGIC: Calls RandomStringUtils.randomAlphanumeric(8) to generate a random string of 8 alphanumeric characters.\nINPUTS/OUTPUTS: None.\nDEPENDENCIES: org.apache.commons.lang3.RandomStringUtils.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 27,
+    "class": "org.apache.hadoop.mapreduce.checkpoint.SimpleNamingService",
+    "path": "checkpoint/SimpleNamingService.java",
+    "file_name": "SimpleNamingService.java",
+    "directory": "checkpoint",
+    "summary": "KEY FUNCTIONALITY:\nThe SimpleNamingService class is a naming service that simply returns the name it has been initialized with.\n\nCORE LOGIC:\nThe getNewName() method generates a new checkpoint name by appending the initialized name with the prefix \"checkpoint_\".\n\nINPUTS/OUTPUTS:\nThe SimpleNamingService class takes a String name as input in its constructor and returns a String checkpoint name in the getNewName() method.\n\nDEPENDENCIES:\nThe SimpleNamingService class does not have any dependencies on other classes or packages.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 85,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.BinaryPartitioner",
+    "path": "lib/partition/BinaryPartitioner.java",
+    "file_name": "BinaryPartitioner.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\nThe BinaryPartitioner class is a custom partitioner for use with Apache Hadoop MapReduce. It is used to partition BinaryComparable keys based on a configurable subset of the bytes array returned by the getBytes() method.\n\nCORE LOGIC:\nThe BinaryPartitioner class uses the left and right offsets specified in the configuration to determine the subset of bytes to be used for partitioning. It then computes a hash of this subset and uses it to determine the partition.\n\nINPUTS/OUTPUTS:\nThe BinaryPartitioner class takes a BinaryComparable key, a value, and the number of partitions as input, and returns the partition index as output.\n\nDEPENDENCIES:\nThe BinaryPartitioner class implements the Configurable interface, which allows it to access configuration properties. It also uses the WritableComparator class from the Apache Hadoop framework to compute the hash of the subset of bytes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 85,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.HashPartitioner",
+    "path": "lib/partition/HashPartitioner.java",
+    "file_name": "HashPartitioner.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\n\nThe main purpose of this chunk of code is to define a class that extends the Partitioner class and implements a method to partition keys by their Object#hashCode().\n\nCORE LOGIC:\n\nThe core logic of this chunk of code is the implementation of the getPartition() method, which uses the Object#hashCode() method to generate a hash code for the key and then applies a modulo operation to determine the partition for the key-value pair.\n\nINPUTS/OUTPUTS:\n\nThe inputs to this chunk of code are the key, value, and numReduceTasks parameters passed to the getPartition() method. The output is the integer representing the partition for the key-value pair.\n\nDEPENDENCIES:\n\nThe dependencies of this chunk of code are the Partitioner class and the Object class, which are imported at the beginning of the file.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 85,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.RehashPartitioner",
+    "path": "lib/partition/RehashPartitioner.java",
+    "file_name": "RehashPartitioner.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\n- The RehashPartitioner class is a custom partitioner for Apache Hadoop MapReduce.\n- It rehashes the hash code of the key object to determine the partition for the key-value pair.\n- This can help to distribute the data more evenly across partitions, potentially improving reduce time.\n\nCORE LOGIC:\n- The getPartition() method takes the key, value, and the number of reduce tasks as input.\n- It first applies a bitwise XOR operation with a prime number seed to the hash code of the key.\n- Then, it applies additional bitwise operations to improve the hash code's quality.\n- Finally, it takes the resulting hash code modulo the number of reduce tasks to determine the partition.\n\nINPUTS/OUTPUTS:\n- The getPartition() method takes the key, value, and the number of reduce tasks as input.\n- It returns the calculated partition number.\n\nDEPENDENCIES:\n- The RehashPartitioner class is part of the org.apache.hadoop.mapreduce.lib.partition package.\n- It implements the Partitioner interface, which requires the implementation of the getPartition() method.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

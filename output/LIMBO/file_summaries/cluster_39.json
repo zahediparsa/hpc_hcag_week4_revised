@@ -1,0 +1,86 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 39,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.JobInfoChangeEvent",
+    "path": "jobhistory/JobInfoChangeEvent.java",
+    "file_name": "JobInfoChangeEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class represents an event where the submit and launch time of a job are recorded.\n\nCORE LOGIC:\n\nThe core logic of this class is to store the job ID, submit time, and launch time in the JobInfoChange datum object.\n\nINPUTS/OUTPUTS:\n\nThe inputs to this class are the job ID, submit time, and launch time. The outputs are the job ID, submit time, and launch time.\n\nDEPENDENCIES:\n\nThis class depends on the JobID class from the org.apache.hadoop.mapreduce package, the HistoryEvent interface, the JobInfoChange class, the TimelineEvent class, and the TimelineMetric class.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 39,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.JobInitedEvent",
+    "path": "jobhistory/JobInitedEvent.java",
+    "file_name": "JobInitedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class represents an event where a job has been initialized. It contains information about the job, such as its ID, launch time, total number of maps, total number of reduces, job status, and whether the job's map and reduce stages were combined.\n\nCORE LOGIC:\n\nThe class provides methods to get the job ID, launch time, total number of maps, total number of reduces, job status, and whether the job's map and reduce stages were combined.\n\nINPUTS/OUTPUTS:\n\nThe class takes in the job ID, launch time, total number of maps, total number of reduces, job status, and whether the job's map and reduce stages were combined as input parameters. It provides methods to get the job ID, launch time, total number of maps, total number of reduces, job status, and whether the job's map and reduce stages were combined as output.\n\nDEPENDENCIES:\n\nThe class depends on the JobID class from the org.apache.hadoop.mapreduce package, the TimelineEvent and TimelineMetric classes from the org.apache.hadoop.yarn.api.records.timelineservice package, and the Utf8 class from the org.apache.avro.util package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 39,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.JobPriorityChangeEvent",
+    "path": "jobhistory/JobPriorityChangeEvent.java",
+    "file_name": "JobPriorityChangeEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\n\nThis chunk of code is an event to record the change of priority of a job.\n\nCORE LOGIC:\n\nThe core logic of this chunk of code is to set the job ID and priority in the datum object.\n\nINPUTS/OUTPUTS:\n\nThe input to this chunk of code is the job ID and priority, and the output is the datum object.\n\nDEPENDENCIES:\n\nThis chunk of code depends on the JobID and JobPriority classes from the Apache Hadoop MapReduce framework.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 39,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.JobQueueChangeEvent",
+    "path": "jobhistory/JobQueueChangeEvent.java",
+    "file_name": "JobQueueChangeEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\n- The main purpose of this chunk is to create a class that represents a job queue change event.\n\nCORE LOGIC:\n- The class has a constructor that takes a JobID and a queue name as parameters and sets them in the datum object.\n- It also has getter methods to retrieve the job ID and queue name from the datum object.\n\nINPUTS/OUTPUTS:\n- The class takes a JobID and a queue name as input parameters in its constructor and stores them in the datum object.\n- It provides getter methods to retrieve the job ID and queue name from the datum object.\n\nDEPENDENCIES:\n- The class depends on the JobID class from the org.apache.hadoop.mapreduce package and the TimelineEvent and TimelineMetric classes from the org.apache.hadoop.yarn.api.records.timelineservice package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 39,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.JobStatusChangedEvent",
+    "path": "jobhistory/JobStatusChangedEvent.java",
+    "file_name": "JobStatusChangedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\n\nThis chunk of code is an event to record the change of status for a job.\n\nCORE LOGIC:\n\nThe core logic of this chunk of code is to create an event that records the change in the job status.\n\nINPUTS/OUTPUTS:\n\nThe inputs to this chunk of code are the Job ID and the new job status. The output is an event that records the change in the job status.\n\nDEPENDENCIES:\n\nThis chunk of code depends on the JobID class and the HistoryEvent interface.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 39,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.JobSubmittedEvent",
+    "path": "jobhistory/JobSubmittedEvent.java",
+    "file_name": "JobSubmittedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class represents an event where a job has been submitted.\n\nCORE LOGIC:\n\nThe core logic of this class is to store the job submission information, such as the job ID, job name, user name, submission time, job configuration path, job ACLs, job queue name, workflow ID, workflow name, workflow node name, workflow adjacencies, and workflow tags.\n\nINPUTS/OUTPUTS:\n\nThe inputs to this class are the job submission information, and the outputs are the stored job submission information.\n\nDEPENDENCIES:\n\nThis class depends on the JobID, JobConf, JobACL, AccessControlList, and TimelineEvent classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 39,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.JobUnsuccessfulCompletionEvent",
+    "path": "jobhistory/JobUnsuccessfulCompletionEvent.java",
+    "file_name": "JobUnsuccessfulCompletionEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class represents an event of job unsuccessful completion.\n\nCORE LOGIC:\n\nThe core logic of this class is to record the completion status of a job, including whether it was successful, failed, or killed. It also records the number of successful and failed/killed maps and reduces, as well as the finish time of the job.\n\nINPUTS/OUTPUTS:\n\nThe inputs to this class are the job ID, finish time, number of succeeded maps, number of succeeded reduces, number of failed maps, number of failed reduces, number of killed maps, number of killed reduces, and the status of the job. The outputs are the job ID, finish time, number of succeeded maps, number of succeeded reduces, number of failed maps, number of failed reduces, number of killed maps, number of killed reduces, and the status of the job.\n\nDEPENDENCIES:\n\nThis class depends on the JobID class from the org.apache.hadoop.mapreduce package, as well as the HistoryEvent and TimelineEvent classes from the org.apache.hadoop.mapreduce.jobhistory package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

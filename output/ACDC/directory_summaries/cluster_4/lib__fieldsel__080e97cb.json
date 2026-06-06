@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 4,
+  "directory": "lib/fieldsel",
+  "title": "lib/fieldsel",
+  "description": "This directory contains a reducer class that can be used to perform field selections in a manner similar to unix cut. The input data is treated as fields separated by a user specified separator (the default value is \"\\t\"). The user can specify a list of fields that form the reduce output keys, and a list of fields that form the reduce output values. The fields are the union of those from the key and those from the value. This code depends on the org.apache.hadoop.mapreduce.Reducer class.",
+  "summary": "TITLE: lib/fieldsel\nDESCRIPTION: This directory contains a reducer class that can be used to perform field selections in a manner similar to unix cut. The input data is treated as fields separated by a user specified separator (the default value is \"\\t\"). The user can specify a list of fields that form the reduce output keys, and a list of fields that form the reduce output values. The fields are the union of those from the key and those from the value. This code depends on the org.apache.hadoop.mapreduce.Reducer class.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "FieldSelectionReducer.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/fieldsel\n\nDESCRIPTION:\nThis directory contains a reducer class that can be used to perform field selections in a manner similar to unix cut. The input data is treated as fields separated by a user specified separator (the default value is \"\\t\"). The user can specify a list of fields that form the reduce output keys, and a list of fields that form the reduce output values. The fields are the union of those from the key and those from the value. This code depends on the org.apache.hadoop.mapreduce.Reducer class."
+}

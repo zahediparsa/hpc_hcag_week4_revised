@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 17,
+    "class": "org.apache.hadoop.mapreduce.MarkableIterator",
+    "path": "MarkableIterator.java",
+    "file_name": "MarkableIterator.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to provide a wrapper iterator class that implements the MarkableIteratorInterface.\n\nCORE LOGIC:\nThe key algorithms or processing patterns visible in this chunk are the implementation of the MarkableIteratorInterface methods, such as mark(), reset(), clearMark(), hasNext(), next(), and remove().\n\nINPUTS/OUTPUTS:\nThe data flowing in and out of this chunk is the input iterator, which must implement the MarkableIteratorInterface, and the output is the wrapped iterator that also implements the MarkableIteratorInterface.\n\nDEPENDENCIES:\nThe key imported, parent, or collaborator classes visible in this chunk are the MarkableIteratorInterface and the Iterator interface.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 17,
+    "class": "org.apache.hadoop.mapreduce.Reducer",
+    "path": "Reducer.java",
+    "file_name": "Reducer.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe Reducer class is responsible for reducing a set of intermediate values that share a key to a smaller set of values.\n\nCORE LOGIC:\nThe Reducer class has three primary phases: Shuffle, Sort, and Reduce. In the Shuffle phase, the Reducer copies the sorted output from each Mapper using HTTP across the network. In the Sort phase, the framework merge sorts the Reducer inputs by keys (since different Mappers may have output the same key). In the Reduce phase, the reduce method is called for each <key, (collection of values)> in the sorted inputs.\n\nINPUTS/OUTPUTS:\nThe Reducer class takes in KEYIN, VALUEIN, KEYOUT, and VALUEOUT as input and output types. It takes in a key and an iterable of values as input and outputs a key and a value.\n\nDEPENDENCIES:\nThe Reducer class depends on the Configuration class for the job, the JobContext class, and the ReduceContext class. It also depends on the Iterable class for iterating over the values.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

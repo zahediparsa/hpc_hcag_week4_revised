@@ -1,0 +1,138 @@
+{
+  "algorithm": "ARC",
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "number_of_files": 152,
+      "number_of_directories": 27,
+      "directories": [
+        ".",
+        "counters",
+        "filecache",
+        "jobhistory",
+        "lib",
+        "lib/aggregate",
+        "lib/db",
+        "lib/fieldsel",
+        "lib/input",
+        "lib/jobcontrol",
+        "lib/join",
+        "lib/map",
+        "lib/output",
+        "lib/partition",
+        "lib/reduce",
+        "protocol",
+        "security",
+        "security/token",
+        "server",
+        "server/jobtracker",
+        "server/tasktracker",
+        "split",
+        "task",
+        "task/annotation",
+        "task/reduce",
+        "util",
+        "v2"
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "number_of_files": 10,
+      "number_of_directories": 6,
+      "directories": [
+        ".",
+        "lib",
+        "lib/partition",
+        "security",
+        "security/token",
+        "security/token/delegation"
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "number_of_files": 10,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "checkpoint",
+        "util"
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "number_of_files": 55,
+      "number_of_directories": 18,
+      "directories": [
+        ".",
+        "counters",
+        "filecache",
+        "jobhistory",
+        "lib",
+        "lib/aggregate",
+        "lib/db",
+        "lib/input",
+        "lib/map",
+        "lib/output",
+        "protocol",
+        "security",
+        "security/token",
+        "security/token/delegation",
+        "split",
+        "task",
+        "task/reduce",
+        "util"
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "number_of_files": 46,
+      "number_of_directories": 8,
+      "directories": [
+        ".",
+        "lib",
+        "lib/output",
+        "lib/output/committer",
+        "lib/output/committer/manifest",
+        "lib/output/committer/manifest/files",
+        "lib/output/committer/manifest/impl",
+        "lib/output/committer/manifest/stages"
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "number_of_files": 30,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "jobhistory",
+        "util"
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "number_of_files": 9,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/db"
+      ]
+    },
+    {
+      "cluster_id": 7,
+      "number_of_files": 20,
+      "number_of_directories": 9,
+      "directories": [
+        ".",
+        "filecache",
+        "lib",
+        "lib/chain",
+        "lib/map",
+        "lib/reduce",
+        "task",
+        "task/reduce",
+        "tools"
+      ]
+    }
+  ]
+}

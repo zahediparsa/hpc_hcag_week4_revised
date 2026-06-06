@@ -1,0 +1,28 @@
+{
+  "cluster_id": 4,
+  "title": "Hadoop MapReduce Counters Architecture",
+  "description": "The Hadoop MapReduce counters architecture is responsible for managing and tracking the progress of MapReduce jobs. It consists of a counters directory that collaborates with other files or child directories to ensure the proper functioning of the counters. The counters directory provides a common implementation of counter groups and counters, as well as methods for adding, finding, and incrementing counters. Additionally, the architecture includes utilities for converting counter data to and from a compact string format, as well as methods for converting counter objects to and from JSON and TimelineMetric. The code is written in Java and depends on the Apache Hadoop MapReduce library and the Apache Hadoop classification library.",
+  "description_word_count": 110,
+  "number_of_files": 8,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Counters Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce counters architecture is responsible for managing and tracking the progress of MapReduce jobs. It provides a centralized location for managing counters, which helps in organizing and monitoring job performance. The architecture consists of the counters directory, which collaborates with other files or child directories to ensure the proper functioning of the counters. The counters directory is responsible for managing the counters in the Hadoop MapReduce framework. It provides a common implementation of counter groups and counters, as well as methods for adding, finding, and incrementing counters. The directory also collaborates with other files or child directories to ensure the proper functioning of the counters. Additionally, the architecture includes utilities for converting counter data to and from a compact string format, as well as methods for converting counter objects to and from JSON and TimelineMetric. These utilities are used by the MapReduce framework to track and report job progress and performance metrics. The code is written in Java and depends on the Apache Hadoop MapReduce library and the Apache Hadoop classification library.",
+  "algorithm": "LIMBO",
+  "files": [
+    "CounterGroup.java",
+    "counters/AbstractCounterGroup.java",
+    "counters/AbstractCounters.java",
+    "counters/CounterGroupFactory.java",
+    "counters/FileSystemCounterGroup.java",
+    "counters/FrameworkCounterGroup.java",
+    "util/CountersStrings.java",
+    "util/JobHistoryEventUtils.java"
+  ]
+}

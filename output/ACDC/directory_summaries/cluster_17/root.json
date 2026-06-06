@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 17,
+  "directory": ".",
+  "title": "security",
+  "description": "This directory contains classes related to security in Hadoop MapReduce. The classes in this directory are responsible for generating and verifying hashes using a secret key, as well as caching job tokens for fast access. The classes collaborate by using the JobTokenSecretManager class to generate and verify hashes, and to cache job tokens. The architectural pattern used in this directory is the SecretManager pattern, which provides a centralized way to manage secrets and tokens.",
+  "summary": "TITLE: security\nDESCRIPTION: This directory contains classes related to security in Hadoop MapReduce. The classes in this directory are responsible for generating and verifying hashes using a secret key, as well as caching job tokens for fast access. The classes collaborate by using the JobTokenSecretManager class to generate and verify hashes, and to cache job tokens. The architectural pattern used in this directory is the SecretManager pattern, which provides a centralized way to manage secrets and tokens.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "security"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: security\n\nDESCRIPTION:\nThis directory contains classes related to security in Hadoop MapReduce. The classes in this directory are responsible for generating and verifying hashes using a secret key, as well as caching job tokens for fast access. The classes collaborate by using the JobTokenSecretManager class to generate and verify hashes, and to cache job tokens. The architectural pattern used in this directory is the SecretManager pattern, which provides a centralized way to manage secrets and tokens."
+}

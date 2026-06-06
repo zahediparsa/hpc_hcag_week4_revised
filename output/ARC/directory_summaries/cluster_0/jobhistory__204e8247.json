@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "jobhistory",
+  "title": "Hadoop MapReduce Architecture",
+  "description": "The Hadoop MapReduce architecture is a distributed processing framework that allows for the processing of large data sets across clusters of computers. It consists of two main components: the MapReduce framework and the Hadoop Distributed File System (HDFS).\n\nThe MapReduce framework is responsible for dividing the input data into smaller chunks, distributing them across the cluster, and processing them in parallel. It consists of three main steps: the Map step, the Shuffle and Sort step, and the Reduce step. The Map step applies a user-defined function to each input data chunk, producing a set of intermediate key-value pairs. The Shuffle and Sort step groups the intermediate key-value pairs by key and shuffles them to the appropriate Reduce task. The Reduce step applies a user-defined function to each group of intermediate key-value pairs, producing a final output.\n\nThe Hadoop Distributed File System (HDFS) is responsible for storing the input data and intermediate results in a distributed file system. It provides high-throughput access to application data and fault-tolerant storage across a cluster of computers.\n\nThe MapReduce architecture follows the principles of divide-and-conquer, parallel processing, and fault-tolerance, making it well-suited for processing large data sets in a distributed environment.",
+  "summary": "TITLE: Hadoop MapReduce Architecture\nDESCRIPTION: The Hadoop MapReduce architecture is a distributed processing framework that allows for the processing of large data sets across clusters of computers. It consists of two main components: the MapReduce framework and the Hadoop Distributed File System (HDFS).\n\nThe MapReduce framework is responsible for dividing the input data into smaller chunks, distributing them across the cluster, and processing them in parallel. It consists of three main steps: the Map step, the Shuffle and Sort step, and the Reduce step. The Map step applies a user-defined function to each input data chunk, producing a set of intermediate key-value pairs. The Shuffle and Sort step groups the intermediate key-value pairs by key and shuffles them to the appropriate Reduce task. The Reduce step applies a user-defined function to each group of intermediate key-value pairs, producing a final output.\n\nThe Hadoop Distributed File System (HDFS) is responsible for storing the input data and intermediate results in a distributed file system. It provides high-throughput access to application data and fault-tolerant storage across a cluster of computers.\n\nThe MapReduce architecture follows the principles of divide-and-conquer, parallel processing, and fault-tolerance, making it well-suited for processing large data sets in a distributed environment.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AvroArrayUtils.java"
+    },
+    {
+      "type": "file",
+      "name": "JobSubmittedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "MapAttemptFinishedEvent.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is a distributed processing framework that allows for the processing of large data sets across clusters of computers. It consists of two main components: the MapReduce framework and the Hadoop Distributed File System (HDFS).\n\nThe MapReduce framework is responsible for dividing the input data into smaller chunks, distributing them across the cluster, and processing them in parallel. It consists of three main steps: the Map step, the Shuffle and Sort step, and the Reduce step. The Map step applies a user-defined function to each input data chunk, producing a set of intermediate key-value pairs. The Shuffle and Sort step groups the intermediate key-value pairs by key and shuffles them to the appropriate Reduce task. The Reduce step applies a user-defined function to each group of intermediate key-value pairs, producing a final output.\n\nThe Hadoop Distributed File System (HDFS) is responsible for storing the input data and intermediate results in a distributed file system. It provides high-throughput access to application data and fault-tolerant storage across a cluster of computers.\n\nThe MapReduce architecture follows the principles of divide-and-conquer, parallel processing, and fault-tolerance, making it well-suited for processing large data sets in a distributed environment."
+}

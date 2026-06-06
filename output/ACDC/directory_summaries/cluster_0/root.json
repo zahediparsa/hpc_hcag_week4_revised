@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": ".",
+  "title": "Checkpoint Directory",
+  "description": "The checkpoint directory is responsible for managing the checkpoints of tasks in a Hadoop MapReduce job. It provides a way to store and retrieve the state of tasks in case of failures or retries. The directory collaborates with the job tracker and the task trackers to ensure that checkpoints are properly stored and retrieved. The checkpoint directory follows the active passive architecture pattern, where the active component is the job tracker and the passive component is the checkpoint directory.",
+  "summary": "TITLE: Checkpoint Directory\nDESCRIPTION: The checkpoint directory is responsible for managing the checkpoints of tasks in a Hadoop MapReduce job. It provides a way to store and retrieve the state of tasks in case of failures or retries. The directory collaborates with the job tracker and the task trackers to ensure that checkpoints are properly stored and retrieved. The checkpoint directory follows the active passive architecture pattern, where the active component is the job tracker and the passive component is the checkpoint directory.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "checkpoint"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Checkpoint Directory\n\nDESCRIPTION:\nThe checkpoint directory is responsible for managing the checkpoints of tasks in a Hadoop MapReduce job. It provides a way to store and retrieve the state of tasks in case of failures or retries. The directory collaborates with the job tracker and the task trackers to ensure that checkpoints are properly stored and retrieved. The checkpoint directory follows the active passive architecture pattern, where the active component is the job tracker and the passive component is the checkpoint directory."
+}

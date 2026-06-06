@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 14,
+  "directory": "lib/partition",
+  "title": "TotalOrderPartitioner",
+  "description": "The TotalOrderPartitioner class is a partitioner that effects a total order by reading split points from an externally generated source. It implements a trie of the first bytes of the split points if the key type is BinaryComparable and uses a binary search of the partition keyset otherwise. The data flowing in is the configuration, and the data flowing out is the partitioning of the keys.",
+  "summary": "TITLE: TotalOrderPartitioner\nDESCRIPTION: The TotalOrderPartitioner class is a partitioner that effects a total order by reading split points from an externally generated source. It implements a trie of the first bytes of the split points if the key type is BinaryComparable and uses a binary search of the partition keyset otherwise. The data flowing in is the configuration, and the data flowing out is the partitioning of the keys.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "InputSampler.java"
+    },
+    {
+      "type": "file",
+      "name": "TotalOrderPartitioner.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: TotalOrderPartitioner\n\nDESCRIPTION:\nThe TotalOrderPartitioner class is a partitioner that effects a total order by reading split points from an externally generated source. It implements a trie of the first bytes of the split points if the key type is BinaryComparable and uses a binary search of the partition keyset otherwise. The data flowing in is the configuration, and the data flowing out is the partitioning of the keys."
+}

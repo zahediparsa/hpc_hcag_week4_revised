@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 73,
+  "directory": "security/token",
+  "title": "JobTokenIdentifier",
+  "description": "The JobTokenIdentifier class is used to identify a job token. It has a constructor that takes a jobid as input and sets it as the jobid for the token. It also has methods to read and write the jobid to/from a DataInput/DataOutput stream. The class extends the TokenIdentifier class and imports the necessary classes for serialization and user/group information.",
+  "summary": "TITLE: JobTokenIdentifier\nDESCRIPTION: The JobTokenIdentifier class is used to identify a job token. It has a constructor that takes a jobid as input and sets it as the jobid for the token. It also has methods to read and write the jobid to/from a DataInput/DataOutput stream. The class extends the TokenIdentifier class and imports the necessary classes for serialization and user/group information.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobTokenIdentifier.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobTokenIdentifier\n\nDESCRIPTION:\nThe JobTokenIdentifier class is used to identify a job token. It has a constructor that takes a jobid as input and sets it as the jobid for the token. It also has methods to read and write the jobid to/from a DataInput/DataOutput stream. The class extends the TokenIdentifier class and imports the necessary classes for serialization and user/group information."
+}

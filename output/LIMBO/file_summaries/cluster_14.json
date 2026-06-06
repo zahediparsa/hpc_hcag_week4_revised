@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 14,
+    "class": "org.apache.hadoop.mapreduce.MapContext",
+    "path": "MapContext.java",
+    "file_name": "MapContext.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY: The MapContext class is a context object that is given to the Mapper.\n\nCORE LOGIC: The MapContext class provides access to the input split for the map.\n\nINPUTS/OUTPUTS: The MapContext class takes four type parameters: KEYIN, VALUEIN, KEYOUT, and VALUEOUT, which represent the input and output types of the Mapper.\n\nDEPENDENCIES: The MapContext class implements the TaskInputOutputContext interface, which provides access to the input and output data.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 14,
+    "class": "org.apache.hadoop.mapreduce.ReduceContext",
+    "path": "ReduceContext.java",
+    "file_name": "ReduceContext.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe context passed to the Reducer.\n\nCORE LOGIC:\nThe context passed to the Reducer.\n\nINPUTS/OUTPUTS:\nThe context passed to the Reducer.\n\nDEPENDENCIES:\nThe context passed to the Reducer.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

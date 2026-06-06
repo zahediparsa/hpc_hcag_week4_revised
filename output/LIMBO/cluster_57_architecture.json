@@ -1,0 +1,29 @@
+{
+  "cluster_id": 57,
+  "title": "Database reader",
+  "description": "This directory contains classes for reading data from a database using MapReduce. The classes in this directory collaborate to read data from a database table and emit records as key-value pairs. The architectural role of this directory is to provide a high-level interface for reading data from a database and handling the distributed processing of the data. The classes in this directory use the Apache Hadoop MapReduce framework and the Apache Hadoop classification library.",
+  "description_word_count": 74,
+  "number_of_files": 9,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Database reader\n\nDESCRIPTION:\nThis directory contains classes for reading data from a database using MapReduce. The classes in this directory collaborate to read data from a database table and emit records as key-value pairs. The architectural role of this directory is to provide a high-level interface for reading data from a database and handling the distributed processing of the data. The classes in this directory use the Apache Hadoop MapReduce framework and the Apache Hadoop classification library.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/db/DBInputFormat.java",
+    "lib/db/DBRecordReader.java",
+    "lib/db/DataDrivenDBInputFormat.java",
+    "lib/db/DataDrivenDBRecordReader.java",
+    "lib/db/MySQLDBRecordReader.java",
+    "lib/db/MySQLDataDrivenDBRecordReader.java",
+    "lib/db/OracleDBRecordReader.java",
+    "lib/db/OracleDataDrivenDBInputFormat.java",
+    "lib/db/OracleDataDrivenDBRecordReader.java"
+  ]
+}

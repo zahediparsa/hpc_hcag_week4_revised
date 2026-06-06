@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 15,
+  "directory": "lib/map",
+  "title": "MapReduce Map Directory",
+  "description": "The MapReduce Map directory is responsible for managing the mapping phase of the MapReduce algorithm. It contains classes that handle the distribution of data across the cluster, the execution of map tasks, and the collection of intermediate results. The directory collaborates with other components of the MapReduce framework, such as the InputFormat and OutputFormat classes, to read input data and write output data. The architectural role of the Map directory is to provide a flexible and scalable mechanism for processing large-scale data sets. This is achieved through the use of the MapReduce pattern, which allows for parallel processing of data across a cluster of machines. The directory also implements the MapReduce programming model, which provides a high-level abstraction for writing map and reduce tasks. This allows developers to focus on the logic of their application without having to worry about the details of distributed processing.",
+  "summary": "TITLE: MapReduce Map Directory\nDESCRIPTION: The MapReduce Map directory is responsible for managing the mapping phase of the MapReduce algorithm. It contains classes that handle the distribution of data across the cluster, the execution of map tasks, and the collection of intermediate results. The directory collaborates with other components of the MapReduce framework, such as the InputFormat and OutputFormat classes, to read input data and write output data. The architectural role of the Map directory is to provide a flexible and scalable mechanism for processing large-scale data sets. This is achieved through the use of the MapReduce pattern, which allows for parallel processing of data across a cluster of machines. The directory also implements the MapReduce programming model, which provides a high-level abstraction for writing map and reduce tasks. This allows developers to focus on the logic of their application without having to worry about the details of distributed processing.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "WrappedMapper.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Map Directory\n\nDESCRIPTION:\nThe MapReduce Map directory is responsible for managing the mapping phase of the MapReduce algorithm. It contains classes that handle the distribution of data across the cluster, the execution of map tasks, and the collection of intermediate results. The directory collaborates with other components of the MapReduce framework, such as the InputFormat and OutputFormat classes, to read input data and write output data. The architectural role of the Map directory is to provide a flexible and scalable mechanism for processing large-scale data sets. This is achieved through the use of the MapReduce pattern, which allows for parallel processing of data across a cluster of machines. The directory also implements the MapReduce programming model, which provides a high-level abstraction for writing map and reduce tasks. This allows developers to focus on the logic of their application without having to worry about the details of distributed processing."
+}

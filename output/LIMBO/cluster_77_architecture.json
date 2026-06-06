@@ -1,0 +1,21 @@
+{
+  "cluster_id": 77,
+  "title": "Output Committer",
+  "description": "The Output Committer is a crucial component of the Hadoop MapReduce framework, responsible for handling the committing of output data. It collaborates with the OutputCommitter.java file to ensure the data is committed in a fault-tolerant and scalable manner.\n\nThe Output Committer uses the Apache Hadoop MapReduce library and the Java IO library to perform its core logic. It takes input data and handles the committing of output data in a fault-tolerant manner.\n\nThe Output Committer is a key architectural pattern in Hadoop MapReduce, responsible for ensuring the reliability and fault-tolerance of the output data. It coordinates the committing of output data from the map and reduce tasks, and ensures that the data is committed in a fault-tolerant manner.\n\nTechnologies used: Apache Hadoop MapReduce, Java IO library",
+  "description_word_count": 127,
+  "number_of_files": 1,
+  "number_of_directories": 6,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Output Committer\n\nDESCRIPTION:\nThe Output Committer is a crucial component of the Hadoop MapReduce framework, responsible for handling the committing of output data. It collaborates with the OutputCommitter.java file to ensure the data is committed in a fault-tolerant and scalable manner.\n\nThe Output Committer uses the Apache Hadoop MapReduce library and the Java IO library to perform its core logic. It takes input data and handles the committing of output data in a fault-tolerant manner.\n\nThe Output Committer is a key architectural pattern in Hadoop MapReduce, responsible for ensuring the reliability and fault-tolerance of the output data. It coordinates the committing of output data from the map and reduce tasks, and ensures that the data is committed in a fault-tolerant manner.\n\nTechnologies used: Apache Hadoop MapReduce, Java IO library",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/output/committer/manifest/files/ManifestPrinter.java"
+  ]
+}

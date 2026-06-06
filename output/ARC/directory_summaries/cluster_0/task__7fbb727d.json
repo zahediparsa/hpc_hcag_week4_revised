@@ -1,0 +1,34 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "task",
+  "title": "<maximum 10 words>",
+  "description": "<4 to 6 concise sentences>",
+  "summary": "TITLE: <maximum 10 words>\nDESCRIPTION: <4 to 6 concise sentences>",
+  "number_of_children": 5,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "MapContextImpl.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptContextImpl.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskInputOutputContextImpl.java"
+    },
+    {
+      "type": "directory",
+      "name": "task/annotation"
+    },
+    {
+      "type": "directory",
+      "name": "task/reduce"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "Cluster: 0\nDirectory: task/reduce\n\n responsibility:\n- responsible for shuffle and sort process in a MapReduce job\n- responsible for merging the output of multiple maps into a single sorted output for the reduce task\n\ncollaboration:\n- uses a ShuffleSchedulerImpl to manage the shuffle process\n- uses a MergeManager to merge the map output files\n- uses Fetcher and EventFetcher threads to fetch map output and shuffle events from the shuffle server\n\narchitectural role:\n- architectural role of this directory is to manage the shuffle and sort process in a MapReduce job, and to merge the output of multiple maps into a single sorted output for the reduce task.\n\nOutput format exactly as:\nTITLE: <maximum 10 words>\n\nDESCRIPTION:\n<4 to 6 concise sentences>"
+}

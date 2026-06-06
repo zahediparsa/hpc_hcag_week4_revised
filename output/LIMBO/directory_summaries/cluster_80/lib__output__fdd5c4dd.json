@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 80,
+  "directory": "lib/output",
+  "title": "Output Committer - Directory-Level Abstraction",
+  "description": "The directory lib/output/committer is responsible for managing the commit process of MapReduce tasks. It includes a manifest committer that handles the writing of entry files, and a task committer that coordinates the commit process of individual tasks. The code depends on the Apache Hadoop MapReduce and Common libraries, as well as the slf4j library for logging. The manifest committer uses a writer thread to manage the shutdown, fails safely on write failures, and restarts all blocked writers in the process. The task committer collaborates with the manifest committer to ensure the commit process is completed successfully. The architectural role of this directory is to provide a centralized and reliable mechanism for managing the commit process of MapReduce tasks.",
+  "summary": "TITLE: Output Committer - Directory-Level Abstraction\nDESCRIPTION: The directory lib/output/committer is responsible for managing the commit process of MapReduce tasks. It includes a manifest committer that handles the writing of entry files, and a task committer that coordinates the commit process of individual tasks. The code depends on the Apache Hadoop MapReduce and Common libraries, as well as the slf4j library for logging. The manifest committer uses a writer thread to manage the shutdown, fails safely on write failures, and restarts all blocked writers in the process. The task committer collaborates with the manifest committer to ensure the commit process is completed successfully. The architectural role of this directory is to provide a centralized and reliable mechanism for managing the commit process of MapReduce tasks.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Output Committer - Directory-Level Abstraction\n\nDESCRIPTION:\nThe directory lib/output/committer is responsible for managing the commit process of MapReduce tasks. It includes a manifest committer that handles the writing of entry files, and a task committer that coordinates the commit process of individual tasks. The code depends on the Apache Hadoop MapReduce and Common libraries, as well as the slf4j library for logging. The manifest committer uses a writer thread to manage the shutdown, fails safely on write failures, and restarts all blocked writers in the process. The task committer collaborates with the manifest committer to ensure the commit process is completed successfully. The architectural role of this directory is to provide a centralized and reliable mechanism for managing the commit process of MapReduce tasks."
+}

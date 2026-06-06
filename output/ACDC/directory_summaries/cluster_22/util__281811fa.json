@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 22,
+  "directory": "util",
+  "title": "Util Package",
+  "description": "The util package contains utility classes and methods for various purposes. It includes classes for configuration management, process management, and other general-purpose functionality. The classes in this package are used throughout the Hadoop ecosystem, and are essential for the proper functioning of the system.",
+  "summary": "TITLE: Util Package\nDESCRIPTION: The util package contains utility classes and methods for various purposes. It includes classes for configuration management, process management, and other general-purpose functionality. The classes in this package are used throughout the Hadoop ecosystem, and are essential for the proper functioning of the system.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ConfigUtil.java"
+    },
+    {
+      "type": "file",
+      "name": "MRJobConfUtil.java"
+    },
+    {
+      "type": "file",
+      "name": "ProcessTree.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Util Package\n\nDESCRIPTION:\nThe util package contains utility classes and methods for various purposes. It includes classes for configuration management, process management, and other general-purpose functionality. The classes in this package are used throughout the Hadoop ecosystem, and are essential for the proper functioning of the system."
+}

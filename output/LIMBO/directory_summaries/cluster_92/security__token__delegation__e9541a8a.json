@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 92,
+  "directory": "security/token/delegation",
+  "title": "MapReduce Delegation Token Architecture",
+  "description": "The MapReduce delegation token architecture is responsible for generating and accepting the password for each token. The DelegationTokenSecretManager class is the main component of this architecture, and it collaborates with the DelegationTokenSelector class to define a class that extends the AbstractDelegationTokenSelector class and specializes it for MapReduce.",
+  "summary": "TITLE: MapReduce Delegation Token Architecture\nDESCRIPTION: The MapReduce delegation token architecture is responsible for generating and accepting the password for each token. The DelegationTokenSecretManager class is the main component of this architecture, and it collaborates with the DelegationTokenSelector class to define a class that extends the AbstractDelegationTokenSelector class and specializes it for MapReduce.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "DelegationTokenSecretManager.java"
+    },
+    {
+      "type": "file",
+      "name": "DelegationTokenSelector.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Delegation Token Architecture\n\nDESCRIPTION:\nThe MapReduce delegation token architecture is responsible for generating and accepting the password for each token. The DelegationTokenSecretManager class is the main component of this architecture, and it collaborates with the DelegationTokenSelector class to define a class that extends the AbstractDelegationTokenSelector class and specializes it for MapReduce."
+}

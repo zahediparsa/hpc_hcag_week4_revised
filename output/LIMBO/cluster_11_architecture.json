@@ -1,0 +1,24 @@
+{
+  "cluster_id": 11,
+  "title": "Hadoop MapReduce Architecture",
+  "description": "The Hadoop MapReduce architecture consists of a master node and multiple slave nodes. The master node is responsible for scheduling and monitoring the execution of tasks, while the slave nodes execute the tasks and return the results to the master node. The master node also coordinates the communication and data transfer between the slave nodes. The architecture is designed to be scalable, fault-tolerant, and efficient in processing large amounts of data. It uses the Hadoop Distributed File System (HDFS) to store data and the MapReduce programming model to process data. The architecture is highly scalable and can handle large volumes of data. It also provides fault tolerance by replicating data across multiple nodes and retrying failed tasks. The architecture is written in Java and uses the Apache Hadoop framework.",
+  "description_word_count": 129,
+  "number_of_files": 4,
+  "number_of_directories": 1,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture consists of a master node and multiple slave nodes. The master node is responsible for scheduling and monitoring the execution of tasks, while the slave nodes execute the tasks and return the results to the master node. The master node also coordinates the communication and data transfer between the slave nodes. The architecture is designed to be scalable, fault-tolerant, and efficient in processing large amounts of data. It uses the Hadoop Distributed File System (HDFS) to store data and the MapReduce programming model to process data. The architecture is highly scalable and can handle large volumes of data. It also provides fault tolerance by replicating data across multiple nodes and retrying failed tasks. The architecture is written in Java and uses the Apache Hadoop framework.",
+  "algorithm": "LIMBO",
+  "files": [
+    "JobID.java",
+    "JobStatus.java",
+    "TaskAttemptID.java",
+    "TaskID.java"
+  ]
+}

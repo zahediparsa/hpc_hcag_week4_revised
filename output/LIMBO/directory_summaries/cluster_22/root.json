@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 22,
+  "directory": ".",
+  "title": "MapReduce server-level configuration",
+  "description": "The server directory is responsible for managing the server-level configuration of the Hadoop MapReduce architecture. It contains two subdirectories, jobtracker and tasktracker, which handle the server-level configuration for the JobTracker and TaskTracker components, respectively. The server directory does not contain any core logic, inputs/outputs, or dependencies. Instead, it provides a centralized location for storing and managing the server-level configuration for the entire Hadoop MapReduce system.",
+  "summary": "TITLE: MapReduce server-level configuration\nDESCRIPTION: The server directory is responsible for managing the server-level configuration of the Hadoop MapReduce architecture. It contains two subdirectories, jobtracker and tasktracker, which handle the server-level configuration for the JobTracker and TaskTracker components, respectively. The server directory does not contain any core logic, inputs/outputs, or dependencies. Instead, it provides a centralized location for storing and managing the server-level configuration for the entire Hadoop MapReduce system.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "SharedCacheConfig.java"
+    },
+    {
+      "type": "directory",
+      "name": "server"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce server-level configuration\n\nDESCRIPTION:\nThe server directory is responsible for managing the server-level configuration of the Hadoop MapReduce architecture. It contains two subdirectories, jobtracker and tasktracker, which handle the server-level configuration for the JobTracker and TaskTracker components, respectively. The server directory does not contain any core logic, inputs/outputs, or dependencies. Instead, it provides a centralized location for storing and managing the server-level configuration for the entire Hadoop MapReduce system."
+}

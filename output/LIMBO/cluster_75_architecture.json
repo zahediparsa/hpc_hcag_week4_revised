@@ -1,0 +1,27 @@
+{
+  "cluster_id": 75,
+  "title": "OutputCommitter",
+  "description": "The OutputCommitter interface is used by the MapReduce framework to commit the output of a job. It provides methods for committing task attempts, committing job output, aborting tasks or jobs, and cleaning up job output. The ManifestCommitter class implements this interface and provides the necessary functionality for fault-tolerant output commitment. The ManifestCommitterOutputFormat class is used to write output data to a manifest file, which is a file that contains information about the output data written by a MapReduce job. The manifest file is used to recover from failures and ensure that all output data is committed correctly.",
+  "description_word_count": 97,
+  "number_of_files": 7,
+  "number_of_directories": 7,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: OutputCommitter\n\nDESCRIPTION:\nThe OutputCommitter interface is used by the MapReduce framework to commit the output of a job. It provides methods for committing task attempts, committing job output, aborting tasks or jobs, and cleaning up job output. The ManifestCommitter class implements this interface and provides the necessary functionality for fault-tolerant output commitment. The ManifestCommitterOutputFormat class is used to write output data to a manifest file, which is a file that contains information about the output data written by a MapReduce job. The manifest file is used to recover from failures and ensure that all output data is committed correctly.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/output/committer/manifest/ManifestCommitter.java",
+    "lib/output/committer/manifest/ManifestCommitterConfig.java",
+    "lib/output/committer/manifest/impl/ManifestCommitterSupport.java",
+    "lib/output/committer/manifest/impl/ManifestStoreOperations.java",
+    "lib/output/committer/manifest/impl/ManifestStoreOperationsThroughFileSystem.java",
+    "lib/output/committer/manifest/stages/AbstractJobOrTaskStage.java",
+    "lib/output/committer/manifest/stages/StageConfig.java"
+  ]
+}

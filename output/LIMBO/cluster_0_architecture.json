@@ -1,0 +1,22 @@
+{
+  "cluster_id": 0,
+  "title": "Hadoop MapReduce Architecture",
+  "description": "The Hadoop MapReduce architecture is a distributed processing system designed for handling large-scale data sets. It consists of two main components: the MapReduce framework and the HDFS file system. The MapReduce framework divides the data into smaller chunks, processes them in parallel, and aggregates the results. The HDFS file system stores the data and provides access to it across the cluster. The communication between the MapReduce framework and the HDFS file system is done through the JobTracker and TaskTracker components. The JobTracker schedules and monitors the MapReduce jobs, while the TaskTracker executes the tasks assigned by the JobTracker. The data is stored in HDFS in the form of files, which are then processed by the MapReduce framework. The architecture follows the principles of distributed computing, such as scalability, fault-tolerance, and load balancing, to ensure efficient processing of large-scale data sets.",
+  "description_word_count": 140,
+  "number_of_files": 2,
+  "number_of_directories": 2,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION: The Hadoop MapReduce architecture is responsible for processing large-scale data sets in a distributed environment. It consists of two main components: the MapReduce framework and the HDFS (Hadoop Distributed File System) file system. The MapReduce framework is responsible for dividing the data into smaller chunks, processing them in parallel, and then aggregating the results. The HDFS file system is responsible for storing the data and providing access to it across the cluster. The communication between the MapReduce framework and the HDFS file system is done through the JobTracker and TaskTracker components. The JobTracker is responsible for scheduling and monitoring the MapReduce jobs, while the TaskTracker is responsible for executing the tasks assigned by the JobTracker. The data is stored in HDFS in the form of files, which are then processed by the MapReduce framework. The architecture follows the principles of distributed computing, such as scalability, fault-tolerance, and load balancing, to ensure efficient processing of large-scale data sets.",
+  "algorithm": "LIMBO",
+  "files": [
+    "JobSubmissionFiles.java",
+    "protocol/ClientProtocolProvider.java"
+  ]
+}

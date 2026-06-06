@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "counters",
+  "title": "Counters",
+  "description": "The counters directory is responsible for handling and managing the counters in the Hadoop MapReduce architecture. The Counters class collaborates with other classes to keep track of various metrics and statistics related to the execution of MapReduce jobs. This directory follows the pattern of the Singleton design pattern, ensuring that there is only one instance of the Counters class throughout the system. This pattern helps to maintain consistency and avoid conflicts when multiple jobs are running simultaneously.",
+  "summary": "TITLE: Counters\nDESCRIPTION: The counters directory is responsible for handling and managing the counters in the Hadoop MapReduce architecture. The Counters class collaborates with other classes to keep track of various metrics and statistics related to the execution of MapReduce jobs. This directory follows the pattern of the Singleton design pattern, ensuring that there is only one instance of the Counters class throughout the system. This pattern helps to maintain consistency and avoid conflicts when multiple jobs are running simultaneously.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "LimitExceededException.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Counters\n\nDESCRIPTION:\nThe counters directory is responsible for handling and managing the counters in the Hadoop MapReduce architecture. The Counters class collaborates with other classes to keep track of various metrics and statistics related to the execution of MapReduce jobs. This directory follows the pattern of the Singleton design pattern, ensuring that there is only one instance of the Counters class throughout the system. This pattern helps to maintain consistency and avoid conflicts when multiple jobs are running simultaneously."
+}

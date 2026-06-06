@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 21,
+  "directory": "lib/input",
+  "title": "TextInputFormat",
+  "description": "TextInputFormat is a class that extends the FileInputFormat class and is used to read plain text files and break them into lines. It overrides the createRecordReader method to return a LineRecordReader, which is used to read the lines from the input file. It also overrides the isSplitable method to determine if the input file is splittable based on its compression codec. The TextInputFormat class depends on the LineRecordReader class and the CompressionCodecFactory class.",
+  "summary": "TITLE: TextInputFormat\nDESCRIPTION: TextInputFormat is a class that extends the FileInputFormat class and is used to read plain text files and break them into lines. It overrides the createRecordReader method to return a LineRecordReader, which is used to read the lines from the input file. It also overrides the isSplitable method to determine if the input file is splittable based on its compression codec. The TextInputFormat class depends on the LineRecordReader class and the CompressionCodecFactory class.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "TextInputFormat.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: TextInputFormat\n\nDESCRIPTION:\nTextInputFormat is a class that extends the FileInputFormat class and is used to read plain text files and break them into lines. It overrides the createRecordReader method to return a LineRecordReader, which is used to read the lines from the input file. It also overrides the isSplitable method to determine if the input file is splittable based on its compression codec. The TextInputFormat class depends on the LineRecordReader class and the CompressionCodecFactory class."
+}

@@ -1,0 +1,30 @@
+{
+  "cluster_id": 1,
+  "title": "MapReduce Delegation Token Architecture",
+  "description": "The MapReduce delegation token architecture is responsible for managing and generating delegation tokens specific to MapReduce. The DelegationTokenIdentifier class extends the AbstractDelegationTokenIdentifier class and provides functionality for creating and managing these tokens. The DelegationTokenSecretManager class is responsible for creating a MapReduce specific delegation token secret manager, which is used to generate and accept the password for each token. The DelegationTokenSelector class extends the AbstractDelegationTokenSelector class and specializes it for MapReduce. This architecture ensures secure and efficient management of delegation tokens within the MapReduce framework.",
+  "description_word_count": 84,
+  "number_of_files": 10,
+  "number_of_directories": 6,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Delegation Token Architecture\n\nDESCRIPTION:\nThe MapReduce delegation token architecture is responsible for managing and generating delegation tokens specific to MapReduce. The DelegationTokenIdentifier class extends the AbstractDelegationTokenIdentifier class and provides functionality for creating and managing these tokens. The DelegationTokenSecretManager class is responsible for creating a MapReduce specific delegation token secret manager, which is used to generate and accept the password for each token. The DelegationTokenSelector class extends the AbstractDelegationTokenSelector class and specializes it for MapReduce. This architecture ensures secure and efficient management of delegation tokens within the MapReduce framework.",
+  "algorithm": "ARC",
+  "files": [
+    "Partitioner.java",
+    "lib/partition/BinaryPartitioner.java",
+    "lib/partition/HashPartitioner.java",
+    "lib/partition/KeyFieldBasedComparator.java",
+    "lib/partition/KeyFieldBasedPartitioner.java",
+    "lib/partition/KeyFieldHelper.java",
+    "lib/partition/RehashPartitioner.java",
+    "security/token/delegation/DelegationTokenIdentifier.java",
+    "security/token/delegation/DelegationTokenSecretManager.java",
+    "security/token/delegation/DelegationTokenSelector.java"
+  ]
+}

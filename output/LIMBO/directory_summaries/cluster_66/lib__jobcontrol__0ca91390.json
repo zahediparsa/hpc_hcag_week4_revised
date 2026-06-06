@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 66,
+  "directory": "lib/jobcontrol",
+  "title": "JobControl",
+  "description": "- Tracks the states of jobs by placing them into different tables according to their states.\n- Submits jobs when they become ready.\n- Monitors the states of running jobs and updates the states of jobs based on the state changes of their depending jobs states.\n- Provides APIs for suspending/resuming the thread and stopping the thread.",
+  "summary": "TITLE: JobControl\nDESCRIPTION: - Tracks the states of jobs by placing them into different tables according to their states.\n- Submits jobs when they become ready.\n- Monitors the states of running jobs and updates the states of jobs based on the state changes of their depending jobs states.\n- Provides APIs for suspending/resuming the thread and stopping the thread.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobControl.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobControl\n\nDESCRIPTION:\n- Tracks the states of jobs by placing them into different tables according to their states.\n- Submits jobs when they become ready.\n- Monitors the states of running jobs and updates the states of jobs based on the state changes of their depending jobs states.\n- Provides APIs for suspending/resuming the thread and stopping the thread."
+}

@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "lib/output/committer/manifest/files",
+  "title": "Manifest Data Abstraction",
+  "description": "The directory lib/output/committer/manifest/files contains classes that provide an abstraction for manifest data. The classes in this directory collaborate to handle file system operations, data validation, and serialization to JSON. The architectural role of this directory is to manage the flow of data between different components and ensure the integrity of the manifest data.",
+  "summary": "TITLE: Manifest Data Abstraction\nDESCRIPTION: The directory lib/output/committer/manifest/files contains classes that provide an abstraction for manifest data. The classes in this directory collaborate to handle file system operations, data validation, and serialization to JSON. The architectural role of this directory is to manage the flow of data between different components and ensure the integrity of the manifest data.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AbstractManifestData.java"
+    },
+    {
+      "type": "file",
+      "name": "DiagnosticKeys.java"
+    },
+    {
+      "type": "file",
+      "name": "EntryStatus.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Manifest Data Abstraction\n\nDESCRIPTION:\nThe directory lib/output/committer/manifest/files contains classes that provide an abstraction for manifest data. The classes in this directory collaborate to handle file system operations, data validation, and serialization to JSON. The architectural role of this directory is to manage the flow of data between different components and ensure the integrity of the manifest data."
+}

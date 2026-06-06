@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 33,
+  "directory": "jobhistory",
+  "title": "HistoryViewer, HumanReadableHistoryViewerPrinter, JSONHistoryViewerPrinter",
+  "description": "HistoryViewer is used to parse and view the JobHistory files. It can print the job/task/attempt summary information in human-readable format or machine-readable JSON format.\n\nHumanReadableHistoryViewerPrinter provides a way to print a human-readable summary of a job's history.\n\nJSONHistoryViewerPrinter is used to print the job/task/attempt summary information in machine-readable JSON format.",
+  "summary": "TITLE: HistoryViewer, HumanReadableHistoryViewerPrinter, JSONHistoryViewerPrinter\nDESCRIPTION: HistoryViewer is used to parse and view the JobHistory files. It can print the job/task/attempt summary information in human-readable format or machine-readable JSON format.\n\nHumanReadableHistoryViewerPrinter provides a way to print a human-readable summary of a job's history.\n\nJSONHistoryViewerPrinter is used to print the job/task/attempt summary information in machine-readable JSON format.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "HistoryViewer.java"
+    },
+    {
+      "type": "file",
+      "name": "HumanReadableHistoryViewerPrinter.java"
+    },
+    {
+      "type": "file",
+      "name": "JSONHistoryViewerPrinter.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: HistoryViewer, HumanReadableHistoryViewerPrinter, JSONHistoryViewerPrinter\n\nDESCRIPTION:\nHistoryViewer is used to parse and view the JobHistory files. It can print the job/task/attempt summary information in human-readable format or machine-readable JSON format.\n\nHumanReadableHistoryViewerPrinter provides a way to print a human-readable summary of a job's history.\n\nJSONHistoryViewerPrinter is used to print the job/task/attempt summary information in machine-readable JSON format."
+}

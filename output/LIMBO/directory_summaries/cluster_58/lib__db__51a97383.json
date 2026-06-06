@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 58,
+  "directory": "lib/db",
+  "title": "DBSplitter",
+  "description": "DBSplitter will generate DBInputSplits to use with DataDrivenDBInputFormat. DBSplitter implementations should perform this for a data type or family of data types. DataDrivenDBInputFormat needs to interpolate between two values that represent the lowest and highest valued records to import.",
+  "summary": "TITLE: DBSplitter\nDESCRIPTION: DBSplitter will generate DBInputSplits to use with DataDrivenDBInputFormat. DBSplitter implementations should perform this for a data type or family of data types. DataDrivenDBInputFormat needs to interpolate between two values that represent the lowest and highest valued records to import.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "DBSplitter.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: DBSplitter\n\nDESCRIPTION:\nDBSplitter will generate DBInputSplits to use with DataDrivenDBInputFormat. DBSplitter implementations should perform this for a data type or family of data types. DataDrivenDBInputFormat needs to interpolate between two values that represent the lowest and highest valued records to import."
+}

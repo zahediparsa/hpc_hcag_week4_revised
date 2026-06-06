@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "jobhistory",
+  "title": "MapReduce job history",
+  "description": "The classes in this package provide functionality for logging job history data. The classes read and write data in the job history format.",
+  "summary": "TITLE: MapReduce job history\nDESCRIPTION: The classes in this package provide functionality for logging job history data. The classes read and write data in the job history format.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "package-info.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce job history\n\nDESCRIPTION:\nThe classes in this package provide functionality for logging job history data. The classes read and write data in the job history format."
+}

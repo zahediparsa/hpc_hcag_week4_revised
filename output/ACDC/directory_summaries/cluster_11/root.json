@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 11,
+  "directory": ".",
+  "title": "Hadoop MapReduce Architecture",
+  "description": "The Hadoop MapReduce architecture consists of the following components:\n- The Hadoop Distributed File System (HDFS) is responsible for storing the input data and intermediate results.\n- The MapReduce framework is responsible for scheduling and executing the tasks on the cluster.\n- The Map tasks process the input data and generate intermediate key-value pairs.\n- The Reduce tasks process the intermediate data and generate the final output.\n- The YARN (Yet Another Resource Negotiator) is responsible for managing the resources and scheduling the tasks on the cluster.\n\nThe MapReduce architecture follows the pattern of divide and conquer, where the input data is divided into smaller chunks and processed in parallel. The intermediate results are stored in HDFS and processed by the Reduce tasks. The YARN manages the resources and schedules the tasks on the cluster to optimize the performance and efficiency.",
+  "summary": "TITLE: Hadoop MapReduce Architecture\nDESCRIPTION: The Hadoop MapReduce architecture consists of the following components:\n- The Hadoop Distributed File System (HDFS) is responsible for storing the input data and intermediate results.\n- The MapReduce framework is responsible for scheduling and executing the tasks on the cluster.\n- The Map tasks process the input data and generate intermediate key-value pairs.\n- The Reduce tasks process the intermediate data and generate the final output.\n- The YARN (Yet Another Resource Negotiator) is responsible for managing the resources and scheduling the tasks on the cluster.\n\nThe MapReduce architecture follows the pattern of divide and conquer, where the input data is divided into smaller chunks and processed in parallel. The intermediate results are stored in HDFS and processed by the Reduce tasks. The YARN manages the resources and schedules the tasks on the cluster to optimize the performance and efficiency.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture consists of the following components:\n- The Hadoop Distributed File System (HDFS) is responsible for storing the input data and intermediate results.\n- The MapReduce framework is responsible for scheduling and executing the tasks on the cluster.\n- The Map tasks process the input data and generate intermediate key-value pairs.\n- The Reduce tasks process the intermediate data and generate the final output.\n- The YARN (Yet Another Resource Negotiator) is responsible for managing the resources and scheduling the tasks on the cluster.\n\nThe MapReduce architecture follows the pattern of divide and conquer, where the input data is divided into smaller chunks and processed in parallel. The intermediate results are stored in HDFS and processed by the Reduce tasks. The YARN manages the resources and schedules the tasks on the cluster to optimize the performance and efficiency."
+}

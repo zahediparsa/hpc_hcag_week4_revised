@@ -1,0 +1,50 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 67,
+    "class": "org.apache.hadoop.mapreduce.lib.join.ComposableRecordReader",
+    "path": "lib/join/ComposableRecordReader.java",
+    "file_name": "ComposableRecordReader.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class is a RecordReader that participates in a join. It provides additional operations required for the join, such as retrieving the position in the collector, accessing the key, cloning the key, creating instances of key and value, checking if there are more key-value pairs, skipping key-value pairs, and accepting key-value pairs that match a given key.\n\nCORE LOGIC:\n\nThe core logic of this class is to provide the necessary functionality for a RecordReader to participate in a join operation. This includes operations such as retrieving the position in the collector, accessing the key, cloning the key, creating instances of key and value, checking if there are more key-value pairs, skipping key-value pairs, and accepting key-value pairs that match a given key.\n\nINPUTS/OUTPUTS:\n\nThe inputs to this class are the key and value classes, as well as the RecordReader, JoinCollector, and CompositeRecordReader.JoinCollector provided. The outputs are the position in the collector, the key, cloned key, instances of key and value, a boolean indicating if there are more key-value pairs, and the acceptance of key-value pairs that match a given key.\n\nDEPENDENCIES:\n\nThis class depends on the key and value classes, as well as the RecordReader, JoinCollector, and CompositeRecordReader.JoinCollector provided.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 67,
+    "class": "org.apache.hadoop.mapreduce.lib.join.CompositeRecordReader",
+    "path": "lib/join/CompositeRecordReader.java",
+    "file_name": "CompositeRecordReader.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\n\nThe CompositeRecordReader class is a RecordReader that can effect joins of RecordReaders sharing a common key type and partitioning.\n\nCORE LOGIC:\n\nThe CompositeRecordReader class uses a priority queue to sort the RecordReaders based on their keys. It also uses a JoinCollector to collect values for a given key from the child RecordReaders.\n\nINPUTS/OUTPUTS:\n\nThe CompositeRecordReader class takes in a set of RecordReaders and a key type as inputs. It outputs a sorted list of RecordReaders based on their keys.\n\nDEPENDENCIES:\n\nThe CompositeRecordReader class depends on the ComposableRecordReader, ResetableIterator, and TupleWritable classes. It also depends on the Configuration and Writable classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 67,
+    "class": "org.apache.hadoop.mapreduce.lib.join.MultiFilterRecordReader",
+    "path": "lib/join/MultiFilterRecordReader.java",
+    "file_name": "MultiFilterRecordReader.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\n- The MultiFilterRecordReader class is a base class for Composite join returning values derived from multiple sources, but generally not tuples.\n\nCORE LOGIC:\n- The MultiFilterRecordReader class includes a TupleWritable ivalue and a method emit(TupleWritable dst) that returns a value from the tuple.\n- The class also includes a combine(Object[] srcs, TupleWritable dst) method that combines values from multiple sources.\n- The nextKeyValue() method returns the next key-value pair from the join collector.\n\nINPUTS/OUTPUTS:\n- The MultiFilterRecordReader class takes in an id, configuration, capacity, and comparator as inputs.\n- It outputs key-value pairs based on the join of multiple sources.\n\nDEPENDENCIES:\n- The MultiFilterRecordReader class depends on the org.apache.hadoop.mapreduce.lib.join package and other related classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 67,
+    "class": "org.apache.hadoop.mapreduce.lib.join.WrappedRecordReader",
+    "path": "lib/join/WrappedRecordReader.java",
+    "file_name": "WrappedRecordReader.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class keeps track of the \"head\" key-value pair for the provided RecordReader and keeps a store of values matching a key when this source is participating in a join.\n\nCORE LOGIC:\n\nThe class initializes the RecordReader, creates key and value objects, and advances the RecordReader to the next key-value pair. It also provides methods to get the current key and value, request progress from the RecordReader, and close the RecordReader.\n\nINPUTS/OUTPUTS:\n\nThe class takes a RecordReader, a key class, a value class, and an optional WritableComparator as input. It provides methods to get the current key and value, request progress from the RecordReader, and close the RecordReader.\n\nDEPENDENCIES:\n\nThe class depends on the RecordReader, key class, value class, and WritableComparator provided as input. It also depends on the Configuration object for configuration settings.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

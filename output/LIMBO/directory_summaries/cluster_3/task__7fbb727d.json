@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "task",
+  "title": "",
+  "description": "MapReduce is a programming model and an associated implementation for processing and generating large data sets. The MapReduce framework is designed to process data in parallel across clusters of computers using a simple programming model.\n\nThe MapReduce framework consists of two main components: the Map phase and the Reduce phase. In the Map phase, the input data is divided into chunks and processed in parallel by multipleMapper tasks. Each Mapper task processes a chunk of the input data and produces a set of intermediate key-value pairs.\n\nIn the Reduce phase, the intermediate key-value pairs produced by the Mapper tasks are grouped by key and processed in parallel by multiple Reduce tasks. Each Reduce task processes a set of key-value pairs with the same key and produces a set of output key-value pairs.\n\nThe MapReduce framework is designed to handle large data sets efficiently and fault-tolerantly. It provides a simple programming model that allows developers to focus on the logic of their application, while the framework takes care of the distributed processing and fault-tolerance.\n\nThe MapReduce framework is widely used in big data processing applications, such as web search, data mining, and machine learning. It is also used in many other applications, such as data cleaning, data transformation, and data analysis.",
+  "summary": "TITLE: \nDESCRIPTION: MapReduce is a programming model and an associated implementation for processing and generating large data sets. The MapReduce framework is designed to process data in parallel across clusters of computers using a simple programming model.\n\nThe MapReduce framework consists of two main components: the Map phase and the Reduce phase. In the Map phase, the input data is divided into chunks and processed in parallel by multipleMapper tasks. Each Mapper task processes a chunk of the input data and produces a set of intermediate key-value pairs.\n\nIn the Reduce phase, the intermediate key-value pairs produced by the Mapper tasks are grouped by key and processed in parallel by multiple Reduce tasks. Each Reduce task processes a set of key-value pairs with the same key and produces a set of output key-value pairs.\n\nThe MapReduce framework is designed to handle large data sets efficiently and fault-tolerantly. It provides a simple programming model that allows developers to focus on the logic of their application, while the framework takes care of the distributed processing and fault-tolerance.\n\nThe MapReduce framework is widely used in big data processing applications, such as web search, data mining, and machine learning. It is also used in many other applications, such as data cleaning, data transformation, and data analysis.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "MapContextImpl.java"
+    },
+    {
+      "type": "file",
+      "name": "ReduceContextImpl.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptContextImpl.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "MapReduce is a programming model and an associated implementation for processing and generating large data sets. The MapReduce framework is designed to process data in parallel across clusters of computers using a simple programming model.\n\nThe MapReduce framework consists of two main components: the Map phase and the Reduce phase. In the Map phase, the input data is divided into chunks and processed in parallel by multipleMapper tasks. Each Mapper task processes a chunk of the input data and produces a set of intermediate key-value pairs.\n\nIn the Reduce phase, the intermediate key-value pairs produced by the Mapper tasks are grouped by key and processed in parallel by multiple Reduce tasks. Each Reduce task processes a set of key-value pairs with the same key and produces a set of output key-value pairs.\n\nThe MapReduce framework is designed to handle large data sets efficiently and fault-tolerantly. It provides a simple programming model that allows developers to focus on the logic of their application, while the framework takes care of the distributed processing and fault-tolerance.\n\nThe MapReduce framework is widely used in big data processing applications, such as web search, data mining, and machine learning. It is also used in many other applications, such as data cleaning, data transformation, and data analysis."
+}

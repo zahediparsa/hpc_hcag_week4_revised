@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": "util",
+  "title": "MRJobConfUtil",
+  "description": "This directory contains utility methods for MR Job configuration. The methods include redacting job configuration properties, setting task progress report intervals, and setting the frequency of logging of task attempts. The code takes a Configuration object as input and modifies it in-place. The code depends on the Apache Hadoop MapReduce library and theslf4j logging library.",
+  "summary": "TITLE: MRJobConfUtil\nDESCRIPTION: This directory contains utility methods for MR Job configuration. The methods include redacting job configuration properties, setting task progress report intervals, and setting the frequency of logging of task attempts. The code takes a Configuration object as input and modifies it in-place. The code depends on the Apache Hadoop MapReduce library and theslf4j logging library.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "MRJobConfUtil.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MRJobConfUtil\n\nDESCRIPTION:\nThis directory contains utility methods for MR Job configuration. The methods include redacting job configuration properties, setting task progress report intervals, and setting the frequency of logging of task attempts. The code takes a Configuration object as input and modifies it in-place. The code depends on the Apache Hadoop MapReduce library and theslf4j logging library."
+}

@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": ".",
+  "title": "MapReduce Task",
+  "description": "The MapReduce task directory contains classes that implement the MapReduce task execution engine. The MapReduce task execution engine is responsible for executing the Map and Reduce tasks in a distributed environment. The directory contains the Task class, which is the main class responsible for executing the Map and Reduce tasks. The Task class uses the TaskAttempt class to execute individual Map or Reduce attempts. The TaskAttempt class is responsible for executing a single Map or Reduce task attempt. It uses the Shuffle class to shuffle the intermediate data produced by the Map task and the Reduce class to reduce the intermediate data produced by the Map task. The directory also contains the Committer class, which is responsible for committing the output of the task.",
+  "summary": "TITLE: MapReduce Task\nDESCRIPTION: The MapReduce task directory contains classes that implement the MapReduce task execution engine. The MapReduce task execution engine is responsible for executing the Map and Reduce tasks in a distributed environment. The directory contains the Task class, which is the main class responsible for executing the Map and Reduce tasks. The Task class uses the TaskAttempt class to execute individual Map or Reduce attempts. The TaskAttempt class is responsible for executing a single Map or Reduce task attempt. It uses the Shuffle class to shuffle the intermediate data produced by the Map task and the Reduce class to reduce the intermediate data produced by the Map task. The directory also contains the Committer class, which is responsible for committing the output of the task.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ContextFactory.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib"
+    },
+    {
+      "type": "directory",
+      "name": "task"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- DIRECTORY: task ---\nTITLE: MapReduce Task\nDESCRIPTION: The MapReduce task directory contains classes that implement the MapReduce task execution engine. The MapReduce task execution engine is responsible for executing the Map and Reduce tasks in a distributed environment. The directory contains the Task class, which is the main class responsible for executing the Map and Reduce tasks. The Task class uses the TaskAttempt class to execute individual Map or Reduce attempts. The TaskAttempt class is responsible for executing a single Map or Reduce task attempt. It uses the Shuffle class to shuffle the intermediate data produced by the Map task and the Reduce class to reduce the intermediate data produced by the Map task. The directory also contains the Committer class, which is responsible for committing the output of the task."
+}

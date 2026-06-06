@@ -1,0 +1,21 @@
+{
+  "cluster_id": 80,
+  "title": "Output Committer - Cluster-Level Abstraction",
+  "description": "The Output Committer is a cluster-level abstraction responsible for managing the commit process of MapReduce tasks. It includes a Manifest Committer that handles the writing of entry files and a Task Committer that coordinates the commit process of individual tasks. The Output Committer uses a Writer Thread to manage the shutdown, fails safely on write failures, and restarts all blocked writers in the process. The Task Committer collaborates with the Manifest Committer to ensure the commit process is completed successfully. The Output Committer is built on top of the Apache Hadoop MapReduce and Common libraries, as well as the slf4j library for logging. The Output Committer provides a centralized and reliable mechanism for managing the commit process of MapReduce tasks, ensuring data consistency and reliability.",
+  "description_word_count": 125,
+  "number_of_files": 1,
+  "number_of_directories": 6,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Output Committer - Cluster-Level Abstraction\n\nDESCRIPTION:\nThe Output Committer is a cluster-level abstraction responsible for managing the commit process of MapReduce tasks. It includes a Manifest Committer that handles the writing of entry files and a Task Committer that coordinates the commit process of individual tasks. The Output Committer uses a Writer Thread to manage the shutdown, fails safely on write failures, and restarts all blocked writers in the process. The Task Committer collaborates with the Manifest Committer to ensure the commit process is completed successfully. The Output Committer is built on top of the Apache Hadoop MapReduce and Common libraries, as well as the slf4j library for logging. The Output Committer provides a centralized and reliable mechanism for managing the commit process of MapReduce tasks, ensuring data consistency and reliability.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/output/committer/manifest/impl/EntryFileIO.java"
+  ]
+}

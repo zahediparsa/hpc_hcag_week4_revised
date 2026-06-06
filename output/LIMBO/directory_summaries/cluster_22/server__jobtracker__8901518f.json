@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 22,
+  "directory": "server/jobtracker",
+  "title": "server/jobtracker",
+  "description": "The server/jobtracker directory is responsible for managing the JobTracker server-level configuration. It contains a single file, JTConfig.java, which serves as a placeholder for the server-level configuration. The directory does not contain any core logic, inputs/outputs, or dependencies. The JTConfig.java file does not contain any specific functionality, but it provides a centralized location for storing and managing the JobTracker server-level configuration.",
+  "summary": "TITLE: server/jobtracker\nDESCRIPTION: The server/jobtracker directory is responsible for managing the JobTracker server-level configuration. It contains a single file, JTConfig.java, which serves as a placeholder for the server-level configuration. The directory does not contain any core logic, inputs/outputs, or dependencies. The JTConfig.java file does not contain any specific functionality, but it provides a centralized location for storing and managing the JobTracker server-level configuration.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JTConfig.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: server/jobtracker\n\nDESCRIPTION:\nThe server/jobtracker directory is responsible for managing the JobTracker server-level configuration. It contains a single file, JTConfig.java, which serves as a placeholder for the server-level configuration. The directory does not contain any core logic, inputs/outputs, or dependencies. The JTConfig.java file does not contain any specific functionality, but it provides a centralized location for storing and managing the JobTracker server-level configuration."
+}

@@ -1,0 +1,23 @@
+{
+  "cluster_id": 20,
+  "title": "org.apache.hadoop.mapreduce.lib.output",
+  "description": "The org.apache.hadoop.mapreduce.lib.output package is a part of the Hadoop MapReduce library and contains classes for writing data from MapReduce jobs. The package provides a set of classes that implement the RecordWriter interface and are used to write data to output files. The classes in this package collaborate to provide a flexible and extensible framework for writing data from MapReduce jobs. The package follows the architectural pattern of the Hadoop framework, providing a modular and extensible solution for writing data from MapReduce jobs.",
+  "description_word_count": 87,
+  "number_of_files": 3,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: org.apache.hadoop.mapreduce.lib.output\n\nDESCRIPTION:\nThe org.apache.hadoop.mapreduce.lib.output package is a part of the Hadoop MapReduce library and contains classes for writing data from MapReduce jobs. The package provides a set of classes that implement the RecordWriter interface and are used to write data to output files. The classes in this package collaborate to provide a flexible and extensible framework for writing data from MapReduce jobs. The package follows the architectural pattern of the Hadoop framework, providing a modular and extensible solution for writing data from MapReduce jobs.",
+  "algorithm": "LIMBO",
+  "files": [
+    "RecordWriter.java",
+    "TaskInputOutputContext.java",
+    "lib/output/PartialOutputCommitter.java"
+  ]
+}

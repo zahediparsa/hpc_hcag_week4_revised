@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 80,
+  "directory": "lib/output/committer/manifest",
+  "title": "Manifest Committer - Entry File I/O",
+  "description": "The directory lib/output/committer/manifest/impl is responsible for reading and writing entry files. It includes a writer thread that manages the shutdown, fails safely on write failures, and restarts all blocked writers in the process. The code depends on the Apache Hadoop MapReduce and Common libraries, as well as the slf4j library for logging.",
+  "summary": "TITLE: Manifest Committer - Entry File I/O\nDESCRIPTION: The directory lib/output/committer/manifest/impl is responsible for reading and writing entry files. It includes a writer thread that manages the shutdown, fails safely on write failures, and restarts all blocked writers in the process. The code depends on the Apache Hadoop MapReduce and Common libraries, as well as the slf4j library for logging.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest/impl"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Manifest Committer - Entry File I/O\n\nDESCRIPTION: The directory lib/output/committer/manifest/impl is responsible for reading and writing entry files. It includes a writer thread that manages the shutdown, fails safely on write failures, and restarts all blocked writers in the process. The code depends on the Apache Hadoop MapReduce and Common libraries, as well as the slf4j library for logging."
+}

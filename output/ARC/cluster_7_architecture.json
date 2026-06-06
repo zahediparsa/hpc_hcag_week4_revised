@@ -1,0 +1,40 @@
+{
+  "cluster_id": 7,
+  "title": "MapReduce - Merge Manager",
+  "description": "The Merge Manager is a crucial component of the Hadoop MapReduce framework, responsible for managing the merging of map outputs during the shuffle and sort phase of a MapReduce job. It contains logic for merging in-memory map outputs, as well as logic for merging on-disk map outputs. The Merge Manager takes inputs in the form of map outputs, which can be either in-memory or on-disk, and produces outputs in the form of merged map outputs, which are written to disk. The Merge Manager depends on various classes and interfaces from the Apache Hadoop MapReduce framework, including MapOutputFile, RawKeyValueIterator, Reducer, CombineOutputCollector, Counters.Counter, CompressionCodec, and Progress.",
+  "description_word_count": 105,
+  "number_of_files": 20,
+  "number_of_directories": 9,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce - Merge Manager\n\nDESCRIPTION:\nThe Merge Manager is a crucial component of the Hadoop MapReduce framework, responsible for managing the merging of map outputs during the shuffle and sort phase of a MapReduce job. It contains logic for merging in-memory map outputs, as well as logic for merging on-disk map outputs. The Merge Manager takes inputs in the form of map outputs, which can be either in-memory or on-disk, and produces outputs in the form of merged map outputs, which are written to disk. The Merge Manager depends on various classes and interfaces from the Apache Hadoop MapReduce framework, including MapOutputFile, RawKeyValueIterator, Reducer, CombineOutputCollector, Counters.Counter, CompressionCodec, and Progress.",
+  "algorithm": "ARC",
+  "files": [
+    "Cluster.java",
+    "Job.java",
+    "JobResourceUploader.java",
+    "JobSubmitter.java",
+    "Mapper.java",
+    "Reducer.java",
+    "filecache/DistributedCache.java",
+    "lib/chain/Chain.java",
+    "lib/chain/ChainMapContextImpl.java",
+    "lib/chain/ChainMapper.java",
+    "lib/chain/ChainReduceContextImpl.java",
+    "lib/chain/ChainReducer.java",
+    "lib/map/MultithreadedMapper.java",
+    "lib/map/WrappedMapper.java",
+    "lib/reduce/WrappedReducer.java",
+    "task/JobContextImpl.java",
+    "task/ReduceContextImpl.java",
+    "task/reduce/MergeManagerImpl.java",
+    "task/reduce/OnDiskMapOutput.java",
+    "tools/CLI.java"
+  ]
+}

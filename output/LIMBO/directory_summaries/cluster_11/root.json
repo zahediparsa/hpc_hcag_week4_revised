@@ -1,0 +1,30 @@
+{
+  "type": "directory",
+  "cluster_id": 11,
+  "directory": ".",
+  "title": "",
+  "description": "Cluster: 11\nDirectory: .\n\n responsibility:\n- manage the job status information\n- provide methods to set and get various attributes of the job status\n- format the job status information into a string\n\ncollaboration:\n- collaborates with other classes such as JobID, JobPriority, JobACL, AccessControlList, State, Writable, WritableFactories, WritableFactory, StringInterner, Text, and Math\n\narchitectural role/pattern:\n- This directory follows the pattern of a Java class that represents the status of a job. It contains information such as the job ID, progress, state, start time, user, queue, priority, job name, job file, tracking URL, and more. It also provides methods to set and get various attributes of the job status.",
+  "summary": "TITLE: \nDESCRIPTION: Cluster: 11\nDirectory: .\n\n responsibility:\n- manage the job status information\n- provide methods to set and get various attributes of the job status\n- format the job status information into a string\n\ncollaboration:\n- collaborates with other classes such as JobID, JobPriority, JobACL, AccessControlList, State, Writable, WritableFactories, WritableFactory, StringInterner, Text, and Math\n\narchitectural role/pattern:\n- This directory follows the pattern of a Java class that represents the status of a job. It contains information such as the job ID, progress, state, start time, user, queue, priority, job name, job file, tracking URL, and more. It also provides methods to set and get various attributes of the job status.",
+  "number_of_children": 4,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobID.java"
+    },
+    {
+      "type": "file",
+      "name": "JobStatus.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptID.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskID.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "Cluster: 11\nDirectory: .\n\n responsibility:\n- manage the job status information\n- provide methods to set and get various attributes of the job status\n- format the job status information into a string\n\ncollaboration:\n- collaborates with other classes such as JobID, JobPriority, JobACL, AccessControlList, State, Writable, WritableFactories, WritableFactory, StringInterner, Text, and Math\n\narchitectural role/pattern:\n- This directory follows the pattern of a Java class that represents the status of a job. It contains information such as the job ID, progress, state, start time, user, queue, priority, job name, job file, tracking URL, and more. It also provides methods to set and get various attributes of the job status."
+}

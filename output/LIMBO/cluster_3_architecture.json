@@ -1,0 +1,25 @@
+{
+  "cluster_id": 3,
+  "title": "MapReduce Task",
+  "description": "The MapReduce task directory contains classes that implement the MapReduce task execution engine. The MapReduce task execution engine is responsible for executing the Map and Reduce tasks in a distributed environment. The directory contains the Task class, which is the main class responsible for executing the Map and Reduce tasks. The Task class uses the TaskAttempt class to execute individual Map or Reduce attempts. The TaskAttempt class is responsible for executing a single Map or Reduce task attempt. It uses the Shuffle class to shuffle the intermediate data produced by the Map task and the Reduce class to reduce the intermediate data produced by the Map task. The directory also contains the Committer class, which is responsible for committing the output of the task.",
+  "description_word_count": 124,
+  "number_of_files": 5,
+  "number_of_directories": 4,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Task\n\nDESCRIPTION:\nThe MapReduce task directory contains classes that implement the MapReduce task execution engine. The MapReduce task execution engine is responsible for executing the Map and Reduce tasks in a distributed environment. The directory contains the Task class, which is the main class responsible for executing the Map and Reduce tasks. The Task class uses the TaskAttempt class to execute individual Map or Reduce attempts. The TaskAttempt class is responsible for executing a single Map or Reduce task attempt. It uses the Shuffle class to shuffle the intermediate data produced by the Map task and the Reduce class to reduce the intermediate data produced by the Map task. The directory also contains the Committer class, which is responsible for committing the output of the task.",
+  "algorithm": "LIMBO",
+  "files": [
+    "ContextFactory.java",
+    "lib/map/MultithreadedMapper.java",
+    "task/MapContextImpl.java",
+    "task/ReduceContextImpl.java",
+    "task/TaskAttemptContextImpl.java"
+  ]
+}

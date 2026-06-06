@@ -1,0 +1,107 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 12,
+    "class": "org.apache.hadoop.mapreduce.JobResourceUploader",
+    "path": "JobResourceUploader.java",
+    "file_name": "JobResourceUploader.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this class is to handle the localization of resources for MapReduce jobs.\n\nCORE LOGIC:\nThe core logic of this class is to check if there are any limits set for resource localization. If there are limits, it checks if the total size of the resources exceeds the maximum size allowed. It also checks if the number of resources exceeds the maximum number allowed.\n\nINPUTS/OUTPUTS:\nThe inputs to this class are the configuration, collections of files, libjars, and archives, the job jar, and a map of URI to FileStatus. The output is a boolean value indicating whether the limits have been exceeded.\n\nDEPENDENCIES:\nThis class depends on the Apache Hadoop MapReduce framework and its dependencies.",
+    "chunked": true,
+    "number_of_code_chunks": 2,
+    "chunk_summaries": [
+      "Summarize this raw Java source-code chunk.\n\nThis is chunk 1 of 2 from file JobResourceUploader.java.\nUse only the code shown in this chunk.\n\nReturn exactly these four sections:\n\nKEY FUNCTIONALITY: main purpose visible in this chunk\nCORE LOGIC: key algorithms or processing patterns visible in this chunk\nINPUTS/OUTPUTS: data flowing in and out\nDEPENDENCIES: key imported, parent, or collaborator classes visible in this chunk\n\nCode chunk:\n/**\n * Licensed to the Apache Software Foundation (ASF) under one\n * or more contributor license agreements.  See the NOTICE file\n * distributed with this work for additional information\n * regarding copyright ownership.  The ASF licenses this file\n * to you under the Apache License, Version 2.0 (the\n * \"License\"); you may not use this file except in compliance\n * with the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.hadoop.mapreduce;\n\nimport java.io.FileNotFoundException;\nimport java.io.IOException;\nimport java.net.URI;\nimport java.net.URISyntaxException;\nimport java.util.Collection;\nimport java.util.HashMap;\nimport java.util.LinkedList;\nimport java.util.LinkedHashMap;\nimport java.util.Map;\n\nimport org.apache.hadoop.classification.InterfaceAudience.Private;\nimport org.apache.hadoop.classification.InterfaceStability.Unstable;\nimport org.apache.hadoop.conf.Configuration;\nimport org.apache.hadoop.fs.FileStatus;\nimport org.apache.hadoop.fs.FileSystem;\nimport org.apache.hadoop.fs.FileUtil;\nimport org.apache.hadoop.fs.Path;\nimport org.apache.hadoop.fs.permission.FsPermission;\nimport org.apache.hadoop.hdfs.DistributedFileSystem;\nimport org.apache.hadoop.hdfs.",
+      "KEY FUNCTIONALITY: main purpose visible in this chunk\nCORE LOGIC: key algorithms or processing patterns visible in this chunk\nINPUTS/OUTPUTS: data flowing in and out\nDEPENDENCIES: key imported, parent, or collaborator classes visible in this chunk\n\nvoid checkLocalizationLimits(Configuration conf, Collection<String> files,\n      Collection<String> libjars, Collection<String> archives, String jobJar,\n      Map<URI, FileStatus> statCache) throws IOException {\n\n    LimitChecker limitChecker = new LimitChecker(conf);\n    if (!limitChecker.hasLimits()) {\n      // there are no limits set, so we are done.\n      return;\n    }\n\n    // Get the files and archives that are already in the distributed cache\n    Collection<String> dcFiles =\n        conf.getStringCollection(MRJobConfig.CACHE_FILES);\n    Collection<String> dcArchives =\n        conf.getStringCollection(MRJobConfig.CACHE_ARCHIVES);\n\n    for (String uri : dcFiles) {\n      explorePath(conf, stringToPath(uri), limitChecker, statCache);\n    }\n\n    for (String uri : dcArchives) {\n      explorePath(conf, stringToPath(uri), limitChecker, statCache);\n    }\n\n    for (String uri : files) {\n      explorePath(conf, stringToPath(uri), limitChecker, statCache);\n    }\n\n    for (String uri : libjars) {\n      explorePath(conf, stringToPath(uri), limitChecker, statCache);\n    }\n\n    for (String uri : archives) {\n      explorePath(conf, stringToPath(uri), limitChecker, statCache);\n    }\n\n    if (jobJar != null) {\n      explorePath(conf, stringToPath(jobJar), limitChecker, statCache);\n    }\n  }\n\nCORE LOGIC:\nThe core logic of this method is to check if there are any limits set for resource localization. If there are limits, it checks if the total size of the resources exceeds the maximum size allowed. It also checks if the number of resources exceeds the maximum number allowed.\n\nINPUTS/OUTPUTS:\nThe inputs to this method are the configuration, collections of files, libjars, and archives, the job jar, and a map of URI to FileStatus. The output is a boolean value indicating whether the limits have been exceeded.\n\nDEPENDENCI"
+    ]
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 12,
+    "class": "org.apache.hadoop.mapreduce.JobSubmitter",
+    "path": "JobSubmitter.java",
+    "file_name": "JobSubmitter.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY: Submits jobs to the system.\nCORE LOGIC: Computes input splits, sets accounting information, copies job jar and configuration to the distributed file-system, and submits the job to the JobTracker.\nINPUTS/OUTPUTS: Data flowing in and out includes job configuration, input splits, and accounting information.\nDEPENDENCIES: Key imported, parent, or collaborator classes visible in this chunk include FileSystem, ClientProtocol, Configuration, Path, JobID, JobStatus, JobConf, JobResourceUploader, TokenCache, KeyGenerator, SecretKey, Token, TokenIdentifier, ReservationId, AccessControlList, and InputFormat.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 12,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregatorJob",
+    "path": "lib/aggregate/ValueAggregatorJob.java",
+    "file_name": "ValueAggregatorJob.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY:\n\nThe main purpose of this chunk of code is to create a map/reduce job using the Aggregate framework.\n\nCORE LOGIC:\n\nThe code provides a set of built-in value aggregators, including sum, count, histogram, minimum, maximum, median, average, and standard deviation. It also provides a generic utility class that helps users create map/reduce jobs using the generic mapper/reducer/combiner classes.\n\nINPUTS/OUTPUTS:\n\nThe code takes input from a specified directory, using either the TextInputFormat or SequenceFileInputFormat. It outputs the results to a specified directory using the TextOutputFormat.\n\nDEPENDENCIES:\n\nThe code depends on the Apache Hadoop MapReduce framework and the Aggregate library. It also depends on the GenericOptionsParser class for parsing generic Hadoop arguments.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 12,
+    "class": "org.apache.hadoop.mapreduce.lib.input.FileInputFormat",
+    "path": "lib/input/FileInputFormat.java",
+    "file_name": "FileInputFormat.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY:\n\nThe FileInputFormat class is the base class for all file-based InputFormats.\nIt provides a generic implementation of getSplits(JobContext).\n\nCORE LOGIC:\n\nThe getSplits(JobContext) method generates splits for the input files.\nIt uses the listStatus(JobContext) method to get the list of files and then\nprocesses each file to create splits based on the file size and block size.\n\nINPUTS/OUTPUTS:\n\nThe getSplits(JobContext) method takes a JobContext object as input and returns\na list of InputSplit objects.\n\nDEPENDENCIES:\n\nThe FileInputFormat class depends on the following classes:\n\n- InputFormat: The base class for all input formats.\n- InputSplit: The base class for input splits.\n- JobContext: The context object for the job.\n- Path: The path to the input file.\n- FileSystem: The file system for the input file.\n- FileStatus: The status of the input file.\n- BlockLocation: The location of the blocks of the input file.\n- TokenCache: The cache for delegation tokens.\n- Configuration: The configuration object for the job.\n- StopWatch: A utility class for measuring time.\n- LocatedFileStatusFetcher: A class for fetching located file statuses.\n- ReflectionUtils: A utility class for working with reflection.\n- InvalidInputException: An exception for invalid input.\n- MultiPathFilter: A class for filtering input paths.\n- PathFilter: The interface for path filters.\n- FileSplit: The class for file splits.\n- BlockLocation: The class for block locations.\n- LocatedFileStatus: The class for located file statuses.\n- FileStatus: The class for file statuses.\n- FileSystem: The class for file systems.\n- RemoteIterator: The interface for remote iterators.\n- InterruptedIOException: The class for interrupted IO exceptions.\n- IOException: The base class for IO exceptions.\n- IllegalArgumentException: The class for illegal argument exceptions.\n- StopWatch: The class for stop watches.\n- Configuration: The class for configurations.\n- JobContext: The class for job contexts.\n- InputSplit: The class for input splits.\n- InputFormat: The class for input formats.\n- Mapper: The class for mappers.\n- TokenCache",
+    "chunked": true,
+    "number_of_code_chunks": 2,
+    "chunk_summaries": [
+      "KEY FUNCTIONALITY:\n\nThe FileInputFormat class is the base class for all file-based InputFormats.\nIt provides a generic implementation of getSplits(JobContext).\n\nCORE LOGIC:\n\nThe getSplits(JobContext) method generates splits for the input files.\nIt uses the listStatus(JobContext) method to get the list of files and then\nprocesses each file to create splits based on the file size and block size.\n\nINPUTS/OUTPUTS:\n\nThe getSplits(JobContext) method takes a JobContext object as input and returns\na list of InputSplit objects.\n\nDEPENDENCIES:\n\nThe FileInputFormat class depends on the following classes:\n\n- InputFormat: The base class for all input formats.\n- InputSplit: The base class for input splits.\n- JobContext: The context object for the job.\n- Path: The path to the input file.\n- FileSystem: The file system for the input file.\n- FileStatus: The status of the input file.\n- BlockLocation: The location of the blocks of the input file.\n- TokenCache: The cache for delegation tokens.\n- Configuration: The configuration object for the job.\n- StopWatch: A utility class for measuring time.\n- LocatedFileStatusFetcher: A class for fetching located file statuses.\n- ReflectionUtils: A utility class for working with reflection.\n- InvalidInputException: An exception for invalid input.\n- MultiPathFilter: A class for filtering input paths.\n- PathFilter: The interface for path filters.\n- FileSplit: The class for file splits.\n- BlockLocation: The class for block locations.\n- LocatedFileStatus: The class for located file statuses.\n- FileStatus: The class for file statuses.\n- FileSystem: The class for file systems.\n- RemoteIterator: The interface for remote iterators.\n- InterruptedIOException: The class for interrupted IO exceptions.\n- IOException: The base class for IO exceptions.\n- IllegalArgumentException: The class for illegal argument exceptions.\n- StopWatch: The class for stop watches.\n- Configuration: The class for configurations.\n- JobContext: The class for job contexts.\n- InputSplit: The class for input splits.\n- InputFormat: The class for input formats.\n- Mapper: The class for mappers.\n- TokenCache",
+      "KEY FUNCTIONALITY:\n- setInputPaths: sets the list of input paths for the map-reduce job\n- addInputPaths: adds the given comma separated paths to the list of inputs for the map-reduce job\n- setInputPaths: sets the array of paths as the list of inputs for the map-reduce job\n- addInputPath: adds a path to the list of inputs for the map-reduce job\n\nCORE LOGIC:\n- setInputPaths and addInputPaths: escape commas in the glob pattern of the given paths\n- setInputPaths: sets the input paths for the map-reduce job\n- addInputPath: adds the given path to the list of inputs for the map-reduce job\n\nINPUTS/OUTPUTS:\n- setInputPaths: takes a JobContext as input and sets the input paths for the map-reduce job\n- addInputPath: takes a JobContext and a Path as input and adds the path to the list of inputs for the map-reduce job\n\nDEPENDENCIES:\n- This class depends on the Configuration class from the Hadoop framework."
+    ]
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 12,
+    "class": "org.apache.hadoop.mapreduce.lib.input.MultipleInputs",
+    "path": "lib/input/MultipleInputs.java",
+    "file_name": "MultipleInputs.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY:\n\nThis code provides a way to specify multiple input paths with different InputFormats and Mappers for a MapReduce job.\n\nCORE LOGIC:\n\nThe code uses a DelegatingInputFormat and DelegatingMapper to handle the different input paths and their corresponding InputFormats and Mappers.\n\nINPUTS/OUTPUTS:\n\nThe code takes a JobContext as input and retrieves the input paths and their corresponding InputFormats and Mappers.\n\nDEPENDENCIES:\n\nThe code depends on the org.apache.hadoop.mapreduce.lib.input package and its dependencies.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 12,
+    "class": "org.apache.hadoop.mapreduce.lib.jobcontrol.ControlledJob",
+    "path": "lib/jobcontrol/ControlledJob.java",
+    "file_name": "ControlledJob.java",
+    "directory": "lib/jobcontrol",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class encapsulates a MapReduce job and its dependency. It monitors the states of the depending jobs and updates the state of this job.\n\nCORE LOGIC:\n\nThe class has methods to set and get the job name, ID, state, message, and depending jobs. It also has methods to check the state of the job and submit the job to the mapred framework.\n\nINPUTS/OUTPUTS:\n\nThe class takes a mapreduce job and a list of depending jobs as input. It sets the job state and message based on the state of the depending jobs and the execution of the job.\n\nDEPENDENCIES:\n\nThe class depends on the mapreduce framework and the Hadoop file system.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 12,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.InputSampler",
+    "path": "lib/partition/InputSampler.java",
+    "file_name": "InputSampler.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\n\nThe InputSampler class is a utility for collecting samples and writing a partition file for the TotalOrderPartitioner.\n\nCORE LOGIC:\n\nThe InputSampler class provides three types of sampling logic: SplitSampler, RandomSampler, and IntervalSampler. SplitSampler samples the first n records from s splits, RandomSampler samples from random points in the input, and IntervalSampler samples from s splits at regular intervals.\n\nINPUTS/OUTPUTS:\n\nThe InputSampler class takes an InputFormat, a Job, and a Sampler as input, and it returns a subset of the keys from the input data.\n\nDEPENDENCIES:\n\nThe InputSampler class depends on the InputFormat, Job, and Sampler classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 12,
+    "class": "org.apache.hadoop.mapreduce.util.ConfigUtil",
+    "path": "util/ConfigUtil.java",
+    "file_name": "ConfigUtil.java",
+    "directory": "util",
+    "summary": "KEY FUNCTIONALITY: Place holder for deprecated keys in the framework\nCORE LOGIC: Adds deprecated keys and the corresponding new keys to the Configuration\nINPUTS/OUTPUTS: None\nDEPENDENCIES: Configuration, DeprecationDelta, MRConfig, MRJobConfig, JTConfig, TTConfig, Job, FileInputFormat, FileOutputFormat, MultipleInputs, NLineInputFormat, BinaryPartitioner, KeyFieldBasedComparator, KeyFieldBasedPartitioner, RegexMapper\n\nThis chunk of code loads deprecated keys and values from a properties file.\nThe code uses a DeprecationDelta class to store the mapping between the old and new keys.\nThe code reads from a properties file and stores the key-value pairs in a DeprecationDelta object.\nThe code depends on the Configuration and DeprecationDelta classes.",
+    "chunked": true,
+    "number_of_code_chunks": 2,
+    "chunk_summaries": [
+      "KEY FUNCTIONALITY: Place holder for deprecated keys in the framework\nCORE LOGIC: Adds deprecated keys and the corresponding new keys to the Configuration\nINPUTS/OUTPUTS: None\nDEPENDENCIES: Configuration, DeprecationDelta, MRConfig, MRJobConfig, JTConfig, TTConfig, Job, FileInputFormat, FileOutputFormat, MultipleInputs, NLineInputFormat, BinaryPartitioner, KeyFieldBasedComparator, KeyFieldBasedPartitioner, RegexMapper",
+      "KEY FUNCTIONALITY:\nThis chunk of code loads deprecated keys and values from a properties file.\n\nCORE LOGIC:\nThe code uses a DeprecationDelta class to store the mapping between the old and new keys.\n\nINPUTS/OUTPUTS:\nThe code reads from a properties file and stores the key-value pairs in a DeprecationDelta object.\n\nDEPENDENCIES:\nThe code depends on the Configuration and DeprecationDelta classes."
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 62,
+    "class": "org.apache.hadoop.mapreduce.lib.input.CompressedSplitLineReader",
+    "path": "lib/input/CompressedSplitLineReader.java",
+    "file_name": "CompressedSplitLineReader.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY:\nThis class is used to read lines from compressed input splits.\n\nCORE LOGIC:\nThe core logic of this class is to read lines from compressed input splits,\n handling the special cases where the last block of the split ends in the\n middle of a record delimiter.\n\nINPUTS/OUTPUTS:\nThe input to this class is a compressed input stream and a configuration\nobject. The output is a line of text read from the compressed input stream.\n\nDEPENDENCIES:\nThis class depends on the SplitCompressionInputStream class, which is used\nto read from compressed input splits. It also depends on the Configuration\nclass, which is used to configure the behavior of the line reader.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 62,
+    "class": "org.apache.hadoop.mapreduce.lib.input.UncompressedSplitLineReader",
+    "path": "lib/input/UncompressedSplitLineReader.java",
+    "file_name": "UncompressedSplitLineReader.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY:\n- reads lines from an input stream\n- handles multi-byte delimiters correctly\n- supports customizable record delimiters\n- supports reading additional records after the end of a split\n\nCORE LOGIC:\n- reads data from the input stream\n- handles multi-byte delimiters correctly\n- supports customizable record delimiters\n- supports reading additional records after the end of a split\n\nINPUTS/OUTPUTS:\n- reads data from an input stream\n- writes data to a Text object\n\nDEPENDENCIES:\n- org.apache.hadoop.classification.InterfaceAudience\n- org.apache.hadoop.classification.InterfaceStability\n- org.apache.hadoop.conf.Configuration\n- org.apache.hadoop.fs.FSDataInputStream\n- org.apache.hadoop.io.Text",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

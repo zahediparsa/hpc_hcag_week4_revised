@@ -1,0 +1,30 @@
+{
+  "type": "directory",
+  "cluster_id": 76,
+  "directory": "lib/output/committer/manifest/files",
+  "title": "",
+  "description": "responsibility of this directory\n- This directory contains classes that represent the manifest of files created by a task attempt.\n- It includes classes for representing directory and file entries, as well as a summary of the data saved into a _SUCCESS marker file.\n\nhow the files or child directories collaborate\n- The classes in this directory collaborate to create and manage the task manifest, which contains information about the files created by a task attempt.\n- The classes use Jackson annotations for JSON serialization and deserialization, and they implement the Writable interface for serialization and deserialization using Hadoop's WritableUtils.\n\narchitectural role or pattern of this directory\n- This directory follows the Model-View-Controller (MVC) pattern, with the classes representing the model (the manifest data), the view (the JSON serialization), and the controller (the methods for adding files and directories to the manifest).\n- It also follows the Dependency Injection pattern, as the classes have dependencies on other classes and libraries, such as the Apache Hadoop MapReduce library and Jackson for JSON serialization.",
+  "summary": "TITLE: \nDESCRIPTION: responsibility of this directory\n- This directory contains classes that represent the manifest of files created by a task attempt.\n- It includes classes for representing directory and file entries, as well as a summary of the data saved into a _SUCCESS marker file.\n\nhow the files or child directories collaborate\n- The classes in this directory collaborate to create and manage the task manifest, which contains information about the files created by a task attempt.\n- The classes use Jackson annotations for JSON serialization and deserialization, and they implement the Writable interface for serialization and deserialization using Hadoop's WritableUtils.\n\narchitectural role or pattern of this directory\n- This directory follows the Model-View-Controller (MVC) pattern, with the classes representing the model (the manifest data), the view (the JSON serialization), and the controller (the methods for adding files and directories to the manifest).\n- It also follows the Dependency Injection pattern, as the classes have dependencies on other classes and libraries, such as the Apache Hadoop MapReduce library and Jackson for JSON serialization.",
+  "number_of_children": 4,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "DirEntry.java"
+    },
+    {
+      "type": "file",
+      "name": "FileEntry.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestSuccessData.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskManifest.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "responsibility of this directory\n- This directory contains classes that represent the manifest of files created by a task attempt.\n- It includes classes for representing directory and file entries, as well as a summary of the data saved into a _SUCCESS marker file.\n\nhow the files or child directories collaborate\n- The classes in this directory collaborate to create and manage the task manifest, which contains information about the files created by a task attempt.\n- The classes use Jackson annotations for JSON serialization and deserialization, and they implement the Writable interface for serialization and deserialization using Hadoop's WritableUtils.\n\narchitectural role or pattern of this directory\n- This directory follows the Model-View-Controller (MVC) pattern, with the classes representing the model (the manifest data), the view (the JSON serialization), and the controller (the methods for adding files and directories to the manifest).\n- It also follows the Dependency Injection pattern, as the classes have dependencies on other classes and libraries, such as the Apache Hadoop MapReduce library and Jackson for JSON serialization."
+}

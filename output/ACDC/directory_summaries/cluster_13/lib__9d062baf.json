@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 13,
+  "directory": "lib",
+  "title": "Output",
+  "description": "- responsible for writing output data to a file or files\n- handles the details of writing the data, including the format and location\n- collaborates with other classes to ensure the data is written correctly\n- may collaborate with classes that handle compression, encryption, or other processing of the data\n- follows the OutputFormat interface to define the behavior of writing output data\n- implements the RecordWriter interface to handle the actual writing of the data\n- provides a template method for getting the RecordWriter, allowing subclasses to customize the writing process\n- uses the PathOutputCommitterFactory to create committers that handle the commit and abort of the output files",
+  "summary": "TITLE: Output\nDESCRIPTION: - responsible for writing output data to a file or files\n- handles the details of writing the data, including the format and location\n- collaborates with other classes to ensure the data is written correctly\n- may collaborate with classes that handle compression, encryption, or other processing of the data\n- follows the OutputFormat interface to define the behavior of writing output data\n- implements the RecordWriter interface to handle the actual writing of the data\n- provides a template method for getting the RecordWriter, allowing subclasses to customize the writing process\n- uses the PathOutputCommitterFactory to create committers that handle the commit and abort of the output files",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Output\n\nDESCRIPTION:\n- responsible for writing output data to a file or files\n- handles the details of writing the data, including the format and location\n- collaborates with other classes to ensure the data is written correctly\n- may collaborate with classes that handle compression, encryption, or other processing of the data\n- follows the OutputFormat interface to define the behavior of writing output data\n- implements the RecordWriter interface to handle the actual writing of the data\n- provides a template method for getting the RecordWriter, allowing subclasses to customize the writing process\n- uses the PathOutputCommitterFactory to create committers that handle the commit and abort of the output files"
+}

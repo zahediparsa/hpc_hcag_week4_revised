@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 73,
+  "directory": "lib/join",
+  "title": "Join directory",
+  "description": "The Join directory contains classes related to the MapReduce join operation.\n\nThe classes in this directory collaborate to implement the join operation by allowing MapReduce tasks to efficiently join data based on common keys.\n\nThe directory follows the architectural pattern of the Hadoop MapReduce framework, specifically the join package in the mapred.join package.",
+  "summary": "TITLE: Join directory\nDESCRIPTION: The Join directory contains classes related to the MapReduce join operation.\n\nThe classes in this directory collaborate to implement the join operation by allowing MapReduce tasks to efficiently join data based on common keys.\n\nThe directory follows the architectural pattern of the Hadoop MapReduce framework, specifically the join package in the mapred.join package.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ResetableIterator.java"
+    },
+    {
+      "type": "file",
+      "name": "TupleWritable.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Join directory\n\nDESCRIPTION:\nThe Join directory contains classes related to the MapReduce join operation.\n\nThe classes in this directory collaborate to implement the join operation by allowing MapReduce tasks to efficiently join data based on common keys.\n\nThe directory follows the architectural pattern of the Hadoop MapReduce framework, specifically the join package in the mapred.join package."
+}

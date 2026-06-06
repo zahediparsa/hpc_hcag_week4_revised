@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": "lib/jobcontrol",
+  "title": "Hadoop MapReduce Architecture Abstraction",
+  "description": "The lib/jobcontrol directory is responsible for managing and monitoring Hadoop MapReduce jobs. It provides a high-level abstraction for controlling and tracking the states of MapReduce jobs and their dependencies. The directory contains two key classes: ControlledJob and JobControl.\n\nControlledJob encapsulates a MapReduce job and its dependency. It monitors the states of the depending jobs and updates the state of this job. It provides methods for setting and getting the job name, ID, state, message, and depending jobs. It also provides methods for checking the state of the job and submitting the job to the mapred framework.\n\nJobControl tracks the states of jobs by placing them into different tables according to their states. It submits jobs when they become ready. It monitors the states of running jobs and updates the states of jobs based on the state changes of their depending jobs states. It provides APIs for suspending/resuming the thread and stopping the thread.\n\nThe lib/jobcontrol directory collaborates with the mapreduce framework and the Hadoop file system. It provides a high-level architectural abstraction for managing and monitoring MapReduce jobs.",
+  "summary": "TITLE: Hadoop MapReduce Architecture Abstraction\nDESCRIPTION: The lib/jobcontrol directory is responsible for managing and monitoring Hadoop MapReduce jobs. It provides a high-level abstraction for controlling and tracking the states of MapReduce jobs and their dependencies. The directory contains two key classes: ControlledJob and JobControl.\n\nControlledJob encapsulates a MapReduce job and its dependency. It monitors the states of the depending jobs and updates the state of this job. It provides methods for setting and getting the job name, ID, state, message, and depending jobs. It also provides methods for checking the state of the job and submitting the job to the mapred framework.\n\nJobControl tracks the states of jobs by placing them into different tables according to their states. It submits jobs when they become ready. It monitors the states of running jobs and updates the states of jobs based on the state changes of their depending jobs states. It provides APIs for suspending/resuming the thread and stopping the thread.\n\nThe lib/jobcontrol directory collaborates with the mapreduce framework and the Hadoop file system. It provides a high-level architectural abstraction for managing and monitoring MapReduce jobs.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ControlledJob.java"
+    },
+    {
+      "type": "file",
+      "name": "JobControl.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture Abstraction\n\nDESCRIPTION:\nThe lib/jobcontrol directory is responsible for managing and monitoring Hadoop MapReduce jobs. It provides a high-level abstraction for controlling and tracking the states of MapReduce jobs and their dependencies. The directory contains two key classes: ControlledJob and JobControl.\n\nControlledJob encapsulates a MapReduce job and its dependency. It monitors the states of the depending jobs and updates the state of this job. It provides methods for setting and getting the job name, ID, state, message, and depending jobs. It also provides methods for checking the state of the job and submitting the job to the mapred framework.\n\nJobControl tracks the states of jobs by placing them into different tables according to their states. It submits jobs when they become ready. It monitors the states of running jobs and updates the states of jobs based on the state changes of their depending jobs states. It provides APIs for suspending/resuming the thread and stopping the thread.\n\nThe lib/jobcontrol directory collaborates with the mapreduce framework and the Hadoop file system. It provides a high-level architectural abstraction for managing and monitoring MapReduce jobs."
+}

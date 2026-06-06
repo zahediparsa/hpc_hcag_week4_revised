@@ -1,0 +1,207 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": ".",
+  "title": "lib/map",
+  "description": "The lib/map directory contains classes that are responsible for processing input data and transforming it into a format that can be easily processed by the MapReduce framework. It collaborates with other directories, such as the lib/reduce directory, to perform the final processing and generate the desired output. The directory follows the architectural pattern of the MapReduce framework, which is a distributed processing paradigm used for processing large data sets. The MapReduce framework consists of two main components:",
+  "summary": "TITLE: lib/map\nDESCRIPTION: The lib/map directory contains classes that are responsible for processing input data and transforming it into a format that can be easily processed by the MapReduce framework. It collaborates with other directories, such as the lib/reduce directory, to perform the final processing and generate the desired output. The directory follows the architectural pattern of the MapReduce framework, which is a distributed processing paradigm used for processing large data sets. The MapReduce framework consists of two main components:",
+  "number_of_children": 45,
+  "number_of_intermediate_summaries": 2,
+  "children": [
+    {
+      "type": "file",
+      "name": "ClusterMetrics.java"
+    },
+    {
+      "type": "file",
+      "name": "ContextFactory.java"
+    },
+    {
+      "type": "file",
+      "name": "CryptoUtils.java"
+    },
+    {
+      "type": "file",
+      "name": "CustomJobEndNotifier.java"
+    },
+    {
+      "type": "file",
+      "name": "FileSystemCounter.java"
+    },
+    {
+      "type": "file",
+      "name": "ID.java"
+    },
+    {
+      "type": "file",
+      "name": "InputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "InputSplit.java"
+    },
+    {
+      "type": "file",
+      "name": "JobACL.java"
+    },
+    {
+      "type": "file",
+      "name": "JobContext.java"
+    },
+    {
+      "type": "file",
+      "name": "JobCounter.java"
+    },
+    {
+      "type": "file",
+      "name": "JobID.java"
+    },
+    {
+      "type": "file",
+      "name": "JobStatus.java"
+    },
+    {
+      "type": "file",
+      "name": "JobSubmissionFiles.java"
+    },
+    {
+      "type": "file",
+      "name": "MRConfig.java"
+    },
+    {
+      "type": "file",
+      "name": "MRJobConfig.java"
+    },
+    {
+      "type": "file",
+      "name": "MapContext.java"
+    },
+    {
+      "type": "file",
+      "name": "MarkableIterator.java"
+    },
+    {
+      "type": "file",
+      "name": "MarkableIteratorInterface.java"
+    },
+    {
+      "type": "file",
+      "name": "OutputCommitter.java"
+    },
+    {
+      "type": "file",
+      "name": "OutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "QueueAclsInfo.java"
+    },
+    {
+      "type": "file",
+      "name": "QueueInfo.java"
+    },
+    {
+      "type": "file",
+      "name": "RecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "RecordWriter.java"
+    },
+    {
+      "type": "file",
+      "name": "ReduceContext.java"
+    },
+    {
+      "type": "file",
+      "name": "SharedCacheConfig.java"
+    },
+    {
+      "type": "file",
+      "name": "StatusReporter.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptContext.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskCompletionEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskCounter.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskInputOutputContext.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskReport.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskTrackerInfo.java"
+    },
+    {
+      "type": "directory",
+      "name": "counters"
+    },
+    {
+      "type": "directory",
+      "name": "filecache"
+    },
+    {
+      "type": "directory",
+      "name": "jobhistory"
+    },
+    {
+      "type": "directory",
+      "name": "lib"
+    },
+    {
+      "type": "directory",
+      "name": "protocol"
+    },
+    {
+      "type": "directory",
+      "name": "security"
+    },
+    {
+      "type": "directory",
+      "name": "server"
+    },
+    {
+      "type": "directory",
+      "name": "split"
+    },
+    {
+      "type": "directory",
+      "name": "task"
+    },
+    {
+      "type": "directory",
+      "name": "util"
+    },
+    {
+      "type": "directory",
+      "name": "v2"
+    }
+  ],
+  "intermediate_summaries": [
+    {
+      "type": "intermediate",
+      "name": ". chunk 0",
+      "summary": "This chunk of code provides utilities for working with cryptographic streams, specifically for encrypting intermediate data such as MapReduce spill files. The code includes methods for creating and initializing an IV (Initialization Vector), calculating crypto padding, and wrapping FSDataOutputStream and InputStream with CryptoOutputStream and CryptoInputStream, respectively. The code takes a Configuration object and an output or input stream as input, and returns an encrypted output or input stream if encryption is enabled. The code depends on the Apache Hadoop MapReduce library and the Apache Commons Codec library for Base64 encoding.",
+      "number_of_children": 31
+    },
+    {
+      "type": "intermediate",
+      "name": ". chunk 1",
+      "summary": "The lib/map directory contains classes that are responsible for processing input data and transforming it into a format that can be easily processed by the MapReduce framework. It collaborates with other directories, such as the lib/reduce directory, to perform the final processing and generate the desired output. The directory follows the architectural pattern of the MapReduce framework, which is a distributed processing paradigm used for processing large data sets. The MapReduce framework consists of two main components:",
+      "number_of_children": 14
+    }
+  ],
+  "raw_response": "TITLE: lib/map\n\nDESCRIPTION:\nThe lib/map directory contains classes that are responsible for processing input data and transforming it into a format that can be easily processed by the MapReduce framework. It collaborates with other directories, such as the lib/reduce directory, to perform the final processing and generate the desired output. The directory follows the architectural pattern of the MapReduce framework, which is a distributed processing paradigm used for processing large data sets. The MapReduce framework consists of two main components:"
+}

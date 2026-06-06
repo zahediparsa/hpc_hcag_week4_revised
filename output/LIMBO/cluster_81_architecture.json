@@ -1,0 +1,29 @@
+{
+  "cluster_id": 81,
+  "title": "Output",
+  "description": "The Output directory contains classes and interfaces for handling the output of data from the MapReduce framework. It collaborates with the MapReduce framework to commit output data, manage output formats, and handle the writing of output data. The architectural role of the Output directory is to provide a standardized interface for handling the output of data, allowing for greater flexibility and modularity in the MapReduce implementation. The directory follows the Strategy pattern, providing a family of classes for handling different output formats, each with its own specific implementation. This allows for easy extension and customization of the output handling mechanism without modifying the core MapReduce framework.",
+  "description_word_count": 106,
+  "number_of_files": 9,
+  "number_of_directories": 7,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Output\n\nDESCRIPTION:\nThe Output directory contains classes and interfaces that handle the output of data from the MapReduce framework. It includes classes for committing output data, managing output formats, and handling the writing of output data.\n\nThe Output directory collaborates with the MapReduce framework to handle the output of data. It provides classes and interfaces for committing output data, managing output formats, and handling the writing of output data.\n\nThe architectural role of the Output directory is to provide a standardized interface for handling the output of data from the MapReduce framework. This allows for greater flexibility and modularity in the MapReduce implementation, as different output formats and data handling mechanisms can be easily plugged in and used as needed.\n\nThe Output directory follows the pattern of the Strategy pattern, as it provides a family of classes for handling different output formats, each with its own specific implementation. This allows for easy extension and customization of the output handling mechanism, without the need to modify the core MapReduce framework.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/output/committer/manifest/impl/InternalConstants.java",
+    "lib/output/committer/manifest/stages/CommitJobStage.java",
+    "lib/output/committer/manifest/stages/CommitTaskStage.java",
+    "lib/output/committer/manifest/stages/CreateOutputDirectoriesStage.java",
+    "lib/output/committer/manifest/stages/LoadManifestsStage.java",
+    "lib/output/committer/manifest/stages/RenameFilesStage.java",
+    "lib/output/committer/manifest/stages/SaveTaskManifestStage.java",
+    "lib/output/committer/manifest/stages/TaskAttemptScanDirectoryStage.java",
+    "lib/output/committer/manifest/stages/ValidateRenamedFilesStage.java"
+  ]
+}

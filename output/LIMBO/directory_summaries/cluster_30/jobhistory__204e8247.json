@@ -1,0 +1,34 @@
+{
+  "type": "directory",
+  "cluster_id": 30,
+  "directory": "jobhistory",
+  "title": "Directory-level architectural abstraction for jobhistory",
+  "description": "This directory is responsible for storing the job history data and collaborating with other components to ensure the proper functioning of the job history data. It follows the Singleton pattern to ensure that there is only one instance of the job history data stored. The directory plays a crucial role in the Hadoop MapReduce architecture as it provides a centralized location for storing job history data, which is essential for monitoring and debugging purposes.",
+  "summary": "TITLE: Directory-level architectural abstraction for jobhistory\nDESCRIPTION: This directory is responsible for storing the job history data and collaborating with other components to ensure the proper functioning of the job history data. It follows the Singleton pattern to ensure that there is only one instance of the job history data stored. The directory plays a crucial role in the Hadoop MapReduce architecture as it provides a centralized location for storing job history data, which is essential for monitoring and debugging purposes.",
+  "number_of_children": 5,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AMStartedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "NormalizedResourceEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptStartedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskStartedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskUpdatedEvent.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Directory-level architectural abstraction for jobhistory\n\nDESCRIPTION:\nThis directory is responsible for storing the job history data and collaborating with other components to ensure the proper functioning of the job history data. It follows the Singleton pattern to ensure that there is only one instance of the job history data stored. The directory plays a crucial role in the Hadoop MapReduce architecture as it provides a centralized location for storing job history data, which is essential for monitoring and debugging purposes."
+}

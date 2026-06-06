@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 68,
+    "class": "org.apache.hadoop.mapreduce.lib.join.ArrayListBackedIterator",
+    "path": "lib/join/ArrayListBackedIterator.java",
+    "file_name": "ArrayListBackedIterator.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\nArrayListBackedIterator is a ResetableIterator implementation that uses an ArrayList to store elements added to it.\n\nCORE LOGIC:\nThe implementation uses an ArrayList to store elements and provides methods to check if there are more elements, retrieve the next element, replay the last element, reset the iterator, add elements, close the iterator, and clear the data.\n\nINPUTS/OUTPUTS:\nThe iterator takes an ArrayList of Writable objects as input and provides methods to retrieve and add elements.\n\nDEPENDENCIES:\nArrayListBackedIterator depends on the ArrayList class and the Writable interface. It also uses the Configuration class from the Hadoop framework.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 68,
+    "class": "org.apache.hadoop.mapreduce.lib.join.StreamBackedIterator",
+    "path": "lib/join/StreamBackedIterator.java",
+    "file_name": "StreamBackedIterator.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\n- This class provides an implementation of ResetableIterator.\n- This implementation uses a byte array to store elements added to it.\n\nCORE LOGIC:\n- The class uses a ByteArrayOutputStream to store elements added to it.\n- The class uses a DataOutputStream to write elements to the ByteArrayOutputStream.\n- The class uses a ReplayableByteInputStream to read elements from the ByteArrayOutputStream.\n- The class uses a DataInputStream to read elements from the ReplayableByteInputStream.\n\nINPUTS/OUTPUTS:\n- The class takes a Writable object as input in the next() and replay() methods.\n- The class returns a boolean value in the hasNext() and replay() methods.\n\nDEPENDENCIES:\n- The class imports the following classes:\n  - org.apache.hadoop.classification.InterfaceAudience\n  - org.apache.hadoop.classification.InterfaceStability\n  - org.apache.hadoop.io.Writable",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

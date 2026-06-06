@@ -1,0 +1,46 @@
+{
+  "type": "directory",
+  "cluster_id": 81,
+  "directory": "lib/output/committer/manifest/stages",
+  "title": "",
+  "description": "responsibility of this directory\n\nThis directory is responsible for committing the job and task attempts. It includes classes that handle the commit process, such as CommitJobStage, CommitTaskStage, CreateOutputDirectoriesStage, LoadManifestsStage, RenameFilesStage, SaveTaskManifestStage, TaskAttemptScanDirectoryStage, and ValidateRenamedFilesStage.\n\nhow the files or child directories collaborate\n\nThe classes in this directory collaborate by passing data and dependencies to each other. For example, CommitJobStage uses the results of LoadManifestsStage and CreateOutputDirectoriesStage, while CommitTaskStage uses the output of TaskAttemptScanDirectoryStage.\n\nthe architectural role or pattern of this directory\n\nThis directory follows the Model-View-Controller (MVC) pattern, where the model represents the data and business logic, the view represents the user interface, and the controller handles the user interactions and updates the model and view accordingly. The MVC pattern helps to separate concerns and improve code maintainability and extensibility.",
+  "summary": "TITLE: \nDESCRIPTION: responsibility of this directory\n\nThis directory is responsible for committing the job and task attempts. It includes classes that handle the commit process, such as CommitJobStage, CommitTaskStage, CreateOutputDirectoriesStage, LoadManifestsStage, RenameFilesStage, SaveTaskManifestStage, TaskAttemptScanDirectoryStage, and ValidateRenamedFilesStage.\n\nhow the files or child directories collaborate\n\nThe classes in this directory collaborate by passing data and dependencies to each other. For example, CommitJobStage uses the results of LoadManifestsStage and CreateOutputDirectoriesStage, while CommitTaskStage uses the output of TaskAttemptScanDirectoryStage.\n\nthe architectural role or pattern of this directory\n\nThis directory follows the Model-View-Controller (MVC) pattern, where the model represents the data and business logic, the view represents the user interface, and the controller handles the user interactions and updates the model and view accordingly. The MVC pattern helps to separate concerns and improve code maintainability and extensibility.",
+  "number_of_children": 8,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CommitJobStage.java"
+    },
+    {
+      "type": "file",
+      "name": "CommitTaskStage.java"
+    },
+    {
+      "type": "file",
+      "name": "CreateOutputDirectoriesStage.java"
+    },
+    {
+      "type": "file",
+      "name": "LoadManifestsStage.java"
+    },
+    {
+      "type": "file",
+      "name": "RenameFilesStage.java"
+    },
+    {
+      "type": "file",
+      "name": "SaveTaskManifestStage.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptScanDirectoryStage.java"
+    },
+    {
+      "type": "file",
+      "name": "ValidateRenamedFilesStage.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "responsibility of this directory\n\nThis directory is responsible for committing the job and task attempts. It includes classes that handle the commit process, such as CommitJobStage, CommitTaskStage, CreateOutputDirectoriesStage, LoadManifestsStage, RenameFilesStage, SaveTaskManifestStage, TaskAttemptScanDirectoryStage, and ValidateRenamedFilesStage.\n\nhow the files or child directories collaborate\n\nThe classes in this directory collaborate by passing data and dependencies to each other. For example, CommitJobStage uses the results of LoadManifestsStage and CreateOutputDirectoriesStage, while CommitTaskStage uses the output of TaskAttemptScanDirectoryStage.\n\nthe architectural role or pattern of this directory\n\nThis directory follows the Model-View-Controller (MVC) pattern, where the model represents the data and business logic, the view represents the user interface, and the controller handles the user interactions and updates the model and view accordingly. The MVC pattern helps to separate concerns and improve code maintainability and extensibility."
+}

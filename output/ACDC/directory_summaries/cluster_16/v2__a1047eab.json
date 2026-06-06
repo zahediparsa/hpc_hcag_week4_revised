@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 16,
+  "directory": "v2",
+  "title": "LogParams.java",
+  "description": "This class is used to store the parameters required for fetching logs. It has a constructor that takes in the required parameters and sets them as instance variables. It also has getter and setter methods for each parameter.",
+  "summary": "TITLE: LogParams.java\nDESCRIPTION: This class is used to store the parameters required for fetching logs. It has a constructor that takes in the required parameters and sets them as instance variables. It also has getter and setter methods for each parameter.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "LogParams.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: LogParams.java\n\nDESCRIPTION:\nThis class is used to store the parameters required for fetching logs. It has a constructor that takes in the required parameters and sets them as instance variables. It also has getter and setter methods for each parameter."
+}

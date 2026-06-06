@@ -1,0 +1,39 @@
+{
+  "cluster_id": 22,
+  "title": "MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce framework is a software framework for easily writing applications that process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes) built of commodity hardware in a reliable, fault-tolerant manner. The framework is designed to scale up from single servers to thousands of machines, each offering local computation and storage. Rather than rely on hardware failures, the framework copes with software failures by transparently recovering tasks and reexecuting them on other nodes. The MapReduce framework consists of the following components: Map, which takes an input key/value pair and returns a set of intermediate key/value pairs; Shuffle and Sort, which sorts the intermediate keys by the framework; and Reduce, which takes a set of intermediate key/value pairs and returns a set of output key/value pairs. The MapReduce framework provides several quality attributes, such as scalability, maintainability, reliability, security, and performance. It is built on top.",
+  "description_word_count": 154,
+  "number_of_files": 19,
+  "number_of_directories": 10,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Cluster Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce framework is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes) built ofcommodity hardware in a reliable, fault-tolerant manner. The framework is designed to scale up from single servers to thousands of machines, each offering local computation and storage. Rather than rely on hardware failures, the framework copes with software failures by transparently recovering tasks and reexecuting them on other nodes.\n\nThe MapReduce framework consists of the following components:\n- Map: The Map function takes an input key/value pair and returns a set of intermediate key/value pairs.\n- Shuffle and Sort: The intermediate keys are shuffled and sorted by the framework.\n- Reduce: The Reduce function takes a set of intermediate key/value pairs and returns a set of output key/value pairs.\n\nThe MapReduce framework provides several quality attributes, such as scalability, maintainability, reliability, security, and performance. It is built on top of the Hadoop Distributed File System (HDFS), which provides fault-tolerant storage for large data-sets. The framework also supports a wide range of programming models, including Java, Python, and C++.\n\nTechnologies used:\n- Java: The MapReduce framework is implemented in Java.\n- HDFS: The Hadoop Distributed File System (HDFS) is used for fault-tolerant storage of large data-sets.\n- YARN: The Yet Another Resource Negotiator (YARN) is used for resource management and job scheduling.\n- MapReduce: The MapReduce programming model is used for writing distributed applications.",
+  "algorithm": "ACDC",
+  "files": [
+    "JobContext.java",
+    "MRConfig.java",
+    "MRJobConfig.java",
+    "Partitioner.java",
+    "lib/fieldsel/FieldSelectionHelper.java",
+    "lib/input/KeyValueLineRecordReader.java",
+    "lib/input/KeyValueTextInputFormat.java",
+    "lib/input/NLineInputFormat.java",
+    "lib/map/RegexMapper.java",
+    "lib/partition/BinaryPartitioner.java",
+    "lib/partition/KeyFieldBasedComparator.java",
+    "lib/partition/KeyFieldBasedPartitioner.java",
+    "lib/partition/KeyFieldHelper.java",
+    "lib/partition/RehashPartitioner.java",
+    "server/jobtracker/JTConfig.java",
+    "server/tasktracker/TTConfig.java",
+    "util/ConfigUtil.java",
+    "util/MRJobConfUtil.java",
+    "util/ProcessTree.java"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "lib/output",
+  "title": "Output Format Counter",
+  "description": "The Output Format Counter directory is responsible for tracking the number of bytes written by Task classes. It collaborates with the FileOutputFormatCounter.java file to define a set of named counters for this purpose. The architectural role of this directory is to provide a centralized location for tracking output format-related metrics. This directory follows the Singleton pattern to ensure that only one instance of the counter is created and accessed by all Task classes.",
+  "summary": "TITLE: Output Format Counter\nDESCRIPTION: The Output Format Counter directory is responsible for tracking the number of bytes written by Task classes. It collaborates with the FileOutputFormatCounter.java file to define a set of named counters for this purpose. The architectural role of this directory is to provide a centralized location for tracking output format-related metrics. This directory follows the Singleton pattern to ensure that only one instance of the counter is created and accessed by all Task classes.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "FileOutputFormatCounter.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Output Format Counter\n\nDESCRIPTION:\nThe Output Format Counter directory is responsible for tracking the number of bytes written by Task classes. It collaborates with the FileOutputFormatCounter.java file to define a set of named counters for this purpose. The architectural role of this directory is to provide a centralized location for tracking output format-related metrics. This directory follows the Singleton pattern to ensure that only one instance of the counter is created and accessed by all Task classes."
+}

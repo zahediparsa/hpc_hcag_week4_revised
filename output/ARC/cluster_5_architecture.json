@@ -1,0 +1,50 @@
+{
+  "cluster_id": 5,
+  "title": "Hadoop MapReduce Architecture Abstraction",
+  "description": "The Hadoop MapReduce architecture consists of the JobTracker, TaskTrackers, and the Hadoop Distributed File System (HDFS). The JobTracker is responsible for scheduling and monitoring MapReduce jobs, while the TaskTrackers execute the tasks assigned by the JobTracker. HDFS is used for distributed storage and retrieval of data. The MapReduce framework follows a master-slave architecture, with the JobTracker acting as the master and the TaskTrackers acting as slaves. The communication between the components is facilitated by the Hadoop RPC mechanism. The MapReduce framework is designed to handle large-scale data processing tasks efficiently and scalably.",
+  "description_word_count": 92,
+  "number_of_files": 30,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture Abstraction\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture consists of the JobTracker, TaskTrackers, and the Hadoop Distributed File System (HDFS). The JobTracker is responsible for scheduling and monitoring MapReduce jobs, while the TaskTrackers execute the tasks assigned by the JobTracker. HDFS is used for distributed storage and retrieval of data. The MapReduce framework follows a master-slave architecture, with the JobTracker acting as the master and the TaskTrackers acting as slaves. The communication between the components is facilitated by the Hadoop RPC mechanism. The MapReduce framework is designed to handle large-scale data processing tasks efficiently and scalably.",
+  "algorithm": "ARC",
+  "files": [
+    "TaskAttemptID.java",
+    "TaskID.java",
+    "TaskType.java",
+    "jobhistory/AMStartedEvent.java",
+    "jobhistory/EventReader.java",
+    "jobhistory/EventWriter.java",
+    "jobhistory/HistoryEvent.java",
+    "jobhistory/HistoryEventHandler.java",
+    "jobhistory/HistoryViewer.java",
+    "jobhistory/HistoryViewerPrinter.java",
+    "jobhistory/HumanReadableHistoryViewerPrinter.java",
+    "jobhistory/JSONHistoryViewerPrinter.java",
+    "jobhistory/JobFinishedEvent.java",
+    "jobhistory/JobHistoryParser.java",
+    "jobhistory/JobInfoChangeEvent.java",
+    "jobhistory/JobInitedEvent.java",
+    "jobhistory/JobPriorityChangeEvent.java",
+    "jobhistory/JobQueueChangeEvent.java",
+    "jobhistory/JobStatusChangedEvent.java",
+    "jobhistory/JobUnsuccessfulCompletionEvent.java",
+    "jobhistory/NormalizedResourceEvent.java",
+    "jobhistory/ReduceAttemptFinishedEvent.java",
+    "jobhistory/TaskAttemptFinishedEvent.java",
+    "jobhistory/TaskAttemptStartedEvent.java",
+    "jobhistory/TaskAttemptUnsuccessfulCompletionEvent.java",
+    "jobhistory/TaskFailedEvent.java",
+    "jobhistory/TaskFinishedEvent.java",
+    "jobhistory/TaskStartedEvent.java",
+    "jobhistory/TaskUpdatedEvent.java",
+    "util/JobHistoryEventUtils.java"
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "algorithm": "ACDC",
+    "cluster": 14,
+    "class": "org.apache.hadoop.mapreduce.InputFormat",
+    "path": "InputFormat.java",
+    "file_name": "InputFormat.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\n\nThe InputFormat class is an abstract class that describes the input-specification for a Map-Reduce job.\n\nCORE LOGIC:\n\nThe Map-Reduce framework relies on the InputFormat of the job to:\n\nValidate the input-specification of the job.\nSplit-up the input file(s) into logical InputSplits, each of which is then assigned to an individual Mapper.\nProvide the RecordReader implementation to be used to glean input records from the logical InputSplit for processing by the Mapper.\n\nINPUTS/OUTPUTS:\n\nThe InputFormat class has two abstract methods:\n\ngetSplits(JobContext context): This method is responsible for logically splitting the set of input files for the job and returning an array of InputSplits.\ncreateRecordReader(InputSplit split, TaskAttemptContext context): This method is responsible for creating a RecordReader for a given split.\n\nDEPENDENCIES:\n\nThe InputFormat class has no dependencies on other classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 14,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.InputSampler",
+    "path": "lib/partition/InputSampler.java",
+    "file_name": "InputSampler.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\n\nThe InputSampler class is a utility for collecting samples and writing a partition file for the TotalOrderPartitioner.\n\nCORE LOGIC:\n\nThe InputSampler class provides three types of sampling logic: SplitSampler, RandomSampler, and IntervalSampler. SplitSampler samples the first n records from s splits, RandomSampler samples from random points in the input, and IntervalSampler samples from s splits at regular intervals.\n\nINPUTS/OUTPUTS:\n\nThe InputSampler class takes an InputFormat, a Job, and a Sampler as input, and it returns a subset of the keys from the input data.\n\nDEPENDENCIES:\n\nThe InputSampler class depends on the InputFormat, Job, and Sampler classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 14,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.TotalOrderPartitioner",
+    "path": "lib/partition/TotalOrderPartitioner.java",
+    "file_name": "TotalOrderPartitioner.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this chunk is to implement a partitioner that effects a total order by reading split points from an externally generated source.\n\nCORE LOGIC:\nThe key algorithms or processing patterns visible in this chunk are the building of a trie of the first bytes of the split points if the key type is BinaryComparable and the use of a binary search of the partition keyset otherwise.\n\nINPUTS/OUTPUTS:\nThe data flowing in is the configuration, and the data flowing out is the partitioning of the keys.\n\nDEPENDENCIES:\nThe key imported, parent, or collaborator classes visible in this chunk are the Node interface, the RawComparator class, the Configuration class, the FileSystem class, the Path class, the SequenceFile class, the RawComparator class, the Job class, the ReflectionUtils class, the IOUtils class, the BinaryComparable class, the BinarySearchNode class, the InnerTrieNode class, the LeafTrieNode class, the UnsplitTrieNode class, the SinglySplitTrieNode class, the CarriedTrieNodeRef class, and the TotalOrderPartitioner class.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

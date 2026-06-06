@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 12,
+  "directory": "lib/output/committer/manifest",
+  "title": "Apache Hadoop MapReduce Architecture",
+  "description": "Apache Hadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes) built of commodity hardware in a reliable, fault-tolerant manner.",
+  "summary": "TITLE: Apache Hadoop MapReduce Architecture\nDESCRIPTION: Apache Hadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes) built of commodity hardware in a reliable, fault-tolerant manner.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest/stages"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Apache Hadoop MapReduce Architecture\n\nDESCRIPTION: Apache Hadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes) built of commodity hardware in a reliable, fault-tolerant manner."
+}

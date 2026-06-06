@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 19,
+  "directory": "tools",
+  "title": "Hadoop MapReduce Architecture",
+  "description": "The tools directory in the Hadoop MapReduce architecture is responsible for handling command-line arguments and printing out usage information for each command. The CLI.java file is the key functionality of this directory, as it contains the main method that handles command-line arguments and prints out usage information. The code does not contain any core logic or algorithms, and it does not import any dependencies. The inputs and outputs of this directory are not relevant to its functionality.",
+  "summary": "TITLE: Hadoop MapReduce Architecture\nDESCRIPTION: The tools directory in the Hadoop MapReduce architecture is responsible for handling command-line arguments and printing out usage information for each command. The CLI.java file is the key functionality of this directory, as it contains the main method that handles command-line arguments and prints out usage information. The code does not contain any core logic or algorithms, and it does not import any dependencies. The inputs and outputs of this directory are not relevant to its functionality.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CLI.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe tools directory in the Hadoop MapReduce architecture is responsible for handling command-line arguments and printing out usage information for each command. The CLI.java file is the key functionality of this directory, as it contains the main method that handles command-line arguments and prints out usage information. The code does not contain any core logic or algorithms, and it does not import any dependencies. The inputs and outputs of this directory are not relevant to its functionality."
+}

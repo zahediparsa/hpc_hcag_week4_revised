@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 67,
+  "directory": ".",
+  "title": "Directory-level architectural abstraction for lib/join",
+  "description": "The lib/join directory is responsible for handling the architectural abstraction of the join operation in Hadoop MapReduce. The files in this directory, namely ComposableRecordReader.java, CompositeRecordReader.java, MultiFilterRecordReader.java, and WrappedRecordReader.java, collaborate to provide the necessary functionality for performing joins on data. The ComposableRecordReader class is a RecordReader that participates in a join, providing additional operations required for the join. The CompositeRecordReader class is a RecordReader that can effect joins of RecordReaders sharing a common key type and partitioning. The MultiFilterRecordReader class is a base class for Composite join returning values derived from multiple sources, but generally not tuples. The WrappedRecordReader class keeps track of the \"head\" key-value pair for the provided RecordReader and keeps a store of values matching a key when this source is participating in a join. These classes work together to provide a robust and efficient architecture for handling joins in Hadoop MapReduce.",
+  "summary": "TITLE: Directory-level architectural abstraction for lib/join\nDESCRIPTION: The lib/join directory is responsible for handling the architectural abstraction of the join operation in Hadoop MapReduce. The files in this directory, namely ComposableRecordReader.java, CompositeRecordReader.java, MultiFilterRecordReader.java, and WrappedRecordReader.java, collaborate to provide the necessary functionality for performing joins on data. The ComposableRecordReader class is a RecordReader that participates in a join, providing additional operations required for the join. The CompositeRecordReader class is a RecordReader that can effect joins of RecordReaders sharing a common key type and partitioning. The MultiFilterRecordReader class is a base class for Composite join returning values derived from multiple sources, but generally not tuples. The WrappedRecordReader class keeps track of the \"head\" key-value pair for the provided RecordReader and keeps a store of values matching a key when this source is participating in a join. These classes work together to provide a robust and efficient architecture for handling joins in Hadoop MapReduce.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Directory-level architectural abstraction for lib/join\n\nDESCRIPTION:\nThe lib/join directory is responsible for handling the architectural abstraction of the join operation in Hadoop MapReduce. The files in this directory, namely ComposableRecordReader.java, CompositeRecordReader.java, MultiFilterRecordReader.java, and WrappedRecordReader.java, collaborate to provide the necessary functionality for performing joins on data. The ComposableRecordReader class is a RecordReader that participates in a join, providing additional operations required for the join. The CompositeRecordReader class is a RecordReader that can effect joins of RecordReaders sharing a common key type and partitioning. The MultiFilterRecordReader class is a base class for Composite join returning values derived from multiple sources, but generally not tuples. The WrappedRecordReader class keeps track of the \"head\" key-value pair for the provided RecordReader and keeps a store of values matching a key when this source is participating in a join. These classes work together to provide a robust and efficient architecture for handling joins in Hadoop MapReduce."
+}

@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 18,
+  "directory": ".",
+  "title": "OutputCommitterFactory",
+  "description": "The OutputCommitterFactory is responsible for creating and managing committers for different filesystems and schemas. It collaborates with the PathOutputCommitterFactory, FileOutputCommitterFactory, and NamedCommitterFactory classes to provide a centralized location for committers to be created and used by the FileOutputFormat. The OutputCommitterFactory follows the factory pattern, as it provides a way to create committers based on different criteria. It also follows the singleton pattern, as there is only one instance of the OutputCommitterFactory per JVM.",
+  "summary": "TITLE: OutputCommitterFactory\nDESCRIPTION: The OutputCommitterFactory is responsible for creating and managing committers for different filesystems and schemas. It collaborates with the PathOutputCommitterFactory, FileOutputCommitterFactory, and NamedCommitterFactory classes to provide a centralized location for committers to be created and used by the FileOutputFormat. The OutputCommitterFactory follows the factory pattern, as it provides a way to create committers based on different criteria. It also follows the singleton pattern, as there is only one instance of the OutputCommitterFactory per JVM.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "OutputCommitter.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptContext.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: OutputCommitterFactory\n\nDESCRIPTION: The OutputCommitterFactory is responsible for creating and managing committers for different filesystems and schemas. It collaborates with the PathOutputCommitterFactory, FileOutputCommitterFactory, and NamedCommitterFactory classes to provide a centralized location for committers to be created and used by the FileOutputFormat. The OutputCommitterFactory follows the factory pattern, as it provides a way to create committers based on different criteria. It also follows the singleton pattern, as there is only one instance of the OutputCommitterFactory per JVM."
+}

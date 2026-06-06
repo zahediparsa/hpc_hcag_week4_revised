@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 51,
+  "directory": ".",
+  "title": "Directory-level architectural abstraction of lib/aggregate",
+  "description": "The directory lib/aggregate is responsible for implementing the generic combiner and reducer of Aggregate. It collaborates with the ValueAggregatorDescriptor, ValueAggregatorBaseDescriptor, and Reducer classes from the Apache Hadoop MapReduce library. The architectural role of this directory is to provide a modular and extensible framework for performing various types of aggregations on input data.",
+  "summary": "TITLE: Directory-level architectural abstraction of lib/aggregate\nDESCRIPTION: The directory lib/aggregate is responsible for implementing the generic combiner and reducer of Aggregate. It collaborates with the ValueAggregatorDescriptor, ValueAggregatorBaseDescriptor, and Reducer classes from the Apache Hadoop MapReduce library. The architectural role of this directory is to provide a modular and extensible framework for performing various types of aggregations on input data.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Directory-level architectural abstraction of lib/aggregate\n\nDESCRIPTION: The directory lib/aggregate is responsible for implementing the generic combiner and reducer of Aggregate. It collaborates with the ValueAggregatorDescriptor, ValueAggregatorBaseDescriptor, and Reducer classes from the Apache Hadoop MapReduce library. The architectural role of this directory is to provide a modular and extensible framework for performing various types of aggregations on input data."
+}

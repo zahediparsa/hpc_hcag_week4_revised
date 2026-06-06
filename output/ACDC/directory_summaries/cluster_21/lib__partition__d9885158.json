@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 21,
+  "directory": "lib/partition",
+  "title": "Partitioning data in Hadoop MapReduce",
+  "description": "The lib/partition directory in Hadoop MapReduce is responsible for defining classes that implement the logic for partitioning data. The classes in this directory collaborate by using the Object#hashCode() method to generate a hash code for the key and then applying a modulo operation to determine the partition for the key-value pair. This directory plays a crucial role in the Hadoop MapReduce architecture by ensuring that the data is evenly distributed across the cluster for parallel processing.",
+  "summary": "TITLE: Partitioning data in Hadoop MapReduce\nDESCRIPTION: The lib/partition directory in Hadoop MapReduce is responsible for defining classes that implement the logic for partitioning data. The classes in this directory collaborate by using the Object#hashCode() method to generate a hash code for the key and then applying a modulo operation to determine the partition for the key-value pair. This directory plays a crucial role in the Hadoop MapReduce architecture by ensuring that the data is evenly distributed across the cluster for parallel processing.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "HashPartitioner.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Partitioning data in Hadoop MapReduce\n\nDESCRIPTION:\nThe lib/partition directory in Hadoop MapReduce is responsible for defining classes that implement the logic for partitioning data. The classes in this directory collaborate by using the Object#hashCode() method to generate a hash code for the key and then applying a modulo operation to determine the partition for the key-value pair. This directory plays a crucial role in the Hadoop MapReduce architecture by ensuring that the data is evenly distributed across the cluster for parallel processing."
+}

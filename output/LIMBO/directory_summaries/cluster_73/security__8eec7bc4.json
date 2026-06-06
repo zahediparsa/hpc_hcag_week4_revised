@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 73,
+  "directory": "security",
+  "title": "Security",
+  "description": "The security directory contains classes and methods for generating and verifying hashes, as well as classes for identifying job tokens. The SecureShuffleUtils class contains utility methods for generating and verifying hashes, while the JobTokenIdentifier class is used to identify a job token. These classes collaborate to ensure the security of shuffle operations in the Hadoop MapReduce architecture.",
+  "summary": "TITLE: Security\nDESCRIPTION: The security directory contains classes and methods for generating and verifying hashes, as well as classes for identifying job tokens. The SecureShuffleUtils class contains utility methods for generating and verifying hashes, while the JobTokenIdentifier class is used to identify a job token. These classes collaborate to ensure the security of shuffle operations in the Hadoop MapReduce architecture.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "SecureShuffleUtils.java"
+    },
+    {
+      "type": "directory",
+      "name": "security/token"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Security\n\nDESCRIPTION:\nThe security directory contains classes and methods for generating and verifying hashes, as well as classes for identifying job tokens. The SecureShuffleUtils class contains utility methods for generating and verifying hashes, while the JobTokenIdentifier class is used to identify a job token. These classes collaborate to ensure the security of shuffle operations in the Hadoop MapReduce architecture."
+}

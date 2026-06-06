@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 58,
+  "directory": "lib/join",
+  "title": "CompositeInputSplit.java",
+  "description": "- This class represents a collection of InputSplits.\n- It provides methods to add InputSplits, get the length of all child InputSplits, get the length of a specific child InputSplit, get the locations of all child InputSplits, and get the locations of a specific child InputSplit.\n- It also provides methods to write and read InputSplits in a specific format.",
+  "summary": "TITLE: CompositeInputSplit.java\nDESCRIPTION: - This class represents a collection of InputSplits.\n- It provides methods to add InputSplits, get the length of all child InputSplits, get the length of a specific child InputSplit, get the locations of all child InputSplits, and get the locations of a specific child InputSplit.\n- It also provides methods to write and read InputSplits in a specific format.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CompositeInputSplit.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: CompositeInputSplit.java\n\nDESCRIPTION:\n- This class represents a collection of InputSplits.\n- It provides methods to add InputSplits, get the length of all child InputSplits, get the length of a specific child InputSplit, get the locations of all child InputSplits, and get the locations of a specific child InputSplit.\n- It also provides methods to write and read InputSplits in a specific format."
+}

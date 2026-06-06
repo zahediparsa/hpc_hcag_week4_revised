@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 5,
+  "directory": ".",
+  "title": "Hadoop MapReduce Architecture",
+  "description": "The Hadoop MapReduce architecture is responsible for processing large-scale data sets in a distributed environment. It consists of a master node and multiple slave nodes. The master node is responsible for scheduling and monitoring the tasks, while the slave nodes execute the tasks and report their status back to the master node. The MapReduce framework provides a way to divide the input data into smaller chunks and process them in parallel. It uses a Map function to process the input data and generate intermediate key-value pairs, and a Reduce function to process the intermediate data and generate the final output. The MapReduce architecture is scalable, fault-tolerant, and provides a way to handle large-scale data processing. It depends on the Hadoop Distributed File System (HDFS) for storing the input data and the YARN (Yet Another Resource Negotiator) for resource management and task scheduling.",
+  "summary": "TITLE: Hadoop MapReduce Architecture\nDESCRIPTION: The Hadoop MapReduce architecture is responsible for processing large-scale data sets in a distributed environment. It consists of a master node and multiple slave nodes. The master node is responsible for scheduling and monitoring the tasks, while the slave nodes execute the tasks and report their status back to the master node. The MapReduce framework provides a way to divide the input data into smaller chunks and process them in parallel. It uses a Map function to process the input data and generate intermediate key-value pairs, and a Reduce function to process the intermediate data and generate the final output. The MapReduce architecture is scalable, fault-tolerant, and provides a way to handle large-scale data processing. It depends on the Hadoop Distributed File System (HDFS) for storing the input data and the YARN (Yet Another Resource Negotiator) for resource management and task scheduling.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "TaskReport.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib"
+    },
+    {
+      "type": "directory",
+      "name": "task"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- DIRECTORY: . ---\nTITLE: Hadoop MapReduce Architecture\nDESCRIPTION: The Hadoop MapReduce architecture is responsible for processing large-scale data sets in a distributed environment. It consists of a master node and multiple slave nodes. The master node is responsible for scheduling and monitoring the tasks, while the slave nodes execute the tasks and report their status back to the master node. The MapReduce framework provides a way to divide the input data into smaller chunks and process them in parallel. It uses a Map function to process the input data and generate intermediate key-value pairs, and a Reduce function to process the intermediate data and generate the final output. The MapReduce architecture is scalable, fault-tolerant, and provides a way to handle large-scale data processing. It depends on the Hadoop Distributed File System (HDFS) for storing the input data and the YARN (Yet Another Resource Negotiator) for resource management and task scheduling."
+}

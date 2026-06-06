@@ -1,0 +1,50 @@
+{
+  "type": "directory",
+  "cluster_id": 4,
+  "directory": "lib/output/committer/manifest",
+  "title": "<maximum 10 words>**",
+  "description": "**\n**<4 to 6 concise sentences>**",
+  "summary": "TITLE: <maximum 10 words>**\nDESCRIPTION: **\n**<4 to 6 concise sentences>**",
+  "number_of_children": 9,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ManifestCommitter.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestCommitterConfig.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestCommitterConstants.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestCommitterFactory.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestCommitterStatisticNames.java"
+    },
+    {
+      "type": "file",
+      "name": "package-info.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest/files"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest/impl"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest/stages"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "**Output format exactly as:**\n\n**TITLE: <maximum 10 words>**\n\n**DESCRIPTION:**\n**<4 to 6 concise sentences>**"
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 76,
+  "directory": "lib",
+  "title": "lib/output",
+  "description": "This directory contains classes that represent the manifest of files created by a task attempt. It includes classes for representing directory and file entries, as well as a summary of the data saved into a _SUCCESS marker file. The classes in this directory collaborate to create and manage the task manifest, which contains information about the files created by a task attempt. The classes use Jackson annotations for JSON serialization and deserialization, and they implement the Writable interface for serialization and deserialization using Hadoop's WritableUtils. This directory follows the Model-View-Controller (MVC) pattern, with the classes representing the model (the manifest data), the view (the JSON serialization), and the controller (the methods for adding files and directories to the manifest). It also follows the Dependency Injection pattern, as the classes have dependencies on other classes and libraries, such as the Apache Hadoop MapReduce library and Jackson for JSON serialization.",
+  "summary": "TITLE: lib/output\nDESCRIPTION: This directory contains classes that represent the manifest of files created by a task attempt. It includes classes for representing directory and file entries, as well as a summary of the data saved into a _SUCCESS marker file. The classes in this directory collaborate to create and manage the task manifest, which contains information about the files created by a task attempt. The classes use Jackson annotations for JSON serialization and deserialization, and they implement the Writable interface for serialization and deserialization using Hadoop's WritableUtils. This directory follows the Model-View-Controller (MVC) pattern, with the classes representing the model (the manifest data), the view (the JSON serialization), and the controller (the methods for adding files and directories to the manifest). It also follows the Dependency Injection pattern, as the classes have dependencies on other classes and libraries, such as the Apache Hadoop MapReduce library and Jackson for JSON serialization.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/output\n\nDESCRIPTION:\nThis directory contains classes that represent the manifest of files created by a task attempt. It includes classes for representing directory and file entries, as well as a summary of the data saved into a _SUCCESS marker file. The classes in this directory collaborate to create and manage the task manifest, which contains information about the files created by a task attempt. The classes use Jackson annotations for JSON serialization and deserialization, and they implement the Writable interface for serialization and deserialization using Hadoop's WritableUtils. This directory follows the Model-View-Controller (MVC) pattern, with the classes representing the model (the manifest data), the view (the JSON serialization), and the controller (the methods for adding files and directories to the manifest). It also follows the Dependency Injection pattern, as the classes have dependencies on other classes and libraries, such as the Apache Hadoop MapReduce library and Jackson for JSON serialization."
+}

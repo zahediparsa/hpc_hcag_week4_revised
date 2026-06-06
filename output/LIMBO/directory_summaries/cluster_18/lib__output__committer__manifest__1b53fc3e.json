@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 18,
+  "directory": "lib/output/committer/manifest",
+  "title": "ManifestCommitterFactory",
+  "description": "The ManifestCommitterFactory is the committer factory to register as the source of committers for the job/filesystem schema. It checks the schema of the output path and fails fast if it is not supported. The factory creates a committer instance for the output path and task context.",
+  "summary": "TITLE: ManifestCommitterFactory\nDESCRIPTION: The ManifestCommitterFactory is the committer factory to register as the source of committers for the job/filesystem schema. It checks the schema of the output path and fails fast if it is not supported. The factory creates a committer instance for the output path and task context.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ManifestCommitterFactory.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ManifestCommitterFactory\n\nDESCRIPTION:\nThe ManifestCommitterFactory is the committer factory to register as the source of committers for the job/filesystem schema. It checks the schema of the output path and fails fast if it is not supported. The factory creates a committer instance for the output path and task context."
+}

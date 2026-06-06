@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": "lib",
+  "title": "lib - Hadoop MapReduce Architecture",
+  "description": "The lib directory is a high-level architectural abstraction in the Hadoop MapReduce framework. It provides a set of reusable and modular components that enable the execution of Map and Reduce tasks in a distributed environment. The directory collaborates with other components to manage the execution of Mappers and Reducers, and it follows the pattern of a wrapper class to encapsulate the functionality of a given Mapper or Reducer. This pattern promotes modularity and extensibility, allowing developers to customize the behavior of Map and Reduce tasks without modifying the core logic of the framework. The lib directory plays a crucial role in the Hadoop MapReduce architecture, providing a flexible and extensible foundation for custom Map and Reduce task implementations.",
+  "summary": "TITLE: lib - Hadoop MapReduce Architecture\nDESCRIPTION: The lib directory is a high-level architectural abstraction in the Hadoop MapReduce framework. It provides a set of reusable and modular components that enable the execution of Map and Reduce tasks in a distributed environment. The directory collaborates with other components to manage the execution of Mappers and Reducers, and it follows the pattern of a wrapper class to encapsulate the functionality of a given Mapper or Reducer. This pattern promotes modularity and extensibility, allowing developers to customize the behavior of Map and Reduce tasks without modifying the core logic of the framework. The lib directory plays a crucial role in the Hadoop MapReduce architecture, providing a flexible and extensible foundation for custom Map and Reduce task implementations.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/chain"
+    },
+    {
+      "type": "directory",
+      "name": "lib/map"
+    },
+    {
+      "type": "directory",
+      "name": "lib/reduce"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib - Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe lib directory is a high-level architectural abstraction in the Hadoop MapReduce framework. It provides a set of reusable and modular components that enable the execution of Map and Reduce tasks in a distributed environment. The directory collaborates with other components to manage the execution of Mappers and Reducers, and it follows the pattern of a wrapper class to encapsulate the functionality of a given Mapper or Reducer. This pattern promotes modularity and extensibility, allowing developers to customize the behavior of Map and Reduce tasks without modifying the core logic of the framework. The lib directory plays a crucial role in the Hadoop MapReduce architecture, providing a flexible and extensible foundation for custom Map and Reduce task implementations."
+}

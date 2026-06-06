@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 19,
+  "directory": "protocol",
+  "title": "ClientProtocolProvider",
+  "description": "This directory provides a way to create and close connections to a remote service. The files collaborate by using the ClientProtocol interface to establish and terminate connections. The architectural role of this directory is to abstract the details of connecting to a remote service, allowing other components to interact with the service without needing to know the specifics of the connection process.",
+  "summary": "TITLE: ClientProtocolProvider\nDESCRIPTION: This directory provides a way to create and close connections to a remote service. The files collaborate by using the ClientProtocol interface to establish and terminate connections. The architectural role of this directory is to abstract the details of connecting to a remote service, allowing other components to interact with the service without needing to know the specifics of the connection process.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ClientProtocolProvider.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ClientProtocolProvider\n\nDESCRIPTION:\nThis directory provides a way to create and close connections to a remote service. The files collaborate by using the ClientProtocol interface to establish and terminate connections. The architectural role of this directory is to abstract the details of connecting to a remote service, allowing other components to interact with the service without needing to know the specifics of the connection process."
+}

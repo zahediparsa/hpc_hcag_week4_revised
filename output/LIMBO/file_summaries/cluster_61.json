@@ -1,0 +1,62 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 61,
+    "class": "org.apache.hadoop.mapreduce.lib.input.CombineSequenceFileInputFormat",
+    "path": "lib/input/CombineSequenceFileInputFormat.java",
+    "file_name": "CombineSequenceFileInputFormat.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY:\nThis code chunk is an input format that is a CombineFileInputFormat-equivalent for SequenceFileInputFormat.\n\nCORE LOGIC:\nThe core logic of this code chunk is to create a CombineFileRecordReader that can be used in a CombineFileInputFormat-equivalent for SequenceFileInputFormat.\n\nINPUTS/OUTPUTS:\nThe inputs to this code chunk are an InputSplit and a TaskAttemptContext. The output is a RecordReader.\n\nDEPENDENCIES:\nThe dependencies of this code chunk are the CombineFileInputFormat, SequenceFileInputFormat, CombineFileSplit, and CombineFileRecordReader.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 61,
+    "class": "org.apache.hadoop.mapreduce.lib.input.CombineTextInputFormat",
+    "path": "lib/input/CombineTextInputFormat.java",
+    "file_name": "CombineTextInputFormat.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY:\nCombines multiple files into one split for processing.\n\nCORE LOGIC:\nUses a CombineFileRecordReader to read from the combined files.\n\nINPUTS/OUTPUTS:\nInput: CombineFileSplit, TaskAttemptContext\nOutput: LongWritable, Text\n\nDEPENDENCIES:\nTextInputFormat, CombineFileInputFormat, CombineFileRecordReader, LongWritable, Text",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 61,
+    "class": "org.apache.hadoop.mapreduce.lib.input.SequenceFileAsBinaryInputFormat",
+    "path": "lib/input/SequenceFileAsBinaryInputFormat.java",
+    "file_name": "SequenceFileAsBinaryInputFormat.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY:\nThis chunk of code is an input format for reading keys and values from SequenceFiles in binary (raw) format.\n\nCORE LOGIC:\nThe core logic of this chunk is to read the keys and values from the SequenceFile and return them as BytesWritable.\n\nINPUTS/OUTPUTS:\nThe input to this chunk is an InputSplit and a TaskAttemptContext. The output is a RecordReader that reads the keys and values from the SequenceFile and returns them as BytesWritable.\n\nDEPENDENCIES:\nThis chunk depends on the SequenceFile class from the Apache Hadoop MapReduce library.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 61,
+    "class": "org.apache.hadoop.mapreduce.lib.input.SequenceFileAsTextInputFormat",
+    "path": "lib/input/SequenceFileAsTextInputFormat.java",
+    "file_name": "SequenceFileAsTextInputFormat.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY:\n- Converts input keys and values to their String forms by calling toString() method\n- Similar to SequenceFileInputFormat, but generates SequenceFileAsTextRecordReader\n\nCORE LOGIC:\n- None visible in this chunk\n\nINPUTS/OUTPUTS:\n- Data flowing in: InputSplit, TaskAttemptContext\n- Data flowing out: RecordReader<Text, Text>\n\nDEPENDENCIES:\n- Imported classes: IOException, Text, InputSplit, RecordReader, TaskAttemptContext\n- Parent class: SequenceFileInputFormat<Text, Text>\n- Collaborator classes: SequenceFileAsTextRecordReader",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 61,
+    "class": "org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFilter",
+    "path": "lib/input/SequenceFileInputFilter.java",
+    "file_name": "SequenceFileInputFilter.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY:\nThis code implements a filter for sequence files. It allows a map/reduce job to work on a sample of sequence files, decided by the filter class set by the job.\n\nCORE LOGIC:\nThe core logic of this code is the Filter class, which is an interface that defines a filter function. The filter function decides whether a record should be filtered or not based on the record key. The code also includes three implementations of the Filter interface: RegexFilter, PercentFilter, and MD5Filter.\n\nINPUTS/OUTPUTS:\nThe code takes an InputSplit and a TaskAttemptContext as inputs and returns a RecordReader as an output. The RecordReader reads records from the input split and applies the filter to each record.\n\nDEPENDENCIES:\nThe code depends on the org.apache.hadoop.mapreduce.lib.input package and the org.apache.hadoop.io package. It also uses the Configuration class from the org.apache.hadoop.conf package and the ReflectionUtils class from the org.apache.hadoop.util package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

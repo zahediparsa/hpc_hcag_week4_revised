@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 85,
+  "directory": "lib/partition",
+  "title": "Partitioning in Hadoop MapReduce",
+  "description": "The lib/partition directory in Hadoop MapReduce contains classes that implement the Partitioner interface. This interface is used to determine the partition to which a key-value pair should be sent during the shuffle and sort phase of the MapReduce job. The partitioner can use various factors such as the key, value, and the total number of reduce tasks to determine the partition. The classes in this directory provide different ways of partitioning the data, such as hashing the key, using a custom partitioner, or rehashing the hash code of the key. The choice of partitioner can have a significant impact on the performance of the MapReduce job, as it can affect the balance of the data across the reducers and the efficiency of the shuffle and sort operations.",
+  "summary": "TITLE: Partitioning in Hadoop MapReduce\nDESCRIPTION: The lib/partition directory in Hadoop MapReduce contains classes that implement the Partitioner interface. This interface is used to determine the partition to which a key-value pair should be sent during the shuffle and sort phase of the MapReduce job. The partitioner can use various factors such as the key, value, and the total number of reduce tasks to determine the partition. The classes in this directory provide different ways of partitioning the data, such as hashing the key, using a custom partitioner, or rehashing the hash code of the key. The choice of partitioner can have a significant impact on the performance of the MapReduce job, as it can affect the balance of the data across the reducers and the efficiency of the shuffle and sort operations.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "BinaryPartitioner.java"
+    },
+    {
+      "type": "file",
+      "name": "HashPartitioner.java"
+    },
+    {
+      "type": "file",
+      "name": "RehashPartitioner.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Partitioning in Hadoop MapReduce\n\nDESCRIPTION:\nThe lib/partition directory in Hadoop MapReduce contains classes that implement the Partitioner interface. This interface is used to determine the partition to which a key-value pair should be sent during the shuffle and sort phase of the MapReduce job. The partitioner can use various factors such as the key, value, and the total number of reduce tasks to determine the partition. The classes in this directory provide different ways of partitioning the data, such as hashing the key, using a custom partitioner, or rehashing the hash code of the key. The choice of partitioner can have a significant impact on the performance of the MapReduce job, as it can affect the balance of the data across the reducers and the efficiency of the shuffle and sort operations."
+}

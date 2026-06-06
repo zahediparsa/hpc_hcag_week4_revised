@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 58,
+  "directory": ".",
+  "title": "lib/input",
+  "description": "The lib/input directory is responsible for handling input data for the Hadoop MapReduce framework. It provides classes and interfaces for defining input formats, splits, and record readers. The classes in this directory collaborate to process input data and generate key-value pairs for further processing. The architectural role of this directory is to provide a flexible and extensible interface for reading input data in a distributed environment.",
+  "summary": "TITLE: lib/input\nDESCRIPTION: The lib/input directory is responsible for handling input data for the Hadoop MapReduce framework. It provides classes and interfaces for defining input formats, splits, and record readers. The classes in this directory collaborate to process input data and generate key-value pairs for further processing. The architectural role of this directory is to provide a flexible and extensible interface for reading input data in a distributed environment.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/input\n\nDESCRIPTION:\nThe lib/input directory is responsible for handling input data for the Hadoop MapReduce framework. It provides classes and interfaces for defining input formats, splits, and record readers. The classes in this directory collaborate to process input data and generate key-value pairs for further processing. The architectural role of this directory is to provide a flexible and extensible interface for reading input data in a distributed environment."
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 46,
+  "directory": ".",
+  "title": "Hadoop MapReduce Architecture Abstraction",
+  "description": "The Hadoop MapReduce architecture abstraction is responsible for managing and coordinating the execution of tasks across a distributed cluster. It provides a scalable and fault-tolerant framework for processing large-scale data processing jobs. The architecture abstraction consists of several key components, including the JobTracker, TaskTracker, and the distributed file system (DFS). The JobTracker is responsible for scheduling and monitoring the execution of jobs, while the TaskTracker is responsible for executing individual tasks on the cluster. The DFS provides a distributed file system for storing and accessing data across the cluster. The architecture abstraction also includes various communication protocols and data structures for coordinating the execution of tasks and managing the flow of data between different components of the system.",
+  "summary": "TITLE: Hadoop MapReduce Architecture Abstraction\nDESCRIPTION: The Hadoop MapReduce architecture abstraction is responsible for managing and coordinating the execution of tasks across a distributed cluster. It provides a scalable and fault-tolerant framework for processing large-scale data processing jobs. The architecture abstraction consists of several key components, including the JobTracker, TaskTracker, and the distributed file system (DFS). The JobTracker is responsible for scheduling and monitoring the execution of jobs, while the TaskTracker is responsible for executing individual tasks on the cluster. The DFS provides a distributed file system for storing and accessing data across the cluster. The architecture abstraction also includes various communication protocols and data structures for coordinating the execution of tasks and managing the flow of data between different components of the system.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "jobhistory"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture Abstraction\n\nDESCRIPTION: The Hadoop MapReduce architecture abstraction is responsible for managing and coordinating the execution of tasks across a distributed cluster. It provides a scalable and fault-tolerant framework for processing large-scale data processing jobs. The architecture abstraction consists of several key components, including the JobTracker, TaskTracker, and the distributed file system (DFS). The JobTracker is responsible for scheduling and monitoring the execution of jobs, while the TaskTracker is responsible for executing individual tasks on the cluster. The DFS provides a distributed file system for storing and accessing data across the cluster. The architecture abstraction also includes various communication protocols and data structures for coordinating the execution of tasks and managing the flow of data between different components of the system."
+}

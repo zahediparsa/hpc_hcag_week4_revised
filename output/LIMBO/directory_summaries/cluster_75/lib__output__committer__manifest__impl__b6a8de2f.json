@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 75,
+  "directory": "lib/output/committer/manifest/impl",
+  "title": "ManifestCommitterSupport",
+  "description": "This directory contains classes that provide support for manifest committer functionality. It includes methods for creating an IOStatistics Store with standard statistics, building a Job UUID, getting the location of pending job attempts, creating task attempt directories, creating task manifests, creating success/outcome data, adding heap information to IOStatisticSetters gauges, creating the filename for a report from the job ID, getting an etag from a FileStatus, and creating the manifest store operations for a given file system.\n\nTITLE: ManifestStoreOperations\n\nDESCRIPTION:\nThis class provides FileSystem operations needed to generate the task manifest. It includes methods for file and directory operations such as creating directories, renaming files and directories, deleting files and directories, and listing directory contents.\n\nTITLE: ManifestStoreOperationsThroughFileSystem\n\nDESCRIPTION:\nThis class implements manifest store operations through the filesystem API. It provides methods for performing file operations such as deleting, renaming, and listing files. It also includes methods for loading and saving task manifests.",
+  "summary": "TITLE: ManifestCommitterSupport\nDESCRIPTION: This directory contains classes that provide support for manifest committer functionality. It includes methods for creating an IOStatistics Store with standard statistics, building a Job UUID, getting the location of pending job attempts, creating task attempt directories, creating task manifests, creating success/outcome data, adding heap information to IOStatisticSetters gauges, creating the filename for a report from the job ID, getting an etag from a FileStatus, and creating the manifest store operations for a given file system.\n\nTITLE: ManifestStoreOperations\n\nDESCRIPTION:\nThis class provides FileSystem operations needed to generate the task manifest. It includes methods for file and directory operations such as creating directories, renaming files and directories, deleting files and directories, and listing directory contents.\n\nTITLE: ManifestStoreOperationsThroughFileSystem\n\nDESCRIPTION:\nThis class implements manifest store operations through the filesystem API. It provides methods for performing file operations such as deleting, renaming, and listing files. It also includes methods for loading and saving task manifests.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ManifestCommitterSupport.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestStoreOperations.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestStoreOperationsThroughFileSystem.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ManifestCommitterSupport\n\nDESCRIPTION:\nThis directory contains classes that provide support for manifest committer functionality. It includes methods for creating an IOStatistics Store with standard statistics, building a Job UUID, getting the location of pending job attempts, creating task attempt directories, creating task manifests, creating success/outcome data, adding heap information to IOStatisticSetters gauges, creating the filename for a report from the job ID, getting an etag from a FileStatus, and creating the manifest store operations for a given file system.\n\nTITLE: ManifestStoreOperations\n\nDESCRIPTION:\nThis class provides FileSystem operations needed to generate the task manifest. It includes methods for file and directory operations such as creating directories, renaming files and directories, deleting files and directories, and listing directory contents.\n\nTITLE: ManifestStoreOperationsThroughFileSystem\n\nDESCRIPTION:\nThis class implements manifest store operations through the filesystem API. It provides methods for performing file operations such as deleting, renaming, and listing files. It also includes methods for loading and saving task manifests."
+}

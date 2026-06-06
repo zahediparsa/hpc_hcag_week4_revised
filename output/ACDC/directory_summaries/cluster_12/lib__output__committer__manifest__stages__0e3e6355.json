@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 12,
+  "directory": "lib/output/committer/manifest/stages",
+  "title": "Apache Hadoop MapReduce Architecture",
+  "description": "Apache Hadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes) built ofcommodity hardware in a reliable, fault-tolerant manner.\n\nMapReduce is based on the concept of dividing the input data into smaller chunks (input splits), and processing each chunk in parallel using a mapper and a reducer. The output of the mapper is then sorted and shuffled before being passed to the reducer.\n\nThe MapReduce framework provides a set of APIs for developers to write their own mappers and reducers, and handles the distribution and execution of the tasks across the cluster. It also provides fault-tolerance and recovery mechanisms to ensure that the tasks are completed even in the case of node failures.\n\nMapReduce is widely used in big data analytics, data mining, and other data-intensive applications. It is an essential component of the Apache Hadoop ecosystem and is used by many organizations for processing large-scale data.",
+  "summary": "TITLE: Apache Hadoop MapReduce Architecture\nDESCRIPTION: Apache Hadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes) built ofcommodity hardware in a reliable, fault-tolerant manner.\n\nMapReduce is based on the concept of dividing the input data into smaller chunks (input splits), and processing each chunk in parallel using a mapper and a reducer. The output of the mapper is then sorted and shuffled before being passed to the reducer.\n\nThe MapReduce framework provides a set of APIs for developers to write their own mappers and reducers, and handles the distribution and execution of the tasks across the cluster. It also provides fault-tolerance and recovery mechanisms to ensure that the tasks are completed even in the case of node failures.\n\nMapReduce is widely used in big data analytics, data mining, and other data-intensive applications. It is an essential component of the Apache Hadoop ecosystem and is used by many organizations for processing large-scale data.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AbstractJobOrTaskStage.java"
+    },
+    {
+      "type": "file",
+      "name": "JobOrTaskStage.java"
+    },
+    {
+      "type": "file",
+      "name": "LoadManifestsStage.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Apache Hadoop MapReduce Architecture\n\nDESCRIPTION:\nApache Hadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes) built ofcommodity hardware in a reliable, fault-tolerant manner.\n\nMapReduce is based on the concept of dividing the input data into smaller chunks (input splits), and processing each chunk in parallel using a mapper and a reducer. The output of the mapper is then sorted and shuffled before being passed to the reducer.\n\nThe MapReduce framework provides a set of APIs for developers to write their own mappers and reducers, and handles the distribution and execution of the tasks across the cluster. It also provides fault-tolerance and recovery mechanisms to ensure that the tasks are completed even in the case of node failures.\n\nMapReduce is widely used in big data analytics, data mining, and other data-intensive applications. It is an essential component of the Apache Hadoop ecosystem and is used by many organizations for processing large-scale data."
+}

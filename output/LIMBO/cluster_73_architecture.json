@@ -1,0 +1,25 @@
+{
+  "cluster_id": 73,
+  "title": "MapReduce Architecture",
+  "description": "MapReduce is a distributed computing framework that handles large-scale data processing. It consists of a master node and worker nodes. The master coordinates tasks and distributes data, while the workers execute tasks and communicate with the master. MapReduce is designed to scale, tolerate faults, and improve performance for large-scale data processing. It uses Java and the Hadoop framework, with a high-level API for developers and a distributed file system (HDFS) for data storage.",
+  "description_word_count": 73,
+  "number_of_files": 5,
+  "number_of_directories": 8,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Architecture\n\nDESCRIPTION:\nThe MapReduce architecture is a distributed computing framework that enables large-scale data processing. It consists of a master node and multiple worker nodes. The master node coordinates the execution of tasks and manages the distribution of data across the worker nodes. The worker nodes execute the tasks and communicate with the master node to report their progress and receive new tasks.\n\nThe architecture is designed to handle large volumes of data and distribute the processing across multiple nodes to improve performance and scalability. It supports various data processing tasks, such as sorting, filtering, and aggregation, and provides fault-tolerance by retrying failed tasks and recovering from node failures.\n\nThe MapReduce architecture is implemented using Java and the Hadoop framework. It provides a high-level API for developers to write MapReduce programs and a distributed file system (HDFS) for storing and managing data. The architecture is scalable, fault-tolerant, and provides performance improvements for large-scale data processing.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/join/ResetableIterator.java",
+    "lib/join/TupleWritable.java",
+    "lib/output/committer/manifest/ManifestCommitterConstants.java",
+    "security/SecureShuffleUtils.java",
+    "security/token/JobTokenIdentifier.java"
+  ]
+}

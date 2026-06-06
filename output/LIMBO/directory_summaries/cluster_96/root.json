@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 96,
+  "directory": ".",
+  "title": "Reduce",
+  "description": "Reduce is a directory that contains the logic for reducing the data after it has been processed by the mappers. It is responsible for taking the intermediate data produced by the mappers and combining it to produce the final output. The reduce directory contains the MergeThread class, which is a thread that merges segments of data. It waits for notification to start the merge, then picks up the inputs to merge and merges them using the merge() method. The merged result is output. MergeThread depends on the MergeManagerImpl class to manage the merging process.",
+  "summary": "TITLE: Reduce\nDESCRIPTION: Reduce is a directory that contains the logic for reducing the data after it has been processed by the mappers. It is responsible for taking the intermediate data produced by the mappers and combining it to produce the final output. The reduce directory contains the MergeThread class, which is a thread that merges segments of data. It waits for notification to start the merge, then picks up the inputs to merge and merges them using the merge() method. The merged result is output. MergeThread depends on the MergeManagerImpl class to manage the merging process.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "task"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Reduce\n\nDESCRIPTION:\nReduce is a directory that contains the logic for reducing the data after it has been processed by the mappers. It is responsible for taking the intermediate data produced by the mappers and combining it to produce the final output. The reduce directory contains the MergeThread class, which is a thread that merges segments of data. It waits for notification to start the merge, then picks up the inputs to merge and merges them using the merge() method. The merged result is output. MergeThread depends on the MergeManagerImpl class to manage the merging process."
+}

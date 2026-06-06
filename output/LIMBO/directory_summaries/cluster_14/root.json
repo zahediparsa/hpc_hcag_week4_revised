@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 14,
+  "directory": ".",
+  "title": "org.apache.hadoop.mapreduce.Mapper.Context",
+  "description": "The context object that is given to the Mapper.",
+  "summary": "TITLE: org.apache.hadoop.mapreduce.Mapper.Context\nDESCRIPTION: The context object that is given to the Mapper.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "MapContext.java"
+    },
+    {
+      "type": "file",
+      "name": "ReduceContext.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: org.apache.hadoop.mapreduce.Mapper.Context\n\nDESCRIPTION:\nThe context object that is given to the Mapper."
+}

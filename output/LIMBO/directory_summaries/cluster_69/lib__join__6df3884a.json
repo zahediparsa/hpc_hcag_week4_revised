@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 69,
+  "directory": "lib/join",
+  "title": "lib/join",
+  "description": "The lib/join directory is responsible for handling the parsing and execution of join operations over a set of data sources. It collaborates with the Parser class to parse join expressions and the InputFormat class to perform the actual join operation. The architectural pattern used in this directory is the composite pattern, which allows for the creation of complex input formats by combining simpler ones.",
+  "summary": "TITLE: lib/join\nDESCRIPTION: The lib/join directory is responsible for handling the parsing and execution of join operations over a set of data sources. It collaborates with the Parser class to parse join expressions and the InputFormat class to perform the actual join operation. The architectural pattern used in this directory is the composite pattern, which allows for the creation of complex input formats by combining simpler ones.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CompositeInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "Parser.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/join\n\nDESCRIPTION:\nThe lib/join directory is responsible for handling the parsing and execution of join operations over a set of data sources. It collaborates with the Parser class to parse join expressions and the InputFormat class to perform the actual join operation. The architectural pattern used in this directory is the composite pattern, which allows for the creation of complex input formats by combining simpler ones."
+}

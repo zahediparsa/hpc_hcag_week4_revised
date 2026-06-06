@@ -1,0 +1,78 @@
+{
+  "type": "directory",
+  "cluster_id": 8,
+  "directory": "lib/join",
+  "title": "",
+  "description": "Cluster: 8\nDirectory: lib/join\n\n responsibility:\n- This directory contains classes that implement the join operation.\n- It provides a way to combine data from multiple sources based on a common key.\n\ncollaboration:\n- The classes in this directory collaborate to perform the join operation.\n- They use the RecordReader interface to read data from the sources and the JoinCollector interface to collect and manage the data.\n\narchitectural role/pattern:\n- This directory follows the composite pattern, as it combines multiple RecordReaders to perform the join operation.\n- It uses the PriorityQueue class to manage the RecordReaders and process the key, value pairs.",
+  "summary": "TITLE: \nDESCRIPTION: Cluster: 8\nDirectory: lib/join\n\n responsibility:\n- This directory contains classes that implement the join operation.\n- It provides a way to combine data from multiple sources based on a common key.\n\ncollaboration:\n- The classes in this directory collaborate to perform the join operation.\n- They use the RecordReader interface to read data from the sources and the JoinCollector interface to collect and manage the data.\n\narchitectural role/pattern:\n- This directory follows the composite pattern, as it combines multiple RecordReaders to perform the join operation.\n- It uses the PriorityQueue class to manage the RecordReaders and process the key, value pairs.",
+  "number_of_children": 16,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ArrayListBackedIterator.java"
+    },
+    {
+      "type": "file",
+      "name": "ComposableInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "ComposableRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "CompositeInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "CompositeInputSplit.java"
+    },
+    {
+      "type": "file",
+      "name": "CompositeRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "InnerJoinRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "JoinRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "MultiFilterRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "OuterJoinRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "OverrideRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "Parser.java"
+    },
+    {
+      "type": "file",
+      "name": "ResetableIterator.java"
+    },
+    {
+      "type": "file",
+      "name": "StreamBackedIterator.java"
+    },
+    {
+      "type": "file",
+      "name": "TupleWritable.java"
+    },
+    {
+      "type": "file",
+      "name": "WrappedRecordReader.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "Cluster: 8\nDirectory: lib/join\n\n responsibility:\n- This directory contains classes that implement the join operation.\n- It provides a way to combine data from multiple sources based on a common key.\n\ncollaboration:\n- The classes in this directory collaborate to perform the join operation.\n- They use the RecordReader interface to read data from the sources and the JoinCollector interface to collect and manage the data.\n\narchitectural role/pattern:\n- This directory follows the composite pattern, as it combines multiple RecordReaders to perform the join operation.\n- It uses the PriorityQueue class to manage the RecordReaders and process the key, value pairs."
+}

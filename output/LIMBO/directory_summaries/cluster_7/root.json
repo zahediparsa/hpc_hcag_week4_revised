@@ -1,0 +1,38 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": ".",
+  "title": "CryptoUtils",
+  "description": "This directory contains utilities for working with cryptographic streams, specifically for encrypting intermediate data such as MapReduce spill files.\n\nIt includes methods for creating and initializing an IV (Initialization Vector), calculating crypto padding, and wrapping FSDataOutputStream and InputStream with CryptoOutputStream and CryptoInputStream, respectively.\n\nThe code takes a Configuration object and an output or input stream as input, and returns an encrypted output or input stream if encryption is enabled.\n\nDEPENDENCIES:\nThe code depends on the Apache Hadoop MapReduce library and the Apache Commons Codec library for Base64 encoding.",
+  "summary": "TITLE: CryptoUtils\nDESCRIPTION: This directory contains utilities for working with cryptographic streams, specifically for encrypting intermediate data such as MapReduce spill files.\n\nIt includes methods for creating and initializing an IV (Initialization Vector), calculating crypto padding, and wrapping FSDataOutputStream and InputStream with CryptoOutputStream and CryptoInputStream, respectively.\n\nThe code takes a Configuration object and an output or input stream as input, and returns an encrypted output or input stream if encryption is enabled.\n\nDEPENDENCIES:\nThe code depends on the Apache Hadoop MapReduce library and the Apache Commons Codec library for Base64 encoding.",
+  "number_of_children": 6,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CryptoUtils.java"
+    },
+    {
+      "type": "file",
+      "name": "JobACL.java"
+    },
+    {
+      "type": "directory",
+      "name": "counters"
+    },
+    {
+      "type": "directory",
+      "name": "filecache"
+    },
+    {
+      "type": "directory",
+      "name": "security"
+    },
+    {
+      "type": "directory",
+      "name": "util"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: CryptoUtils\n\nDESCRIPTION:\nThis directory contains utilities for working with cryptographic streams, specifically for encrypting intermediate data such as MapReduce spill files.\n\nIt includes methods for creating and initializing an IV (Initialization Vector), calculating crypto padding, and wrapping FSDataOutputStream and InputStream with CryptoOutputStream and CryptoInputStream, respectively.\n\nThe code takes a Configuration object and an output or input stream as input, and returns an encrypted output or input stream if encryption is enabled.\n\nDEPENDENCIES:\nThe code depends on the Apache Hadoop MapReduce library and the Apache Commons Codec library for Base64 encoding."
+}

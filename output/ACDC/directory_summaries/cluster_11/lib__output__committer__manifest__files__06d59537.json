@@ -1,0 +1,46 @@
+{
+  "type": "directory",
+  "cluster_id": 11,
+  "directory": "lib/output/committer/manifest/files",
+  "title": "",
+  "description": "responsibility of this directory\n- This directory is responsible for managing the manifest files created by the task attempts.\n\nhow the files or child directories collaborate\n- The files in this directory collaborate by storing information about the files created by the task attempts, such as their paths, sizes, and etags.\n\nthe architectural role or pattern of this directory\n- This directory follows the role of a data structure, as it provides a way to organize and store information about the files created by the task attempts. It also follows the pattern of a summary directory, as it provides a high-level overview of the task attempts' outputs.",
+  "summary": "TITLE: \nDESCRIPTION: responsibility of this directory\n- This directory is responsible for managing the manifest files created by the task attempts.\n\nhow the files or child directories collaborate\n- The files in this directory collaborate by storing information about the files created by the task attempts, such as their paths, sizes, and etags.\n\nthe architectural role or pattern of this directory\n- This directory follows the role of a data structure, as it provides a way to organize and store information about the files created by the task attempts. It also follows the pattern of a summary directory, as it provides a high-level overview of the task attempts' outputs.",
+  "number_of_children": 8,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AbstractManifestData.java"
+    },
+    {
+      "type": "file",
+      "name": "DiagnosticKeys.java"
+    },
+    {
+      "type": "file",
+      "name": "DirEntry.java"
+    },
+    {
+      "type": "file",
+      "name": "EntryStatus.java"
+    },
+    {
+      "type": "file",
+      "name": "FileEntry.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestPrinter.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestSuccessData.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskManifest.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "responsibility of this directory\n- This directory is responsible for managing the manifest files created by the task attempts.\n\nhow the files or child directories collaborate\n- The files in this directory collaborate by storing information about the files created by the task attempts, such as their paths, sizes, and etags.\n\nthe architectural role or pattern of this directory\n- This directory follows the role of a data structure, as it provides a way to organize and store information about the files created by the task attempts. It also follows the pattern of a summary directory, as it provides a high-level overview of the task attempts' outputs."
+}

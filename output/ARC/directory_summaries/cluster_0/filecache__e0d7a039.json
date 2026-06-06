@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "filecache",
+  "title": "ClientDistributedCacheManager",
+  "description": "The ClientDistributedCacheManager is responsible for determining the timestamps of files to be cached and storing them in the configuration. It also determines the visibilities of the distributed cache files and archives, and for each archive or cache file, it gets the corresponding delegation token. The core logic involves using the configuration to get the cache archives and files, then using the FileSystem class to get the file status for each URI. The FileStatus class is then used to get the length and modification time of each file, and the FsAction class is used to check the permissions of each file. Finally, the TokenCache class is used to get the delegation tokens for each file. The inputs/outputs include the configuration of a job and the Credentials. The dependencies include FileSystem, FileStatus, FsAction, and TokenCache.",
+  "summary": "TITLE: ClientDistributedCacheManager\nDESCRIPTION: The ClientDistributedCacheManager is responsible for determining the timestamps of files to be cached and storing them in the configuration. It also determines the visibilities of the distributed cache files and archives, and for each archive or cache file, it gets the corresponding delegation token. The core logic involves using the configuration to get the cache archives and files, then using the FileSystem class to get the file status for each URI. The FileStatus class is then used to get the length and modification time of each file, and the FsAction class is used to check the permissions of each file. Finally, the TokenCache class is used to get the delegation tokens for each file. The inputs/outputs include the configuration of a job and the Credentials. The dependencies include FileSystem, FileStatus, FsAction, and TokenCache.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ClientDistributedCacheManager.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ClientDistributedCacheManager\n\nDESCRIPTION:\nThe ClientDistributedCacheManager is responsible for determining the timestamps of files to be cached and storing them in the configuration. It also determines the visibilities of the distributed cache files and archives, and for each archive or cache file, it gets the corresponding delegation token. The core logic involves using the configuration to get the cache archives and files, then using the FileSystem class to get the file status for each URI. The FileStatus class is then used to get the length and modification time of each file, and the FsAction class is used to check the permissions of each file. Finally, the TokenCache class is used to get the delegation tokens for each file. The inputs/outputs include the configuration of a job and the Credentials. The dependencies include FileSystem, FileStatus, FsAction, and TokenCache."
+}

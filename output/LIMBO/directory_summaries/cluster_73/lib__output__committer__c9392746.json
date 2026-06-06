@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 73,
+  "directory": "lib/output/committer",
+  "title": "ManifestCommitterConstants",
+  "description": "This directory contains public constants for the manifest committer. It includes configuration options and their default values. The code defines various file suffixes, prefixes, and formats for manifest and summary files. It also provides default values for various options.",
+  "summary": "TITLE: ManifestCommitterConstants\nDESCRIPTION: This directory contains public constants for the manifest committer. It includes configuration options and their default values. The code defines various file suffixes, prefixes, and formats for manifest and summary files. It also provides default values for various options.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ManifestCommitterConstants\n\nDESCRIPTION: This directory contains public constants for the manifest committer. It includes configuration options and their default values. The code defines various file suffixes, prefixes, and formats for manifest and summary files. It also provides default values for various options."
+}

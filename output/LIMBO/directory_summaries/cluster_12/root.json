@@ -1,0 +1,30 @@
+{
+  "type": "directory",
+  "cluster_id": 12,
+  "directory": ".",
+  "title": "Hadoop MapReduce Architecture",
+  "description": "The Hadoop MapReduce architecture is responsible for processing large-scale data sets using distributed computing. It consists of two main components: the JobTracker and the TaskTrackers. The JobTracker is responsible for scheduling and monitoring MapReduce jobs, while the TaskTrackers execute the tasks assigned by the JobTracker. The files in this directory collaborate by sharing information and coordinating the execution of tasks. The architectural role of this directory is to provide a high-level abstraction for processing large-scale data sets using distributed computing. The pattern used in this directory is the master-slave pattern, which is a distributed pattern that separates the control plane from the data plane.",
+  "summary": "TITLE: Hadoop MapReduce Architecture\nDESCRIPTION: The Hadoop MapReduce architecture is responsible for processing large-scale data sets using distributed computing. It consists of two main components: the JobTracker and the TaskTrackers. The JobTracker is responsible for scheduling and monitoring MapReduce jobs, while the TaskTrackers execute the tasks assigned by the JobTracker. The files in this directory collaborate by sharing information and coordinating the execution of tasks. The architectural role of this directory is to provide a high-level abstraction for processing large-scale data sets using distributed computing. The pattern used in this directory is the master-slave pattern, which is a distributed pattern that separates the control plane from the data plane.",
+  "number_of_children": 4,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobResourceUploader.java"
+    },
+    {
+      "type": "file",
+      "name": "JobSubmitter.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib"
+    },
+    {
+      "type": "directory",
+      "name": "util"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- DIRECTORY: . ---\nTITLE: Hadoop MapReduce Architecture\nDESCRIPTION: The Hadoop MapReduce architecture is responsible for processing large-scale data sets using distributed computing. It consists of two main components: the JobTracker and the TaskTrackers. The JobTracker is responsible for scheduling and monitoring MapReduce jobs, while the TaskTrackers execute the tasks assigned by the JobTracker. The files in this directory collaborate by sharing information and coordinating the execution of tasks. The architectural role of this directory is to provide a high-level abstraction for processing large-scale data sets using distributed computing. The pattern used in this directory is the master-slave pattern, which is a distributed pattern that separates the control plane from the data plane."
+}

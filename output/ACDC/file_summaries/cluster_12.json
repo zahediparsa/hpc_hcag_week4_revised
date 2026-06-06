@@ -1,0 +1,41 @@
+[
+  {
+    "algorithm": "ACDC",
+    "cluster": 12,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.AbstractJobOrTaskStage",
+    "path": "lib/output/committer/manifest/stages/AbstractJobOrTaskStage.java",
+    "file_name": "AbstractJobOrTaskStage.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY:\n- The main purpose of this class or file is to provide a base class for stages in the task/job commit process.\n- It includes methods for executing the stage, updating the store, and handling IOStatistics.\n\nCORE LOGIC:\n- The class includes methods for getting file status, deleting files/directories, creating directories, loading manifest files, and performing msync operations.\n\nINPUTS/OUTPUTS:\n- The class takes input arguments and returns a result.\n- It updates the store via ManifestStoreOperations callbacks.\n- IOStatistics are updated during the execution of the stage.\n\nDEPENDENCIES:\n- The class depends on the StageConfig, ManifestStoreOperations, and TaskPool.Submitter classes.\n\nFile: AbstractJobOrTaskStage.java\n\nReturn exactly these four sections:\n\nKEY FUNCTIONALITY: main purpose of this class or file\nCORE LOGIC: key algorithms or processing patterns\nINPUTS/OUTPUTS: data flowing in and out\nDEPENDENCIES: key imported, parent, or collaborator classes\n\nChunk summaries:\n--- chunk 1 ---\nKEY FUNCTIONALITY:\n- The main purpose of this chunk is to provide a base class for stages in the task/job commit process.\n- It includes methods for executing the stage, updating the store, and handling IOStatistics.\n\nCORE LOGIC:\n- The chunk includes methods for getting file status, deleting files/directories, creating directories, loading manifest files, and performing msync operations.\n\nINPUTS/OUTPUTS:\n- The chunk takes input arguments and returns a result.\n- It updates the store via ManifestStoreOperations callbacks.\n- IOStatistics are updated during the execution of the stage.\n\nDEPENDENCIES:\n- The chunk depends on the StageConfig, ManifestStoreOperations, and TaskPool.Submitter classes.\n\n--- chunk 2 ---\nKEY FUNCTIONALITY:\n- This chunk contains methods for handling file operations, such as mkdirs, directoryMustExist, save, saveManifest, renameFile, renameDir, commitFile, storeSupportsResilientCommit, maybeDeleteDest, executeRenamingOperation, escalateRenameFailure, deleteRecursive, deleteRecursiveSuppressingExceptions, and fileEntry.\n\nCORE LOGIC:\n- The mkdirs method creates a directory if it does not exist.\n- The directoryMustExist method checks if a path is a",
+    "chunked": true,
+    "number_of_code_chunks": 2,
+    "chunk_summaries": [
+      "KEY FUNCTIONALITY:\n- The main purpose of this chunk is to provide a base class for stages in the task/job commit process.\n- It includes methods for executing the stage, updating the store, and handling IOStatistics.\n\nCORE LOGIC:\n- The chunk includes methods for getting file status, deleting files/directories, creating directories, loading manifest files, and performing msync operations.\n\nINPUTS/OUTPUTS:\n- The chunk takes input arguments and returns a result.\n- It updates the store via ManifestStoreOperations callbacks.\n- IOStatistics are updated during the execution of the stage.\n\nDEPENDENCIES:\n- The chunk depends on the StageConfig, ManifestStoreOperations, and TaskPool.Submitter classes.",
+      "KEY FUNCTIONALITY:\n- This chunk contains methods for handling file operations, such as mkdirs, directoryMustExist, save, saveManifest, renameFile, renameDir, commitFile, storeSupportsResilientCommit, maybeDeleteDest, executeRenamingOperation, escalateRenameFailure, deleteRecursive, deleteRecursiveSuppressingExceptions, and fileEntry.\n\nCORE LOGIC:\n- The mkdirs method creates a directory if it does not exist.\n- The directoryMustExist method checks if a path is a directory and must exist.\n- The save method saves a task manifest or summary by writing to a temporary path and then renaming it.\n- The saveManifest method generates and saves a task manifest or summary file by writing to a temporary path and then renaming it.\n- The renameFile method renames a file from source to destination.\n- The renameDir method renames a directory from source to destination.\n- The commitFile method commits a file from the manifest using rename or, if available, resilient renaming.\n- The storeSupportsResilientCommit method checks if the store supports resilient commit.\n- The maybeDeleteDest method deletes the destination if it exists.\n- The executeRenamingOperation method executes an operation to rename a file/dir and track the duration of the operation.\n- The escalateRenameFailure method escalates a rename failure to an exception.\n- The deleteRecursive method deletes a directory or file.\n- The deleteRecursiveSuppressingExceptions method deletes a directory or file, catching exceptions.\n- The fileEntry method creates an entry for a file to rename under the destination.\n\nINPUTS/OUTPUTS:\n- The mkdirs method takes a path as input and returns the path if it is successfully created.\n- The directoryMustExist method takes a path as input and returns the path if it is a directory and must exist.\n- The save method takes a manifestData, tempPath, and finalPath as input and returns the manifest saved.\n- The saveManifest method takes a manifestSource, tempPath, finalPath, and statistic as input and returns the manifest saved.\n- The renameFile method takes a source and dest path as input.\n- The renameDir method takes a source and dest path as input.\n- The commitFile method takes a FileEntry and a deleteDest flag as input and returns a CommitOutcome.\n- The storeSupportsResilientCommit method takes no input and returns"
+    ]
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 12,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.JobOrTaskStage",
+    "path": "lib/output/committer/manifest/stages/JobOrTaskStage.java",
+    "file_name": "JobOrTaskStage.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY:\nThis chunk defines an interface for a job or task stage in the context of Apache Hadoop MapReduce. It extends the FunctionRaisingIOE interface and also implements the IOStatisticsSource interface.\n\nCORE LOGIC:\nThe interface does not contain any specific algorithms or processing patterns.\n\nINPUTS/OUTPUTS:\nThe interface does not specify any specific inputs or outputs.\n\nDEPENDENCIES:\nThe interface depends on the FunctionRaisingIOE and IOStatisticsSource interfaces.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 12,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.LoadManifestsStage",
+    "path": "lib/output/committer/manifest/stages/LoadManifestsStage.java",
+    "file_name": "LoadManifestsStage.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this chunk of code is to load all the task manifests in the job attempt directory.\n\nCORE LOGIC:\nThe code uses a TaskPool to load and process all the manifests in parallel. It also uses a writer to queue the files for commit.\n\nINPUTS/OUTPUTS:\nThe code takes in the manifest directory path and the entry sequence file path as inputs. It outputs a summary of the manifests loaded and a list of manifests.\n\nDEPENDENCIES:\nThe code depends on the EntryFileIO class for writing the manifest data and the TaskManifest class for loading and processing the manifests.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

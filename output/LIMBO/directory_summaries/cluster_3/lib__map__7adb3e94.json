@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "lib/map",
+  "title": "Mappers",
+  "description": "The Mappers directory contains classes that implement the map function of the MapReduce framework. The map function takes an input key and value and produces a set of intermediate key and value pairs. The intermediate keys are used to sort and group the intermediate values in the shuffle and sort phase of the MapReduce framework. The Mappers directory contains the MultithreadedMapper class, which is a multithreaded implementation of the Mapper class. The MultithreadedMapper class uses a thread pool to execute multiple map tasks simultaneously, which can improve the performance of the map function.",
+  "summary": "TITLE: Mappers\nDESCRIPTION: The Mappers directory contains classes that implement the map function of the MapReduce framework. The map function takes an input key and value and produces a set of intermediate key and value pairs. The intermediate keys are used to sort and group the intermediate values in the shuffle and sort phase of the MapReduce framework. The Mappers directory contains the MultithreadedMapper class, which is a multithreaded implementation of the Mapper class. The MultithreadedMapper class uses a thread pool to execute multiple map tasks simultaneously, which can improve the performance of the map function.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "MultithreadedMapper.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Mappers\n\nDESCRIPTION:\nThe Mappers directory contains classes that implement the map function of the MapReduce framework. The map function takes an input key and value and produces a set of intermediate key and value pairs. The intermediate keys are used to sort and group the intermediate values in the shuffle and sort phase of the MapReduce framework. The Mappers directory contains the MultithreadedMapper class, which is a multithreaded implementation of the Mapper class. The MultithreadedMapper class uses a thread pool to execute multiple map tasks simultaneously, which can improve the performance of the map function."
+}

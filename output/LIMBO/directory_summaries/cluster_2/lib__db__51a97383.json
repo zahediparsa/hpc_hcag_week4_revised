@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "lib/db",
+  "title": "DB package",
+  "description": "The DB package provides classes and interfaces for interacting with databases. It includes the DBWritable interface, which defines methods for writing and reading objects to and from a database, and the OracleDateSplitter class, which implements DBSplitter for date/time values returned by an Oracle database. The classes in this package collaborate to provide a flexible and efficient way to handle database operations in a Hadoop MapReduce job.",
+  "summary": "TITLE: DB package\nDESCRIPTION: The DB package provides classes and interfaces for interacting with databases. It includes the DBWritable interface, which defines methods for writing and reading objects to and from a database, and the OracleDateSplitter class, which implements DBSplitter for date/time values returned by an Oracle database. The classes in this package collaborate to provide a flexible and efficient way to handle database operations in a Hadoop MapReduce job.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "DBWritable.java"
+    },
+    {
+      "type": "file",
+      "name": "OracleDateSplitter.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: DB package\n\nDESCRIPTION:\nThe DB package provides classes and interfaces for interacting with databases. It includes the DBWritable interface, which defines methods for writing and reading objects to and from a database, and the OracleDateSplitter class, which implements DBSplitter for date/time values returned by an Oracle database. The classes in this package collaborate to provide a flexible and efficient way to handle database operations in a Hadoop MapReduce job."
+}

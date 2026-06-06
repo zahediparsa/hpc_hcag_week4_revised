@@ -1,0 +1,25 @@
+{
+  "cluster_id": 61,
+  "title": "Hadoop MapReduce Architecture",
+  "description": "Hadoop MapReduce is a distributed processing framework that uses the Map and Reduce components to process large-scale data on clusters of computers. It is designed to be scalable, fault-tolerant, and efficient, and uses a distributed file system, such as HDFS, to store and manage the input data. The system coordinates the execution of Map and Reduce tasks on different nodes in the cluster to ensure fault-tolerant processing. The output of the MapReduce job is stored in HDFS, and users can access it using various tools and APIs. The system supports various optimization techniques to improve performance, such as speculative execution and data locality. Overall, the architecture of Hadoop MapReduce is designed to provide a flexible and efficient way to process large-scale data in a distributed environment.",
+  "description_word_count": 126,
+  "number_of_files": 5,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nHadoop MapReduce is a distributed processing framework that enables large-scale data processing on clusters of computers. It consists of two main components: the Map component and the Reduce component. The Map component breaks down the input data into smaller chunks and processes them in parallel, while the Reduce component aggregates the results and produces the final output. The architecture of Hadoop MapReduce is designed to be scalable, fault-tolerant, and efficient, making it a popular choice for processing large-scale data. The system uses a distributed file system, such as Hadoop Distributed File System (HDFS), to store and manage the input data. The Map and Reduce tasks are executed on different nodes in the cluster, and the system coordinates the execution of these tasks to ensure that the processing is done in a fault-tolerant manner. The output of the MapReduce job is stored in HDFS, and users can access it using various tools and APIs. The system also supports various optimization techniques, such as speculative execution and data locality, to improve the performance of the processing. Overall, the architecture of Hadoop MapReduce is designed to provide a flexible and efficient way to process large-scale data in a distributed environment.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/input/CombineSequenceFileInputFormat.java",
+    "lib/input/CombineTextInputFormat.java",
+    "lib/input/SequenceFileAsBinaryInputFormat.java",
+    "lib/input/SequenceFileAsTextInputFormat.java",
+    "lib/input/SequenceFileInputFilter.java"
+  ]
+}

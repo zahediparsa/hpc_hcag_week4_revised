@@ -1,0 +1,38 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 93,
+    "class": "org.apache.hadoop.mapreduce.split.JobSplit",
+    "path": "split/JobSplit.java",
+    "file_name": "JobSplit.java",
+    "directory": "split",
+    "summary": "KEY FUNCTIONALITY:\nThis code provides functionality for reading and writing splits, including the meta information about the task split that the JobTracker creates and the raw split information that the maps use at runtime.\n\nCORE LOGIC:\nThe code includes classes for SplitMetaInfo, TaskSplitMetaInfo, and TaskSplitIndex, which are used to store and manipulate split information.\n\nINPUTS/OUTPUTS:\nThe code reads and writes split information to files, using the DataInput and DataOutput interfaces.\n\nDEPENDENCIES:\nThe code depends on the org.apache.hadoop.mapreduce.InputSplit class and the org.apache.hadoop.io.Writable class.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 93,
+    "class": "org.apache.hadoop.mapreduce.split.JobSplitWriter",
+    "path": "split/JobSplitWriter.java",
+    "file_name": "JobSplitWriter.java",
+    "directory": "split",
+    "summary": "KEY FUNCTIONALITY:\n\nThe JobSplitWriter class is used by the Job clients to write splits (both the meta and the raw bytes parts).\n\nCORE LOGIC:\n\nThe createSplitFiles method writes splits to a file. It uses the writeNewSplits method to write new splits and the writeOldSplits method to write old splits. The writeJobSplitMetaInfo method writes the splits meta-info to a file for the job tracker.\n\nINPUTS/OUTPUTS:\n\nThe createSplitFiles method takes in a Path jobSubmitDir, Configuration conf, FileSystem fs, and an array of InputSplit splits. It creates a file and writes the splits to it. The writeJobSplitMetaInfo method takes in a FileSystem fs, Path filename, FsPermission p, int splitMetaInfoVersion, and an array of JobSplit.SplitMetaInfo allSplitMetaInfo. It creates a file and writes the splits meta-info to it.\n\nDEPENDENCIES:\n\nThe JobSplitWriter class depends on the JobSplit class and the org.apache.hadoop.mapred.InputSplit class. It also depends on the SerializationFactory, Serializer, and WritableUtils classes from the org.apache.hadoop.io.serializer package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 93,
+    "class": "org.apache.hadoop.mapreduce.split.SplitMetaInfoReader",
+    "path": "split/SplitMetaInfoReader.java",
+    "file_name": "SplitMetaInfoReader.java",
+    "directory": "split",
+    "summary": "KEY FUNCTIONALITY:\nThis code reads the split meta info and creates split meta info objects.\n\nCORE LOGIC:\nThe code reads the split meta info from a file and creates split meta info objects.\n\nINPUTS/OUTPUTS:\nThe code takes in a job ID, file system, configuration, and job submit directory as inputs. It outputs an array of split meta info objects.\n\nDEPENDENCIES:\nThis code depends on the JobID, FileSystem, Configuration, Path, and JobSplit classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

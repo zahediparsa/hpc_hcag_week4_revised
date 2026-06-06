@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "lib/output/committer",
+  "title": "Output committer manifest implementation",
+  "description": "This directory contains the implementation of the OutputCommitterManifest. The OutputCommitterManifest is responsible for managing the manifest file that records the output status of a task. The manifest file is used to recover the output status in case of failures. The files in this directory collaborate by reading and writing the manifest file. The OutputCommitterManifest uses the PathIOException class to handle exceptions related to file operations. The OutputCommitterManifest follows the Singleton pattern to ensure that only one instance of the manifest is created.",
+  "summary": "TITLE: Output committer manifest implementation\nDESCRIPTION: This directory contains the implementation of the OutputCommitterManifest. The OutputCommitterManifest is responsible for managing the manifest file that records the output status of a task. The manifest file is used to recover the output status in case of failures. The files in this directory collaborate by reading and writing the manifest file. The OutputCommitterManifest uses the PathIOException class to handle exceptions related to file operations. The OutputCommitterManifest follows the Singleton pattern to ensure that only one instance of the manifest is created.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Output committer manifest implementation\n\nDESCRIPTION:\nThis directory contains the implementation of the OutputCommitterManifest. The OutputCommitterManifest is responsible for managing the manifest file that records the output status of a task. The manifest file is used to recover the output status in case of failures. The files in this directory collaborate by reading and writing the manifest file. The OutputCommitterManifest uses the PathIOException class to handle exceptions related to file operations. The OutputCommitterManifest follows the Singleton pattern to ensure that only one instance of the manifest is created."
+}

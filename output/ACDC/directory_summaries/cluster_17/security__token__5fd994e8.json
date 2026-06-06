@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 17,
+  "directory": "security/token",
+  "title": "JobTokenSecretManager.java",
+  "description": "- SecretManager for job token\n- Can be used to cache generated job tokens\n- Computes the HMAC hash of a message using a key\n- Creates a new password/secret for a given job token identifier\n- Caches job tokens for fast access\n- Input: job token identifier, jobId, job token\n- Output: token password/secret as SecretKey, token password/secret as byte[]\n- Imported classes: SecretManager, Token, SecretKey, JobTokenIdentifier\n- Parent class: None\n- Collaborator classes: None",
+  "summary": "TITLE: JobTokenSecretManager.java\nDESCRIPTION: - SecretManager for job token\n- Can be used to cache generated job tokens\n- Computes the HMAC hash of a message using a key\n- Creates a new password/secret for a given job token identifier\n- Caches job tokens for fast access\n- Input: job token identifier, jobId, job token\n- Output: token password/secret as SecretKey, token password/secret as byte[]\n- Imported classes: SecretManager, Token, SecretKey, JobTokenIdentifier\n- Parent class: None\n- Collaborator classes: None",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobTokenSecretManager.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobTokenSecretManager.java\n\nDESCRIPTION:\n- SecretManager for job token\n- Can be used to cache generated job tokens\n- Computes the HMAC hash of a message using a key\n- Creates a new password/secret for a given job token identifier\n- Caches job tokens for fast access\n- Input: job token identifier, jobId, job token\n- Output: token password/secret as SecretKey, token password/secret as byte[]\n- Imported classes: SecretManager, Token, SecretKey, JobTokenIdentifier\n- Parent class: None\n- Collaborator classes: None"
+}

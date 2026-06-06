@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 9,
+  "directory": "task",
+  "title": "",
+  "description": "MapReduce is a programming model and an associated implementation for processing and generating large data sets.\n\nThe MapReduce framework consists of the following main components:\n\n-   Map function: responsible for processing the input data and generating intermediate key-value pairs.\n-   Shuffle and sort: responsible for sorting and grouping the intermediate key-value pairs by key.\n-   Reduce function: responsible for processing the intermediate key-value pairs and generating the final output.\n\nThe MapReduce framework is designed to handle large-scale data processing tasks efficiently and scalably. It is widely used in big data analytics, data mining, and distributed computing applications.",
+  "summary": "TITLE: \nDESCRIPTION: MapReduce is a programming model and an associated implementation for processing and generating large data sets.\n\nThe MapReduce framework consists of the following main components:\n\n-   Map function: responsible for processing the input data and generating intermediate key-value pairs.\n-   Shuffle and sort: responsible for sorting and grouping the intermediate key-value pairs by key.\n-   Reduce function: responsible for processing the intermediate key-value pairs and generating the final output.\n\nThe MapReduce framework is designed to handle large-scale data processing tasks efficiently and scalably. It is widely used in big data analytics, data mining, and distributed computing applications.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "MapContextImpl.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskInputOutputContextImpl.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "MapReduce is a programming model and an associated implementation for processing and generating large data sets.\n\nThe MapReduce framework consists of the following main components:\n\n-   Map function: responsible for processing the input data and generating intermediate key-value pairs.\n-   Shuffle and sort: responsible for sorting and grouping the intermediate key-value pairs by key.\n-   Reduce function: responsible for processing the intermediate key-value pairs and generating the final output.\n\nThe MapReduce framework is designed to handle large-scale data processing tasks efficiently and scalably. It is widely used in big data analytics, data mining, and distributed computing applications."
+}

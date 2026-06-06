@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": ".",
+  "title": "Directory-level architectural abstraction",
+  "description": "- The responsibility of this directory is to provide a way to aggregate values in a generic manner.\n- The classes in this directory collaborate by calling each other's methods to perform the aggregation.\n- The architectural role or pattern of this directory is to implement the ValueAggregator interface and provide a way to aggregate values based on their type and id.",
+  "summary": "TITLE: Directory-level architectural abstraction\nDESCRIPTION: - The responsibility of this directory is to provide a way to aggregate values in a generic manner.\n- The classes in this directory collaborate by calling each other's methods to perform the aggregation.\n- The architectural role or pattern of this directory is to implement the ValueAggregator interface and provide a way to aggregate values based on their type and id.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Directory-level architectural abstraction\n\nDESCRIPTION:\n- The responsibility of this directory is to provide a way to aggregate values in a generic manner.\n- The classes in this directory collaborate by calling each other's methods to perform the aggregation.\n- The architectural role or pattern of this directory is to implement the ValueAggregator interface and provide a way to aggregate values based on their type and id."
+}

@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "split",
+  "title": "Split",
+  "description": "The split directory is responsible for reading and writing splits. It collaborates with the Job clients to write splits and the JobTracker to read splits. The directory uses the JobSplit class to represent split meta information and raw split information. It also uses the org.apache.hadoop.mapred.InputSplit class to handle splits. The directory follows the Singleton pattern to ensure that only one instance of the JobSplit class is created.",
+  "summary": "TITLE: Split\nDESCRIPTION: The split directory is responsible for reading and writing splits. It collaborates with the Job clients to write splits and the JobTracker to read splits. The directory uses the JobSplit class to represent split meta information and raw split information. It also uses the org.apache.hadoop.mapred.InputSplit class to handle splits. The directory follows the Singleton pattern to ensure that only one instance of the JobSplit class is created.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobSplit.java"
+    },
+    {
+      "type": "file",
+      "name": "JobSplitWriter.java"
+    },
+    {
+      "type": "file",
+      "name": "SplitMetaInfoReader.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Split\n\nDESCRIPTION:\nThe split directory is responsible for reading and writing splits. It collaborates with the Job clients to write splits and the JobTracker to read splits. The directory uses the JobSplit class to represent split meta information and raw split information. It also uses the org.apache.hadoop.mapred.InputSplit class to handle splits. The directory follows the Singleton pattern to ensure that only one instance of the JobSplit class is created."
+}

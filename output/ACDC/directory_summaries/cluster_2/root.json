@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": ".",
+  "title": "JobHistory directory",
+  "description": "The JobHistory directory is responsible for storing the history of completed jobs in a Hadoop cluster. It collaborates with the JobTracker and TaskTracker to record job completion events and store them in a file. The architectural role of the JobHistory directory is to provide a centralized repository for job completion information, which can be used for debugging, performance analysis, and capacity planning. The directory uses the JobHistoryEventHandler to handle job completion events and store them in a file. The JobHistory directory also uses the JobHistoryFileOutputFormat to write the job completion events to a file in the JobHistory directory.\n\n--- DIRECTORY: util ---\nTITLE: Utility methods for Hadoop MapReduce\n\nDESCRIPTION: This directory contains utility methods for various tasks related to Hadoop MapReduce, such as constructing task log URLs, converting Counters to JSON, and converting Counters to TimelineMetric. These methods are used by different components of the Hadoop MapReduce framework, such as the JobTracker and the TaskTracker. The methods in this directory are used for internal communication and coordination, and for generating reports and metrics for monitoring and analysis.",
+  "summary": "TITLE: JobHistory directory\nDESCRIPTION: The JobHistory directory is responsible for storing the history of completed jobs in a Hadoop cluster. It collaborates with the JobTracker and TaskTracker to record job completion events and store them in a file. The architectural role of the JobHistory directory is to provide a centralized repository for job completion information, which can be used for debugging, performance analysis, and capacity planning. The directory uses the JobHistoryEventHandler to handle job completion events and store them in a file. The JobHistory directory also uses the JobHistoryFileOutputFormat to write the job completion events to a file in the JobHistory directory.\n\n--- DIRECTORY: util ---\nTITLE: Utility methods for Hadoop MapReduce\n\nDESCRIPTION: This directory contains utility methods for various tasks related to Hadoop MapReduce, such as constructing task log URLs, converting Counters to JSON, and converting Counters to TimelineMetric. These methods are used by different components of the Hadoop MapReduce framework, such as the JobTracker and the TaskTracker. The methods in this directory are used for internal communication and coordination, and for generating reports and metrics for monitoring and analysis.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "jobhistory"
+    },
+    {
+      "type": "directory",
+      "name": "util"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- DIRECTORY: jobhistory ---\nTITLE: JobHistory directory\n\nDESCRIPTION: The JobHistory directory is responsible for storing the history of completed jobs in a Hadoop cluster. It collaborates with the JobTracker and TaskTracker to record job completion events and store them in a file. The architectural role of the JobHistory directory is to provide a centralized repository for job completion information, which can be used for debugging, performance analysis, and capacity planning. The directory uses the JobHistoryEventHandler to handle job completion events and store them in a file. The JobHistory directory also uses the JobHistoryFileOutputFormat to write the job completion events to a file in the JobHistory directory.\n\n--- DIRECTORY: util ---\nTITLE: Utility methods for Hadoop MapReduce\n\nDESCRIPTION: This directory contains utility methods for various tasks related to Hadoop MapReduce, such as constructing task log URLs, converting Counters to JSON, and converting Counters to TimelineMetric. These methods are used by different components of the Hadoop MapReduce framework, such as the JobTracker and the TaskTracker. The methods in this directory are used for internal communication and coordination, and for generating reports and metrics for monitoring and analysis."
+}

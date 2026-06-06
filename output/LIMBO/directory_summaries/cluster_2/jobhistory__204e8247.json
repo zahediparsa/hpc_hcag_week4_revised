@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "jobhistory",
+  "title": "Hadoop MapReduce Architecture - History Directory",
+  "description": "The History directory in Hadoop MapReduce architecture is responsible for handling job history data and providing utility methods for converting arrays of integers to and from Avro lists. The HistoryEventHandler interface defines a method handleEvent that takes a HistoryEvent object as a parameter and throws an IOException. The HistoryViewerPrinter class contains the main method that prints job history in different formats using the HistoryViewer. The code does not contain any key algorithms or processing patterns visible in this chunk. The code depends on the HistoryViewer class and the PrintStream class.",
+  "summary": "TITLE: Hadoop MapReduce Architecture - History Directory\nDESCRIPTION: The History directory in Hadoop MapReduce architecture is responsible for handling job history data and providing utility methods for converting arrays of integers to and from Avro lists. The HistoryEventHandler interface defines a method handleEvent that takes a HistoryEvent object as a parameter and throws an IOException. The HistoryViewerPrinter class contains the main method that prints job history in different formats using the HistoryViewer. The code does not contain any key algorithms or processing patterns visible in this chunk. The code depends on the HistoryViewer class and the PrintStream class.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AvroArrayUtils.java"
+    },
+    {
+      "type": "file",
+      "name": "HistoryEventHandler.java"
+    },
+    {
+      "type": "file",
+      "name": "HistoryViewerPrinter.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture - History Directory\n\nDESCRIPTION:\nThe History directory in Hadoop MapReduce architecture is responsible for handling job history data and providing utility methods for converting arrays of integers to and from Avro lists. The HistoryEventHandler interface defines a method handleEvent that takes a HistoryEvent object as a parameter and throws an IOException. The HistoryViewerPrinter class contains the main method that prints job history in different formats using the HistoryViewer. The code does not contain any key algorithms or processing patterns visible in this chunk. The code depends on the HistoryViewer class and the PrintStream class."
+}

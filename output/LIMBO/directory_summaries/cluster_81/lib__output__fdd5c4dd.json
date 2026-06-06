@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 81,
+  "directory": "lib/output",
+  "title": "Output",
+  "description": "The Output directory contains classes and interfaces that handle the output of data from the MapReduce framework. It includes classes for committing output data, managing output formats, and handling the writing of output data.\n\n--- DIRECTORY: lib/output/committer ---\nTITLE: ManifestCommitterInternalConstants\nDESCRIPTION: The code defines constants used by the manifest committer. These constants represent different operations and statistics related to the manifest committer.",
+  "summary": "TITLE: Output\nDESCRIPTION: The Output directory contains classes and interfaces that handle the output of data from the MapReduce framework. It includes classes for committing output data, managing output formats, and handling the writing of output data.\n\n--- DIRECTORY: lib/output/committer ---\nTITLE: ManifestCommitterInternalConstants\nDESCRIPTION: The code defines constants used by the manifest committer. These constants represent different operations and statistics related to the manifest committer.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- DIRECTORY: lib/output ---\nTITLE: Output\nDESCRIPTION: The Output directory contains classes and interfaces that handle the output of data from the MapReduce framework. It includes classes for committing output data, managing output formats, and handling the writing of output data.\n\n--- DIRECTORY: lib/output/committer ---\nTITLE: ManifestCommitterInternalConstants\nDESCRIPTION: The code defines constants used by the manifest committer. These constants represent different operations and statistics related to the manifest committer."
+}

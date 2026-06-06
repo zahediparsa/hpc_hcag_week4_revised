@@ -1,0 +1,66 @@
+{
+  "type": "directory",
+  "cluster_id": 24,
+  "directory": "task/reduce",
+  "title": "MapReduce - Shuffle and Sort",
+  "description": "The shuffle and sort process is a crucial part of the MapReduce framework. It is responsible for merging the output of multiple map tasks into a single sorted output for the reduce task. The Shuffle class is responsible for managing the shuffle process and using a ShuffleSchedulerImpl to schedule the execution of map tasks. The MergeManager interface is used to merge the map output files, and the ShuffleSchedulerImpl class is responsible for scheduling the execution of map tasks. The ShuffleClientMetrics class is used to record shuffle client metrics, and the ShuffleSchedulerImpl class is responsible for scheduling the execution of map tasks.",
+  "summary": "TITLE: MapReduce - Shuffle and Sort\nDESCRIPTION: The shuffle and sort process is a crucial part of the MapReduce framework. It is responsible for merging the output of multiple map tasks into a single sorted output for the reduce task. The Shuffle class is responsible for managing the shuffle process and using a ShuffleSchedulerImpl to schedule the execution of map tasks. The MergeManager interface is used to merge the map output files, and the ShuffleSchedulerImpl class is responsible for scheduling the execution of map tasks. The ShuffleClientMetrics class is used to record shuffle client metrics, and the ShuffleSchedulerImpl class is responsible for scheduling the execution of map tasks.",
+  "number_of_children": 13,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "EventFetcher.java"
+    },
+    {
+      "type": "file",
+      "name": "Fetcher.java"
+    },
+    {
+      "type": "file",
+      "name": "IFileWrappedMapOutput.java"
+    },
+    {
+      "type": "file",
+      "name": "InMemoryMapOutput.java"
+    },
+    {
+      "type": "file",
+      "name": "InMemoryReader.java"
+    },
+    {
+      "type": "file",
+      "name": "LocalFetcher.java"
+    },
+    {
+      "type": "file",
+      "name": "MapHost.java"
+    },
+    {
+      "type": "file",
+      "name": "MapOutput.java"
+    },
+    {
+      "type": "file",
+      "name": "MergeManager.java"
+    },
+    {
+      "type": "file",
+      "name": "OnDiskMapOutput.java"
+    },
+    {
+      "type": "file",
+      "name": "Shuffle.java"
+    },
+    {
+      "type": "file",
+      "name": "ShuffleClientMetrics.java"
+    },
+    {
+      "type": "file",
+      "name": "ShuffleSchedulerImpl.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce - Shuffle and Sort\n\nDESCRIPTION:\nThe shuffle and sort process is a crucial part of the MapReduce framework. It is responsible for merging the output of multiple map tasks into a single sorted output for the reduce task. The Shuffle class is responsible for managing the shuffle process and using a ShuffleSchedulerImpl to schedule the execution of map tasks. The MergeManager interface is used to merge the map output files, and the ShuffleSchedulerImpl class is responsible for scheduling the execution of map tasks. The ShuffleClientMetrics class is used to record shuffle client metrics, and the ShuffleSchedulerImpl class is responsible for scheduling the execution of map tasks."
+}

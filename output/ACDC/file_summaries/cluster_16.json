@@ -1,0 +1,98 @@
+[
+  {
+    "algorithm": "ACDC",
+    "cluster": 16,
+    "class": "org.apache.hadoop.mapreduce.ClusterMetrics",
+    "path": "ClusterMetrics.java",
+    "file_name": "ClusterMetrics.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\n\nThe main purpose of this chunk of code is to provide information about the current state of the Map-Reduce cluster.\n\nCORE LOGIC:\n\nThe code does not contain any key algorithms or processing patterns.\n\nINPUTS/OUTPUTS:\n\nThe code does not contain any data flowing in or out.\n\nDEPENDENCIES:\n\nThe code does not import, parent, or collaborate with any key classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 16,
+    "class": "org.apache.hadoop.mapreduce.QueueAclsInfo",
+    "path": "QueueAclsInfo.java",
+    "file_name": "QueueAclsInfo.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY: main purpose visible in this chunk\nCORE LOGIC: key algorithms or processing patterns visible in this chunk\nINPUTS/OUTPUTS: data flowing in and out\nDEPENDENCIES: key imported, parent, or collaborator classes visible in this chunk\n\nQueueAclsInfo is a Java class that encapsulates Queue ACLs for a particular user.\n\nQueueAclsInfo has the following key functionality:\n- It has a default constructor that initializes the queueName and operations to null.\n- It has a constructor that takes a queueName and operations array as parameters and initializes the corresponding instance variables.\n- It has getter and setter methods for queueName and operations.\n- It implements the Writable interface, which allows it to be serialized and deserialized.\n\nQueueAclsInfo has the following core logic:\n- It uses the StringInterner class to intern strings, which can improve performance by reducing the number of objects created.\n- It uses the Text class to read and write strings to a DataInput or DataOutput.\n- It uses the WritableUtils class to read and write arrays of strings to a DataInput or DataOutput.\n\nQueueAclsInfo has the following inputs/outputs:\n- It has a queueName and operations array as instance variables, which can be set and read using the getter and setter methods.\n- It implements the Writable interface, which allows it to be read from or written to a DataInput or DataOutput.\n\nQueueAclsInfo has the following dependencies:\n- It imports the StringInterner, Text, Writable, and WritableUtils classes from the org.apache.hadoop package.\n- It imports the IOException class from the java.io package.\n- It has no parent or collaborator classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 16,
+    "class": "org.apache.hadoop.mapreduce.TaskTrackerInfo",
+    "path": "TaskTrackerInfo.java",
+    "file_name": "TaskTrackerInfo.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\n- The TaskTrackerInfo class contains information about a TaskTracker, including its name, blacklisting status, reason for blacklisting, and blacklist report.\n\nCORE LOGIC:\n- The class provides methods to get the tasktracker's name, check if it is blacklisted, get the reason for blacklisting, and get a descriptive report about why the tasktracker was blacklisted.\n\nINPUTS/OUTPUTS:\n- The class implements the Writable interface, allowing it to be serialized and deserialized.\n\nDEPENDENCIES:\n- The class does not depend on any other classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 16,
+    "class": "org.apache.hadoop.mapreduce.protocol.ClientProtocol",
+    "path": "protocol/ClientProtocol.java",
+    "file_name": "ClientProtocol.java",
+    "directory": "protocol",
+    "summary": "KEY FUNCTIONALITY: Submits a job for execution and returns the latest profile for that job.\nCORE LOGIC: None.\nINPUTS/OUTPUTS: None.\nDEPENDENCIES: None.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 16,
+    "class": "org.apache.hadoop.mapreduce.security.token.delegation.DelegationTokenIdentifier",
+    "path": "security/token/delegation/DelegationTokenIdentifier.java",
+    "file_name": "DelegationTokenIdentifier.java",
+    "directory": "security/token/delegation",
+    "summary": "KEY FUNCTIONALITY:\n\nThis code defines a class called DelegationTokenIdentifier that extends the AbstractDelegationTokenIdentifier class. It provides functionality for creating and managing delegation tokens specific to MapReduce.\n\nCORE LOGIC:\n\nThe code implements the necessary methods to create and manage delegation tokens. It overrides the getKind() method to return the specific kind of delegation token, which in this case is MAPREDUCE_DELEGATION_KIND.\n\nINPUTS/OUTPUTS:\n\nThe code takes in the effective username of the token owner, the username of the renewer, and the real username of the token owner as inputs when creating a new delegation token identifier.\n\nDEPENDENCIES:\n\nThe code depends on the AbstractDelegationTokenIdentifier class and the Text class from the Apache Hadoop library. It also imports the InterfaceAudience and InterfaceStability annotations from the same library.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 16,
+    "class": "org.apache.hadoop.mapreduce.security.token.delegation.DelegationTokenSecretManager",
+    "path": "security/token/delegation/DelegationTokenSecretManager.java",
+    "file_name": "DelegationTokenSecretManager.java",
+    "directory": "security/token/delegation",
+    "summary": "KEY FUNCTIONALITY:\n\nThe main purpose of this chunk of code is to create a MapReduce specific delegation token secret manager. The secret manager is responsible for generating and accepting the password for each token.\n\nCORE LOGIC:\n\nThe code chunk does not contain any key algorithms or processing patterns visible in this chunk.\n\nINPUTS/OUTPUTS:\n\nThe code chunk does not contain any data flowing in or out.\n\nDEPENDENCIES:\n\nThe code chunk depends on the following classes:\n\nAbstractDelegationTokenSecretManager\nDelegationTokenIdentifier",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 16,
+    "class": "org.apache.hadoop.mapreduce.security.token.delegation.DelegationTokenSelector",
+    "path": "security/token/delegation/DelegationTokenSelector.java",
+    "file_name": "DelegationTokenSelector.java",
+    "directory": "security/token/delegation",
+    "summary": "KEY FUNCTIONALITY:\n\nThe main purpose of this chunk of code is to define a class that extends the AbstractDelegationTokenSelector class and specializes it for MapReduce.\n\nCORE LOGIC:\n\nThe code does not contain any key algorithms or processing patterns visible in this chunk.\n\nINPUTS/OUTPUTS:\n\nThe code does not contain any data flowing in or out.\n\nDEPENDENCIES:\n\nThe code depends on the AbstractDelegationTokenSelector class and the DelegationTokenIdentifier class.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 16,
+    "class": "org.apache.hadoop.mapreduce.v2.LogParams",
+    "path": "v2/LogParams.java",
+    "file_name": "LogParams.java",
+    "directory": "v2",
+    "summary": "KEY FUNCTIONALITY:\nThis class is used to store the parameters required for fetching logs.\n\nCORE LOGIC:\nThe class has a constructor that takes in the required parameters and sets them as instance variables. It also has getter and setter methods for each parameter.\n\nINPUTS/OUTPUTS:\nThe class has four instance variables: containerId, applicationId, nodeId, and owner. These variables are set in the constructor and can be accessed using the getter and setter methods.\n\nDEPENDENCIES:\nThis class does not depend on any other classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

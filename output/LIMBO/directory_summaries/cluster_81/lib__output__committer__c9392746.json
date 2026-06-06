@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 81,
+  "directory": "lib/output/committer",
+  "title": "ManifestCommitterInternalConstants",
+  "description": "The code defines constants used by the manifest committer. These constants represent different operations and statistics related to the manifest committer.",
+  "summary": "TITLE: ManifestCommitterInternalConstants\nDESCRIPTION: The code defines constants used by the manifest committer. These constants represent different operations and statistics related to the manifest committer.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ManifestCommitterInternalConstants\n\nDESCRIPTION:\nThe code defines constants used by the manifest committer. These constants represent different operations and statistics related to the manifest committer."
+}

@@ -1,0 +1,28 @@
+{
+  "cluster_id": 12,
+  "title": "Hadoop MapReduce Architecture",
+  "description": "The Hadoop MapReduce architecture is responsible for processing large-scale data sets using distributed computing. It consists of two main components: the JobTracker and the TaskTrackers. The JobTracker is responsible for scheduling and monitoring MapReduce jobs, while the TaskTrackers execute the tasks assigned by the JobTracker. The files in this directory collaborate by sharing information and coordinating the execution of tasks. The architectural role of this directory is to provide a high-level abstraction for processing large-scale data sets using distributed computing. The pattern used in this directory is the master-slave pattern, which is a distributed pattern that separates the control plane from the data plane.",
+  "description_word_count": 104,
+  "number_of_files": 8,
+  "number_of_directories": 7,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is responsible for processing large-scale data sets using distributed computing. It consists of two main components: the JobTracker and the TaskTrackers. The JobTracker is responsible for scheduling and monitoring MapReduce jobs, while the TaskTrackers execute the tasks assigned by the JobTracker. The files in this directory collaborate by sharing information and coordinating the execution of tasks. The architectural role of this directory is to provide a high-level abstraction for processing large-scale data sets using distributed computing. The pattern used in this directory is the master-slave pattern, which is a distributed pattern that separates the control plane from the data plane.",
+  "algorithm": "LIMBO",
+  "files": [
+    "JobResourceUploader.java",
+    "JobSubmitter.java",
+    "lib/aggregate/ValueAggregatorJob.java",
+    "lib/input/FileInputFormat.java",
+    "lib/input/MultipleInputs.java",
+    "lib/jobcontrol/ControlledJob.java",
+    "lib/partition/InputSampler.java",
+    "util/ConfigUtil.java"
+  ]
+}

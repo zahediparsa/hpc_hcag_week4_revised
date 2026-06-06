@@ -1,0 +1,98 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 4,
+    "class": "org.apache.hadoop.mapreduce.CounterGroup",
+    "path": "CounterGroup.java",
+    "file_name": "CounterGroup.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\n\nThis chunk defines an interface for a group of counters.\n\nCORE LOGIC:\n\nThis chunk does not contain any core logic.\n\nINPUTS/OUTPUTS:\n\nThis chunk does not contain any inputs or outputs.\n\nDEPENDENCIES:\n\nThis chunk depends on the CounterGroupBase class and the Counter class.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 4,
+    "class": "org.apache.hadoop.mapreduce.counters.AbstractCounterGroup",
+    "path": "counters/AbstractCounterGroup.java",
+    "file_name": "AbstractCounterGroup.java",
+    "directory": "counters",
+    "summary": "KEY FUNCTIONALITY:\n- The class provides a common implementation of the generic counter group in both mapred and mapreduce package.\n\nCORE LOGIC:\n- The class uses a ConcurrentMap to store the counters and provides methods to add, find, and iterate over the counters.\n- It also provides methods to set and get the display name of the group.\n\nINPUTS/OUTPUTS:\n- The class provides methods to read and write the group data to/from a DataInput/DataOutput stream.\n\nDEPENDENCIES:\n- The class depends on the Counter and CounterGroupBase interfaces, as well as the Text, WritableUtils, and StringInterner classes from the Apache Hadoop framework.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 4,
+    "class": "org.apache.hadoop.mapreduce.counters.AbstractCounters",
+    "path": "counters/AbstractCounters.java",
+    "file_name": "AbstractCounters.java",
+    "directory": "counters",
+    "summary": "KEY FUNCTIONALITY:\n- The class provides a common implementation for the Counters container in both mapred and mapreduce packages.\n- It includes methods for adding groups, finding counters, and incrementing multiple counters by their amounts in another Counters instance.\n\nCORE LOGIC:\n- The class uses a cache from enum values to the associated counter to optimize performance.\n- It also includes a method for writing the set of groups to a DataOutput.\n\nINPUTS/OUTPUTS:\n- The class takes a CounterGroupFactory as a parameter in its constructor, which is used to create new groups.\n- It also takes a Limits object as a parameter, which is used to check the limits of the number of groups and counters.\n\nDEPENDENCIES:\n- The class depends on the CounterGroupFactory and Limits classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 4,
+    "class": "org.apache.hadoop.mapreduce.counters.CounterGroupFactory",
+    "path": "counters/CounterGroupFactory.java",
+    "file_name": "CounterGroupFactory.java",
+    "directory": "counters",
+    "summary": "KEY FUNCTIONALITY:\n\nThe CounterGroupFactory class is an abstract class that provides common implementation of the group factory in both mapred and mapreduce packages. It contains methods for creating new counter groups, mapping framework groups, and checking whether a group name is a framework group.\n\nCORE LOGIC:\n\nThe CounterGroupFactory class contains methods for creating new counter groups, mapping framework groups, and checking whether a group name is a framework group. It also contains methods for creating new framework groups and getting the id of a framework group.\n\nINPUTS/OUTPUTS:\n\nThe CounterGroupFactory class takes in the name and displayName of a counter group, as well as a limits object that specifies the counters limits policy. It returns a new counter group based on the input parameters.\n\nDEPENDENCIES:\n\nThe CounterGroupFactory class depends on the Counter, FileSystemCounter, JobCounter, and TaskCounter classes from the mapreduce package, as well as the ResourceBundles class from the util package. It also depends on the Limits class from the counters package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 4,
+    "class": "org.apache.hadoop.mapreduce.counters.FileSystemCounterGroup",
+    "path": "counters/FileSystemCounterGroup.java",
+    "file_name": "FileSystemCounterGroup.java",
+    "directory": "counters",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class provides a common implementation of the filesystem counter group in both mapred and mapreduce packages.\n\nCORE LOGIC:\n\nThe class initializes a map to store the file system counters and provides methods to add, find, and increment counters. It also provides methods to read and write the counters to/from a DataInput/DataOutput stream.\n\nINPUTS/OUTPUTS:\n\nThe class takes a DataInput and DataOutput stream as input/output for reading/writing the counters.\n\nDEPENDENCIES:\n\nThe class depends on the Counter and FileSystemCounter classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 4,
+    "class": "org.apache.hadoop.mapreduce.counters.FrameworkCounterGroup",
+    "path": "counters/FrameworkCounterGroup.java",
+    "file_name": "FrameworkCounterGroup.java",
+    "directory": "counters",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class provides a framework for implementing counter groups in both mapred and mapreduce packages. It includes methods for adding, finding, and incrementing counters, as well as reading and writing counter data.\n\nCORE LOGIC:\n\nThe class includes a counter facade for framework counters, which allows for compatibility between old and new interfaces. It also includes methods for adding, finding, and incrementing counters, as well as reading and writing counter data.\n\nINPUTS/OUTPUTS:\n\nThe class takes in a class object representing the counter enum class, and provides methods for adding, finding, and incrementing counters. It also includes methods for reading and writing counter data.\n\nDEPENDENCIES:\n\nThe class depends on the org.apache.hadoop.mapreduce.counters package and the org.apache.hadoop.mapreduce.util package. It also depends on the org.apache.hadoop.io package for reading and writing counter data.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 4,
+    "class": "org.apache.hadoop.mapreduce.util.CountersStrings",
+    "path": "util/CountersStrings.java",
+    "file_name": "CountersStrings.java",
+    "directory": "util",
+    "summary": "KEY FUNCTIONALITY:\nThis code provides utilities for converting counter data to and from a compact string format.\n\nCORE LOGIC:\nThe code includes methods for escaping and unescaping delimiters in counter strings, as well as methods for converting counter objects to and from compact strings.\n\nINPUTS/OUTPUTS:\nThe code takes counter objects as input and produces compact strings as output.\n\nDEPENDENCIES:\nThe code depends on the Apache Hadoop MapReduce library and the Apache Hadoop classification library.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 4,
+    "class": "org.apache.hadoop.mapreduce.util.JobHistoryEventUtils",
+    "path": "util/JobHistoryEventUtils.java",
+    "file_name": "JobHistoryEventUtils.java",
+    "directory": "util",
+    "summary": "KEY FUNCTIONALITY:\nThis code contains utility methods for converting Counters to JSON and to TimelineMetric.\n\nCORE LOGIC:\nThe countersToJSON method converts the given Counters object to a JSON representation using the Jackson library.\nThe countersToTimelineMetric method converts the given Counters object to a set of TimelineMetric objects, with an optional group name prefix.\n\nINPUTS/OUTPUTS:\nThe countersToJSON method takes a Counters object as input and returns a JSON representation of the counters.\nThe countersToTimelineMetric method takes a Counters object, a timestamp, and an optional group name prefix as input, and returns a set of TimelineMetric objects.\n\nDEPENDENCIES:\nThis code depends on the Jackson library for JSON serialization and deserialization, as well as the TimelineMetric class from the yarn.api.records.timelineservice package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

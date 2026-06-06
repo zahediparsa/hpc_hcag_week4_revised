@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 66,
+  "directory": ".",
+  "title": "lib",
+  "description": "- The lib directory contains the libraries used by the system.\n- The libraries are divided into subdirectories based on their functionality.\n- The subdirectories collaborate to provide the required functionality to the system.\n- The lib directory follows the architectural pattern of the system.",
+  "summary": "TITLE: lib\nDESCRIPTION: - The lib directory contains the libraries used by the system.\n- The libraries are divided into subdirectories based on their functionality.\n- The subdirectories collaborate to provide the required functionality to the system.\n- The lib directory follows the architectural pattern of the system.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib\n\nDESCRIPTION:\n- The lib directory contains the libraries used by the system.\n- The libraries are divided into subdirectories based on their functionality.\n- The subdirectories collaborate to provide the required functionality to the system.\n- The lib directory follows the architectural pattern of the system."
+}

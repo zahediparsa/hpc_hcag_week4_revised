@@ -1,0 +1,22 @@
+{
+  "cluster_id": 17,
+  "title": "Hadoop MapReduce Security Architecture",
+  "description": "The Hadoop MapReduce security architecture is responsible for generating and verifying hashes using a secret key, as well as caching job tokens for fast access. The architecture consists of the following components: - JobTokenSecretManager: This component is responsible for generating and verifying hashes using a secret key. It collaborates with the classes in the security directory to cache job tokens. - Security classes: These classes are responsible for security-related functionality in Hadoop MapReduce. They collaborate with the JobTokenSecretManager to generate and verify hashes and cache job tokens. - SecretManager pattern: The SecretManager pattern is used in the security directory to provide a centralized way to manage secrets and tokens. The architecture achieves scalability, maintainability, and reliability by using the SecretManager pattern to manage secrets and tokens. It also achieves security by generating and verifying hashes using a secret key. The architecture uses technologies such as Java and the Hadoop MapReduce.",
+  "description_word_count": 147,
+  "number_of_files": 2,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Security Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce security architecture is responsible for generating and verifying hashes using a secret key, as well as caching job tokens for fast access. The architecture consists of the following components:\n\n- JobTokenSecretManager: This component is responsible for generating and verifying hashes using a secret key. It collaborates with the classes in the security directory to cache job tokens.\n- Security classes: These classes are responsible for security-related functionality in Hadoop MapReduce. They collaborate with the JobTokenSecretManager to generate and verify hashes and cache job tokens.\n- SecretManager pattern: The SecretManager pattern is used in the security directory to provide a centralized way to manage secrets and tokens.\n\nThe architecture achieves scalability, maintainability, and reliability by using the SecretManager pattern to manage secrets and tokens. It also achieves security by generating and verifying hashes using a secret key. The architecture uses technologies such as Java and the Hadoop MapReduce framework.",
+  "algorithm": "ACDC",
+  "files": [
+    "security/SecureShuffleUtils.java",
+    "security/token/JobTokenSecretManager.java"
+  ]
+}

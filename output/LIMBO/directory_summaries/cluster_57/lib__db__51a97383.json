@@ -1,0 +1,50 @@
+{
+  "type": "directory",
+  "cluster_id": 57,
+  "directory": "lib/db",
+  "title": "lib/db",
+  "description": "This directory contains classes for reading data from a database using MapReduce.\n\nThe classes in this directory collaborate to read data from a database table and emit records as key-value pairs.\n\nThe architectural role of this directory is to provide a high-level interface for reading data from a database and handling the distributed processing of the data.\n\nThe classes in this directory use the Apache Hadoop MapReduce framework and the Apache Hadoop classification library.",
+  "summary": "TITLE: lib/db\nDESCRIPTION: This directory contains classes for reading data from a database using MapReduce.\n\nThe classes in this directory collaborate to read data from a database table and emit records as key-value pairs.\n\nThe architectural role of this directory is to provide a high-level interface for reading data from a database and handling the distributed processing of the data.\n\nThe classes in this directory use the Apache Hadoop MapReduce framework and the Apache Hadoop classification library.",
+  "number_of_children": 9,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "DBInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "DBRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "DataDrivenDBInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "DataDrivenDBRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "MySQLDBRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "MySQLDataDrivenDBRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "OracleDBRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "OracleDataDrivenDBInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "OracleDataDrivenDBRecordReader.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/db\n\nDESCRIPTION:\nThis directory contains classes for reading data from a database using MapReduce.\n\nThe classes in this directory collaborate to read data from a database table and emit records as key-value pairs.\n\nThe architectural role of this directory is to provide a high-level interface for reading data from a database and handling the distributed processing of the data.\n\nThe classes in this directory use the Apache Hadoop MapReduce framework and the Apache Hadoop classification library."
+}

@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 12,
+  "directory": "lib/input",
+  "title": "lib/input",
+  "description": "The lib/input directory is responsible for handling input data for MapReduce jobs. It provides a way to specify different input paths with different InputFormats and Mappers for a MapReduce job. The code uses a DelegatingInputFormat and DelegatingMapper to handle the different input paths and their corresponding InputFormats and Mappers. This allows for flexibility in processing different types of input data with different Mappers. The code also handles dependencies on the org.apache.hadoop.mapreduce.lib.input package and its dependencies.",
+  "summary": "TITLE: lib/input\nDESCRIPTION: The lib/input directory is responsible for handling input data for MapReduce jobs. It provides a way to specify different input paths with different InputFormats and Mappers for a MapReduce job. The code uses a DelegatingInputFormat and DelegatingMapper to handle the different input paths and their corresponding InputFormats and Mappers. This allows for flexibility in processing different types of input data with different Mappers. The code also handles dependencies on the org.apache.hadoop.mapreduce.lib.input package and its dependencies.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "FileInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "MultipleInputs.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/input\n\nDESCRIPTION:\nThe lib/input directory is responsible for handling input data for MapReduce jobs. It provides a way to specify different input paths with different InputFormats and Mappers for a MapReduce job. The code uses a DelegatingInputFormat and DelegatingMapper to handle the different input paths and their corresponding InputFormats and Mappers. This allows for flexibility in processing different types of input data with different Mappers. The code also handles dependencies on the org.apache.hadoop.mapreduce.lib.input package and its dependencies."
+}

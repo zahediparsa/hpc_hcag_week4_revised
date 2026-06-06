@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 70,
+    "class": "org.apache.hadoop.mapreduce.lib.join.JoinRecordReader",
+    "path": "lib/join/JoinRecordReader.java",
+    "file_name": "JoinRecordReader.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\n- The JoinRecordReader class is a base class forComposite joins returning Tuples of arbitrary Writables.\n\nCORE LOGIC:\n- The JoinRecordReader class uses a PriorityQueue to manage the child RecordReaders and process the key, value pairs.\n- It uses the JoinCollector to collect and manage the key, value pairs from the child RecordReaders.\n\nINPUTS/OUTPUTS:\n- The JoinRecordReader class takes an id, configuration, capacity, and a WritableComparator class as inputs.\n- It outputs the next set of key, value pairs as defined by the child RecordReaders and operation associated with this composite RR.\n\nDEPENDENCIES:\n- The JoinRecordReader class depends on the org.apache.hadoop.mapreduce.lib.join package and its dependencies.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 70,
+    "class": "org.apache.hadoop.mapreduce.lib.join.OverrideRecordReader",
+    "path": "lib/join/OverrideRecordReader.java",
+    "file_name": "OverrideRecordReader.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this chunk of code is to override the behavior of the RecordReader class to prefer the \"rightmost\" data source for a given key.\n\nCORE LOGIC:\nThe code uses a PriorityQueue to store the RecordReaders and a WritableComparator to compare the keys. It then iterates through the RecordReaders, keeping track of the highest position for the key and emitting the value from the RecordReader at that position.\n\nINPUTS/OUTPUTS:\nThe code takes in a key and a list of RecordReaders, and it outputs the value from the \"rightmost\" RecordReader for that key.\n\nDEPENDENCIES:\nThe code depends on the WritableComparable, Writable, WritableComparator, Configuration, ReflectionUtils, and NullWritable classes. It also depends on the ComposableRecordReader, TupleWritable, and MultiFilterRecordReader classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

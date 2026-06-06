@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 22,
+  "directory": "server/tasktracker",
+  "title": "Server-side TaskTracker configuration",
+  "description": "The TTConfig class is a placeholder for MapReduce server-level configuration. It defines constants for the shuffle index cache size, maximum number of map tasks that can run on the task tracker, and the resource calculator plugin to be used by the task tracker.",
+  "summary": "TITLE: Server-side TaskTracker configuration\nDESCRIPTION: The TTConfig class is a placeholder for MapReduce server-level configuration. It defines constants for the shuffle index cache size, maximum number of map tasks that can run on the task tracker, and the resource calculator plugin to be used by the task tracker.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "TTConfig.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Server-side TaskTracker configuration\n\nDESCRIPTION:\nThe TTConfig class is a placeholder for MapReduce server-level configuration. It defines constants for the shuffle index cache size, maximum number of map tasks that can run on the task tracker, and the resource calculator plugin to be used by the task tracker."
+}

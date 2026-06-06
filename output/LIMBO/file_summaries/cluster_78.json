@@ -1,0 +1,74 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 78,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.AuditingIntegration",
+    "path": "lib/output/committer/manifest/impl/AuditingIntegration.java",
+    "file_name": "AuditingIntegration.java",
+    "directory": "lib/output/committer/manifest/impl",
+    "summary": "KEY FUNCTIONALITY:\n- Integration with Hadoop 3.3.2+ Auditing\n- Update common context with job ID and task attempt ID\n- Enter and exit stages\n- Update thread context with stage name and job ID\n\nCORE LOGIC:\n- Update common context with job ID and task attempt ID\n- Enter and exit stages\n- Update thread context with stage name and job ID\n\nINPUTS/OUTPUTS:\n- None\n\nDEPENDENCIES:\n- org.apache.hadoop.classification.InterfaceAudience\n- org.apache.hadoop.fs.audit.CommonAuditContext\n- org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterConfig\n- org.apache.hadoop.fs.audit.AuditConstants.PARAM_JOB_ID\n- org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterConstants.CONTEXT_ATTR_STAGE\n- org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterConstants.CONTEXT_ATTR_TASK_ATTEMPT_ID",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 78,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.AbortTaskStage",
+    "path": "lib/output/committer/manifest/stages/AbortTaskStage.java",
+    "file_name": "AbortTaskStage.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY: Abort a task by deleting the task directory.\nCORE LOGIC: Delete the task attempt directory.\nINPUTS/OUTPUTS: The task attempt directory.\nDEPENDENCIES: None.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 78,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.CleanupJobStage",
+    "path": "lib/output/committer/manifest/stages/CleanupJobStage.java",
+    "file_name": "CleanupJobStage.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this chunk is to clean up a job's temporary directory through parallel delete, base _temporary delete.\n\nCORE LOGIC:\nThe key algorithms or processing patterns visible in this chunk are the parallel deletion of task attempt directories and the deletion of the base directory.\n\nINPUTS/OUTPUTS:\nThe data flowing in and out of this chunk is the job's temporary directory.\n\nDEPENDENCIES:\nThe key imported, parent, or collaborator classes visible in this chunk are the CleanupJobStage, StageConfig, AbstractJobOrTaskStage, and other classes from the same package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 78,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.SaveSuccessFileStage",
+    "path": "lib/output/committer/manifest/stages/SaveSuccessFileStage.java",
+    "file_name": "SaveSuccessFileStage.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY: Save the _SUCCESS file to the destination directory via a temp file in the job attempt dir.\nCORE LOGIC: Returns the path of the file.\nINPUTS/OUTPUTS: successData (success data to save), successFile (path of the file to save), successTempFile (path of the temp file to save to).\nDEPENDENCIES: StageConfig, OP_STAGE_JOB_COMMIT, OP_STAGE_JOB_SAVE_SUCCESS, OP_SAVE_SUMMARY_FILE.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 78,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.SetupJobStage",
+    "path": "lib/output/committer/manifest/stages/SetupJobStage.java",
+    "file_name": "SetupJobStage.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this chunk of code is to set up a job by creating the job attempt directory.\n\nCORE LOGIC:\nThe key algorithm or processing pattern visible in this chunk is the creation of the job attempt directory.\n\nINPUTS/OUTPUTS:\nThe data flowing in is the deleteMarker boolean, which indicates whether any success marker should be deleted.\nThe data flowing out is the job attempt directory path.\n\nDEPENDENCIES:\nThe key imported, parent, or collaborator classes visible in this chunk are:\n- org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.AbstractJobOrTaskStage\n- org.apache.hadoop.fs.Path\n- org.slf4j.Logger\n- org.slf4j.LoggerFactory\n- org.apache.hadoop.fs.statistics.StoreStatisticNames.OP_DELETE\n- org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterStatisticNames.OP_STAGE_JOB_SETUP",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 78,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.SetupTaskStage",
+    "path": "lib/output/committer/manifest/stages/SetupTaskStage.java",
+    "file_name": "SetupTaskStage.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this chunk of code is to set up a task in the Apache Hadoop MapReduce framework.\n\nCORE LOGIC:\nThe key algorithm or processing pattern visible in this chunk is the creation of the task attempt directory. This directory is created after verifying that the job attempt directory exists.\n\nINPUTS/OUTPUTS:\nThe data flowing in is the task name, and the data flowing out is the task attempt directory.\n\nDEPENDENCIES:\nThe key imported, parent, or collaborator classes visible in this chunk are the Apache Hadoop classes related to MapReduce, such as Path, IOException, and StageConfig.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

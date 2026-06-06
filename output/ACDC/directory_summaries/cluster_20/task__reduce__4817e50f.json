@@ -1,0 +1,90 @@
+{
+  "type": "directory",
+  "cluster_id": 20,
+  "directory": "task/reduce",
+  "title": "MapReduce - Shuffle and Sort",
+  "description": "The shuffle and sort phase of a MapReduce job is responsible for merging the output of multiple map tasks into a single sorted output for the reduce task. This phase involves several key components, including the ShuffleScheduler, MergeManager, Fetcher, and EventFetcher. The ShuffleScheduler is responsible for scheduling the execution of map tasks, while the MergeManager is responsible for merging the map output files. The Fetcher and EventFetcher threads are used to fetch map output and shuffle events from the shuffle server. The shuffle and sort phase is a critical part of the MapReduce framework, as it ensures that the reduce task receives the data in the correct order and format for processing.",
+  "summary": "TITLE: MapReduce - Shuffle and Sort\nDESCRIPTION: The shuffle and sort phase of a MapReduce job is responsible for merging the output of multiple map tasks into a single sorted output for the reduce task. This phase involves several key components, including the ShuffleScheduler, MergeManager, Fetcher, and EventFetcher. The ShuffleScheduler is responsible for scheduling the execution of map tasks, while the MergeManager is responsible for merging the map output files. The Fetcher and EventFetcher threads are used to fetch map output and shuffle events from the shuffle server. The shuffle and sort phase is a critical part of the MapReduce framework, as it ensures that the reduce task receives the data in the correct order and format for processing.",
+  "number_of_children": 19,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "EventFetcher.java"
+    },
+    {
+      "type": "file",
+      "name": "ExceptionReporter.java"
+    },
+    {
+      "type": "file",
+      "name": "Fetcher.java"
+    },
+    {
+      "type": "file",
+      "name": "IFileWrappedMapOutput.java"
+    },
+    {
+      "type": "file",
+      "name": "InMemoryMapOutput.java"
+    },
+    {
+      "type": "file",
+      "name": "InMemoryReader.java"
+    },
+    {
+      "type": "file",
+      "name": "InMemoryWriter.java"
+    },
+    {
+      "type": "file",
+      "name": "LocalFetcher.java"
+    },
+    {
+      "type": "file",
+      "name": "MapHost.java"
+    },
+    {
+      "type": "file",
+      "name": "MapOutput.java"
+    },
+    {
+      "type": "file",
+      "name": "MergeManager.java"
+    },
+    {
+      "type": "file",
+      "name": "MergeManagerImpl.java"
+    },
+    {
+      "type": "file",
+      "name": "MergeThread.java"
+    },
+    {
+      "type": "file",
+      "name": "OnDiskMapOutput.java"
+    },
+    {
+      "type": "file",
+      "name": "Shuffle.java"
+    },
+    {
+      "type": "file",
+      "name": "ShuffleClientMetrics.java"
+    },
+    {
+      "type": "file",
+      "name": "ShuffleHeader.java"
+    },
+    {
+      "type": "file",
+      "name": "ShuffleScheduler.java"
+    },
+    {
+      "type": "file",
+      "name": "ShuffleSchedulerImpl.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce - Shuffle and Sort\n\nDESCRIPTION:\nThe shuffle and sort phase of a MapReduce job is responsible for merging the output of multiple map tasks into a single sorted output for the reduce task. This phase involves several key components, including the ShuffleScheduler, MergeManager, Fetcher, and EventFetcher. The ShuffleScheduler is responsible for scheduling the execution of map tasks, while the MergeManager is responsible for merging the map output files. The Fetcher and EventFetcher threads are used to fetch map output and shuffle events from the shuffle server. The shuffle and sort phase is a critical part of the MapReduce framework, as it ensures that the reduce task receives the data in the correct order and format for processing."
+}

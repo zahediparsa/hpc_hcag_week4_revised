@@ -1,0 +1,62 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 51,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.UserDefinedValueAggregatorDescriptor",
+    "path": "lib/aggregate/UserDefinedValueAggregatorDescriptor.java",
+    "file_name": "UserDefinedValueAggregatorDescriptor.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY:\n- Creates an object of ValueAggregatorDescriptor from the name of a user-defined class that may be dynamically loaded.\n- Delegates invocations of the generateKeyValPairs function to the created object.\n\nCORE LOGIC:\n- Creates an instance of the given class using reflection.\n- Configures the created object.\n- Generates a list of aggregation-id/value pairs for the given key/value pairs by delegating the invocation to the real object.\n\nINPUTS/OUTPUTS:\n- The class name of the user-defined descriptor class.\n- A configuration object used for descriptor configuration.\n\nDEPENDENCIES:\n- org.apache.hadoop.classification.InterfaceAudience\n- org.apache.hadoop.classification.InterfaceStability\n- org.apache.hadoop.conf.Configuration\n- org.apache.hadoop.io.Text",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 51,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregatorBaseDescriptor",
+    "path": "lib/aggregate/ValueAggregatorBaseDescriptor.java",
+    "file_name": "ValueAggregatorBaseDescriptor.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY:\n-Aggregates values based on their type and id\n-Generates key/value pairs for each input key/value pair\n-Counts the total number of records in the input data and the number of records in each input file\n\nCORE LOGIC:\n-Generates aggregation id/value pairs for each input key/value pair\n-Aggregates values based on their type and id\n\nINPUTS/OUTPUTS:\n-Input key/value pairs\n-Aggregation id/value pairs\n\nDEPENDENCIES:\n-None",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 51,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregatorCombiner",
+    "path": "lib/aggregate/ValueAggregatorCombiner.java",
+    "file_name": "ValueAggregatorCombiner.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this chunk is to implement the generic combiner of Aggregate.\n\nCORE LOGIC:\nThe code uses the ValueAggregatorDescriptor to determine the type of aggregation to perform. It then uses the ValueAggregatorBaseDescriptor to generate a ValueAggregator object. The object is used to add the values and then get the combined output.\n\nINPUTS/OUTPUTS:\nThe input is a key-value pair, where the key is a Text object and the value is also a Text object. The output is also a key-value pair, where the key is the same as the input key and the value is the combined output.\n\nDEPENDENCIES:\nThe class depends on the ValueAggregatorDescriptor, ValueAggregatorBaseDescriptor, and the Reducer class from the Apache Hadoop MapReduce library.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 51,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregatorJobBase",
+    "path": "lib/aggregate/ValueAggregatorJobBase.java",
+    "file_name": "ValueAggregatorJobBase.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY:\nThis code chunk is part of the ValueAggregatorJobBase class, which is used as a base class for MapReduce jobs that use the ValueAggregator framework. It provides functionality for setting up the job, initializing the aggregator descriptors, and logging the aggregator specifications.\n\nCORE LOGIC:\nThe code chunk does not contain any specific algorithms or processing patterns.\n\nINPUTS/OUTPUTS:\nThe code chunk does not specify any specific inputs or outputs.\n\nDEPENDENCIES:\nThe code chunk depends on the ValueAggregatorDescriptor class and the UserDefinedValueAggregatorDescriptor class. It also depends on the Configuration class from the Hadoop framework.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 51,
+    "class": "org.apache.hadoop.mapreduce.lib.aggregate.ValueAggregatorReducer",
+    "path": "lib/aggregate/ValueAggregatorReducer.java",
+    "file_name": "ValueAggregatorReducer.java",
+    "directory": "lib/aggregate",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this chunk is to implement the generic reducer of Aggregate.\n\nCORE LOGIC:\nThe key algorithms or processing patterns visible in this chunk are:\n- The setup method is called to set up the context for the reducer.\n- The reduce method is called for each key-value pair in the input, where the key is a Text object indicating the type of aggregation to perform, and the values are the data to be aggregated.\n- The reduce method extracts the type of aggregation from the key, creates a ValueAggregator object of the appropriate type, and adds each value to the aggregator.\n- The reduce method then writes the aggregated value to the output using the original key.\n\nINPUTS/OUTPUTS:\nThe data flowing in and out of this chunk is:\n- The input consists of key-value pairs, where the key is a Text object and the value is a Text object.\n- The output consists of key-value pairs, where the key is the original key and the value is the aggregated value as a Text object.\n\nDEPENDENCIES:\nThe key imported, parent, or collaborator classes visible in this chunk are:\n- ValueAggregatorJobBase\n- ValueAggregatorDescriptor\n- UniqValueCount\n- ValueAggregatorBaseDescriptor\n- ValueAggregator\n- Text\n- Writable\n- WritableComparable\n- Reducer\n- Context\n- IOException\n- InterruptedException",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

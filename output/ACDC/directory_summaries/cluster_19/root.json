@@ -1,0 +1,126 @@
+{
+  "type": "directory",
+  "cluster_id": 19,
+  "directory": ".",
+  "title": "Cluster Class",
+  "description": "The Cluster class provides a way to access information about the map/reduce cluster. It initializes the clientProtocolProvider and client based on the configuration and jobTrackAddr. It also provides methods to get the file system, job, cluster status, task trackers, staging area directory, job history file path, queue ACLs, root queues, child queues, job tracker status, and task tracker expiry interval.\n\n--- FILE: Counter.java ---\nTITLE: Counter Interface\nDESCRIPTION: The Counter interface represents a named counter that tracks the progress of a map/reduce job. It has methods to set the display name of the counter, get the name and display name of the counter, get the current value of the counter, set the value of the counter, and increment the counter by a given value.\n\n--- FILE: CounterGroup.java ---\nTITLE: CounterGroup Class\nDESCRIPTION: This chunk defines an interface for a group of counters. It does not contain any core logic, but it provides a way to group related counters together.\n\n--- FILE: Counters.java ---\nTITLE: Counters Class\nDESCRIPTION: The Counters class holds per job/task counters, defined either by the Map-Reduce framework or applications. It provides methods to get and set the counter values, as well as methods to find and iterate over the counter groups.\n\n--- FILE: ID.java ---\nTITLE: ID Class\nDESCRIPTION: The ID class is a super class of JobID, TaskID, and TaskAttemptID. It stores an integer id.\n\n--- FILE: Job.java ---\nTITLE: Job Class\nDESCRIPTION: The Job class is responsible for managing and executing MapReduce jobs. It provides methods for setting up and monitoring the job, as well as for controlling its execution.\n\n--- FILE: JobACL.java ---\nTITLE: JobACL Enum\nDESCRIPTION: The JobACL enum represents job-related ACLs. It includes the VERY_HIGH, HIGH, NORMAL, LOW, VERY_LOW, DEFAULT, and UNDEFINED_PRIORITY priority levels.\n\n--- FILE: JobCounter.java ---\nTITLE: JobCounter Enum\nDESCRIPTION: The JobCounter enum defines a set of counters for a MapReduce job. It includes counters for tracking the progress of the job, such as the number of failed or killed maps and reduces, the total number of maps and reduces launched, and the number of maps and reduces that were local, rack-local, or other-local.\n\n--- FILE: JobID.java ---\nTITLE: JobID Class\nDESCRIPTION: The JobID class represents the immutable and unique identifier for a job. It consists of two parts: the jobtracker identifier and the job number. The jobtracker identifier is used to map the jobID to the jobtracker, and the job number is incremented for each new job.\n\n--- FILE: JobPriority.java ---\nTITLE: JobPriority Enum\nDESCRIPTION: The JobPriority enum represents the priority of a job in a Hadoop MapReduce system. It includes the VERY_HIGH, HIGH, NORMAL, LOW, VERY_LOW, DEFAULT, and UNDEFINED_PRIORITY priority levels.\n\n--- FILE: JobResourceUploader.java ---\nTITLE: JobResourceUploader Class\nDESCRIPTION: The JobResourceUploader class is responsible for handling the localization of resources for MapReduce jobs. It checks if there are any limits set for resource localization and ensures that the limits are not exceeded.\n\n--- FILE: JobStatus.java ---\nTITLE: JobStatus Class\nDESCRIPTION: The JobStatus class represents the status of a job. It contains information such as the job ID, progress,",
+  "summary": "TITLE: Cluster Class\nDESCRIPTION: The Cluster class provides a way to access information about the map/reduce cluster. It initializes the clientProtocolProvider and client based on the configuration and jobTrackAddr. It also provides methods to get the file system, job, cluster status, task trackers, staging area directory, job history file path, queue ACLs, root queues, child queues, job tracker status, and task tracker expiry interval.\n\n--- FILE: Counter.java ---\nTITLE: Counter Interface\nDESCRIPTION: The Counter interface represents a named counter that tracks the progress of a map/reduce job. It has methods to set the display name of the counter, get the name and display name of the counter, get the current value of the counter, set the value of the counter, and increment the counter by a given value.\n\n--- FILE: CounterGroup.java ---\nTITLE: CounterGroup Class\nDESCRIPTION: This chunk defines an interface for a group of counters. It does not contain any core logic, but it provides a way to group related counters together.\n\n--- FILE: Counters.java ---\nTITLE: Counters Class\nDESCRIPTION: The Counters class holds per job/task counters, defined either by the Map-Reduce framework or applications. It provides methods to get and set the counter values, as well as methods to find and iterate over the counter groups.\n\n--- FILE: ID.java ---\nTITLE: ID Class\nDESCRIPTION: The ID class is a super class of JobID, TaskID, and TaskAttemptID. It stores an integer id.\n\n--- FILE: Job.java ---\nTITLE: Job Class\nDESCRIPTION: The Job class is responsible for managing and executing MapReduce jobs. It provides methods for setting up and monitoring the job, as well as for controlling its execution.\n\n--- FILE: JobACL.java ---\nTITLE: JobACL Enum\nDESCRIPTION: The JobACL enum represents job-related ACLs. It includes the VERY_HIGH, HIGH, NORMAL, LOW, VERY_LOW, DEFAULT, and UNDEFINED_PRIORITY priority levels.\n\n--- FILE: JobCounter.java ---\nTITLE: JobCounter Enum\nDESCRIPTION: The JobCounter enum defines a set of counters for a MapReduce job. It includes counters for tracking the progress of the job, such as the number of failed or killed maps and reduces, the total number of maps and reduces launched, and the number of maps and reduces that were local, rack-local, or other-local.\n\n--- FILE: JobID.java ---\nTITLE: JobID Class\nDESCRIPTION: The JobID class represents the immutable and unique identifier for a job. It consists of two parts: the jobtracker identifier and the job number. The jobtracker identifier is used to map the jobID to the jobtracker, and the job number is incremented for each new job.\n\n--- FILE: JobPriority.java ---\nTITLE: JobPriority Enum\nDESCRIPTION: The JobPriority enum represents the priority of a job in a Hadoop MapReduce system. It includes the VERY_HIGH, HIGH, NORMAL, LOW, VERY_LOW, DEFAULT, and UNDEFINED_PRIORITY priority levels.\n\n--- FILE: JobResourceUploader.java ---\nTITLE: JobResourceUploader Class\nDESCRIPTION: The JobResourceUploader class is responsible for handling the localization of resources for MapReduce jobs. It checks if there are any limits set for resource localization and ensures that the limits are not exceeded.\n\n--- FILE: JobStatus.java ---\nTITLE: JobStatus Class\nDESCRIPTION: The JobStatus class represents the status of a job. It contains information such as the job ID, progress,",
+  "number_of_children": 28,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "Cluster.java"
+    },
+    {
+      "type": "file",
+      "name": "Counter.java"
+    },
+    {
+      "type": "file",
+      "name": "CounterGroup.java"
+    },
+    {
+      "type": "file",
+      "name": "Counters.java"
+    },
+    {
+      "type": "file",
+      "name": "ID.java"
+    },
+    {
+      "type": "file",
+      "name": "Job.java"
+    },
+    {
+      "type": "file",
+      "name": "JobACL.java"
+    },
+    {
+      "type": "file",
+      "name": "JobCounter.java"
+    },
+    {
+      "type": "file",
+      "name": "JobID.java"
+    },
+    {
+      "type": "file",
+      "name": "JobPriority.java"
+    },
+    {
+      "type": "file",
+      "name": "JobResourceUploader.java"
+    },
+    {
+      "type": "file",
+      "name": "JobStatus.java"
+    },
+    {
+      "type": "file",
+      "name": "JobSubmissionFiles.java"
+    },
+    {
+      "type": "file",
+      "name": "JobSubmitter.java"
+    },
+    {
+      "type": "file",
+      "name": "QueueInfo.java"
+    },
+    {
+      "type": "file",
+      "name": "QueueState.java"
+    },
+    {
+      "type": "file",
+      "name": "SharedCacheConfig.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskCompletionEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskCounter.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskID.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskReport.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskType.java"
+    },
+    {
+      "type": "directory",
+      "name": "counters"
+    },
+    {
+      "type": "directory",
+      "name": "filecache"
+    },
+    {
+      "type": "directory",
+      "name": "protocol"
+    },
+    {
+      "type": "directory",
+      "name": "split"
+    },
+    {
+      "type": "directory",
+      "name": "tools"
+    },
+    {
+      "type": "directory",
+      "name": "util"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- FILE: Cluster.java ---\nTITLE: Cluster Class\nDESCRIPTION: The Cluster class provides a way to access information about the map/reduce cluster. It initializes the clientProtocolProvider and client based on the configuration and jobTrackAddr. It also provides methods to get the file system, job, cluster status, task trackers, staging area directory, job history file path, queue ACLs, root queues, child queues, job tracker status, and task tracker expiry interval.\n\n--- FILE: Counter.java ---\nTITLE: Counter Interface\nDESCRIPTION: The Counter interface represents a named counter that tracks the progress of a map/reduce job. It has methods to set the display name of the counter, get the name and display name of the counter, get the current value of the counter, set the value of the counter, and increment the counter by a given value.\n\n--- FILE: CounterGroup.java ---\nTITLE: CounterGroup Class\nDESCRIPTION: This chunk defines an interface for a group of counters. It does not contain any core logic, but it provides a way to group related counters together.\n\n--- FILE: Counters.java ---\nTITLE: Counters Class\nDESCRIPTION: The Counters class holds per job/task counters, defined either by the Map-Reduce framework or applications. It provides methods to get and set the counter values, as well as methods to find and iterate over the counter groups.\n\n--- FILE: ID.java ---\nTITLE: ID Class\nDESCRIPTION: The ID class is a super class of JobID, TaskID, and TaskAttemptID. It stores an integer id.\n\n--- FILE: Job.java ---\nTITLE: Job Class\nDESCRIPTION: The Job class is responsible for managing and executing MapReduce jobs. It provides methods for setting up and monitoring the job, as well as for controlling its execution.\n\n--- FILE: JobACL.java ---\nTITLE: JobACL Enum\nDESCRIPTION: The JobACL enum represents job-related ACLs. It includes the VERY_HIGH, HIGH, NORMAL, LOW, VERY_LOW, DEFAULT, and UNDEFINED_PRIORITY priority levels.\n\n--- FILE: JobCounter.java ---\nTITLE: JobCounter Enum\nDESCRIPTION: The JobCounter enum defines a set of counters for a MapReduce job. It includes counters for tracking the progress of the job, such as the number of failed or killed maps and reduces, the total number of maps and reduces launched, and the number of maps and reduces that were local, rack-local, or other-local.\n\n--- FILE: JobID.java ---\nTITLE: JobID Class\nDESCRIPTION: The JobID class represents the immutable and unique identifier for a job. It consists of two parts: the jobtracker identifier and the job number. The jobtracker identifier is used to map the jobID to the jobtracker, and the job number is incremented for each new job.\n\n--- FILE: JobPriority.java ---\nTITLE: JobPriority Enum\nDESCRIPTION: The JobPriority enum represents the priority of a job in a Hadoop MapReduce system. It includes the VERY_HIGH, HIGH, NORMAL, LOW, VERY_LOW, DEFAULT, and UNDEFINED_PRIORITY priority levels.\n\n--- FILE: JobResourceUploader.java ---\nTITLE: JobResourceUploader Class\nDESCRIPTION: The JobResourceUploader class is responsible for handling the localization of resources for MapReduce jobs. It checks if there are any limits set for resource localization and ensures that the limits are not exceeded.\n\n--- FILE: JobStatus.java ---\nTITLE: JobStatus Class\nDESCRIPTION: The JobStatus class represents the status of a job. It contains information such as the job ID, progress,"
+}

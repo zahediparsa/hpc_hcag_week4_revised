@@ -1,0 +1,25 @@
+{
+  "cluster_id": 1,
+  "title": "Hadoop MapReduce Architecture",
+  "description": "Hadoop MapReduce is a software framework for processing large amounts of data on clusters of computers. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. The system works on a typical cluster with a shared file system and a distributed file system. The applications are written in Java and run on a large cluster of computers. The system is scalable, fault-tolerant, and uses a simple programming model based on the Map and Reduce functions. The MapReduce framework provides the following components: Map, Reduce, Combiner, Shuffle and Sort, and Output Format. The Map function processes a key/value pair to generate a set of intermediate key/value pairs. The Reduce function merges all intermediate values associated with the same intermediate key. The Combiner function performs local aggregation of intermediate values before they are sent to the Reduce function. The Shuffle and Sort process.",
+  "description_word_count": 152,
+  "number_of_files": 5,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nHadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes). It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. Rather than rely on hardware to deliver high-availability, the library itself is designed to detect and handle failures at the application layer, so delivering a highly-available service on top of a cluster of computers, each of which may be prone to failures.\n\nThe system works on a typical cluster with a shared file system (e.g., NFS) and a distributed file system (e.g., HDFS). The applications are written in Java and run on a large cluster of computers. The system is scalable, fault-tolerant, and uses a simple programming model based on the Map and Reduce functions.\n\nThe MapReduce framework provides the following components:\n- Map: A function that processes a key/value pair to generate a set of intermediate key/value pairs.\n- Reduce: A function that merges all intermediate values associated with the same intermediate key.\n- Combiner: An optional function that performs local aggregation of intermediate values before they are sent to the reduce function.\n- Shuffle and Sort: The process of matching intermediate keys to the reduce tasks.\n- Output Format: A class that defines the format of the output data.\n\nThe MapReduce framework supports various quality attributes, such as scalability, fault-tolerance, and performance. It is built on top of the distributed file system HDFS and uses YARN (Yet Another Resource Negotiator) for resource management and job scheduling.\n\nTechnologies used: Java, HDFS, YARN, MapReduce.",
+  "algorithm": "ACDC",
+  "files": [
+    "FileSystemCounter.java",
+    "counters/AbstractCounters.java",
+    "counters/FileSystemCounterGroup.java",
+    "counters/FrameworkCounterGroup.java",
+    "util/ResourceBundles.java"
+  ]
+}

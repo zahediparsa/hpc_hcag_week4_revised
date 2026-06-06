@@ -1,0 +1,34 @@
+{
+  "type": "directory",
+  "cluster_id": 61,
+  "directory": "lib/input",
+  "title": "lib/input",
+  "description": "This directory contains classes that implement input formats for Hadoop MapReduce. These input formats define how data is read from input files and how it is processed by the map and reduce tasks. The classes in this directory collaborate to provide a flexible and extensible way to read data from various sources, such as sequence files, text files, and other custom input formats. The architectural role of this directory is to provide a modular and extensible framework for reading data from different sources, allowing users to easily plug in their own input formats and customize the data processing pipeline.",
+  "summary": "TITLE: lib/input\nDESCRIPTION: This directory contains classes that implement input formats for Hadoop MapReduce. These input formats define how data is read from input files and how it is processed by the map and reduce tasks. The classes in this directory collaborate to provide a flexible and extensible way to read data from various sources, such as sequence files, text files, and other custom input formats. The architectural role of this directory is to provide a modular and extensible framework for reading data from different sources, allowing users to easily plug in their own input formats and customize the data processing pipeline.",
+  "number_of_children": 5,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CombineSequenceFileInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "CombineTextInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileAsBinaryInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileAsTextInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileInputFilter.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/input\n\nDESCRIPTION:\nThis directory contains classes that implement input formats for Hadoop MapReduce. These input formats define how data is read from input files and how it is processed by the map and reduce tasks. The classes in this directory collaborate to provide a flexible and extensible way to read data from various sources, such as sequence files, text files, and other custom input formats. The architectural role of this directory is to provide a modular and extensible framework for reading data from different sources, allowing users to easily plug in their own input formats and customize the data processing pipeline."
+}

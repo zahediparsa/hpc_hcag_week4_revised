@@ -1,0 +1,41 @@
+{
+  "cluster_id": 5,
+  "title": "org.apache.hadoop.mapreduce.lib.input",
+  "description": "This package provides classes for reading input data in the MapReduce framework. It includes the TextInputFormat, CombineTextInputFormat, KeyValueTextInputFormat, NLineInputFormat, and CombineFileInputFormat classes. These classes are used to read input data from various sources, such as text files, and combine small input files into larger splits to improve performance. The package also includes the FileInputFormat, FileSplit, and PathFilter classes, which are used to specify input files and filters for input data. The package provides implementations of CombineFileInputFormat for various file types, such as CombineFileTextInputFormat and CombineSequenceFileInputFormat. The package also includes the LineRecordReader, CombineFileRecordReader, and CombineFileSplit classes, which are used to read input data from files and combine multiple files into a single split. The package also includes the KeyValueLineRecordReader class, which is a subclass of LineRecordReader that reads input data in the key-value format. The package also includes the KeyValueTextInputFormat class, which is an InputFormat that reads input data in the.",
+  "description_word_count": 150,
+  "number_of_files": 21,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: org.apache.hadoop.mapreduce.lib.input\n\nDESCRIPTION:\nThis package provides the TextInputFormat, CombineTextInputFormat,KeyValueTextInputFormat,NLineInputFormat, and CombineFileInputFormat classes, which are used to read input data from various sources in the MapReduce framework. The TextInputFormat class is an InputFormat that reads text files, while the CombineTextInputFormat class is a subclass of TextInputFormat that combines small input files into larger splits to improve performance. The KeyValueTextInputFormat class is an InputFormat that reads input data in the key-value format, while the NLineInputFormat class is an InputFormat that reads input data as N lines of text. The CombineFileInputFormat class is an abstract class that extends InputFormat and provides a way to combine multiple input files into a single split. The package also includes the FileInputFormat, FileSplit, and PathFilter classes, which are used to specify input files and filters for input data. The package provides implementations of CombineFileInputFormat for various file types, such as CombineFileTextInputFormat and CombineSequenceFileInputFormat. The package also includes the LineRecordReader, CombineFileRecordReader, and CombineFileSplit classes, which are used to read input data from files and combine multiple files into a single split. The package also includes theKeyValueLineRecordReader class, which is a subclass of LineRecordReader that reads input data in the key-value format. The package also includes theKeyValueTextInputFormat class, which is an InputFormat that reads input data in the key-value format. The package also includes theKeyValueTextRecordReader class, which is a subclass of LineRecordReader that reads input data in the key-value format. The package also includes theKeyValueTextInputFormat class, which is an InputFormat that reads input data in the key-value format. The package also includes theKeyValueTextRecordReader class, which is a subclass of LineRecordReader that reads input data in the key-value format. The package also includes theKeyValueTextInputFormat class, which is an InputFormat that reads input data in the key-value format. The package also includes theKeyValueTextRecordReader class, which is a subclass of LineRecordReader that reads input data in the key-value format. The package also includes theKeyValueTextInputFormat class, which is an InputFormat that reads input data in the key-value format. The package also includes theKeyValueTextRecordReader class, which is a subclass of LineRecordReader that reads input data in the key-value format. The package also includes theKeyValueTextInputFormat class, which is an InputFormat that reads input data in the key-value format. The package also includes theKeyValueTextRecordReader class, which is a subclass of LineRecordReader that reads input data in the key-value format. The package also includes theKeyValueTextInputFormat class, which is an InputFormat that reads input data in the key-value format. The package also includes theKeyValueTextRecordReader class, which is a subclass of LineRecordReader that reads input data in the key-value format. The package also includes theKeyValueTextInputFormat class, which is an InputFormat that reads input data in the key-value format. The package also includes theKeyValueTextRecordReader class, which is a subclass of LineRecordReader that reads input data in the key-value format. The package also includes theKeyValueTextInputFormat class, which is an InputFormat that reads input data in the key-value format. The package also includes theKeyValueTextRecordReader class, which is a subclass of LineRecordReader that reads input data in the key-value format. The package also includes theKeyValueTextInputFormat class, which is an InputFormat that reads input data in the key-value format. The package also includes theKeyValueTextRecordReader class, which is a subclass of LineRecordReader that reads input data in the key-value format. The package also includes theKeyValueTextInputFormat class, which is an InputFormat that reads input data in the key-value format. The package also includes theKeyValueTextRecordReader class, which is a subclass of LineRecordReader that reads input data in the key-value format. The package also includes theKeyValueTextInputFormat class, which is an InputFormat that reads input data in the key-value format. The package also includes theKeyValueTextRecordReader class, which is a subclass of LineRecordReader that reads input data in the key-value format. The package also includes theKeyValueTextInputFormat class, which is an InputFormat that reads input data in the key-value format. The package also includes theKeyValueTextRecordReader class, which is a subclass of LineRecordReader that reads input data in the key-value format. The package also includes theKeyValueTextInputFormat class, which is an InputFormat that reads input data in the key-value format. The package also includes theKeyValueTextRecordReader class, which is a subclass of LineRecordReader that reads input data in the key-value",
+  "algorithm": "ACDC",
+  "files": [
+    "InputSplit.java",
+    "lib/db/BigDecimalSplitter.java",
+    "lib/db/BooleanSplitter.java",
+    "lib/db/DBConfiguration.java",
+    "lib/db/DBInputFormat.java",
+    "lib/db/DBOutputFormat.java",
+    "lib/db/DBRecordReader.java",
+    "lib/db/DBSplitter.java",
+    "lib/db/DBWritable.java",
+    "lib/db/DataDrivenDBInputFormat.java",
+    "lib/db/DataDrivenDBRecordReader.java",
+    "lib/db/DateSplitter.java",
+    "lib/db/FloatSplitter.java",
+    "lib/db/IntegerSplitter.java",
+    "lib/db/MySQLDBRecordReader.java",
+    "lib/db/MySQLDataDrivenDBRecordReader.java",
+    "lib/db/OracleDBRecordReader.java",
+    "lib/db/OracleDataDrivenDBInputFormat.java",
+    "lib/db/OracleDataDrivenDBRecordReader.java",
+    "lib/db/OracleDateSplitter.java",
+    "lib/db/TextSplitter.java"
+  ]
+}

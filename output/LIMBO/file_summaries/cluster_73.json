@@ -1,0 +1,62 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 73,
+    "class": "org.apache.hadoop.mapreduce.lib.join.ResetableIterator",
+    "path": "lib/join/ResetableIterator.java",
+    "file_name": "ResetableIterator.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY: ResetableIterator is an interface for a stateful iterator that can replay elements added to it directly.\nCORE LOGIC: The interface includes methods for checking if there is a next element, getting the next element, replaying the last element, resetting the iterator, adding elements, and closing the iterator.\nINPUTS/OUTPUTS: The interface deals withWritable objects.\nDEPENDENCIES: The interface does not depend on any specific classes or packages.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 73,
+    "class": "org.apache.hadoop.mapreduce.lib.join.TupleWritable",
+    "path": "lib/join/TupleWritable.java",
+    "file_name": "TupleWritable.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\n\n- TupleWritable is a Writable type that stores multiple Writables.\n- It provides methods to check if a value is present at a specific position, get a value at a specific position, and get the number of children in the tuple.\n- It also provides methods to check if two TupleWritable objects are equal, get the hash code of a TupleWritable object, and iterate over the elements in the tuple.\n- TupleWritable also provides methods to convert the tuple to a string and to write/read the tuple from/to a DataOutput/DataInput stream.\n\nCORE LOGIC:\n\n- TupleWritable uses a BitSet to keep track of which values have been written to the tuple.\n- It provides methods to set and clear the written bit for a specific position.\n- It also provides methods to write and read the bit set from/to a DataOutput/DataInput stream.\n\nINPUTS/OUTPUTS:\n\n- TupleWritable provides methods to write and read the tuple from/to a DataOutput/DataInput stream.\n- It also provides methods to convert the tuple to a string.\n\nDEPENDENCIES:\n\n- TupleWritable depends on the org.apache.hadoop.io package for Writable and NullWritable types.\n- It also depends on the java.util.BitSet class for bit manipulation.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 73,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterConstants",
+    "path": "lib/output/committer/manifest/ManifestCommitterConstants.java",
+    "file_name": "ManifestCommitterConstants.java",
+    "directory": "lib/output/committer/manifest",
+    "summary": "KEY FUNCTIONALITY:\n- This chunk of code provides public constants for the manifest committer.\n- It includes configuration options and their default values.\n\nCORE LOGIC:\n- The code defines various file suffixes, prefixes, and formats for manifest and summary files.\n- It also provides default values for various options.\n\nINPUTS/OUTPUTS:\n- The code does not have any specific inputs or outputs.\n\nDEPENDENCIES:\n- The code does not have any specific dependencies.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 73,
+    "class": "org.apache.hadoop.mapreduce.security.SecureShuffleUtils",
+    "path": "security/SecureShuffleUtils.java",
+    "file_name": "SecureShuffleUtils.java",
+    "directory": "security",
+    "summary": "KEY FUNCTIONALITY:\nThis chunk of code contains utility methods for generating keys, hashes, and verifying them for shuffle.\n\nCORE LOGIC:\nThe core logic of this chunk is to generate and verify hashes using a secret key. The generateHash method takes a message and a secret key as input and returns a Base64 encoded hash of the message. The verifyHash method takes a hash, a message, and a secret key as input and returns true if the hash is the same as the hash generated from the message using the secret key.\n\nINPUTS/OUTPUTS:\nThe inputs to the generateHash and verifyHash methods are byte arrays and secret keys. The outputs are Base64 encoded strings and boolean values.\n\nDEPENDENCIES:\nThis chunk of code depends on the JobTokenSecretManager class from the org.apache.hadoop.mapreduce.security.token package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 73,
+    "class": "org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier",
+    "path": "security/token/JobTokenIdentifier.java",
+    "file_name": "JobTokenIdentifier.java",
+    "directory": "security/token",
+    "summary": "KEY FUNCTIONALITY: This chunk contains the JobTokenIdentifier class, which is used to identify a job token.\n\nCORE LOGIC: The class has a constructor that takes a jobid as input and sets it as the jobid for the token. It also has methods to read and write the jobid to/from a DataInput/DataOutput stream.\n\nINPUTS/OUTPUTS: The class has a single input, the jobid, which is set in the constructor and read/written to/from a DataInput/DataOutput stream.\n\nDEPENDENCIES: The class extends the TokenIdentifier class and imports the necessary classes for serialization and user/group information.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

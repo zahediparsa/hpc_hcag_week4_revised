@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "lib/map",
+  "title": "MapReduce Regular Expression Extractor",
+  "description": "The lib/map directory is responsible for implementing a MapReduce job that extracts text matching a regular expression. The RegexMapper.java file contains the core logic for this functionality. It uses a regular expression pattern to match and extract text from input. The mapper expects input key and value of type K and Text, respectively, and emits Text keys and LongWritable values. The RegexMapper.java file depends on the Configuration class for setting up the regular expression pattern and group. The collaboration between the files or child directories is not explicitly stated, but it can be assumed that they work together to achieve the overall goal of text extraction using regular expressions. The architectural role or pattern of this directory is to provide a reusable and modular component for text extraction using regular expressions in a MapReduce job.",
+  "summary": "TITLE: MapReduce Regular Expression Extractor\nDESCRIPTION: The lib/map directory is responsible for implementing a MapReduce job that extracts text matching a regular expression. The RegexMapper.java file contains the core logic for this functionality. It uses a regular expression pattern to match and extract text from input. The mapper expects input key and value of type K and Text, respectively, and emits Text keys and LongWritable values. The RegexMapper.java file depends on the Configuration class for setting up the regular expression pattern and group. The collaboration between the files or child directories is not explicitly stated, but it can be assumed that they work together to achieve the overall goal of text extraction using regular expressions. The architectural role or pattern of this directory is to provide a reusable and modular component for text extraction using regular expressions in a MapReduce job.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "RegexMapper.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Regular Expression Extractor\n\nDESCRIPTION:\nThe lib/map directory is responsible for implementing a MapReduce job that extracts text matching a regular expression. The RegexMapper.java file contains the core logic for this functionality. It uses a regular expression pattern to match and extract text from input. The mapper expects input key and value of type K and Text, respectively, and emits Text keys and LongWritable values. The RegexMapper.java file depends on the Configuration class for setting up the regular expression pattern and group. The collaboration between the files or child directories is not explicitly stated, but it can be assumed that they work together to achieve the overall goal of text extraction using regular expressions. The architectural role or pattern of this directory is to provide a reusable and modular component for text extraction using regular expressions in a MapReduce job."
+}

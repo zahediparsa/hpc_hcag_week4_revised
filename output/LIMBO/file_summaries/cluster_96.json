@@ -1,0 +1,14 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 96,
+    "class": "org.apache.hadoop.mapreduce.task.reduce.MergeThread",
+    "path": "task/reduce/MergeThread.java",
+    "file_name": "MergeThread.java",
+    "directory": "task/reduce",
+    "summary": "KEY FUNCTIONALITY: MergeThread is a thread that merges segments of data.\n\nCORE LOGIC: The thread waits for notification to start the merge, then picks up the inputs to merge and merges them using the merge() method.\n\nINPUTS/OUTPUTS: The thread takes a set of inputs to merge, and the merged result is output.\n\nDEPENDENCIES: MergeThread depends on the MergeManagerImpl class to manage the merging process.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

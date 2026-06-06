@@ -1,0 +1,86 @@
+{
+  "type": "directory",
+  "cluster_id": 4,
+  "directory": "lib/output/committer/manifest/stages",
+  "title": "Apache Hadoop MapReduce Architecture: lib/output/committer/manifest/stages**",
+  "description": "Directory-level architectural abstraction for the stages of the task and job commit process in Apache Hadoop MapReduce.**\n\n---\n\n** Responsibility of this directory**\n\nThe responsibility of this directory is to provide individual and aggregate stages for the task and job commit process in Apache Hadoop MapReduce.\n\n**How the files or child directories collaborate**\n\nThe files and child directories collaborate by providing a structured and organized way to handle the commit process.\n\n**Architectural role or pattern of this directory**\n\nThe architectural role of this directory is to provide a clear and modular structure for the commit process, making it easier to understand, maintain, and extend.\n\n**Child summaries**\n\nThe child summaries provide a detailed overview of the key functionality, core logic, inputs/outputs, and dependencies of each file in the directory.\n\n**Chunk summaries**\n\nThe chunk summaries provide a detailed overview of the key functionality, core logic, inputs/outputs, and dependencies of each chunk in the directory.\n\n**File: AbortTaskStage.java**\n\n**KEY FUNCTIONALITY: Abort a task by deleting the task directory.**\n\n**CORE LOGIC: Delete the task attempt directory.**\n\n**INPUTS/OUTPUTS: The task attempt directory.**\n\n**DEPENDENCIES: None.**\n\n**File: AbstractJobOrTaskStage.java**\n\n**KEY FUNCTIONALITY:**\n\n- The main purpose of this class or file is to provide a base class for stages in the task/job commit process.\n- It includes methods for executing the stage, updating the store, and handling IOStatistics.\n\n**CORE LOGIC:**\n\n- The class includes methods for getting file status, deleting files/directories, creating directories, loading manifest files, and performing msync operations.\n\n**INPUTS/OUTPUTS:**\n\n- The class takes input arguments and returns a result.\n- It updates the store via ManifestStoreOperations callbacks.\n- IOStatistics are updated during the execution of the stage.\n\n**DEPENDENCIES:**\n\n- The class depends on the StageConfig, ManifestStoreOperations, and TaskPool.Submitter classes.\n\n**File: CleanupJobStage.java**\n\n**KEY FUNCTIONALITY:**\nThe main purpose of this chunk is to clean up a job's temporary directory through parallel delete, base _temporary delete.\n\n**CORE LOGIC:**\nThe key algorithms or processing patterns visible in this chunk are the parallel deletion of task attempt directories and the deletion of the base directory.\n\n**INPUTS/OUTPUTS:**\nThe data flowing in and out of this chunk is the job's temporary directory.\n\n**DEPENDENCIES:**\nThe key imported, parent, or collaborator classes visible in this chunk are the CleanupJobStage, StageConfig, AbstractJobOrTaskStage, and other classes from the same package.\n\n**File: CommitJobStage.java**\n\n**KEY FUNCTIONALITY:** Commits the Job.\n\n**CORE LOGIC:** The core logic includes loading the manifests, preparing the destination directories, committing all the tasks, and optionally renaming the manifests and saving the _SUCCESS file.\n\n**INPUTS/OUTPUTS:** The inputs include the saveMarker and validateOutput boolean arguments, as well as the loadedManifestData and createdDirectories from previous stages. The outputs include the successData, which includes a snapshot of the IO Statistics and the _SUCCESS file path.\n\n**DEPENDENCI",
+  "summary": "TITLE: Apache Hadoop MapReduce Architecture: lib/output/committer/manifest/stages**\nDESCRIPTION: Directory-level architectural abstraction for the stages of the task and job commit process in Apache Hadoop MapReduce.**\n\n---\n\n** Responsibility of this directory**\n\nThe responsibility of this directory is to provide individual and aggregate stages for the task and job commit process in Apache Hadoop MapReduce.\n\n**How the files or child directories collaborate**\n\nThe files and child directories collaborate by providing a structured and organized way to handle the commit process.\n\n**Architectural role or pattern of this directory**\n\nThe architectural role of this directory is to provide a clear and modular structure for the commit process, making it easier to understand, maintain, and extend.\n\n**Child summaries**\n\nThe child summaries provide a detailed overview of the key functionality, core logic, inputs/outputs, and dependencies of each file in the directory.\n\n**Chunk summaries**\n\nThe chunk summaries provide a detailed overview of the key functionality, core logic, inputs/outputs, and dependencies of each chunk in the directory.\n\n**File: AbortTaskStage.java**\n\n**KEY FUNCTIONALITY: Abort a task by deleting the task directory.**\n\n**CORE LOGIC: Delete the task attempt directory.**\n\n**INPUTS/OUTPUTS: The task attempt directory.**\n\n**DEPENDENCIES: None.**\n\n**File: AbstractJobOrTaskStage.java**\n\n**KEY FUNCTIONALITY:**\n\n- The main purpose of this class or file is to provide a base class for stages in the task/job commit process.\n- It includes methods for executing the stage, updating the store, and handling IOStatistics.\n\n**CORE LOGIC:**\n\n- The class includes methods for getting file status, deleting files/directories, creating directories, loading manifest files, and performing msync operations.\n\n**INPUTS/OUTPUTS:**\n\n- The class takes input arguments and returns a result.\n- It updates the store via ManifestStoreOperations callbacks.\n- IOStatistics are updated during the execution of the stage.\n\n**DEPENDENCIES:**\n\n- The class depends on the StageConfig, ManifestStoreOperations, and TaskPool.Submitter classes.\n\n**File: CleanupJobStage.java**\n\n**KEY FUNCTIONALITY:**\nThe main purpose of this chunk is to clean up a job's temporary directory through parallel delete, base _temporary delete.\n\n**CORE LOGIC:**\nThe key algorithms or processing patterns visible in this chunk are the parallel deletion of task attempt directories and the deletion of the base directory.\n\n**INPUTS/OUTPUTS:**\nThe data flowing in and out of this chunk is the job's temporary directory.\n\n**DEPENDENCIES:**\nThe key imported, parent, or collaborator classes visible in this chunk are the CleanupJobStage, StageConfig, AbstractJobOrTaskStage, and other classes from the same package.\n\n**File: CommitJobStage.java**\n\n**KEY FUNCTIONALITY:** Commits the Job.\n\n**CORE LOGIC:** The core logic includes loading the manifests, preparing the destination directories, committing all the tasks, and optionally renaming the manifests and saving the _SUCCESS file.\n\n**INPUTS/OUTPUTS:** The inputs include the saveMarker and validateOutput boolean arguments, as well as the loadedManifestData and createdDirectories from previous stages. The outputs include the successData, which includes a snapshot of the IO Statistics and the _SUCCESS file path.\n\n**DEPENDENCI",
+  "number_of_children": 18,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AbortTaskStage.java"
+    },
+    {
+      "type": "file",
+      "name": "AbstractJobOrTaskStage.java"
+    },
+    {
+      "type": "file",
+      "name": "CleanupJobStage.java"
+    },
+    {
+      "type": "file",
+      "name": "CommitJobStage.java"
+    },
+    {
+      "type": "file",
+      "name": "CommitTaskStage.java"
+    },
+    {
+      "type": "file",
+      "name": "CreateOutputDirectoriesStage.java"
+    },
+    {
+      "type": "file",
+      "name": "JobOrTaskStage.java"
+    },
+    {
+      "type": "file",
+      "name": "LoadManifestsStage.java"
+    },
+    {
+      "type": "file",
+      "name": "RenameFilesStage.java"
+    },
+    {
+      "type": "file",
+      "name": "SaveSuccessFileStage.java"
+    },
+    {
+      "type": "file",
+      "name": "SaveTaskManifestStage.java"
+    },
+    {
+      "type": "file",
+      "name": "SetupJobStage.java"
+    },
+    {
+      "type": "file",
+      "name": "SetupTaskStage.java"
+    },
+    {
+      "type": "file",
+      "name": "StageConfig.java"
+    },
+    {
+      "type": "file",
+      "name": "StageEventCallbacks.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptScanDirectoryStage.java"
+    },
+    {
+      "type": "file",
+      "name": "ValidateRenamedFilesStage.java"
+    },
+    {
+      "type": "file",
+      "name": "package-info.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "---\n\n**TITLE: Apache Hadoop MapReduce Architecture: lib/output/committer/manifest/stages**\n\n**DESCRIPTION: Directory-level architectural abstraction for the stages of the task and job commit process in Apache Hadoop MapReduce.**\n\n---\n\n** Responsibility of this directory**\n\nThe responsibility of this directory is to provide individual and aggregate stages for the task and job commit process in Apache Hadoop MapReduce.\n\n**How the files or child directories collaborate**\n\nThe files and child directories collaborate by providing a structured and organized way to handle the commit process.\n\n**Architectural role or pattern of this directory**\n\nThe architectural role of this directory is to provide a clear and modular structure for the commit process, making it easier to understand, maintain, and extend.\n\n**Child summaries**\n\nThe child summaries provide a detailed overview of the key functionality, core logic, inputs/outputs, and dependencies of each file in the directory.\n\n**Chunk summaries**\n\nThe chunk summaries provide a detailed overview of the key functionality, core logic, inputs/outputs, and dependencies of each chunk in the directory.\n\n**File: AbortTaskStage.java**\n\n**KEY FUNCTIONALITY: Abort a task by deleting the task directory.**\n\n**CORE LOGIC: Delete the task attempt directory.**\n\n**INPUTS/OUTPUTS: The task attempt directory.**\n\n**DEPENDENCIES: None.**\n\n**File: AbstractJobOrTaskStage.java**\n\n**KEY FUNCTIONALITY:**\n\n- The main purpose of this class or file is to provide a base class for stages in the task/job commit process.\n- It includes methods for executing the stage, updating the store, and handling IOStatistics.\n\n**CORE LOGIC:**\n\n- The class includes methods for getting file status, deleting files/directories, creating directories, loading manifest files, and performing msync operations.\n\n**INPUTS/OUTPUTS:**\n\n- The class takes input arguments and returns a result.\n- It updates the store via ManifestStoreOperations callbacks.\n- IOStatistics are updated during the execution of the stage.\n\n**DEPENDENCIES:**\n\n- The class depends on the StageConfig, ManifestStoreOperations, and TaskPool.Submitter classes.\n\n**File: CleanupJobStage.java**\n\n**KEY FUNCTIONALITY:**\nThe main purpose of this chunk is to clean up a job's temporary directory through parallel delete, base _temporary delete.\n\n**CORE LOGIC:**\nThe key algorithms or processing patterns visible in this chunk are the parallel deletion of task attempt directories and the deletion of the base directory.\n\n**INPUTS/OUTPUTS:**\nThe data flowing in and out of this chunk is the job's temporary directory.\n\n**DEPENDENCIES:**\nThe key imported, parent, or collaborator classes visible in this chunk are the CleanupJobStage, StageConfig, AbstractJobOrTaskStage, and other classes from the same package.\n\n**File: CommitJobStage.java**\n\n**KEY FUNCTIONALITY:** Commits the Job.\n\n**CORE LOGIC:** The core logic includes loading the manifests, preparing the destination directories, committing all the tasks, and optionally renaming the manifests and saving the _SUCCESS file.\n\n**INPUTS/OUTPUTS:** The inputs include the saveMarker and validateOutput boolean arguments, as well as the loadedManifestData and createdDirectories from previous stages. The outputs include the successData, which includes a snapshot of the IO Statistics and the _SUCCESS file path.\n\n**DEPENDENCI"
+}

@@ -1,0 +1,143 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "lib/input",
+  "title": "Apache Hadoop MapReduce Input",
+  "description": "The Apache Hadoop MapReduce library provides a set of classes for writing applications that process vast amounts of data in-memory on large clusters in a scalable manner. The MapReduce framework is designed to handle data-intensive tasks by breaking them into smaller tasks that can be executed in parallel. The input directory in the Hadoop MapReduce library is responsible for setting and adding input paths for a map-reduce job. It collaborates with the JobContext object and an array of Path objects to specify the input data for the job. The architectural role of the input directory is to provide a flexible and scalable way to specify input data for map-reduce jobs, allowing users to easily add or remove input paths without modifying the job code. The pattern used in the input directory is the Hollywood Principle, which states that each class should have only one reason to change, and that reason should be its name. This principle is followed in the input directory, where the responsibility of setting and adding input paths is well-defined and limited to the input directory.",
+  "summary": "TITLE: Apache Hadoop MapReduce Input\nDESCRIPTION: The Apache Hadoop MapReduce library provides a set of classes for writing applications that process vast amounts of data in-memory on large clusters in a scalable manner. The MapReduce framework is designed to handle data-intensive tasks by breaking them into smaller tasks that can be executed in parallel. The input directory in the Hadoop MapReduce library is responsible for setting and adding input paths for a map-reduce job. It collaborates with the JobContext object and an array of Path objects to specify the input data for the job. The architectural role of the input directory is to provide a flexible and scalable way to specify input data for map-reduce jobs, allowing users to easily add or remove input paths without modifying the job code. The pattern used in the input directory is the Hollywood Principle, which states that each class should have only one reason to change, and that reason should be its name. This principle is followed in the input directory, where the responsibility of setting and adding input paths is well-defined and limited to the input directory.",
+  "number_of_children": 29,
+  "number_of_intermediate_summaries": 2,
+  "children": [
+    {
+      "type": "file",
+      "name": "CombineFileInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "CombineFileRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "CombineFileRecordReaderWrapper.java"
+    },
+    {
+      "type": "file",
+      "name": "CombineFileSplit.java"
+    },
+    {
+      "type": "file",
+      "name": "CombineSequenceFileInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "CombineTextInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "CompressedSplitLineReader.java"
+    },
+    {
+      "type": "file",
+      "name": "DelegatingInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "DelegatingMapper.java"
+    },
+    {
+      "type": "file",
+      "name": "DelegatingRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "FileInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "FileSplit.java"
+    },
+    {
+      "type": "file",
+      "name": "FixedLengthInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "FixedLengthRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "KeyValueLineRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "KeyValueTextInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "LineRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "MultipleInputs.java"
+    },
+    {
+      "type": "file",
+      "name": "NLineInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileAsBinaryInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileAsTextInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileAsTextRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileInputFilter.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "SplitLineReader.java"
+    },
+    {
+      "type": "file",
+      "name": "TaggedInputSplit.java"
+    },
+    {
+      "type": "file",
+      "name": "TextInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "UncompressedSplitLineReader.java"
+    }
+  ],
+  "intermediate_summaries": [
+    {
+      "type": "intermediate",
+      "name": "lib/input chunk 0",
+      "summary": "The code chunk is part of the Apache Hadoop MapReduce library and is used to set and add input paths for a map-reduce job. The core logic of this code chunk is to set and add input paths for a map-reduce job. The inputs to this code chunk are a JobContext object and an array of Path objects. The output is an array of Path objects. The code chunk depends on the Apache Hadoop MapReduce library and the Configuration class.",
+      "number_of_children": 28
+    },
+    {
+      "type": "intermediate",
+      "name": "lib/input chunk 1",
+      "summary": "The UncompressedSplitLineReader class is responsible for reading lines from an input stream, handling multi-byte delimiters correctly, and supporting customizable record delimiters. It also supports reading additional records after the end of a split. The core logic involves reading data from the input stream, handling multi-byte delimiters correctly, and supporting customizable record delimiters. The class has dependencies on org.apache.hadoop.classification.InterfaceAudience, org.apache.hadoop.classification.InterfaceStability, org.apache.hadoop.conf.Configuration, org.apache.hadoop.fs.FSDataInputStream, and org.apache.hadoop.io.Text.",
+      "number_of_children": 1
+    }
+  ],
+  "raw_response": "TITLE: Apache Hadoop MapReduce Input\n\nDESCRIPTION:\nThe Apache Hadoop MapReduce library provides a set of classes for writing applications that process vast amounts of data in-memory on large clusters in a scalable manner. The MapReduce framework is designed to handle data-intensive tasks by breaking them into smaller tasks that can be executed in parallel. The input directory in the Hadoop MapReduce library is responsible for setting and adding input paths for a map-reduce job. It collaborates with the JobContext object and an array of Path objects to specify the input data for the job. The architectural role of the input directory is to provide a flexible and scalable way to specify input data for map-reduce jobs, allowing users to easily add or remove input paths without modifying the job code. The pattern used in the input directory is the Hollywood Principle, which states that each class should have only one reason to change, and that reason should be its name. This principle is followed in the input directory, where the responsibility of setting and adding input paths is well-defined and limited to the input directory."
+}

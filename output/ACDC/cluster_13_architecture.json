@@ -1,0 +1,38 @@
+{
+  "cluster_id": 13,
+  "title": "MapReduce",
+  "description": "The MapReduce directory is responsible for managing and executing tasks in the Hadoop MapReduce architecture. It collaborates with other directories and files to ensure the efficient processing of large datasets. The directory follows the architectural pattern of the Hadoop framework, which is designed to handle distributed processing of large data sets across clusters of computers. The MapReduce directory includes components for task management, data distribution, and result aggregation. It also incorporates quality attributes such as scalability, fault tolerance, and data locality to optimize performance and reliability. The directory utilizes technologies such as Java, XML, and YARN (Yet Another Resource Negotiator) to implement the MapReduce algorithm and manage resources across the cluster.",
+  "description_word_count": 111,
+  "number_of_files": 18,
+  "number_of_directories": 6,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce\n\nDESCRIPTION:\nThe MapReduce directory is responsible for managing and executing tasks in the Hadoop MapReduce architecture. It collaborates with other directories and files to ensure the efficient processing of large datasets. The directory follows the architectural pattern of the Hadoop framework, which is designed to handle distributed processing of large data sets across clusters of computers. The MapReduce directory includes components for task management, data distribution, and result aggregation. It also incorporates quality attributes such as scalability, fault tolerance, and data locality to optimize performance and reliability. The directory utilizes technologies such as Java, XML, and YARN (Yet Another Resource Negotiator) to implement the MapReduce algorithm and manage resources across the cluster.",
+  "algorithm": "ACDC",
+  "files": [
+    "OutputFormat.java",
+    "lib/output/FileOutputCommitter.java",
+    "lib/output/FileOutputCommitterFactory.java",
+    "lib/output/FileOutputFormat.java",
+    "lib/output/FilterOutputFormat.java",
+    "lib/output/LazyOutputFormat.java",
+    "lib/output/MapFileOutputFormat.java",
+    "lib/output/MultipleOutputs.java",
+    "lib/output/NamedCommitterFactory.java",
+    "lib/output/NullOutputFormat.java",
+    "lib/output/PartialFileOutputCommitter.java",
+    "lib/output/PartialOutputCommitter.java",
+    "lib/output/PathOutputCommitterFactory.java",
+    "lib/output/SequenceFileAsBinaryOutputFormat.java",
+    "lib/output/SequenceFileOutputFormat.java",
+    "lib/output/TextOutputFormat.java",
+    "security/TokenCache.java",
+    "task/annotation/Checkpointable.java"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 12,
+  "directory": "lib/partition",
+  "title": "InputSampler",
+  "description": "The InputSampler class is a utility for collecting samples and writing a partition file for the TotalOrderPartitioner. It provides three types of sampling logic: SplitSampler, RandomSampler, and IntervalSampler. SplitSampler samples the first n records from s splits, RandomSampler samples from random points in the input, and IntervalSampler samples from s splits at regular intervals. The InputSampler class takes an InputFormat, a Job, and a Sampler as input, and it returns a subset of the keys from the input data.",
+  "summary": "TITLE: InputSampler\nDESCRIPTION: The InputSampler class is a utility for collecting samples and writing a partition file for the TotalOrderPartitioner. It provides three types of sampling logic: SplitSampler, RandomSampler, and IntervalSampler. SplitSampler samples the first n records from s splits, RandomSampler samples from random points in the input, and IntervalSampler samples from s splits at regular intervals. The InputSampler class takes an InputFormat, a Job, and a Sampler as input, and it returns a subset of the keys from the input data.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "InputSampler.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: InputSampler\n\nDESCRIPTION:\nThe InputSampler class is a utility for collecting samples and writing a partition file for the TotalOrderPartitioner. It provides three types of sampling logic: SplitSampler, RandomSampler, and IntervalSampler. SplitSampler samples the first n records from s splits, RandomSampler samples from random points in the input, and IntervalSampler samples from s splits at regular intervals. The InputSampler class takes an InputFormat, a Job, and a Sampler as input, and it returns a subset of the keys from the input data."
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 80,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.EntryFileIO",
+    "path": "lib/output/committer/manifest/impl/EntryFileIO.java",
+    "file_name": "EntryFileIO.java",
+    "directory": "lib/output/committer/manifest/impl",
+    "summary": "KEY FUNCTIONALITY:\n- The main purpose of this code is to read or write entry files.\n- It can be used to create a simple reader or to create a writer queue where different threads can queue data for writing.\n- The entry file is a SequenceFile with KV = {NullWritable, FileEntry}.\n\nCORE LOGIC:\n- The code includes methods to create a writer to a local file or a file on any FS, create a reader with sequential reads, and create an iterator to retrieve file entries from the sequence file.\n- It also includes a writer thread that takes reads from a queue containing list of entries to save and writes them to the output stream.\n- Other threads can queue the file entry lists from loaded manifests for them to be written.\n- The writer thread is responsible for managing the shutdown, failing safely on write failures, and restarting all blocked writers in the process.\n\nINPUTS/OUTPUTS:\n- The code takes a Configuration object as input to load filesystems.\n- It creates SequenceFile.Writer and SequenceFile.Reader objects to write and read entry files.\n- It also creates a BlockingQueue to queue actions and a BlockingQueue to queue file entry lists for writing.\n\nDEPENDENCIES:\n- The code depends on the Apache Hadoop MapReduce library and the Apache Hadoop Common library.\n- It also depends on theslf4j library for logging.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "type": "directory",
+  "cluster_id": 19,
+  "directory": "counters",
+  "title": "Counters Directory Abstraction",
+  "description": "The counters directory is responsible for managing the counters in a Hadoop MapReduce job. It provides a common interface for counter groups and allows for the addition, finding, and iteration over counters. The directory also handles the limits for the number of counters and counter groups in a job. The files in this directory collaborate by using the Counter interface and the Writable interface to read and write counter data to and from a stream. The architectural role of this directory is to provide a centralized location for managing counters and to ensure that the limits are enforced.",
+  "summary": "TITLE: Counters Directory Abstraction\nDESCRIPTION: The counters directory is responsible for managing the counters in a Hadoop MapReduce job. It provides a common interface for counter groups and allows for the addition, finding, and iteration over counters. The directory also handles the limits for the number of counters and counter groups in a job. The files in this directory collaborate by using the Counter interface and the Writable interface to read and write counter data to and from a stream. The architectural role of this directory is to provide a centralized location for managing counters and to ensure that the limits are enforced.",
+  "number_of_children": 7,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AbstractCounter.java"
+    },
+    {
+      "type": "file",
+      "name": "AbstractCounterGroup.java"
+    },
+    {
+      "type": "file",
+      "name": "CounterGroupBase.java"
+    },
+    {
+      "type": "file",
+      "name": "CounterGroupFactory.java"
+    },
+    {
+      "type": "file",
+      "name": "GenericCounter.java"
+    },
+    {
+      "type": "file",
+      "name": "LimitExceededException.java"
+    },
+    {
+      "type": "file",
+      "name": "Limits.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Counters Directory Abstraction\n\nDESCRIPTION:\nThe counters directory is responsible for managing the counters in a Hadoop MapReduce job. It provides a common interface for counter groups and allows for the addition, finding, and iteration over counters. The directory also handles the limits for the number of counters and counter groups in a job. The files in this directory collaborate by using the Counter interface and the Writable interface to read and write counter data to and from a stream. The architectural role of this directory is to provide a centralized location for managing counters and to ensure that the limits are enforced."
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "lib/aggregate",
+  "title": "Directory-level architectural abstraction for lib/aggregate",
+  "description": "The lib/aggregate directory is responsible for providing a set of built-in value aggregators and a generic utility class to help users create map/reduce jobs using the Aggregate framework. The files in this directory collaborate by using the generic mapper/reducer/combiner classes to perform various aggregation operations on input data. The architectural role of this directory is to provide a convenient and efficient way for users to perform complex aggregation tasks without having to write custom code. The directory follows the pattern of the MapReduce framework, allowing users to easily plug in their own aggregation logic and run it on a Hadoop cluster.",
+  "summary": "TITLE: Directory-level architectural abstraction for lib/aggregate\nDESCRIPTION: The lib/aggregate directory is responsible for providing a set of built-in value aggregators and a generic utility class to help users create map/reduce jobs using the Aggregate framework. The files in this directory collaborate by using the generic mapper/reducer/combiner classes to perform various aggregation operations on input data. The architectural role of this directory is to provide a convenient and efficient way for users to perform complex aggregation tasks without having to write custom code. The directory follows the pattern of the MapReduce framework, allowing users to easily plug in their own aggregation logic and run it on a Hadoop cluster.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ValueAggregatorJob.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Directory-level architectural abstraction for lib/aggregate\n\nDESCRIPTION:\nThe lib/aggregate directory is responsible for providing a set of built-in value aggregators and a generic utility class to help users create map/reduce jobs using the Aggregate framework. The files in this directory collaborate by using the generic mapper/reducer/combiner classes to perform various aggregation operations on input data. The architectural role of this directory is to provide a convenient and efficient way for users to perform complex aggregation tasks without having to write custom code. The directory follows the pattern of the MapReduce framework, allowing users to easily plug in their own aggregation logic and run it on a Hadoop cluster."
+}

@@ -1,0 +1,70 @@
+{
+  "type": "directory",
+  "cluster_id": 11,
+  "directory": "lib/output/committer/manifest/stages",
+  "title": "",
+  "description": "```java\npackage org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages;\n\nimport org.apache.hadoop.fs.Path;\nimport org.apache.hadoop.fs.statistics.IOStatistics;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.TaskManifest;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterStatisticNames;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterSupport;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.EntryStatus;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.FileEntry;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.DirEntry;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.TaskManifest;\nimport org.apache.hadoop.util.DurationInfo;\n\nimport java.io.IOException;\nimport java.util.List;\n\npublic class TaskAttemptScanDirectoryStage {\n    public TaskManifest scanDirectory(Path directory) throws IOException {\n        // Recursively scan the directory tree\n        // Build a task manifest containing all files to rename and directories to create\n        // Process all files before processing any subdirectories\n        // Perform any necessary optimizations for performance\n\n        // Return the task manifest\n        return new TaskManifest();\n    }\n}\n```",
+  "summary": "TITLE: \nDESCRIPTION: ```java\npackage org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages;\n\nimport org.apache.hadoop.fs.Path;\nimport org.apache.hadoop.fs.statistics.IOStatistics;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.TaskManifest;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterStatisticNames;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterSupport;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.EntryStatus;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.FileEntry;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.DirEntry;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.TaskManifest;\nimport org.apache.hadoop.util.DurationInfo;\n\nimport java.io.IOException;\nimport java.util.List;\n\npublic class TaskAttemptScanDirectoryStage {\n    public TaskManifest scanDirectory(Path directory) throws IOException {\n        // Recursively scan the directory tree\n        // Build a task manifest containing all files to rename and directories to create\n        // Process all files before processing any subdirectories\n        // Perform any necessary optimizations for performance\n\n        // Return the task manifest\n        return new TaskManifest();\n    }\n}\n```",
+  "number_of_children": 14,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AbortTaskStage.java"
+    },
+    {
+      "type": "file",
+      "name": "CleanupJobStage.java"
+    },
+    {
+      "type": "file",
+      "name": "CommitJobStage.java"
+    },
+    {
+      "type": "file",
+      "name": "CommitTaskStage.java"
+    },
+    {
+      "type": "file",
+      "name": "CreateOutputDirectoriesStage.java"
+    },
+    {
+      "type": "file",
+      "name": "RenameFilesStage.java"
+    },
+    {
+      "type": "file",
+      "name": "SaveSuccessFileStage.java"
+    },
+    {
+      "type": "file",
+      "name": "SaveTaskManifestStage.java"
+    },
+    {
+      "type": "file",
+      "name": "SetupJobStage.java"
+    },
+    {
+      "type": "file",
+      "name": "SetupTaskStage.java"
+    },
+    {
+      "type": "file",
+      "name": "StageConfig.java"
+    },
+    {
+      "type": "file",
+      "name": "StageEventCallbacks.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptScanDirectoryStage.java"
+    },
+    {
+      "type": "file",
+      "name": "ValidateRenamedFilesStage.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "```java\npackage org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages;\n\nimport org.apache.hadoop.fs.Path;\nimport org.apache.hadoop.fs.statistics.IOStatistics;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.TaskManifest;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterStatisticNames;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterSupport;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.EntryStatus;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.FileEntry;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.DirEntry;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.TaskManifest;\nimport org.apache.hadoop.util.DurationInfo;\n\nimport java.io.IOException;\nimport java.util.List;\n\npublic class TaskAttemptScanDirectoryStage {\n    public TaskManifest scanDirectory(Path directory) throws IOException {\n        // Recursively scan the directory tree\n        // Build a task manifest containing all files to rename and directories to create\n        // Process all files before processing any subdirectories\n        // Perform any necessary optimizations for performance\n\n        // Return the task manifest\n        return new TaskManifest();\n    }\n}\n```"
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 70,
+  "directory": ".",
+  "title": "JoinRecordReader and OverrideRecordReader classes",
+  "description": "The JoinRecordReader class is a base class for composite joins returning Tuples of arbitrary Writables. It uses a PriorityQueue to manage the child RecordReaders and process the key, value pairs. The OverrideRecordReader class, on the other hand, overrides the behavior of the RecordReader class to prefer the \"rightmost\" data source for a given key. It uses a PriorityQueue to store the RecordReaders and a WritableComparator to compare the keys.",
+  "summary": "TITLE: JoinRecordReader and OverrideRecordReader classes\nDESCRIPTION: The JoinRecordReader class is a base class for composite joins returning Tuples of arbitrary Writables. It uses a PriorityQueue to manage the child RecordReaders and process the key, value pairs. The OverrideRecordReader class, on the other hand, overrides the behavior of the RecordReader class to prefer the \"rightmost\" data source for a given key. It uses a PriorityQueue to store the RecordReaders and a WritableComparator to compare the keys.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JoinRecordReader and OverrideRecordReader classes\n\nDESCRIPTION:\nThe JoinRecordReader class is a base class for composite joins returning Tuples of arbitrary Writables. It uses a PriorityQueue to manage the child RecordReaders and process the key, value pairs. The OverrideRecordReader class, on the other hand, overrides the behavior of the RecordReader class to prefer the \"rightmost\" data source for a given key. It uses a PriorityQueue to store the RecordReaders and a WritableComparator to compare the keys."
+}

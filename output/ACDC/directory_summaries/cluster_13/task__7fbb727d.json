@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 13,
+  "directory": "task",
+  "title": "Task Directory",
+  "description": "The task directory is responsible for managing and executing tasks in the Hadoop MapReduce architecture. It collaborates with other directories and files to ensure the efficient processing of large datasets. The directory follows the architectural pattern of the Hadoop framework, which is designed to handle distributed processing of large data sets across clusters of computers.",
+  "summary": "TITLE: Task Directory\nDESCRIPTION: The task directory is responsible for managing and executing tasks in the Hadoop MapReduce architecture. It collaborates with other directories and files to ensure the efficient processing of large datasets. The directory follows the architectural pattern of the Hadoop framework, which is designed to handle distributed processing of large data sets across clusters of computers.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "task/annotation"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Task Directory\n\nDESCRIPTION:\nThe task directory is responsible for managing and executing tasks in the Hadoop MapReduce architecture. It collaborates with other directories and files to ensure the efficient processing of large datasets. The directory follows the architectural pattern of the Hadoop framework, which is designed to handle distributed processing of large data sets across clusters of computers."
+}

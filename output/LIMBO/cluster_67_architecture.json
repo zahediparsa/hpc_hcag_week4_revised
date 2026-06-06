@@ -1,0 +1,24 @@
+{
+  "cluster_id": 67,
+  "title": "Cluster-level architectural abstraction for lib/join",
+  "description": "The lib/join directory in Hadoop MapReduce is responsible for handling the architectural abstraction of the join operation. It includes four key classes: ComposableRecordReader, CompositeRecordReader, MultiFilterRecordReader, and WrappedRecordReader. These classes work together to provide a robust and efficient architecture for handling joins in Hadoop MapReduce.\n\nThe architecture of lib/join is designed to achieve scalability, maintainability, reliability, security, and performance. It uses various technologies, including Java, Hadoop MapReduce, and other related frameworks and tools. The classes in this directory play a crucial role in the overall architecture of Hadoop MapReduce, and their interactions are essential for efficient data processing.",
+  "description_word_count": 99,
+  "number_of_files": 4,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Cluster-level architectural abstraction for lib/join\n\nDESCRIPTION:\nThe lib/join directory in Hadoop MapReduce is responsible for handling the architectural abstraction of the join operation. It includes four key classes: ComposableRecordReader, CompositeRecordReader, MultiFilterRecordReader, and WrappedRecordReader. These classes work together to provide a robust and efficient architecture for handling joins in Hadoop MapReduce.\n\nThe ComposableRecordReader class is a RecordReader that participates in a join, providing additional operations required for the join. The CompositeRecordReader class is a RecordReader that can effect joins of RecordReaders sharing a common key type and partitioning. The MultiFilterRecordReader class is a base class for Composite join returning values derived from multiple sources, but generally not tuples. The WrappedRecordReader class keeps track of the \"head\" key-value pair for the provided RecordReader and keeps a store of values matching a key when this source is participating in a join.\n\nThe architecture of lib/join is designed to achieve scalability, maintainability, reliability, security, and performance. It uses various technologies, including Java, Hadoop MapReduce, and other related frameworks and tools. The classes in this directory play a crucial role in the overall architecture of Hadoop MapReduce, and their interactions are essential for efficient data processing.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/join/ComposableRecordReader.java",
+    "lib/join/CompositeRecordReader.java",
+    "lib/join/MultiFilterRecordReader.java",
+    "lib/join/WrappedRecordReader.java"
+  ]
+}

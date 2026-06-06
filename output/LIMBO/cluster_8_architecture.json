@@ -1,0 +1,38 @@
+{
+  "cluster_id": 8,
+  "title": "Hadoop MapReduce Architecture",
+  "description": "Hadoop MapReduce is a software framework for processing vast amounts of data on large clusters. It consists of two main modules: the Hadoop Distributed File System (HDFS) for distributed storage and MapReduce for processing the data. MapReduce has two main components: the Map phase, which applies a user-defined function to each chunk of input data, and the Reduce phase, which groups the intermediate values by key and applies a second user-defined function to each group of values. The system is designed to be scalable, fault-tolerant, and cost-effective, and can handle thousands of nodes for large-scale data processing. It is widely used in industry for tasks such as web indexing, data mining, and log analysis.",
+  "description_word_count": 114,
+  "number_of_files": 18,
+  "number_of_directories": 4,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nHadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes). The framework handles all the low-level details of distributed computing, such as communication and fault-tolerance.\n\nThe system is divided into two main modules: the Hadoop Distributed File System (HDFS) and MapReduce. HDFS provides the distributed storage for the data, and MapReduce provides the programming model for processing that data.\n\nMapReduce consists of two main components: the Map phase and the Reduce phase. The Map phase breaks the input data into chunks and applies a user-defined function to each chunk, producing a set of intermediate key-value pairs. The Reduce phase then groups the intermediate values by key and applies a second user-defined function to each group of values, producing the final output.\n\nThe system is designed to be scalable, fault-tolerant, and cost-effective. It can run on a single computer for small datasets, and can handle thousands of nodes for large-scale data processing. It is widely used in industry for tasks such as web indexing, data mining, and log analysis.",
+  "algorithm": "LIMBO",
+  "files": [
+    "InputFormat.java",
+    "RecordReader.java",
+    "lib/input/CombineFileInputFormat.java",
+    "lib/input/CombineFileRecordReader.java",
+    "lib/input/CombineFileRecordReaderWrapper.java",
+    "lib/input/DelegatingInputFormat.java",
+    "lib/input/DelegatingRecordReader.java",
+    "lib/input/FixedLengthInputFormat.java",
+    "lib/input/FixedLengthRecordReader.java",
+    "lib/input/KeyValueLineRecordReader.java",
+    "lib/input/KeyValueTextInputFormat.java",
+    "lib/input/LineRecordReader.java",
+    "lib/input/NLineInputFormat.java",
+    "lib/input/SequenceFileAsTextRecordReader.java",
+    "lib/input/SequenceFileInputFormat.java",
+    "lib/input/SequenceFileRecordReader.java",
+    "lib/input/TextInputFormat.java",
+    "lib/join/ComposableInputFormat.java"
+  ]
+}

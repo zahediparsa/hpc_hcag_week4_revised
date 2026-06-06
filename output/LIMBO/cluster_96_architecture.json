@@ -1,0 +1,21 @@
+{
+  "cluster_id": 96,
+  "title": "Cluster-level architectural description of Hadoop MapReduce",
+  "description": "Hadoop MapReduce is a distributed processing framework that enables large-scale data processing on clusters of computers. It consists of two main components: the Map component and the Reduce component. The Map component breaks down the input data into smaller chunks and processes them in parallel, while the Reduce component combines the results from the Mappers to produce the final output. The MapReduce framework is designed to handle large volumes of data and distribute the processing across multiple nodes in a cluster. It provides fault-tolerance and scalability, making it a popular choice for big data processing. The MapReduce architecture follows the principles of divide-and-conquer, parallel processing, and distributed computing, and it is widely used in industries such as finance, healthcare, and retail.",
+  "description_word_count": 122,
+  "number_of_files": 1,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Cluster-level architectural description of Hadoop MapReduce\n\nDESCRIPTION:\nHadoop MapReduce is a distributed processing framework that enables large-scale data processing on clusters of computers. It consists of two main components: the Map component and the Reduce component. The Map component breaks down the input data into smaller chunks and processes them in parallel, while the Reduce component combines the results from the Mappers to produce the final output. The MapReduce framework is designed to handle large volumes of data and distribute the processing across multiple nodes in a cluster. It provides fault-tolerance and scalability, making it a popular choice for big data processing. The MapReduce architecture follows the principles of divide-and-conquer, parallel processing, and distributed computing, and it is widely used in industries such as finance, healthcare, and retail.",
+  "algorithm": "LIMBO",
+  "files": [
+    "task/reduce/MergeThread.java"
+  ]
+}

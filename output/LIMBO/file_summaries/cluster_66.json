@@ -1,0 +1,14 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 66,
+    "class": "org.apache.hadoop.mapreduce.lib.jobcontrol.JobControl",
+    "path": "lib/jobcontrol/JobControl.java",
+    "file_name": "JobControl.java",
+    "directory": "lib/jobcontrol",
+    "summary": "KEY FUNCTIONALITY:\n- Tracks the states of jobs by placing them into different tables according to their states.\n- Submits jobs when they become ready.\n- Monitors the states of running jobs and updates the states of jobs based on the state changes of their depending jobs states.\n- Provides APIs for suspending/resuming the thread and stopping the thread.\n\nCORE LOGIC:\n- The main loop checks the states of running jobs, updates the states of waiting jobs, and submits jobs in ready state.\n- The thread can be in one of the following states: RUNNING, SUSPENDED, STOPPED, STOPPING, READY.\n\nINPUTS/OUTPUTS:\n- The class takes a group name as input and provides APIs for adding jobs to the group.\n- The class provides APIs for getting the jobs in different states.\n\nDEPENDENCIES:\n- The class depends on the ControlledJob class for job control.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

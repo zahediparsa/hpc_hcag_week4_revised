@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 5,
+  "directory": "lib",
+  "title": "lib/output",
+  "description": "The lib/output directory is responsible for handling the output data of the Hadoop MapReduce job. It provides a way to write the output data to different files based on a given key. The MultipleOutputs class is a wrapper for writing to multiple output files in a Hadoop MapReduce job. It uses a Map to store the RecordWriter objects for each output file and provides methods to write key-value pairs to the appropriate RecordWriter based on the key. The class also provides methods to get the RecordWriter for a specific output file and to close all the opened outputs. The MultipleOutputs class depends on the OutputCommitter, TaskAttemptContext, RecordWriter, and Configuration classes.",
+  "summary": "TITLE: lib/output\nDESCRIPTION: The lib/output directory is responsible for handling the output data of the Hadoop MapReduce job. It provides a way to write the output data to different files based on a given key. The MultipleOutputs class is a wrapper for writing to multiple output files in a Hadoop MapReduce job. It uses a Map to store the RecordWriter objects for each output file and provides methods to write key-value pairs to the appropriate RecordWriter based on the key. The class also provides methods to get the RecordWriter for a specific output file and to close all the opened outputs. The MultipleOutputs class depends on the OutputCommitter, TaskAttemptContext, RecordWriter, and Configuration classes.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/output\n\nDESCRIPTION:\nThe lib/output directory is responsible for handling the output data of the Hadoop MapReduce job. It provides a way to write the output data to different files based on a given key. The MultipleOutputs class is a wrapper for writing to multiple output files in a Hadoop MapReduce job. It uses a Map to store the RecordWriter objects for each output file and provides methods to write key-value pairs to the appropriate RecordWriter based on the key. The class also provides methods to get the RecordWriter for a specific output file and to close all the opened outputs. The MultipleOutputs class depends on the OutputCommitter, TaskAttemptContext, RecordWriter, and Configuration classes."
+}

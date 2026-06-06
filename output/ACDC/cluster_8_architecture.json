@@ -1,0 +1,36 @@
+{
+  "cluster_id": 8,
+  "title": "Cluster-level architectural description of the Hadoop MapReduce join operation",
+  "description": "The Hadoop MapReduce join operation is implemented using a cluster of machines. The cluster consists of a coordinator node and multiple worker nodes. The coordinator node is responsible for managing the worker nodes and distributing the data to be processed. The worker nodes are responsible for performing the actual join operation on the data. The data is divided into smaller chunks and distributed to the worker nodes for processing. The worker nodes use the MapReduce framework to process the data and generate the output. The output is then collected by the coordinator node and combined to form the final output. The cluster is designed to be scalable, reliable, and fault-tolerant, ensuring that the join operation is completed successfully even in the presence of failures. The use of the MapReduce framework and distributed computing allows for efficient processing of large datasets, making the join operation a powerful tool for data analysis.",
+  "description_word_count": 150,
+  "number_of_files": 16,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Cluster-level architectural description of the Hadoop MapReduce join operation\n\nDESCRIPTION:\nThe Hadoop MapReduce join operation is implemented using a cluster of machines. The cluster consists of a coordinator node and multiple worker nodes. The coordinator node is responsible for managing the worker nodes and distributing the data to be processed. The worker nodes are responsible for performing the actual join operation on the data. The data is divided into smaller chunks and distributed to the worker nodes for processing. The worker nodes use the MapReduce framework to process the data and generate the output. The output is then collected by the coordinator node and combined to form the final output. The cluster is designed to be scalable, reliable, and fault-tolerant, ensuring that the join operation is completed successfully even in the presence of failures. The use of the MapReduce framework and distributed computing allows for efficient processing of large datasets, making the join operation a powerful tool for data analysis.",
+  "algorithm": "ACDC",
+  "files": [
+    "lib/join/ArrayListBackedIterator.java",
+    "lib/join/ComposableInputFormat.java",
+    "lib/join/ComposableRecordReader.java",
+    "lib/join/CompositeInputFormat.java",
+    "lib/join/CompositeInputSplit.java",
+    "lib/join/CompositeRecordReader.java",
+    "lib/join/InnerJoinRecordReader.java",
+    "lib/join/JoinRecordReader.java",
+    "lib/join/MultiFilterRecordReader.java",
+    "lib/join/OuterJoinRecordReader.java",
+    "lib/join/OverrideRecordReader.java",
+    "lib/join/Parser.java",
+    "lib/join/ResetableIterator.java",
+    "lib/join/StreamBackedIterator.java",
+    "lib/join/TupleWritable.java",
+    "lib/join/WrappedRecordReader.java"
+  ]
+}

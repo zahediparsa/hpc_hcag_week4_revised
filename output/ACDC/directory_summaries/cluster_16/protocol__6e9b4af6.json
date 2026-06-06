@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 16,
+  "directory": "protocol",
+  "title": "Hadoop MapReduce Protocol",
+  "description": "The protocol directory contains classes that define the communication protocol between the client and the Hadoop MapReduce framework. The ClientProtocol.java file, in particular, is responsible for submitting a job for execution and returning the latest profile for that job. The ClientProtocol.java file collaborates with other files in the directory to handle job submission and profiling. The protocol directory follows the architectural pattern of the Hadoop MapReduce framework, which is based on the client-server model. The classes in the protocol directory provide a standard interface for the client to interact with the MapReduce framework, allowing for easy integration and communication between the client and the framework.",
+  "summary": "TITLE: Hadoop MapReduce Protocol\nDESCRIPTION: The protocol directory contains classes that define the communication protocol between the client and the Hadoop MapReduce framework. The ClientProtocol.java file, in particular, is responsible for submitting a job for execution and returning the latest profile for that job. The ClientProtocol.java file collaborates with other files in the directory to handle job submission and profiling. The protocol directory follows the architectural pattern of the Hadoop MapReduce framework, which is based on the client-server model. The classes in the protocol directory provide a standard interface for the client to interact with the MapReduce framework, allowing for easy integration and communication between the client and the framework.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ClientProtocol.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Protocol\n\nDESCRIPTION:\nThe protocol directory contains classes that define the communication protocol between the client and the Hadoop MapReduce framework. The ClientProtocol.java file, in particular, is responsible for submitting a job for execution and returning the latest profile for that job. The ClientProtocol.java file collaborates with other files in the directory to handle job submission and profiling. The protocol directory follows the architectural pattern of the Hadoop MapReduce framework, which is based on the client-server model. The classes in the protocol directory provide a standard interface for the client to interact with the MapReduce framework, allowing for easy integration and communication between the client and the framework."
+}

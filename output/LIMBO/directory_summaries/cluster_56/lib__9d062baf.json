@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 56,
+  "directory": "lib",
+  "title": "Database Configuration",
+  "description": "This directory contains the classes that handle the configuration of a database connection and provide access to the connection. The DBConfiguration class sets the database connection properties in the configuration, and the DBUtils class returns a connection object to the database. The classes collaborate by calling the configureDB method in the DBConfiguration class to set the database connection properties and then calling the getConnection method in the DBUtils class to get a connection object. The architectural role of this directory is to provide a centralized database configuration and connection management.",
+  "summary": "TITLE: Database Configuration\nDESCRIPTION: This directory contains the classes that handle the configuration of a database connection and provide access to the connection. The DBConfiguration class sets the database connection properties in the configuration, and the DBUtils class returns a connection object to the database. The classes collaborate by calling the configureDB method in the DBConfiguration class to set the database connection properties and then calling the getConnection method in the DBUtils class to get a connection object. The architectural role of this directory is to provide a centralized database configuration and connection management.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/db"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Database Configuration\n\nDESCRIPTION: This directory contains the classes that handle the configuration of a database connection and provide access to the connection. The DBConfiguration class sets the database connection properties in the configuration, and the DBUtils class returns a connection object to the database. The classes collaborate by calling the configureDB method in the DBConfiguration class to set the database connection properties and then calling the getConnection method in the DBUtils class to get a connection object. The architectural role of this directory is to provide a centralized database configuration and connection management."
+}

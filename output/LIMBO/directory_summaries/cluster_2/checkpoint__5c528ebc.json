@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "checkpoint",
+  "title": "Checkpoint Directory Abstraction",
+  "description": "The checkpoint directory is responsible for managing and storing checkpoint data. It collaborates with the CheckpointID and CheckpointNamingService classes to generate and identify checkpoint names, and with the org.apache.hadoop.io.Writable interface to serialize and deserialize checkpoint data. The checkpoint directory plays the role of the \"Repository\" pattern in the architectural pattern taxonomy.",
+  "summary": "TITLE: Checkpoint Directory Abstraction\nDESCRIPTION: The checkpoint directory is responsible for managing and storing checkpoint data. It collaborates with the CheckpointID and CheckpointNamingService classes to generate and identify checkpoint names, and with the org.apache.hadoop.io.Writable interface to serialize and deserialize checkpoint data. The checkpoint directory plays the role of the \"Repository\" pattern in the architectural pattern taxonomy.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CheckpointID.java"
+    },
+    {
+      "type": "file",
+      "name": "CheckpointNamingService.java"
+    },
+    {
+      "type": "file",
+      "name": "EnumCounter.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Checkpoint Directory Abstraction\n\nDESCRIPTION:\nThe checkpoint directory is responsible for managing and storing checkpoint data. It collaborates with the CheckpointID and CheckpointNamingService classes to generate and identify checkpoint names, and with the org.apache.hadoop.io.Writable interface to serialize and deserialize checkpoint data. The checkpoint directory plays the role of the \"Repository\" pattern in the architectural pattern taxonomy."
+}

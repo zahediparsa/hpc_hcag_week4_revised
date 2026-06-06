@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": "counters",
+  "title": "Counters Directory",
+  "description": "The counters directory is responsible for managing and tracking the counters in a MapReduce job. It collaborates with the job tracker and task trackers to keep track of the progress and performance of the job. The directory uses the Configuration class from the Apache Hadoop MapReduce framework to configure the limits for the number of counters and counter groups. The Counters directory also defines algorithms for checking and enforcing these limits.",
+  "summary": "TITLE: Counters Directory\nDESCRIPTION: The counters directory is responsible for managing and tracking the counters in a MapReduce job. It collaborates with the job tracker and task trackers to keep track of the progress and performance of the job. The directory uses the Configuration class from the Apache Hadoop MapReduce framework to configure the limits for the number of counters and counter groups. The Counters directory also defines algorithms for checking and enforcing these limits.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "Limits.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Counters Directory\n\nDESCRIPTION:\nThe counters directory is responsible for managing and tracking the counters in a MapReduce job. It collaborates with the job tracker and task trackers to keep track of the progress and performance of the job. The directory uses the Configuration class from the Apache Hadoop MapReduce framework to configure the limits for the number of counters and counter groups. The Counters directory also defines algorithms for checking and enforcing these limits."
+}

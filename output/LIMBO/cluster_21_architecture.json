@@ -1,0 +1,24 @@
+{
+  "cluster_id": 21,
+  "title": "IntSumReducer, LongSumReducer, WrappedReducer",
+  "description": "The IntSumReducer and LongSumReducer classes are reducers for integer and long values, respectively. They implement the Reducer class from the Apache Hadoop MapReduce library and use the IntWritable and LongWritable classes for handling integer and long values, respectively. The WrappedReducer class is a wrapper for a given Reducer to allow for custom Reducer.Context implementations. The reducers collaborate by taking input from the Map phase of the MapReduce job, calculating the sum of the values for each key, and writing the key and the sum to the context for output in the Reduce phase. The reducers are written in Java and use the Apache Hadoop MapReduce library, which is a widely used and well-documented framework. They are part of the core Hadoop MapReduce functionality and are used in many production systems, ensuring high reliability. The reducers can handle large amounts of data and can be scaled horizontally by adding more reducers.",
+  "description_word_count": 151,
+  "number_of_files": 4,
+  "number_of_directories": 4,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: IntSumReducer, LongSumReducer, WrappedReducer\n\nDESCRIPTION:\nThe IntSumReducer and LongSumReducer classes are reducers for integer and long values, respectively. They implement the Reducer class from the Apache Hadoop MapReduce library and use the IntWritable and LongWritable classes for handling integer and long values, respectively. The WrappedReducer class is a wrapper for a given Reducer to allow for custom Reducer.Context implementations.\n\nThe classes collaborate by taking input from the Map phase of the MapReduce job, calculating the sum of the values for each key, and writing the key and the sum to the context for output in the Reduce phase.\n\nQuality attributes:\n- Scalability: The reducers can handle large amounts of data and can be scaled horizontally by adding more reducers to the cluster.\n- Maintainability: The reducers are written in Java and use the Apache Hadoop MapReduce library, which is a widely used and well-documented framework.\n- Reliability: The reducers are part of the core Hadoop MapReduce functionality and are used in many production systems, ensuring high reliability.\n\nTechnologies used:\n- Java: The reducers are written in Java, a widely used programming language for enterprise applications.\n- Apache Hadoop MapReduce: The reducers use the Apache Hadoop MapReduce library, a widely used framework for processing large-scale data.\n- IntWritable and LongWritable: The reducers use the IntWritable and LongWritable classes for handling integer and long values, respectively.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/fieldsel/FieldSelectionReducer.java",
+    "lib/reduce/IntSumReducer.java",
+    "lib/reduce/LongSumReducer.java",
+    "lib/reduce/WrappedReducer.java"
+  ]
+}

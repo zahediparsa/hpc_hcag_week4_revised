@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "lib/reduce",
+  "title": "Directory-level architectural abstraction for lib/reduce",
+  "description": "The lib/reduce directory is responsible for implementing reducers for MapReduce jobs. The reducers take in a key and an iterable of values, and they calculate the sum of all the values for that key. The result is then written to the context using the key and the sum. The IntSumReducer and LongSumReducer classes collaborate by sharing the sameReduce method, which takes in a key and an iterable of values and calculates the sum of all the values. The architectural role of this directory is to provide a modular and reusable way of implementing reducers for different types of MapReduce jobs.",
+  "summary": "TITLE: Directory-level architectural abstraction for lib/reduce\nDESCRIPTION: The lib/reduce directory is responsible for implementing reducers for MapReduce jobs. The reducers take in a key and an iterable of values, and they calculate the sum of all the values for that key. The result is then written to the context using the key and the sum. The IntSumReducer and LongSumReducer classes collaborate by sharing the sameReduce method, which takes in a key and an iterable of values and calculates the sum of all the values. The architectural role of this directory is to provide a modular and reusable way of implementing reducers for different types of MapReduce jobs.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "IntSumReducer.java"
+    },
+    {
+      "type": "file",
+      "name": "LongSumReducer.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Directory-level architectural abstraction for lib/reduce\n\nDESCRIPTION:\nThe lib/reduce directory is responsible for implementing reducers for MapReduce jobs. The reducers take in a key and an iterable of values, and they calculate the sum of all the values for that key. The result is then written to the context using the key and the sum. The IntSumReducer and LongSumReducer classes collaborate by sharing the sameReduce method, which takes in a key and an iterable of values and calculates the sum of all the values. The architectural role of this directory is to provide a modular and reusable way of implementing reducers for different types of MapReduce jobs."
+}

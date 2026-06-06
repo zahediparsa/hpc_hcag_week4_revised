@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 90,
+    "class": "org.apache.hadoop.mapreduce.security.IntermediateEncryptedStream",
+    "path": "security/IntermediateEncryptedStream.java",
+    "file_name": "IntermediateEncryptedStream.java",
+    "directory": "security",
+    "summary": "KEY FUNCTIONALITY:\n1- wrapIfNecessary: used to wrap helpers while spilling intermediate files.\n2- addSpillIndexFile: adds the spill index file to the list of spill files.\n3- validateSpillIndexFile: validates the spill index file.\n4- resetSpillCBInjector: resets the spill callback injector.\n5- setSpillCBInjector: sets the spill callback injector.\n\nCORE LOGIC:\n1- wrapIfNecessary: wraps the output stream if necessary.\n2- wrapIfNecessary: wraps the input stream if necessary.\n3- wrapIfNecessary: wraps the input stream if necessary.\n\nINPUTS/OUTPUTS:\n1- wrapIfNecessary: takes in the configuration, output stream, and output path.\n2- wrapIfNecessary: takes in the configuration, input stream, and input path.\n3- wrapIfNecessary: takes in the configuration, input stream, length, and input path.\n4- addSpillIndexFile: takes in the index file name and configuration.\n5- validateSpillIndexFile: takes in the index file name and configuration.\n\nDEPENDENCIES:\n1- SpillCallBackInjector: used to capture the path of the spilled files.\n2- CryptoUtils: used to wrap the output and input streams if necessary.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 90,
+    "class": "org.apache.hadoop.mapreduce.security.SpillCallBackPathsFinder",
+    "path": "security/SpillCallBackPathsFinder.java",
+    "file_name": "SpillCallBackPathsFinder.java",
+    "directory": "security",
+    "summary": "KEY FUNCTIONALITY:\nKeeps track of spilled files and their positions.\n\nCORE LOGIC:\nKeeps track of encrypted and non-encrypted spilled files, as well as index spill files.\n\nINPUTS/OUTPUTS:\nThe class reads and writes spilled files and their positions.\n\nDEPENDENCIES:\nThe class depends on the Apache Hadoop MapReduce framework and the Configuration class.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

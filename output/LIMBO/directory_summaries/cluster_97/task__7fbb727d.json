@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 97,
+  "directory": "task",
+  "title": "MergeManagerImpl",
+  "description": "The MergeManagerImpl class is responsible for managing the merging of map outputs during the shuffle and sort phase of a MapReduce job. It contains logic for merging in-memory map outputs, as well as logic for merging on-disk map outputs. The class takes inputs in the form of map outputs, which can be either in-memory or on-disk, and produces outputs in the form of merged map outputs, which are written to disk.",
+  "summary": "TITLE: MergeManagerImpl\nDESCRIPTION: The MergeManagerImpl class is responsible for managing the merging of map outputs during the shuffle and sort phase of a MapReduce job. It contains logic for merging in-memory map outputs, as well as logic for merging on-disk map outputs. The class takes inputs in the form of map outputs, which can be either in-memory or on-disk, and produces outputs in the form of merged map outputs, which are written to disk.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "task/reduce"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MergeManagerImpl\n\nDESCRIPTION: The MergeManagerImpl class is responsible for managing the merging of map outputs during the shuffle and sort phase of a MapReduce job. It contains logic for merging in-memory map outputs, as well as logic for merging on-disk map outputs. The class takes inputs in the form of map outputs, which can be either in-memory or on-disk, and produces outputs in the form of merged map outputs, which are written to disk."
+}

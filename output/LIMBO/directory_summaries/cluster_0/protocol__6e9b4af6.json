@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "protocol",
+  "title": "Protocol Abstraction",
+  "description": "The protocol directory provides a way to create and close connections to a remote service. The ClientProtocolProvider class collaborates with the ClientProtocol interface and the Configuration class to achieve this functionality. The architectural pattern used in this directory is the factory pattern, which allows for the creation of objects without specifying the exact class of object that will be created. This promotes flexibility and modularity in the system.",
+  "summary": "TITLE: Protocol Abstraction\nDESCRIPTION: The protocol directory provides a way to create and close connections to a remote service. The ClientProtocolProvider class collaborates with the ClientProtocol interface and the Configuration class to achieve this functionality. The architectural pattern used in this directory is the factory pattern, which allows for the creation of objects without specifying the exact class of object that will be created. This promotes flexibility and modularity in the system.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ClientProtocolProvider.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Protocol Abstraction\n\nDESCRIPTION:\nThe protocol directory provides a way to create and close connections to a remote service. The ClientProtocolProvider class collaborates with the ClientProtocol interface and the Configuration class to achieve this functionality. The architectural pattern used in this directory is the factory pattern, which allows for the creation of objects without specifying the exact class of object that will be created. This promotes flexibility and modularity in the system."
+}

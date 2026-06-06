@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 19,
+  "directory": "lib",
+  "title": "OutputFormat",
+  "description": "The OutputFormat class is used to control the format of the data that is output by the MapReduce framework. It is responsible for producing the output files that contain the results of the MapReduce job. The OutputFormat class is used in conjunction with the RecordWriter class, which is responsible for writing the output data to the output files. The OutputFormat class also provides methods for checking the output specifications and committing the output.",
+  "summary": "TITLE: OutputFormat\nDESCRIPTION: The OutputFormat class is used to control the format of the data that is output by the MapReduce framework. It is responsible for producing the output files that contain the results of the MapReduce job. The OutputFormat class is used in conjunction with the RecordWriter class, which is responsible for writing the output data to the output files. The OutputFormat class also provides methods for checking the output specifications and committing the output.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/db"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: OutputFormat\n\nDESCRIPTION: The OutputFormat class is used to control the format of the data that is output by the MapReduce framework. It is responsible for producing the output files that contain the results of the MapReduce job. The OutputFormat class is used in conjunction with the RecordWriter class, which is responsible for writing the output data to the output files. The OutputFormat class also provides methods for checking the output specifications and committing the output."
+}

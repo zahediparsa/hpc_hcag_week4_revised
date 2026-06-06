@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 78,
+  "directory": "lib",
+  "title": "MapReduce Job Committer Stages",
+  "description": "This directory contains classes that implement specific stages of the MapReduce job commit process. These stages include setting up the job, setting up the task, saving the success file, and cleaning up the job. Each stage has a specific responsibility and collaborates with other files or directories as needed. The architectural role of this directory is to provide a modular and organized approach to managing the job commit process.",
+  "summary": "TITLE: MapReduce Job Committer Stages\nDESCRIPTION: This directory contains classes that implement specific stages of the MapReduce job commit process. These stages include setting up the job, setting up the task, saving the success file, and cleaning up the job. Each stage has a specific responsibility and collaborates with other files or directories as needed. The architectural role of this directory is to provide a modular and organized approach to managing the job commit process.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Job Committer Stages\n\nDESCRIPTION: This directory contains classes that implement specific stages of the MapReduce job commit process. These stages include setting up the job, setting up the task, saving the success file, and cleaning up the job. Each stage has a specific responsibility and collaborates with other files or directories as needed. The architectural role of this directory is to provide a modular and organized approach to managing the job commit process."
+}

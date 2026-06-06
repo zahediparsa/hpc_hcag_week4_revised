@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 12,
+  "directory": "lib/jobcontrol",
+  "title": "ControlledJob",
+  "description": "This class encapsulates a MapReduce job and its dependency. It monitors the states of the depending jobs and updates the state of this job.",
+  "summary": "TITLE: ControlledJob\nDESCRIPTION: This class encapsulates a MapReduce job and its dependency. It monitors the states of the depending jobs and updates the state of this job.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ControlledJob.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ControlledJob\n\nDESCRIPTION:\nThis class encapsulates a MapReduce job and its dependency. It monitors the states of the depending jobs and updates the state of this job."
+}

@@ -1,0 +1,54 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "lib/db",
+  "title": "org.apache.hadoop.mapreduce.lib.db",
+  "description": "This package provides the DBInputFormat, DBRecordReader, and DBWritable classes, which are used to read data from a database table and write data to a database table. The DBInputFormat class is an InputFormat that reads input data from an SQL table, and the DBRecordReader class is a RecordReader that reads records from a SQL table. The DBWritable class is an interface for objects that can be written to and read from a database. The classes in this package are used by the DataDrivenDBInputFormat and DataDrivenDBRecordReader classes, which are subclasses of DBInputFormat and DBRecordReader that implement custom algorithms for dividing a database table into splits. The MySQLDBRecordReader and MySQLDataDrivenDBRecordReader classes are subclasses of DBRecordReader that read records from a MySQL table, and the OracleDBRecordReader and OracleDataDrivenDBRecordReader classes are subclasses of DBRecordReader that read records from an Oracle table.",
+  "summary": "TITLE: org.apache.hadoop.mapreduce.lib.db\nDESCRIPTION: This package provides the DBInputFormat, DBRecordReader, and DBWritable classes, which are used to read data from a database table and write data to a database table. The DBInputFormat class is an InputFormat that reads input data from an SQL table, and the DBRecordReader class is a RecordReader that reads records from a SQL table. The DBWritable class is an interface for objects that can be written to and read from a database. The classes in this package are used by the DataDrivenDBInputFormat and DataDrivenDBRecordReader classes, which are subclasses of DBInputFormat and DBRecordReader that implement custom algorithms for dividing a database table into splits. The MySQLDBRecordReader and MySQLDataDrivenDBRecordReader classes are subclasses of DBRecordReader that read records from a MySQL table, and the OracleDBRecordReader and OracleDataDrivenDBRecordReader classes are subclasses of DBRecordReader that read records from an Oracle table.",
+  "number_of_children": 10,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "DBConfiguration.java"
+    },
+    {
+      "type": "file",
+      "name": "DBInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "DBRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "DBWritable.java"
+    },
+    {
+      "type": "file",
+      "name": "DataDrivenDBInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "DataDrivenDBRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "MySQLDBRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "MySQLDataDrivenDBRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "OracleDBRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "OracleDataDrivenDBRecordReader.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: org.apache.hadoop.mapreduce.lib.db\n\nDESCRIPTION:\nThis package provides the DBInputFormat, DBRecordReader, and DBWritable classes, which are used to read data from a database table and write data to a database table. The DBInputFormat class is an InputFormat that reads input data from an SQL table, and the DBRecordReader class is a RecordReader that reads records from a SQL table. The DBWritable class is an interface for objects that can be written to and read from a database. The classes in this package are used by the DataDrivenDBInputFormat and DataDrivenDBRecordReader classes, which are subclasses of DBInputFormat and DBRecordReader that implement custom algorithms for dividing a database table into splits. The MySQLDBRecordReader and MySQLDataDrivenDBRecordReader classes are subclasses of DBRecordReader that read records from a MySQL table, and the OracleDBRecordReader and OracleDataDrivenDBRecordReader classes are subclasses of DBRecordReader that read records from an Oracle table."
+}

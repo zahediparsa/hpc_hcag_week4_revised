@@ -1,0 +1,30 @@
+{
+  "type": "directory",
+  "cluster_id": 22,
+  "directory": "lib",
+  "title": "lib",
+  "description": "This directory contains helper classes that implement various functionalities required for processing input data in the Hadoop MapReduce framework. These classes collaborate to provide a flexible and extensible framework for processing different types of input data. The architectural role of this directory is to provide a high-level abstraction for common data processing tasks, allowing developers to focus on the specific requirements of their MapReduce jobs.",
+  "summary": "TITLE: lib\nDESCRIPTION: This directory contains helper classes that implement various functionalities required for processing input data in the Hadoop MapReduce framework. These classes collaborate to provide a flexible and extensible framework for processing different types of input data. The architectural role of this directory is to provide a high-level abstraction for common data processing tasks, allowing developers to focus on the specific requirements of their MapReduce jobs.",
+  "number_of_children": 4,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/fieldsel"
+    },
+    {
+      "type": "directory",
+      "name": "lib/input"
+    },
+    {
+      "type": "directory",
+      "name": "lib/map"
+    },
+    {
+      "type": "directory",
+      "name": "lib/partition"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib\n\nDESCRIPTION: This directory contains helper classes that implement various functionalities required for processing input data in the Hadoop MapReduce framework. These classes collaborate to provide a flexible and extensible framework for processing different types of input data. The architectural role of this directory is to provide a high-level abstraction for common data processing tasks, allowing developers to focus on the specific requirements of their MapReduce jobs."
+}

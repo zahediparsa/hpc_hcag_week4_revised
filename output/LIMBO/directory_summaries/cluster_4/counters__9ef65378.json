@@ -1,0 +1,34 @@
+{
+  "type": "directory",
+  "cluster_id": 4,
+  "directory": "counters",
+  "title": "Counters Directory",
+  "description": "The counters directory is responsible for managing the counters in the Hadoop MapReduce framework. It provides a common implementation of counter groups and counters, as well as methods for adding, finding, and incrementing counters. The directory collaborates with other files or child directories to ensure the proper functioning of the counters. The architectural role of the counters directory is to provide a centralized location for managing counters, which helps in organizing and tracking the progress of MapReduce jobs.",
+  "summary": "TITLE: Counters Directory\nDESCRIPTION: The counters directory is responsible for managing the counters in the Hadoop MapReduce framework. It provides a common implementation of counter groups and counters, as well as methods for adding, finding, and incrementing counters. The directory collaborates with other files or child directories to ensure the proper functioning of the counters. The architectural role of the counters directory is to provide a centralized location for managing counters, which helps in organizing and tracking the progress of MapReduce jobs.",
+  "number_of_children": 5,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AbstractCounterGroup.java"
+    },
+    {
+      "type": "file",
+      "name": "AbstractCounters.java"
+    },
+    {
+      "type": "file",
+      "name": "CounterGroupFactory.java"
+    },
+    {
+      "type": "file",
+      "name": "FileSystemCounterGroup.java"
+    },
+    {
+      "type": "file",
+      "name": "FrameworkCounterGroup.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Counters Directory\n\nDESCRIPTION:\nThe counters directory is responsible for managing the counters in the Hadoop MapReduce framework. It provides a common implementation of counter groups and counters, as well as methods for adding, finding, and incrementing counters. The directory collaborates with other files or child directories to ensure the proper functioning of the counters. The architectural role of the counters directory is to provide a centralized location for managing counters, which helps in organizing and tracking the progress of MapReduce jobs."
+}

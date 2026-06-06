@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 8,
+  "directory": ".",
+  "title": "lib",
+  "description": "responsible for handling the input data for the MapReduce job, responsible for creating splits for the input data, responsible for creating RecordReaders for each split.",
+  "summary": "TITLE: lib\nDESCRIPTION: responsible for handling the input data for the MapReduce job, responsible for creating splits for the input data, responsible for creating RecordReaders for each split.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "InputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "RecordReader.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib\n\nDESCRIPTION: responsible for handling the input data for the MapReduce job, responsible for creating splits for the input data, responsible for creating RecordReaders for each split."
+}

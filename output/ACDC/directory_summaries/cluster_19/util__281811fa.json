@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 19,
+  "directory": "util",
+  "title": "MapReduce Counters Utilities",
+  "description": "This directory contains utilities for converting counter data to and from a compact string format. The CountersStrings class provides methods for escaping and unescaping delimiters in counter strings, as well as methods for converting counter objects to and from compact strings. This code is used by the Hadoop MapReduce library and the Apache Hadoop classification library.",
+  "summary": "TITLE: MapReduce Counters Utilities\nDESCRIPTION: This directory contains utilities for converting counter data to and from a compact string format. The CountersStrings class provides methods for escaping and unescaping delimiters in counter strings, as well as methods for converting counter objects to and from compact strings. This code is used by the Hadoop MapReduce library and the Apache Hadoop classification library.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CountersStrings.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Counters Utilities\n\nDESCRIPTION:\nThis directory contains utilities for converting counter data to and from a compact string format. The CountersStrings class provides methods for escaping and unescaping delimiters in counter strings, as well as methods for converting counter objects to and from compact strings. This code is used by the Hadoop MapReduce library and the Apache Hadoop classification library."
+}

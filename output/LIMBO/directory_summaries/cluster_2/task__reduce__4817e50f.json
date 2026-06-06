@@ -1,0 +1,30 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "task/reduce",
+  "title": "Directory-level architectural abstraction of task/reduce",
+  "description": "The task/reduce directory is responsible for handling shuffle data and exceptions in the Hadoop MapReduce architecture. The files in this directory collaborate by sending and receiving shuffle data between the TaskTracker and the Fetcher thread of a Reduce task. The ShuffleHeader class is used to send and receive shuffle data, while the InMemoryWriter class is used to write key-value pairs to an output stream. The ExceptionReporter class is an interface for reporting exceptions to other threads. The ShuffleScheduler interface defines methods for waiting until the shuffle is done, interpreting a TaskCompletionEvent from the event stream, and closing the scheduler.",
+  "summary": "TITLE: Directory-level architectural abstraction of task/reduce\nDESCRIPTION: The task/reduce directory is responsible for handling shuffle data and exceptions in the Hadoop MapReduce architecture. The files in this directory collaborate by sending and receiving shuffle data between the TaskTracker and the Fetcher thread of a Reduce task. The ShuffleHeader class is used to send and receive shuffle data, while the InMemoryWriter class is used to write key-value pairs to an output stream. The ExceptionReporter class is an interface for reporting exceptions to other threads. The ShuffleScheduler interface defines methods for waiting until the shuffle is done, interpreting a TaskCompletionEvent from the event stream, and closing the scheduler.",
+  "number_of_children": 4,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ExceptionReporter.java"
+    },
+    {
+      "type": "file",
+      "name": "InMemoryWriter.java"
+    },
+    {
+      "type": "file",
+      "name": "ShuffleHeader.java"
+    },
+    {
+      "type": "file",
+      "name": "ShuffleScheduler.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Directory-level architectural abstraction of task/reduce\n\nDESCRIPTION:\nThe task/reduce directory is responsible for handling shuffle data and exceptions in the Hadoop MapReduce architecture. The files in this directory collaborate by sending and receiving shuffle data between the TaskTracker and the Fetcher thread of a Reduce task. The ShuffleHeader class is used to send and receive shuffle data, while the InMemoryWriter class is used to write key-value pairs to an output stream. The ExceptionReporter class is an interface for reporting exceptions to other threads. The ShuffleScheduler interface defines methods for waiting until the shuffle is done, interpreting a TaskCompletionEvent from the event stream, and closing the scheduler."
+}

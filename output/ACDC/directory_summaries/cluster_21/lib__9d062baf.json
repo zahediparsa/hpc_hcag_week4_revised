@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 21,
+  "directory": "lib",
+  "title": "Hadoop MapReduce Architecture",
+  "description": "The Hadoop MapReduce architecture is responsible for processing large-scale data sets in a distributed environment. It consists of two main components: the Map phase and the Reduce phase. The Map phase breaks down the input data into smaller chunks and processes them in parallel, while the Reduce phase aggregates the results and produces the final output. The lib directory in Hadoop MapReduce contains various classes that implement the logic for input, partitioning, and other aspects of the MapReduce process. The lib/input directory contains classes that define the input format for the Map phase, while the lib/partition directory contains classes that implement the logic for partitioning the data across the cluster. The classes in these directories collaborate to ensure that the data is processed efficiently and effectively in a distributed environment.",
+  "summary": "TITLE: Hadoop MapReduce Architecture\nDESCRIPTION: The Hadoop MapReduce architecture is responsible for processing large-scale data sets in a distributed environment. It consists of two main components: the Map phase and the Reduce phase. The Map phase breaks down the input data into smaller chunks and processes them in parallel, while the Reduce phase aggregates the results and produces the final output. The lib directory in Hadoop MapReduce contains various classes that implement the logic for input, partitioning, and other aspects of the MapReduce process. The lib/input directory contains classes that define the input format for the Map phase, while the lib/partition directory contains classes that implement the logic for partitioning the data across the cluster. The classes in these directories collaborate to ensure that the data is processed efficiently and effectively in a distributed environment.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/input"
+    },
+    {
+      "type": "directory",
+      "name": "lib/partition"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is responsible for processing large-scale data sets in a distributed environment. It consists of two main components: the Map phase and the Reduce phase. The Map phase breaks down the input data into smaller chunks and processes them in parallel, while the Reduce phase aggregates the results and produces the final output. The lib directory in Hadoop MapReduce contains various classes that implement the logic for input, partitioning, and other aspects of the MapReduce process. The lib/input directory contains classes that define the input format for the Map phase, while the lib/partition directory contains classes that implement the logic for partitioning the data across the cluster. The classes in these directories collaborate to ensure that the data is processed efficiently and effectively in a distributed environment."
+}

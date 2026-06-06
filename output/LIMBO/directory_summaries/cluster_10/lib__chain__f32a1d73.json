@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 10,
+  "directory": "lib/chain",
+  "title": "lib/chain",
+  "description": "This directory contains classes that provide a way to chain multiple MapReduce jobs together. The classes in this directory provide a way to pass the output of one job as the input to the next job, allowing for complex data processing pipelines to be created. The classes in this directory collaborate by passing data between each other using the MapContext and ReduceContext classes. The architectural pattern used in this directory is the decorator pattern, which allows for additional functionality to be added to an object without changing its original implementation.",
+  "summary": "TITLE: lib/chain\nDESCRIPTION: This directory contains classes that provide a way to chain multiple MapReduce jobs together. The classes in this directory provide a way to pass the output of one job as the input to the next job, allowing for complex data processing pipelines to be created. The classes in this directory collaborate by passing data between each other using the MapContext and ReduceContext classes. The architectural pattern used in this directory is the decorator pattern, which allows for additional functionality to be added to an object without changing its original implementation.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ChainMapContextImpl.java"
+    },
+    {
+      "type": "file",
+      "name": "ChainReduceContextImpl.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/chain\n\nDESCRIPTION:\nThis directory contains classes that provide a way to chain multiple MapReduce jobs together. The classes in this directory provide a way to pass the output of one job as the input to the next job, allowing for complex data processing pipelines to be created. The classes in this directory collaborate by passing data between each other using the MapContext and ReduceContext classes. The architectural pattern used in this directory is the decorator pattern, which allows for additional functionality to be added to an object without changing its original implementation."
+}

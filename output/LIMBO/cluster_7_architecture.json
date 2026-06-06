@@ -1,0 +1,27 @@
+{
+  "cluster_id": 7,
+  "title": "CryptoUtils",
+  "description": "This directory contains utilities for working with cryptographic streams, specifically for encrypting intermediate data such as MapReduce spill files. It includes methods for creating and initializing an IV (Initialization Vector), calculating crypto padding, and wrapping FSDataOutputStream and InputStream with CryptoOutputStream and CryptoInputStream, respectively. The code takes a Configuration object and an output or input stream as input, and returns an encrypted output or input stream if encryption is enabled.\n\nDEPENDENCIES:\nThe code depends on the Apache Hadoop MapReduce library and the Apache Commons Codec library for Base64 encoding.",
+  "description_word_count": 88,
+  "number_of_files": 7,
+  "number_of_directories": 5,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: CryptoUtils\n\nDESCRIPTION:\nThis directory contains utilities for working with cryptographic streams, specifically for encrypting intermediate data such as MapReduce spill files. It includes methods for creating and initializing an IV (Initialization Vector), calculating crypto padding, and wrapping FSDataOutputStream and InputStream with CryptoOutputStream and CryptoInputStream, respectively. The code takes a Configuration object and an output or input stream as input, and returns an encrypted output or input stream if encryption is enabled.\n\nDEPENDENCIES:\nThe code depends on the Apache Hadoop MapReduce library and the Apache Commons Codec library for Base64 encoding.",
+  "algorithm": "LIMBO",
+  "files": [
+    "CryptoUtils.java",
+    "JobACL.java",
+    "counters/Limits.java",
+    "filecache/ClientDistributedCacheManager.java",
+    "filecache/DistributedCache.java",
+    "security/TokenCache.java",
+    "util/MRJobConfUtil.java"
+  ]
+}

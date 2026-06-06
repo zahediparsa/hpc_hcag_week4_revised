@@ -1,0 +1,34 @@
+{
+  "type": "directory",
+  "cluster_id": 5,
+  "directory": ".",
+  "title": "Hadoop MapReduce Architecture Abstraction",
+  "description": "The Hadoop MapReduce architecture consists of several key components, including the JobTracker, TaskTrackers, and the Hadoop Distributed File System (HDFS). The JobTracker is responsible for scheduling and monitoring MapReduce jobs, while the TaskTrackers execute the tasks assigned by the JobTracker. HDFS is used for distributed storage and retrieval of data. The MapReduce framework follows a master-slave architecture, with the JobTracker acting as the master and the TaskTrackers acting as slaves. The communication between the components is facilitated by the Hadoop RPC (Remote Procedure Call) mechanism. The MapReduce framework is designed to handle large-scale data processing tasks efficiently and scalably.",
+  "summary": "TITLE: Hadoop MapReduce Architecture Abstraction\nDESCRIPTION: The Hadoop MapReduce architecture consists of several key components, including the JobTracker, TaskTrackers, and the Hadoop Distributed File System (HDFS). The JobTracker is responsible for scheduling and monitoring MapReduce jobs, while the TaskTrackers execute the tasks assigned by the JobTracker. HDFS is used for distributed storage and retrieval of data. The MapReduce framework follows a master-slave architecture, with the JobTracker acting as the master and the TaskTrackers acting as slaves. The communication between the components is facilitated by the Hadoop RPC (Remote Procedure Call) mechanism. The MapReduce framework is designed to handle large-scale data processing tasks efficiently and scalably.",
+  "number_of_children": 5,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "TaskAttemptID.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskID.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskType.java"
+    },
+    {
+      "type": "directory",
+      "name": "jobhistory"
+    },
+    {
+      "type": "directory",
+      "name": "util"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture Abstraction\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture consists of several key components, including the JobTracker, TaskTrackers, and the Hadoop Distributed File System (HDFS). The JobTracker is responsible for scheduling and monitoring MapReduce jobs, while the TaskTrackers execute the tasks assigned by the JobTracker. HDFS is used for distributed storage and retrieval of data. The MapReduce framework follows a master-slave architecture, with the JobTracker acting as the master and the TaskTrackers acting as slaves. The communication between the components is facilitated by the Hadoop RPC (Remote Procedure Call) mechanism. The MapReduce framework is designed to handle large-scale data processing tasks efficiently and scalably."
+}

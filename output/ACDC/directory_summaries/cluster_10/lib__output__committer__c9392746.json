@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 10,
+  "directory": "lib/output/committer",
+  "title": "Directory-level architectural abstraction for committer manifest implementation.",
+  "description": "This directory is responsible for managing the writing of manifest files in a fault-tolerant manner. It provides a simple interface for writing manifest files and handles the underlying details of writing to a local file or a file on any filesystem. The code includes a writer thread that takes file entry lists from a queue and writes them to the output stream. Other threads can queue the file entry lists from loaded manifests for them to be written. The writer thread is responsible for managing the shutdown, failing safely on write failures, and restarting all blocked writers in the process. The code depends on the Apache Hadoop MapReduce library and the Apache Hadoop Common library. It also depends on theslf4j library for logging.",
+  "summary": "TITLE: Directory-level architectural abstraction for committer manifest implementation.\nDESCRIPTION: This directory is responsible for managing the writing of manifest files in a fault-tolerant manner. It provides a simple interface for writing manifest files and handles the underlying details of writing to a local file or a file on any filesystem. The code includes a writer thread that takes file entry lists from a queue and writes them to the output stream. Other threads can queue the file entry lists from loaded manifests for them to be written. The writer thread is responsible for managing the shutdown, failing safely on write failures, and restarting all blocked writers in the process. The code depends on the Apache Hadoop MapReduce library and the Apache Hadoop Common library. It also depends on theslf4j library for logging.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Directory-level architectural abstraction for committer manifest implementation.\n\nDESCRIPTION: This directory is responsible for managing the writing of manifest files in a fault-tolerant manner. It provides a simple interface for writing manifest files and handles the underlying details of writing to a local file or a file on any filesystem. The code includes a writer thread that takes file entry lists from a queue and writes them to the output stream. Other threads can queue the file entry lists from loaded manifests for them to be written. The writer thread is responsible for managing the shutdown, failing safely on write failures, and restarting all blocked writers in the process. The code depends on the Apache Hadoop MapReduce library and the Apache Hadoop Common library. It also depends on theslf4j library for logging."
+}

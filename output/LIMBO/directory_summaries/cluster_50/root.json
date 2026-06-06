@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 50,
+  "directory": ".",
+  "title": "lib/aggregate",
+  "description": "The lib/aggregate directory contains classes that implement value aggregators. Value aggregators are used to perform various operations on sequences of values, such as summing, finding minimum and maximum values, and computing histograms. The classes in this directory collaborate to provide a comprehensive set of functionality for value aggregation. The architectural role of the lib/aggregate directory is to provide a reusable and extensible framework for value aggregation. It follows the principles of the Apache Hadoop MapReduce library, which is designed to process large datasets in a distributed environment. The classes in this directory can be used as building blocks for more complex data processing tasks, and they can be easily extended to support additional types of values or aggregation operations.",
+  "summary": "TITLE: lib/aggregate\nDESCRIPTION: The lib/aggregate directory contains classes that implement value aggregators. Value aggregators are used to perform various operations on sequences of values, such as summing, finding minimum and maximum values, and computing histograms. The classes in this directory collaborate to provide a comprehensive set of functionality for value aggregation. The architectural role of the lib/aggregate directory is to provide a reusable and extensible framework for value aggregation. It follows the principles of the Apache Hadoop MapReduce library, which is designed to process large datasets in a distributed environment. The classes in this directory can be used as building blocks for more complex data processing tasks, and they can be easily extended to support additional types of values or aggregation operations.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/aggregate\n\nDESCRIPTION:\nThe lib/aggregate directory contains classes that implement value aggregators. Value aggregators are used to perform various operations on sequences of values, such as summing, finding minimum and maximum values, and computing histograms. The classes in this directory collaborate to provide a comprehensive set of functionality for value aggregation. The architectural role of the lib/aggregate directory is to provide a reusable and extensible framework for value aggregation. It follows the principles of the Apache Hadoop MapReduce library, which is designed to process large datasets in a distributed environment. The classes in this directory can be used as building blocks for more complex data processing tasks, and they can be easily extended to support additional types of values or aggregation operations."
+}

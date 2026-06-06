@@ -1,0 +1,22 @@
+{
+  "cluster_id": 91,
+  "title": "Hadoop MapReduce Architecture: security/token Directory",
+  "description": "The security/token directory in Hadoop MapReduce architecture is responsible for managing job tokens and secret keys. The JobTokenSecretManager.java file provides functionality for generating and caching job tokens, while the JobTokenSelector.java file implements a TokenSelector that can be used to select the appropriate job token for a given service. These classes collaborate to ensure secure and efficient management of job tokens within the Hadoop framework.",
+  "description_word_count": 67,
+  "number_of_files": 2,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture: security/token Directory\n\nDESCRIPTION:\nThe security/token directory in Hadoop MapReduce architecture is responsible for managing job tokens and secret keys. The JobTokenSecretManager.java file provides functionality for generating and caching job tokens, while the JobTokenSelector.java file implements a TokenSelector that can be used to select the appropriate job token for a given service. These classes collaborate to ensure secure and efficient management of job tokens within the Hadoop framework.",
+  "algorithm": "LIMBO",
+  "files": [
+    "security/token/JobTokenSecretManager.java",
+    "security/token/JobTokenSelector.java"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "server/tasktracker",
+  "title": "Server-side TaskTracker Abstraction",
+  "description": "The server/tasktracker directory is responsible for managing the execution of tasks on the TaskTracker. It collaborates with the JobTracker to assign tasks and report task status. The directory follows the Singleton pattern, ensuring that only one instance of the TaskTracker class is created. The TaskTracker class is the core logic of the directory, handling task execution, heartbeats, and task completion. It imports the MRConfig class for configuration constants and collaborates with the ClusterStatus and Task classes. The directory also imports the Clock, Configuration, and other utility classes for time-based operations.",
+  "summary": "TITLE: Server-side TaskTracker Abstraction\nDESCRIPTION: The server/tasktracker directory is responsible for managing the execution of tasks on the TaskTracker. It collaborates with the JobTracker to assign tasks and report task status. The directory follows the Singleton pattern, ensuring that only one instance of the TaskTracker class is created. The TaskTracker class is the core logic of the directory, handling task execution, heartbeats, and task completion. It imports the MRConfig class for configuration constants and collaborates with the ClusterStatus and Task classes. The directory also imports the Clock, Configuration, and other utility classes for time-based operations.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "TTConfig.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Server-side TaskTracker Abstraction\n\nDESCRIPTION:\nThe server/tasktracker directory is responsible for managing the execution of tasks on the TaskTracker. It collaborates with the JobTracker to assign tasks and report task status. The directory follows the Singleton pattern, ensuring that only one instance of the TaskTracker class is created. The TaskTracker class is the core logic of the directory, handling task execution, heartbeats, and task completion. It imports the MRConfig class for configuration constants and collaborates with the ClusterStatus and Task classes. The directory also imports the Clock, Configuration, and other utility classes for time-based operations."
+}

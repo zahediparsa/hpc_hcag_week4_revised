@@ -1,0 +1,50 @@
+{
+  "type": "directory",
+  "cluster_id": 4,
+  "directory": "lib/output/committer/manifest/files",
+  "title": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.files",
+  "description": "This package contains classes for representing and serializing manifest data.\n\nThe classes in this package are used to represent and serialize manifest data, which is used to track the output of tasks and ensure that the output is committed correctly.\n\nThe classes include:\n\n- AbstractManifestData: A base class for single/multiple commit data structures.\n- DiagnosticKeys: Keys used in manifests to describe the state of the job.\n- DirEntry: Represents a directory entry in the task manifest.\n- EntryStatus: Represents the status of a file or directory entry.\n- FileEntry: Represents a file entry in the task manifest.\n- ManifestPrinter: Prints a manifest file.\n- ManifestSuccessData: Provides a summary of the data saved into a _SUCCESS marker file.\n- TaskManifest: Represents the manifest of files which were created by a task attempt.\n\nThese classes are used to track the output of tasks and ensure that the output is committed correctly.",
+  "summary": "TITLE: org.apache.hadoop.mapreduce.lib.output.committer.manifest.files\nDESCRIPTION: This package contains classes for representing and serializing manifest data.\n\nThe classes in this package are used to represent and serialize manifest data, which is used to track the output of tasks and ensure that the output is committed correctly.\n\nThe classes include:\n\n- AbstractManifestData: A base class for single/multiple commit data structures.\n- DiagnosticKeys: Keys used in manifests to describe the state of the job.\n- DirEntry: Represents a directory entry in the task manifest.\n- EntryStatus: Represents the status of a file or directory entry.\n- FileEntry: Represents a file entry in the task manifest.\n- ManifestPrinter: Prints a manifest file.\n- ManifestSuccessData: Provides a summary of the data saved into a _SUCCESS marker file.\n- TaskManifest: Represents the manifest of files which were created by a task attempt.\n\nThese classes are used to track the output of tasks and ensure that the output is committed correctly.",
+  "number_of_children": 9,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AbstractManifestData.java"
+    },
+    {
+      "type": "file",
+      "name": "DiagnosticKeys.java"
+    },
+    {
+      "type": "file",
+      "name": "DirEntry.java"
+    },
+    {
+      "type": "file",
+      "name": "EntryStatus.java"
+    },
+    {
+      "type": "file",
+      "name": "FileEntry.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestPrinter.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestSuccessData.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskManifest.java"
+    },
+    {
+      "type": "file",
+      "name": "package-info.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: org.apache.hadoop.mapreduce.lib.output.committer.manifest.files\n\nDESCRIPTION:\nThis package contains classes for representing and serializing manifest data.\n\nThe classes in this package are used to represent and serialize manifest data, which is used to track the output of tasks and ensure that the output is committed correctly.\n\nThe classes include:\n\n- AbstractManifestData: A base class for single/multiple commit data structures.\n- DiagnosticKeys: Keys used in manifests to describe the state of the job.\n- DirEntry: Represents a directory entry in the task manifest.\n- EntryStatus: Represents the status of a file or directory entry.\n- FileEntry: Represents a file entry in the task manifest.\n- ManifestPrinter: Prints a manifest file.\n- ManifestSuccessData: Provides a summary of the data saved into a _SUCCESS marker file.\n- TaskManifest: Represents the manifest of files which were created by a task attempt.\n\nThese classes are used to track the output of tasks and ensure that the output is committed correctly."
+}

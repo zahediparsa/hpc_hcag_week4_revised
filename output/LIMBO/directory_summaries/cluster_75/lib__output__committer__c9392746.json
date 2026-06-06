@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 75,
+  "directory": "lib/output/committer",
+  "title": "ManifestCommitter",
+  "description": "The ManifestCommitter class is a subclass of PathOutputCommitter that is used to commit task attempts and job output in a fault-tolerant manner. It is used in conjunction with the ManifestCommitterOutputFormat class to write output data to a manifest file.",
+  "summary": "TITLE: ManifestCommitter\nDESCRIPTION: The ManifestCommitter class is a subclass of PathOutputCommitter that is used to commit task attempts and job output in a fault-tolerant manner. It is used in conjunction with the ManifestCommitterOutputFormat class to write output data to a manifest file.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ManifestCommitter\n\nDESCRIPTION:\nThe ManifestCommitter class is a subclass of PathOutputCommitter that is used to commit task attempts and job output in a fault-tolerant manner. It is used in conjunction with the ManifestCommitterOutputFormat class to write output data to a manifest file."
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.CryptoUtils",
+    "path": "CryptoUtils.java",
+    "file_name": "CryptoUtils.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThis chunk of code provides utilities for working with cryptographic streams,\nspecifically for encrypting intermediate data such as MapReduce spill files.\n\nCORE LOGIC:\nThe code includes methods for creating and initializing an IV (Initialization\nVector), calculating crypto padding, and wrapping FSDataOutputStream and\nInputStream with CryptoOutputStream and CryptoInputStream, respectively.\n\nINPUTS/OUTPUTS:\nThe code takes a Configuration object and an output or input stream as input,\nand returns an encrypted output or input stream if encryption is enabled.\n\nDEPENDENCIES:\nThe code depends on the Apache Hadoop MapReduce library and the Apache\nCommons Codec library for Base64 encoding.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.JobACL",
+    "path": "JobACL.java",
+    "file_name": "JobACL.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\n- Job related ACLs\n\nCORE LOGIC:\n- N/A\n\nINPUTS/OUTPUTS:\n- N/A\n\nDEPENDENCIES:\n- org.apache.hadoop.classification.*\n- MRJobConfig.JOB_ACL_VIEW_JOB\n- MRJobConfig.JOB_ACL_MODIFY_JOB",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.counters.Limits",
+    "path": "counters/Limits.java",
+    "file_name": "Limits.java",
+    "directory": "counters",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this chunk is to define limits for the number of counters and counter groups in a MapReduce job.\n\nCORE LOGIC:\nThe chunk contains algorithms for checking and enforcing these limits.\n\nINPUTS/OUTPUTS:\nThe chunk does not have any specific inputs or outputs.\n\nDEPENDENCIES:\nThe chunk depends on the Apache Hadoop MapReduce framework and the Configuration class.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.filecache.ClientDistributedCacheManager",
+    "path": "filecache/ClientDistributedCacheManager.java",
+    "file_name": "ClientDistributedCacheManager.java",
+    "directory": "filecache",
+    "summary": "KEY FUNCTIONALITY:\n- Determines timestamps of files to be cached and stores those in the configuration\n- Determines the visibilities of the distributed cache files and archives\n- For each archive or cache file, get the corresponding delegation token\n\nCORE LOGIC:\n- Use the configuration to get the cache archives and files\n- Use the FileSystem class to get the file status for each URI\n- Use the FileStatus class to get the length and modification time of each file\n- Use the FsAction class to check the permissions of each file\n- Use the TokenCache class to get the delegation tokens for each file\n\nINPUTS/OUTPUTS:\n- Configuration of a job\n- Credentials\n\nDEPENDENCIES:\n- FileSystem\n- FileStatus\n- FsAction\n- TokenCache",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.filecache.DistributedCache",
+    "path": "filecache/DistributedCache.java",
+    "file_name": "DistributedCache.java",
+    "directory": "filecache",
+    "summary": "KEY FUNCTIONALITY:\n\nDistribute application-specific large, read-only files efficiently.\n\nCORE LOGIC:\n\nThe core logic of this chunk is to set up the cache for the application by copying the necessary files to the FileSystem and setting up the application's JobConf.\n\nINPUTS/OUTPUTS:\n\nThe inputs are the necessary files to be cached, specified via urls, and the JobConf. The outputs are the localized files and archives, which are used by the Mapper or Reducer.\n\nDEPENDENCIES:\n\nThe dependencies include the org.apache.hadoop.mapreduce.filecache package, the org.apache.hadoop.conf package, the org.apache.hadoop.mapreduce.task package, the org.apache.hadoop.util package, the org.apache.hadoop.fs package, the org.apache.hadoop.mapreduce package, and the java.net package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.security.TokenCache",
+    "path": "security/TokenCache.java",
+    "file_name": "TokenCache.java",
+    "directory": "security",
+    "summary": "KEY FUNCTIONALITY:\nThis chunk of code provides user-facing APIs for transferring secrets from the job client to the tasks.\n\nCORE LOGIC:\nThe code includes methods for obtaining delegation tokens from namenodes corresponding to the paths passed, as well as methods for removing jobtoken referrals that don't make sense in the context of the task execution.\n\nINPUTS/OUTPUTS:\nThe code takes in a Credentials object, an array of paths, and a Configuration object as inputs. It also outputs a Credentials object with updated tokens.\n\nDEPENDENCIES:\nThe code depends on the org.apache.hadoop.mapreduce.security package and the org.apache.hadoop.mapreduce.security.token package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 7,
+    "class": "org.apache.hadoop.mapreduce.util.MRJobConfUtil",
+    "path": "util/MRJobConfUtil.java",
+    "file_name": "MRJobConfUtil.java",
+    "directory": "util",
+    "summary": "KEY FUNCTIONALITY:\nThis code contains utility methods for MR Job configuration.\n\nCORE LOGIC:\nThe code includes methods for redacting job configuration properties, setting task progress report intervals, and setting the frequency of logging of task attempts.\n\nINPUTS/OUTPUTS:\nThe code takes a Configuration object as input and modifies it in-place.\n\nDEPENDENCIES:\nThe code depends on the Apache Hadoop MapReduce library and theslf4j logging library.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

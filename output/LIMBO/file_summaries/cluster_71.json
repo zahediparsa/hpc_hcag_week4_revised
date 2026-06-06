@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 71,
+    "class": "org.apache.hadoop.mapreduce.lib.join.InnerJoinRecordReader",
+    "path": "lib/join/InnerJoinRecordReader.java",
+    "file_name": "InnerJoinRecordReader.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\n\nThe InnerJoinRecordReader class is a subclass of JoinRecordReader that performs a full inner join on multiple data sources.\n\nCORE LOGIC:\n\nThe combine method is overridden to check if the tuple is full, meaning that all data sources contain the key. If the tuple is full, it returns true, indicating that the join condition is met.\n\nINPUTS/OUTPUTS:\n\nThe InnerJoinRecordReader class takes an id, configuration, capacity, and comparator class as input parameters in its constructor. It outputs the combined tuples that satisfy the join condition.\n\nDEPENDENCIES:\n\nThe InnerJoinRecordReader class depends on the JoinRecordReader class and its parent classes. It also depends on the WritableComparable and WritableComparator interfaces.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 71,
+    "class": "org.apache.hadoop.mapreduce.lib.join.OuterJoinRecordReader",
+    "path": "lib/join/OuterJoinRecordReader.java",
+    "file_name": "OuterJoinRecordReader.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY: Full outer join.\nCORE LOGIC: Emit everything from the collector.\nINPUTS/OUTPUTS: Data flowing in and out.\nDEPENDENCIES: Imported, parent, or collaborator classes visible in this chunk.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

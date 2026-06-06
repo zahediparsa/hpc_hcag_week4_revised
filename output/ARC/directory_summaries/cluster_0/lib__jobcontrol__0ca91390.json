@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "lib/jobcontrol",
+  "title": "Hadoop MapReduce Architecture",
+  "description": "The Hadoop MapReduce architecture is a distributed processing framework that allows for the processing of large data sets across clusters of computers. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. The architecture consists of a master node and multiple slave nodes, with the master node coordinating the tasks and the slave nodes executing them. The master node also keeps track of the status of the cluster and the tasks running on it. The architecture is fault-tolerant, meaning that if a slave node fails, the master node can reassign the tasks to other slave nodes. The architecture is also scalable, meaning that it can handle large amounts of data and can be expanded by adding more slave nodes to the cluster.",
+  "summary": "TITLE: Hadoop MapReduce Architecture\nDESCRIPTION: The Hadoop MapReduce architecture is a distributed processing framework that allows for the processing of large data sets across clusters of computers. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. The architecture consists of a master node and multiple slave nodes, with the master node coordinating the tasks and the slave nodes executing them. The master node also keeps track of the status of the cluster and the tasks running on it. The architecture is fault-tolerant, meaning that if a slave node fails, the master node can reassign the tasks to other slave nodes. The architecture is also scalable, meaning that it can handle large amounts of data and can be expanded by adding more slave nodes to the cluster.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ControlledJob.java"
+    },
+    {
+      "type": "file",
+      "name": "JobControl.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is a distributed processing framework that allows for the processing of large data sets across clusters of computers. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. The architecture consists of a master node and multiple slave nodes, with the master node coordinating the tasks and the slave nodes executing them. The master node also keeps track of the status of the cluster and the tasks running on it. The architecture is fault-tolerant, meaning that if a slave node fails, the master node can reassign the tasks to other slave nodes. The architecture is also scalable, meaning that it can handle large amounts of data and can be expanded by adding more slave nodes to the cluster."
+}

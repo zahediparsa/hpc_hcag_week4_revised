@@ -1,0 +1,34 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": "lib/chain",
+  "title": "Chain directory",
+  "description": "The Chain directory contains classes that allow for the execution of multiple Mappers and a Reducer in a chain-like manner. It provides a way to chain multiple Mappers together and execute them sequentially, passing the output of each Mapper as the input to the next one. The classes in this directory manage the execution of the Mappers and Reducer in a chain-like manner, and they provide a way to add Mappers to the chain, set the Reducer, and manage the execution of the chain.",
+  "summary": "TITLE: Chain directory\nDESCRIPTION: The Chain directory contains classes that allow for the execution of multiple Mappers and a Reducer in a chain-like manner. It provides a way to chain multiple Mappers together and execute them sequentially, passing the output of each Mapper as the input to the next one. The classes in this directory manage the execution of the Mappers and Reducer in a chain-like manner, and they provide a way to add Mappers to the chain, set the Reducer, and manage the execution of the chain.",
+  "number_of_children": 5,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "Chain.java"
+    },
+    {
+      "type": "file",
+      "name": "ChainMapContextImpl.java"
+    },
+    {
+      "type": "file",
+      "name": "ChainMapper.java"
+    },
+    {
+      "type": "file",
+      "name": "ChainReduceContextImpl.java"
+    },
+    {
+      "type": "file",
+      "name": "ChainReducer.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Chain directory\n\nDESCRIPTION:\nThe Chain directory contains classes that allow for the execution of multiple Mappers and a Reducer in a chain-like manner. It provides a way to chain multiple Mappers together and execute them sequentially, passing the output of each Mapper as the input to the next one. The classes in this directory manage the execution of the Mappers and Reducer in a chain-like manner, and they provide a way to add Mappers to the chain, set the Reducer, and manage the execution of the chain."
+}

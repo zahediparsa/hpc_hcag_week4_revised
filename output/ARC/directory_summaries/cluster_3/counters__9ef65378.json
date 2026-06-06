@@ -1,0 +1,50 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "counters",
+  "title": "",
+  "description": "Cluster: 3\nDirectory: counters\n\n responsibility of this directory:\n- This directory contains the implementations of different types of map-reduce counters.\n\nhow the files or child directories collaborate:\n- The files in this directory collaborate by providing a common interface for counter groups and implementing the necessary methods for adding, finding, and incrementing counters.\n\narchitectural role or pattern of this directory:\n- This directory follows the factory pattern, as it provides a factory for creating new counter groups and mapping framework groups. It also follows the singleton pattern, as it ensures that there is only one instance of the factory for each job.",
+  "summary": "TITLE: \nDESCRIPTION: Cluster: 3\nDirectory: counters\n\n responsibility of this directory:\n- This directory contains the implementations of different types of map-reduce counters.\n\nhow the files or child directories collaborate:\n- The files in this directory collaborate by providing a common interface for counter groups and implementing the necessary methods for adding, finding, and incrementing counters.\n\narchitectural role or pattern of this directory:\n- This directory follows the factory pattern, as it provides a factory for creating new counter groups and mapping framework groups. It also follows the singleton pattern, as it ensures that there is only one instance of the factory for each job.",
+  "number_of_children": 9,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AbstractCounter.java"
+    },
+    {
+      "type": "file",
+      "name": "AbstractCounterGroup.java"
+    },
+    {
+      "type": "file",
+      "name": "CounterGroupBase.java"
+    },
+    {
+      "type": "file",
+      "name": "CounterGroupFactory.java"
+    },
+    {
+      "type": "file",
+      "name": "FrameworkCounterGroup.java"
+    },
+    {
+      "type": "file",
+      "name": "GenericCounter.java"
+    },
+    {
+      "type": "file",
+      "name": "LimitExceededException.java"
+    },
+    {
+      "type": "file",
+      "name": "Limits.java"
+    },
+    {
+      "type": "file",
+      "name": "package-info.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "Cluster: 3\nDirectory: counters\n\n responsibility of this directory:\n- This directory contains the implementations of different types of map-reduce counters.\n\nhow the files or child directories collaborate:\n- The files in this directory collaborate by providing a common interface for counter groups and implementing the necessary methods for adding, finding, and incrementing counters.\n\narchitectural role or pattern of this directory:\n- This directory follows the factory pattern, as it provides a factory for creating new counter groups and mapping framework groups. It also follows the singleton pattern, as it ensures that there is only one instance of the factory for each job."
+}

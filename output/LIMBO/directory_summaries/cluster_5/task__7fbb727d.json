@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 5,
+  "directory": "task",
+  "title": "TaskInputOutputContext",
+  "description": "The TaskInputOutputContext class is a context object that allows input and output from the task. It is only supplied to the Mapper or Reducer. The class provides methods for advancing to the next key-value pair, getting the current key and value, and generating output key-value pairs. The class takes a Configuration object, a TaskAttemptID object, a RecordWriter object for output, an OutputCommitter object, and a StatusReporter object as input. It depends on the Configuration, TaskAttemptID, RecordWriter, OutputCommitter, and StatusReporter classes.",
+  "summary": "TITLE: TaskInputOutputContext\nDESCRIPTION: The TaskInputOutputContext class is a context object that allows input and output from the task. It is only supplied to the Mapper or Reducer. The class provides methods for advancing to the next key-value pair, getting the current key and value, and generating output key-value pairs. The class takes a Configuration object, a TaskAttemptID object, a RecordWriter object for output, an OutputCommitter object, and a StatusReporter object as input. It depends on the Configuration, TaskAttemptID, RecordWriter, OutputCommitter, and StatusReporter classes.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "TaskInputOutputContextImpl.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: TaskInputOutputContext\n\nDESCRIPTION:\nThe TaskInputOutputContext class is a context object that allows input and output from the task. It is only supplied to the Mapper or Reducer. The class provides methods for advancing to the next key-value pair, getting the current key and value, and generating output key-value pairs. The class takes a Configuration object, a TaskAttemptID object, a RecordWriter object for output, an OutputCommitter object, and a StatusReporter object as input. It depends on the Configuration, TaskAttemptID, RecordWriter, OutputCommitter, and StatusReporter classes."
+}

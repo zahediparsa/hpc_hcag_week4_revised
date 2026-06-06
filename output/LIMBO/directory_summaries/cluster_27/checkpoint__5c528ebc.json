@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 27,
+  "directory": "checkpoint",
+  "title": "Checkpoint Naming Service",
+  "description": "The CheckpointNamingService directory is responsible for generating checkpoint names for the Hadoop MapReduce framework. The CheckpointNameGenerator.java file collaborates with the SimpleNamingService.java file to generate random checkpoint names. The SimpleNamingService class simply returns the name it has been initialized with, while the CheckpointNameGenerator class uses the SimpleNamingService class to generate new checkpoint names. The CheckpointNamingService directory follows the Singleton pattern, ensuring that only one instance of the CheckpointNameGenerator class is created and used throughout the application.",
+  "summary": "TITLE: Checkpoint Naming Service\nDESCRIPTION: The CheckpointNamingService directory is responsible for generating checkpoint names for the Hadoop MapReduce framework. The CheckpointNameGenerator.java file collaborates with the SimpleNamingService.java file to generate random checkpoint names. The SimpleNamingService class simply returns the name it has been initialized with, while the CheckpointNameGenerator class uses the SimpleNamingService class to generate new checkpoint names. The CheckpointNamingService directory follows the Singleton pattern, ensuring that only one instance of the CheckpointNameGenerator class is created and used throughout the application.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "RandomNameCNS.java"
+    },
+    {
+      "type": "file",
+      "name": "SimpleNamingService.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Checkpoint Naming Service\n\nDESCRIPTION:\nThe CheckpointNamingService directory is responsible for generating checkpoint names for the Hadoop MapReduce framework. The CheckpointNameGenerator.java file collaborates with the SimpleNamingService.java file to generate random checkpoint names. The SimpleNamingService class simply returns the name it has been initialized with, while the CheckpointNameGenerator class uses the SimpleNamingService class to generate new checkpoint names. The CheckpointNamingService directory follows the Singleton pattern, ensuring that only one instance of the CheckpointNameGenerator class is created and used throughout the application."
+}

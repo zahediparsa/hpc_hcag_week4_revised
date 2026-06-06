@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "security/token",
+  "title": "MapReduce Delegation Token Package",
+  "description": "The MapReduce delegation token package contains classes related to MapReduce delegation tokens. The core logic is contained in the TokenSelector and Tokenizer classes. The TokenSelector class is used to select delegation tokens from a given token cache, while the Tokenizer class is used to serialize and deserialize delegation tokens. The classes in this package depend on the classes in the org.apache.hadoop.mapreduce.security.token package.",
+  "summary": "TITLE: MapReduce Delegation Token Package\nDESCRIPTION: The MapReduce delegation token package contains classes related to MapReduce delegation tokens. The core logic is contained in the TokenSelector and Tokenizer classes. The TokenSelector class is used to select delegation tokens from a given token cache, while the Tokenizer class is used to serialize and deserialize delegation tokens. The classes in this package depend on the classes in the org.apache.hadoop.mapreduce.security.token package.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "package-info.java"
+    },
+    {
+      "type": "directory",
+      "name": "security/token/delegation"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Delegation Token Package\n\nDESCRIPTION: The MapReduce delegation token package contains classes related to MapReduce delegation tokens. The core logic is contained in the TokenSelector and Tokenizer classes. The TokenSelector class is used to select delegation tokens from a given token cache, while the Tokenizer class is used to serialize and deserialize delegation tokens. The classes in this package depend on the classes in the org.apache.hadoop.mapreduce.security.token package."
+}

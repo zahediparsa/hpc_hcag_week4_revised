@@ -1,0 +1,143 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "jobhistory",
+  "title": "JobHistory directory",
+  "description": "The JobHistory directory is responsible for storing the history of completed jobs in a Hadoop cluster. It collaborates with the JobTracker and TaskTracker to record job completion events and store them in a file. The architectural role of the JobHistory directory is to provide a centralized repository for job completion information, which can be used for debugging, performance analysis, and capacity planning. The directory uses the JobHistoryEventHandler to handle job completion events and store them in a file. The JobHistory directory also uses the JobHistoryFileOutputFormat to write the job completion events to a file in the JobHistory directory.",
+  "summary": "TITLE: JobHistory directory\nDESCRIPTION: The JobHistory directory is responsible for storing the history of completed jobs in a Hadoop cluster. It collaborates with the JobTracker and TaskTracker to record job completion events and store them in a file. The architectural role of the JobHistory directory is to provide a centralized repository for job completion information, which can be used for debugging, performance analysis, and capacity planning. The directory uses the JobHistoryEventHandler to handle job completion events and store them in a file. The JobHistory directory also uses the JobHistoryFileOutputFormat to write the job completion events to a file in the JobHistory directory.",
+  "number_of_children": 29,
+  "number_of_intermediate_summaries": 2,
+  "children": [
+    {
+      "type": "file",
+      "name": "AMStartedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "AvroArrayUtils.java"
+    },
+    {
+      "type": "file",
+      "name": "EventReader.java"
+    },
+    {
+      "type": "file",
+      "name": "EventWriter.java"
+    },
+    {
+      "type": "file",
+      "name": "HistoryEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "HistoryEventHandler.java"
+    },
+    {
+      "type": "file",
+      "name": "HistoryViewer.java"
+    },
+    {
+      "type": "file",
+      "name": "HistoryViewerPrinter.java"
+    },
+    {
+      "type": "file",
+      "name": "HumanReadableHistoryViewerPrinter.java"
+    },
+    {
+      "type": "file",
+      "name": "JSONHistoryViewerPrinter.java"
+    },
+    {
+      "type": "file",
+      "name": "JobFinishedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "JobHistoryParser.java"
+    },
+    {
+      "type": "file",
+      "name": "JobInfoChangeEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "JobInitedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "JobPriorityChangeEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "JobQueueChangeEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "JobStatusChangedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "JobSubmittedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "JobUnsuccessfulCompletionEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "MapAttemptFinishedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "NormalizedResourceEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "ReduceAttemptFinishedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptFinishedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptStartedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptUnsuccessfulCompletionEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskFailedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskFinishedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskStartedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskUpdatedEvent.java"
+    }
+  ],
+  "intermediate_summaries": [
+    {
+      "type": "intermediate",
+      "name": "jobhistory chunk 0",
+      "summary": "This code provides utility methods for converting arrays of integers to and from Avro lists. The toAvro method converts an array of integers to a List of Integers, and the fromAvro method converts a List of Integers to an array of integers. The code does not depend on any specific classes or methods.",
+      "number_of_children": 27
+    },
+    {
+      "type": "intermediate",
+      "name": "jobhistory chunk 1",
+      "summary": "This code creates an event to record the start of a task. The code sets the task id, split locations, start time, and task type for the event. The code takes in the task id, start time, task type, and split locations as inputs and creates a TaskStartedEvent object. The code depends on the TaskID, TaskType, and HistoryEvent classes.",
+      "number_of_children": 2
+    }
+  ],
+  "raw_response": "TITLE: JobHistory directory\n\nDESCRIPTION:\nThe JobHistory directory is responsible for storing the history of completed jobs in a Hadoop cluster. It collaborates with the JobTracker and TaskTracker to record job completion events and store them in a file. The architectural role of the JobHistory directory is to provide a centralized repository for job completion information, which can be used for debugging, performance analysis, and capacity planning. The directory uses the JobHistoryEventHandler to handle job completion events and store them in a file. The JobHistory directory also uses the JobHistoryFileOutputFormat to write the job completion events to a file in the JobHistory directory."
+}

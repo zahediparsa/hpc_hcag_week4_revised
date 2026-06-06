@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "lib/aggregate",
+  "title": "Value Aggregation Abstraction",
+  "description": "The lib/aggregate directory is responsible for defining the minimal protocol for value aggregators. It collaborates with the ValueAggregatorDescriptor.java file to generate a list of aggregation-id/value pairs for the given key/value pair. This abstraction guides the way to aggregate the value in the reduce/combiner phrase of an Aggregate based job. The ValueAggregator.java file implements this interface and provides the core logic for adding values, resetting the aggregator, and getting the string representation of the aggregator. The ValueAggregatorDescriptor.java file creates aggregation id/value pairs and collaborates with the ValueAggregator.java file to guide the way to aggregate the value in the reduce/combiner phrase of an Aggregate based job.",
+  "summary": "TITLE: Value Aggregation Abstraction\nDESCRIPTION: The lib/aggregate directory is responsible for defining the minimal protocol for value aggregators. It collaborates with the ValueAggregatorDescriptor.java file to generate a list of aggregation-id/value pairs for the given key/value pair. This abstraction guides the way to aggregate the value in the reduce/combiner phrase of an Aggregate based job. The ValueAggregator.java file implements this interface and provides the core logic for adding values, resetting the aggregator, and getting the string representation of the aggregator. The ValueAggregatorDescriptor.java file creates aggregation id/value pairs and collaborates with the ValueAggregator.java file to guide the way to aggregate the value in the reduce/combiner phrase of an Aggregate based job.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ValueAggregator.java"
+    },
+    {
+      "type": "file",
+      "name": "ValueAggregatorDescriptor.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Value Aggregation Abstraction\n\nDESCRIPTION:\nThe lib/aggregate directory is responsible for defining the minimal protocol for value aggregators. It collaborates with the ValueAggregatorDescriptor.java file to generate a list of aggregation-id/value pairs for the given key/value pair. This abstraction guides the way to aggregate the value in the reduce/combiner phrase of an Aggregate based job. The ValueAggregator.java file implements this interface and provides the core logic for adding values, resetting the aggregator, and getting the string representation of the aggregator. The ValueAggregatorDescriptor.java file creates aggregation id/value pairs and collaborates with the ValueAggregator.java file to guide the way to aggregate the value in the reduce/combiner phrase of an Aggregate based job."
+}

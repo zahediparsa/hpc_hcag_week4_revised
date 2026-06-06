@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 31,
+  "directory": "jobhistory",
+  "title": "HistoryEvent",
+  "description": "This class is an interface for event wrapper classes. It wraps an Avro-generated class, adding constructors and accessor methods. The class includes methods to get and set the Avro datum wrapped by the event, as well as methods to map the HistoryEvent to a TimelineEvent and retrieve any associated TimelineMetrics.",
+  "summary": "TITLE: HistoryEvent\nDESCRIPTION: This class is an interface for event wrapper classes. It wraps an Avro-generated class, adding constructors and accessor methods. The class includes methods to get and set the Avro datum wrapped by the event, as well as methods to map the HistoryEvent to a TimelineEvent and retrieve any associated TimelineMetrics.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "HistoryEvent.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: HistoryEvent\n\nDESCRIPTION:\nThis class is an interface for event wrapper classes. It wraps an Avro-generated class, adding constructors and accessor methods. The class includes methods to get and set the Avro datum wrapped by the event, as well as methods to map the HistoryEvent to a TimelineEvent and retrieve any associated TimelineMetrics."
+}

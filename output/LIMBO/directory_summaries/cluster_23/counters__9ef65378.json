@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 23,
+  "directory": "counters",
+  "title": "Counters directory",
+  "description": "The counters directory contains classes that provide a basic implementation of the Counter interface and a common interface for counter groups in Apache Hadoop MapReduce. The classes collaborate by allowing users to add and find counters, set and get the name and display name of the group, and increment all counters by a group of counters. The architectural role of this directory is to provide a centralized location for managing counters in a Hadoop MapReduce job.",
+  "summary": "TITLE: Counters directory\nDESCRIPTION: The counters directory contains classes that provide a basic implementation of the Counter interface and a common interface for counter groups in Apache Hadoop MapReduce. The classes collaborate by allowing users to add and find counters, set and get the name and display name of the group, and increment all counters by a group of counters. The architectural role of this directory is to provide a centralized location for managing counters in a Hadoop MapReduce job.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AbstractCounter.java"
+    },
+    {
+      "type": "file",
+      "name": "CounterGroupBase.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Counters directory\n\nDESCRIPTION:\nThe counters directory contains classes that provide a basic implementation of the Counter interface and a common interface for counter groups in Apache Hadoop MapReduce. The classes collaborate by allowing users to add and find counters, set and get the name and display name of the group, and increment all counters by a group of counters. The architectural role of this directory is to provide a centralized location for managing counters in a Hadoop MapReduce job."
+}

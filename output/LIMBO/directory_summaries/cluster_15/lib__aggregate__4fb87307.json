@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 15,
+  "directory": "lib/aggregate",
+  "title": "lib/aggregate - Hadoop MapReduce Architecture",
+  "description": "The lib/aggregate directory is responsible for implementing the generic mapper of Aggregate in Hadoop MapReduce. It collaborates with the ValueAggregatorJobBase class and its setup method, as well as the ValueAggregatorDescriptor class for aggregation logic. This directory follows the architectural role of a helper or utility directory, providing essential functionality for the overall architecture of the system.",
+  "summary": "TITLE: lib/aggregate - Hadoop MapReduce Architecture\nDESCRIPTION: The lib/aggregate directory is responsible for implementing the generic mapper of Aggregate in Hadoop MapReduce. It collaborates with the ValueAggregatorJobBase class and its setup method, as well as the ValueAggregatorDescriptor class for aggregation logic. This directory follows the architectural role of a helper or utility directory, providing essential functionality for the overall architecture of the system.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ValueAggregatorMapper.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/aggregate - Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe lib/aggregate directory is responsible for implementing the generic mapper of Aggregate in Hadoop MapReduce. It collaborates with the ValueAggregatorJobBase class and its setup method, as well as the ValueAggregatorDescriptor class for aggregation logic. This directory follows the architectural role of a helper or utility directory, providing essential functionality for the overall architecture of the system."
+}

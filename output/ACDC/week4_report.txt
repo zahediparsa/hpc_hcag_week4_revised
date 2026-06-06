@@ -1,0 +1,160 @@
+Week 4 - HCAG-style LLM-Based Architectural Recovery
+Algorithm: ACDC
+Group 3 - Hadoop MapReduce Client Core
+Model: ibm-granite/granite-34b-code-instruct-8k
+Files analyzed: 314
+Clusters: 23
+Prompting method: zero-shot
+========================================================================
+
+Cluster 0 - Checkpoint Directory
+Files: 9
+Directories: 2
+Description words: 78
+Description: The checkpoint directory is responsible for managing the checkpoints of tasks in a Hadoop MapReduce job. It provides a way to store and retrieve the state of tasks in case of failures or retries. The directory collaborates with the job tracker and the task trackers to ensure that checkpoints are properly stored and retrieved. The checkpoint directory follows the active-passive architecture pattern, where the active component is the job tracker and the passive component is the checkpoint directory.
+
+Cluster 1 - Hadoop MapReduce Architecture
+Files: 5
+Directories: 3
+Description words: 152
+Description: Hadoop MapReduce is a software framework for processing large amounts of data on clusters of computers. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. The system works on a typical cluster with a shared file system and a distributed file system. The applications are written in Java and run on a large cluster of computers. The system is scalable, fault-tolerant, and uses a simple programming model based on the Map and Reduce functions. The MapReduce framework provides the following components: Map, Reduce, Combiner, Shuffle and Sort, and Output Format. The Map function processes a key/value pair to generate a set of intermediate key/value pairs. The Reduce function merges all intermediate values associated with the same intermediate key. The Combiner function performs local aggregation of intermediate values before they are sent to the Reduce function. The Shuffle and Sort process.
+
+Cluster 2 - Hadoop MapReduce Architecture
+Files: 31
+Directories: 3
+Description words: 137
+Description: The Hadoop MapReduce architecture is a distributed processing framework that is designed to process large data sets across clusters of computers. It consists of two main components: the JobTracker and the TaskTracker. The JobTracker is responsible for scheduling and monitoring the execution of jobs, while the TaskTracker is responsible for executing the tasks assigned by the JobTracker. The architecture is scalable, fault-tolerant, and provides high-throughput processing of data. It uses a master-slave architecture, where the master node (JobTracker) coordinates the execution of tasks across multiple slave nodes (TaskTrackers). The architecture also supports a pluggable input/output (I/O) layer, which allows it to work with different data sources and storage systems. The architecture is designed to be efficient, reliable, and easy to use, making it a popular choice for processing large-scale data sets in a distributed environment.
+
+Cluster 3 - Cluster-level architectural abstraction
+Files: 17
+Directories: 3
+Description words: 61
+Description: - The responsibility of this cluster is to provide a way to aggregate values in a generic manner.
+- The components in this cluster collaborate by calling each other's methods to perform the aggregation.
+- The quality attribute of this cluster is to be scalable, as it can handle large amounts of data.
+- The technologies used in this cluster include Java, Maven, and JUnit.
+
+Cluster 4 - org.apache.hadoop.mapreduce.lib.chain
+Files: 15
+Directories: 5
+Description words: 119
+Description: This package provides the ChainMapper and ChainReducer classes, which allow multiple Mapper and Reducer classes to be linked together in a single MapReduce job. The ChainMapper class allows the output of one Mapper to be passed as input to another Mapper, while the ChainReducer class allows the output of one Reducer to be passed as input to another Reducer. This allows complex data processing pipelines to be created by combining multiple Mappers and Reducers in a flexible and modular way. Additionally, the package includes reducers for performing field selections and calculating the sum of values for a key. These reducers can be used as building blocks for more complex data processing tasks.
+
+Technologies used: Java, Hadoop MapReduce, Apache Hadoop.
+
+Cluster 5 - org.apache.hadoop.mapreduce.lib.input
+Files: 21
+Directories: 3
+Description words: 150
+Description: This package provides classes for reading input data in the MapReduce framework. It includes the TextInputFormat, CombineTextInputFormat, KeyValueTextInputFormat, NLineInputFormat, and CombineFileInputFormat classes. These classes are used to read input data from various sources, such as text files, and combine small input files into larger splits to improve performance. The package also includes the FileInputFormat, FileSplit, and PathFilter classes, which are used to specify input files and filters for input data. The package provides implementations of CombineFileInputFormat for various file types, such as CombineFileTextInputFormat and CombineSequenceFileInputFormat. The package also includes the LineRecordReader, CombineFileRecordReader, and CombineFileSplit classes, which are used to read input data from files and combine multiple files into a single split. The package also includes the KeyValueLineRecordReader class, which is a subclass of LineRecordReader that reads input data in the key-value format. The package also includes the KeyValueTextInputFormat class, which is an InputFormat that reads input data in the.
+
+Cluster 6 - MapReduce Cluster Architecture
+Files: 26
+Directories: 3
+Description words: 150
+Description: The Hadoop MapReduce architecture is a distributed processing framework that is designed to handle large-scale data processing tasks. It consists of two main components: the Map component and the Reduce component. The Map component is responsible for dividing the input data into smaller chunks and mapping them to a set of intermediate key-value pairs. The Reduce component then processes these intermediate key-value pairs to produce the final output. The MapReduce architecture is highly scalable and fault-tolerant, as it allows for the distribution of processing tasks across a cluster of machines. It also supports a wide range of data processing tasks, including data aggregation, data mining, and machine learning. The MapReduce architecture is built on top of the Hadoop Distributed File System (HDFS), which provides a distributed storage system for large-scale data storage and processing. HDFS is designed to provide high-throughput access to application data, and it is fault-tolerant, scalable, and.
+
+Cluster 7 - Hadoop MapReduce Architecture Abstraction
+Files: 2
+Directories: 3
+Description words: 152
+Description: The lib/jobcontrol directory is responsible for managing and monitoring Hadoop MapReduce jobs. It provides a high-level abstraction for controlling and tracking the states of MapReduce jobs and their dependencies. The directory contains two key classes: ControlledJob and JobControl. ControlledJob encapsulates a MapReduce job and its dependency. It monitors the states of the depending jobs and updates the state of this job. It provides methods for setting and getting the job name, ID, state, message, and depending jobs. It also provides methods for checking the state of the job and submitting the job to the mapred framework. JobControl tracks the states of jobs by placing them into different tables according to their states. It submits jobs when they become ready. It monitors the states of running jobs and updates the states of jobs based on the state changes of their depending jobs states. It provides APIs for suspending/resuming the thread and.
+
+Cluster 8 - Cluster-level architectural description of the Hadoop MapReduce join operation
+Files: 16
+Directories: 3
+Description words: 150
+Description: The Hadoop MapReduce join operation is implemented using a cluster of machines. The cluster consists of a coordinator node and multiple worker nodes. The coordinator node is responsible for managing the worker nodes and distributing the data to be processed. The worker nodes are responsible for performing the actual join operation on the data. The data is divided into smaller chunks and distributed to the worker nodes for processing. The worker nodes use the MapReduce framework to process the data and generate the output. The output is then collected by the coordinator node and combined to form the final output. The cluster is designed to be scalable, reliable, and fault-tolerant, ensuring that the join operation is completed successfully even in the presence of failures. The use of the MapReduce framework and distributed computing allows for efficient processing of large datasets, making the join operation a powerful tool for data analysis.
+
+Cluster 9 - MapReduce
+Files: 10
+Directories: 5
+Description words: 106
+Description: The MapReduce directory is responsible for processing the input data and transforming it into a format that can be processed by the reducers. The mappers in this directory collaborate by passing data to each other and by sharing information about the input data. The mappers follow the MapReduce pattern, which is a distributed processing framework for large data sets. The MapReduce pattern separates the task of processing data into two main phases: the map phase and the reduce phase. The mappers in this directory are responsible for the map phase, which involves transforming the input data into a format that can be processed by the reducers.
+
+Cluster 10 - Cluster-level architectural abstraction for fault-tolerant manifest writing.
+Files: 1
+Directories: 6
+Description words: 77
+Description: The cluster consists of a writer thread and a queue for file entry lists. The writer thread is responsible for writing file entry lists to the output stream, managing shutdown, failing safely on write failures, and restarting all blocked writers. The code depends on the Apache Hadoop MapReduce library and the Apache Hadoop Common library. It also depends on theslf4j library for logging. The architecture ensures fault-tolerant manifest writing and is scalable, maintainable, reliable, secure, and performant.
+
+Cluster 11 - Hadoop MapReduce Architecture
+Files: 36
+Directories: 8
+Description words: 134
+Description: The Hadoop MapReduce architecture is a distributed processing framework that enables scalable data processing and analysis. It consists of the following components:
+
+- Hadoop Distributed File System (HDFS): stores the input data and intermediate results.
+- MapReduce framework: schedules and executes the tasks on the cluster.
+- Map tasks: process the input data and generate intermediate key-value pairs.
+- Reduce tasks: process the intermediate data and generate the final output.
+- YARN (Yet Another Resource Negotiator): manages the resources and schedules the tasks on the cluster.
+
+The MapReduce architecture follows the divide and conquer pattern, where the input data is divided into smaller chunks and processed in parallel. The intermediate results are stored in HDFS and processed by the Reduce tasks. The YARN manages the resources and schedules the tasks on the cluster to optimize the performance and efficiency.
+
+Cluster 12 - Apache Hadoop MapReduce Architecture
+Files: 3
+Directories: 6
+Description words: 89
+Description: The lib/output/committer directory is responsible for managing the commit process of MapReduce jobs. It collaborates with the other files and directories to ensure that the output of the job is properly committed to the specified location. The architectural role of this directory is to provide a fault-tolerant and reliable commit process for MapReduce jobs, ensuring that the output is consistent and durable. This directory follows the pattern of the OutputCommitter interface, which defines the methods for committing, aborting, and cleaning up the output of a MapReduce job.
+
+Cluster 13 - MapReduce
+Files: 18
+Directories: 6
+Description words: 111
+Description: The MapReduce directory is responsible for managing and executing tasks in the Hadoop MapReduce architecture. It collaborates with other directories and files to ensure the efficient processing of large datasets. The directory follows the architectural pattern of the Hadoop framework, which is designed to handle distributed processing of large data sets across clusters of computers. The MapReduce directory includes components for task management, data distribution, and result aggregation. It also incorporates quality attributes such as scalability, fault tolerance, and data locality to optimize performance and reliability. The directory utilizes technologies such as Java, XML, and YARN (Yet Another Resource Negotiator) to implement the MapReduce algorithm and manage resources across the cluster.
+
+Cluster 14 - Hadoop MapReduce Architecture
+Files: 3
+Directories: 3
+Description words: 151
+Description: The Hadoop MapReduce architecture is responsible for processing large-scale data across clusters of computers. It consists of two main components: the Map phase and the Reduce phase. The Map phase breaks down the input data into smaller chunks and processes them in parallel, while the Reduce phase aggregates the results and produces the final output. The InputFormat class is an abstract class that describes the input-specification for a Map-Reduce job, and it is responsible for validating the input-specification, splitting the input file(s) into logical InputSplits, and providing the RecordReader implementation to glean input records from the logical InputSplit for processing by the Mapper. The lib directory contains libraries that are used by the MapReduce framework to handle the distribution of data across the cluster, manage the execution of tasks, and coordinate the communication between different nodes. The architectural role of this directory is to provide a modular and extensible framework.
+
+Cluster 15 - lib/reduce - Hadoop MapReduce Architecture
+Files: 1
+Directories: 3
+Description words: 153
+Description: The lib/reduce directory is a crucial part of the Hadoop MapReduce architecture, providing a high-level abstraction for executing reduce tasks in a distributed environment. It collaborates with other components to ensure the efficient and reliable execution of reduce tasks. The directory follows the pattern of the MapReduce architecture, providing a centralized location for reduce-related functionality and ensuring modularity and extensibility. The lib/reduce directory includes a coordinator component that oversees the execution of reduce tasks and coordinates communication between the various components. It also includes a worker component that performs the actual computation for each reduce task. The directory also includes a data model that defines the data structures and formats used for communication between the components. Additionally, the lib/reduce directory includes utility components for managing and monitoring the execution of reduce tasks, as well as adapter components for integrating with external systems and services. The directory is implemented using Java.
+
+Cluster 16 - Hadoop MapReduce Architecture
+Files: 8
+Directories: 6
+Description words: 86
+Description: The Hadoop MapReduce architecture is a distributed processing framework that enables large-scale data processing tasks. It consists of a cluster of nodes, each running a task tracker, and a centralized job tracker that coordinates the tasks. The architecture supports various types of tasks, including map, reduce, and shuffle, and provides fault tolerance and scalability. The MapReduce architecture is highly scalable, fault-tolerant, and provides performance improvements through data locality and speculative execution. It uses the Hadoop Distributed File System (HDFS) for distributed storage and communication between nodes.
+
+Cluster 17 - Hadoop MapReduce Security Architecture
+Files: 2
+Directories: 3
+Description words: 147
+Description: The Hadoop MapReduce security architecture is responsible for generating and verifying hashes using a secret key, as well as caching job tokens for fast access. The architecture consists of the following components: - JobTokenSecretManager: This component is responsible for generating and verifying hashes using a secret key. It collaborates with the classes in the security directory to cache job tokens. - Security classes: These classes are responsible for security-related functionality in Hadoop MapReduce. They collaborate with the JobTokenSecretManager to generate and verify hashes and cache job tokens. - SecretManager pattern: The SecretManager pattern is used in the security directory to provide a centralized way to manage secrets and tokens. The architecture achieves scalability, maintainability, and reliability by using the SecretManager pattern to manage secrets and tokens. It also achieves security by generating and verifying hashes using a secret key. The architecture uses technologies such as Java and the Hadoop MapReduce.
+
+Cluster 18 - Hadoop MapReduce security/token directory
+Files: 2
+Directories: 3
+Description words: 94
+Description: The security/token directory in Hadoop MapReduce contains classes related to authentication and authorization. The classes in this directory are used to identify and authenticate jobs running on the Hadoop cluster. The JobTokenIdentifier class is used to identify a job token, and the JobTokenSelector class is used to select a job token from a collection of tokens. These classes collaborate to ensure that only authorized jobs can access the cluster resources. The security/token directory plays a crucial role in the security of the Hadoop cluster by providing authentication and authorization mechanisms for jobs.
+
+Cluster 19 - Hadoop MapReduce Architecture
+Files: 37
+Directories: 7
+Description words: 119
+Description: The Hadoop MapReduce architecture is a distributed processing framework that allows for the processing of large data sets across clusters of computers. It consists of a master node, which coordinates the tasks and distributes the data, and multiple slave nodes, which execute the tasks and store the data. The master node assigns tasks to the slave nodes based on their availability and the data location, and monitors the progress of the tasks. The data is stored in a distributed file system, which allows for efficient access and sharing of data across the cluster. The architecture is designed to be scalable, fault-tolerant, and efficient, and it supports a wide range of applications, including web search, data mining, and machine learning.
+
+Cluster 20 - MapReduce - Shuffle and Sort
+Files: 24
+Directories: 4
+Description words: 112
+Description: The shuffle and sort phase of a MapReduce job is responsible for merging the output of multiple map tasks into a single sorted output for the reduce task. This phase involves several key components, including the ShuffleScheduler, MergeManager, Fetcher, and EventFetcher. The ShuffleScheduler is responsible for scheduling the execution of map tasks, while the MergeManager is responsible for merging the map output files. The Fetcher and EventFetcher threads are used to fetch map output and shuffle events from the shuffle server. The shuffle and sort phase is a critical part of the MapReduce framework, as it ensures that the reduce task receives the data in the correct order and format for processing.
+
+Cluster 21 - MapReduce - Cluster-level Architecture
+Files: 8
+Directories: 5
+Description words: 150
+Description: The Hadoop MapReduce framework is a distributed processing system that enables the processing of large data sets across clusters of computers. It consists of two main components: the MapReduce engine and the distributed file system (DFS). The MapReduce engine is responsible for dividing the input data into smaller chunks, mapping these chunks to individual tasks, and then reducing the results. The DFS is responsible for storing the input data and intermediate results in a distributed manner. The MapReduce engine is further divided into the JobTracker and the TaskTrackers. The JobTracker is responsible for scheduling and monitoring the execution of jobs, while the TaskTrackers are responsible for running the individual tasks on the cluster. The communication between the components is done using the Hadoop RPC mechanism. The system is designed to be scalable, fault-tolerant, and efficient, and it supports a wide range of applications, including web search, data mining, and machine.
+
+Cluster 22 - MapReduce Cluster Architecture
+Files: 19
+Directories: 10
+Description words: 154
+Description: The Hadoop MapReduce framework is a software framework for easily writing applications that process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes) built of commodity hardware in a reliable, fault-tolerant manner. The framework is designed to scale up from single servers to thousands of machines, each offering local computation and storage. Rather than rely on hardware failures, the framework copes with software failures by transparently recovering tasks and reexecuting them on other nodes. The MapReduce framework consists of the following components: Map, which takes an input key/value pair and returns a set of intermediate key/value pairs; Shuffle and Sort, which sorts the intermediate keys by the framework; and Reduce, which takes a set of intermediate key/value pairs and returns a set of output key/value pairs. The MapReduce framework provides several quality attributes, such as scalability, maintainability, reliability, security, and performance. It is built on top.
+

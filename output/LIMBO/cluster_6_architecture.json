@@ -1,0 +1,21 @@
+{
+  "cluster_id": 6,
+  "title": "Hadoop MapReduce Architecture",
+  "description": "Hadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes).\n\nThe system is composed of:\n- A distributed file system (HDFS) that provides high-throughput access to application data.\n- Map tasks that process data and write intermediate, sorted data to the distributed file system.\n- A shuffle and sort phase that merges the intermediate data and prepares it for the reduce tasks.\n- Reduce tasks that process the intermediate data and write the final output.\n\nThe system is scalable, fault-tolerant, and self-healing. It provides high utilization of computing resources and low cost of operation.\n\nTechnologies used:\n- Java\n- HDFS\n- YARN (resource manager, node manager)",
+  "description_word_count": 114,
+  "number_of_files": 1,
+  "number_of_directories": 1,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nHadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes).\n\nThe system is composed of:\n- A distributed file system (HDFS) that provides high-throughput access to application data.\n- Map tasks that process data and write intermediate, sorted data to the distributed file system.\n- A shuffle and sort phase that merges the intermediate data and prepares it for the reduce tasks.\n- Reduce tasks that process the intermediate data and write the final output.\n\nThe system is scalable, fault-tolerant, and self-healing. It provides high utilization of computing resources and low cost of operation.\n\nTechnologies used:\n- Java\n- HDFS\n- YARN (resource manager, node manager)",
+  "algorithm": "LIMBO",
+  "files": [
+    "Counters.java"
+  ]
+}

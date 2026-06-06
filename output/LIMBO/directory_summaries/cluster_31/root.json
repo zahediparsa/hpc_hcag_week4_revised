@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 31,
+  "directory": ".",
+  "title": "Hadoop MapReduce Architecture",
+  "description": "The Hadoop MapReduce architecture is responsible for processing large-scale data sets in a distributed environment. It consists of a master node and multiple slave nodes, each of which performs specific tasks to accomplish the overall computation. The master node coordinates the tasks and ensures that the computation is completed efficiently. The slave nodes execute the tasks assigned by the master node and communicate with each other to share data and results. The architecture follows the principles of divide-and-conquer, parallel processing, and fault tolerance to ensure that the computation can handle large volumes of data and continue to operate even in the presence of failures.",
+  "summary": "TITLE: Hadoop MapReduce Architecture\nDESCRIPTION: The Hadoop MapReduce architecture is responsible for processing large-scale data sets in a distributed environment. It consists of a master node and multiple slave nodes, each of which performs specific tasks to accomplish the overall computation. The master node coordinates the tasks and ensures that the computation is completed efficiently. The slave nodes execute the tasks assigned by the master node and communicate with each other to share data and results. The architecture follows the principles of divide-and-conquer, parallel processing, and fault tolerance to ensure that the computation can handle large volumes of data and continue to operate even in the presence of failures.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "jobhistory"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is responsible for processing large-scale data sets in a distributed environment. It consists of a master node and multiple slave nodes, each of which performs specific tasks to accomplish the overall computation. The master node coordinates the tasks and ensures that the computation is completed efficiently. The slave nodes execute the tasks assigned by the master node and communicate with each other to share data and results. The architecture follows the principles of divide-and-conquer, parallel processing, and fault tolerance to ensure that the computation can handle large volumes of data and continue to operate even in the presence of failures."
+}

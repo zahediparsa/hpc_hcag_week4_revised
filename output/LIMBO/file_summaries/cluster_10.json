@@ -1,0 +1,50 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 10,
+    "class": "org.apache.hadoop.mapreduce.JobContext",
+    "path": "JobContext.java",
+    "file_name": "JobContext.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class provides a read-only view of the job that is provided to the tasks while they are running.\n\nCORE LOGIC:\n\nThe class provides methods to get information about the job, such as the job name, the number of reduce tasks, the job ID, the working directory, the input format class, the mapper class, the combiner class, the reducer class, the output format class, the partitioner class, the raw comparator used to compare keys, the user-specified job name, the user-defined raw comparator for grouping keys of inputs to the combiner, the user-defined raw comparator for grouping keys of inputs to the reduce, the job-setup and job-cleanup needed for the job, the task-cleanup needed for the job, the task profiling enabled, the profiler configuration arguments, the range of maps or reduces to profile, the reported username for the job, the symlink, the cache archives set in the configuration, the cache files set in the configuration, the localized caches, the localized files, the file entries in classpath as an array of Path, the archive entries in classpath as an array of Path, the timestamps of the archives, the timestamps of the files, the configured number of maximum attempts that will be made to run a map task, and the configured number of maximum attempts that will be made to run a reduce task.\n\nINPUTS/OUTPUTS:\n\nThe class does not have any inputs or outputs.\n\nDEPENDENCIES:\n\nThe class depends on the following classes: Configuration, Credentials, JobID, Path, Class, InputFormat, Mapper, Reducer, OutputFormat, Partitioner, RawComparator, IntegerRanges, URI, IOException.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 10,
+    "class": "org.apache.hadoop.mapreduce.lib.chain.ChainMapContextImpl",
+    "path": "lib/chain/ChainMapContextImpl.java",
+    "file_name": "ChainMapContextImpl.java",
+    "directory": "lib/chain",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class is a wrapper for a MapContext that delegates most of its functionality to the underlying context, but overrides the methods to do with record readers, record writers, and configuration.\n\nCORE LOGIC:\n\nThe core logic of this class is to provide a wrapper for a MapContext that delegates most of its functionality to the underlying context, but overrides the methods to do with record readers, record writers, and configuration.\n\nINPUTS/OUTPUTS:\n\nThe class takes in a TaskInputOutputContext, a RecordReader, a RecordWriter, and a Configuration as inputs. It provides the same outputs as the underlying context.\n\nDEPENDENCIES:\n\nThis class depends on the TaskInputOutputContext, RecordReader, RecordWriter, and Configuration classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 10,
+    "class": "org.apache.hadoop.mapreduce.lib.chain.ChainReduceContextImpl",
+    "path": "lib/chain/ChainReduceContextImpl.java",
+    "file_name": "ChainReduceContextImpl.java",
+    "directory": "lib/chain",
+    "summary": "KEY FUNCTIONALITY:\nThis class is a wrapper for a ReduceContext that delegates most of its functionality to the underlying context, but overrides the methods to do with record writer and configuration.\n\nCORE LOGIC:\nThe core logic of this class is to provide a wrapper for a ReduceContext that delegates most of its functionality to the underlying context, but overrides the methods to do with record writer and configuration.\n\nINPUTS/OUTPUTS:\nThe class takes in a ReduceContext, a RecordWriter, and a Configuration as inputs, and it provides a way to write key-value pairs to the RecordWriter using the write() method.\n\nDEPENDENCIES:\nThis class depends on the ReduceContext, RecordWriter, and Configuration classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 10,
+    "class": "org.apache.hadoop.mapreduce.task.JobContextImpl",
+    "path": "task/JobContextImpl.java",
+    "file_name": "JobContextImpl.java",
+    "directory": "task",
+    "summary": "KEY FUNCTIONALITY:\n\nThe JobContextImpl class provides a read-only view of a MapReduce job, including its configuration, input format, output format, mapper, combiner, reducer, partitioner, and other job-level information.\n\nCORE LOGIC:\n\nThe class contains methods to retrieve various job configuration parameters, such as the number of reduce tasks, the job name, the input format class, the mapper class, the combiner class, the reducer class, the output format class, the partitioner class, the raw key comparator, the combiner key grouping comparator, the grouping comparator, the job setup and cleanup needed status, the task cleanup needed status, the symlink status, the cache archives, cache files, local cache archives, local cache files, archive timestamps, file timestamps, file class paths, archive class paths, max map attempts, max reduce attempts, task profiling status, profiler configuration arguments, task profiling range, and user.\n\nINPUTS/OUTPUTS:\n\nThe class provides methods to retrieve the job configuration, job ID, and user credentials.\n\nDEPENDENCIES:\n\nThe class depends on the org.apache.hadoop.mapred.JobConf class for job configuration, the JobID class for job ID, and the Credentials class for user credentials.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

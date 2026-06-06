@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 11,
+  "directory": "lib/output",
+  "title": "",
+  "description": "OutputCommitter\n\nThe OutputCommitter interface is responsible for the final steps of the MapReduce task, including committing or aborting the task, committing or aborting the task attempt, and cleaning up the task attempt directory. The OutputCommitter collaborates with the OutputFormat to create the committer and the OutputFormat to configure it. The OutputCommitter is also responsible for deleting the task attempt directory if the task is aborted. The OutputCommitter plays the role of the committer in the transactional model of MapReduce.",
+  "summary": "TITLE: \nDESCRIPTION: OutputCommitter\n\nThe OutputCommitter interface is responsible for the final steps of the MapReduce task, including committing or aborting the task, committing or aborting the task attempt, and cleaning up the task attempt directory. The OutputCommitter collaborates with the OutputFormat to create the committer and the OutputFormat to configure it. The OutputCommitter is also responsible for deleting the task attempt directory if the task is aborted. The OutputCommitter plays the role of the committer in the transactional model of MapReduce.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "BindingPathOutputCommitter.java"
+    },
+    {
+      "type": "file",
+      "name": "PathOutputCommitter.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output/committer"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "OutputCommitter\n\nThe OutputCommitter interface is responsible for the final steps of the MapReduce task, including committing or aborting the task, committing or aborting the task attempt, and cleaning up the task attempt directory. The OutputCommitter collaborates with the OutputFormat to create the committer and the OutputFormat to configure it. The OutputCommitter is also responsible for deleting the task attempt directory if the task is aborted. The OutputCommitter plays the role of the committer in the transactional model of MapReduce."
+}

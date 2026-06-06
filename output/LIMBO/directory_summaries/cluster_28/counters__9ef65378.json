@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 28,
+  "directory": "counters",
+  "title": "Counters",
+  "description": "The counters directory is responsible for managing and tracking the progress of the MapReduce job. It provides a way to store and retrieve the values of various counters that are used to measure the progress and performance of the job. The counters directory collaborates with the MapReduce framework to update and retrieve the values of the counters, and it also provides a way to access and display the values of the counters to the user. The architectural role of the counters directory is to provide a centralized location for managing the counters, which helps to ensure that the job's progress is accurately tracked and monitored.",
+  "summary": "TITLE: Counters\nDESCRIPTION: The counters directory is responsible for managing and tracking the progress of the MapReduce job. It provides a way to store and retrieve the values of various counters that are used to measure the progress and performance of the job. The counters directory collaborates with the MapReduce framework to update and retrieve the values of the counters, and it also provides a way to access and display the values of the counters to the user. The architectural role of the counters directory is to provide a centralized location for managing the counters, which helps to ensure that the job's progress is accurately tracked and monitored.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "GenericCounter.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Counters\n\nDESCRIPTION:\nThe counters directory is responsible for managing and tracking the progress of the MapReduce job. It provides a way to store and retrieve the values of various counters that are used to measure the progress and performance of the job. The counters directory collaborates with the MapReduce framework to update and retrieve the values of the counters, and it also provides a way to access and display the values of the counters to the user. The architectural role of the counters directory is to provide a centralized location for managing the counters, which helps to ensure that the job's progress is accurately tracked and monitored."
+}

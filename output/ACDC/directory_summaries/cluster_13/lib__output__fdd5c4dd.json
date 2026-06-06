@@ -1,0 +1,74 @@
+{
+  "type": "directory",
+  "cluster_id": 13,
+  "directory": "lib/output",
+  "title": "",
+  "description": "responsibility:\n- responsible for writing output data to a file or files\n- handles the details of writing the data, including the format and location\n\ncollaboration:\n- collaborates with other classes to ensure the data is written correctly\n- may collaborate with classes that handle compression, encryption, or other processing of the data\n\narchitectural role/pattern:\n- follows the OutputFormat interface to define the behavior of writing output data\n- implements the RecordWriter interface to handle the actual writing of the data\n- provides a template method for getting the RecordWriter, allowing subclasses to customize the writing process\n- uses the PathOutputCommitterFactory to create committers that handle the commit and abort of the output files",
+  "summary": "TITLE: \nDESCRIPTION: responsibility:\n- responsible for writing output data to a file or files\n- handles the details of writing the data, including the format and location\n\ncollaboration:\n- collaborates with other classes to ensure the data is written correctly\n- may collaborate with classes that handle compression, encryption, or other processing of the data\n\narchitectural role/pattern:\n- follows the OutputFormat interface to define the behavior of writing output data\n- implements the RecordWriter interface to handle the actual writing of the data\n- provides a template method for getting the RecordWriter, allowing subclasses to customize the writing process\n- uses the PathOutputCommitterFactory to create committers that handle the commit and abort of the output files",
+  "number_of_children": 15,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "FileOutputCommitter.java"
+    },
+    {
+      "type": "file",
+      "name": "FileOutputCommitterFactory.java"
+    },
+    {
+      "type": "file",
+      "name": "FileOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "FilterOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "LazyOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "MapFileOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "MultipleOutputs.java"
+    },
+    {
+      "type": "file",
+      "name": "NamedCommitterFactory.java"
+    },
+    {
+      "type": "file",
+      "name": "NullOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "PartialFileOutputCommitter.java"
+    },
+    {
+      "type": "file",
+      "name": "PartialOutputCommitter.java"
+    },
+    {
+      "type": "file",
+      "name": "PathOutputCommitterFactory.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileAsBinaryOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "TextOutputFormat.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "responsibility:\n- responsible for writing output data to a file or files\n- handles the details of writing the data, including the format and location\n\ncollaboration:\n- collaborates with other classes to ensure the data is written correctly\n- may collaborate with classes that handle compression, encryption, or other processing of the data\n\narchitectural role/pattern:\n- follows the OutputFormat interface to define the behavior of writing output data\n- implements the RecordWriter interface to handle the actual writing of the data\n- provides a template method for getting the RecordWriter, allowing subclasses to customize the writing process\n- uses the PathOutputCommitterFactory to create committers that handle the commit and abort of the output files"
+}

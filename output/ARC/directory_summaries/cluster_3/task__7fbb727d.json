@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "task",
+  "title": "Directory-level architectural abstraction for task/reduce",
+  "description": "The task/reduce directory is responsible for handling the reduce task in a Hadoop MapReduce job. The core logic of the reduce task is implemented in the class ReduceTask, which collaborates with other classes such as JobContext, TaskAttemptID, RawKeyValueIterator, and OutputCommitter. The reduce task takes input from the mappers and produces output which is written to a reporter. The directory follows the pattern of the MapReduce framework, which is a popular distributed computing framework for processing large data sets.",
+  "summary": "TITLE: Directory-level architectural abstraction for task/reduce\nDESCRIPTION: The task/reduce directory is responsible for handling the reduce task in a Hadoop MapReduce job. The core logic of the reduce task is implemented in the class ReduceTask, which collaborates with other classes such as JobContext, TaskAttemptID, RawKeyValueIterator, and OutputCommitter. The reduce task takes input from the mappers and produces output which is written to a reporter. The directory follows the pattern of the MapReduce framework, which is a popular distributed computing framework for processing large data sets.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "package-info.java"
+    },
+    {
+      "type": "directory",
+      "name": "task/reduce"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Directory-level architectural abstraction for task/reduce\n\nDESCRIPTION:\nThe task/reduce directory is responsible for handling the reduce task in a Hadoop MapReduce job. The core logic of the reduce task is implemented in the class ReduceTask, which collaborates with other classes such as JobContext, TaskAttemptID, RawKeyValueIterator, and OutputCommitter. The reduce task takes input from the mappers and produces output which is written to a reporter. The directory follows the pattern of the MapReduce framework, which is a popular distributed computing framework for processing large data sets."
+}

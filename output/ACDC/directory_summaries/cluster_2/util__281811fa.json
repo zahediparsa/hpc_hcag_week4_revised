@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "util",
+  "title": "Utility methods for Hadoop MapReduce",
+  "description": "This directory contains utility methods for various tasks related to Hadoop MapReduce, such as constructing task log URLs, converting Counters to JSON, and converting Counters to TimelineMetric. These methods are used by different components of the Hadoop MapReduce framework, such as the JobTracker and the TaskTracker. The methods in this directory are used for internal communication and coordination, and for generating reports and metrics for monitoring and analysis.",
+  "summary": "TITLE: Utility methods for Hadoop MapReduce\nDESCRIPTION: This directory contains utility methods for various tasks related to Hadoop MapReduce, such as constructing task log URLs, converting Counters to JSON, and converting Counters to TimelineMetric. These methods are used by different components of the Hadoop MapReduce framework, such as the JobTracker and the TaskTracker. The methods in this directory are used for internal communication and coordination, and for generating reports and metrics for monitoring and analysis.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "HostUtil.java"
+    },
+    {
+      "type": "file",
+      "name": "JobHistoryEventUtils.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Utility methods for Hadoop MapReduce\n\nDESCRIPTION:\nThis directory contains utility methods for various tasks related to Hadoop MapReduce, such as constructing task log URLs, converting Counters to JSON, and converting Counters to TimelineMetric. These methods are used by different components of the Hadoop MapReduce framework, such as the JobTracker and the TaskTracker. The methods in this directory are used for internal communication and coordination, and for generating reports and metrics for monitoring and analysis."
+}

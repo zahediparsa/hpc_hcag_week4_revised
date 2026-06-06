@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 53,
+  "directory": ".",
+  "title": "Chain directory",
+  "description": "The Chain directory contains classes that provide common functionality for Mapper and Reducer classes in a Hadoop MapReduce program. The Chain class provides a method to create a Configuration for a Map or Reduce task in a chain, while the ChainMapper and ChainReducer classes allow multiple Mapper and Reducer classes to be chained together within a single task. The classes depend on the Apache Hadoop MapReduce library and the Configuration class.",
+  "summary": "TITLE: Chain directory\nDESCRIPTION: The Chain directory contains classes that provide common functionality for Mapper and Reducer classes in a Hadoop MapReduce program. The Chain class provides a method to create a Configuration for a Map or Reduce task in a chain, while the ChainMapper and ChainReducer classes allow multiple Mapper and Reducer classes to be chained together within a single task. The classes depend on the Apache Hadoop MapReduce library and the Configuration class.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Chain directory\n\nDESCRIPTION: The Chain directory contains classes that provide common functionality for Mapper and Reducer classes in a Hadoop MapReduce program. The Chain class provides a method to create a Configuration for a Map or Reduce task in a chain, while the ChainMapper and ChainReducer classes allow multiple Mapper and Reducer classes to be chained together within a single task. The classes depend on the Apache Hadoop MapReduce library and the Configuration class."
+}

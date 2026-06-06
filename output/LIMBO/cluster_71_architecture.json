@@ -1,0 +1,22 @@
+{
+  "cluster_id": 71,
+  "title": "lib/join",
+  "description": "The lib/join directory contains classes that implement join operations on data sources. The InnerJoinRecordReader class performs a full inner join, while the OuterJoinRecordReader class performs a full outer join. These classes collaborate to combine tuples from multiple data sources based on a common key. The architectural role of this directory is to provide a flexible and efficient way to perform join operations in a distributed computing environment.",
+  "description_word_count": 68,
+  "number_of_files": 2,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/join\n\nDESCRIPTION:\nThe lib/join directory contains classes that implement join operations on data sources. The InnerJoinRecordReader class performs a full inner join, while the OuterJoinRecordReader class performs a full outer join. These classes collaborate to combine tuples from multiple data sources based on a common key. The architectural role of this directory is to provide a flexible and efficient way to perform join operations in a distributed computing environment.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/join/InnerJoinRecordReader.java",
+    "lib/join/OuterJoinRecordReader.java"
+  ]
+}

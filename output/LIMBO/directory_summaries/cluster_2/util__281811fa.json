@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "util",
+  "title": "Util",
+  "description": "This directory contains utility classes that are used by other parts of the system. These classes are used to perform common operations such as constructing URLs, handling resource bundles, and other miscellaneous tasks. The classes in this directory are designed to be independent of the rest of the system and can be used in other projects as well.",
+  "summary": "TITLE: Util\nDESCRIPTION: This directory contains utility classes that are used by other parts of the system. These classes are used to perform common operations such as constructing URLs, handling resource bundles, and other miscellaneous tasks. The classes in this directory are designed to be independent of the rest of the system and can be used in other projects as well.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "HostUtil.java"
+    },
+    {
+      "type": "file",
+      "name": "ResourceBundles.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Util\n\nDESCRIPTION:\nThis directory contains utility classes that are used by other parts of the system. These classes are used to perform common operations such as constructing URLs, handling resource bundles, and other miscellaneous tasks. The classes in this directory are designed to be independent of the rest of the system and can be used in other projects as well."
+}

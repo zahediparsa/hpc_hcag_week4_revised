@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 24,
+  "directory": "task",
+  "title": "MapReduce - Shuffle and Sort",
+  "description": "The shuffle and sort process is a crucial part of the MapReduce framework. It is responsible for merging the output of multiple map tasks into a single sorted output for the reduce task. The Shuffle class is responsible for managing the shuffle process and using a ShuffleSchedulerImpl to schedule the execution of map tasks. The MergeManager interface is used to merge the map output files, and the ShuffleSchedulerImpl class is responsible for scheduling the execution of map tasks. The ShuffleClientMetrics class is used to record shuffle client metrics, and the ShuffleSchedulerImpl class is responsible for scheduling the execution of map tasks.",
+  "summary": "TITLE: MapReduce - Shuffle and Sort\nDESCRIPTION: The shuffle and sort process is a crucial part of the MapReduce framework. It is responsible for merging the output of multiple map tasks into a single sorted output for the reduce task. The Shuffle class is responsible for managing the shuffle process and using a ShuffleSchedulerImpl to schedule the execution of map tasks. The MergeManager interface is used to merge the map output files, and the ShuffleSchedulerImpl class is responsible for scheduling the execution of map tasks. The ShuffleClientMetrics class is used to record shuffle client metrics, and the ShuffleSchedulerImpl class is responsible for scheduling the execution of map tasks.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "task/reduce"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce - Shuffle and Sort\n\nDESCRIPTION: The shuffle and sort process is a crucial part of the MapReduce framework. It is responsible for merging the output of multiple map tasks into a single sorted output for the reduce task. The Shuffle class is responsible for managing the shuffle process and using a ShuffleSchedulerImpl to schedule the execution of map tasks. The MergeManager interface is used to merge the map output files, and the ShuffleSchedulerImpl class is responsible for scheduling the execution of map tasks. The ShuffleClientMetrics class is used to record shuffle client metrics, and the ShuffleSchedulerImpl class is responsible for scheduling the execution of map tasks."
+}

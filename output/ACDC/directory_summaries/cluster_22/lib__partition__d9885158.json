@@ -1,0 +1,34 @@
+{
+  "type": "directory",
+  "cluster_id": 22,
+  "directory": "lib/partition",
+  "title": "lib/partition",
+  "description": "This directory contains classes for custom partitioning of data in Apache Hadoop MapReduce. The classes in this directory are used to determine which reducer will process a particular key-value pair. The partitioning logic is typically based on some criteria such as the key value, the number of reducers, or configuration settings. The classes in this directory collaborate to provide a flexible and extensible framework for custom partitioning. The architectural role of this directory is to provide a high-level abstraction for partitioning logic, allowing developers to easily customize the partitioning behavior of their MapReduce jobs.",
+  "summary": "TITLE: lib/partition\nDESCRIPTION: This directory contains classes for custom partitioning of data in Apache Hadoop MapReduce. The classes in this directory are used to determine which reducer will process a particular key-value pair. The partitioning logic is typically based on some criteria such as the key value, the number of reducers, or configuration settings. The classes in this directory collaborate to provide a flexible and extensible framework for custom partitioning. The architectural role of this directory is to provide a high-level abstraction for partitioning logic, allowing developers to easily customize the partitioning behavior of their MapReduce jobs.",
+  "number_of_children": 5,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "BinaryPartitioner.java"
+    },
+    {
+      "type": "file",
+      "name": "KeyFieldBasedComparator.java"
+    },
+    {
+      "type": "file",
+      "name": "KeyFieldBasedPartitioner.java"
+    },
+    {
+      "type": "file",
+      "name": "KeyFieldHelper.java"
+    },
+    {
+      "type": "file",
+      "name": "RehashPartitioner.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/partition\n\nDESCRIPTION:\nThis directory contains classes for custom partitioning of data in Apache Hadoop MapReduce. The classes in this directory are used to determine which reducer will process a particular key-value pair. The partitioning logic is typically based on some criteria such as the key value, the number of reducers, or configuration settings. The classes in this directory collaborate to provide a flexible and extensible framework for custom partitioning. The architectural role of this directory is to provide a high-level abstraction for partitioning logic, allowing developers to easily customize the partitioning behavior of their MapReduce jobs."
+}

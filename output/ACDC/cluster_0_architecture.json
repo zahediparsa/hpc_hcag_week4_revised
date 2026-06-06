@@ -1,0 +1,29 @@
+{
+  "cluster_id": 0,
+  "title": "Checkpoint Directory",
+  "description": "The checkpoint directory is responsible for managing the checkpoints of tasks in a Hadoop MapReduce job. It provides a way to store and retrieve the state of tasks in case of failures or retries. The directory collaborates with the job tracker and the task trackers to ensure that checkpoints are properly stored and retrieved. The checkpoint directory follows the active-passive architecture pattern, where the active component is the job tracker and the passive component is the checkpoint directory.",
+  "description_word_count": 78,
+  "number_of_files": 9,
+  "number_of_directories": 2,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Checkpoint Directory\n\nDESCRIPTION:\nThe checkpoint directory is responsible for managing the checkpoints of tasks in a Hadoop MapReduce job. It provides a way to store and retrieve the state of tasks in case of failures or retries. The directory collaborates with the job tracker and the task trackers to ensure that checkpoints are properly stored and retrieved. The checkpoint directory follows the active-passive architecture pattern, where the active component is the job tracker and the passive component is the checkpoint directory.",
+  "algorithm": "ACDC",
+  "files": [
+    "checkpoint/CheckpointID.java",
+    "checkpoint/CheckpointNamingService.java",
+    "checkpoint/CheckpointService.java",
+    "checkpoint/EnumCounter.java",
+    "checkpoint/FSCheckpointID.java",
+    "checkpoint/FSCheckpointService.java",
+    "checkpoint/RandomNameCNS.java",
+    "checkpoint/SimpleNamingService.java",
+    "checkpoint/TaskCheckpointID.java"
+  ]
+}

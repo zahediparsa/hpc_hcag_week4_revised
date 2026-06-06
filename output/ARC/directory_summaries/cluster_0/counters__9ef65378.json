@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "counters",
+  "title": "Counters directory",
+  "description": "The counters directory contains classes that provide a common implementation for the Counters container in both mapred and mapreduce packages. It includes methods for adding groups, finding counters, and incrementing multiple counters by their amounts in another Counters instance. The directory also includes a class for the filesystem counter group, which provides a common implementation of the filesystem counter group in both mapred and mapreduce packages.",
+  "summary": "TITLE: Counters directory\nDESCRIPTION: The counters directory contains classes that provide a common implementation for the Counters container in both mapred and mapreduce packages. It includes methods for adding groups, finding counters, and incrementing multiple counters by their amounts in another Counters instance. The directory also includes a class for the filesystem counter group, which provides a common implementation of the filesystem counter group in both mapred and mapreduce packages.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AbstractCounters.java"
+    },
+    {
+      "type": "file",
+      "name": "FileSystemCounterGroup.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Counters directory\n\nDESCRIPTION:\nThe counters directory contains classes that provide a common implementation for the Counters container in both mapred and mapreduce packages. It includes methods for adding groups, finding counters, and incrementing multiple counters by their amounts in another Counters instance. The directory also includes a class for the filesystem counter group, which provides a common implementation of the filesystem counter group in both mapred and mapreduce packages."
+}

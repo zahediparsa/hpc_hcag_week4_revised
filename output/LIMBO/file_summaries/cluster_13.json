@@ -1,0 +1,14 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 13,
+    "class": "org.apache.hadoop.mapreduce.QueueInfo",
+    "path": "QueueInfo.java",
+    "file_name": "QueueInfo.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\n- Maintains information about job queues in the Hadoop Map/Reduce framework\n- Includes the queue name, scheduling information, queue state, and job statuses\n\nCORE LOGIC:\n- Manages job submission to queues\n- Keeps track of queue state and scheduling information\n\nINPUTS/OUTPUTS:\n- Queue name, scheduling information, queue state, and job statuses are inputs\n- Job statuses are outputs\n\nDEPENDENCIES:\n- org.apache.hadoop.classification.InterfaceAudience\n- org.apache.hadoop.classification.InterfaceStability\n- org.apache.hadoop.io.Text\n- org.apache.hadoop.io.Writable\n- org.apache.hadoop.io.WritableUtils\n- org.apache.hadoop.util.StringInterner",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "split",
+  "title": "Split Reading Package",
+  "description": "The split reading package contains classes for reading split information from a file. It collaborates with other classes in the package to parse and process the split information. The package follows the Singleton pattern to ensure that only one instance of the split reader is created. The package depends on the org.apache.hadoop.classification package for audience and stability annotations.",
+  "summary": "TITLE: Split Reading Package\nDESCRIPTION: The split reading package contains classes for reading split information from a file. It collaborates with other classes in the package to parse and process the split information. The package follows the Singleton pattern to ensure that only one instance of the split reader is created. The package depends on the org.apache.hadoop.classification package for audience and stability annotations.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "package-info.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Split Reading Package\n\nDESCRIPTION:\nThe split reading package contains classes for reading split information from a file. It collaborates with other classes in the package to parse and process the split information. The package follows the Singleton pattern to ensure that only one instance of the split reader is created. The package depends on the org.apache.hadoop.classification package for audience and stability annotations."
+}

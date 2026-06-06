@@ -1,0 +1,44 @@
+{
+  "cluster_id": 20,
+  "title": "MapReduce - Shuffle and Sort",
+  "description": "The shuffle and sort phase of a MapReduce job is responsible for merging the output of multiple map tasks into a single sorted output for the reduce task. This phase involves several key components, including the ShuffleScheduler, MergeManager, Fetcher, and EventFetcher. The ShuffleScheduler is responsible for scheduling the execution of map tasks, while the MergeManager is responsible for merging the map output files. The Fetcher and EventFetcher threads are used to fetch map output and shuffle events from the shuffle server. The shuffle and sort phase is a critical part of the MapReduce framework, as it ensures that the reduce task receives the data in the correct order and format for processing.",
+  "description_word_count": 112,
+  "number_of_files": 24,
+  "number_of_directories": 4,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce - Shuffle and Sort\n\nDESCRIPTION:\nThe shuffle and sort phase of a MapReduce job is responsible for merging the output of multiple map tasks into a single sorted output for the reduce task. This phase involves several key components, including the ShuffleScheduler, MergeManager, Fetcher, and EventFetcher. The ShuffleScheduler is responsible for scheduling the execution of map tasks, while the MergeManager is responsible for merging the map output files. The Fetcher and EventFetcher threads are used to fetch map output and shuffle events from the shuffle server. The shuffle and sort phase is a critical part of the MapReduce framework, as it ensures that the reduce task receives the data in the correct order and format for processing.",
+  "algorithm": "ACDC",
+  "files": [
+    "CryptoUtils.java",
+    "TaskAttemptID.java",
+    "security/IntermediateEncryptedStream.java",
+    "security/SpillCallBackInjector.java",
+    "security/SpillCallBackPathsFinder.java",
+    "task/reduce/EventFetcher.java",
+    "task/reduce/ExceptionReporter.java",
+    "task/reduce/Fetcher.java",
+    "task/reduce/IFileWrappedMapOutput.java",
+    "task/reduce/InMemoryMapOutput.java",
+    "task/reduce/InMemoryReader.java",
+    "task/reduce/InMemoryWriter.java",
+    "task/reduce/LocalFetcher.java",
+    "task/reduce/MapHost.java",
+    "task/reduce/MapOutput.java",
+    "task/reduce/MergeManager.java",
+    "task/reduce/MergeManagerImpl.java",
+    "task/reduce/MergeThread.java",
+    "task/reduce/OnDiskMapOutput.java",
+    "task/reduce/Shuffle.java",
+    "task/reduce/ShuffleClientMetrics.java",
+    "task/reduce/ShuffleHeader.java",
+    "task/reduce/ShuffleScheduler.java",
+    "task/reduce/ShuffleSchedulerImpl.java"
+  ]
+}

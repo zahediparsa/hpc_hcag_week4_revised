@@ -1,0 +1,176 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 24,
+    "class": "org.apache.hadoop.mapreduce.TaskCompletionEvent",
+    "path": "TaskCompletionEvent.java",
+    "file_name": "TaskCompletionEvent.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class represents a task completion event, which is sent by the job tracker to inform the task trackers about the completion of a task.\n\nCORE LOGIC:\n\nThe core logic of this class is to track the completion of tasks and send events to the task trackers. It includes methods to set and get the event ID, task ID, status, task tracker HTTP location, and task run time.\n\nINPUTS/OUTPUTS:\n\nThe class has input and output methods to read and write data to a DataInput and DataOutput stream. It uses the Hadoop Writable interface to serialize and deserialize the data.\n\nDEPENDENCIES:\n\nThis class depends on the Hadoop framework and the TaskAttemptID class. It also uses the WritableUtils class for reading and writing data.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 24,
+    "class": "org.apache.hadoop.mapreduce.task.reduce.EventFetcher",
+    "path": "task/reduce/EventFetcher.java",
+    "file_name": "EventFetcher.java",
+    "directory": "task/reduce",
+    "summary": "KEY FUNCTIONALITY:\nThe EventFetcher class is a thread that fetches map-completion events from a TaskTracker.\n\nCORE LOGIC:\nThe EventFetcher class uses a loop to continuously fetch map-completion events from the TaskTracker. It uses the getMapCompletionEvents method to retrieve a set of events from a given event ID. The events are then processed to update the knownOutputs, obsoleteOutputs, and neededOutputs based on the task status.\n\nINPUTS/OUTPUTS:\nThe EventFetcher class takes in the TaskAttemptID, TaskUmbilicalProtocol, ShuffleScheduler, ExceptionReporter, and maxEventsToFetch as inputs. It fetches map-completion events and processes them to update the outputs.\n\nDEPENDENCIES:\nThe EventFetcher class depends on the TaskAttemptID, TaskUmbilicalProtocol, ShuffleScheduler, ExceptionReporter, and maxEventsToFetch classes. It also depends on the org.apache.hadoop.mapred and org.apache.hadoop.mapreduce packages.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 24,
+    "class": "org.apache.hadoop.mapreduce.task.reduce.Fetcher",
+    "path": "task/reduce/Fetcher.java",
+    "file_name": "Fetcher.java",
+    "directory": "task/reduce",
+    "summary": "KEY FUNCTIONALITY: The Fetcher class is responsible for shuffling the output of a map task and informing the shuffle scheduler.\n\nCORE LOGIC: The code uses a try-catch block to handle compression and decompression failures. It also uses a while loop to establish a connection and retry if necessary.\n\nINPUTS/OUTPUTS: The code takes in mapOutput, host, is, compressedLength, decompressedLength, metrics, and reporter as inputs. It also returns null.\n\nDEPENDENCIES: The code depends on the Fetcher class, MapHost, MapOutput, TaskAttemptID, Set, URL, URLConnection, IOException, MalformedURLException, and other classes and methods.",
+    "chunked": true,
+    "number_of_code_chunks": 2,
+    "chunk_summaries": [
+      "Summarize this raw Java source-code chunk.\n\nThis is chunk 1 of 2 from file Fetcher.java.\nUse only the code shown in this chunk.\n\nReturn exactly these four sections:\n\nKEY FUNCTIONALITY: main purpose visible in this chunk\nCORE LOGIC: key algorithms or processing patterns visible in this chunk\nINPUTS/OUTPUTS: data flowing in and out\nDEPENDENCIES: key imported, parent, or collaborator classes visible in this chunk\n\nCode chunk:\n/**\n * Licensed to the Apache Software Foundation (ASF) under one\n * or more contributor license agreements.  See the NOTICE file\n * distributed with this work for additional information\n * regarding copyright ownership.  The ASF licenses this file\n * to you under the Apache License, Version 2.0 (the\n * \"License\"); you may not use this file except in compliance\n * with the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.hadoop.mapreduce.task.reduce;\n\nimport java.io.DataInputStream;\nimport java.io.IOException;\nimport java.io.InputStream;\nimport java.net.ConnectException;\nimport java.net.HttpURLConnection;\nimport java.net.MalformedURLException;\nimport java.net.URL;\nimport java.net.URLConnection;\nimport java.security.GeneralSecurityException;\nimport java.util.Arrays;\nimport java.util.Collection;\nimport java.util.HashSet;\nimport java.util.List;\nimport java.util.Set;\nimport java.util.concurrent.atomic.AtomicInteger;\n\nimport javax.crypto.SecretKey;\nimport javax.net.ssl.HttpsURLConnection;\n\nimport org.apache.hadoop.io.IOUtils;\nimport org.apache.hadoop.mapred.Counters;\nimport org.apache.hadoop.mapred.JobConf;\nimport org.apache.hadoop.mapred.Reporter",
+      "KEY FUNCTIONALITY:\nThe code chunk is responsible for shuffling the output of a map task and informing the shuffle scheduler.\n\nCORE LOGIC:\nThe code chunk uses a try-catch block to handle compression and decompression failures. It also uses a while loop to establish a connection and retry if necessary.\n\nINPUTS/OUTPUTS:\nThe code chunk takes in mapOutput, host, is, compressedLength, decompressedLength, metrics, and reporter as inputs. It also returns null.\n\nDEPENDENCIES:\nThe code chunk depends on the Fetcher class, MapHost, MapOutput, TaskAttemptID, Set, URL, URLConnection, IOException, MalformedURLException, and other classes and methods."
+    ]
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 24,
+    "class": "org.apache.hadoop.mapreduce.task.reduce.IFileWrappedMapOutput",
+    "path": "task/reduce/IFileWrappedMapOutput.java",
+    "file_name": "IFileWrappedMapOutput.java",
+    "directory": "task/reduce",
+    "summary": "KEY FUNCTIONALITY:\nThis class is a wrapper for MapOutput classes that handle streams.\n\nCORE LOGIC:\nThe doShuffle method is the key algorithm in this class. It takes in a MapHost, an IFileInputStream, the compressed and decompressed lengths of the input, a ShuffleClientMetrics object, and a Reporter object. It then performs the shuffle operation by calling the doShuffle method.\n\nINPUTS/OUTPUTS:\nThe class takes in a Configuration object, a MergeManagerImpl object, a TaskAttemptID object, a long size, and a boolean primaryMapOutput. It then calls the super constructor with these parameters.\n\nDEPENDENCIES:\nThis class depends on the MergeManagerImpl class and the MapOutput class.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 24,
+    "class": "org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput",
+    "path": "task/reduce/InMemoryMapOutput.java",
+    "file_name": "InMemoryMapOutput.java",
+    "directory": "task/reduce",
+    "summary": "KEY FUNCTIONALITY:\nThis class represents a map output that is stored in memory.\n\nCORE LOGIC:\nThe main logic of this class is to store map output in memory and handle decompression of map-outputs.\n\nINPUTS/OUTPUTS:\nThe class takes in a Configuration object, a TaskAttemptID object, a MergeManagerImpl object, an integer size, a CompressionCodec object, and a boolean primaryMapOutput. It also has a byte[] memory, a BoundedByteArrayOutputStream byteStream, and a Decompressor decompressor.\n\nDEPENDENCIES:\nThis class depends on the Apache Hadoop MapReduce framework and the Apache Hadoop Common library. It also uses theslf4j logging library.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 24,
+    "class": "org.apache.hadoop.mapreduce.task.reduce.InMemoryReader",
+    "path": "task/reduce/InMemoryReader.java",
+    "file_name": "InMemoryReader.java",
+    "directory": "task/reduce",
+    "summary": "KEY FUNCTIONALITY:\nThis class is used to read map-outputs that are stored in memory.\n\nCORE LOGIC:\nThe class uses a DataInputBuffer to read the data from the memory buffer. It also keeps track of the current position and length of the data being read.\n\nINPUTS/OUTPUTS:\nThe class takes in a byte array, start and length of the data to read, and a Configuration object. It provides methods to read the key and value from the memory buffer.\n\nDEPENDENCIES:\nThis class depends on the MergeManagerImpl class for memory management and the DataInputBuffer class for reading the data.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 24,
+    "class": "org.apache.hadoop.mapreduce.task.reduce.LocalFetcher",
+    "path": "task/reduce/LocalFetcher.java",
+    "file_name": "LocalFetcher.java",
+    "directory": "task/reduce",
+    "summary": "KEY FUNCTIONALITY:\nThe LocalFetcher class is used by LocalJobRunner to perform a local filesystem fetch.\n\nCORE LOGIC:\nThe LocalFetcher class creates a worklist of task attempts to work over and then copies as much as possible.\n\nINPUTS/OUTPUTS:\nThe LocalFetcher class takes in a JobConf object, a TaskAttemptID object, a ShuffleSchedulerImpl object, a MergeManager object, a Reporter object, a ShuffleClientMetrics object, an ExceptionReporter object, a SecretKey object, and a Map object.\n\nDEPENDENCIES:\nThe LocalFetcher class depends on the org.apache.hadoop.mapreduce.task.reduce package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 24,
+    "class": "org.apache.hadoop.mapreduce.task.reduce.MapHost",
+    "path": "task/reduce/MapHost.java",
+    "file_name": "MapHost.java",
+    "directory": "task/reduce",
+    "summary": "KEY FUNCTIONALITY:\n- Maintains state of a map host\n- Keeps track of known map outputs\n- Manages the state machine for the host\n\nCORE LOGIC:\n- Manages the state of the host\n- Keeps track of known map outputs\n- Manages the state machine for the host\n\nINPUTS/OUTPUTS:\n- Inputs: hostName, baseUrl\n- Outputs: state, maps\n\nDEPENDENCIES:\n- org.apache.hadoop.mapreduce.TaskAttemptID\n- java.util.ArrayList\n- java.util.List",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 24,
+    "class": "org.apache.hadoop.mapreduce.task.reduce.MapOutput",
+    "path": "task/reduce/MapOutput.java",
+    "file_name": "MapOutput.java",
+    "directory": "task/reduce",
+    "summary": "KEY FUNCTIONALITY:\nThis class represents the output of a map task, including its size, whether it is the primary output, and methods for shuffling, committing, and aborting the output.\n\nCORE LOGIC:\nThe class includes methods for shuffling the output to a specified host, committing the output, and aborting the output.\n\nINPUTS/OUTPUTS:\nThe class takes in the map task's ID, size, and whether it is the primary output as parameters. It also includes methods for getting the map task's ID, size, and description.\n\nDEPENDENCIES:\nThe class depends on the TaskAttemptID class from the mapreduce package, as well as the InputStream, IOException, Comparator, AtomicInteger, Reporter, and ShuffleClientMetrics classes from the java.io, java.util, java.util.concurrent.atomic, org.apache.hadoop.mapred, and org.apache.hadoop.mapreduce packages, respectively.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 24,
+    "class": "org.apache.hadoop.mapreduce.task.reduce.MergeManager",
+    "path": "task/reduce/MergeManager.java",
+    "file_name": "MergeManager.java",
+    "directory": "task/reduce",
+    "summary": "KEY FUNCTIONALITY: MergeManager is an interface for a reduce side merge that works with the default Shuffle implementation.\nCORE LOGIC: MergeManager has methods to wait for resources, reserve resources for data to be shuffled, and close the shuffle.\nINPUTS/OUTPUTS: MergeManager takes in mapId, requestedSize, and fetcher as inputs and returns a MapOutput object or a RawKeyValueIterator object as outputs.\nDEPENDENCIES: MergeManager depends on TaskAttemptID, RawKeyValueIterator, IOException, and MapOutput classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 24,
+    "class": "org.apache.hadoop.mapreduce.task.reduce.OnDiskMapOutput",
+    "path": "task/reduce/OnDiskMapOutput.java",
+    "file_name": "OnDiskMapOutput.java",
+    "directory": "task/reduce",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class represents a map output that is stored on disk.\n\nCORE LOGIC:\n\nThe core logic of this class is in the doShuffle() method, which copies data from a remote map output to a local disk.\n\nINPUTS/OUTPUTS:\n\nThe class has two input parameters: mapId (the ID of the map task that produced the output) and reduceId (the ID of the reduce task that will use the output). It also has an input stream (input) and an output stream (disk) for reading and writing data.\n\nDEPENDENCIES:\n\nThis class depends on the MergeManagerImpl class for merging map outputs and the MapOutputFile class for managing map output files. It also depends on the FileSystem class for file operations.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 24,
+    "class": "org.apache.hadoop.mapreduce.task.reduce.Shuffle",
+    "path": "task/reduce/Shuffle.java",
+    "file_name": "Shuffle.java",
+    "directory": "task/reduce",
+    "summary": "KEY FUNCTIONALITY:\nThe Shuffle class is a part of the Apache Hadoop MapReduce framework and is responsible for the shuffle and sort process in a MapReduce job. It is used to merge the output of multiple maps into a single sorted output for the reduce task.\n\nCORE LOGIC:\nThe Shuffle class uses a ShuffleSchedulerImpl to manage the shuffle process and a MergeManager to merge the map output files. It also uses Fetcher and EventFetcher threads to fetch map output and shuffle events from the shuffle server.\n\nINPUTS/OUTPUTS:\nThe Shuffle class takes input from the map tasks and produces a single sorted output for the reduce task.\n\nDEPENDENCIES:\nThe Shuffle class depends on various classes and interfaces such as ShuffleSchedulerImpl, MergeManager, Fetcher, EventFetcher, TaskAttemptID, JobConf, Reporter, TaskUmbilicalProtocol, TaskStatus, and MapOutputFile.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 24,
+    "class": "org.apache.hadoop.mapreduce.task.reduce.ShuffleClientMetrics",
+    "path": "task/reduce/ShuffleClientMetrics.java",
+    "file_name": "ShuffleClientMetrics.java",
+    "directory": "task/reduce",
+    "summary": "KEY FUNCTIONALITY:\n\n* This class is used to record shuffle client metrics.\n\nCORE LOGIC:\n\n* It contains methods to record shuffle client metrics such as input bytes, failed fetches, successful fetches, and threads busy.\n\nINPUTS/OUTPUTS:\n\n* The input is the bytes of input data, and the output is the metrics of shuffle client.\n\nDEPENDENCIES:\n\n* This class depends on the MetricsSystem and MetricsRegistry classes from the Hadoop metrics2 library.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 24,
+    "class": "org.apache.hadoop.mapreduce.task.reduce.ShuffleSchedulerImpl",
+    "path": "task/reduce/ShuffleSchedulerImpl.java",
+    "file_name": "ShuffleSchedulerImpl.java",
+    "directory": "task/reduce",
+    "summary": "KEY FUNCTIONALITY:\nThe ShuffleSchedulerImpl class is responsible for scheduling the execution of map tasks in a distributed computing environment. The Penalty class is a custom implementation of the Delayed interface, which is used to track the penalty associated with a particular map host.\n\nCORE LOGIC:\nThe Penalty class has a constructor that takes a MapHost object and a delay value, and it initializes the endTime variable by adding the delay to the current time. The getDelay method returns the remaining time until the penalty expires, and the compareTo method is used to compare two Penalty objects based on their endTime values.\n\nINPUTS/OUTPUTS:\nThe Penalty class has no inputs or outputs.\n\nDEPENDENCIES:\nThe Penalty class depends on the MapHost class, which is a custom implementation of the Host class. The MapHost class provides methods for marking the host as available or pending, and it also provides a method for getting the current state of the host. The ShuffleSchedulerImpl class also depends on the Referee class, which is a custom implementation of the Thread class. The Referee class is responsible for taking hosts off of the penalty list when the timer expires.",
+    "chunked": true,
+    "number_of_code_chunks": 2,
+    "chunk_summaries": [
+      "Summarize this raw Java source-code chunk.\n\nThis is chunk 1 of 2 from file ShuffleSchedulerImpl.java.\nUse only the code shown in this chunk.\n\nReturn exactly these four sections:\n\nKEY FUNCTIONALITY: main purpose visible in this chunk\nCORE LOGIC: key algorithms or processing patterns visible in this chunk\nINPUTS/OUTPUTS: data flowing in and out\nDEPENDENCIES: key imported, parent, or collaborator classes visible in this chunk\n\nCode chunk:\n/**\n * Licensed to the Apache Software Foundation (ASF) under one\n * or more contributor license agreements.  See the NOTICE file\n * distributed with this work for additional information\n * regarding copyright ownership.  The ASF licenses this file\n * to you under the Apache License, Version 2.0 (the\n * \"License\"); you may not use this file except in compliance\n * with the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.hadoop.mapreduce.task.reduce;\n\nimport java.io.IOException;\nimport java.net.InetAddress;\nimport java.net.URI;\nimport java.net.UnknownHostException;\nimport java.text.DecimalFormat;\nimport java.util.ArrayList;\nimport java.util.Collections;\nimport java.util.HashMap;\nimport java.util.HashSet;\nimport java.util.Iterator;\nimport java.util.List;\nimport java.util.Map;\nimport java.util.Random;\nimport java.util.Set;\nimport java.util.concurrent.DelayQueue;\nimport java.util.concurrent.Delayed;\nimport java.util.concurrent.TimeUnit;\n\nimport org.apache.hadoop.classification.VisibleForTesting;\nimport org.apache.hadoop.classification.InterfaceAudience;\nimport org.apache.hadoop.classification.InterfaceStability;\nimport org.apache.hadoop.io.IntWritable;",
+      "KEY FUNCTIONALITY:\nThe code chunk is a part of the ShuffleSchedulerImpl class, which is responsible for scheduling the execution of map tasks in a distributed computing environment. The Penalty class is a custom implementation of the Delayed interface, which is used to track the penalty associated with a particular map host.\n\nCORE LOGIC:\nThe Penalty class has a constructor that takes a MapHost object and a delay value, and it initializes the endTime variable by adding the delay to the current time. The getDelay method returns the remaining time until the penalty expires, and the compareTo method is used to compare two Penalty objects based on their endTime values.\n\nINPUTS/OUTPUTS:\nThe Penalty class has no inputs or outputs.\n\nDEPENDENCIES:\nThe Penalty class depends on the MapHost class, which is a custom implementation of the Host class. The MapHost class provides methods for marking the host as available or pending, and it also provides a method for getting the current state of the host. The ShuffleSchedulerImpl class also depends on the Referee class, which is a custom implementation of the Thread class. The Referee class is responsible for taking hosts off of the penalty list when the timer expires."
+    ]
+  }
+]

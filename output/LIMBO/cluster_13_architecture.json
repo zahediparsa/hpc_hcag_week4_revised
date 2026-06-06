@@ -1,0 +1,21 @@
+{
+  "cluster_id": 13,
+  "title": "QueueInfo",
+  "description": "- QueueInfo maintains information about job queues in the Hadoop Map/Reduce framework.\n- It manages job submission to queues and keeps track of queue state and scheduling information.\n- QueueInfo includes the queue name, scheduling information, queue state, and job statuses.\n- Job statuses are outputs.\n- The following technologies are used: org.apache.hadoop.classification.InterfaceAudience, org.apache.hadoop.classification.InterfaceStability, org.apache.hadoop.io.Text, org.apache.hadoop.io.Writable, org.apache.hadoop.io.WritableUtils, org.apache.hadoop.util.StringInterner.",
+  "description_word_count": 78,
+  "number_of_files": 1,
+  "number_of_directories": 1,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: QueueInfo\n\nDESCRIPTION:\n- QueueInfo maintains information about job queues in the Hadoop Map/Reduce framework.\n- It manages job submission to queues and keeps track of queue state and scheduling information.\n- QueueInfo includes the queue name, scheduling information, queue state, and job statuses.\n- Job statuses are outputs.\n- The following technologies are used: org.apache.hadoop.classification.InterfaceAudience, org.apache.hadoop.classification.InterfaceStability, org.apache.hadoop.io.Text, org.apache.hadoop.io.Writable, org.apache.hadoop.io.WritableUtils, org.apache.hadoop.util.StringInterner.",
+  "algorithm": "LIMBO",
+  "files": [
+    "QueueInfo.java"
+  ]
+}

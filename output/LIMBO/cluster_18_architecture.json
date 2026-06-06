@@ -1,0 +1,29 @@
+{
+  "cluster_id": 18,
+  "title": "OutputCommitterFactory",
+  "description": "The OutputCommitterFactory is responsible for creating and managing committers for different filesystems and schemas. It collaborates with the PathOutputCommitterFactory, FileOutputCommitterFactory, and NamedCommitterFactory classes to provide a centralized location for committers to be created and used by the FileOutputFormat. The OutputCommitterFactory follows the factory pattern, as it provides a way to create committers based on different criteria. It also follows the singleton pattern, as there is only one instance of the OutputCommitterFactory per JVM.",
+  "description_word_count": 73,
+  "number_of_files": 9,
+  "number_of_directories": 5,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: OutputCommitterFactory\n\nDESCRIPTION:\nThe OutputCommitterFactory is responsible for creating and managing committers for different filesystems and schemas. It collaborates with the PathOutputCommitterFactory, FileOutputCommitterFactory, and NamedCommitterFactory classes to provide a centralized location for committers to be created and used by the FileOutputFormat. The OutputCommitterFactory follows the factory pattern, as it provides a way to create committers based on different criteria. It also follows the singleton pattern, as there is only one instance of the OutputCommitterFactory per JVM.",
+  "algorithm": "LIMBO",
+  "files": [
+    "OutputCommitter.java",
+    "TaskAttemptContext.java",
+    "lib/output/BindingPathOutputCommitter.java",
+    "lib/output/FileOutputCommitter.java",
+    "lib/output/FileOutputCommitterFactory.java",
+    "lib/output/NamedCommitterFactory.java",
+    "lib/output/PartialFileOutputCommitter.java",
+    "lib/output/PathOutputCommitterFactory.java",
+    "lib/output/committer/manifest/ManifestCommitterFactory.java"
+  ]
+}

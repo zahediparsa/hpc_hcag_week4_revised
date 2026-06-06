@@ -1,0 +1,1616 @@
+[
+  {
+    "cluster_id": 0,
+    "title": "Hadoop MapReduce Architecture",
+    "description": "The Hadoop MapReduce architecture is a distributed processing system designed for handling large-scale data sets. It consists of two main components: the MapReduce framework and the HDFS file system. The MapReduce framework divides the data into smaller chunks, processes them in parallel, and aggregates the results. The HDFS file system stores the data and provides access to it across the cluster. The communication between the MapReduce framework and the HDFS file system is done through the JobTracker and TaskTracker components. The JobTracker schedules and monitors the MapReduce jobs, while the TaskTracker executes the tasks assigned by the JobTracker. The data is stored in HDFS in the form of files, which are then processed by the MapReduce framework. The architecture follows the principles of distributed computing, such as scalability, fault-tolerance, and load balancing, to ensure efficient processing of large-scale data sets.",
+    "description_word_count": 140,
+    "number_of_files": 2,
+    "number_of_directories": 2,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION: The Hadoop MapReduce architecture is responsible for processing large-scale data sets in a distributed environment. It consists of two main components: the MapReduce framework and the HDFS (Hadoop Distributed File System) file system. The MapReduce framework is responsible for dividing the data into smaller chunks, processing them in parallel, and then aggregating the results. The HDFS file system is responsible for storing the data and providing access to it across the cluster. The communication between the MapReduce framework and the HDFS file system is done through the JobTracker and TaskTracker components. The JobTracker is responsible for scheduling and monitoring the MapReduce jobs, while the TaskTracker is responsible for executing the tasks assigned by the JobTracker. The data is stored in HDFS in the form of files, which are then processed by the MapReduce framework. The architecture follows the principles of distributed computing, such as scalability, fault-tolerance, and load balancing, to ensure efficient processing of large-scale data sets.",
+    "algorithm": "LIMBO",
+    "files": [
+      "JobSubmissionFiles.java",
+      "protocol/ClientProtocolProvider.java"
+    ]
+  },
+  {
+    "cluster_id": 1,
+    "title": "Hadoop MapReduce Architecture",
+    "description": "The Hadoop MapReduce architecture is a distributed processing framework that is designed to process large data sets across clusters of computers. It is composed of two main components: the Map component and the Reduce component. The Map component breaks down the input data into smaller chunks and applies a user-defined function to each chunk. The Reduce component then aggregates the results from the Map component and produces the final output. The architecture is scalable, fault-tolerant, and provides a high degree of flexibility and extensibility. It is built on top of the Hadoop Distributed File System (HDFS) and uses the Java programming language.",
+    "description_word_count": 102,
+    "number_of_files": 4,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is a distributed processing framework that is designed to process large data sets across clusters of computers. It is composed of two main components: the Map component and the Reduce component. The Map component breaks down the input data into smaller chunks and applies a user-defined function to each chunk. The Reduce component then aggregates the results from the Map component and produces the final output. The architecture is scalable, fault-tolerant, and provides a high degree of flexibility and extensibility. It is built on top of the Hadoop Distributed File System (HDFS) and uses the Java programming language.",
+    "algorithm": "LIMBO",
+    "files": [
+      "Cluster.java",
+      "Job.java",
+      "protocol/ClientProtocol.java",
+      "tools/CLI.java"
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "title": "MapReduce Abstraction",
+    "description": "The MapReduce Abstraction is responsible for managing the execution of MapReduce jobs. It collaborates with other classes to handle the submission, monitoring, and completion of jobs. The MapReduce Abstraction follows the pattern of the Singleton design pattern, ensuring that there is only one instance of the MapReduce Abstraction throughout the system. This pattern helps to maintain consistency and avoid conflicts when multiple jobs are running simultaneously.",
+    "description_word_count": 66,
+    "number_of_files": 47,
+    "number_of_directories": 23,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: MapReduce Abstraction\n\nDESCRIPTION:\nThe MapReduce Abstraction is responsible for managing the execution of MapReduce jobs. It collaborates with other classes to handle the submission, monitoring, and completion of jobs. The MapReduce Abstraction follows the pattern of the Singleton design pattern, ensuring that there is only one instance of the MapReduce Abstraction throughout the system. This pattern helps to maintain consistency and avoid conflicts when multiple jobs are running simultaneously.",
+    "algorithm": "LIMBO",
+    "files": [
+      "ClusterMetrics.java",
+      "Counter.java",
+      "FileSystemCounter.java",
+      "ID.java",
+      "InputSplit.java",
+      "JobCounter.java",
+      "JobPriority.java",
+      "MRConfig.java",
+      "MRJobConfig.java",
+      "MarkableIteratorInterface.java",
+      "Partitioner.java",
+      "QueueAclsInfo.java",
+      "QueueState.java",
+      "TaskCounter.java",
+      "TaskTrackerInfo.java",
+      "TaskType.java",
+      "checkpoint/CheckpointID.java",
+      "checkpoint/CheckpointNamingService.java",
+      "checkpoint/EnumCounter.java",
+      "counters/LimitExceededException.java",
+      "jobhistory/AvroArrayUtils.java",
+      "jobhistory/HistoryEventHandler.java",
+      "jobhistory/HistoryViewerPrinter.java",
+      "lib/aggregate/ValueAggregator.java",
+      "lib/aggregate/ValueAggregatorDescriptor.java",
+      "lib/db/DBWritable.java",
+      "lib/db/OracleDateSplitter.java",
+      "lib/fieldsel/FieldSelectionHelper.java",
+      "lib/input/InvalidInputException.java",
+      "lib/input/SplitLineReader.java",
+      "lib/output/committer/manifest/ManifestCommitterStatisticNames.java",
+      "lib/output/committer/manifest/files/AbstractManifestData.java",
+      "lib/output/committer/manifest/files/DiagnosticKeys.java",
+      "lib/output/committer/manifest/files/EntryStatus.java",
+      "lib/output/committer/manifest/impl/OutputValidationException.java",
+      "lib/output/committer/manifest/stages/JobOrTaskStage.java",
+      "lib/output/committer/manifest/stages/StageEventCallbacks.java",
+      "security/SpillCallBackInjector.java",
+      "security/token/delegation/DelegationTokenIdentifier.java",
+      "task/annotation/Checkpointable.java",
+      "task/reduce/ExceptionReporter.java",
+      "task/reduce/InMemoryWriter.java",
+      "task/reduce/ShuffleHeader.java",
+      "task/reduce/ShuffleScheduler.java",
+      "util/HostUtil.java",
+      "util/ResourceBundles.java",
+      "v2/LogParams.java"
+    ]
+  },
+  {
+    "cluster_id": 3,
+    "title": "MapReduce Task",
+    "description": "The MapReduce task directory contains classes that implement the MapReduce task execution engine. The MapReduce task execution engine is responsible for executing the Map and Reduce tasks in a distributed environment. The directory contains the Task class, which is the main class responsible for executing the Map and Reduce tasks. The Task class uses the TaskAttempt class to execute individual Map or Reduce attempts. The TaskAttempt class is responsible for executing a single Map or Reduce task attempt. It uses the Shuffle class to shuffle the intermediate data produced by the Map task and the Reduce class to reduce the intermediate data produced by the Map task. The directory also contains the Committer class, which is responsible for committing the output of the task.",
+    "description_word_count": 124,
+    "number_of_files": 5,
+    "number_of_directories": 4,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: MapReduce Task\n\nDESCRIPTION:\nThe MapReduce task directory contains classes that implement the MapReduce task execution engine. The MapReduce task execution engine is responsible for executing the Map and Reduce tasks in a distributed environment. The directory contains the Task class, which is the main class responsible for executing the Map and Reduce tasks. The Task class uses the TaskAttempt class to execute individual Map or Reduce attempts. The TaskAttempt class is responsible for executing a single Map or Reduce task attempt. It uses the Shuffle class to shuffle the intermediate data produced by the Map task and the Reduce class to reduce the intermediate data produced by the Map task. The directory also contains the Committer class, which is responsible for committing the output of the task.",
+    "algorithm": "LIMBO",
+    "files": [
+      "ContextFactory.java",
+      "lib/map/MultithreadedMapper.java",
+      "task/MapContextImpl.java",
+      "task/ReduceContextImpl.java",
+      "task/TaskAttemptContextImpl.java"
+    ]
+  },
+  {
+    "cluster_id": 4,
+    "title": "Hadoop MapReduce Counters Architecture",
+    "description": "The Hadoop MapReduce counters architecture is responsible for managing and tracking the progress of MapReduce jobs. It consists of a counters directory that collaborates with other files or child directories to ensure the proper functioning of the counters. The counters directory provides a common implementation of counter groups and counters, as well as methods for adding, finding, and incrementing counters. Additionally, the architecture includes utilities for converting counter data to and from a compact string format, as well as methods for converting counter objects to and from JSON and TimelineMetric. The code is written in Java and depends on the Apache Hadoop MapReduce library and the Apache Hadoop classification library.",
+    "description_word_count": 110,
+    "number_of_files": 8,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Counters Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce counters architecture is responsible for managing and tracking the progress of MapReduce jobs. It provides a centralized location for managing counters, which helps in organizing and monitoring job performance. The architecture consists of the counters directory, which collaborates with other files or child directories to ensure the proper functioning of the counters. The counters directory is responsible for managing the counters in the Hadoop MapReduce framework. It provides a common implementation of counter groups and counters, as well as methods for adding, finding, and incrementing counters. The directory also collaborates with other files or child directories to ensure the proper functioning of the counters. Additionally, the architecture includes utilities for converting counter data to and from a compact string format, as well as methods for converting counter objects to and from JSON and TimelineMetric. These utilities are used by the MapReduce framework to track and report job progress and performance metrics. The code is written in Java and depends on the Apache Hadoop MapReduce library and the Apache Hadoop classification library.",
+    "algorithm": "LIMBO",
+    "files": [
+      "CounterGroup.java",
+      "counters/AbstractCounterGroup.java",
+      "counters/AbstractCounters.java",
+      "counters/CounterGroupFactory.java",
+      "counters/FileSystemCounterGroup.java",
+      "counters/FrameworkCounterGroup.java",
+      "util/CountersStrings.java",
+      "util/JobHistoryEventUtils.java"
+    ]
+  },
+  {
+    "cluster_id": 5,
+    "title": "Hadoop MapReduce Architecture",
+    "description": "The Hadoop MapReduce architecture is responsible for processing large-scale data sets in a distributed environment. It consists of a master node and multiple slave nodes. The master node is responsible for scheduling and monitoring the tasks, while the slave nodes execute the tasks and report their status back to the master node. The MapReduce framework provides a way to divide the input data into smaller chunks and process them in parallel. It uses a Map function to process the input data and generate intermediate key-value pairs, and a Reduce function to process the intermediate data and generate the final output. The MapReduce architecture is scalable, fault-tolerant, and provides a way to handle large-scale data processing. It depends on the Hadoop Distributed File System (HDFS) for storing the input data and the YARN (Yet Another Resource Negotiator) for resource management and task scheduling.",
+    "description_word_count": 142,
+    "number_of_files": 4,
+    "number_of_directories": 4,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is responsible for processing large-scale data sets in a distributed environment. It consists of a master node and multiple slave nodes. The master node is responsible for scheduling and monitoring the tasks, while the slave nodes execute the tasks and report their status back to the master node. The MapReduce framework provides a way to divide the input data into smaller chunks and process them in parallel. It uses a Map function to process the input data and generate intermediate key-value pairs, and a Reduce function to process the intermediate data and generate the final output. The MapReduce architecture is scalable, fault-tolerant, and provides a way to handle large-scale data processing. It depends on the Hadoop Distributed File System (HDFS) for storing the input data and the YARN (Yet Another Resource Negotiator) for resource management and task scheduling.",
+    "algorithm": "LIMBO",
+    "files": [
+      "TaskReport.java",
+      "lib/output/FileOutputFormat.java",
+      "lib/output/MultipleOutputs.java",
+      "task/TaskInputOutputContextImpl.java"
+    ]
+  },
+  {
+    "cluster_id": 6,
+    "title": "Hadoop MapReduce Architecture",
+    "description": "Hadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes).\n\nThe system is composed of:\n- A distributed file system (HDFS) that provides high-throughput access to application data.\n- Map tasks that process data and write intermediate, sorted data to the distributed file system.\n- A shuffle and sort phase that merges the intermediate data and prepares it for the reduce tasks.\n- Reduce tasks that process the intermediate data and write the final output.\n\nThe system is scalable, fault-tolerant, and self-healing. It provides high utilization of computing resources and low cost of operation.\n\nTechnologies used:\n- Java\n- HDFS\n- YARN (resource manager, node manager)",
+    "description_word_count": 114,
+    "number_of_files": 1,
+    "number_of_directories": 1,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nHadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes).\n\nThe system is composed of:\n- A distributed file system (HDFS) that provides high-throughput access to application data.\n- Map tasks that process data and write intermediate, sorted data to the distributed file system.\n- A shuffle and sort phase that merges the intermediate data and prepares it for the reduce tasks.\n- Reduce tasks that process the intermediate data and write the final output.\n\nThe system is scalable, fault-tolerant, and self-healing. It provides high utilization of computing resources and low cost of operation.\n\nTechnologies used:\n- Java\n- HDFS\n- YARN (resource manager, node manager)",
+    "algorithm": "LIMBO",
+    "files": [
+      "Counters.java"
+    ]
+  },
+  {
+    "cluster_id": 7,
+    "title": "CryptoUtils",
+    "description": "This directory contains utilities for working with cryptographic streams, specifically for encrypting intermediate data such as MapReduce spill files. It includes methods for creating and initializing an IV (Initialization Vector), calculating crypto padding, and wrapping FSDataOutputStream and InputStream with CryptoOutputStream and CryptoInputStream, respectively. The code takes a Configuration object and an output or input stream as input, and returns an encrypted output or input stream if encryption is enabled.\n\nDEPENDENCIES:\nThe code depends on the Apache Hadoop MapReduce library and the Apache Commons Codec library for Base64 encoding.",
+    "description_word_count": 88,
+    "number_of_files": 7,
+    "number_of_directories": 5,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: CryptoUtils\n\nDESCRIPTION:\nThis directory contains utilities for working with cryptographic streams, specifically for encrypting intermediate data such as MapReduce spill files. It includes methods for creating and initializing an IV (Initialization Vector), calculating crypto padding, and wrapping FSDataOutputStream and InputStream with CryptoOutputStream and CryptoInputStream, respectively. The code takes a Configuration object and an output or input stream as input, and returns an encrypted output or input stream if encryption is enabled.\n\nDEPENDENCIES:\nThe code depends on the Apache Hadoop MapReduce library and the Apache Commons Codec library for Base64 encoding.",
+    "algorithm": "LIMBO",
+    "files": [
+      "CryptoUtils.java",
+      "JobACL.java",
+      "counters/Limits.java",
+      "filecache/ClientDistributedCacheManager.java",
+      "filecache/DistributedCache.java",
+      "security/TokenCache.java",
+      "util/MRJobConfUtil.java"
+    ]
+  },
+  {
+    "cluster_id": 8,
+    "title": "Hadoop MapReduce Architecture",
+    "description": "Hadoop MapReduce is a software framework for processing vast amounts of data on large clusters. It consists of two main modules: the Hadoop Distributed File System (HDFS) for distributed storage and MapReduce for processing the data. MapReduce has two main components: the Map phase, which applies a user-defined function to each chunk of input data, and the Reduce phase, which groups the intermediate values by key and applies a second user-defined function to each group of values. The system is designed to be scalable, fault-tolerant, and cost-effective, and can handle thousands of nodes for large-scale data processing. It is widely used in industry for tasks such as web indexing, data mining, and log analysis.",
+    "description_word_count": 114,
+    "number_of_files": 18,
+    "number_of_directories": 4,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nHadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes). The framework handles all the low-level details of distributed computing, such as communication and fault-tolerance.\n\nThe system is divided into two main modules: the Hadoop Distributed File System (HDFS) and MapReduce. HDFS provides the distributed storage for the data, and MapReduce provides the programming model for processing that data.\n\nMapReduce consists of two main components: the Map phase and the Reduce phase. The Map phase breaks the input data into chunks and applies a user-defined function to each chunk, producing a set of intermediate key-value pairs. The Reduce phase then groups the intermediate values by key and applies a second user-defined function to each group of values, producing the final output.\n\nThe system is designed to be scalable, fault-tolerant, and cost-effective. It can run on a single computer for small datasets, and can handle thousands of nodes for large-scale data processing. It is widely used in industry for tasks such as web indexing, data mining, and log analysis.",
+    "algorithm": "LIMBO",
+    "files": [
+      "InputFormat.java",
+      "RecordReader.java",
+      "lib/input/CombineFileInputFormat.java",
+      "lib/input/CombineFileRecordReader.java",
+      "lib/input/CombineFileRecordReaderWrapper.java",
+      "lib/input/DelegatingInputFormat.java",
+      "lib/input/DelegatingRecordReader.java",
+      "lib/input/FixedLengthInputFormat.java",
+      "lib/input/FixedLengthRecordReader.java",
+      "lib/input/KeyValueLineRecordReader.java",
+      "lib/input/KeyValueTextInputFormat.java",
+      "lib/input/LineRecordReader.java",
+      "lib/input/NLineInputFormat.java",
+      "lib/input/SequenceFileAsTextRecordReader.java",
+      "lib/input/SequenceFileInputFormat.java",
+      "lib/input/SequenceFileRecordReader.java",
+      "lib/input/TextInputFormat.java",
+      "lib/join/ComposableInputFormat.java"
+    ]
+  },
+  {
+    "cluster_id": 10,
+    "title": "Hadoop MapReduce Architecture",
+    "description": "The Hadoop MapReduce architecture is a distributed processing framework that enables large-scale data processing tasks on clusters of computers. It consists of two main components: the Map phase and the Reduce phase. The Map phase breaks down the input data into smaller chunks and applies a user-defined function to each chunk, producing intermediate key-value pairs. The Reduce phase then groups the intermediate key-value pairs by key and applies another user-defined function to generate the final output. The architecture is designed to scale horizontally, meaning that it can handle large amounts of data by adding more nodes to the cluster. It also provides fault tolerance by automatically retrying failed tasks and recovering from node failures. The architecture is written in Java and uses the Hadoop Distributed File System (HDFS) for distributed storage of data.",
+    "description_word_count": 133,
+    "number_of_files": 4,
+    "number_of_directories": 4,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is a distributed processing framework that enables large-scale data processing tasks on clusters of computers. It consists of two main components: the Map phase and the Reduce phase. The Map phase breaks down the input data into smaller chunks and applies a user-defined function to each chunk, producing intermediate key-value pairs. The Reduce phase then groups the intermediate key-value pairs by key and applies another user-defined function to generate the final output. The architecture is designed to scale horizontally, meaning that it can handle large amounts of data by adding more nodes to the cluster. It also provides fault tolerance by automatically retrying failed tasks and recovering from node failures. The architecture is written in Java and uses the Hadoop Distributed File System (HDFS) for distributed storage of data.",
+    "algorithm": "LIMBO",
+    "files": [
+      "JobContext.java",
+      "lib/chain/ChainMapContextImpl.java",
+      "lib/chain/ChainReduceContextImpl.java",
+      "task/JobContextImpl.java"
+    ]
+  },
+  {
+    "cluster_id": 11,
+    "title": "Hadoop MapReduce Architecture",
+    "description": "The Hadoop MapReduce architecture consists of a master node and multiple slave nodes. The master node is responsible for scheduling and monitoring the execution of tasks, while the slave nodes execute the tasks and return the results to the master node. The master node also coordinates the communication and data transfer between the slave nodes. The architecture is designed to be scalable, fault-tolerant, and efficient in processing large amounts of data. It uses the Hadoop Distributed File System (HDFS) to store data and the MapReduce programming model to process data. The architecture is highly scalable and can handle large volumes of data. It also provides fault tolerance by replicating data across multiple nodes and retrying failed tasks. The architecture is written in Java and uses the Apache Hadoop framework.",
+    "description_word_count": 129,
+    "number_of_files": 4,
+    "number_of_directories": 1,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture consists of a master node and multiple slave nodes. The master node is responsible for scheduling and monitoring the execution of tasks, while the slave nodes execute the tasks and return the results to the master node. The master node also coordinates the communication and data transfer between the slave nodes. The architecture is designed to be scalable, fault-tolerant, and efficient in processing large amounts of data. It uses the Hadoop Distributed File System (HDFS) to store data and the MapReduce programming model to process data. The architecture is highly scalable and can handle large volumes of data. It also provides fault tolerance by replicating data across multiple nodes and retrying failed tasks. The architecture is written in Java and uses the Apache Hadoop framework.",
+    "algorithm": "LIMBO",
+    "files": [
+      "JobID.java",
+      "JobStatus.java",
+      "TaskAttemptID.java",
+      "TaskID.java"
+    ]
+  },
+  {
+    "cluster_id": 12,
+    "title": "Hadoop MapReduce Architecture",
+    "description": "The Hadoop MapReduce architecture is responsible for processing large-scale data sets using distributed computing. It consists of two main components: the JobTracker and the TaskTrackers. The JobTracker is responsible for scheduling and monitoring MapReduce jobs, while the TaskTrackers execute the tasks assigned by the JobTracker. The files in this directory collaborate by sharing information and coordinating the execution of tasks. The architectural role of this directory is to provide a high-level abstraction for processing large-scale data sets using distributed computing. The pattern used in this directory is the master-slave pattern, which is a distributed pattern that separates the control plane from the data plane.",
+    "description_word_count": 104,
+    "number_of_files": 8,
+    "number_of_directories": 7,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is responsible for processing large-scale data sets using distributed computing. It consists of two main components: the JobTracker and the TaskTrackers. The JobTracker is responsible for scheduling and monitoring MapReduce jobs, while the TaskTrackers execute the tasks assigned by the JobTracker. The files in this directory collaborate by sharing information and coordinating the execution of tasks. The architectural role of this directory is to provide a high-level abstraction for processing large-scale data sets using distributed computing. The pattern used in this directory is the master-slave pattern, which is a distributed pattern that separates the control plane from the data plane.",
+    "algorithm": "LIMBO",
+    "files": [
+      "JobResourceUploader.java",
+      "JobSubmitter.java",
+      "lib/aggregate/ValueAggregatorJob.java",
+      "lib/input/FileInputFormat.java",
+      "lib/input/MultipleInputs.java",
+      "lib/jobcontrol/ControlledJob.java",
+      "lib/partition/InputSampler.java",
+      "util/ConfigUtil.java"
+    ]
+  },
+  {
+    "cluster_id": 13,
+    "title": "QueueInfo",
+    "description": "- QueueInfo maintains information about job queues in the Hadoop Map/Reduce framework.\n- It manages job submission to queues and keeps track of queue state and scheduling information.\n- QueueInfo includes the queue name, scheduling information, queue state, and job statuses.\n- Job statuses are outputs.\n- The following technologies are used: org.apache.hadoop.classification.InterfaceAudience, org.apache.hadoop.classification.InterfaceStability, org.apache.hadoop.io.Text, org.apache.hadoop.io.Writable, org.apache.hadoop.io.WritableUtils, org.apache.hadoop.util.StringInterner.",
+    "description_word_count": 78,
+    "number_of_files": 1,
+    "number_of_directories": 1,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: QueueInfo\n\nDESCRIPTION:\n- QueueInfo maintains information about job queues in the Hadoop Map/Reduce framework.\n- It manages job submission to queues and keeps track of queue state and scheduling information.\n- QueueInfo includes the queue name, scheduling information, queue state, and job statuses.\n- Job statuses are outputs.\n- The following technologies are used: org.apache.hadoop.classification.InterfaceAudience, org.apache.hadoop.classification.InterfaceStability, org.apache.hadoop.io.Text, org.apache.hadoop.io.Writable, org.apache.hadoop.io.WritableUtils, org.apache.hadoop.util.StringInterner.",
+    "algorithm": "LIMBO",
+    "files": [
+      "QueueInfo.java"
+    ]
+  },
+  {
+    "cluster_id": 14,
+    "title": "Hadoop MapReduce Architecture",
+    "description": "Hadoop MapReduce is a software framework for easily writing applications that process vast amounts of data in parallel on large clusters. It consists of the Map, Reduce, Combiner, Shuffle, and Output format components. The system is designed to scale up from single servers to thousands of machines and provides quality attributes such as scalability, maintainability, reliability, security, and performance. It uses the Hadoop Distributed File System (HDFS) as its distributed file system, which provides high-throughput access to application data and is designed to reliably store large files across clusters of computers.",
+    "description_word_count": 91,
+    "number_of_files": 2,
+    "number_of_directories": 1,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nHadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes). The framework handles the details of distributed computing including software load balancing and distributed file system.\n\nThe system is scalable to thousands of nodes, each offering local computation and storage. Data is stored in a distributed file system that is accessible from all the nodes. The system can run on a single node for testing and debugging purposes.\n\nThe MapReduce framework is designed to scale up from single servers to thousands of machines. It uses a simple data-parallel model that breaks the input data into smaller chunks ( splits), processes each chunk independently, and then combines the results.\n\nThe MapReduce framework consists of the following components:\n- Map: A function that processes a key/value pair to generate a set of intermediate key/value pairs.\n- Reduce: A function that merges all intermediate values associated with the same intermediate key.\n- Combiner: An optional function that performs local aggregation to reduce the amount of data before shuffle.\n- Shuffle and sort: The system sorts the intermediate keys and groups them to be processed by the same reduce task.\n- Output format: The system writes the output in a format that is suitable for the output collector.\n\nThe MapReduce framework provides several quality attributes, including scalability, maintainability, reliability, security, and performance. It is designed to be fault-tolerant and can recover from failures. It also supports data locality and task scheduling to optimize performance.\n\nThe system uses the Hadoop Distributed File System (HDFS) as its distributed file system. HDFS provides high-throughput access to application data and is designed to reliably store large files across clusters of computers.\n\nIn summary, the Hadoop MapReduce framework is a powerful tool for processing large-scale data-sets in a distributed environment. It provides a simple and scalable model for data-parallel processing and is widely used in industry for big data analytics.",
+    "algorithm": "LIMBO",
+    "files": [
+      "MapContext.java",
+      "ReduceContext.java"
+    ]
+  },
+  {
+    "cluster_id": 15,
+    "title": "Hadoop MapReduce Architecture",
+    "description": "The Hadoop MapReduce architecture is a distributed processing framework designed for processing large data sets across clusters of computers. It consists of two main components: the Map component and the Reduce component. The Map component breaks down the input data into smaller chunks and processes them in parallel, while the Reduce component aggregates the results and produces the final output. The architecture is scalable, fault-tolerant, and provides high-speed data processing capabilities. It uses the Hadoop Distributed File System (HDFS) for distributed storage and MapReduce for distributed processing. The architecture follows the principles of divide-and-conquer and parallel processing, making it an efficient solution for large-scale data processing tasks.",
+    "description_word_count": 108,
+    "number_of_files": 5,
+    "number_of_directories": 6,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is a distributed processing framework designed for processing large data sets across clusters of computers. It consists of two main components: the Map component and the Reduce component. The Map component breaks down the input data into smaller chunks and processes them in parallel, while the Reduce component aggregates the results and produces the final output. The architecture is scalable, fault-tolerant, and provides high-speed data processing capabilities. It uses the Hadoop Distributed File System (HDFS) for distributed storage and MapReduce for distributed processing. The architecture follows the principles of divide-and-conquer and parallel processing, making it an efficient solution for large-scale data processing tasks.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/aggregate/ValueAggregatorMapper.java",
+      "lib/fieldsel/FieldSelectionMapper.java",
+      "lib/input/DelegatingMapper.java",
+      "lib/input/TaggedInputSplit.java",
+      "lib/map/WrappedMapper.java"
+    ]
+  },
+  {
+    "cluster_id": 16,
+    "title": "Hadoop MapReduce Architecture",
+    "description": "Hadoop MapReduce is a software framework for easily writing applications that process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes). It consists of two main modules: the Hadoop Common module, which includes the distributed file system (HDFS) and the MapReduce framework, and the Hadoop YARN (Yet Another Resource Negotiator) module, which provides the cluster resource manager and job scheduler. The MapReduce framework consists of two main components: the Map component and the Reduce component. The Map component takes input data, applies a user-defined function to it, and produces a set of intermediate key-value pairs. The Reduce component then takes these intermediate key-value pairs, groups them by key, and applies a user-defined function to them, producing the final output. The system is designed to scale up from single servers to thousands of machines, each of which may have multiple CPU cores. It is fault-tolerant, meaning that.",
+    "description_word_count": 150,
+    "number_of_files": 4,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nHadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes). The framework handles all the low-level details of distributed computing, such as reliable distributed file system, job scheduling, fault-tolerance, data-locality, and load- balancing.\n\nThe system is divided into two main modules: the Hadoop Common module, which includes the distributed file system (HDFS) and the MapReduce framework, and the Hadoop YARN (Yet Another Resource Negotiator) module, which provides the cluster resource manager and job scheduler.\n\nThe MapReduce framework consists of two main components: the Map component and the Reduce component. The Map component takes input data, applies a user-defined function to it, and produces a set of intermediate key-value pairs. The Reduce component then takes these intermediate key-value pairs, groups them by key, and applies a user-defined function to them, producing the final output.\n\nThe system is designed to scale up from single servers to thousands of machines, each of which may have multiple CPU cores. It is fault-tolerant, meaning that if any node fails, the system can continue to operate. It also provides data locality, meaning that data is stored on the same node as the task that will process it, which can improve performance.\n\nThe system is written in Java and uses the Hadoop Distributed File System (HDFS) for distributed storage of data. It is designed to be scalable, reliable, and fault-tolerant, and is widely used in industry for large-scale data processing.",
+    "algorithm": "LIMBO",
+    "files": [
+      "Mapper.java",
+      "lib/map/InverseMapper.java",
+      "lib/map/RegexMapper.java",
+      "lib/map/TokenCounterMapper.java"
+    ]
+  },
+  {
+    "cluster_id": 17,
+    "title": "Hadoop MapReduce Architecture",
+    "description": "The Hadoop MapReduce architecture is a distributed processing framework that enables the processing of large data sets across clusters of computers. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. The architecture consists of two main components: the Hadoop Distributed File System (HDFS) and the MapReduce framework. HDFS provides fault-tolerant storage for data, while the MapReduce framework handles the parallel processing of data across the cluster. The MapReduce framework consists of two main components: the Map phase and the Reduce phase. The Map phase breaks down the input data into smaller pieces and applies a user-defined function to each piece. The Reduce phase then aggregates the results from the Map phase and applies another user-defined function to produce the final output. The architecture is designed to be scalable, fault-tolerant, and cost-effective, making it a popular choice for processing large data.",
+    "description_word_count": 150,
+    "number_of_files": 2,
+    "number_of_directories": 1,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is a distributed processing framework that allows for the processing of large data sets across clusters of computers. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. The architecture consists of two main components: the Hadoop Distributed File System (HDFS) and the MapReduce framework. HDFS provides fault-tolerant storage for data, while the MapReduce framework handles the parallel processing of data across the cluster. The MapReduce framework consists of two main components: the Map phase and the Reduce phase. The Map phase breaks down the input data into smaller pieces and applies a user-defined function to each piece. The Reduce phase then aggregates the results from the Map phase and applies another user-defined function to produce the final output. The architecture is designed to be scalable, fault-tolerant, and cost-effective, making it a popular choice for processing large data sets in a distributed environment.",
+    "algorithm": "LIMBO",
+    "files": [
+      "MarkableIterator.java",
+      "Reducer.java"
+    ]
+  },
+  {
+    "cluster_id": 18,
+    "title": "OutputCommitterFactory",
+    "description": "The OutputCommitterFactory is responsible for creating and managing committers for different filesystems and schemas. It collaborates with the PathOutputCommitterFactory, FileOutputCommitterFactory, and NamedCommitterFactory classes to provide a centralized location for committers to be created and used by the FileOutputFormat. The OutputCommitterFactory follows the factory pattern, as it provides a way to create committers based on different criteria. It also follows the singleton pattern, as there is only one instance of the OutputCommitterFactory per JVM.",
+    "description_word_count": 73,
+    "number_of_files": 9,
+    "number_of_directories": 5,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: OutputCommitterFactory\n\nDESCRIPTION:\nThe OutputCommitterFactory is responsible for creating and managing committers for different filesystems and schemas. It collaborates with the PathOutputCommitterFactory, FileOutputCommitterFactory, and NamedCommitterFactory classes to provide a centralized location for committers to be created and used by the FileOutputFormat. The OutputCommitterFactory follows the factory pattern, as it provides a way to create committers based on different criteria. It also follows the singleton pattern, as there is only one instance of the OutputCommitterFactory per JVM.",
+    "algorithm": "LIMBO",
+    "files": [
+      "OutputCommitter.java",
+      "TaskAttemptContext.java",
+      "lib/output/BindingPathOutputCommitter.java",
+      "lib/output/FileOutputCommitter.java",
+      "lib/output/FileOutputCommitterFactory.java",
+      "lib/output/NamedCommitterFactory.java",
+      "lib/output/PartialFileOutputCommitter.java",
+      "lib/output/PathOutputCommitterFactory.java",
+      "lib/output/committer/manifest/ManifestCommitterFactory.java"
+    ]
+  },
+  {
+    "cluster_id": 19,
+    "title": "Hadoop MapReduce OutputFormat",
+    "description": "The OutputFormat class in Hadoop MapReduce is responsible for formatting the output data generated by the framework. It works in conjunction with the RecordWriter class to write the output data to the output files. The OutputFormat class also provides methods for checking the output specifications and committing the output. The OutputFormat class is used to produce the output files that contain the results of the MapReduce job. It is responsible for formatting the data in a way that is suitable for further processing or analysis. The OutputFormat class is also responsible for managing the output files, such as creating them, naming them, and organizing them into directories. The OutputFormat class is a key component of the Hadoop MapReduce architecture, as it provides a flexible and extensible way to generate output data. It supports a wide range of output formats, including text, sequence files, and Avro, and can be extended to.",
+    "description_word_count": 150,
+    "number_of_files": 6,
+    "number_of_directories": 4,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce OutputFormat\n\nDESCRIPTION:\nThe OutputFormat class in Hadoop MapReduce is responsible for controlling the format of the output data generated by the framework. It works in conjunction with the RecordWriter class to write the output data to the output files. The OutputFormat class also provides methods for checking the output specifications and committing the output.\n\nThe OutputFormat class is used to produce the output files that contain the results of the MapReduce job. It is responsible for formatting the data in a way that is suitable for further processing or analysis. The OutputFormat class is also responsible for managing the output files, such as creating them, naming them, and organizing them into directories.\n\nThe OutputFormat class is a key component of the Hadoop MapReduce architecture, as it provides a flexible and extensible way to generate output data. It supports a wide range of output formats, including text, sequence files, and Avro, and can be extended to support additional formats as needed.\n\nIn summary, the OutputFormat class in Hadoop MapReduce is responsible for controlling the format of the output data, managing the output files, and providing methods for checking and committing the output. It is a crucial component of the MapReduce architecture, and is essential for generating the output data that is required for further processing or analysis.",
+    "algorithm": "LIMBO",
+    "files": [
+      "OutputFormat.java",
+      "lib/db/DBOutputFormat.java",
+      "lib/output/FilterOutputFormat.java",
+      "lib/output/LazyOutputFormat.java",
+      "lib/output/NullOutputFormat.java",
+      "lib/output/PathOutputCommitter.java"
+    ]
+  },
+  {
+    "cluster_id": 20,
+    "title": "org.apache.hadoop.mapreduce.lib.output",
+    "description": "The org.apache.hadoop.mapreduce.lib.output package is a part of the Hadoop MapReduce library and contains classes for writing data from MapReduce jobs. The package provides a set of classes that implement the RecordWriter interface and are used to write data to output files. The classes in this package collaborate to provide a flexible and extensible framework for writing data from MapReduce jobs. The package follows the architectural pattern of the Hadoop framework, providing a modular and extensible solution for writing data from MapReduce jobs.",
+    "description_word_count": 87,
+    "number_of_files": 3,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: org.apache.hadoop.mapreduce.lib.output\n\nDESCRIPTION:\nThe org.apache.hadoop.mapreduce.lib.output package is a part of the Hadoop MapReduce library and contains classes for writing data from MapReduce jobs. The package provides a set of classes that implement the RecordWriter interface and are used to write data to output files. The classes in this package collaborate to provide a flexible and extensible framework for writing data from MapReduce jobs. The package follows the architectural pattern of the Hadoop framework, providing a modular and extensible solution for writing data from MapReduce jobs.",
+    "algorithm": "LIMBO",
+    "files": [
+      "RecordWriter.java",
+      "TaskInputOutputContext.java",
+      "lib/output/PartialOutputCommitter.java"
+    ]
+  },
+  {
+    "cluster_id": 21,
+    "title": "IntSumReducer, LongSumReducer, WrappedReducer",
+    "description": "The IntSumReducer and LongSumReducer classes are reducers for integer and long values, respectively. They implement the Reducer class from the Apache Hadoop MapReduce library and use the IntWritable and LongWritable classes for handling integer and long values, respectively. The WrappedReducer class is a wrapper for a given Reducer to allow for custom Reducer.Context implementations. The reducers collaborate by taking input from the Map phase of the MapReduce job, calculating the sum of the values for each key, and writing the key and the sum to the context for output in the Reduce phase. The reducers are written in Java and use the Apache Hadoop MapReduce library, which is a widely used and well-documented framework. They are part of the core Hadoop MapReduce functionality and are used in many production systems, ensuring high reliability. The reducers can handle large amounts of data and can be scaled horizontally by adding more reducers.",
+    "description_word_count": 151,
+    "number_of_files": 4,
+    "number_of_directories": 4,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: IntSumReducer, LongSumReducer, WrappedReducer\n\nDESCRIPTION:\nThe IntSumReducer and LongSumReducer classes are reducers for integer and long values, respectively. They implement the Reducer class from the Apache Hadoop MapReduce library and use the IntWritable and LongWritable classes for handling integer and long values, respectively. The WrappedReducer class is a wrapper for a given Reducer to allow for custom Reducer.Context implementations.\n\nThe classes collaborate by taking input from the Map phase of the MapReduce job, calculating the sum of the values for each key, and writing the key and the sum to the context for output in the Reduce phase.\n\nQuality attributes:\n- Scalability: The reducers can handle large amounts of data and can be scaled horizontally by adding more reducers to the cluster.\n- Maintainability: The reducers are written in Java and use the Apache Hadoop MapReduce library, which is a widely used and well-documented framework.\n- Reliability: The reducers are part of the core Hadoop MapReduce functionality and are used in many production systems, ensuring high reliability.\n\nTechnologies used:\n- Java: The reducers are written in Java, a widely used programming language for enterprise applications.\n- Apache Hadoop MapReduce: The reducers use the Apache Hadoop MapReduce library, a widely used framework for processing large-scale data.\n- IntWritable and LongWritable: The reducers use the IntWritable and LongWritable classes for handling integer and long values, respectively.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/fieldsel/FieldSelectionReducer.java",
+      "lib/reduce/IntSumReducer.java",
+      "lib/reduce/LongSumReducer.java",
+      "lib/reduce/WrappedReducer.java"
+    ]
+  },
+  {
+    "cluster_id": 22,
+    "title": "Hadoop MapReduce cluster-level architecture",
+    "description": "The Hadoop MapReduce cluster-level architecture consists of a master node (JobTracker) and multiple slave nodes (TaskTrackers). The JobTracker is responsible for scheduling and monitoring MapReduce jobs, while the TaskTrackers execute the tasks assigned by the JobTracker. The architecture is designed to scale horizontally, allowing for the addition of more slave nodes to handle increased workloads. The system also supports fault tolerance, with the ability to recover from failed tasks and nodes. The architecture is built on top of the Hadoop Distributed File System (HDFS), which provides fault-tolerant storage for the input data and intermediate results. The system uses the Java programming language and the MapReduce framework for parallel processing.",
+    "description_word_count": 109,
+    "number_of_files": 3,
+    "number_of_directories": 4,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce cluster-level architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce cluster-level architecture consists of a master node (JobTracker) and multiple slave nodes (TaskTrackers). The JobTracker is responsible for scheduling and monitoring MapReduce jobs, while the TaskTrackers execute the tasks assigned by the JobTracker. The architecture is designed to scale horizontally, allowing for the addition of more slave nodes to handle increased workloads. The system also supports fault tolerance, with the ability to recover from failed tasks and nodes. The architecture is built on top of the Hadoop Distributed File System (HDFS), which provides fault-tolerant storage for the input data and intermediate results. The system uses the Java programming language and the MapReduce framework for parallel processing.",
+    "algorithm": "LIMBO",
+    "files": [
+      "SharedCacheConfig.java",
+      "server/jobtracker/JTConfig.java",
+      "server/tasktracker/TTConfig.java"
+    ]
+  },
+  {
+    "cluster_id": 23,
+    "title": "Hadoop MapReduce Counters",
+    "description": "The counters directory contains classes that provide a basic implementation of the Counter interface and a common interface for counter groups in Apache Hadoop MapReduce. The classes collaborate by allowing users to add and find counters, set and get the name and display name of the group, and increment all counters by a group of counters. The architectural role of this directory is to provide a centralized location for managing counters in a Hadoop MapReduce job.",
+    "description_word_count": 76,
+    "number_of_files": 3,
+    "number_of_directories": 2,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Counters\n\nDESCRIPTION:\nThe counters directory contains classes that provide a basic implementation of the Counter interface and a common interface for counter groups in Apache Hadoop MapReduce. The classes collaborate by allowing users to add and find counters, set and get the name and display name of the group, and increment all counters by a group of counters. The architectural role of this directory is to provide a centralized location for managing counters in a Hadoop MapReduce job.",
+    "algorithm": "LIMBO",
+    "files": [
+      "StatusReporter.java",
+      "counters/AbstractCounter.java",
+      "counters/CounterGroupBase.java"
+    ]
+  },
+  {
+    "cluster_id": 24,
+    "title": "MapReduce - Shuffle and Sort",
+    "description": "The shuffle and sort process is a crucial part of the MapReduce framework. It is responsible for merging the output of multiple map tasks into a single sorted output for the reduce task. The Shuffle class is responsible for managing the shuffle process and using a ShuffleSchedulerImpl to schedule the execution of map tasks. The MergeManager interface is used to merge the map output files, and the ShuffleSchedulerImpl class is responsible for scheduling the execution of map tasks. The ShuffleClientMetrics class is used to record shuffle client metrics, and the ShuffleSchedulerImpl class is responsible for scheduling the execution of map tasks.",
+    "description_word_count": 101,
+    "number_of_files": 14,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: MapReduce - Shuffle and Sort\n\nDESCRIPTION:\nThe shuffle and sort process is a crucial part of the MapReduce framework. It is responsible for merging the output of multiple map tasks into a single sorted output for the reduce task. The Shuffle class is responsible for managing the shuffle process and using a ShuffleSchedulerImpl to schedule the execution of map tasks. The MergeManager interface is used to merge the map output files, and the ShuffleSchedulerImpl class is responsible for scheduling the execution of map tasks. The ShuffleClientMetrics class is used to record shuffle client metrics, and the ShuffleSchedulerImpl class is responsible for scheduling the execution of map tasks.",
+    "algorithm": "LIMBO",
+    "files": [
+      "TaskCompletionEvent.java",
+      "task/reduce/EventFetcher.java",
+      "task/reduce/Fetcher.java",
+      "task/reduce/IFileWrappedMapOutput.java",
+      "task/reduce/InMemoryMapOutput.java",
+      "task/reduce/InMemoryReader.java",
+      "task/reduce/LocalFetcher.java",
+      "task/reduce/MapHost.java",
+      "task/reduce/MapOutput.java",
+      "task/reduce/MergeManager.java",
+      "task/reduce/OnDiskMapOutput.java",
+      "task/reduce/Shuffle.java",
+      "task/reduce/ShuffleClientMetrics.java",
+      "task/reduce/ShuffleSchedulerImpl.java"
+    ]
+  },
+  {
+    "cluster_id": 26,
+    "title": "Checkpoint Service",
+    "description": "The Checkpoint Service is a crucial architectural abstraction in the Hadoop MapReduce framework. It offers a simple API for storing and retrieving the state of a task. The CheckpointService collaborates with the CheckpointNamingService to generate and manage checkpoint names, and with the FileSystem API to interact with the file system. The CheckpointService ensures the atomicity, single-writer, write-once, multiple-readers, and ready-many properties of checkpoints. It also handles dependencies between checkpoints and provides methods for creating, opening, committing, aborting, and deleting checkpoints. The FSCheckpointService class is a FileSystem-based implementation of the CheckpointService interface, while the FSCheckpointID class represents a checkpoint ID based on a file system path. The TaskCheckpointID class is an implementation of the CheckpointID interface used in Apache Hadoop MapReduce to store and provide checkpoint information to the next execution of the same task.",
+    "description_word_count": 134,
+    "number_of_files": 4,
+    "number_of_directories": 2,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Checkpoint Service\n\nDESCRIPTION:\nThe Checkpoint Service is a crucial architectural abstraction in the Hadoop MapReduce framework. It offers a simple API for storing and retrieving the state of a task. The CheckpointService collaborates with the CheckpointNamingService to generate and manage checkpoint names, and with the FileSystem API to interact with the file system. The CheckpointService ensures the atomicity, single-writer, write-once, multiple-readers, and ready-many properties of checkpoints. It also handles dependencies between checkpoints and provides methods for creating, opening, committing, aborting, and deleting checkpoints. The FSCheckpointService class is a FileSystem-based implementation of the CheckpointService interface, while the FSCheckpointID class represents a checkpoint ID based on a file system path. The TaskCheckpointID class is an implementation of the CheckpointID interface used in Apache Hadoop MapReduce to store and provide checkpoint information to the next execution of the same task.",
+    "algorithm": "LIMBO",
+    "files": [
+      "checkpoint/CheckpointService.java",
+      "checkpoint/FSCheckpointID.java",
+      "checkpoint/FSCheckpointService.java",
+      "checkpoint/TaskCheckpointID.java"
+    ]
+  },
+  {
+    "cluster_id": 27,
+    "title": "Checkpoint Naming Service",
+    "description": "The CheckpointNamingService directory is responsible for generating checkpoint names for the Hadoop MapReduce framework. The CheckpointNameGenerator.java file collaborates with the SimpleNamingService.java file to generate random checkpoint names. The SimpleNamingService class simply returns the name it has been initialized with, while the CheckpointNameGenerator class uses the SimpleNamingService class to generate new checkpoint names. The CheckpointNamingService directory follows the Singleton pattern, ensuring that only one instance of the CheckpointNameGenerator class is created and used throughout the application.",
+    "description_word_count": 77,
+    "number_of_files": 2,
+    "number_of_directories": 2,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Checkpoint Naming Service\n\nDESCRIPTION:\nThe CheckpointNamingService directory is responsible for generating checkpoint names for the Hadoop MapReduce framework. The CheckpointNameGenerator.java file collaborates with the SimpleNamingService.java file to generate random checkpoint names. The SimpleNamingService class simply returns the name it has been initialized with, while the CheckpointNameGenerator class uses the SimpleNamingService class to generate new checkpoint names. The CheckpointNamingService directory follows the Singleton pattern, ensuring that only one instance of the CheckpointNameGenerator class is created and used throughout the application.",
+    "algorithm": "LIMBO",
+    "files": [
+      "checkpoint/RandomNameCNS.java",
+      "checkpoint/SimpleNamingService.java"
+    ]
+  },
+  {
+    "cluster_id": 28,
+    "title": "Counters",
+    "description": "The counters directory is responsible for managing and tracking the progress of the MapReduce job. It provides a way to store and retrieve the values of various counters that are used to measure the progress and performance of the job. The counters directory collaborates with the MapReduce framework to update and retrieve the values of the counters, and it also provides a way to access and display the values of the counters to the user. The architectural role of the counters directory is to provide a centralized location for managing the counters, which helps to ensure that the job's progress is accurately tracked and monitored.",
+    "description_word_count": 105,
+    "number_of_files": 1,
+    "number_of_directories": 2,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Counters\n\nDESCRIPTION:\nThe counters directory is responsible for managing and tracking the progress of the MapReduce job. It provides a way to store and retrieve the values of various counters that are used to measure the progress and performance of the job. The counters directory collaborates with the MapReduce framework to update and retrieve the values of the counters, and it also provides a way to access and display the values of the counters to the user. The architectural role of the counters directory is to provide a centralized location for managing the counters, which helps to ensure that the job's progress is accurately tracked and monitored.",
+    "algorithm": "LIMBO",
+    "files": [
+      "counters/GenericCounter.java"
+    ]
+  },
+  {
+    "cluster_id": 30,
+    "title": "Cluster-level architectural abstraction for jobhistory",
+    "description": "The jobhistory cluster consists of a single instance of the job history data stored in the directory. It collaborates with other components to ensure the proper functioning of the job history data. The cluster follows the Singleton pattern to ensure that there is only one instance of the job history data stored. The jobhistory cluster plays a crucial role in the Hadoop MapReduce architecture as it provides a centralized location for storing job history data, which is essential for monitoring and debugging purposes. The cluster is responsible for storing the job history data and collaborating with other components to ensure the proper functioning of the job history data. It follows the Singleton pattern to ensure that there is only one instance of the job history data stored. The cluster plays a crucial role in the Hadoop MapReduce architecture as it provides a centralized location for storing job history data, which.",
+    "description_word_count": 150,
+    "number_of_files": 5,
+    "number_of_directories": 2,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Cluster-level architectural abstraction for jobhistory\n\nDESCRIPTION:\nThe jobhistory cluster consists of a single instance of the job history data stored in the directory. It collaborates with other components to ensure the proper functioning of the job history data. The cluster follows the Singleton pattern to ensure that there is only one instance of the job history data stored. The jobhistory cluster plays a crucial role in the Hadoop MapReduce architecture as it provides a centralized location for storing job history data, which is essential for monitoring and debugging purposes. The cluster is responsible for storing the job history data and collaborating with other components to ensure the proper functioning of the job history data. It follows the Singleton pattern to ensure that there is only one instance of the job history data stored. The cluster plays a crucial role in the Hadoop MapReduce architecture as it provides a centralized location for storing job history data, which is essential for monitoring and debugging purposes.",
+    "algorithm": "LIMBO",
+    "files": [
+      "jobhistory/AMStartedEvent.java",
+      "jobhistory/NormalizedResourceEvent.java",
+      "jobhistory/TaskAttemptStartedEvent.java",
+      "jobhistory/TaskStartedEvent.java",
+      "jobhistory/TaskUpdatedEvent.java"
+    ]
+  },
+  {
+    "cluster_id": 31,
+    "title": "Hadoop MapReduce Architecture",
+    "description": "The Hadoop MapReduce architecture is responsible for processing large-scale data sets in a distributed environment. It consists of a master node and multiple slave nodes, each of which performs specific tasks to accomplish the overall computation. The master node coordinates the tasks and ensures that the computation is completed efficiently. The slave nodes execute the tasks assigned by the master node and communicate with each other to share data and results. The architecture follows the principles of divide-and-conquer, parallel processing, and fault tolerance to ensure that the computation can handle large volumes of data and continue to operate even in the presence of failures.",
+    "description_word_count": 105,
+    "number_of_files": 1,
+    "number_of_directories": 2,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is responsible for processing large-scale data sets in a distributed environment. It consists of a master node and multiple slave nodes, each of which performs specific tasks to accomplish the overall computation. The master node coordinates the tasks and ensures that the computation is completed efficiently. The slave nodes execute the tasks assigned by the master node and communicate with each other to share data and results. The architecture follows the principles of divide-and-conquer, parallel processing, and fault tolerance to ensure that the computation can handle large volumes of data and continue to operate even in the presence of failures.",
+    "algorithm": "LIMBO",
+    "files": [
+      "jobhistory/HistoryEvent.java"
+    ]
+  },
+  {
+    "cluster_id": 32,
+    "title": "Hadoop MapReduce Cluster Architecture",
+    "description": "The Hadoop MapReduce cluster architecture consists of a master node and multiple worker nodes. The master node is responsible for scheduling and monitoring tasks, while the worker nodes execute the tasks assigned by the master. The master node collaborates with the JobTracker class to manage the job execution process, including task assignment, task monitoring, and job completion. The worker nodes collaborate with the TaskTracker class to execute the assigned tasks and report their status back to the JobTracker. The MapReduce cluster architecture achieves scalability, fault tolerance, and high performance through the use of distributed computing and parallel processing. The architecture uses the Java programming language and the Hadoop framework to implement the master and worker nodes, and the MapReduce programming model to define and execute the tasks.",
+    "description_word_count": 127,
+    "number_of_files": 4,
+    "number_of_directories": 2,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce cluster architecture consists of a master node and multiple worker nodes. The master node is responsible for scheduling and monitoring tasks, while the worker nodes execute the tasks assigned by the master. The master node collaborates with the JobTracker class to manage the job execution process, including task assignment, task monitoring, and job completion. The worker nodes collaborate with the TaskTracker class to execute the assigned tasks and report their status back to the JobTracker. The MapReduce cluster architecture achieves scalability, fault tolerance, and high performance through the use of distributed computing and parallel processing. The architecture uses the Java programming language and the Hadoop framework to implement the master and worker nodes, and the MapReduce programming model to define and execute the tasks.",
+    "algorithm": "LIMBO",
+    "files": [
+      "jobhistory/EventReader.java",
+      "jobhistory/EventWriter.java",
+      "jobhistory/JobFinishedEvent.java",
+      "jobhistory/JobHistoryParser.java"
+    ]
+  },
+  {
+    "cluster_id": 33,
+    "title": "Hadoop MapReduce Architecture",
+    "description": "The Hadoop MapReduce architecture is a distributed processing framework that consists of the Hadoop Distributed File System (HDFS) and the MapReduce programming model. HDFS provides high-throughput access to application data and is fault-tolerant, while MapReduce is designed to scale up from single servers to thousands of machines, each offering local computation and storage. The YARN resource manager coordinates the allocation of resources across different applications and provides a centralized platform for managing the cluster. The MapReduce job tracker is responsible for planning and monitoring MapReduce jobs, while the TaskTracker executes tasks assigned by the job tracker. The Hadoop MapReduce architecture is designed to handle large-scale data processing tasks efficiently and fault-tolerantly, providing a scalable and flexible platform for processing data across clusters of computers.",
+    "description_word_count": 124,
+    "number_of_files": 3,
+    "number_of_directories": 2,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION: The Hadoop MapReduce architecture consists of the following components:\n- The Hadoop Distributed File System (HDFS) is a distributed file system designed to run on clusters of computers. It provides high-throughput access to application data and is fault-tolerant.\n- The MapReduce framework is a programming model and an associated implementation that allows for the processing of large data sets across clusters of computers. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage.\n- The YARN (Yet Another Resource Negotiator) resource manager is responsible for managing resources and applications in the Hadoop cluster. It coordinates the allocation of resources across different applications and provides a centralized platform for managing the cluster.\n- The MapReduce job tracker is responsible for planning and monitoring MapReduce jobs. It coordinates the execution of tasks across the cluster and provides a centralized platform for managing the job.\n- The TaskTracker is responsible for executing tasks assigned by the job tracker. It provides a secure, localized environment for tasks to run and reports task status and progress back to the job tracker.\n\nThe Hadoop MapReduce architecture is designed to handle large-scale data processing tasks efficiently and fault-tolerantly. It provides a scalable and flexible platform for processing data across clusters of computers.",
+    "algorithm": "LIMBO",
+    "files": [
+      "jobhistory/HistoryViewer.java",
+      "jobhistory/HumanReadableHistoryViewerPrinter.java",
+      "jobhistory/JSONHistoryViewerPrinter.java"
+    ]
+  },
+  {
+    "cluster_id": 39,
+    "title": "Hadoop MapReduce Cluster Architecture",
+    "description": "The Hadoop MapReduce cluster architecture is designed to process large-scale data sets efficiently and scalably. It consists of a master node (NameNode) and multiple slave nodes (DataNodes). The NameNode manages the file system namespace and coordinates the distributed processing of data across the cluster. The DataNodes store and process the actual data blocks. MapReduce jobs are submitted to the NameNode, which assigns tasks to DataNodes for execution. The MapReduce framework provides fault-tolerance and scalability, allowing for efficient processing of large data sets. The architecture supports various data processing patterns, such as batch processing, interactive queries, and stream processing. It also integrates with other Hadoop components, such as HDFS (Hadoop Distributed File System) and YARN (Yet Another Resource Negotiator), to provide a comprehensive data processing solution.",
+    "description_word_count": 125,
+    "number_of_files": 7,
+    "number_of_directories": 2,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce cluster architecture is designed to process large-scale data sets efficiently and scalably. It consists of a master node (NameNode) and multiple slave nodes (DataNodes). The NameNode manages the file system namespace and coordinates the distributed processing of data across the cluster. The DataNodes store and process the actual data blocks. MapReduce jobs are submitted to the NameNode, which assigns tasks to DataNodes for execution. The MapReduce framework provides fault-tolerance and scalability, allowing for efficient processing of large data sets. The architecture supports various data processing patterns, such as batch processing, interactive queries, and stream processing. It also integrates with other Hadoop components, such as HDFS (Hadoop Distributed File System) and YARN (Yet Another Resource Negotiator), to provide a comprehensive data processing solution.",
+    "algorithm": "LIMBO",
+    "files": [
+      "jobhistory/JobInfoChangeEvent.java",
+      "jobhistory/JobInitedEvent.java",
+      "jobhistory/JobPriorityChangeEvent.java",
+      "jobhistory/JobQueueChangeEvent.java",
+      "jobhistory/JobStatusChangedEvent.java",
+      "jobhistory/JobSubmittedEvent.java",
+      "jobhistory/JobUnsuccessfulCompletionEvent.java"
+    ]
+  },
+  {
+    "cluster_id": 46,
+    "title": "Hadoop MapReduce Architecture Abstraction",
+    "description": "The Hadoop MapReduce architecture abstraction is responsible for managing and coordinating the execution of tasks across a distributed cluster. It provides a scalable and fault-tolerant framework for processing large-scale data processing jobs. The architecture abstraction consists of several key components, including the JobTracker, TaskTracker, and the distributed file system (DFS). The JobTracker is responsible for scheduling and monitoring the execution of jobs, while the TaskTracker is responsible for executing individual tasks on the cluster. The DFS provides a distributed file system for storing and accessing data across the cluster. The architecture abstraction also includes various communication protocols and data structures for coordinating the execution of tasks and managing the flow of data between different components of the system.",
+    "description_word_count": 118,
+    "number_of_files": 6,
+    "number_of_directories": 2,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Architecture Abstraction\n\nDESCRIPTION: The Hadoop MapReduce architecture abstraction is responsible for managing and coordinating the execution of tasks across a distributed cluster. It provides a scalable and fault-tolerant framework for processing large-scale data processing jobs. The architecture abstraction consists of several key components, including the JobTracker, TaskTracker, and the distributed file system (DFS). The JobTracker is responsible for scheduling and monitoring the execution of jobs, while the TaskTracker is responsible for executing individual tasks on the cluster. The DFS provides a distributed file system for storing and accessing data across the cluster. The architecture abstraction also includes various communication protocols and data structures for coordinating the execution of tasks and managing the flow of data between different components of the system.",
+    "algorithm": "LIMBO",
+    "files": [
+      "jobhistory/MapAttemptFinishedEvent.java",
+      "jobhistory/ReduceAttemptFinishedEvent.java",
+      "jobhistory/TaskAttemptFinishedEvent.java",
+      "jobhistory/TaskAttemptUnsuccessfulCompletionEvent.java",
+      "jobhistory/TaskFailedEvent.java",
+      "jobhistory/TaskFinishedEvent.java"
+    ]
+  },
+  {
+    "cluster_id": 50,
+    "title": "lib/aggregate",
+    "description": "The lib/aggregate directory contains classes that implement value aggregators. Value aggregators are used to perform various operations on sequences of values, such as summing, finding minimum and maximum values, and computing histograms. The classes in this directory collaborate to provide a comprehensive set of functionality for value aggregation. The architectural role of the lib/aggregate directory is to provide a reusable and extensible framework for value aggregation. It follows the principles of the Apache Hadoop MapReduce library, which is designed to process large datasets in a distributed environment. The classes in this directory can be used as building blocks for more complex data processing tasks, and they can be easily extended to support additional types of values or aggregation operations.",
+    "description_word_count": 121,
+    "number_of_files": 8,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: lib/aggregate\n\nDESCRIPTION:\nThe lib/aggregate directory contains classes that implement value aggregators. Value aggregators are used to perform various operations on sequences of values, such as summing, finding minimum and maximum values, and computing histograms. The classes in this directory collaborate to provide a comprehensive set of functionality for value aggregation. The architectural role of the lib/aggregate directory is to provide a reusable and extensible framework for value aggregation. It follows the principles of the Apache Hadoop MapReduce library, which is designed to process large datasets in a distributed environment. The classes in this directory can be used as building blocks for more complex data processing tasks, and they can be easily extended to support additional types of values or aggregation operations.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/aggregate/DoubleValueSum.java",
+      "lib/aggregate/LongValueMax.java",
+      "lib/aggregate/LongValueMin.java",
+      "lib/aggregate/LongValueSum.java",
+      "lib/aggregate/StringValueMax.java",
+      "lib/aggregate/StringValueMin.java",
+      "lib/aggregate/UniqValueCount.java",
+      "lib/aggregate/ValueHistogram.java"
+    ]
+  },
+  {
+    "cluster_id": 51,
+    "title": "Cluster-level architectural abstraction of lib/aggregate",
+    "description": "The directory lib/aggregate is responsible for implementing the generic combiner and reducer of Aggregate. It collaborates with the ValueAggregatorDescriptor, ValueAggregatorBaseDescriptor, and Reducer classes from the Apache Hadoop MapReduce library. The architectural role of this directory is to provide a modular and extensible framework for performing various types of aggregations on input data. The components and interactions involve the use of the ValueAggregatorDescriptor and ValueAggregatorBaseDescriptor classes to define the aggregation logic, and the Reducer class to execute the aggregation on input data. The quality attributes include scalability, maintainability, and extensibility, achieved through the use of the Apache Hadoop MapReduce library and the modular design of the directory. The technologies used include Java, Apache Hadoop MapReduce, and related APIs and tools.",
+    "description_word_count": 120,
+    "number_of_files": 5,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Cluster-level architectural abstraction of lib/aggregate\n\nDESCRIPTION:\nThe directory lib/aggregate is responsible for implementing the generic combiner and reducer of Aggregate. It collaborates with the ValueAggregatorDescriptor, ValueAggregatorBaseDescriptor, and Reducer classes from the Apache Hadoop MapReduce library. The architectural role of this directory is to provide a modular and extensible framework for performing various types of aggregations on input data. The components and interactions involve the use of the ValueAggregatorDescriptor and ValueAggregatorBaseDescriptor classes to define the aggregation logic, and the Reducer class to execute the aggregation on input data. The quality attributes include scalability, maintainability, and extensibility, achieved through the use of the Apache Hadoop MapReduce library and the modular design of the directory. The technologies used include Java, Apache Hadoop MapReduce, and related APIs and tools.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/aggregate/UserDefinedValueAggregatorDescriptor.java",
+      "lib/aggregate/ValueAggregatorBaseDescriptor.java",
+      "lib/aggregate/ValueAggregatorCombiner.java",
+      "lib/aggregate/ValueAggregatorJobBase.java",
+      "lib/aggregate/ValueAggregatorReducer.java"
+    ]
+  },
+  {
+    "cluster_id": 53,
+    "title": "Chain directory",
+    "description": "The Chain directory contains classes that provide common functionality for Mapper and Reducer classes in a Hadoop MapReduce program. The Chain class provides a method to create a Configuration for a Map or Reduce task in a chain, while the ChainMapper and ChainReducer classes allow multiple Mapper and Reducer classes to be chained together within a single task. The classes depend on the Apache Hadoop MapReduce library and the Configuration class.",
+    "description_word_count": 71,
+    "number_of_files": 3,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Chain directory\n\nDESCRIPTION:\nThe Chain directory contains classes that provide common functionality for Mapper and Reducer classes in a Hadoop MapReduce program. The Chain class provides a method to create a Configuration for a Map or Reduce task in a chain, while the ChainMapper and ChainReducer classes allow multiple Mapper and Reducer classes to be chained together within a single task. The classes depend on the Apache Hadoop MapReduce library and the Configuration class.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/chain/Chain.java",
+      "lib/chain/ChainMapper.java",
+      "lib/chain/ChainReducer.java"
+    ]
+  },
+  {
+    "cluster_id": 54,
+    "title": "MapReduce Output Format",
+    "description": "The MapReduce Output Format is responsible for writing the output of a MapReduce job to a specified location. It collaborates with the RecordWriter class to write the output data in a specific format. The MapReduce Output Format also plays a role in the overall architecture of the system, as it is responsible for managing the flow of data between different components of the system.\n\nTechnologies used: Java, Hadoop MapReduce",
+    "description_word_count": 69,
+    "number_of_files": 4,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: MapReduce Output Format\n\nDESCRIPTION:\nThe MapReduce Output Format is responsible for writing the output of a MapReduce job to a specified location. It collaborates with the RecordWriter class to write the output data in a specific format. The MapReduce Output Format also plays a role in the overall architecture of the system, as it is responsible for managing the flow of data between different components of the system.\n\nTechnologies used: Java, Hadoop MapReduce",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/output/MapFileOutputFormat.java",
+      "lib/output/SequenceFileAsBinaryOutputFormat.java",
+      "lib/output/SequenceFileOutputFormat.java",
+      "lib/output/TextOutputFormat.java"
+    ]
+  },
+  {
+    "cluster_id": 55,
+    "title": "Cluster-level architectural abstraction for MapReduce",
+    "description": "The MapReduce cluster consists of a master node and multiple worker nodes. The master node is responsible for coordinating the execution of MapReduce tasks and managing the distribution of data across the worker nodes. The worker nodes execute the Map and Reduce tasks and communicate with the master node to report their progress and receive new tasks. The cluster uses a distributed file system to store data and intermediate results. The architecture ensures scalability, fault tolerance, and high performance for processing large-scale data. The technologies used include Java, Hadoop, and distributed file systems such as HDFS.",
+    "description_word_count": 96,
+    "number_of_files": 6,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Cluster-level architectural abstraction for MapReduce\n\nDESCRIPTION:\nThe MapReduce cluster consists of a master node and multiple worker nodes. The master node is responsible for coordinating the execution of MapReduce tasks and managing the distribution of data across the worker nodes. The worker nodes execute the Map and Reduce tasks and communicate with the master node to report their progress and receive new tasks. The cluster uses a distributed file system to store data and intermediate results. The architecture ensures scalability, fault tolerance, and high performance for processing large-scale data. The technologies used include Java, Hadoop, and distributed file systems such as HDFS.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/db/BigDecimalSplitter.java",
+      "lib/db/BooleanSplitter.java",
+      "lib/db/DateSplitter.java",
+      "lib/db/FloatSplitter.java",
+      "lib/db/IntegerSplitter.java",
+      "lib/db/TextSplitter.java"
+    ]
+  },
+  {
+    "cluster_id": 56,
+    "title": "Database Configuration",
+    "description": "This directory contains the classes that handle the configuration of a database connection and provide access to the connection. The DBConfiguration class sets the database connection properties in the configuration, and the DBUtils class returns a connection object to the database. The classes collaborate by calling the configureDB method in the DBConfiguration class to set the database connection properties and then calling the getConnection method in the DBUtils class to get a connection object. The architectural role of this directory is to provide a centralized database configuration and connection management.",
+    "description_word_count": 90,
+    "number_of_files": 1,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Database Configuration\n\nDESCRIPTION:\nThis directory contains the classes that handle the configuration of a database connection and provide access to the connection. The DBConfiguration class sets the database connection properties in the configuration, and the DBUtils class returns a connection object to the database. The classes collaborate by calling the configureDB method in the DBConfiguration class to set the database connection properties and then calling the getConnection method in the DBUtils class to get a connection object. The architectural role of this directory is to provide a centralized database configuration and connection management.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/db/DBConfiguration.java"
+    ]
+  },
+  {
+    "cluster_id": 57,
+    "title": "Database reader",
+    "description": "This directory contains classes for reading data from a database using MapReduce. The classes in this directory collaborate to read data from a database table and emit records as key-value pairs. The architectural role of this directory is to provide a high-level interface for reading data from a database and handling the distributed processing of the data. The classes in this directory use the Apache Hadoop MapReduce framework and the Apache Hadoop classification library.",
+    "description_word_count": 74,
+    "number_of_files": 9,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Database reader\n\nDESCRIPTION:\nThis directory contains classes for reading data from a database using MapReduce. The classes in this directory collaborate to read data from a database table and emit records as key-value pairs. The architectural role of this directory is to provide a high-level interface for reading data from a database and handling the distributed processing of the data. The classes in this directory use the Apache Hadoop MapReduce framework and the Apache Hadoop classification library.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/db/DBInputFormat.java",
+      "lib/db/DBRecordReader.java",
+      "lib/db/DataDrivenDBInputFormat.java",
+      "lib/db/DataDrivenDBRecordReader.java",
+      "lib/db/MySQLDBRecordReader.java",
+      "lib/db/MySQLDataDrivenDBRecordReader.java",
+      "lib/db/OracleDBRecordReader.java",
+      "lib/db/OracleDataDrivenDBInputFormat.java",
+      "lib/db/OracleDataDrivenDBRecordReader.java"
+    ]
+  },
+  {
+    "cluster_id": 58,
+    "title": "Hadoop MapReduce Architecture",
+    "description": "The Hadoop MapReduce architecture is a distributed processing framework designed for processing large data sets across clusters of computers. It consists of two main components: the Map component and the Reduce component. The Map component breaks down the input data into smaller chunks and processes them in parallel, while the Reduce component aggregates the results and produces the final output. The architecture is scalable, fault-tolerant, and provides high-throughput data processing capabilities. The use of distributed file systems, such as HDFS, and the MapReduce programming model, allows for efficient processing of large data sets in a distributed environment.",
+    "description_word_count": 97,
+    "number_of_files": 4,
+    "number_of_directories": 5,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is a distributed processing framework designed for processing large data sets across clusters of computers. It consists of two main components: the Map component and the Reduce component. The Map component breaks down the input data into smaller chunks and processes them in parallel, while the Reduce component aggregates the results and produces the final output. The architecture is scalable, fault-tolerant, and provides high-throughput data processing capabilities. The use of distributed file systems, such as HDFS, and the MapReduce programming model, allows for efficient processing of large data sets in a distributed environment.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/db/DBSplitter.java",
+      "lib/input/CombineFileSplit.java",
+      "lib/input/FileSplit.java",
+      "lib/join/CompositeInputSplit.java"
+    ]
+  },
+  {
+    "cluster_id": 61,
+    "title": "Hadoop MapReduce Architecture",
+    "description": "Hadoop MapReduce is a distributed processing framework that uses the Map and Reduce components to process large-scale data on clusters of computers. It is designed to be scalable, fault-tolerant, and efficient, and uses a distributed file system, such as HDFS, to store and manage the input data. The system coordinates the execution of Map and Reduce tasks on different nodes in the cluster to ensure fault-tolerant processing. The output of the MapReduce job is stored in HDFS, and users can access it using various tools and APIs. The system supports various optimization techniques to improve performance, such as speculative execution and data locality. Overall, the architecture of Hadoop MapReduce is designed to provide a flexible and efficient way to process large-scale data in a distributed environment.",
+    "description_word_count": 126,
+    "number_of_files": 5,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nHadoop MapReduce is a distributed processing framework that enables large-scale data processing on clusters of computers. It consists of two main components: the Map component and the Reduce component. The Map component breaks down the input data into smaller chunks and processes them in parallel, while the Reduce component aggregates the results and produces the final output. The architecture of Hadoop MapReduce is designed to be scalable, fault-tolerant, and efficient, making it a popular choice for processing large-scale data. The system uses a distributed file system, such as Hadoop Distributed File System (HDFS), to store and manage the input data. The Map and Reduce tasks are executed on different nodes in the cluster, and the system coordinates the execution of these tasks to ensure that the processing is done in a fault-tolerant manner. The output of the MapReduce job is stored in HDFS, and users can access it using various tools and APIs. The system also supports various optimization techniques, such as speculative execution and data locality, to improve the performance of the processing. Overall, the architecture of Hadoop MapReduce is designed to provide a flexible and efficient way to process large-scale data in a distributed environment.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/input/CombineSequenceFileInputFormat.java",
+      "lib/input/CombineTextInputFormat.java",
+      "lib/input/SequenceFileAsBinaryInputFormat.java",
+      "lib/input/SequenceFileAsTextInputFormat.java",
+      "lib/input/SequenceFileInputFilter.java"
+    ]
+  },
+  {
+    "cluster_id": 62,
+    "title": "Input",
+    "description": "The Input module is responsible for reading data from various input sources. It includes classes for reading from compressed input splits and input streams. The classes collaborate to read data from input sources, handle multi-byte delimiters correctly, and support customizable record delimiters. The module uses the SplitCompressionInputStream class to read from compressed input splits and the Configuration class to configure the behavior of the line reader. The Input module also includes a utility class for reading from input streams. The classes in this module play a crucial role in ensuring the reliability and performance of the system.",
+    "description_word_count": 97,
+    "number_of_files": 2,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Input\n\nDESCRIPTION:\nThe Input module is responsible for reading data from various input sources. It includes classes for reading from compressed input splits and input streams. The classes collaborate to read data from input sources, handle multi-byte delimiters correctly, and support customizable record delimiters. The module uses the SplitCompressionInputStream class to read from compressed input splits and the Configuration class to configure the behavior of the line reader. The Input module also includes a utility class for reading from input streams. The classes in this module play a crucial role in ensuring the reliability and performance of the system.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/input/CompressedSplitLineReader.java",
+      "lib/input/UncompressedSplitLineReader.java"
+    ]
+  },
+  {
+    "cluster_id": 66,
+    "title": "Hadoop MapReduce",
+    "description": "Hadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes).\n- The system is divided into two main components: the Hadoop Distributed File System (HDFS) and MapReduce.\n- HDFS provides the distributed storage for the system, while MapReduce provides the parallel processing of data across the cluster.\n- The system is designed to scale up from single servers to thousands of machines, each offering local computation and storage.\n- MapReduce is based on the concept of mapping data to a set of intermediate key-value pairs, followed by a reduce step to aggregate the values to a smaller set of output key-value pairs.\n- The system is fault-tolerant and provides high-throughput, low-latency processing of data.\n- The system is written in Java and uses the Google protobuf data serialization format.",
+    "description_word_count": 138,
+    "number_of_files": 1,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce\n\nDESCRIPTION:\nHadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes).\n- The system is divided into two main components: the Hadoop Distributed File System (HDFS) and MapReduce.\n- HDFS provides the distributed storage for the system, while MapReduce provides the parallel processing of data across the cluster.\n- The system is designed to scale up from single servers to thousands of machines, each offering local computation and storage.\n- MapReduce is based on the concept of mapping data to a set of intermediate key-value pairs, followed by a reduce step to aggregate the values to a smaller set of output key-value pairs.\n- The system is fault-tolerant and provides high-throughput, low-latency processing of data.\n- The system is written in Java and uses the Google protobuf data serialization format.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/jobcontrol/JobControl.java"
+    ]
+  },
+  {
+    "cluster_id": 67,
+    "title": "Cluster-level architectural abstraction for lib/join",
+    "description": "The lib/join directory in Hadoop MapReduce is responsible for handling the architectural abstraction of the join operation. It includes four key classes: ComposableRecordReader, CompositeRecordReader, MultiFilterRecordReader, and WrappedRecordReader. These classes work together to provide a robust and efficient architecture for handling joins in Hadoop MapReduce.\n\nThe architecture of lib/join is designed to achieve scalability, maintainability, reliability, security, and performance. It uses various technologies, including Java, Hadoop MapReduce, and other related frameworks and tools. The classes in this directory play a crucial role in the overall architecture of Hadoop MapReduce, and their interactions are essential for efficient data processing.",
+    "description_word_count": 99,
+    "number_of_files": 4,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Cluster-level architectural abstraction for lib/join\n\nDESCRIPTION:\nThe lib/join directory in Hadoop MapReduce is responsible for handling the architectural abstraction of the join operation. It includes four key classes: ComposableRecordReader, CompositeRecordReader, MultiFilterRecordReader, and WrappedRecordReader. These classes work together to provide a robust and efficient architecture for handling joins in Hadoop MapReduce.\n\nThe ComposableRecordReader class is a RecordReader that participates in a join, providing additional operations required for the join. The CompositeRecordReader class is a RecordReader that can effect joins of RecordReaders sharing a common key type and partitioning. The MultiFilterRecordReader class is a base class for Composite join returning values derived from multiple sources, but generally not tuples. The WrappedRecordReader class keeps track of the \"head\" key-value pair for the provided RecordReader and keeps a store of values matching a key when this source is participating in a join.\n\nThe architecture of lib/join is designed to achieve scalability, maintainability, reliability, security, and performance. It uses various technologies, including Java, Hadoop MapReduce, and other related frameworks and tools. The classes in this directory play a crucial role in the overall architecture of Hadoop MapReduce, and their interactions are essential for efficient data processing.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/join/ComposableRecordReader.java",
+      "lib/join/CompositeRecordReader.java",
+      "lib/join/MultiFilterRecordReader.java",
+      "lib/join/WrappedRecordReader.java"
+    ]
+  },
+  {
+    "cluster_id": 68,
+    "title": "Join cluster",
+    "description": "The join cluster is responsible for implementing the join operation in Hadoop MapReduce. It consists of classes that collaborate to perform the join efficiently and effectively. The architecture of the join cluster is designed to provide high performance and scalability for joining large datasets in a distributed environment. The cluster includes components such as the join directory, which contains classes that handle the join operation, and the data model, which defines the structure of the data being joined. The architecture also includes a coordinator, which is responsible for managing the execution of the join operation, and a worker, which performs the actual join computation. The use of MapReduce framework and Java programming language is evident in the architecture, which is designed to take advantage of the scalability and fault-tolerance features of these technologies.",
+    "description_word_count": 133,
+    "number_of_files": 2,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Join cluster\n\nDESCRIPTION:\nThe join cluster is responsible for implementing the join operation in Hadoop MapReduce. It consists of classes that collaborate to perform the join efficiently and effectively. The architecture of the join cluster is designed to provide high performance and scalability for joining large datasets in a distributed environment. The cluster includes components such as the join directory, which contains classes that handle the join operation, and the data model, which defines the structure of the data being joined. The architecture also includes a coordinator, which is responsible for managing the execution of the join operation, and a worker, which performs the actual join computation. The use of MapReduce framework and Java programming language is evident in the architecture, which is designed to take advantage of the scalability and fault-tolerance features of these technologies.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/join/ArrayListBackedIterator.java",
+      "lib/join/StreamBackedIterator.java"
+    ]
+  },
+  {
+    "cluster_id": 69,
+    "title": "lib/join",
+    "description": "The lib/join directory is responsible for handling the parsing and execution of join operations over a set of data sources. It collaborates with the Parser class to parse join expressions and the InputFormat class to perform the actual join operation. The architectural pattern used in this directory is the composite pattern, which allows for the creation of complex input formats by combining simpler ones. The directory achieves scalability and maintainability by separating the parsing and execution of join operations, making it easier to modify and extend the functionality as needed. The use of the composite pattern also improves the modularity and reusability of the code.",
+    "description_word_count": 106,
+    "number_of_files": 2,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: lib/join\n\nDESCRIPTION:\nThe lib/join directory is responsible for handling the parsing and execution of join operations over a set of data sources. It collaborates with the Parser class to parse join expressions and the InputFormat class to perform the actual join operation. The architectural pattern used in this directory is the composite pattern, which allows for the creation of complex input formats by combining simpler ones. The directory achieves scalability and maintainability by separating the parsing and execution of join operations, making it easier to modify and extend the functionality as needed. The use of the composite pattern also improves the modularity and reusability of the code.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/join/CompositeInputFormat.java",
+      "lib/join/Parser.java"
+    ]
+  },
+  {
+    "cluster_id": 70,
+    "title": "JoinRecordReader and OverrideRecordReader classes",
+    "description": "The JoinRecordReader and OverrideRecordReader classes are base classes used in the Hadoop MapReduce architecture for handling and processing data from multiple sources. The JoinRecordReader class uses a PriorityQueue to manage child RecordReaders and process key, value pairs, while the OverrideRecordReader class overrides the behavior of the RecordReader class to prefer the \"rightmost\" data source for a given key.\n\nThese classes demonstrate the importance of efficient data structures and algorithms in the Hadoop ecosystem, particularly in the area of data processing and manipulation. The use of PriorityQueue and WritableComparator in these classes ensures that complex data processing tasks can be handled efficiently and that data sources can be prioritized effectively.\n\nOverall, the JoinRecordReader and OverrideRecordReader classes play a crucial role in building scalable and reliable big data systems, providing flexible solutions for data processing and manipulation.",
+    "description_word_count": 135,
+    "number_of_files": 2,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: JoinRecordReader and OverrideRecordReader classes\n\nDESCRIPTION:\nThe JoinRecordReader class is a base class for composite joins returning Tuples of arbitrary Writables. It uses a PriorityQueue to manage the child RecordReaders and process the key, value pairs. The OverrideRecordReader class, on the other hand, overrides the behavior of the RecordReader class to prefer the \"rightmost\" data source for a given key. It uses a PriorityQueue to store the RecordReaders and a WritableComparator to compare the keys.\n\nThe classes play a crucial role in the Hadoop MapReduce architecture, particularly in the area of data processing and manipulation. The JoinRecordReader class is responsible for managing and processing the data from multiple sources, while the OverrideRecordReader class ensures that the \"rightmost\" data source takes precedence.\n\nThe use of PriorityQueue and WritableComparator in these classes demonstrates the importance of efficient data structures and algorithms in the Hadoop ecosystem. The ability to handle complex data processing tasks and prioritize data sources is essential for building scalable and reliable big data systems.\n\nIn summary, the JoinRecordReader and OverrideRecordReader classes are integral components of the Hadoop MapReduce architecture, providing efficient and flexible solutions for data processing and manipulation.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/join/JoinRecordReader.java",
+      "lib/join/OverrideRecordReader.java"
+    ]
+  },
+  {
+    "cluster_id": 71,
+    "title": "lib/join",
+    "description": "The lib/join directory contains classes that implement join operations on data sources. The InnerJoinRecordReader class performs a full inner join, while the OuterJoinRecordReader class performs a full outer join. These classes collaborate to combine tuples from multiple data sources based on a common key. The architectural role of this directory is to provide a flexible and efficient way to perform join operations in a distributed computing environment.",
+    "description_word_count": 68,
+    "number_of_files": 2,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: lib/join\n\nDESCRIPTION:\nThe lib/join directory contains classes that implement join operations on data sources. The InnerJoinRecordReader class performs a full inner join, while the OuterJoinRecordReader class performs a full outer join. These classes collaborate to combine tuples from multiple data sources based on a common key. The architectural role of this directory is to provide a flexible and efficient way to perform join operations in a distributed computing environment.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/join/InnerJoinRecordReader.java",
+      "lib/join/OuterJoinRecordReader.java"
+    ]
+  },
+  {
+    "cluster_id": 73,
+    "title": "MapReduce Architecture",
+    "description": "MapReduce is a distributed computing framework that handles large-scale data processing. It consists of a master node and worker nodes. The master coordinates tasks and distributes data, while the workers execute tasks and communicate with the master. MapReduce is designed to scale, tolerate faults, and improve performance for large-scale data processing. It uses Java and the Hadoop framework, with a high-level API for developers and a distributed file system (HDFS) for data storage.",
+    "description_word_count": 73,
+    "number_of_files": 5,
+    "number_of_directories": 8,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: MapReduce Architecture\n\nDESCRIPTION:\nThe MapReduce architecture is a distributed computing framework that enables large-scale data processing. It consists of a master node and multiple worker nodes. The master node coordinates the execution of tasks and manages the distribution of data across the worker nodes. The worker nodes execute the tasks and communicate with the master node to report their progress and receive new tasks.\n\nThe architecture is designed to handle large volumes of data and distribute the processing across multiple nodes to improve performance and scalability. It supports various data processing tasks, such as sorting, filtering, and aggregation, and provides fault-tolerance by retrying failed tasks and recovering from node failures.\n\nThe MapReduce architecture is implemented using Java and the Hadoop framework. It provides a high-level API for developers to write MapReduce programs and a distributed file system (HDFS) for storing and managing data. The architecture is scalable, fault-tolerant, and provides performance improvements for large-scale data processing.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/join/ResetableIterator.java",
+      "lib/join/TupleWritable.java",
+      "lib/output/committer/manifest/ManifestCommitterConstants.java",
+      "security/SecureShuffleUtils.java",
+      "security/token/JobTokenIdentifier.java"
+    ]
+  },
+  {
+    "cluster_id": 75,
+    "title": "OutputCommitter",
+    "description": "The OutputCommitter interface is used by the MapReduce framework to commit the output of a job. It provides methods for committing task attempts, committing job output, aborting tasks or jobs, and cleaning up job output. The ManifestCommitter class implements this interface and provides the necessary functionality for fault-tolerant output commitment. The ManifestCommitterOutputFormat class is used to write output data to a manifest file, which is a file that contains information about the output data written by a MapReduce job. The manifest file is used to recover from failures and ensure that all output data is committed correctly.",
+    "description_word_count": 97,
+    "number_of_files": 7,
+    "number_of_directories": 7,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: OutputCommitter\n\nDESCRIPTION:\nThe OutputCommitter interface is used by the MapReduce framework to commit the output of a job. It provides methods for committing task attempts, committing job output, aborting tasks or jobs, and cleaning up job output. The ManifestCommitter class implements this interface and provides the necessary functionality for fault-tolerant output commitment. The ManifestCommitterOutputFormat class is used to write output data to a manifest file, which is a file that contains information about the output data written by a MapReduce job. The manifest file is used to recover from failures and ensure that all output data is committed correctly.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/output/committer/manifest/ManifestCommitter.java",
+      "lib/output/committer/manifest/ManifestCommitterConfig.java",
+      "lib/output/committer/manifest/impl/ManifestCommitterSupport.java",
+      "lib/output/committer/manifest/impl/ManifestStoreOperations.java",
+      "lib/output/committer/manifest/impl/ManifestStoreOperationsThroughFileSystem.java",
+      "lib/output/committer/manifest/stages/AbstractJobOrTaskStage.java",
+      "lib/output/committer/manifest/stages/StageConfig.java"
+    ]
+  },
+  {
+    "cluster_id": 76,
+    "title": "lib/output",
+    "description": "This directory contains classes that represent the manifest of files created by a task attempt. It includes classes for representing directory and file entries, as well as a summary of the data saved into a _SUCCESS marker file. The classes in this directory collaborate to create and manage the task manifest, which contains information about the files created by a task attempt. The classes use Jackson annotations for JSON serialization and deserialization, and they implement the Writable interface for serialization and deserialization using Hadoop's WritableUtils. This directory follows the Model-View-Controller (MVC) pattern, with the classes representing the model (the manifest data), the view (the JSON serialization), and the controller (the methods for adding files and directories to the manifest). It also follows the Dependency Injection pattern, as the classes have dependencies on other classes and libraries, such as the Apache Hadoop MapReduce library and Jackson for JSON serialization.",
+    "description_word_count": 149,
+    "number_of_files": 5,
+    "number_of_directories": 7,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: lib/output\n\nDESCRIPTION:\nThis directory contains classes that represent the manifest of files created by a task attempt. It includes classes for representing directory and file entries, as well as a summary of the data saved into a _SUCCESS marker file. The classes in this directory collaborate to create and manage the task manifest, which contains information about the files created by a task attempt. The classes use Jackson annotations for JSON serialization and deserialization, and they implement the Writable interface for serialization and deserialization using Hadoop's WritableUtils. This directory follows the Model-View-Controller (MVC) pattern, with the classes representing the model (the manifest data), the view (the JSON serialization), and the controller (the methods for adding files and directories to the manifest). It also follows the Dependency Injection pattern, as the classes have dependencies on other classes and libraries, such as the Apache Hadoop MapReduce library and Jackson for JSON serialization.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/output/committer/manifest/files/DirEntry.java",
+      "lib/output/committer/manifest/files/FileEntry.java",
+      "lib/output/committer/manifest/files/ManifestSuccessData.java",
+      "lib/output/committer/manifest/files/TaskManifest.java",
+      "lib/output/committer/manifest/impl/LoadedManifestData.java"
+    ]
+  },
+  {
+    "cluster_id": 77,
+    "title": "Output Committer",
+    "description": "The Output Committer is a crucial component of the Hadoop MapReduce framework, responsible for handling the committing of output data. It collaborates with the OutputCommitter.java file to ensure the data is committed in a fault-tolerant and scalable manner.\n\nThe Output Committer uses the Apache Hadoop MapReduce library and the Java IO library to perform its core logic. It takes input data and handles the committing of output data in a fault-tolerant manner.\n\nThe Output Committer is a key architectural pattern in Hadoop MapReduce, responsible for ensuring the reliability and fault-tolerance of the output data. It coordinates the committing of output data from the map and reduce tasks, and ensures that the data is committed in a fault-tolerant manner.\n\nTechnologies used: Apache Hadoop MapReduce, Java IO library",
+    "description_word_count": 127,
+    "number_of_files": 1,
+    "number_of_directories": 6,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Output Committer\n\nDESCRIPTION:\nThe Output Committer is a crucial component of the Hadoop MapReduce framework, responsible for handling the committing of output data. It collaborates with the OutputCommitter.java file to ensure the data is committed in a fault-tolerant and scalable manner.\n\nThe Output Committer uses the Apache Hadoop MapReduce library and the Java IO library to perform its core logic. It takes input data and handles the committing of output data in a fault-tolerant manner.\n\nThe Output Committer is a key architectural pattern in Hadoop MapReduce, responsible for ensuring the reliability and fault-tolerance of the output data. It coordinates the committing of output data from the map and reduce tasks, and ensures that the data is committed in a fault-tolerant manner.\n\nTechnologies used: Apache Hadoop MapReduce, Java IO library",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/output/committer/manifest/files/ManifestPrinter.java"
+    ]
+  },
+  {
+    "cluster_id": 78,
+    "title": "MapReduce Job Committer Stages",
+    "description": "This directory contains classes that implement specific stages of the MapReduce job commit process. These stages include setting up the job, setting up the task, saving the success file, and cleaning up the job. Each stage has a specific responsibility and collaborates with other files or directories as needed. The architectural role of this directory is to provide a modular and organized approach to managing the job commit process.",
+    "description_word_count": 69,
+    "number_of_files": 6,
+    "number_of_directories": 7,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: MapReduce Job Committer Stages\n\nDESCRIPTION:\nThis directory contains classes that implement specific stages of the MapReduce job commit process. These stages include setting up the job, setting up the task, saving the success file, and cleaning up the job. Each stage has a specific responsibility and collaborates with other files or directories as needed. The architectural role of this directory is to provide a modular and organized approach to managing the job commit process.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/output/committer/manifest/impl/AuditingIntegration.java",
+      "lib/output/committer/manifest/stages/AbortTaskStage.java",
+      "lib/output/committer/manifest/stages/CleanupJobStage.java",
+      "lib/output/committer/manifest/stages/SaveSuccessFileStage.java",
+      "lib/output/committer/manifest/stages/SetupJobStage.java",
+      "lib/output/committer/manifest/stages/SetupTaskStage.java"
+    ]
+  },
+  {
+    "cluster_id": 80,
+    "title": "Output Committer - Cluster-Level Abstraction",
+    "description": "The Output Committer is a cluster-level abstraction responsible for managing the commit process of MapReduce tasks. It includes a Manifest Committer that handles the writing of entry files and a Task Committer that coordinates the commit process of individual tasks. The Output Committer uses a Writer Thread to manage the shutdown, fails safely on write failures, and restarts all blocked writers in the process. The Task Committer collaborates with the Manifest Committer to ensure the commit process is completed successfully. The Output Committer is built on top of the Apache Hadoop MapReduce and Common libraries, as well as the slf4j library for logging. The Output Committer provides a centralized and reliable mechanism for managing the commit process of MapReduce tasks, ensuring data consistency and reliability.",
+    "description_word_count": 125,
+    "number_of_files": 1,
+    "number_of_directories": 6,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Output Committer - Cluster-Level Abstraction\n\nDESCRIPTION:\nThe Output Committer is a cluster-level abstraction responsible for managing the commit process of MapReduce tasks. It includes a Manifest Committer that handles the writing of entry files and a Task Committer that coordinates the commit process of individual tasks. The Output Committer uses a Writer Thread to manage the shutdown, fails safely on write failures, and restarts all blocked writers in the process. The Task Committer collaborates with the Manifest Committer to ensure the commit process is completed successfully. The Output Committer is built on top of the Apache Hadoop MapReduce and Common libraries, as well as the slf4j library for logging. The Output Committer provides a centralized and reliable mechanism for managing the commit process of MapReduce tasks, ensuring data consistency and reliability.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/output/committer/manifest/impl/EntryFileIO.java"
+    ]
+  },
+  {
+    "cluster_id": 81,
+    "title": "Output",
+    "description": "The Output directory contains classes and interfaces for handling the output of data from the MapReduce framework. It collaborates with the MapReduce framework to commit output data, manage output formats, and handle the writing of output data. The architectural role of the Output directory is to provide a standardized interface for handling the output of data, allowing for greater flexibility and modularity in the MapReduce implementation. The directory follows the Strategy pattern, providing a family of classes for handling different output formats, each with its own specific implementation. This allows for easy extension and customization of the output handling mechanism without modifying the core MapReduce framework.",
+    "description_word_count": 106,
+    "number_of_files": 9,
+    "number_of_directories": 7,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Output\n\nDESCRIPTION:\nThe Output directory contains classes and interfaces that handle the output of data from the MapReduce framework. It includes classes for committing output data, managing output formats, and handling the writing of output data.\n\nThe Output directory collaborates with the MapReduce framework to handle the output of data. It provides classes and interfaces for committing output data, managing output formats, and handling the writing of output data.\n\nThe architectural role of the Output directory is to provide a standardized interface for handling the output of data from the MapReduce framework. This allows for greater flexibility and modularity in the MapReduce implementation, as different output formats and data handling mechanisms can be easily plugged in and used as needed.\n\nThe Output directory follows the pattern of the Strategy pattern, as it provides a family of classes for handling different output formats, each with its own specific implementation. This allows for easy extension and customization of the output handling mechanism, without the need to modify the core MapReduce framework.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/output/committer/manifest/impl/InternalConstants.java",
+      "lib/output/committer/manifest/stages/CommitJobStage.java",
+      "lib/output/committer/manifest/stages/CommitTaskStage.java",
+      "lib/output/committer/manifest/stages/CreateOutputDirectoriesStage.java",
+      "lib/output/committer/manifest/stages/LoadManifestsStage.java",
+      "lib/output/committer/manifest/stages/RenameFilesStage.java",
+      "lib/output/committer/manifest/stages/SaveTaskManifestStage.java",
+      "lib/output/committer/manifest/stages/TaskAttemptScanDirectoryStage.java",
+      "lib/output/committer/manifest/stages/ValidateRenamedFilesStage.java"
+    ]
+  },
+  {
+    "cluster_id": 85,
+    "title": "Partitioning in Hadoop MapReduce",
+    "description": "The lib/partition directory in Hadoop MapReduce contains classes that implement the Partitioner interface. This interface is used to determine the partition to which a key-value pair should be sent during the shuffle and sort phase of the MapReduce job. The partitioner can use various factors such as the key, value, and the total number of reduce tasks to determine the partition. The classes in this directory provide different ways of partitioning the data, such as hashing the key, using a custom partitioner, or rehashing the hash code of the key. The choice of partitioner can have a significant impact on the performance of the MapReduce job, as it can affect the balance of the data across the reducers and the efficiency of the shuffle and sort operations.",
+    "description_word_count": 128,
+    "number_of_files": 3,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Partitioning in Hadoop MapReduce\n\nDESCRIPTION:\nThe lib/partition directory in Hadoop MapReduce contains classes that implement the Partitioner interface. This interface is used to determine the partition to which a key-value pair should be sent during the shuffle and sort phase of the MapReduce job. The partitioner can use various factors such as the key, value, and the total number of reduce tasks to determine the partition. The classes in this directory provide different ways of partitioning the data, such as hashing the key, using a custom partitioner, or rehashing the hash code of the key. The choice of partitioner can have a significant impact on the performance of the MapReduce job, as it can affect the balance of the data across the reducers and the efficiency of the shuffle and sort operations.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/partition/BinaryPartitioner.java",
+      "lib/partition/HashPartitioner.java",
+      "lib/partition/RehashPartitioner.java"
+    ]
+  },
+  {
+    "cluster_id": 87,
+    "title": "Hadoop MapReduce Architecture",
+    "description": "The Hadoop MapReduce architecture is a distributed processing framework that enables the processing of large data sets across clusters of computers. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. The architecture consists of a master node and multiple slave nodes, with the master node coordinating the tasks and the slave nodes executing them. The master node also manages the distributed file system, which is used to store the data and intermediate results. The MapReduce framework provides a programming model that allows developers to write map and reduce functions, which are then executed by the framework on the distributed cluster. The map function is responsible for processing the input data and generating intermediate key-value pairs, while the reduce function is responsible for aggregating the intermediate results and producing the final output. The architecture also supports fault tolerance and load balancing.",
+    "description_word_count": 150,
+    "number_of_files": 4,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is a distributed processing framework that allows for the processing of large data sets across clusters of computers. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. The architecture consists of a master node and multiple slave nodes, with the master node coordinating the tasks and the slave nodes executing them. The master node also manages the distributed file system, which is used to store the data and intermediate results. The MapReduce framework provides a programming model that allows developers to write map and reduce functions, which are then executed by the framework on the distributed cluster. The map function is responsible for processing the input data and generating intermediate key-value pairs, while the reduce function is responsible for aggregating the intermediate results and producing the final output. The architecture also supports fault tolerance and load balancing, ensuring that the processing is reliable and efficient.",
+    "algorithm": "LIMBO",
+    "files": [
+      "lib/partition/KeyFieldBasedComparator.java",
+      "lib/partition/KeyFieldBasedPartitioner.java",
+      "lib/partition/KeyFieldHelper.java",
+      "lib/partition/TotalOrderPartitioner.java"
+    ]
+  },
+  {
+    "cluster_id": 90,
+    "title": "Hadoop MapReduce Architecture",
+    "description": "The Hadoop MapReduce architecture is a distributed processing framework designed for processing large data sets across clusters of computers. It consists of two main components: the Map component and the Reduce component. The Map component breaks down the input data into smaller chunks and processes them in parallel, while the Reduce component aggregates the results and produces the final output. The architecture is scalable, fault-tolerant, and provides high-throughput data processing capabilities. It uses the Hadoop Distributed File System (HDFS) for distributed storage and MapReduce for distributed processing. The architecture is widely used in big data analytics and data-intensive computing applications.",
+    "description_word_count": 100,
+    "number_of_files": 2,
+    "number_of_directories": 2,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is a distributed processing framework designed for processing large data sets across clusters of computers. It consists of two main components: the Map component and the Reduce component. The Map component breaks down the input data into smaller chunks and processes them in parallel, while the Reduce component aggregates the results and produces the final output. The architecture is scalable, fault-tolerant, and provides high-throughput data processing capabilities. It uses the Hadoop Distributed File System (HDFS) for distributed storage and MapReduce for distributed processing. The architecture is widely used in big data analytics and data-intensive computing applications.",
+    "algorithm": "LIMBO",
+    "files": [
+      "security/IntermediateEncryptedStream.java",
+      "security/SpillCallBackPathsFinder.java"
+    ]
+  },
+  {
+    "cluster_id": 91,
+    "title": "Hadoop MapReduce Architecture: security/token Directory",
+    "description": "The security/token directory in Hadoop MapReduce architecture is responsible for managing job tokens and secret keys. The JobTokenSecretManager.java file provides functionality for generating and caching job tokens, while the JobTokenSelector.java file implements a TokenSelector that can be used to select the appropriate job token for a given service. These classes collaborate to ensure secure and efficient management of job tokens within the Hadoop framework.",
+    "description_word_count": 67,
+    "number_of_files": 2,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Architecture: security/token Directory\n\nDESCRIPTION:\nThe security/token directory in Hadoop MapReduce architecture is responsible for managing job tokens and secret keys. The JobTokenSecretManager.java file provides functionality for generating and caching job tokens, while the JobTokenSelector.java file implements a TokenSelector that can be used to select the appropriate job token for a given service. These classes collaborate to ensure secure and efficient management of job tokens within the Hadoop framework.",
+    "algorithm": "LIMBO",
+    "files": [
+      "security/token/JobTokenSecretManager.java",
+      "security/token/JobTokenSelector.java"
+    ]
+  },
+  {
+    "cluster_id": 92,
+    "title": "MapReduce Delegation Token Architecture",
+    "description": "The MapReduce delegation token architecture is responsible for generating and accepting the password for each token. The DelegationTokenSecretManager class is the main component of this architecture, and it collaborates with the DelegationTokenSelector class to define a class that extends the AbstractDelegationTokenSelector class and specializes it for MapReduce. This architecture ensures scalability, maintainability, reliability, security, and performance.",
+    "description_word_count": 56,
+    "number_of_files": 2,
+    "number_of_directories": 4,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: MapReduce Delegation Token Architecture\n\nDESCRIPTION:\nThe MapReduce delegation token architecture is responsible for generating and accepting the password for each token. The DelegationTokenSecretManager class is the main component of this architecture, and it collaborates with the DelegationTokenSelector class to define a class that extends the AbstractDelegationTokenSelector class and specializes it for MapReduce. This architecture ensures scalability, maintainability, reliability, security, and performance.",
+    "algorithm": "LIMBO",
+    "files": [
+      "security/token/delegation/DelegationTokenSecretManager.java",
+      "security/token/delegation/DelegationTokenSelector.java"
+    ]
+  },
+  {
+    "cluster_id": 93,
+    "title": "Hadoop MapReduce Splitting Mechanism",
+    "description": "The Hadoop MapReduce framework provides a splitting mechanism that divides the input data into smaller chunks for processing by the map tasks. The JobSplit class is responsible for reading and writing splits, including the meta information about the task split that the JobTracker creates and the raw split information that the maps use at runtime. The JobSplitWriter class is used by the Job clients to write splits (both the meta and the raw bytes parts), while the SplitMetaInfoReader class reads the split meta info and creates split meta info objects. These classes collaborate to ensure that the input data is properly divided and processed by the map tasks. The architectural role of the JobSplit class is to provide a high-level interface for reading and writing splits, while the JobSplitWriter and SplitMetaInfoReader classes provide the low-level implementation for writing splits and reading split meta info, respectively. The pattern used in this.",
+    "description_word_count": 150,
+    "number_of_files": 3,
+    "number_of_directories": 2,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Hadoop MapReduce Splitting Mechanism\n\nDESCRIPTION:\nThe Hadoop MapReduce framework provides a splitting mechanism that divides the input data into smaller chunks for processing by the map tasks. The JobSplit class is responsible for reading and writing splits, including the meta information about the task split that the JobTracker creates and the raw split information that the maps use at runtime. The JobSplitWriter class is used by the Job clients to write splits (both the meta and the raw bytes parts). The SplitMetaInfoReader class reads the split meta info and creates split meta info objects. These classes collaborate to ensure that the input data is properly divided and processed by the map tasks. The architectural role of the JobSplit class is to provide a high-level interface for reading and writing splits, while the JobSplitWriter and SplitMetaInfoReader classes provide the low-level implementation for writing splits and reading split meta info, respectively. The pattern used in this directory is the Singleton pattern, as there is only one instance of the JobSplit class that needs to be accessed by all the other classes.",
+    "algorithm": "LIMBO",
+    "files": [
+      "split/JobSplit.java",
+      "split/JobSplitWriter.java",
+      "split/SplitMetaInfoReader.java"
+    ]
+  },
+  {
+    "cluster_id": 96,
+    "title": "Cluster-level architectural description of Hadoop MapReduce",
+    "description": "Hadoop MapReduce is a distributed processing framework that enables large-scale data processing on clusters of computers. It consists of two main components: the Map component and the Reduce component. The Map component breaks down the input data into smaller chunks and processes them in parallel, while the Reduce component combines the results from the Mappers to produce the final output. The MapReduce framework is designed to handle large volumes of data and distribute the processing across multiple nodes in a cluster. It provides fault-tolerance and scalability, making it a popular choice for big data processing. The MapReduce architecture follows the principles of divide-and-conquer, parallel processing, and distributed computing, and it is widely used in industries such as finance, healthcare, and retail.",
+    "description_word_count": 122,
+    "number_of_files": 1,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: Cluster-level architectural description of Hadoop MapReduce\n\nDESCRIPTION:\nHadoop MapReduce is a distributed processing framework that enables large-scale data processing on clusters of computers. It consists of two main components: the Map component and the Reduce component. The Map component breaks down the input data into smaller chunks and processes them in parallel, while the Reduce component combines the results from the Mappers to produce the final output. The MapReduce framework is designed to handle large volumes of data and distribute the processing across multiple nodes in a cluster. It provides fault-tolerance and scalability, making it a popular choice for big data processing. The MapReduce architecture follows the principles of divide-and-conquer, parallel processing, and distributed computing, and it is widely used in industries such as finance, healthcare, and retail.",
+    "algorithm": "LIMBO",
+    "files": [
+      "task/reduce/MergeThread.java"
+    ]
+  },
+  {
+    "cluster_id": 97,
+    "title": "MapReduce shuffle and sort",
+    "description": "The shuffle and sort phase of a MapReduce job is responsible for reordering the map outputs generated by the mappers and grouping them by their target reducers. This phase ensures that the reducers receive the map outputs in a format that allows them to efficiently process the data. The shuffle and sort phase uses the MergeManagerImpl class to manage the merging of map outputs, which can be either in-memory or on-disk. The class contains logic for merging in-memory map outputs, as well as logic for merging on-disk map outputs. The merged map outputs are then written to disk, and the shuffle and sort phase is complete.",
+    "description_word_count": 106,
+    "number_of_files": 1,
+    "number_of_directories": 3,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: MapReduce shuffle and sort\n\nDESCRIPTION:\nThe shuffle and sort phase of a MapReduce job is responsible for reordering the map outputs generated by the mappers and grouping them by their target reducers. This phase ensures that the reducers receive the map outputs in a format that allows them to efficiently process the data. The shuffle and sort phase uses the MergeManagerImpl class to manage the merging of map outputs, which can be either in-memory or on-disk. The class contains logic for merging in-memory map outputs, as well as logic for merging on-disk map outputs. The merged map outputs are then written to disk, and the shuffle and sort phase is complete.",
+    "algorithm": "LIMBO",
+    "files": [
+      "task/reduce/MergeManagerImpl.java"
+    ]
+  },
+  {
+    "cluster_id": 99,
+    "title": "ProcessTree",
+    "description": "The ProcessTree directory is responsible for destroying the process-tree. It collaborates with the org.apache.hadoop.util.Shell.ShellCommandExecutor class to send a specified signal to the specified pid. The core logic of this chunk is to destroy the process-tree by sending a specified signal to the specified pid. The inputs to this chunk are the pid of the root process of the subtree of processes to be killed, the time to wait before sending SIGKILL after sending SIGTERM, and whether the pid is a process group leader or not. The output is the destruction of the process-tree. This directory plays the role of the controller in the MVC architectural pattern.",
+    "description_word_count": 111,
+    "number_of_files": 1,
+    "number_of_directories": 2,
+    "number_of_intermediate_summaries": 0,
+    "top_nodes": [
+      {
+        "type": "directory",
+        "name": "."
+      }
+    ],
+    "intermediate_summaries": [],
+    "raw_response": "TITLE: ProcessTree\n\nDESCRIPTION:\nThe ProcessTree directory is responsible for destroying the process-tree. It collaborates with the org.apache.hadoop.util.Shell.ShellCommandExecutor class to send a specified signal to the specified pid. The core logic of this chunk is to destroy the process-tree by sending a specified signal to the specified pid. The inputs to this chunk are the pid of the root process of the subtree of processes to be killed, the time to wait before sending SIGKILL after sending SIGTERM, and whether the pid is a process group leader or not. The output is the destruction of the process-tree. This directory plays the role of the controller in the MVC architectural pattern.",
+    "algorithm": "LIMBO",
+    "files": [
+      "util/ProcessTree.java"
+    ]
+  }
+]

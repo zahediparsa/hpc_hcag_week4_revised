@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 8,
+  "directory": "lib/join",
+  "title": "ComposableInputFormat",
+  "description": "This directory contains the ComposableInputFormat class, which is a refinement of the InputFormat class that requires implementors to provide a ComposableRecordReader instead of a RecordReader. The createRecordReader method is the key algorithm in this class, which takes an InputSplit and a TaskAttemptContext as parameters and returns a ComposableRecordReader. This class collaborates with the ComposableRecordReader class, which is a key collaborator class, and also depends on the WritableComparable and Writable classes.",
+  "summary": "TITLE: ComposableInputFormat\nDESCRIPTION: This directory contains the ComposableInputFormat class, which is a refinement of the InputFormat class that requires implementors to provide a ComposableRecordReader instead of a RecordReader. The createRecordReader method is the key algorithm in this class, which takes an InputSplit and a TaskAttemptContext as parameters and returns a ComposableRecordReader. This class collaborates with the ComposableRecordReader class, which is a key collaborator class, and also depends on the WritableComparable and Writable classes.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ComposableInputFormat.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: ComposableInputFormat\n\nDESCRIPTION:\nThis directory contains the ComposableInputFormat class, which is a refinement of the InputFormat class that requires implementors to provide a ComposableRecordReader instead of a RecordReader. The createRecordReader method is the key algorithm in this class, which takes an InputSplit and a TaskAttemptContext as parameters and returns a ComposableRecordReader. This class collaborates with the ComposableRecordReader class, which is a key collaborator class, and also depends on the WritableComparable and Writable classes."
+}

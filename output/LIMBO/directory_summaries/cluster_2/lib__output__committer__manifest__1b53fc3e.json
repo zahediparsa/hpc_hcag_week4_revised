@@ -1,0 +1,30 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "lib/output/committer/manifest",
+  "title": "Output committer manifest implementation",
+  "description": "This directory contains the implementation of the OutputCommitterManifest.\nThe OutputCommitterManifest is responsible for managing the manifest file that records the output status of a task.\nThe manifest file is used to recover the output status in case of failures.\nThe files in this directory collaborate by reading and writing the manifest file.\nThe OutputCommitterManifest uses the PathIOException class to handle exceptions related to file operations.\nThe OutputCommitterManifest follows the Singleton pattern to ensure that only one instance of the manifest is created.",
+  "summary": "TITLE: Output committer manifest implementation\nDESCRIPTION: This directory contains the implementation of the OutputCommitterManifest.\nThe OutputCommitterManifest is responsible for managing the manifest file that records the output status of a task.\nThe manifest file is used to recover the output status in case of failures.\nThe files in this directory collaborate by reading and writing the manifest file.\nThe OutputCommitterManifest uses the PathIOException class to handle exceptions related to file operations.\nThe OutputCommitterManifest follows the Singleton pattern to ensure that only one instance of the manifest is created.",
+  "number_of_children": 4,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ManifestCommitterStatisticNames.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest/files"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest/impl"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest/stages"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Output committer manifest implementation\n\nDESCRIPTION:\nThis directory contains the implementation of the OutputCommitterManifest.\nThe OutputCommitterManifest is responsible for managing the manifest file that records the output status of a task.\nThe manifest file is used to recover the output status in case of failures.\nThe files in this directory collaborate by reading and writing the manifest file.\nThe OutputCommitterManifest uses the PathIOException class to handle exceptions related to file operations.\nThe OutputCommitterManifest follows the Singleton pattern to ensure that only one instance of the manifest is created."
+}

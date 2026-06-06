@@ -1,0 +1,30 @@
+{
+  "type": "directory",
+  "cluster_id": 32,
+  "directory": "jobhistory",
+  "title": "JobHistory Directory Abstraction",
+  "description": "The JobHistory directory is responsible for reading and writing job history files. It collaborates with the EventReader and EventWriter classes to read and write events to the underlying stream. The JobHistory directory also collaborates with the JobHistoryParser class to parse job history files and store the parsed data in a data structure. The JobHistory directory plays the role of the \"Model\" in the MVC architectural pattern, as it represents the data and business logic of the application.",
+  "summary": "TITLE: JobHistory Directory Abstraction\nDESCRIPTION: The JobHistory directory is responsible for reading and writing job history files. It collaborates with the EventReader and EventWriter classes to read and write events to the underlying stream. The JobHistory directory also collaborates with the JobHistoryParser class to parse job history files and store the parsed data in a data structure. The JobHistory directory plays the role of the \"Model\" in the MVC architectural pattern, as it represents the data and business logic of the application.",
+  "number_of_children": 4,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "EventReader.java"
+    },
+    {
+      "type": "file",
+      "name": "EventWriter.java"
+    },
+    {
+      "type": "file",
+      "name": "JobFinishedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "JobHistoryParser.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobHistory Directory Abstraction\n\nDESCRIPTION:\nThe JobHistory directory is responsible for reading and writing job history files. It collaborates with the EventReader and EventWriter classes to read and write events to the underlying stream. The JobHistory directory also collaborates with the JobHistoryParser class to parse job history files and store the parsed data in a data structure. The JobHistory directory plays the role of the \"Model\" in the MVC architectural pattern, as it represents the data and business logic of the application."
+}

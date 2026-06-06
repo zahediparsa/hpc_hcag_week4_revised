@@ -1,0 +1,118 @@
+{
+  "type": "directory",
+  "cluster_id": 6,
+  "directory": "lib/input",
+  "title": "lib/input",
+  "description": "The lib/input directory is responsible for handling the input data for the MapReduce job. It collaborates with the files and child directories to create splits for the input data and process them accordingly. The directory plays a crucial role in the architectural abstraction of the Hadoop MapReduce architecture, as it is responsible for managing the input data and ensuring that it is processed efficiently and effectively.",
+  "summary": "TITLE: lib/input\nDESCRIPTION: The lib/input directory is responsible for handling the input data for the MapReduce job. It collaborates with the files and child directories to create splits for the input data and process them accordingly. The directory plays a crucial role in the architectural abstraction of the Hadoop MapReduce architecture, as it is responsible for managing the input data and ensuring that it is processed efficiently and effectively.",
+  "number_of_children": 26,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CombineFileInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "CombineFileRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "CombineFileRecordReaderWrapper.java"
+    },
+    {
+      "type": "file",
+      "name": "CombineFileSplit.java"
+    },
+    {
+      "type": "file",
+      "name": "CombineSequenceFileInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "CombineTextInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "CompressedSplitLineReader.java"
+    },
+    {
+      "type": "file",
+      "name": "DelegatingInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "DelegatingMapper.java"
+    },
+    {
+      "type": "file",
+      "name": "DelegatingRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "FileInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "FileSplit.java"
+    },
+    {
+      "type": "file",
+      "name": "FixedLengthInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "FixedLengthRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "InvalidInputException.java"
+    },
+    {
+      "type": "file",
+      "name": "LineRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "MultipleInputs.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileAsBinaryInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileAsTextInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileAsTextRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileInputFilter.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "SplitLineReader.java"
+    },
+    {
+      "type": "file",
+      "name": "TaggedInputSplit.java"
+    },
+    {
+      "type": "file",
+      "name": "UncompressedSplitLineReader.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/input\n\nDESCRIPTION:\nThe lib/input directory is responsible for handling the input data for the MapReduce job. It collaborates with the files and child directories to create splits for the input data and process them accordingly. The directory plays a crucial role in the architectural abstraction of the Hadoop MapReduce architecture, as it is responsible for managing the input data and ensuring that it is processed efficiently and effectively."
+}

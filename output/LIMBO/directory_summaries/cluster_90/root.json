@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 90,
+  "directory": ".",
+  "title": "Security",
+  "description": "The security directory is responsible for managing security-related functionality in the Hadoop MapReduce architecture. It collaborates with other files and directories to ensure the secure handling of data during processing.",
+  "summary": "TITLE: Security\nDESCRIPTION: The security directory is responsible for managing security-related functionality in the Hadoop MapReduce architecture. It collaborates with other files and directories to ensure the secure handling of data during processing.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "security"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Security\n\nDESCRIPTION:\nThe security directory is responsible for managing security-related functionality in the Hadoop MapReduce architecture. It collaborates with other files and directories to ensure the secure handling of data during processing."
+}

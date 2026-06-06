@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 16,
+  "directory": "security",
+  "title": "MapReduce Delegation Token Architecture",
+  "description": "The MapReduce delegation token architecture is responsible for managing and generating delegation tokens specific to MapReduce. The tokens are used for authentication and authorization purposes within the Hadoop cluster. The DelegationTokenIdentifier class is used to create and manage the delegation tokens, while the DelegationTokenSecretManager class is responsible for generating and accepting the password for each token. The DelegationTokenSelector class is used to select the appropriate token kind based on the token identifier.",
+  "summary": "TITLE: MapReduce Delegation Token Architecture\nDESCRIPTION: The MapReduce delegation token architecture is responsible for managing and generating delegation tokens specific to MapReduce. The tokens are used for authentication and authorization purposes within the Hadoop cluster. The DelegationTokenIdentifier class is used to create and manage the delegation tokens, while the DelegationTokenSecretManager class is responsible for generating and accepting the password for each token. The DelegationTokenSelector class is used to select the appropriate token kind based on the token identifier.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "security/token"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Delegation Token Architecture\n\nDESCRIPTION: The MapReduce delegation token architecture is responsible for managing and generating delegation tokens specific to MapReduce. The tokens are used for authentication and authorization purposes within the Hadoop cluster. The DelegationTokenIdentifier class is used to create and manage the delegation tokens, while the DelegationTokenSecretManager class is responsible for generating and accepting the password for each token. The DelegationTokenSelector class is used to select the appropriate token kind based on the token identifier."
+}

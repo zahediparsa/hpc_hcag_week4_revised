@@ -1,0 +1,30 @@
+{
+  "type": "directory",
+  "cluster_id": 26,
+  "directory": "checkpoint",
+  "title": "Checkpoint Service",
+  "description": "The Checkpoint Service is a key architectural abstraction in the Hadoop MapReduce framework. It provides a simple API for storing and retrieving the state of a task. The CheckpointService collaborates with the CheckpointNamingService to generate and manage checkpoint names, and with the FileSystem API to interact with the file system. The CheckpointService is responsible for ensuring the atomicity, single-writer, write-once, multiple-readers, and ready-many properties of checkpoints. It also handles dependencies between checkpoints and provides methods for creating, opening, committing, aborting, and deleting checkpoints. The FSCheckpointService class is a FileSystem-based implementation of the CheckpointService interface, while the FSCheckpointID class represents a checkpoint ID based on a file system path. The TaskCheckpointID class is an implementation of the CheckpointID interface used in Apache Hadoop MapReduce to store and provide checkpoint information to the next execution of the same task.",
+  "summary": "TITLE: Checkpoint Service\nDESCRIPTION: The Checkpoint Service is a key architectural abstraction in the Hadoop MapReduce framework. It provides a simple API for storing and retrieving the state of a task. The CheckpointService collaborates with the CheckpointNamingService to generate and manage checkpoint names, and with the FileSystem API to interact with the file system. The CheckpointService is responsible for ensuring the atomicity, single-writer, write-once, multiple-readers, and ready-many properties of checkpoints. It also handles dependencies between checkpoints and provides methods for creating, opening, committing, aborting, and deleting checkpoints. The FSCheckpointService class is a FileSystem-based implementation of the CheckpointService interface, while the FSCheckpointID class represents a checkpoint ID based on a file system path. The TaskCheckpointID class is an implementation of the CheckpointID interface used in Apache Hadoop MapReduce to store and provide checkpoint information to the next execution of the same task.",
+  "number_of_children": 4,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CheckpointService.java"
+    },
+    {
+      "type": "file",
+      "name": "FSCheckpointID.java"
+    },
+    {
+      "type": "file",
+      "name": "FSCheckpointService.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskCheckpointID.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Checkpoint Service\n\nDESCRIPTION:\nThe Checkpoint Service is a key architectural abstraction in the Hadoop MapReduce framework. It provides a simple API for storing and retrieving the state of a task. The CheckpointService collaborates with the CheckpointNamingService to generate and manage checkpoint names, and with the FileSystem API to interact with the file system. The CheckpointService is responsible for ensuring the atomicity, single-writer, write-once, multiple-readers, and ready-many properties of checkpoints. It also handles dependencies between checkpoints and provides methods for creating, opening, committing, aborting, and deleting checkpoints. The FSCheckpointService class is a FileSystem-based implementation of the CheckpointService interface, while the FSCheckpointID class represents a checkpoint ID based on a file system path. The TaskCheckpointID class is an implementation of the CheckpointID interface used in Apache Hadoop MapReduce to store and provide checkpoint information to the next execution of the same task."
+}

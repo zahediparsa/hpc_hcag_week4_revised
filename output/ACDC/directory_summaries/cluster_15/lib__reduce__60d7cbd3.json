@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 15,
+  "directory": "lib/reduce",
+  "title": "lib/reduce - Hadoop MapReduce Architecture",
+  "description": "The lib/reduce directory is responsible for providing a high-level, architectural abstraction for the Hadoop MapReduce framework. It collaborates with other components to enable the execution of reduce tasks in a distributed environment. The directory follows the pattern of the MapReduce architecture, providing a centralized location for reduce-related functionality and ensuring modularity and extensibility.",
+  "summary": "TITLE: lib/reduce - Hadoop MapReduce Architecture\nDESCRIPTION: The lib/reduce directory is responsible for providing a high-level, architectural abstraction for the Hadoop MapReduce framework. It collaborates with other components to enable the execution of reduce tasks in a distributed environment. The directory follows the pattern of the MapReduce architecture, providing a centralized location for reduce-related functionality and ensuring modularity and extensibility.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "WrappedReducer.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/reduce - Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe lib/reduce directory is responsible for providing a high-level, architectural abstraction for the Hadoop MapReduce framework. It collaborates with other components to enable the execution of reduce tasks in a distributed environment. The directory follows the pattern of the MapReduce architecture, providing a centralized location for reduce-related functionality and ensuring modularity and extensibility."
+}

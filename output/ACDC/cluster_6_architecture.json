@@ -1,0 +1,46 @@
+{
+  "cluster_id": 6,
+  "title": "MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce architecture is a distributed processing framework that is designed to handle large-scale data processing tasks. It consists of two main components: the Map component and the Reduce component. The Map component is responsible for dividing the input data into smaller chunks and mapping them to a set of intermediate key-value pairs. The Reduce component then processes these intermediate key-value pairs to produce the final output. The MapReduce architecture is highly scalable and fault-tolerant, as it allows for the distribution of processing tasks across a cluster of machines. It also supports a wide range of data processing tasks, including data aggregation, data mining, and machine learning. The MapReduce architecture is built on top of the Hadoop Distributed File System (HDFS), which provides a distributed storage system for large-scale data storage and processing. HDFS is designed to provide high-throughput access to application data, and it is fault-tolerant, scalable, and.",
+  "description_word_count": 150,
+  "number_of_files": 26,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Cluster Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is a distributed processing framework that is designed to handle large-scale data processing tasks. It consists of two main components: the Map component and the Reduce component. The Map component is responsible for dividing the input data into smaller chunks and mapping them to a set of intermediate key-value pairs. The Reduce component then processes these intermediate key-value pairs to produce the final output.\n\nThe MapReduce architecture is highly scalable and fault-tolerant, as it allows for the distribution of processing tasks across a cluster of machines. It also supports a wide range of data processing tasks, including data aggregation, data mining, and machine learning.\n\nThe MapReduce architecture is built on top of the Hadoop Distributed File System (HDFS), which provides a distributed storage system for large-scale data storage and processing. HDFS is designed to provide high-throughput access to application data, and it is fault-tolerant, scalable, and reliable.\n\nIn summary, the Hadoop MapReduce architecture is a powerful and flexible distributed processing framework that is designed to handle large-scale data processing tasks. It is built on top of the Hadoop Distributed File System (HDFS) and provides a scalable, fault-tolerant, and reliable solution for processing large-scale data.",
+  "algorithm": "ACDC",
+  "files": [
+    "lib/input/CombineFileInputFormat.java",
+    "lib/input/CombineFileRecordReader.java",
+    "lib/input/CombineFileRecordReaderWrapper.java",
+    "lib/input/CombineFileSplit.java",
+    "lib/input/CombineSequenceFileInputFormat.java",
+    "lib/input/CombineTextInputFormat.java",
+    "lib/input/CompressedSplitLineReader.java",
+    "lib/input/DelegatingInputFormat.java",
+    "lib/input/DelegatingMapper.java",
+    "lib/input/DelegatingRecordReader.java",
+    "lib/input/FileInputFormat.java",
+    "lib/input/FileSplit.java",
+    "lib/input/FixedLengthInputFormat.java",
+    "lib/input/FixedLengthRecordReader.java",
+    "lib/input/InvalidInputException.java",
+    "lib/input/LineRecordReader.java",
+    "lib/input/MultipleInputs.java",
+    "lib/input/SequenceFileAsBinaryInputFormat.java",
+    "lib/input/SequenceFileAsTextInputFormat.java",
+    "lib/input/SequenceFileAsTextRecordReader.java",
+    "lib/input/SequenceFileInputFilter.java",
+    "lib/input/SequenceFileInputFormat.java",
+    "lib/input/SequenceFileRecordReader.java",
+    "lib/input/SplitLineReader.java",
+    "lib/input/TaggedInputSplit.java",
+    "lib/input/UncompressedSplitLineReader.java"
+  ]
+}

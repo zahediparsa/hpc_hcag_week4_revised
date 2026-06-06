@@ -1,0 +1,50 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.lib.fieldsel.FieldSelectionReducer",
+    "path": "lib/fieldsel/FieldSelectionReducer.java",
+    "file_name": "FieldSelectionReducer.java",
+    "directory": "lib/fieldsel",
+    "summary": "KEY FUNCTIONALITY:\nThis code is a reducer class that can be used to perform field selections in a manner similar to unix cut.\n\nCORE LOGIC:\nThe input data is treated as fields separated by a user specified separator (the default value is \"\\t\"). The user can specify a list of fields that form the reduce output keys, and a list of fields that form the reduce output values. The fields are the union of those from the key and those from the value.\n\nINPUTS/OUTPUTS:\nThe input data is treated as fields separated by a user specified separator (the default value is \"\\t\"). The user can specify a list of fields that form the reduce output keys, and a list of fields that form the reduce output values. The fields are the union of those from the key and those from the value.\n\nDEPENDENCIES:\nThis code depends on the org.apache.hadoop.mapreduce.Reducer class.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.lib.reduce.IntSumReducer",
+    "path": "lib/reduce/IntSumReducer.java",
+    "file_name": "IntSumReducer.java",
+    "directory": "lib/reduce",
+    "summary": "KEY FUNCTIONALITY:\n\nThe main purpose of this chunk of code is to implement a reducer for a MapReduce job.\n\nCORE LOGIC:\n\nThe reduce() method iterates over the values for each key and accumulates their sum.\n\nINPUTS/OUTPUTS:\n\nThe reducer takes in a key and an iterable of IntWritable values, and it outputs a key and an IntWritable result.\n\nDEPENDENCIES:\n\nThis chunk of code depends on the Reducer class from the Apache Hadoop MapReduce library, as well as the IntWritable class for handling integer values.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.lib.reduce.LongSumReducer",
+    "path": "lib/reduce/LongSumReducer.java",
+    "file_name": "LongSumReducer.java",
+    "directory": "lib/reduce",
+    "summary": "KEY FUNCTIONALITY:\n\nThe main purpose of this chunk of code is to implement a reducer for a MapReduce job. The reducer takes in a key and an iterable of LongWritable values, and it calculates the sum of all the values for that key. The result is then written to the context using the key and the sum.\n\nCORE LOGIC:\n\nThe core logic of this chunk of code is the reduce method, which takes in a key and an iterable of LongWritable values. It iterates over the values and calculates the sum of all the values. The result is then set in the result variable.\n\nINPUTS/OUTPUTS:\n\nThe reducer takes in a key and an iterable of LongWritable values as input. It calculates the sum of all the values and writes the key and the sum to the context as output.\n\nDEPENDENCIES:\n\nThis chunk of code depends on the Reducer class from the Apache Hadoop MapReduce library, as well as the LongWritable class from the same library. It also depends on the IOException and InterruptedException classes from the Java standard library.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.lib.reduce.WrappedReducer",
+    "path": "lib/reduce/WrappedReducer.java",
+    "file_name": "WrappedReducer.java",
+    "directory": "lib/reduce",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class is a wrapper for a given Reducer to allow for custom Reducer.Context implementations.\n\nCORE LOGIC:\n\nThe getReducerContext method returns a wrapped Reducer.Context for custom implementations.\n\nINPUTS/OUTPUTS:\n\nThe WrappedReducer class takes in a ReduceContext as input and provides a wrapped Reducer.Context for custom implementations.\n\nDEPENDENCIES:\n\nThis class depends on the org.apache.hadoop.mapreduce package and its dependencies.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

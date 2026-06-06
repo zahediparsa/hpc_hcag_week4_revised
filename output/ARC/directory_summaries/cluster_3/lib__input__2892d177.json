@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "lib/input",
+  "title": "Apache Hadoop MapReduce - lib/input",
+  "description": "The lib/input directory in Apache Hadoop MapReduce is responsible for handling input data for MapReduce jobs. It provides a set of classes and interfaces for reading data from various sources, such as files, databases, and message queues. The classes in this directory collaborate to provide a flexible and extensible framework for processing large-scale data sets.\n\nThe architectural role of the lib/input directory is to provide a modular and extensible framework for reading input data. It defines a set of interfaces and classes that can be used to implement custom input formats, allowing users to read data from a wide range of sources. This directory also follows the pattern of the Hadoop MapReduce framework, which is based on the concept of input splits and record readers.\n\nThe classes in this directory collaborate to provide a flexible and extensible framework for processing large-scale data sets. The FileInputFormatCounter enum defines a set of counters used by Task classes to track the progress of data processing. The InvalidInputException class handles invalid input exceptions in the context of Apache Hadoop MapReduce. These classes work together to provide a robust and efficient way to process large-scale data sets.",
+  "summary": "TITLE: Apache Hadoop MapReduce - lib/input\nDESCRIPTION: The lib/input directory in Apache Hadoop MapReduce is responsible for handling input data for MapReduce jobs. It provides a set of classes and interfaces for reading data from various sources, such as files, databases, and message queues. The classes in this directory collaborate to provide a flexible and extensible framework for processing large-scale data sets.\n\nThe architectural role of the lib/input directory is to provide a modular and extensible framework for reading input data. It defines a set of interfaces and classes that can be used to implement custom input formats, allowing users to read data from a wide range of sources. This directory also follows the pattern of the Hadoop MapReduce framework, which is based on the concept of input splits and record readers.\n\nThe classes in this directory collaborate to provide a flexible and extensible framework for processing large-scale data sets. The FileInputFormatCounter enum defines a set of counters used by Task classes to track the progress of data processing. The InvalidInputException class handles invalid input exceptions in the context of Apache Hadoop MapReduce. These classes work together to provide a robust and efficient way to process large-scale data sets.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "FileInputFormatCounter.java"
+    },
+    {
+      "type": "file",
+      "name": "InvalidInputException.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Apache Hadoop MapReduce - lib/input\n\nDESCRIPTION:\nThe lib/input directory in Apache Hadoop MapReduce is responsible for handling input data for MapReduce jobs. It provides a set of classes and interfaces for reading data from various sources, such as files, databases, and message queues. The classes in this directory collaborate to provide a flexible and extensible framework for processing large-scale data sets.\n\nThe architectural role of the lib/input directory is to provide a modular and extensible framework for reading input data. It defines a set of interfaces and classes that can be used to implement custom input formats, allowing users to read data from a wide range of sources. This directory also follows the pattern of the Hadoop MapReduce framework, which is based on the concept of input splits and record readers.\n\nThe classes in this directory collaborate to provide a flexible and extensible framework for processing large-scale data sets. The FileInputFormatCounter enum defines a set of counters used by Task classes to track the progress of data processing. The InvalidInputException class handles invalid input exceptions in the context of Apache Hadoop MapReduce. These classes work together to provide a robust and efficient way to process large-scale data sets."
+}

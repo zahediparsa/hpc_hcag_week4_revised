@@ -1,0 +1,37 @@
+{
+  "cluster_id": 3,
+  "title": "Cluster-level architectural abstraction",
+  "description": "- The responsibility of this cluster is to provide a way to aggregate values in a generic manner.\n- The components in this cluster collaborate by calling each other's methods to perform the aggregation.\n- The quality attribute of this cluster is to be scalable, as it can handle large amounts of data.\n- The technologies used in this cluster include Java, Maven, and JUnit.",
+  "description_word_count": 61,
+  "number_of_files": 17,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Cluster-level architectural abstraction\n\nDESCRIPTION:\n- The responsibility of this cluster is to provide a way to aggregate values in a generic manner.\n- The components in this cluster collaborate by calling each other's methods to perform the aggregation.\n- The quality attribute of this cluster is to be scalable, as it can handle large amounts of data.\n- The technologies used in this cluster include Java, Maven, and JUnit.",
+  "algorithm": "ACDC",
+  "files": [
+    "lib/aggregate/DoubleValueSum.java",
+    "lib/aggregate/LongValueMax.java",
+    "lib/aggregate/LongValueMin.java",
+    "lib/aggregate/LongValueSum.java",
+    "lib/aggregate/StringValueMax.java",
+    "lib/aggregate/StringValueMin.java",
+    "lib/aggregate/UniqValueCount.java",
+    "lib/aggregate/UserDefinedValueAggregatorDescriptor.java",
+    "lib/aggregate/ValueAggregator.java",
+    "lib/aggregate/ValueAggregatorBaseDescriptor.java",
+    "lib/aggregate/ValueAggregatorCombiner.java",
+    "lib/aggregate/ValueAggregatorDescriptor.java",
+    "lib/aggregate/ValueAggregatorJob.java",
+    "lib/aggregate/ValueAggregatorJobBase.java",
+    "lib/aggregate/ValueAggregatorMapper.java",
+    "lib/aggregate/ValueAggregatorReducer.java",
+    "lib/aggregate/ValueHistogram.java"
+  ]
+}

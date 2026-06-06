@@ -1,0 +1,61 @@
+Week 4 - HCAG-style LLM-Based Architectural Recovery
+Algorithm: ARC
+Group 3 - Hadoop MapReduce Client Core
+Model: ibm-granite/granite-34b-code-instruct-8k
+Files analyzed: 332
+Clusters: 8
+Prompting method: zero-shot
+========================================================================
+
+Cluster 0 - MapReduce
+Files: 152
+Directories: 27
+Description words: 97
+Description: The MapReduce framework is a distributed processing paradigm used for processing large data sets. It consists of two main components: the Map component and the Reduce component. The Map component is responsible for processing input data and transforming it into a format that can be easily processed by the Reduce component. The Reduce component is responsible for performing the final processing and generating the desired output. The MapReduce framework follows the architectural pattern of the MapReduce framework, which is a distributed processing paradigm used for processing large data sets. The MapReduce framework consists of two main components:
+
+Cluster 1 - MapReduce Delegation Token Architecture
+Files: 10
+Directories: 6
+Description words: 84
+Description: The MapReduce delegation token architecture is responsible for managing and generating delegation tokens specific to MapReduce. The DelegationTokenIdentifier class extends the AbstractDelegationTokenIdentifier class and provides functionality for creating and managing these tokens. The DelegationTokenSecretManager class is responsible for creating a MapReduce specific delegation token secret manager, which is used to generate and accept the password for each token. The DelegationTokenSelector class extends the AbstractDelegationTokenSelector class and specializes it for MapReduce. This architecture ensures secure and efficient management of delegation tokens within the MapReduce framework.
+
+Cluster 2 - Cluster 2
+Files: 10
+Directories: 3
+Description words: 85
+Description: The cluster consists of two main components: a Utility class and a Worker class.
+The Utility class provides common utility methods for various purposes, while the Worker class collaborates with the Utility class to perform tasks.
+The architecture follows the Utility class pattern, which is a creational pattern that provides a central place for creating and storing utility objects.
+The Utility class pattern is used to achieve scalability, maintainability, and reusability of utility methods.
+The technologies used in this architecture include Java, Maven, and Git.
+
+Cluster 3 - Hadoop MapReduce Security Package
+Files: 55
+Directories: 18
+Description words: 72
+Description: The Hadoop MapReduce Security package provides classes for authentication and authorization in the Hadoop MapReduce framework. The core logic is contained in the UserGroupInformation class, which offers methods for authentication and authorization. The package also includes classes for authentication using tokens, such as the TokenSelector and Tokenizer classes. These classes depend on the classes in the org.apache.hadoop.mapreduce.security.token package. The package ensures scalability, maintainability, reliability, security, and performance.
+
+Cluster 4 - Hadoop MapReduce Architecture
+Files: 46
+Directories: 8
+Description words: 133
+Description: Hadoop MapReduce is a distributed processing framework that enables large-scale data processing tasks. It consists of two main components: the Map phase and the Reduce phase. The Map phase breaks down the input data into smaller chunks and processes them in parallel, while the Reduce phase aggregates the results from the Map phase and produces the final output. The MapReduce architecture is designed to scale horizontally, meaning that it can handle large volumes of data by adding more nodes to the cluster. It also provides fault tolerance, meaning that if a node fails, the system can automatically recover and continue processing the data. Additionally, Hadoop MapReduce supports a wide range of data formats, including text, sequence files, and Avro, and provides a rich set of APIs for developers to build custom processing logic.
+
+Cluster 5 - Hadoop MapReduce Architecture Abstraction
+Files: 30
+Directories: 3
+Description words: 92
+Description: The Hadoop MapReduce architecture consists of the JobTracker, TaskTrackers, and the Hadoop Distributed File System (HDFS). The JobTracker is responsible for scheduling and monitoring MapReduce jobs, while the TaskTrackers execute the tasks assigned by the JobTracker. HDFS is used for distributed storage and retrieval of data. The MapReduce framework follows a master-slave architecture, with the JobTracker acting as the master and the TaskTrackers acting as slaves. The communication between the components is facilitated by the Hadoop RPC mechanism. The MapReduce framework is designed to handle large-scale data processing tasks efficiently and scalably.
+
+Cluster 6 - DBSplitter
+Files: 9
+Directories: 3
+Description words: 50
+Description: The DBSplitter interface is implemented by classes in this directory to handle various data types. These classes collaborate with the DataDrivenDBInputFormat class to read input data from a database table and generate input splits for processing. The architecture ensures scalability, maintainability, and reliability by separating concerns and using appropriate technologies.
+
+Cluster 7 - MapReduce - Merge Manager
+Files: 20
+Directories: 9
+Description words: 105
+Description: The Merge Manager is a crucial component of the Hadoop MapReduce framework, responsible for managing the merging of map outputs during the shuffle and sort phase of a MapReduce job. It contains logic for merging in-memory map outputs, as well as logic for merging on-disk map outputs. The Merge Manager takes inputs in the form of map outputs, which can be either in-memory or on-disk, and produces outputs in the form of merged map outputs, which are written to disk. The Merge Manager depends on various classes and interfaces from the Apache Hadoop MapReduce framework, including MapOutputFile, RawKeyValueIterator, Reducer, CombineOutputCollector, Counters.Counter, CompressionCodec, and Progress.
+

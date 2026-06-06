@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 12,
+  "directory": "util",
+  "title": "util",
+  "description": "The util directory contains classes that are used by multiple other parts of the Hadoop system.\nThese classes include utility methods for configuration, logging, and other common tasks.\nThe classes in this directory are designed to be used as building blocks for other components of the system.\nThey are not intended to be used directly by end-users or developers.\nThe classes in this directory collaborate with each other to provide a set of common functionality that is shared across the system.\nThe architectural role of the util directory is to provide a set of reusable components that can be used by other parts of the system.\nThe pattern used in this directory is the utility pattern, which is a creational pattern that provides a set of static methods for creating objects.",
+  "summary": "TITLE: util\nDESCRIPTION: The util directory contains classes that are used by multiple other parts of the Hadoop system.\nThese classes include utility methods for configuration, logging, and other common tasks.\nThe classes in this directory are designed to be used as building blocks for other components of the system.\nThey are not intended to be used directly by end-users or developers.\nThe classes in this directory collaborate with each other to provide a set of common functionality that is shared across the system.\nThe architectural role of the util directory is to provide a set of reusable components that can be used by other parts of the system.\nThe pattern used in this directory is the utility pattern, which is a creational pattern that provides a set of static methods for creating objects.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ConfigUtil.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: util\n\nDESCRIPTION:\nThe util directory contains classes that are used by multiple other parts of the Hadoop system.\nThese classes include utility methods for configuration, logging, and other common tasks.\nThe classes in this directory are designed to be used as building blocks for other components of the system.\nThey are not intended to be used directly by end-users or developers.\nThe classes in this directory collaborate with each other to provide a set of common functionality that is shared across the system.\nThe architectural role of the util directory is to provide a set of reusable components that can be used by other parts of the system.\nThe pattern used in this directory is the utility pattern, which is a creational pattern that provides a set of static methods for creating objects."
+}

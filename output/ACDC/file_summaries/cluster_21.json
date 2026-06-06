@@ -1,0 +1,98 @@
+[
+  {
+    "algorithm": "ACDC",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.MarkableIterator",
+    "path": "MarkableIterator.java",
+    "file_name": "MarkableIterator.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code chunk is to provide a wrapper iterator class that implements the MarkableIteratorInterface.\n\nCORE LOGIC:\nThe key algorithms or processing patterns visible in this chunk are the implementation of the MarkableIteratorInterface methods, such as mark(), reset(), clearMark(), hasNext(), next(), and remove().\n\nINPUTS/OUTPUTS:\nThe data flowing in and out of this chunk is the input iterator, which must implement the MarkableIteratorInterface, and the output is the wrapped iterator that also implements the MarkableIteratorInterface.\n\nDEPENDENCIES:\nThe key imported, parent, or collaborator classes visible in this chunk are the MarkableIteratorInterface and the Iterator interface.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.MarkableIteratorInterface",
+    "path": "MarkableIteratorInterface.java",
+    "file_name": "MarkableIteratorInterface.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\n- Interface for a iterator that supports mark-reset functionality\n\nCORE LOGIC:\n- Mark can be called at any point during the iteration process\n- Reset will go back to the last record before the call to the previous mark\n\nINPUTS/OUTPUTS:\n- Data flowing in and out\n\nDEPENDENCIES:\n- Key imported, parent, or collaborator classes visible in this chunk",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.ReduceContext",
+    "path": "ReduceContext.java",
+    "file_name": "ReduceContext.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe context passed to the Reducer.\n\nCORE LOGIC:\nThe context passed to the Reducer.\n\nINPUTS/OUTPUTS:\nThe context passed to the Reducer.\n\nDEPENDENCIES:\nThe context passed to the Reducer.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.lib.input.TextInputFormat",
+    "path": "lib/input/TextInputFormat.java",
+    "file_name": "TextInputFormat.java",
+    "directory": "lib/input",
+    "summary": "KEY FUNCTIONALITY:\n- The main purpose of this chunk is to define the TextInputFormat class, which extends the FileInputFormat class.\n- It is used to read plain text files and break them into lines.\n\nCORE LOGIC:\n- The createRecordReader method is overridden to return a LineRecordReader, which is used to read the lines from the input file.\n- The isSplitable method is overridden to determine if the input file is splittable based on its compression codec.\n\nINPUTS/OUTPUTS:\n- The createRecordReader method takes an InputSplit and a TaskAttemptContext as input and returns a RecordReader.\n- The isSplitable method takes a JobContext and a Path as input and returns a boolean value.\n\nDEPENDENCIES:\n- The TextInputFormat class depends on the LineRecordReader class, which is used to read the lines from the input file.\n- It also depends on the CompressionCodecFactory class, which is used to determine the compression codec of the input file.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.HashPartitioner",
+    "path": "lib/partition/HashPartitioner.java",
+    "file_name": "HashPartitioner.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\n\nThe main purpose of this chunk of code is to define a class that extends the Partitioner class and implements a method to partition keys by their Object#hashCode().\n\nCORE LOGIC:\n\nThe core logic of this chunk of code is the implementation of the getPartition() method, which uses the Object#hashCode() method to generate a hash code for the key and then applies a modulo operation to determine the partition for the key-value pair.\n\nINPUTS/OUTPUTS:\n\nThe inputs to this chunk of code are the key, value, and numReduceTasks parameters passed to the getPartition() method. The output is the integer representing the partition for the key-value pair.\n\nDEPENDENCIES:\n\nThe dependencies of this chunk of code are the Partitioner class and the Object class, which are imported at the beginning of the file.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.task.JobContextImpl",
+    "path": "task/JobContextImpl.java",
+    "file_name": "JobContextImpl.java",
+    "directory": "task",
+    "summary": "KEY FUNCTIONALITY:\n\nThe JobContextImpl class provides a read-only view of a MapReduce job, including its configuration, input format, output format, mapper, combiner, reducer, partitioner, and other job-level information.\n\nCORE LOGIC:\n\nThe class contains methods to retrieve various job configuration parameters, such as the number of reduce tasks, the job name, the input format class, the mapper class, the combiner class, the reducer class, the output format class, the partitioner class, the raw key comparator, the combiner key grouping comparator, the grouping comparator, the job setup and cleanup needed status, the task cleanup needed status, the symlink status, the cache archives, cache files, local cache archives, local cache files, archive timestamps, file timestamps, file class paths, archive class paths, max map attempts, max reduce attempts, task profiling status, profiler configuration arguments, task profiling range, and user.\n\nINPUTS/OUTPUTS:\n\nThe class provides methods to retrieve the job configuration, job ID, and user credentials.\n\nDEPENDENCIES:\n\nThe class depends on the org.apache.hadoop.mapred.JobConf class for job configuration, the JobID class for job ID, and the Credentials class for user credentials.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.task.ReduceContextImpl",
+    "path": "task/ReduceContextImpl.java",
+    "file_name": "ReduceContextImpl.java",
+    "directory": "task",
+    "summary": "KEY FUNCTIONALITY:\nThe ReduceContextImpl class is a context object that is passed to the Reducer. It provides access to the input data, such as key-value pairs, and allows the Reducer to write output data.\n\nCORE LOGIC:\nThe class includes methods for iterating over the input data, such as nextKey() and nextKeyValue(), and for accessing the current key and value. It also includes a ValueIterable class that provides an iterable interface for iterating over the values for the current key.\n\nINPUTS/OUTPUTS:\nThe class takes input from a RawKeyValueIterator, which provides access to the key-value pairs to be processed. It also takes input from a Configuration object, which provides configuration parameters for the task. The output is written to a RecordWriter, which is responsible for writing the output data to a storage system.\n\nDEPENDENCIES:\nThe class depends on the RawKeyValueIterator, Configuration, RecordWriter, and other classes and interfaces from the Apache Hadoop MapReduce framework.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 21,
+    "class": "org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl",
+    "path": "task/TaskAttemptContextImpl.java",
+    "file_name": "TaskAttemptContextImpl.java",
+    "directory": "task",
+    "summary": "KEY FUNCTIONALITY:\n- The TaskAttemptContextImpl class is a context for task attempts, providing information and functionality related to the task attempt.\n\nCORE LOGIC:\n- The class includes methods for getting the unique name for the task attempt, getting the last set status message, reporting progress, setting the current status of the task, and getting the progress of the task.\n\nINPUTS/OUTPUTS:\n- The class takes a Configuration object and a TaskAttemptID object as inputs in its constructor. It also has methods for getting the task attempt ID, status, and progress.\n\nDEPENDENCIES:\n- The class depends on the Configuration, TaskAttemptID, StatusReporter, Counter, and Counters classes. It also depends on the JobContextImpl class.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 3,
+    "class": "org.apache.hadoop.mapreduce.ContextFactory",
+    "path": "ContextFactory.java",
+    "file_name": "ContextFactory.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThe ContextFactory class is a factory to allow applications to deal with inconsistencies between MapReduce Context Objects API between hadoop-0.20 and later versions.\n\nCORE LOGIC:\nThe class provides methods to clone a JobContext or TaskAttemptContext with a new configuration, and to copy a custom WrappedMapper.Context, optionally replacing the input and output.\n\nINPUTS/OUTPUTS:\nThe cloneContext method takes a JobContext or TaskAttemptContext object and a new configuration as input, and returns a new context object. The cloneMapContext method takes a MapContext object, a new configuration, and optional RecordReader and RecordWriter objects as input, and returns a new context object.\n\nDEPENDENCIES:\nThe class depends on the Configuration, JobID, TaskAttemptID, RecordReader, RecordWriter, OutputCommitter, StatusReporter, and InputSplit classes. It also uses reflection to access private fields and invoke private constructors.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 3,
+    "class": "org.apache.hadoop.mapreduce.lib.map.MultithreadedMapper",
+    "path": "lib/map/MultithreadedMapper.java",
+    "file_name": "MultithreadedMapper.java",
+    "directory": "lib/map",
+    "summary": "KEY FUNCTIONALITY:\n\nMultithreaded implementation for org.apache.hadoop.mapreduce.Mapper.\n\nCORE LOGIC:\n\nThe Map-Reduce job has to be configured with the mapper to use via setMapperClass(Job, Class) and the number of thread the thread-pool can use with the getNumberOfThreads(JobContext) method. The default value is 10 threads.\n\nINPUTS/OUTPUTS:\n\nThe application's maps using a thread pool.\n\nDEPENDENCIES:\n\norg.apache.hadoop.mapreduce.Mapper, org.apache.hadoop.mapreduce.lib.map.MultithreadedMapper, org.apache.hadoop.mapreduce.RecordReader, org.apache.hadoop.mapreduce.RecordWriter, org.apache.hadoop.mapreduce.StatusReporter, org.apache.hadoop.mapreduce.task.MapContextImpl, org.apache.hadoop.mapreduce.task.MapContextImpl, org.apache.hadoop.mapreduce.task.MapContextImpl, org.apache.hadoop.mapreduce.task.MapContextImpl, org.apache.hadoop.mapreduce.task.MapContextImpl, org.apache.hadoop.mapreduce.task.MapContextImpl, org.apache.hadoop.mapreduce.task.MapContextImpl, org.apache.hadoop.mapreduce.task.MapContextImpl, org.apache.hadoop.mapreduce.task.MapContextImpl, org.apache.hadoop.mapreduce.task.MapContextImpl, org.apache.hadoop.mapreduce.task.MapContextImpl, org.apache.hadoop.mapreduce.task.MapContextImpl, org.apache.hadoop.mapreduce.task.MapContextImpl, org.apache.hadoop.mapreduce.task.MapContextImpl, org.apache.hadoop.mapreduce.task.MapContextImpl, org.apache.hadoop.mapreduce.task.MapContextImpl, org.apache.hadoop.mapreduce.task.MapContextImpl, org.apache.hadoop.mapreduce.task.MapContextImpl, org.apache.hadoop.mapreduce.task.MapContextImpl, org.apache.hadoop.mapreduce.task.MapContextImpl, org.apache.hadoop.mapreduce.task.MapContextImpl, org.apache.hadoop.mapreduce.task.MapContextImpl, org.apache.hadoop",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 3,
+    "class": "org.apache.hadoop.mapreduce.task.MapContextImpl",
+    "path": "task/MapContextImpl.java",
+    "file_name": "MapContextImpl.java",
+    "directory": "task",
+    "summary": "KEY FUNCTIONALITY:\nThe MapContextImpl class is a context object that is given to the Mapper.\n\nCORE LOGIC:\nThe MapContextImpl class provides access to the input split, current key and value, and methods for reading the next key-value pair.\n\nINPUTS/OUTPUTS:\nThe MapContextImpl class takes an InputSplit, RecordReader, RecordWriter, OutputCommitter, StatusReporter, and Configuration as input parameters. It provides methods for getting the input split, current key and value, and reading the next key-value pair.\n\nDEPENDENCIES:\nThe MapContextImpl class depends on the RecordReader, InputSplit, RecordWriter, OutputCommitter, StatusReporter, and Configuration classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 3,
+    "class": "org.apache.hadoop.mapreduce.task.ReduceContextImpl",
+    "path": "task/ReduceContextImpl.java",
+    "file_name": "ReduceContextImpl.java",
+    "directory": "task",
+    "summary": "KEY FUNCTIONALITY:\nThe ReduceContextImpl class is a context object that is passed to the Reducer. It provides access to the input data, such as key-value pairs, and allows the Reducer to write output data.\n\nCORE LOGIC:\nThe class includes methods for iterating over the input data, such as nextKey() and nextKeyValue(), and for accessing the current key and value. It also includes a ValueIterable class that provides an iterable interface for iterating over the values for the current key.\n\nINPUTS/OUTPUTS:\nThe class takes input from a RawKeyValueIterator, which provides access to the key-value pairs to be processed. It also takes input from a Configuration object, which provides configuration parameters for the task. The output is written to a RecordWriter, which is responsible for writing the output data to a storage system.\n\nDEPENDENCIES:\nThe class depends on the RawKeyValueIterator, Configuration, RecordWriter, and other classes and interfaces from the Apache Hadoop MapReduce framework.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 3,
+    "class": "org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl",
+    "path": "task/TaskAttemptContextImpl.java",
+    "file_name": "TaskAttemptContextImpl.java",
+    "directory": "task",
+    "summary": "KEY FUNCTIONALITY:\n- The TaskAttemptContextImpl class is a context for task attempts, providing information and functionality related to the task attempt.\n\nCORE LOGIC:\n- The class includes methods for getting the unique name for the task attempt, getting the last set status message, reporting progress, setting the current status of the task, and getting the progress of the task.\n\nINPUTS/OUTPUTS:\n- The class takes a Configuration object and a TaskAttemptID object as inputs in its constructor. It also has methods for getting the task attempt ID, status, and progress.\n\nDEPENDENCIES:\n- The class depends on the Configuration, TaskAttemptID, StatusReporter, Counter, and Counters classes. It also depends on the JobContextImpl class.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

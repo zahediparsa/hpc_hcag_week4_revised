@@ -1,0 +1,24 @@
+{
+  "cluster_id": 16,
+  "title": "Hadoop MapReduce Architecture",
+  "description": "Hadoop MapReduce is a software framework for easily writing applications that process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes). It consists of two main modules: the Hadoop Common module, which includes the distributed file system (HDFS) and the MapReduce framework, and the Hadoop YARN (Yet Another Resource Negotiator) module, which provides the cluster resource manager and job scheduler. The MapReduce framework consists of two main components: the Map component and the Reduce component. The Map component takes input data, applies a user-defined function to it, and produces a set of intermediate key-value pairs. The Reduce component then takes these intermediate key-value pairs, groups them by key, and applies a user-defined function to them, producing the final output. The system is designed to scale up from single servers to thousands of machines, each of which may have multiple CPU cores. It is fault-tolerant, meaning that.",
+  "description_word_count": 150,
+  "number_of_files": 4,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nHadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes). The framework handles all the low-level details of distributed computing, such as reliable distributed file system, job scheduling, fault-tolerance, data-locality, and load- balancing.\n\nThe system is divided into two main modules: the Hadoop Common module, which includes the distributed file system (HDFS) and the MapReduce framework, and the Hadoop YARN (Yet Another Resource Negotiator) module, which provides the cluster resource manager and job scheduler.\n\nThe MapReduce framework consists of two main components: the Map component and the Reduce component. The Map component takes input data, applies a user-defined function to it, and produces a set of intermediate key-value pairs. The Reduce component then takes these intermediate key-value pairs, groups them by key, and applies a user-defined function to them, producing the final output.\n\nThe system is designed to scale up from single servers to thousands of machines, each of which may have multiple CPU cores. It is fault-tolerant, meaning that if any node fails, the system can continue to operate. It also provides data locality, meaning that data is stored on the same node as the task that will process it, which can improve performance.\n\nThe system is written in Java and uses the Hadoop Distributed File System (HDFS) for distributed storage of data. It is designed to be scalable, reliable, and fault-tolerant, and is widely used in industry for large-scale data processing.",
+  "algorithm": "LIMBO",
+  "files": [
+    "Mapper.java",
+    "lib/map/InverseMapper.java",
+    "lib/map/RegexMapper.java",
+    "lib/map/TokenCounterMapper.java"
+  ]
+}

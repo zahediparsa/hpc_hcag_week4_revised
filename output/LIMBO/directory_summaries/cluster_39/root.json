@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 39,
+  "directory": ".",
+  "title": "JobHistory Directory Abstraction",
+  "description": "The JobHistory directory is responsible for storing job-related information and events. It collaborates with other files and directories to provide a comprehensive view of job execution and status. The directory follows the Singleton pattern, ensuring that only one instance of the directory exists. It uses the Avro data serialization framework to store job-related data in a structured format. The directory is designed to be scalable and fault-tolerant, allowing for efficient retrieval and analysis of job data.",
+  "summary": "TITLE: JobHistory Directory Abstraction\nDESCRIPTION: The JobHistory directory is responsible for storing job-related information and events. It collaborates with other files and directories to provide a comprehensive view of job execution and status. The directory follows the Singleton pattern, ensuring that only one instance of the directory exists. It uses the Avro data serialization framework to store job-related data in a structured format. The directory is designed to be scalable and fault-tolerant, allowing for efficient retrieval and analysis of job data.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "jobhistory"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobHistory Directory Abstraction\n\nDESCRIPTION:\nThe JobHistory directory is responsible for storing job-related information and events. It collaborates with other files and directories to provide a comprehensive view of job execution and status. The directory follows the Singleton pattern, ensuring that only one instance of the directory exists. It uses the Avro data serialization framework to store job-related data in a structured format. The directory is designed to be scalable and fault-tolerant, allowing for efficient retrieval and analysis of job data."
+}

@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "lib/output/committer/manifest/stages",
+  "title": "MapReduce Committer Manifest Stages",
+  "description": "This directory contains classes related to the manifest committer in Apache Hadoop MapReduce. The classes in this directory collaborate to handle the committing of job or task stages. The classes depend on the FunctionRaisingIOE and IOStatisticsSource interfaces.",
+  "summary": "TITLE: MapReduce Committer Manifest Stages\nDESCRIPTION: This directory contains classes related to the manifest committer in Apache Hadoop MapReduce. The classes in this directory collaborate to handle the committing of job or task stages. The classes depend on the FunctionRaisingIOE and IOStatisticsSource interfaces.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobOrTaskStage.java"
+    },
+    {
+      "type": "file",
+      "name": "StageEventCallbacks.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Committer Manifest Stages\n\nDESCRIPTION:\nThis directory contains classes related to the manifest committer in Apache Hadoop MapReduce. The classes in this directory collaborate to handle the committing of job or task stages. The classes depend on the FunctionRaisingIOE and IOStatisticsSource interfaces."
+}

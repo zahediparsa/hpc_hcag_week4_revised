@@ -1,0 +1,51 @@
+{
+  "cluster_id": 2,
+  "title": "Hadoop MapReduce Architecture",
+  "description": "The Hadoop MapReduce architecture is a distributed processing framework that is designed to process large data sets across clusters of computers. It consists of two main components: the JobTracker and the TaskTracker. The JobTracker is responsible for scheduling and monitoring the execution of jobs, while the TaskTracker is responsible for executing the tasks assigned by the JobTracker. The architecture is scalable, fault-tolerant, and provides high-throughput processing of data. It uses a master-slave architecture, where the master node (JobTracker) coordinates the execution of tasks across multiple slave nodes (TaskTrackers). The architecture also supports a pluggable input/output (I/O) layer, which allows it to work with different data sources and storage systems. The architecture is designed to be efficient, reliable, and easy to use, making it a popular choice for processing large-scale data sets in a distributed environment.",
+  "description_word_count": 137,
+  "number_of_files": 31,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is a distributed processing framework that is designed to process large data sets across clusters of computers. It consists of two main components: the JobTracker and the TaskTracker. The JobTracker is responsible for scheduling and monitoring the execution of jobs, while the TaskTracker is responsible for executing the tasks assigned by the JobTracker. The architecture is scalable, fault-tolerant, and provides high-throughput processing of data. It uses a master-slave architecture, where the master node (JobTracker) coordinates the execution of tasks across multiple slave nodes (TaskTrackers). The architecture also supports a pluggable input/output (I/O) layer, which allows it to work with different data sources and storage systems. The architecture is designed to be efficient, reliable, and easy to use, making it a popular choice for processing large-scale data sets in a distributed environment.",
+  "algorithm": "ACDC",
+  "files": [
+    "jobhistory/AMStartedEvent.java",
+    "jobhistory/AvroArrayUtils.java",
+    "jobhistory/EventReader.java",
+    "jobhistory/EventWriter.java",
+    "jobhistory/HistoryEvent.java",
+    "jobhistory/HistoryEventHandler.java",
+    "jobhistory/HistoryViewer.java",
+    "jobhistory/HistoryViewerPrinter.java",
+    "jobhistory/HumanReadableHistoryViewerPrinter.java",
+    "jobhistory/JSONHistoryViewerPrinter.java",
+    "jobhistory/JobFinishedEvent.java",
+    "jobhistory/JobHistoryParser.java",
+    "jobhistory/JobInfoChangeEvent.java",
+    "jobhistory/JobInitedEvent.java",
+    "jobhistory/JobPriorityChangeEvent.java",
+    "jobhistory/JobQueueChangeEvent.java",
+    "jobhistory/JobStatusChangedEvent.java",
+    "jobhistory/JobSubmittedEvent.java",
+    "jobhistory/JobUnsuccessfulCompletionEvent.java",
+    "jobhistory/MapAttemptFinishedEvent.java",
+    "jobhistory/NormalizedResourceEvent.java",
+    "jobhistory/ReduceAttemptFinishedEvent.java",
+    "jobhistory/TaskAttemptFinishedEvent.java",
+    "jobhistory/TaskAttemptStartedEvent.java",
+    "jobhistory/TaskAttemptUnsuccessfulCompletionEvent.java",
+    "jobhistory/TaskFailedEvent.java",
+    "jobhistory/TaskFinishedEvent.java",
+    "jobhistory/TaskStartedEvent.java",
+    "jobhistory/TaskUpdatedEvent.java",
+    "util/HostUtil.java",
+    "util/JobHistoryEventUtils.java"
+  ]
+}

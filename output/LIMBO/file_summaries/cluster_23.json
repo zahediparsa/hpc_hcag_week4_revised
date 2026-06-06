@@ -1,0 +1,38 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 23,
+    "class": "org.apache.hadoop.mapreduce.StatusReporter",
+    "path": "StatusReporter.java",
+    "file_name": "StatusReporter.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\nThis class provides methods for reporting status and progress to the system.\n\nCORE LOGIC:\nThe class provides methods for reporting status and progress to the system.\n\nINPUTS/OUTPUTS:\nThe class provides methods for reporting status and progress to the system.\n\nDEPENDENCIES:\nThe class provides methods for reporting status and progress to the system.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 23,
+    "class": "org.apache.hadoop.mapreduce.counters.AbstractCounter",
+    "path": "counters/AbstractCounter.java",
+    "file_name": "AbstractCounter.java",
+    "directory": "counters",
+    "summary": "KEY FUNCTIONALITY:\n- The class provides a basic implementation of the Counter interface.\n\nCORE LOGIC:\n- The class implements the Counter interface and provides methods to set and get the name, display name, and value of the counter.\n\nINPUTS/OUTPUTS:\n- The class has methods to set and get the name, display name, and value of the counter.\n\nDEPENDENCIES:\n- The class does not depend on any other classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 23,
+    "class": "org.apache.hadoop.mapreduce.counters.CounterGroupBase",
+    "path": "counters/CounterGroupBase.java",
+    "file_name": "CounterGroupBase.java",
+    "directory": "counters",
+    "summary": "KEY FUNCTIONALITY:\n- The CounterGroupBase interface provides a common interface for counter groups in Apache Hadoop MapReduce.\n\nCORE LOGIC:\n- The interface includes methods for getting and setting the name and display name of the group, adding and finding counters, and incrementing all counters by a group of counters.\n\nINPUTS/OUTPUTS:\n- The interface includes methods for adding and finding counters, which take a name, display name, and value as input, and return the counter that was added or found.\n\nDEPENDENCIES:\n- The interface depends on the Counter interface and the Writable interface.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

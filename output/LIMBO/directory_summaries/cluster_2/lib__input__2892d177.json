@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "lib/input",
+  "title": "lib/input",
+  "description": "The lib/input directory is responsible for handling the input data for the Hadoop MapReduce jobs. It provides a way to read and process the input data in a distributed manner. The directory contains two classes, InvalidInputException and SplitLineReader, which collaborate to handle and process the input data.\n\nThe InvalidInputException class is used to handle and report a list of problems with the input data. It provides a way to wrap a list of problems with the input, so that the user can get a list of problems together instead of finding and fixing them one by one.\n\nThe SplitLineReader class is used to read data from an input stream and split it into records based on a record delimiter. It uses the super class LineReader to read data and split it into records. The class takes an input stream and a record delimiter as input and provides a method to get the complete list of records.\n\nThe classes collaborate by using the InvalidInputException class to handle and report problems with the input data, and the SplitLineReader class to read and process the input data. The architectural role of this directory is to provide a way to handle and process the input data in a distributed manner, using the MapReduce pattern.",
+  "summary": "TITLE: lib/input\nDESCRIPTION: The lib/input directory is responsible for handling the input data for the Hadoop MapReduce jobs. It provides a way to read and process the input data in a distributed manner. The directory contains two classes, InvalidInputException and SplitLineReader, which collaborate to handle and process the input data.\n\nThe InvalidInputException class is used to handle and report a list of problems with the input data. It provides a way to wrap a list of problems with the input, so that the user can get a list of problems together instead of finding and fixing them one by one.\n\nThe SplitLineReader class is used to read data from an input stream and split it into records based on a record delimiter. It uses the super class LineReader to read data and split it into records. The class takes an input stream and a record delimiter as input and provides a method to get the complete list of records.\n\nThe classes collaborate by using the InvalidInputException class to handle and report problems with the input data, and the SplitLineReader class to read and process the input data. The architectural role of this directory is to provide a way to handle and process the input data in a distributed manner, using the MapReduce pattern.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "InvalidInputException.java"
+    },
+    {
+      "type": "file",
+      "name": "SplitLineReader.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/input\n\nDESCRIPTION:\nThe lib/input directory is responsible for handling the input data for the Hadoop MapReduce jobs. It provides a way to read and process the input data in a distributed manner. The directory contains two classes, InvalidInputException and SplitLineReader, which collaborate to handle and process the input data.\n\nThe InvalidInputException class is used to handle and report a list of problems with the input data. It provides a way to wrap a list of problems with the input, so that the user can get a list of problems together instead of finding and fixing them one by one.\n\nThe SplitLineReader class is used to read data from an input stream and split it into records based on a record delimiter. It uses the super class LineReader to read data and split it into records. The class takes an input stream and a record delimiter as input and provides a method to get the complete list of records.\n\nThe classes collaborate by using the InvalidInputException class to handle and report problems with the input data, and the SplitLineReader class to read and process the input data. The architectural role of this directory is to provide a way to handle and process the input data in a distributed manner, using the MapReduce pattern."
+}

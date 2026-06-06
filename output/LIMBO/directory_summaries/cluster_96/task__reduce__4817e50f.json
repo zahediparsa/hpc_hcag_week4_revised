@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 96,
+  "directory": "task/reduce",
+  "title": "MergeThread",
+  "description": "MergeThread is a thread that merges segments of data. It waits for notification to start the merge, then picks up the inputs to merge and merges them using the merge() method. The merged result is output. MergeThread depends on the MergeManagerImpl class to manage the merging process.",
+  "summary": "TITLE: MergeThread\nDESCRIPTION: MergeThread is a thread that merges segments of data. It waits for notification to start the merge, then picks up the inputs to merge and merges them using the merge() method. The merged result is output. MergeThread depends on the MergeManagerImpl class to manage the merging process.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "MergeThread.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MergeThread\n\nDESCRIPTION:\nMergeThread is a thread that merges segments of data. It waits for notification to start the merge, then picks up the inputs to merge and merges them using the merge() method. The merged result is output. MergeThread depends on the MergeManagerImpl class to manage the merging process."
+}

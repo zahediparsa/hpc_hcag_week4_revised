@@ -1,0 +1,28 @@
+{
+  "cluster_id": 50,
+  "title": "lib/aggregate",
+  "description": "The lib/aggregate directory contains classes that implement value aggregators. Value aggregators are used to perform various operations on sequences of values, such as summing, finding minimum and maximum values, and computing histograms. The classes in this directory collaborate to provide a comprehensive set of functionality for value aggregation. The architectural role of the lib/aggregate directory is to provide a reusable and extensible framework for value aggregation. It follows the principles of the Apache Hadoop MapReduce library, which is designed to process large datasets in a distributed environment. The classes in this directory can be used as building blocks for more complex data processing tasks, and they can be easily extended to support additional types of values or aggregation operations.",
+  "description_word_count": 121,
+  "number_of_files": 8,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/aggregate\n\nDESCRIPTION:\nThe lib/aggregate directory contains classes that implement value aggregators. Value aggregators are used to perform various operations on sequences of values, such as summing, finding minimum and maximum values, and computing histograms. The classes in this directory collaborate to provide a comprehensive set of functionality for value aggregation. The architectural role of the lib/aggregate directory is to provide a reusable and extensible framework for value aggregation. It follows the principles of the Apache Hadoop MapReduce library, which is designed to process large datasets in a distributed environment. The classes in this directory can be used as building blocks for more complex data processing tasks, and they can be easily extended to support additional types of values or aggregation operations.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/aggregate/DoubleValueSum.java",
+    "lib/aggregate/LongValueMax.java",
+    "lib/aggregate/LongValueMin.java",
+    "lib/aggregate/LongValueSum.java",
+    "lib/aggregate/StringValueMax.java",
+    "lib/aggregate/StringValueMin.java",
+    "lib/aggregate/UniqValueCount.java",
+    "lib/aggregate/ValueHistogram.java"
+  ]
+}

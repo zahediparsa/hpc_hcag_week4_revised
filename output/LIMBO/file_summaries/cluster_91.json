@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 91,
+    "class": "org.apache.hadoop.mapreduce.security.token.JobTokenSecretManager",
+    "path": "security/token/JobTokenSecretManager.java",
+    "file_name": "JobTokenSecretManager.java",
+    "directory": "security/token",
+    "summary": "KEY FUNCTIONALITY:\n- SecretManager for job token\n- Can be used to cache generated job tokens\n\nCORE LOGIC:\n- Computes the HMAC hash of a message using a key\n- Creates a new password/secret for a given job token identifier\n- Caches job tokens for fast access\n\nINPUTS/OUTPUTS:\n- Input: job token identifier, jobId, job token\n- Output: token password/secret as SecretKey, token password/secret as byte[]\n\nDEPENDENCIES:\n- Imported classes: SecretManager, Token, SecretKey, JobTokenIdentifier\n- Parent class: None\n- Collaborator classes: None",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 91,
+    "class": "org.apache.hadoop.mapreduce.security.token.JobTokenSelector",
+    "path": "security/token/JobTokenSelector.java",
+    "file_name": "JobTokenSelector.java",
+    "directory": "security/token",
+    "summary": "KEY FUNCTIONALITY:\nThis code chunk implements a TokenSelector that looks through tokens to find the first job token that matches the service and returns it.\n\nCORE LOGIC:\nThe selectToken method takes a service and a collection of tokens as input. It iterates through the tokens and checks if the token's kind is JobTokenIdentifier.KIND_NAME and if the service matches the token's service. If a match is found, the method returns the token.\n\nINPUTS/OUTPUTS:\nThe selectToken method takes a Text service and a Collection of Token<? extends TokenIdentifier> tokens as input. It returns a Token<JobTokenIdentifier> that matches the service.\n\nDEPENDENCIES:\nThis code chunk depends on the JobTokenIdentifier class from the org.apache.hadoop.mapreduce.security.token package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

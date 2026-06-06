@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": ".",
+  "title": "Util",
+  "description": "This directory contains helper classes for various purposes.\nThe classes collaborate by sharing common utility methods.\nThe directory follows the Utility class pattern.",
+  "summary": "TITLE: Util\nDESCRIPTION: This directory contains helper classes for various purposes.\nThe classes collaborate by sharing common utility methods.\nThe directory follows the Utility class pattern.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "checkpoint"
+    },
+    {
+      "type": "directory",
+      "name": "util"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Util\n\nDESCRIPTION: This directory contains helper classes for various purposes.\nThe classes collaborate by sharing common utility methods.\nThe directory follows the Utility class pattern."
+}

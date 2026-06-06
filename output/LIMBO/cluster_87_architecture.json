@@ -1,0 +1,24 @@
+{
+  "cluster_id": 87,
+  "title": "Hadoop MapReduce Architecture",
+  "description": "The Hadoop MapReduce architecture is a distributed processing framework that enables the processing of large data sets across clusters of computers. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. The architecture consists of a master node and multiple slave nodes, with the master node coordinating the tasks and the slave nodes executing them. The master node also manages the distributed file system, which is used to store the data and intermediate results. The MapReduce framework provides a programming model that allows developers to write map and reduce functions, which are then executed by the framework on the distributed cluster. The map function is responsible for processing the input data and generating intermediate key-value pairs, while the reduce function is responsible for aggregating the intermediate results and producing the final output. The architecture also supports fault tolerance and load balancing.",
+  "description_word_count": 150,
+  "number_of_files": 4,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is a distributed processing framework that allows for the processing of large data sets across clusters of computers. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. The architecture consists of a master node and multiple slave nodes, with the master node coordinating the tasks and the slave nodes executing them. The master node also manages the distributed file system, which is used to store the data and intermediate results. The MapReduce framework provides a programming model that allows developers to write map and reduce functions, which are then executed by the framework on the distributed cluster. The map function is responsible for processing the input data and generating intermediate key-value pairs, while the reduce function is responsible for aggregating the intermediate results and producing the final output. The architecture also supports fault tolerance and load balancing, ensuring that the processing is reliable and efficient.",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/partition/KeyFieldBasedComparator.java",
+    "lib/partition/KeyFieldBasedPartitioner.java",
+    "lib/partition/KeyFieldHelper.java",
+    "lib/partition/TotalOrderPartitioner.java"
+  ]
+}

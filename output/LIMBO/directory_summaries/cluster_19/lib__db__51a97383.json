@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 19,
+  "directory": "lib/db",
+  "title": "DBOutputFormat",
+  "description": "DBOutputFormat is an OutputFormat that sends the reduce output to a SQL table. It accepts <key,value> pairs, where key has a type extending DBWritable. The returned RecordWriter writes only the key to the database with a batch SQL query.",
+  "summary": "TITLE: DBOutputFormat\nDESCRIPTION: DBOutputFormat is an OutputFormat that sends the reduce output to a SQL table. It accepts <key,value> pairs, where key has a type extending DBWritable. The returned RecordWriter writes only the key to the database with a batch SQL query.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "DBOutputFormat.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: DBOutputFormat\n\nDESCRIPTION:\nDBOutputFormat is an OutputFormat that sends the reduce output to a SQL table. It accepts <key,value> pairs, where key has a type extending DBWritable. The returned RecordWriter writes only the key to the database with a batch SQL query."
+}

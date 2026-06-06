@@ -1,0 +1,24 @@
+{
+  "cluster_id": 1,
+  "title": "Hadoop MapReduce Architecture",
+  "description": "The Hadoop MapReduce architecture is a distributed processing framework that is designed to process large data sets across clusters of computers. It is composed of two main components: the Map component and the Reduce component. The Map component breaks down the input data into smaller chunks and applies a user-defined function to each chunk. The Reduce component then aggregates the results from the Map component and produces the final output. The architecture is scalable, fault-tolerant, and provides a high degree of flexibility and extensibility. It is built on top of the Hadoop Distributed File System (HDFS) and uses the Java programming language.",
+  "description_word_count": 102,
+  "number_of_files": 4,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is a distributed processing framework that is designed to process large data sets across clusters of computers. It is composed of two main components: the Map component and the Reduce component. The Map component breaks down the input data into smaller chunks and applies a user-defined function to each chunk. The Reduce component then aggregates the results from the Map component and produces the final output. The architecture is scalable, fault-tolerant, and provides a high degree of flexibility and extensibility. It is built on top of the Hadoop Distributed File System (HDFS) and uses the Java programming language.",
+  "algorithm": "LIMBO",
+  "files": [
+    "Cluster.java",
+    "Job.java",
+    "protocol/ClientProtocol.java",
+    "tools/CLI.java"
+  ]
+}

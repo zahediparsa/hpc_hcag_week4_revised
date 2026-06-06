@@ -1,0 +1,66 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "lib/output",
+  "title": "",
+  "description": "Cluster: 0\nDirectory: lib/output\n\n responsibility:\n- The responsibility of this directory is to provide classes and interfaces for writing output data in various formats.\n- It provides a way to control the format of the output data and to handle the committing and aborting of the output.\n\ncollaboration:\n- The classes in this directory collaborate to provide different output formats, such as text, sequence files, and map files.\n- They also collaborate to handle the committing and aborting of the output data.\n\narchitectural role or pattern:\n- The architectural role of this directory is to provide a way to control the output format and to handle the committing and aborting of the output data.\n- It follows the pattern of the factory method pattern, where each output format has a corresponding OutputFormat class that creates a RecordWriter for writing the output data.\n\n- The classes in this directory collaborate to provide different output formats, such as text, sequence files, and map files.\n- They also collaborate to handle the committing and aborting of the output data.\n\n- The architectural role of this directory is to provide a way to control the output format and to handle the committing and aborting of the output data.\n- It follows the pattern of the factory method pattern, where each output format has a corresponding OutputFormat class that creates a RecordWriter for writing the output data.",
+  "summary": "TITLE: \nDESCRIPTION: Cluster: 0\nDirectory: lib/output\n\n responsibility:\n- The responsibility of this directory is to provide classes and interfaces for writing output data in various formats.\n- It provides a way to control the format of the output data and to handle the committing and aborting of the output.\n\ncollaboration:\n- The classes in this directory collaborate to provide different output formats, such as text, sequence files, and map files.\n- They also collaborate to handle the committing and aborting of the output data.\n\narchitectural role or pattern:\n- The architectural role of this directory is to provide a way to control the output format and to handle the committing and aborting of the output data.\n- It follows the pattern of the factory method pattern, where each output format has a corresponding OutputFormat class that creates a RecordWriter for writing the output data.\n\n- The classes in this directory collaborate to provide different output formats, such as text, sequence files, and map files.\n- They also collaborate to handle the committing and aborting of the output data.\n\n- The architectural role of this directory is to provide a way to control the output format and to handle the committing and aborting of the output data.\n- It follows the pattern of the factory method pattern, where each output format has a corresponding OutputFormat class that creates a RecordWriter for writing the output data.",
+  "number_of_children": 13,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "BindingPathOutputCommitter.java"
+    },
+    {
+      "type": "file",
+      "name": "FileOutputCommitter.java"
+    },
+    {
+      "type": "file",
+      "name": "FileOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "FilterOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "LazyOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "MapFileOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "MultipleOutputs.java"
+    },
+    {
+      "type": "file",
+      "name": "NullOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "PartialFileOutputCommitter.java"
+    },
+    {
+      "type": "file",
+      "name": "PartialOutputCommitter.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileAsBinaryOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "TextOutputFormat.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "Cluster: 0\nDirectory: lib/output\n\n responsibility:\n- The responsibility of this directory is to provide classes and interfaces for writing output data in various formats.\n- It provides a way to control the format of the output data and to handle the committing and aborting of the output.\n\ncollaboration:\n- The classes in this directory collaborate to provide different output formats, such as text, sequence files, and map files.\n- They also collaborate to handle the committing and aborting of the output data.\n\narchitectural role or pattern:\n- The architectural role of this directory is to provide a way to control the output format and to handle the committing and aborting of the output data.\n- It follows the pattern of the factory method pattern, where each output format has a corresponding OutputFormat class that creates a RecordWriter for writing the output data.\n\n- The classes in this directory collaborate to provide different output formats, such as text, sequence files, and map files.\n- They also collaborate to handle the committing and aborting of the output data.\n\n- The architectural role of this directory is to provide a way to control the output format and to handle the committing and aborting of the output data.\n- It follows the pattern of the factory method pattern, where each output format has a corresponding OutputFormat class that creates a RecordWriter for writing the output data."
+}

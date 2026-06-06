@@ -1,0 +1,29 @@
+{
+  "cluster_id": 6,
+  "title": "DBSplitter",
+  "description": "The DBSplitter interface is implemented by classes in this directory to handle various data types. These classes collaborate with the DataDrivenDBInputFormat class to read input data from a database table and generate input splits for processing. The architecture ensures scalability, maintainability, and reliability by separating concerns and using appropriate technologies.",
+  "description_word_count": 50,
+  "number_of_files": 9,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: DBSplitter\n\nDESCRIPTION:\nThe DBSplitter interface is implemented by classes in this directory to handle various data types. These classes collaborate with the DataDrivenDBInputFormat class to read input data from a database table and generate input splits for processing. The architecture ensures scalability, maintainability, and reliability by separating concerns and using appropriate technologies.",
+  "algorithm": "ARC",
+  "files": [
+    "lib/db/BigDecimalSplitter.java",
+    "lib/db/BooleanSplitter.java",
+    "lib/db/DBSplitter.java",
+    "lib/db/DateSplitter.java",
+    "lib/db/FloatSplitter.java",
+    "lib/db/IntegerSplitter.java",
+    "lib/db/OracleDataDrivenDBInputFormat.java",
+    "lib/db/OracleDateSplitter.java",
+    "lib/db/TextSplitter.java"
+  ]
+}

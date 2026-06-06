@@ -1,0 +1,118 @@
+{
+  "type": "directory",
+  "cluster_id": 5,
+  "directory": "jobhistory",
+  "title": "JobHistory directory",
+  "description": "The JobHistory directory is responsible for storing job history files and parsing them to extract job information. It collaborates with the HistoryEventHandler interface to handle events and the HistoryViewer class to view the job history. The directory follows the singleton pattern to ensure that only one instance of the JobHistoryParser class is created.",
+  "summary": "TITLE: JobHistory directory\nDESCRIPTION: The JobHistory directory is responsible for storing job history files and parsing them to extract job information. It collaborates with the HistoryEventHandler interface to handle events and the HistoryViewer class to view the job history. The directory follows the singleton pattern to ensure that only one instance of the JobHistoryParser class is created.",
+  "number_of_children": 26,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AMStartedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "EventReader.java"
+    },
+    {
+      "type": "file",
+      "name": "EventWriter.java"
+    },
+    {
+      "type": "file",
+      "name": "HistoryEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "HistoryEventHandler.java"
+    },
+    {
+      "type": "file",
+      "name": "HistoryViewer.java"
+    },
+    {
+      "type": "file",
+      "name": "HistoryViewerPrinter.java"
+    },
+    {
+      "type": "file",
+      "name": "HumanReadableHistoryViewerPrinter.java"
+    },
+    {
+      "type": "file",
+      "name": "JSONHistoryViewerPrinter.java"
+    },
+    {
+      "type": "file",
+      "name": "JobFinishedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "JobHistoryParser.java"
+    },
+    {
+      "type": "file",
+      "name": "JobInfoChangeEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "JobInitedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "JobPriorityChangeEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "JobQueueChangeEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "JobStatusChangedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "JobUnsuccessfulCompletionEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "NormalizedResourceEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "ReduceAttemptFinishedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptFinishedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptStartedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptUnsuccessfulCompletionEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskFailedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskFinishedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskStartedEvent.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskUpdatedEvent.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: JobHistory directory\n\nDESCRIPTION:\nThe JobHistory directory is responsible for storing job history files and parsing them to extract job information. It collaborates with the HistoryEventHandler interface to handle events and the HistoryViewer class to view the job history. The directory follows the singleton pattern to ensure that only one instance of the JobHistoryParser class is created."
+}

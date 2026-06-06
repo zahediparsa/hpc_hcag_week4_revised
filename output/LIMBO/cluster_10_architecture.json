@@ -1,0 +1,24 @@
+{
+  "cluster_id": 10,
+  "title": "Hadoop MapReduce Architecture",
+  "description": "The Hadoop MapReduce architecture is a distributed processing framework that enables large-scale data processing tasks on clusters of computers. It consists of two main components: the Map phase and the Reduce phase. The Map phase breaks down the input data into smaller chunks and applies a user-defined function to each chunk, producing intermediate key-value pairs. The Reduce phase then groups the intermediate key-value pairs by key and applies another user-defined function to generate the final output. The architecture is designed to scale horizontally, meaning that it can handle large amounts of data by adding more nodes to the cluster. It also provides fault tolerance by automatically retrying failed tasks and recovering from node failures. The architecture is written in Java and uses the Hadoop Distributed File System (HDFS) for distributed storage of data.",
+  "description_word_count": 133,
+  "number_of_files": 4,
+  "number_of_directories": 4,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is a distributed processing framework that enables large-scale data processing tasks on clusters of computers. It consists of two main components: the Map phase and the Reduce phase. The Map phase breaks down the input data into smaller chunks and applies a user-defined function to each chunk, producing intermediate key-value pairs. The Reduce phase then groups the intermediate key-value pairs by key and applies another user-defined function to generate the final output. The architecture is designed to scale horizontally, meaning that it can handle large amounts of data by adding more nodes to the cluster. It also provides fault tolerance by automatically retrying failed tasks and recovering from node failures. The architecture is written in Java and uses the Hadoop Distributed File System (HDFS) for distributed storage of data.",
+  "algorithm": "LIMBO",
+  "files": [
+    "JobContext.java",
+    "lib/chain/ChainMapContextImpl.java",
+    "lib/chain/ChainReduceContextImpl.java",
+    "task/JobContextImpl.java"
+  ]
+}

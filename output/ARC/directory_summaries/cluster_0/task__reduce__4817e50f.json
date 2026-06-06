@@ -1,0 +1,82 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "task/reduce",
+  "title": "",
+  "description": "Cluster: 0\nDirectory: task/reduce\n\n responsibility:\n- responsible for shuffle and sort process in a MapReduce job\n- responsible for merging the output of multiple maps into a single sorted output for the reduce task\n\ncollaboration:\n- uses a ShuffleSchedulerImpl to manage the shuffle process\n- uses a MergeManager to merge the map output files\n- uses Fetcher and EventFetcher threads to fetch map output and shuffle events from the shuffle server\n\narchitectural role:\n- architectural role of this directory is to manage the shuffle and sort process in a MapReduce job, and to merge the output of multiple maps into a single sorted output for the reduce task.",
+  "summary": "TITLE: \nDESCRIPTION: Cluster: 0\nDirectory: task/reduce\n\n responsibility:\n- responsible for shuffle and sort process in a MapReduce job\n- responsible for merging the output of multiple maps into a single sorted output for the reduce task\n\ncollaboration:\n- uses a ShuffleSchedulerImpl to manage the shuffle process\n- uses a MergeManager to merge the map output files\n- uses Fetcher and EventFetcher threads to fetch map output and shuffle events from the shuffle server\n\narchitectural role:\n- architectural role of this directory is to manage the shuffle and sort process in a MapReduce job, and to merge the output of multiple maps into a single sorted output for the reduce task.",
+  "number_of_children": 17,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "EventFetcher.java"
+    },
+    {
+      "type": "file",
+      "name": "ExceptionReporter.java"
+    },
+    {
+      "type": "file",
+      "name": "Fetcher.java"
+    },
+    {
+      "type": "file",
+      "name": "IFileWrappedMapOutput.java"
+    },
+    {
+      "type": "file",
+      "name": "InMemoryMapOutput.java"
+    },
+    {
+      "type": "file",
+      "name": "InMemoryReader.java"
+    },
+    {
+      "type": "file",
+      "name": "InMemoryWriter.java"
+    },
+    {
+      "type": "file",
+      "name": "LocalFetcher.java"
+    },
+    {
+      "type": "file",
+      "name": "MapHost.java"
+    },
+    {
+      "type": "file",
+      "name": "MapOutput.java"
+    },
+    {
+      "type": "file",
+      "name": "MergeManager.java"
+    },
+    {
+      "type": "file",
+      "name": "MergeThread.java"
+    },
+    {
+      "type": "file",
+      "name": "Shuffle.java"
+    },
+    {
+      "type": "file",
+      "name": "ShuffleClientMetrics.java"
+    },
+    {
+      "type": "file",
+      "name": "ShuffleHeader.java"
+    },
+    {
+      "type": "file",
+      "name": "ShuffleScheduler.java"
+    },
+    {
+      "type": "file",
+      "name": "ShuffleSchedulerImpl.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "Cluster: 0\nDirectory: task/reduce\n\n responsibility:\n- responsible for shuffle and sort process in a MapReduce job\n- responsible for merging the output of multiple maps into a single sorted output for the reduce task\n\ncollaboration:\n- uses a ShuffleSchedulerImpl to manage the shuffle process\n- uses a MergeManager to merge the map output files\n- uses Fetcher and EventFetcher threads to fetch map output and shuffle events from the shuffle server\n\narchitectural role:\n- architectural role of this directory is to manage the shuffle and sort process in a MapReduce job, and to merge the output of multiple maps into a single sorted output for the reduce task."
+}

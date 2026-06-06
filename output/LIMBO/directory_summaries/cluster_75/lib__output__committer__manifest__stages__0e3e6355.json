@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 75,
+  "directory": "lib/output/committer/manifest/stages",
+  "title": "AbstractJobOrTaskStage.java",
+  "description": "- The main purpose of this class or file is to provide a base class for stages in the task/job commit process.\n- It includes methods for executing the stage, updating the store, and handling IOStatistics.\n\nCORE LOGIC:\n- The class includes methods for getting file status, deleting files/directories, creating directories, loading manifest files, and performing msync operations.\n\nINPUTS/OUTPUTS:\n- The class takes input arguments and returns a result.\n- It updates the store via ManifestStoreOperations callbacks.\n- IOStatistics are updated during the execution of the stage.\n\nDEPENDENCIES:\n- The class depends on the StageConfig, ManifestStoreOperations, and TaskPool.Submitter classes.",
+  "summary": "TITLE: AbstractJobOrTaskStage.java\nDESCRIPTION: - The main purpose of this class or file is to provide a base class for stages in the task/job commit process.\n- It includes methods for executing the stage, updating the store, and handling IOStatistics.\n\nCORE LOGIC:\n- The class includes methods for getting file status, deleting files/directories, creating directories, loading manifest files, and performing msync operations.\n\nINPUTS/OUTPUTS:\n- The class takes input arguments and returns a result.\n- It updates the store via ManifestStoreOperations callbacks.\n- IOStatistics are updated during the execution of the stage.\n\nDEPENDENCIES:\n- The class depends on the StageConfig, ManifestStoreOperations, and TaskPool.Submitter classes.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AbstractJobOrTaskStage.java"
+    },
+    {
+      "type": "file",
+      "name": "StageConfig.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: AbstractJobOrTaskStage.java\n\nDESCRIPTION:\n- The main purpose of this class or file is to provide a base class for stages in the task/job commit process.\n- It includes methods for executing the stage, updating the store, and handling IOStatistics.\n\nCORE LOGIC:\n- The class includes methods for getting file status, deleting files/directories, creating directories, loading manifest files, and performing msync operations.\n\nINPUTS/OUTPUTS:\n- The class takes input arguments and returns a result.\n- It updates the store via ManifestStoreOperations callbacks.\n- IOStatistics are updated during the execution of the stage.\n\nDEPENDENCIES:\n- The class depends on the StageConfig, ManifestStoreOperations, and TaskPool.Submitter classes."
+}

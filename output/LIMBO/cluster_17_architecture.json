@@ -1,0 +1,22 @@
+{
+  "cluster_id": 17,
+  "title": "Hadoop MapReduce Architecture",
+  "description": "The Hadoop MapReduce architecture is a distributed processing framework that enables the processing of large data sets across clusters of computers. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. The architecture consists of two main components: the Hadoop Distributed File System (HDFS) and the MapReduce framework. HDFS provides fault-tolerant storage for data, while the MapReduce framework handles the parallel processing of data across the cluster. The MapReduce framework consists of two main components: the Map phase and the Reduce phase. The Map phase breaks down the input data into smaller pieces and applies a user-defined function to each piece. The Reduce phase then aggregates the results from the Map phase and applies another user-defined function to produce the final output. The architecture is designed to be scalable, fault-tolerant, and cost-effective, making it a popular choice for processing large data.",
+  "description_word_count": 150,
+  "number_of_files": 2,
+  "number_of_directories": 1,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce architecture is a distributed processing framework that allows for the processing of large data sets across clusters of computers. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. The architecture consists of two main components: the Hadoop Distributed File System (HDFS) and the MapReduce framework. HDFS provides fault-tolerant storage for data, while the MapReduce framework handles the parallel processing of data across the cluster. The MapReduce framework consists of two main components: the Map phase and the Reduce phase. The Map phase breaks down the input data into smaller pieces and applies a user-defined function to each piece. The Reduce phase then aggregates the results from the Map phase and applies another user-defined function to produce the final output. The architecture is designed to be scalable, fault-tolerant, and cost-effective, making it a popular choice for processing large data sets in a distributed environment.",
+  "algorithm": "LIMBO",
+  "files": [
+    "MarkableIterator.java",
+    "Reducer.java"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "cluster_id": 54,
+  "title": "MapReduce Output Format",
+  "description": "The MapReduce Output Format is responsible for writing the output of a MapReduce job to a specified location. It collaborates with the RecordWriter class to write the output data in a specific format. The MapReduce Output Format also plays a role in the overall architecture of the system, as it is responsible for managing the flow of data between different components of the system.\n\nTechnologies used: Java, Hadoop MapReduce",
+  "description_word_count": 69,
+  "number_of_files": 4,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Output Format\n\nDESCRIPTION:\nThe MapReduce Output Format is responsible for writing the output of a MapReduce job to a specified location. It collaborates with the RecordWriter class to write the output data in a specific format. The MapReduce Output Format also plays a role in the overall architecture of the system, as it is responsible for managing the flow of data between different components of the system.\n\nTechnologies used: Java, Hadoop MapReduce",
+  "algorithm": "LIMBO",
+  "files": [
+    "lib/output/MapFileOutputFormat.java",
+    "lib/output/SequenceFileAsBinaryOutputFormat.java",
+    "lib/output/SequenceFileOutputFormat.java",
+    "lib/output/TextOutputFormat.java"
+  ]
+}

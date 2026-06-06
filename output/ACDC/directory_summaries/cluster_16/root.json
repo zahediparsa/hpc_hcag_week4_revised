@@ -1,0 +1,38 @@
+{
+  "type": "directory",
+  "cluster_id": 16,
+  "directory": ".",
+  "title": "ClusterMetrics.java",
+  "description": "This class provides information about the current state of the Map-Reduce cluster.\n\n--- FILE: QueueAclsInfo.java ---\nTITLE: QueueAclsInfo.java\n\nDESCRIPTION: This class encapsulates Queue ACLs for a particular user.\n\n--- FILE: TaskTrackerInfo.java ---\nTITLE: TaskTrackerInfo.java\n\nDESCRIPTION: This class contains information about a TaskTracker, including its name, blacklisting status, reason for blacklisting, and blacklist report.\n\n--- DIRECTORY: protocol ---\nTITLE: Hadoop MapReduce Protocol\n\nDESCRIPTION: The protocol directory contains classes that define the communication protocol between the client and the Hadoop MapReduce framework.\n\n--- DIRECTORY: security ---\nTITLE: MapReduce Delegation Token Architecture\n\nDESCRIPTION: The MapReduce delegation token architecture is responsible for managing and generating delegation tokens specific to MapReduce.\n\n--- DIRECTORY: v2 ---\nTITLE: LogParams.java\n\nDESCRIPTION: This class is used to store the parameters required for fetching logs.",
+  "summary": "TITLE: ClusterMetrics.java\nDESCRIPTION: This class provides information about the current state of the Map-Reduce cluster.\n\n--- FILE: QueueAclsInfo.java ---\nTITLE: QueueAclsInfo.java\n\nDESCRIPTION: This class encapsulates Queue ACLs for a particular user.\n\n--- FILE: TaskTrackerInfo.java ---\nTITLE: TaskTrackerInfo.java\n\nDESCRIPTION: This class contains information about a TaskTracker, including its name, blacklisting status, reason for blacklisting, and blacklist report.\n\n--- DIRECTORY: protocol ---\nTITLE: Hadoop MapReduce Protocol\n\nDESCRIPTION: The protocol directory contains classes that define the communication protocol between the client and the Hadoop MapReduce framework.\n\n--- DIRECTORY: security ---\nTITLE: MapReduce Delegation Token Architecture\n\nDESCRIPTION: The MapReduce delegation token architecture is responsible for managing and generating delegation tokens specific to MapReduce.\n\n--- DIRECTORY: v2 ---\nTITLE: LogParams.java\n\nDESCRIPTION: This class is used to store the parameters required for fetching logs.",
+  "number_of_children": 6,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ClusterMetrics.java"
+    },
+    {
+      "type": "file",
+      "name": "QueueAclsInfo.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskTrackerInfo.java"
+    },
+    {
+      "type": "directory",
+      "name": "protocol"
+    },
+    {
+      "type": "directory",
+      "name": "security"
+    },
+    {
+      "type": "directory",
+      "name": "v2"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- FILE: ClusterMetrics.java ---\nTITLE: ClusterMetrics.java\n\nDESCRIPTION: This class provides information about the current state of the Map-Reduce cluster.\n\n--- FILE: QueueAclsInfo.java ---\nTITLE: QueueAclsInfo.java\n\nDESCRIPTION: This class encapsulates Queue ACLs for a particular user.\n\n--- FILE: TaskTrackerInfo.java ---\nTITLE: TaskTrackerInfo.java\n\nDESCRIPTION: This class contains information about a TaskTracker, including its name, blacklisting status, reason for blacklisting, and blacklist report.\n\n--- DIRECTORY: protocol ---\nTITLE: Hadoop MapReduce Protocol\n\nDESCRIPTION: The protocol directory contains classes that define the communication protocol between the client and the Hadoop MapReduce framework.\n\n--- DIRECTORY: security ---\nTITLE: MapReduce Delegation Token Architecture\n\nDESCRIPTION: The MapReduce delegation token architecture is responsible for managing and generating delegation tokens specific to MapReduce.\n\n--- DIRECTORY: v2 ---\nTITLE: LogParams.java\n\nDESCRIPTION: This class is used to store the parameters required for fetching logs."
+}

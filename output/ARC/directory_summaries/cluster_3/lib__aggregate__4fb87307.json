@@ -1,0 +1,78 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "lib/aggregate",
+  "title": "",
+  "description": "responsibility of this directory\n- This directory contains classes that implement the ValueAggregator interface.\n- These classes are used to aggregate values based on their type and id.\n- The classes in this directory collaborate by calling each other's methods to perform the aggregation.\n- The architectural role or pattern of this directory is to provide a modular and extensible way to perform value aggregation.\n\nhow the files or child directories collaborate\n- The classes in this directory collaborate by calling each other's methods to perform the aggregation.\n- The DoubleValueSum class aggregates a sequence of double values, while the LongValueMax class maintains the maximum of a sequence of long values.\n- The LongValueMin class maintains the minimum of a sequence of long values, and the LongValueSum class aggregates a sequence of long values.\n- The StringValueMax class maintains the biggest of a sequence of strings, and the StringValueMin class aggregates the smallest string value from a sequence of strings.\n- The UniqValueCount class deduplicates a sequence of objects, and the ValueHistogram class computes the histogram of a sequence of strings.\n\nthe architectural role or pattern of this directory\n- The classes in this directory implement the ValueAggregator interface, which provides a common interface for value aggregation.\n- This allows for easy extension and customization of the aggregation functionality.\n- The use of the ValueAggregator interface promotes code reuse and modularity.\n- The directory follows the principles of the decorator pattern, where each class decorates the functionality of the ValueAggregator interface.",
+  "summary": "TITLE: \nDESCRIPTION: responsibility of this directory\n- This directory contains classes that implement the ValueAggregator interface.\n- These classes are used to aggregate values based on their type and id.\n- The classes in this directory collaborate by calling each other's methods to perform the aggregation.\n- The architectural role or pattern of this directory is to provide a modular and extensible way to perform value aggregation.\n\nhow the files or child directories collaborate\n- The classes in this directory collaborate by calling each other's methods to perform the aggregation.\n- The DoubleValueSum class aggregates a sequence of double values, while the LongValueMax class maintains the maximum of a sequence of long values.\n- The LongValueMin class maintains the minimum of a sequence of long values, and the LongValueSum class aggregates a sequence of long values.\n- The StringValueMax class maintains the biggest of a sequence of strings, and the StringValueMin class aggregates the smallest string value from a sequence of strings.\n- The UniqValueCount class deduplicates a sequence of objects, and the ValueHistogram class computes the histogram of a sequence of strings.\n\nthe architectural role or pattern of this directory\n- The classes in this directory implement the ValueAggregator interface, which provides a common interface for value aggregation.\n- This allows for easy extension and customization of the aggregation functionality.\n- The use of the ValueAggregator interface promotes code reuse and modularity.\n- The directory follows the principles of the decorator pattern, where each class decorates the functionality of the ValueAggregator interface.",
+  "number_of_children": 16,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "DoubleValueSum.java"
+    },
+    {
+      "type": "file",
+      "name": "LongValueMax.java"
+    },
+    {
+      "type": "file",
+      "name": "LongValueMin.java"
+    },
+    {
+      "type": "file",
+      "name": "LongValueSum.java"
+    },
+    {
+      "type": "file",
+      "name": "StringValueMax.java"
+    },
+    {
+      "type": "file",
+      "name": "StringValueMin.java"
+    },
+    {
+      "type": "file",
+      "name": "UniqValueCount.java"
+    },
+    {
+      "type": "file",
+      "name": "UserDefinedValueAggregatorDescriptor.java"
+    },
+    {
+      "type": "file",
+      "name": "ValueAggregator.java"
+    },
+    {
+      "type": "file",
+      "name": "ValueAggregatorBaseDescriptor.java"
+    },
+    {
+      "type": "file",
+      "name": "ValueAggregatorCombiner.java"
+    },
+    {
+      "type": "file",
+      "name": "ValueAggregatorDescriptor.java"
+    },
+    {
+      "type": "file",
+      "name": "ValueAggregatorJobBase.java"
+    },
+    {
+      "type": "file",
+      "name": "ValueAggregatorMapper.java"
+    },
+    {
+      "type": "file",
+      "name": "ValueAggregatorReducer.java"
+    },
+    {
+      "type": "file",
+      "name": "ValueHistogram.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "responsibility of this directory\n- This directory contains classes that implement the ValueAggregator interface.\n- These classes are used to aggregate values based on their type and id.\n- The classes in this directory collaborate by calling each other's methods to perform the aggregation.\n- The architectural role or pattern of this directory is to provide a modular and extensible way to perform value aggregation.\n\nhow the files or child directories collaborate\n- The classes in this directory collaborate by calling each other's methods to perform the aggregation.\n- The DoubleValueSum class aggregates a sequence of double values, while the LongValueMax class maintains the maximum of a sequence of long values.\n- The LongValueMin class maintains the minimum of a sequence of long values, and the LongValueSum class aggregates a sequence of long values.\n- The StringValueMax class maintains the biggest of a sequence of strings, and the StringValueMin class aggregates the smallest string value from a sequence of strings.\n- The UniqValueCount class deduplicates a sequence of objects, and the ValueHistogram class computes the histogram of a sequence of strings.\n\nthe architectural role or pattern of this directory\n- The classes in this directory implement the ValueAggregator interface, which provides a common interface for value aggregation.\n- This allows for easy extension and customization of the aggregation functionality.\n- The use of the ValueAggregator interface promotes code reuse and modularity.\n- The directory follows the principles of the decorator pattern, where each class decorates the functionality of the ValueAggregator interface."
+}

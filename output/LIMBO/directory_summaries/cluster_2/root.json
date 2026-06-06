@@ -1,0 +1,110 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": ".",
+  "title": "MapReduce Abstraction",
+  "description": "The MapReduce Abstraction is responsible for managing the execution of MapReduce jobs. It collaborates with other classes to handle the submission, monitoring, and completion of jobs. The MapReduce Abstraction follows the pattern of the Singleton design pattern, ensuring that there is only one instance of the MapReduce Abstraction throughout the system. This pattern helps to maintain consistency and avoid conflicts when multiple jobs are running simultaneously.",
+  "summary": "TITLE: MapReduce Abstraction\nDESCRIPTION: The MapReduce Abstraction is responsible for managing the execution of MapReduce jobs. It collaborates with other classes to handle the submission, monitoring, and completion of jobs. The MapReduce Abstraction follows the pattern of the Singleton design pattern, ensuring that there is only one instance of the MapReduce Abstraction throughout the system. This pattern helps to maintain consistency and avoid conflicts when multiple jobs are running simultaneously.",
+  "number_of_children": 24,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ClusterMetrics.java"
+    },
+    {
+      "type": "file",
+      "name": "Counter.java"
+    },
+    {
+      "type": "file",
+      "name": "FileSystemCounter.java"
+    },
+    {
+      "type": "file",
+      "name": "ID.java"
+    },
+    {
+      "type": "file",
+      "name": "InputSplit.java"
+    },
+    {
+      "type": "file",
+      "name": "JobCounter.java"
+    },
+    {
+      "type": "file",
+      "name": "JobPriority.java"
+    },
+    {
+      "type": "file",
+      "name": "MRConfig.java"
+    },
+    {
+      "type": "file",
+      "name": "MRJobConfig.java"
+    },
+    {
+      "type": "file",
+      "name": "MarkableIteratorInterface.java"
+    },
+    {
+      "type": "file",
+      "name": "Partitioner.java"
+    },
+    {
+      "type": "file",
+      "name": "QueueAclsInfo.java"
+    },
+    {
+      "type": "file",
+      "name": "QueueState.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskCounter.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskTrackerInfo.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskType.java"
+    },
+    {
+      "type": "directory",
+      "name": "checkpoint"
+    },
+    {
+      "type": "directory",
+      "name": "counters"
+    },
+    {
+      "type": "directory",
+      "name": "jobhistory"
+    },
+    {
+      "type": "directory",
+      "name": "lib"
+    },
+    {
+      "type": "directory",
+      "name": "security"
+    },
+    {
+      "type": "directory",
+      "name": "task"
+    },
+    {
+      "type": "directory",
+      "name": "util"
+    },
+    {
+      "type": "directory",
+      "name": "v2"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Abstraction\n\nDESCRIPTION:\nThe MapReduce Abstraction is responsible for managing the execution of MapReduce jobs. It collaborates with other classes to handle the submission, monitoring, and completion of jobs. The MapReduce Abstraction follows the pattern of the Singleton design pattern, ensuring that there is only one instance of the MapReduce Abstraction throughout the system. This pattern helps to maintain consistency and avoid conflicts when multiple jobs are running simultaneously."
+}

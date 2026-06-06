@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 16,
+  "directory": "lib",
+  "title": "MapReduce - lib/map",
+  "description": "This directory contains the MapReduce Mappers. The Mappers are responsible for processing the input data and transforming it into a format that can be used by the reducers. The Mappers collaborate with each other and with the reducers to process the data. The architectural role of this directory is to provide a modular and scalable solution for processing large amounts of data. The pattern used in this directory is the MapReduce pattern, which is a popular approach for processing large datasets in a distributed environment.",
+  "summary": "TITLE: MapReduce - lib/map\nDESCRIPTION: This directory contains the MapReduce Mappers. The Mappers are responsible for processing the input data and transforming it into a format that can be used by the reducers. The Mappers collaborate with each other and with the reducers to process the data. The architectural role of this directory is to provide a modular and scalable solution for processing large amounts of data. The pattern used in this directory is the MapReduce pattern, which is a popular approach for processing large datasets in a distributed environment.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/map"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce - lib/map\n\nDESCRIPTION: This directory contains the MapReduce Mappers. The Mappers are responsible for processing the input data and transforming it into a format that can be used by the reducers. The Mappers collaborate with each other and with the reducers to process the data. The architectural role of this directory is to provide a modular and scalable solution for processing large amounts of data. The pattern used in this directory is the MapReduce pattern, which is a popular approach for processing large datasets in a distributed environment."
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 75,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitter",
+    "path": "lib/output/committer/manifest/ManifestCommitter.java",
+    "file_name": "ManifestCommitter.java",
+    "directory": "lib/output/committer/manifest",
+    "summary": "KEY FUNCTIONALITY:\nThe ManifestCommitter class is a subclass of PathOutputCommitter that is used to commit task attempts and job output in a fault-tolerant manner. It is used in conjunction with the ManifestCommitterOutputFormat class to write output data to a manifest file.\n\nCORE LOGIC:\nThe ManifestCommitter class uses a series of stages to perform the commit process. These stages include SetupJobStage, SetupTaskStage, CommitTaskStage, CommitJobStage, AbortTaskStage, and CleanupJobStage. Each stage performs a specific task in the commit process, such as setting up the job or task, committing the task, or cleaning up the job directory.\n\nINPUTS/OUTPUTS:\nThe ManifestCommitter class takes input from the job and task context, as well as from the output path and work path. It produces output in the form of manifest files that contain information about the committed task attempts and job output.\n\nDEPENDENCIES:\nThe ManifestCommitter class depends on the following classes and interfaces:\n\n- PathOutputCommitter: The parent class of ManifestCommitter, which provides the basic functionality for committing task attempts and job output.\n- ManifestCommitterOutputFormat: The output format class that uses the ManifestCommitter class to commit task attempts and job output.\n- ManifestStoreOperations: An interface that defines the operations needed to interact with the manifest store.\n- StageConfig: A class that contains configuration information for the stages in the commit process.\n- StageEventCallbacks: An interface that defines callback methods for stage events.\n- IOStatisticsSource: An interface that defines methods for accessing IO statistics.\n\nThe main purpose of this chunk is to provide methods for getting the destination directory, task attempt directory, job attempt directory, task manifest path, and job attempt path.\n\nCORE LOGIC:\nThe chunk contains algorithms for handling stages, getting job unique IDs, getting task attempt configurations, getting the manifest of the last committed task, and computing the path where the output of a task attempt is stored until that task is committed.\n\nINPUTS/OUTPUTS:\nThe chunk takes inputs such as task attempt context and job context, and provides outputs such as destination directory, task attempt directory, job attempt directory, task manifest path, and job attempt path.\n\nDEPENDENCIES:\nThe chunk depends on the classes and methods imported from the Apache Hadoop MapReduce source code.",
+    "chunked": true,
+    "number_of_code_chunks": 2,
+    "chunk_summaries": [
+      "KEY FUNCTIONALITY:\nThe ManifestCommitter class is a subclass of PathOutputCommitter that is used to commit task attempts and job output in a fault-tolerant manner. It is used in conjunction with the ManifestCommitterOutputFormat class to write output data to a manifest file.\n\nCORE LOGIC:\nThe ManifestCommitter class uses a series of stages to perform the commit process. These stages include SetupJobStage, SetupTaskStage, CommitTaskStage, CommitJobStage, AbortTaskStage, and CleanupJobStage. Each stage performs a specific task in the commit process, such as setting up the job or task, committing the task, or cleaning up the job directory.\n\nINPUTS/OUTPUTS:\nThe ManifestCommitter class takes input from the job and task context, as well as from the output path and work path. It produces output in the form of manifest files that contain information about the committed task attempts and job output.\n\nDEPENDENCIES:\nThe ManifestCommitter class depends on the following classes and interfaces:\n\n- PathOutputCommitter: The parent class of ManifestCommitter, which provides the basic functionality for committing task attempts and job output.\n- ManifestCommitterOutputFormat: The output format class that uses the ManifestCommitter class to commit task attempts and job output.\n- ManifestStoreOperations: An interface that defines the operations needed to interact with the manifest store.\n- StageConfig: A class that contains configuration information for the stages in the commit process.\n- StageEventCallbacks: An interface that defines callback methods for stage events.\n- IOStatisticsSource: An interface that defines methods for accessing IO statistics.",
+      "KEY FUNCTIONALITY:\n- The main purpose of this chunk is to provide methods for getting the destination directory, task attempt directory, job attempt directory, task manifest path, and job attempt path.\n\nCORE LOGIC:\n- The chunk contains algorithms for handling stages, getting job unique IDs, getting task attempt configurations, getting the manifest of the last committed task, and computing the path where the output of a task attempt is stored until that task is committed.\n\nINPUTS/OUTPUTS:\n- The chunk takes inputs such as task attempt context and job context, and provides outputs such as destination directory, task attempt directory, job attempt directory, task manifest path, and job attempt path.\n\nDEPENDENCIES:\n- The chunk depends on the classes and methods imported from the Apache Hadoop MapReduce source code."
+    ]
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 75,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterConfig",
+    "path": "lib/output/committer/manifest/ManifestCommitterConfig.java",
+    "file_name": "ManifestCommitterConfig.java",
+    "directory": "lib/output/committer/manifest",
+    "summary": "KEY FUNCTIONALITY:\n- The ManifestCommitterConfig class is used to configure the behavior of the manifest committer in Apache Hadoop MapReduce.\n\nCORE LOGIC:\n- The class initializes various configuration parameters from the job configuration and other input parameters.\n- It also creates directories for intermediate work and sets up the necessary directories for task attempts.\n\nINPUTS/OUTPUTS:\n- The class takes in the destination path of the job, the role of the committer, the job/task context, and IO statistics as inputs.\n- It provides methods to get the destination filesystem, create a stage config, and create a submitter task pool.\n\nDEPENDENCIES:\n- The class depends on the Apache Hadoop MapReduce library and other related classes for its functionality.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 75,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.ManifestCommitterSupport",
+    "path": "lib/output/committer/manifest/impl/ManifestCommitterSupport.java",
+    "file_name": "ManifestCommitterSupport.java",
+    "directory": "lib/output/committer/manifest/impl",
+    "summary": "KEY FUNCTIONALITY:\nThis chunk of code provides support for manifest committer functionality. It includes methods for creating an IOStatistics Store with standard statistics, building a Job UUID, getting the location of pending job attempts, creating task attempt directories, creating task manifests, creating success/outcome data, adding heap information to IOStatisticSetters gauges, creating the filename for a report from the job ID, getting an etag from a FileStatus, and creating the manifest store operations for a given file system.\n\nCORE LOGIC:\nThe code includes methods for creating an IOStatistics Store with standard statistics, building a Job UUID, getting the location of pending job attempts, creating task attempt directories, creating task manifests, creating success/outcome data, adding heap information to IOStatisticSetters gauges, creating the filename for a report from the job ID, getting an etag from a FileStatus, and creating the manifest store operations for a given file system.\n\nINPUTS/OUTPUTS:\nThe code takes inputs such as job/task configuration, job ID, and file status, and produces outputs such as job UUID, job attempt directories, task manifests, success/outcome data, and manifest store operations.\n\nDEPENDENCIES:\nThe code depends on classes such as IOStatisticsStoreBuilder, IOStatisticsSource, JobContext, JobID, Configuration, Path, FileSystem, FileStatus, EtagSource, TaskManifest, ManifestSuccessData, StageConfig, and ManifestStoreOperations.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 75,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.ManifestStoreOperations",
+    "path": "lib/output/committer/manifest/impl/ManifestStoreOperations.java",
+    "file_name": "ManifestStoreOperations.java",
+    "directory": "lib/output/committer/manifest/impl",
+    "summary": "KEY FUNCTIONALITY:\n- The main purpose of this chunk of code is to provide FileSystem operations needed to generate the task manifest.\n\nCORE LOGIC:\n- The code includes methods for file and directory operations such as creating directories, renaming files and directories, deleting files and directories, and listing directory contents.\n\nINPUTS/OUTPUTS:\n- The code takes in a FileSystem object and a Path object as inputs, and performs operations on the FileSystem using the provided Path.\n\nDEPENDENCIES:\n- The code depends on the following classes: AbstractManifestData, FileEntry, TaskManifest, JsonSerialization, FileStatus, Path, FileSystem, RemoteIterator, IOException, Duration, and UnsupportedOperationException.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 75,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.impl.ManifestStoreOperationsThroughFileSystem",
+    "path": "lib/output/committer/manifest/impl/ManifestStoreOperationsThroughFileSystem.java",
+    "file_name": "ManifestStoreOperationsThroughFileSystem.java",
+    "directory": "lib/output/committer/manifest/impl",
+    "summary": "KEY FUNCTIONALITY:\nThis class implements manifest store operations through the filesystem API.\n\nCORE LOGIC:\nThe class provides methods for performing file operations such as deleting, renaming, and listing files. It also includes methods for loading and saving task manifests.\n\nINPUTS/OUTPUTS:\nThe class takes a FileSystem object as input and uses it to perform file operations. It also takes a JsonSerialization object as input for loading and saving task manifests.\n\nDEPENDENCIES:\nThe class depends on the FileSystem and JsonSerialization classes from the Apache Hadoop MapReduce library.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 75,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.AbstractJobOrTaskStage",
+    "path": "lib/output/committer/manifest/stages/AbstractJobOrTaskStage.java",
+    "file_name": "AbstractJobOrTaskStage.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY:\n- The main purpose of this class or file is to provide a base class for stages in the task/job commit process.\n- It includes methods for executing the stage, updating the store, and handling IOStatistics.\n\nCORE LOGIC:\n- The class includes methods for getting file status, deleting files/directories, creating directories, loading manifest files, and performing msync operations.\n\nINPUTS/OUTPUTS:\n- The class takes input arguments and returns a result.\n- It updates the store via ManifestStoreOperations callbacks.\n- IOStatistics are updated during the execution of the stage.\n\nDEPENDENCIES:\n- The class depends on the StageConfig, ManifestStoreOperations, and TaskPool.Submitter classes.\n\nFile: AbstractJobOrTaskStage.java\n\nReturn exactly these four sections:\n\nKEY FUNCTIONALITY: main purpose of this class or file\nCORE LOGIC: key algorithms or processing patterns\nINPUTS/OUTPUTS: data flowing in and out\nDEPENDENCIES: key imported, parent, or collaborator classes\n\nChunk summaries:\n--- chunk 1 ---\nKEY FUNCTIONALITY:\n- The main purpose of this chunk is to provide a base class for stages in the task/job commit process.\n- It includes methods for executing the stage, updating the store, and handling IOStatistics.\n\nCORE LOGIC:\n- The chunk includes methods for getting file status, deleting files/directories, creating directories, loading manifest files, and performing msync operations.\n\nINPUTS/OUTPUTS:\n- The chunk takes input arguments and returns a result.\n- It updates the store via ManifestStoreOperations callbacks.\n- IOStatistics are updated during the execution of the stage.\n\nDEPENDENCIES:\n- The chunk depends on the StageConfig, ManifestStoreOperations, and TaskPool.Submitter classes.\n\n--- chunk 2 ---\nKEY FUNCTIONALITY:\n- This chunk contains methods for handling file operations, such as mkdirs, directoryMustExist, save, saveManifest, renameFile, renameDir, commitFile, storeSupportsResilientCommit, maybeDeleteDest, executeRenamingOperation, escalateRenameFailure, deleteRecursive, deleteRecursiveSuppressingExceptions, and fileEntry.\n\nCORE LOGIC:\n- The mkdirs method creates a directory if it does not exist.\n- The directoryMustExist method checks if a path is a",
+    "chunked": true,
+    "number_of_code_chunks": 2,
+    "chunk_summaries": [
+      "KEY FUNCTIONALITY:\n- The main purpose of this chunk is to provide a base class for stages in the task/job commit process.\n- It includes methods for executing the stage, updating the store, and handling IOStatistics.\n\nCORE LOGIC:\n- The chunk includes methods for getting file status, deleting files/directories, creating directories, loading manifest files, and performing msync operations.\n\nINPUTS/OUTPUTS:\n- The chunk takes input arguments and returns a result.\n- It updates the store via ManifestStoreOperations callbacks.\n- IOStatistics are updated during the execution of the stage.\n\nDEPENDENCIES:\n- The chunk depends on the StageConfig, ManifestStoreOperations, and TaskPool.Submitter classes.",
+      "KEY FUNCTIONALITY:\n- This chunk contains methods for handling file operations, such as mkdirs, directoryMustExist, save, saveManifest, renameFile, renameDir, commitFile, storeSupportsResilientCommit, maybeDeleteDest, executeRenamingOperation, escalateRenameFailure, deleteRecursive, deleteRecursiveSuppressingExceptions, and fileEntry.\n\nCORE LOGIC:\n- The mkdirs method creates a directory if it does not exist.\n- The directoryMustExist method checks if a path is a directory and must exist.\n- The save method saves a task manifest or summary by writing to a temporary path and then renaming it.\n- The saveManifest method generates and saves a task manifest or summary file by writing to a temporary path and then renaming it.\n- The renameFile method renames a file from source to destination.\n- The renameDir method renames a directory from source to destination.\n- The commitFile method commits a file from the manifest using rename or, if available, resilient renaming.\n- The storeSupportsResilientCommit method checks if the store supports resilient commit.\n- The maybeDeleteDest method deletes the destination if it exists.\n- The executeRenamingOperation method executes an operation to rename a file/dir and track the duration of the operation.\n- The escalateRenameFailure method escalates a rename failure to an exception.\n- The deleteRecursive method deletes a directory or file.\n- The deleteRecursiveSuppressingExceptions method deletes a directory or file, catching exceptions.\n- The fileEntry method creates an entry for a file to rename under the destination.\n\nINPUTS/OUTPUTS:\n- The mkdirs method takes a path as input and returns the path if it is successfully created.\n- The directoryMustExist method takes a path as input and returns the path if it is a directory and must exist.\n- The save method takes a manifestData, tempPath, and finalPath as input and returns the manifest saved.\n- The saveManifest method takes a manifestSource, tempPath, finalPath, and statistic as input and returns the manifest saved.\n- The renameFile method takes a source and dest path as input.\n- The renameDir method takes a source and dest path as input.\n- The commitFile method takes a FileEntry and a deleteDest flag as input and returns a CommitOutcome.\n- The storeSupportsResilientCommit method takes no input and returns"
+    ]
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 75,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.stages.StageConfig",
+    "path": "lib/output/committer/manifest/stages/StageConfig.java",
+    "file_name": "StageConfig.java",
+    "directory": "lib/output/committer/manifest/stages",
+    "summary": "KEY FUNCTIONALITY:\n- This class is used to configure a stage in the manifest committer.\n- It contains common configuration parameters for all stages.\n\nCORE LOGIC:\n- It provides a builder API for setting configuration parameters.\n- It also provides methods for getting the configuration values.\n\nINPUTS/OUTPUTS:\n- The class does not have any specific inputs or outputs.\n\nDEPENDENCIES:\n- It depends on the Apache Hadoop MapReduce library.\n- It uses the Configuration class from the Apache Hadoop library for configuration settings.\n- It uses the Path class from the Apache Hadoop library for file paths.\n- It uses the IOStatisticsStore class from the Apache Hadoop library for IO statistics.\n- It uses the TaskManifest class from the Apache Hadoop MapReduce library for manifest data.\n- It uses the ManifestStoreOperations class from the Apache Hadoop MapReduce library for manifest store operations.\n- It uses the TaskPool.Submitter class from the Apache Hadoop library for submitting tasks to a thread pool.\n- It uses the Progressable class from the Apache Hadoop library for progress callbacks.\n- It uses the JsonSerialization class from the Apache Hadoop library for JSON serialization.\n- It uses the ThreadLocal class from the Java standard library for creating thread-local variables.\n- It uses the Preconditions class from the Apache Hadoop library for checking preconditions.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

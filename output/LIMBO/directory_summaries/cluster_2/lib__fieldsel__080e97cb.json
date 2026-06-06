@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "lib/fieldsel",
+  "title": "",
+  "description": "responsibility:\nThis directory contains a helper class for performing field selections in a manner similar to unix cut.\n\ncollaboration:\nThe FieldSelectionHelper class implements a mapper/reducer class that collaborates with the user to specify a list of fields that form the map output keys and a list of fields that form the map output values.\n\narchitectural role/pattern:\nThe FieldSelectionHelper class follows the MapReduce pattern, which is a distributed computing framework for processing large data sets. It is designed to handle large volumes of data in parallel across a cluster of computers. The MapReduce pattern consists of two main components: the mapper and the reducer. The mapper processes the input data and produces intermediate key-value pairs, while the reducer processes these intermediate pairs to produce the final output. The FieldSelectionHelper class provides a way to specify which fields to use as keys and values in the mapper and reducer, allowing for flexible and customizable processing of the input data.",
+  "summary": "TITLE: \nDESCRIPTION: responsibility:\nThis directory contains a helper class for performing field selections in a manner similar to unix cut.\n\ncollaboration:\nThe FieldSelectionHelper class implements a mapper/reducer class that collaborates with the user to specify a list of fields that form the map output keys and a list of fields that form the map output values.\n\narchitectural role/pattern:\nThe FieldSelectionHelper class follows the MapReduce pattern, which is a distributed computing framework for processing large data sets. It is designed to handle large volumes of data in parallel across a cluster of computers. The MapReduce pattern consists of two main components: the mapper and the reducer. The mapper processes the input data and produces intermediate key-value pairs, while the reducer processes these intermediate pairs to produce the final output. The FieldSelectionHelper class provides a way to specify which fields to use as keys and values in the mapper and reducer, allowing for flexible and customizable processing of the input data.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "FieldSelectionHelper.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "responsibility:\nThis directory contains a helper class for performing field selections in a manner similar to unix cut.\n\ncollaboration:\nThe FieldSelectionHelper class implements a mapper/reducer class that collaborates with the user to specify a list of fields that form the map output keys and a list of fields that form the map output values.\n\narchitectural role/pattern:\nThe FieldSelectionHelper class follows the MapReduce pattern, which is a distributed computing framework for processing large data sets. It is designed to handle large volumes of data in parallel across a cluster of computers. The MapReduce pattern consists of two main components: the mapper and the reducer. The mapper processes the input data and produces intermediate key-value pairs, while the reducer processes these intermediate pairs to produce the final output. The FieldSelectionHelper class provides a way to specify which fields to use as keys and values in the mapper and reducer, allowing for flexible and customizable processing of the input data."
+}

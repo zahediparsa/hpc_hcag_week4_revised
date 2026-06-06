@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 16,
+  "directory": ".",
+  "title": "MapReduce - src/main/java/Mapper.java",
+  "description": "The Mapper class is responsible for transforming input records into intermediate records. The map() method is the core logic of the Mapper class, where input key/value pairs are transformed into intermediate key/value pairs. The Mapper takes input key/value pairs and produces intermediate key/value pairs as output. The Mapper class depends on the MapContext interface, which provides access to the input data and allows the Mapper to write output.",
+  "summary": "TITLE: MapReduce - src/main/java/Mapper.java\nDESCRIPTION: The Mapper class is responsible for transforming input records into intermediate records. The map() method is the core logic of the Mapper class, where input key/value pairs are transformed into intermediate key/value pairs. The Mapper takes input key/value pairs and produces intermediate key/value pairs as output. The Mapper class depends on the MapContext interface, which provides access to the input data and allows the Mapper to write output.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "Mapper.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce - src/main/java/Mapper.java\n\nDESCRIPTION:\nThe Mapper class is responsible for transforming input records into intermediate records. The map() method is the core logic of the Mapper class, where input key/value pairs are transformed into intermediate key/value pairs. The Mapper takes input key/value pairs and produces intermediate key/value pairs as output. The Mapper class depends on the MapContext interface, which provides access to the input data and allows the Mapper to write output."
+}

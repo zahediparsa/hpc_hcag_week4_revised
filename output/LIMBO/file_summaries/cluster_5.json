@@ -1,0 +1,53 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 5,
+    "class": "org.apache.hadoop.mapreduce.TaskReport",
+    "path": "TaskReport.java",
+    "file_name": "TaskReport.java",
+    "directory": ".",
+    "summary": "KEY FUNCTIONALITY:\n\nThe TaskReport class is used to report the state of a task.\n\nCORE LOGIC:\n\nThe class contains fields for the task ID, progress, state, diagnostics, start time, finish time, counters, and current status. It also provides methods to set and get these fields.\n\nINPUTS/OUTPUTS:\n\nThe class implements the Writable interface, allowing it to be serialized and deserialized.\n\nDEPENDENCIES:\n\nThe class depends on the following classes:\n\nTaskID: represents the unique identifier for a task.\nCounters: provides a way to keep track of task-related counters.\nTIPStatus: represents the status of a task.\nTaskAttemptID: represents the unique identifier for a task attempt.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 5,
+    "class": "org.apache.hadoop.mapreduce.lib.output.FileOutputFormat",
+    "path": "lib/output/FileOutputFormat.java",
+    "file_name": "FileOutputFormat.java",
+    "directory": "lib/output",
+    "summary": "KEY FUNCTIONALITY:\n- The FileOutputFormat class is a base class for output formats that read from FileSystems.\n- It provides methods for setting and getting the output path, compressing the output, and generating unique file names.\n- It also provides a method for getting the default work file path and filename for the output format.\n\nCORE LOGIC:\n- The FileOutputFormat class provides a template method for getting the record writer, which is responsible for writing the output data.\n- It also provides methods for checking the output specifications and getting the output committer.\n\nINPUTS/OUTPUTS:\n- The FileOutputFormat class takes input from the job context and task attempt context, and provides output in the form of a record writer and output committer.\n\nDEPENDENCIES:\n- The FileOutputFormat class depends on the OutputCommitter and RecordWriter classes.\n- It also depends on the PathOutputCommitter and PathOutputCommitterFactory classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 5,
+    "class": "org.apache.hadoop.mapreduce.lib.output.MultipleOutputs",
+    "path": "lib/output/MultipleOutputs.java",
+    "file_name": "MultipleOutputs.java",
+    "directory": "lib/output",
+    "summary": "KEY FUNCTIONALITY: Simplifies writing output data to multiple outputs.\n\nCORE LOGIC: Supports counters, by default they are disabled. The counters group is the MultipleOutputs class name. The names of the counters are the same as the output name. These count the number records written to each output name.\n\nINPUTS/OUTPUTS: Data flowing in and out.\n\nDEPENDENCIES: Key imported, parent, or collaborator classes visible in this chunk.\n\n- The MultipleOutputs class is a wrapper for writing to multiple output files in a Hadoop MapReduce job.\n- It provides a way to write key-value pairs to different output files based on a given key.\n- The class implements the OutputCommitter interface to handle the commit and abort of the output files.\n\n- The MultipleOutputs class uses a Map to store the RecordWriter objects for each output file.\n- It provides methods to write key-value pairs to the appropriate RecordWriter based on the key.\n- The class also provides methods to get the RecordWriter for a specific output file and to close all the opened outputs.\n\n- The MultipleOutputs class takes a TaskAttemptContext object as a parameter in its constructor.\n- It uses the TaskAttemptContext to get the Configuration object and to create RecordWriter objects for the output files.\n- The class provides methods to write key-value pairs to the appropriate RecordWriter based on the key.\n- It also provides methods to get the RecordWriter for a specific output file and to close all the opened outputs.\n\n- The MultipleOutputs class depends on the following classes:\n  - OutputCommitter: to handle the commit and abort of the output files.\n  - TaskAttemptContext: to get the Configuration object and to create RecordWriter objects for the output files.\n  - RecordWriter: to write key-value pairs to the output files.\n  - Configuration: to get the configuration parameters for the job.",
+    "chunked": true,
+    "number_of_code_chunks": 2,
+    "chunk_summaries": [
+      "KEY FUNCTIONALITY: Simplifies writing output data to multiple outputs.\n\nCORE LOGIC: Supports counters, by default they are disabled. The counters group is the MultipleOutputs class name. The names of the counters are the same as the output name. These count the number records written to each output name.\n\nINPUTS/OUTPUTS: Data flowing in and out.\n\nDEPENDENCIES: Key imported, parent, or collaborator classes visible in this chunk.",
+      "KEY FUNCTIONALITY:\n\n- The MultipleOutputs class is a wrapper for writing to multiple output files in a Hadoop MapReduce job.\n- It provides a way to write key-value pairs to different output files based on a given key.\n- The class implements the OutputCommitter interface to handle the commit and abort of the output files.\n\nCORE LOGIC:\n\n- The MultipleOutputs class uses a Map to store the RecordWriter objects for each output file.\n- It provides methods to write key-value pairs to the appropriate RecordWriter based on the key.\n- The class also provides methods to get the RecordWriter for a specific output file and to close all the opened outputs.\n\nINPUTS/OUTPUTS:\n\n- The MultipleOutputs class takes a TaskAttemptContext object as a parameter in its constructor.\n- It uses the TaskAttemptContext to get the Configuration object and to create RecordWriter objects for the output files.\n- The class provides methods to write key-value pairs to the appropriate RecordWriter based on the key.\n- It also provides methods to get the RecordWriter for a specific output file and to close all the opened outputs.\n\nDEPENDENCIES:\n\n- The MultipleOutputs class depends on the following classes:\n  - OutputCommitter: to handle the commit and abort of the output files.\n  - TaskAttemptContext: to get the Configuration object and to create RecordWriter objects for the output files.\n  - RecordWriter: to write key-value pairs to the output files.\n  - Configuration: to get the configuration parameters for the job."
+    ]
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 5,
+    "class": "org.apache.hadoop.mapreduce.task.TaskInputOutputContextImpl",
+    "path": "task/TaskInputOutputContextImpl.java",
+    "file_name": "TaskInputOutputContextImpl.java",
+    "directory": "task",
+    "summary": "KEY FUNCTIONALITY:\nThis class is a context object that allows input and output from the task. It is only supplied to the Mapper or Reducer.\n\nCORE LOGIC:\nThe class provides methods for advancing to the next key-value pair, getting the current key and value, and generating output key-value pairs.\n\nINPUTS/OUTPUTS:\nThe class takes a Configuration object, a TaskAttemptID object, a RecordWriter object for output, an OutputCommitter object, and a StatusReporter object as input.\n\nDEPENDENCIES:\nThe class depends on the Configuration, TaskAttemptID, RecordWriter, OutputCommitter, and StatusReporter classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

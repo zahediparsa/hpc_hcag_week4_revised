@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 6,
+  "directory": ".",
+  "title": "Counters",
+  "description": "Holds per job/task counters, defined either by the Map-Reduce framework or applications.\nEach Counter can be of any Enum type. Counters are bunched into CounterGroups, each comprising of counters from a particular Enum class.",
+  "summary": "TITLE: Counters\nDESCRIPTION: Holds per job/task counters, defined either by the Map-Reduce framework or applications.\nEach Counter can be of any Enum type. Counters are bunched into CounterGroups, each comprising of counters from a particular Enum class.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "Counters.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Counters\n\nDESCRIPTION:\nHolds per job/task counters, defined either by the Map-Reduce framework or applications.\nEach Counter can be of any Enum type. Counters are bunched into CounterGroups, each comprising of counters from a particular Enum class."
+}

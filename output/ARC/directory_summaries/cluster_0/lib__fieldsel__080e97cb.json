@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "lib/fieldsel",
+  "title": "",
+  "description": "The directory lib/fieldsel contains classes that implement a mapper/reducer class that can be used to perform field selections in a manner similar to unix cut. The classes FieldSelectionHelper, FieldSelectionMapper, and FieldSelectionReducer collaborate to achieve this functionality.\n\nThe FieldSelectionHelper class implements the core logic for field selection, including handling the input data, parsing the field separator, and specifying the map and reduce output field lists. It also provides methods for setting and getting the field separator and output field lists.\n\nThe FieldSelectionMapper class extends the Mapper class and overrides the map method to perform field selection on the input data. It uses the FieldSelectionHelper class to handle the field selection logic and sets the map output key and value based on the specified field lists.\n\nThe FieldSelectionReducer class extends the Reducer class and overrides the reduce method to perform field selection on the input data. It uses the FieldSelectionHelper class to handle the field selection logic and sets the reduce output key and value based on the specified field lists.\n\nThe classes in this directory collaborate to provide a flexible and efficient way to perform field selection on input data using Hadoop MapReduce. The FieldSelectionHelper class provides the core logic for field selection, while the FieldSelectionMapper and FieldSelectionReducer classes use this logic to perform field selection on the input data.",
+  "summary": "TITLE: \nDESCRIPTION: The directory lib/fieldsel contains classes that implement a mapper/reducer class that can be used to perform field selections in a manner similar to unix cut. The classes FieldSelectionHelper, FieldSelectionMapper, and FieldSelectionReducer collaborate to achieve this functionality.\n\nThe FieldSelectionHelper class implements the core logic for field selection, including handling the input data, parsing the field separator, and specifying the map and reduce output field lists. It also provides methods for setting and getting the field separator and output field lists.\n\nThe FieldSelectionMapper class extends the Mapper class and overrides the map method to perform field selection on the input data. It uses the FieldSelectionHelper class to handle the field selection logic and sets the map output key and value based on the specified field lists.\n\nThe FieldSelectionReducer class extends the Reducer class and overrides the reduce method to perform field selection on the input data. It uses the FieldSelectionHelper class to handle the field selection logic and sets the reduce output key and value based on the specified field lists.\n\nThe classes in this directory collaborate to provide a flexible and efficient way to perform field selection on input data using Hadoop MapReduce. The FieldSelectionHelper class provides the core logic for field selection, while the FieldSelectionMapper and FieldSelectionReducer classes use this logic to perform field selection on the input data.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "FieldSelectionHelper.java"
+    },
+    {
+      "type": "file",
+      "name": "FieldSelectionMapper.java"
+    },
+    {
+      "type": "file",
+      "name": "FieldSelectionReducer.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "The directory lib/fieldsel contains classes that implement a mapper/reducer class that can be used to perform field selections in a manner similar to unix cut. The classes FieldSelectionHelper, FieldSelectionMapper, and FieldSelectionReducer collaborate to achieve this functionality.\n\nThe FieldSelectionHelper class implements the core logic for field selection, including handling the input data, parsing the field separator, and specifying the map and reduce output field lists. It also provides methods for setting and getting the field separator and output field lists.\n\nThe FieldSelectionMapper class extends the Mapper class and overrides the map method to perform field selection on the input data. It uses the FieldSelectionHelper class to handle the field selection logic and sets the map output key and value based on the specified field lists.\n\nThe FieldSelectionReducer class extends the Reducer class and overrides the reduce method to perform field selection on the input data. It uses the FieldSelectionHelper class to handle the field selection logic and sets the reduce output key and value based on the specified field lists.\n\nThe classes in this directory collaborate to provide a flexible and efficient way to perform field selection on input data using Hadoop MapReduce. The FieldSelectionHelper class provides the core logic for field selection, while the FieldSelectionMapper and FieldSelectionReducer classes use this logic to perform field selection on the input data."
+}

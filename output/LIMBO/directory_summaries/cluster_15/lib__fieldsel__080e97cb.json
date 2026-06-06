@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 15,
+  "directory": "lib/fieldsel",
+  "title": "lib/fieldsel",
+  "description": "This directory contains the code for the FieldSelectionMapper class, which is used to perform field selections in a manner similar to unix cut. The mapper will ignore the key to the map function and the fields are from the value only if the input format is TextInputFormat. Otherwise, the fields are the union of those from the key and those from the value. The input data is treated as fields separated by a user specified separator (the default value is \"\\t\"). The user can specify a list of fields that form the map output keys, and a list of fields that form the map output values. This code depends on the org.apache.hadoop.mapreduce.lib.fieldsel package.",
+  "summary": "TITLE: lib/fieldsel\nDESCRIPTION: This directory contains the code for the FieldSelectionMapper class, which is used to perform field selections in a manner similar to unix cut. The mapper will ignore the key to the map function and the fields are from the value only if the input format is TextInputFormat. Otherwise, the fields are the union of those from the key and those from the value. The input data is treated as fields separated by a user specified separator (the default value is \"\\t\"). The user can specify a list of fields that form the map output keys, and a list of fields that form the map output values. This code depends on the org.apache.hadoop.mapreduce.lib.fieldsel package.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "FieldSelectionMapper.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/fieldsel\n\nDESCRIPTION:\nThis directory contains the code for the FieldSelectionMapper class, which is used to perform field selections in a manner similar to unix cut. The mapper will ignore the key to the map function and the fields are from the value only if the input format is TextInputFormat. Otherwise, the fields are the union of those from the key and those from the value. The input data is treated as fields separated by a user specified separator (the default value is \"\\t\"). The user can specify a list of fields that form the map output keys, and a list of fields that form the map output values. This code depends on the org.apache.hadoop.mapreduce.lib.fieldsel package."
+}

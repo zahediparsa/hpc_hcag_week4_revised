@@ -1,0 +1,28 @@
+{
+  "cluster_id": 21,
+  "title": "MapReduce - Cluster-level Architecture",
+  "description": "The Hadoop MapReduce framework is a distributed processing system that enables the processing of large data sets across clusters of computers. It consists of two main components: the MapReduce engine and the distributed file system (DFS). The MapReduce engine is responsible for dividing the input data into smaller chunks, mapping these chunks to individual tasks, and then reducing the results. The DFS is responsible for storing the input data and intermediate results in a distributed manner. The MapReduce engine is further divided into the JobTracker and the TaskTrackers. The JobTracker is responsible for scheduling and monitoring the execution of jobs, while the TaskTrackers are responsible for running the individual tasks on the cluster. The communication between the components is done using the Hadoop RPC mechanism. The system is designed to be scalable, fault-tolerant, and efficient, and it supports a wide range of applications, including web search, data mining, and machine.",
+  "description_word_count": 150,
+  "number_of_files": 8,
+  "number_of_directories": 5,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce - Cluster-level Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce framework is a distributed processing system that allows for the processing of large data sets across clusters of computers. It consists of two main components: the MapReduce engine and the distributed file system (DFS). The MapReduce engine is responsible for dividing the input data into smaller chunks, mapping these chunks to individual tasks, and then reducing the results. The DFS is responsible for storing the input data and intermediate results in a distributed manner. The MapReduce engine is further divided into the JobTracker and the TaskTrackers. The JobTracker is responsible for scheduling and monitoring the execution of jobs, while the TaskTrackers are responsible for running the individual tasks on the cluster. The communication between the components is done using the Hadoop RPC (Remote Procedure Call) mechanism. The system is designed to be scalable, fault-tolerant, and efficient, and it supports a wide range of applications, including web search, data mining, and machine learning.",
+  "algorithm": "ACDC",
+  "files": [
+    "MarkableIterator.java",
+    "MarkableIteratorInterface.java",
+    "ReduceContext.java",
+    "lib/input/TextInputFormat.java",
+    "lib/partition/HashPartitioner.java",
+    "task/JobContextImpl.java",
+    "task/ReduceContextImpl.java",
+    "task/TaskAttemptContextImpl.java"
+  ]
+}

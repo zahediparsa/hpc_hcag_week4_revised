@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 69,
+    "class": "org.apache.hadoop.mapreduce.lib.join.CompositeInputFormat",
+    "path": "lib/join/CompositeInputFormat.java",
+    "file_name": "CompositeInputFormat.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY: The CompositeInputFormat class is an InputFormat capable of performing joins over a set of data sources sorted and partitioned the same way.\n\nCORE LOGIC: The class uses a parse tree to interpret a given string as a composite expression and proxies IF requests to it. It also adds the default set of identifiers to the parser and informs the parser of user-defined types.\n\nINPUTS/OUTPUTS: The class takes a Configuration object as input and sets the format using the setFormat method. It then creates a CompositeRecordReader for the children of this InputFormat as defined in the init expression.\n\nDEPENDENCIES: The class depends on the Parser class for parsing expressions and the InputFormat, RecordReader, and Configuration classes from the Hadoop MapReduce framework.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 69,
+    "class": "org.apache.hadoop.mapreduce.lib.join.Parser",
+    "path": "lib/join/Parser.java",
+    "file_name": "Parser.java",
+    "directory": "lib/join",
+    "summary": "KEY FUNCTIONALITY:\nThis code is a parser for join expressions.\n\nCORE LOGIC:\nThe code uses a shift-reduce parser to parse the join expressions.\n\nINPUTS/OUTPUTS:\nThe code takes a string expression and an optional comparator as input, and it returns a tree of InputFormats.\n\nDEPENDENCIES:\nThe code depends on the Token, NumToken, NodeToken, StrToken, Lexer, Node, WNode, CNode, and CompositeInputSplit classes. It also depends on the Configuration, JobContext, TaskAttemptContext, InputSplit, RecordReader, and StatusReporter classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

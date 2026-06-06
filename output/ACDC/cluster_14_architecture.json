@@ -1,0 +1,23 @@
+{
+  "cluster_id": 14,
+  "title": "Hadoop MapReduce Architecture",
+  "description": "The Hadoop MapReduce architecture is responsible for processing large-scale data across clusters of computers. It consists of two main components: the Map phase and the Reduce phase. The Map phase breaks down the input data into smaller chunks and processes them in parallel, while the Reduce phase aggregates the results and produces the final output. The InputFormat class is an abstract class that describes the input-specification for a Map-Reduce job, and it is responsible for validating the input-specification, splitting the input file(s) into logical InputSplits, and providing the RecordReader implementation to glean input records from the logical InputSplit for processing by the Mapper. The lib directory contains libraries that are used by the MapReduce framework to handle the distribution of data across the cluster, manage the execution of tasks, and coordinate the communication between different nodes. The architectural role of this directory is to provide a modular and extensible framework.",
+  "description_word_count": 151,
+  "number_of_files": 3,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION: The Hadoop MapReduce architecture is responsible for processing large-scale data across clusters of computers. It consists of two main components: the Map phase and the Reduce phase. The Map phase breaks down the input data into smaller chunks and processes them in parallel, while the Reduce phase aggregates the results and produces the final output. The InputFormat class is an abstract class that describes the input-specification for a Map-Reduce job, and it is responsible for validating the input-specification, splitting the input file(s) into logical InputSplits, and providing the RecordReader implementation to glean input records from the logical InputSplit for processing by the Mapper. The lib directory contains libraries that are used by the MapReduce framework to handle the distribution of data across the cluster, manage the execution of tasks, and coordinate the communication between different nodes. The files in this directory collaborate by passing information and coordinates the execution of tasks to ensure that the data is processed efficiently and effectively. The architectural role of this directory is to provide a modular and extensible framework for processing large-scale data.",
+  "algorithm": "ACDC",
+  "files": [
+    "InputFormat.java",
+    "lib/partition/InputSampler.java",
+    "lib/partition/TotalOrderPartitioner.java"
+  ]
+}

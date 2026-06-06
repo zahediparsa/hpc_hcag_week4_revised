@@ -1,0 +1,50 @@
+{
+  "type": "directory",
+  "cluster_id": 0,
+  "directory": "checkpoint",
+  "title": "",
+  "description": "Cluster: 0\nDirectory: checkpoint\n\n responsibility:\n- The checkpoint directory is responsible for managing the checkpoints of tasks in a Hadoop MapReduce job.\n- It provides a way to store and retrieve the state of tasks in case of failures or retries.\n- The directory collaborates with the job tracker and the task trackers to ensure that checkpoints are properly stored and retrieved.\n\ncollaboration:\n- The checkpoint directory collaborates with the job tracker to schedule and coordinate the checkpoints of tasks.\n- It collaborates with the task trackers to store and retrieve the checkpoints of individual tasks.\n\narchitectural role/pattern:\n- The checkpoint directory follows the active passive architecture pattern.\n- The active component is the job tracker, which coordinates the checkpoints of tasks.\n- The passive component is the checkpoint directory, which stores and retrieves the checkpoints of tasks.",
+  "summary": "TITLE: \nDESCRIPTION: Cluster: 0\nDirectory: checkpoint\n\n responsibility:\n- The checkpoint directory is responsible for managing the checkpoints of tasks in a Hadoop MapReduce job.\n- It provides a way to store and retrieve the state of tasks in case of failures or retries.\n- The directory collaborates with the job tracker and the task trackers to ensure that checkpoints are properly stored and retrieved.\n\ncollaboration:\n- The checkpoint directory collaborates with the job tracker to schedule and coordinate the checkpoints of tasks.\n- It collaborates with the task trackers to store and retrieve the checkpoints of individual tasks.\n\narchitectural role/pattern:\n- The checkpoint directory follows the active passive architecture pattern.\n- The active component is the job tracker, which coordinates the checkpoints of tasks.\n- The passive component is the checkpoint directory, which stores and retrieves the checkpoints of tasks.",
+  "number_of_children": 9,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CheckpointID.java"
+    },
+    {
+      "type": "file",
+      "name": "CheckpointNamingService.java"
+    },
+    {
+      "type": "file",
+      "name": "CheckpointService.java"
+    },
+    {
+      "type": "file",
+      "name": "EnumCounter.java"
+    },
+    {
+      "type": "file",
+      "name": "FSCheckpointID.java"
+    },
+    {
+      "type": "file",
+      "name": "FSCheckpointService.java"
+    },
+    {
+      "type": "file",
+      "name": "RandomNameCNS.java"
+    },
+    {
+      "type": "file",
+      "name": "SimpleNamingService.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskCheckpointID.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "Cluster: 0\nDirectory: checkpoint\n\n responsibility:\n- The checkpoint directory is responsible for managing the checkpoints of tasks in a Hadoop MapReduce job.\n- It provides a way to store and retrieve the state of tasks in case of failures or retries.\n- The directory collaborates with the job tracker and the task trackers to ensure that checkpoints are properly stored and retrieved.\n\ncollaboration:\n- The checkpoint directory collaborates with the job tracker to schedule and coordinate the checkpoints of tasks.\n- It collaborates with the task trackers to store and retrieve the checkpoints of individual tasks.\n\narchitectural role/pattern:\n- The checkpoint directory follows the active passive architecture pattern.\n- The active component is the job tracker, which coordinates the checkpoints of tasks.\n- The passive component is the checkpoint directory, which stores and retrieves the checkpoints of tasks."
+}

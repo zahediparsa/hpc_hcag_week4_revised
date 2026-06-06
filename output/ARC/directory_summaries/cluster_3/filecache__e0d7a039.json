@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 3,
+  "directory": "filecache",
+  "title": "org.apache.hadoop.mapreduce.filecache",
+  "description": "This directory contains classes that are used to manage the distributed cache in Hadoop MapReduce. The classes in this directory are responsible for managing the distribution of files and directories to the nodes in the cluster, as well as for cleaning up the cache after the job has finished. The classes collaborate by sharing information about the files and directories to be distributed, and by coordinating the distribution and cleanup processes. The architectural role of this directory is to provide a centralized location for managing the distributed cache, and to ensure that the cache is efficiently and effectively used by all jobs running on the cluster. This directory follows the pattern of the Singleton pattern, as there should only be one instance of the cache manager for the entire cluster.",
+  "summary": "TITLE: org.apache.hadoop.mapreduce.filecache\nDESCRIPTION: This directory contains classes that are used to manage the distributed cache in Hadoop MapReduce. The classes in this directory are responsible for managing the distribution of files and directories to the nodes in the cluster, as well as for cleaning up the cache after the job has finished. The classes collaborate by sharing information about the files and directories to be distributed, and by coordinating the distribution and cleanup processes. The architectural role of this directory is to provide a centralized location for managing the distributed cache, and to ensure that the cache is efficiently and effectively used by all jobs running on the cluster. This directory follows the pattern of the Singleton pattern, as there should only be one instance of the cache manager for the entire cluster.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "package-info.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: org.apache.hadoop.mapreduce.filecache\n\nDESCRIPTION:\nThis directory contains classes that are used to manage the distributed cache in Hadoop MapReduce. The classes in this directory are responsible for managing the distribution of files and directories to the nodes in the cluster, as well as for cleaning up the cache after the job has finished. The classes collaborate by sharing information about the files and directories to be distributed, and by coordinating the distribution and cleanup processes. The architectural role of this directory is to provide a centralized location for managing the distributed cache, and to ensure that the cache is efficiently and effectively used by all jobs running on the cluster. This directory follows the pattern of the Singleton pattern, as there should only be one instance of the cache manager for the entire cluster."
+}

@@ -1,0 +1,42 @@
+{
+  "type": "directory",
+  "cluster_id": 18,
+  "directory": "lib/output",
+  "title": "",
+  "description": "Cluster: 18\nDirectory: lib/output\n\n responsibility:\n- The responsibility of this directory is to provide a centralized location for committers to be created and used by the FileOutputFormat.\n- It also provides a way to register committer factories for different filesystems and schemas.\n\ncollaboration:\n- The classes in this directory collaborate to create and manage committers for different filesystems and schemas.\n- The PathOutputCommitterFactory class is responsible for creating committers based on the output path and task context.\n- The FileOutputCommitterFactory class is a default committer factory that creates FileOutputCommitter instances.\n- The NamedCommitterFactory class is a factory that creates any named committer identified in the configuration.\n\narchitectural role or pattern:\n- This directory follows the factory pattern, as it provides a way to create committers based on different criteria.\n- It also follows the singleton pattern, as there is only one instance of the OutputCommitterFactory per JVM.\n- The PathOutputCommitterFactory class is a factory for committers implementing the PathOutputCommitter methods, and can be used from FileOutputFormat.",
+  "summary": "TITLE: \nDESCRIPTION: Cluster: 18\nDirectory: lib/output\n\n responsibility:\n- The responsibility of this directory is to provide a centralized location for committers to be created and used by the FileOutputFormat.\n- It also provides a way to register committer factories for different filesystems and schemas.\n\ncollaboration:\n- The classes in this directory collaborate to create and manage committers for different filesystems and schemas.\n- The PathOutputCommitterFactory class is responsible for creating committers based on the output path and task context.\n- The FileOutputCommitterFactory class is a default committer factory that creates FileOutputCommitter instances.\n- The NamedCommitterFactory class is a factory that creates any named committer identified in the configuration.\n\narchitectural role or pattern:\n- This directory follows the factory pattern, as it provides a way to create committers based on different criteria.\n- It also follows the singleton pattern, as there is only one instance of the OutputCommitterFactory per JVM.\n- The PathOutputCommitterFactory class is a factory for committers implementing the PathOutputCommitter methods, and can be used from FileOutputFormat.",
+  "number_of_children": 7,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "BindingPathOutputCommitter.java"
+    },
+    {
+      "type": "file",
+      "name": "FileOutputCommitter.java"
+    },
+    {
+      "type": "file",
+      "name": "FileOutputCommitterFactory.java"
+    },
+    {
+      "type": "file",
+      "name": "NamedCommitterFactory.java"
+    },
+    {
+      "type": "file",
+      "name": "PartialFileOutputCommitter.java"
+    },
+    {
+      "type": "file",
+      "name": "PathOutputCommitterFactory.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output/committer"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "Cluster: 18\nDirectory: lib/output\n\n responsibility:\n- The responsibility of this directory is to provide a centralized location for committers to be created and used by the FileOutputFormat.\n- It also provides a way to register committer factories for different filesystems and schemas.\n\ncollaboration:\n- The classes in this directory collaborate to create and manage committers for different filesystems and schemas.\n- The PathOutputCommitterFactory class is responsible for creating committers based on the output path and task context.\n- The FileOutputCommitterFactory class is a default committer factory that creates FileOutputCommitter instances.\n- The NamedCommitterFactory class is a factory that creates any named committer identified in the configuration.\n\narchitectural role or pattern:\n- This directory follows the factory pattern, as it provides a way to create committers based on different criteria.\n- It also follows the singleton pattern, as there is only one instance of the OutputCommitterFactory per JVM.\n- The PathOutputCommitterFactory class is a factory for committers implementing the PathOutputCommitter methods, and can be used from FileOutputFormat."
+}

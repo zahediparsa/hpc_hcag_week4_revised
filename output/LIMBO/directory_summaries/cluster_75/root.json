@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 75,
+  "directory": ".",
+  "title": "OutputCommitter",
+  "description": "The OutputCommitter interface is used by the MapReduce framework to commit the output of a job. It provides methods for committing task attempts, committing job output, aborting tasks or jobs, and cleaning up job output. The ManifestCommitter class implements this interface and provides the necessary functionality for fault-tolerant output commitment. The ManifestCommitterOutputFormat class is used to write output data to a manifest file, which is a file that contains information about the output data written by a MapReduce job. The manifest file is used to recover from failures and ensure that all output data is committed correctly.",
+  "summary": "TITLE: OutputCommitter\nDESCRIPTION: The OutputCommitter interface is used by the MapReduce framework to commit the output of a job. It provides methods for committing task attempts, committing job output, aborting tasks or jobs, and cleaning up job output. The ManifestCommitter class implements this interface and provides the necessary functionality for fault-tolerant output commitment. The ManifestCommitterOutputFormat class is used to write output data to a manifest file, which is a file that contains information about the output data written by a MapReduce job. The manifest file is used to recover from failures and ensure that all output data is committed correctly.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: OutputCommitter\n\nDESCRIPTION: The OutputCommitter interface is used by the MapReduce framework to commit the output of a job. It provides methods for committing task attempts, committing job output, aborting tasks or jobs, and cleaning up job output. The ManifestCommitter class implements this interface and provides the necessary functionality for fault-tolerant output commitment. The ManifestCommitterOutputFormat class is used to write output data to a manifest file, which is a file that contains information about the output data written by a MapReduce job. The manifest file is used to recover from failures and ensure that all output data is committed correctly."
+}

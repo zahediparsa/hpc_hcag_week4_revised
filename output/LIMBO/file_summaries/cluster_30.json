@@ -1,0 +1,62 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 30,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.AMStartedEvent",
+    "path": "jobhistory/AMStartedEvent.java",
+    "file_name": "AMStartedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class represents an event where an application master (AM) has started.\n\nCORE LOGIC:\n\nThe AMStartedEvent class contains the necessary information to record the start of an application master, including the application attempt ID, start time, container ID, node manager host, node manager port, and node manager HTTP port.\n\nINPUTS/OUTPUTS:\n\nThe AMStartedEvent class has methods to get the application attempt ID, start time, container ID, node manager host, node manager port, and node manager HTTP port.\n\nDEPENDENCIES:\n\nThe AMStartedEvent class depends on the ApplicationAttemptId, ContainerId, and TimelineEvent classes from the Apache Hadoop YARN API.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 30,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.NormalizedResourceEvent",
+    "path": "jobhistory/NormalizedResourceEvent.java",
+    "file_name": "NormalizedResourceEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY: NormalizedResourceEvent is an event to record the normalized map/reduce requirements.\n\nCORE LOGIC: The event contains the normalized memory requirements and the task type of the request.\n\nINPUTS/OUTPUTS: The event does not have any specific inputs or outputs.\n\nDEPENDENCIES: The event depends on the Apache Hadoop MapReduce framework and the TimelineEvent and TimelineMetric classes from the Apache Hadoop YARN API.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 30,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.TaskAttemptStartedEvent",
+    "path": "jobhistory/TaskAttemptStartedEvent.java",
+    "file_name": "TaskAttemptStartedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class represents an event where a task attempt has started.\n\nCORE LOGIC:\n\nThe core logic of this class is to record the start of a task attempt.\n\nINPUTS/OUTPUTS:\n\nThe inputs to this class are the task attempt ID, task type, start time, tracker name, HTTP port, shuffle port, container ID, locality, and avataar. The output is a record of the start of the task attempt.\n\nDEPENDENCIES:\n\nThis class depends on the TaskAttemptID, TaskID, TaskType, and ContainerId classes from the Apache Hadoop MapReduce framework. It also depends on the TimelineEvent and TimelineMetric classes from the Apache Hadoop YARN framework.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 30,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.TaskStartedEvent",
+    "path": "jobhistory/TaskStartedEvent.java",
+    "file_name": "TaskStartedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\n\nThis code creates an event to record the start of a task.\n\nCORE LOGIC:\n\nThe code sets the task id, split locations, start time, and task type for the event.\n\nINPUTS/OUTPUTS:\n\nThe code takes in the task id, start time, task type, and split locations as inputs and creates a TaskStartedEvent object.\n\nDEPENDENCIES:\n\nThe code depends on the TaskID, TaskType, and HistoryEvent classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 30,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.TaskUpdatedEvent",
+    "path": "jobhistory/TaskUpdatedEvent.java",
+    "file_name": "TaskUpdatedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\n\nThis code chunk is a Java class that represents an event to record updates to a task. It has a constructor that takes a TaskID and a finish time as parameters and sets the task ID and finish time in the datum object. It also has getter methods to retrieve the task ID and finish time.\n\nCORE LOGIC:\n\nThe code chunk does not contain any key algorithms or processing patterns.\n\nINPUTS/OUTPUTS:\n\nThe code chunk takes a TaskID and a finish time as input parameters and sets them in the datum object. It also provides getter methods to retrieve the task ID and finish time.\n\nDEPENDENCIES:\n\nThe code chunk depends on the TaskID class from the org.apache.hadoop.mapreduce package and the HistoryEvent interface from the org.apache.hadoop.mapreduce.jobhistory package. It also depends on the TimelineEvent and TimelineMetric classes from the org.apache.hadoop.yarn.api.records.timelineservice package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

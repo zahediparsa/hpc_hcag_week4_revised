@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 1,
+  "directory": ".",
+  "title": "FileSystemCounter",
+  "description": "This enum defines a set of file system counters. It does not contain any logic and does not define any inputs or outputs. It does not depend on any other classes or packages.",
+  "summary": "TITLE: FileSystemCounter\nDESCRIPTION: This enum defines a set of file system counters. It does not contain any logic and does not define any inputs or outputs. It does not depend on any other classes or packages.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "FileSystemCounter.java"
+    },
+    {
+      "type": "directory",
+      "name": "counters"
+    },
+    {
+      "type": "directory",
+      "name": "util"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: FileSystemCounter\n\nDESCRIPTION:\nThis enum defines a set of file system counters. It does not contain any logic and does not define any inputs or outputs. It does not depend on any other classes or packages."
+}

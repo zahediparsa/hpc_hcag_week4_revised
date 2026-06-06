@@ -1,0 +1,74 @@
+{
+  "type": "directory",
+  "cluster_id": 8,
+  "directory": "lib/input",
+  "title": "",
+  "description": "responsibility:\n- responsible for handling the input data for the MapReduce job\n- responsible for creating splits for the input data\n- responsible for creating RecordReaders for each split\n\ncollaboration:\n- CombineFileInputFormat collaborates with CombineFileSplit and FileInputFormat to create splits for the input data\n- CombineFileRecordReader collaborates with CombineFileSplit and TaskAttemptContext to read the input data\n- CombineFileRecordReaderWrapper collaborates with FileInputFormat, CombineFileSplit, TaskAttemptContext, and RecordReader to read the input data\n- DelegatingInputFormat collaborates with MultipleInputs to handle the input data for the MapReduce job\n- DelegatingRecordReader collaborates with TaggedInputSplit and TaskAttemptContext to read the input data\n- FixedLengthInputFormat collaborates with FixedLengthRecordReader to read fixed-length records from the input data\n- FixedLengthRecordReader collaborates with Configuration, Path, FSDataInputStream, Seekable, CompressionCodec, CompressionInputStream, and Decompressor to read fixed-length records from the input data\n- KeyValueLineRecordReader collaborates with LineRecordReader to read key-value pairs from the input data\n- KeyValueTextInputFormat collaborates with KeyValueLineRecordReader to read key-value pairs from the input data\n- LineRecordReader collaborates with InputSplit, TaskAttemptContext, Configuration, FSDataInputStream, FutureDataInputStreamBuilder, Path, Seekable, LongWritable, Text, CompressionCodecPool, CompressionCodec, SplitCompressionInputStream, SplittableCompressionCodec, CompressionCodecFactory, Decompressor, FutureIO, Logger, and LoggerFactory to read the input data\n- NLineInputFormat collaborates with LineRecordReader to read the input data\n- SequenceFileAsTextRecordReader collaborates with SequenceFileRecordReader to read key-value pairs from the input data\n- SequenceFileInputFormat collaborates with SequenceFileRecordReader to read key-value pairs from the input data\n- SequenceFileRecordReader collaborates with Configuration and SequenceFile.Reader to read key-value pairs from the input data\n- TextInputFormat collaborates with LineRecordReader to read the input data\n\narchitectural role/pattern:\n- the directory acts as a factory for creating RecordReaders for each split\n- the directory follows the decorator pattern by wrapping a RecordReader to handle a single file split\n- the directory follows the factory pattern by creating RecordReaders for each split\n- the directory follows the strategy pattern by using different RecordReaders for different types of input data\n- the directory follows the facade pattern by providing a single interface for handling different types of input data\n- the directory follows the adapter pattern by converting the input keys and values to their String forms\n- the directory follows the singleton pattern by providing a single instance of the RecordReader for each split",
+  "summary": "TITLE: \nDESCRIPTION: responsibility:\n- responsible for handling the input data for the MapReduce job\n- responsible for creating splits for the input data\n- responsible for creating RecordReaders for each split\n\ncollaboration:\n- CombineFileInputFormat collaborates with CombineFileSplit and FileInputFormat to create splits for the input data\n- CombineFileRecordReader collaborates with CombineFileSplit and TaskAttemptContext to read the input data\n- CombineFileRecordReaderWrapper collaborates with FileInputFormat, CombineFileSplit, TaskAttemptContext, and RecordReader to read the input data\n- DelegatingInputFormat collaborates with MultipleInputs to handle the input data for the MapReduce job\n- DelegatingRecordReader collaborates with TaggedInputSplit and TaskAttemptContext to read the input data\n- FixedLengthInputFormat collaborates with FixedLengthRecordReader to read fixed-length records from the input data\n- FixedLengthRecordReader collaborates with Configuration, Path, FSDataInputStream, Seekable, CompressionCodec, CompressionInputStream, and Decompressor to read fixed-length records from the input data\n- KeyValueLineRecordReader collaborates with LineRecordReader to read key-value pairs from the input data\n- KeyValueTextInputFormat collaborates with KeyValueLineRecordReader to read key-value pairs from the input data\n- LineRecordReader collaborates with InputSplit, TaskAttemptContext, Configuration, FSDataInputStream, FutureDataInputStreamBuilder, Path, Seekable, LongWritable, Text, CompressionCodecPool, CompressionCodec, SplitCompressionInputStream, SplittableCompressionCodec, CompressionCodecFactory, Decompressor, FutureIO, Logger, and LoggerFactory to read the input data\n- NLineInputFormat collaborates with LineRecordReader to read the input data\n- SequenceFileAsTextRecordReader collaborates with SequenceFileRecordReader to read key-value pairs from the input data\n- SequenceFileInputFormat collaborates with SequenceFileRecordReader to read key-value pairs from the input data\n- SequenceFileRecordReader collaborates with Configuration and SequenceFile.Reader to read key-value pairs from the input data\n- TextInputFormat collaborates with LineRecordReader to read the input data\n\narchitectural role/pattern:\n- the directory acts as a factory for creating RecordReaders for each split\n- the directory follows the decorator pattern by wrapping a RecordReader to handle a single file split\n- the directory follows the factory pattern by creating RecordReaders for each split\n- the directory follows the strategy pattern by using different RecordReaders for different types of input data\n- the directory follows the facade pattern by providing a single interface for handling different types of input data\n- the directory follows the adapter pattern by converting the input keys and values to their String forms\n- the directory follows the singleton pattern by providing a single instance of the RecordReader for each split",
+  "number_of_children": 15,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CombineFileInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "CombineFileRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "CombineFileRecordReaderWrapper.java"
+    },
+    {
+      "type": "file",
+      "name": "DelegatingInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "DelegatingRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "FixedLengthInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "FixedLengthRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "KeyValueLineRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "KeyValueTextInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "LineRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "NLineInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileAsTextRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileInputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileRecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "TextInputFormat.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "responsibility:\n- responsible for handling the input data for the MapReduce job\n- responsible for creating splits for the input data\n- responsible for creating RecordReaders for each split\n\ncollaboration:\n- CombineFileInputFormat collaborates with CombineFileSplit and FileInputFormat to create splits for the input data\n- CombineFileRecordReader collaborates with CombineFileSplit and TaskAttemptContext to read the input data\n- CombineFileRecordReaderWrapper collaborates with FileInputFormat, CombineFileSplit, TaskAttemptContext, and RecordReader to read the input data\n- DelegatingInputFormat collaborates with MultipleInputs to handle the input data for the MapReduce job\n- DelegatingRecordReader collaborates with TaggedInputSplit and TaskAttemptContext to read the input data\n- FixedLengthInputFormat collaborates with FixedLengthRecordReader to read fixed-length records from the input data\n- FixedLengthRecordReader collaborates with Configuration, Path, FSDataInputStream, Seekable, CompressionCodec, CompressionInputStream, and Decompressor to read fixed-length records from the input data\n- KeyValueLineRecordReader collaborates with LineRecordReader to read key-value pairs from the input data\n- KeyValueTextInputFormat collaborates with KeyValueLineRecordReader to read key-value pairs from the input data\n- LineRecordReader collaborates with InputSplit, TaskAttemptContext, Configuration, FSDataInputStream, FutureDataInputStreamBuilder, Path, Seekable, LongWritable, Text, CompressionCodecPool, CompressionCodec, SplitCompressionInputStream, SplittableCompressionCodec, CompressionCodecFactory, Decompressor, FutureIO, Logger, and LoggerFactory to read the input data\n- NLineInputFormat collaborates with LineRecordReader to read the input data\n- SequenceFileAsTextRecordReader collaborates with SequenceFileRecordReader to read key-value pairs from the input data\n- SequenceFileInputFormat collaborates with SequenceFileRecordReader to read key-value pairs from the input data\n- SequenceFileRecordReader collaborates with Configuration and SequenceFile.Reader to read key-value pairs from the input data\n- TextInputFormat collaborates with LineRecordReader to read the input data\n\narchitectural role/pattern:\n- the directory acts as a factory for creating RecordReaders for each split\n- the directory follows the decorator pattern by wrapping a RecordReader to handle a single file split\n- the directory follows the factory pattern by creating RecordReaders for each split\n- the directory follows the strategy pattern by using different RecordReaders for different types of input data\n- the directory follows the facade pattern by providing a single interface for handling different types of input data\n- the directory follows the adapter pattern by converting the input keys and values to their String forms\n- the directory follows the singleton pattern by providing a single instance of the RecordReader for each split"
+}

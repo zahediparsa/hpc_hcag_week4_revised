@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "ACDC",
+    "cluster": 17,
+    "class": "org.apache.hadoop.mapreduce.security.SecureShuffleUtils",
+    "path": "security/SecureShuffleUtils.java",
+    "file_name": "SecureShuffleUtils.java",
+    "directory": "security",
+    "summary": "KEY FUNCTIONALITY:\nThis chunk of code contains utility methods for generating keys, hashes, and verifying them for shuffle.\n\nCORE LOGIC:\nThe core logic of this chunk is to generate and verify hashes using a secret key. The generateHash method takes a message and a secret key as input and returns a Base64 encoded hash of the message. The verifyHash method takes a hash, a message, and a secret key as input and returns true if the hash is the same as the hash generated from the message using the secret key.\n\nINPUTS/OUTPUTS:\nThe inputs to the generateHash and verifyHash methods are byte arrays and secret keys. The outputs are Base64 encoded strings and boolean values.\n\nDEPENDENCIES:\nThis chunk of code depends on the JobTokenSecretManager class from the org.apache.hadoop.mapreduce.security.token package.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "ACDC",
+    "cluster": 17,
+    "class": "org.apache.hadoop.mapreduce.security.token.JobTokenSecretManager",
+    "path": "security/token/JobTokenSecretManager.java",
+    "file_name": "JobTokenSecretManager.java",
+    "directory": "security/token",
+    "summary": "KEY FUNCTIONALITY:\n- SecretManager for job token\n- Can be used to cache generated job tokens\n\nCORE LOGIC:\n- Computes the HMAC hash of a message using a key\n- Creates a new password/secret for a given job token identifier\n- Caches job tokens for fast access\n\nINPUTS/OUTPUTS:\n- Input: job token identifier, jobId, job token\n- Output: token password/secret as SecretKey, token password/secret as byte[]\n\nDEPENDENCIES:\n- Imported classes: SecretManager, Token, SecretKey, JobTokenIdentifier\n- Parent class: None\n- Collaborator classes: None",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

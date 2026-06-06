@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 20,
+  "directory": "lib/output",
+  "title": "OutputCommitter",
+  "description": "- OutputCommitter is an interface for an OutputCommitter implementing partial commit of task output.\n- During preemption, OutputCommitter can choose to support or ignore partial commit.",
+  "summary": "TITLE: OutputCommitter\nDESCRIPTION: - OutputCommitter is an interface for an OutputCommitter implementing partial commit of task output.\n- During preemption, OutputCommitter can choose to support or ignore partial commit.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "PartialOutputCommitter.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: OutputCommitter\n\nDESCRIPTION:\n- OutputCommitter is an interface for an OutputCommitter implementing partial commit of task output.\n- During preemption, OutputCommitter can choose to support or ignore partial commit."
+}

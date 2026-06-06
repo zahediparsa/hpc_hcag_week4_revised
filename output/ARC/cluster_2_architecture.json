@@ -1,0 +1,30 @@
+{
+  "cluster_id": 2,
+  "title": "Cluster 2",
+  "description": "The cluster consists of two main components: a Utility class and a Worker class.\nThe Utility class provides common utility methods for various purposes, while the Worker class collaborates with the Utility class to perform tasks.\nThe architecture follows the Utility class pattern, which is a creational pattern that provides a central place for creating and storing utility objects.\nThe Utility class pattern is used to achieve scalability, maintainability, and reusability of utility methods.\nThe technologies used in this architecture include Java, Maven, and Git.",
+  "description_word_count": 85,
+  "number_of_files": 10,
+  "number_of_directories": 3,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Cluster 2\n\nDESCRIPTION:\nThe cluster consists of two main components: a Utility class and a Worker class.\nThe Utility class provides common utility methods for various purposes, while the Worker class collaborates with the Utility class to perform tasks.\nThe architecture follows the Utility class pattern, which is a creational pattern that provides a central place for creating and storing utility objects.\nThe Utility class pattern is used to achieve scalability, maintainability, and reusability of utility methods.\nThe technologies used in this architecture include Java, Maven, and Git.",
+  "algorithm": "ARC",
+  "files": [
+    "checkpoint/CheckpointID.java",
+    "checkpoint/CheckpointNamingService.java",
+    "checkpoint/CheckpointService.java",
+    "checkpoint/EnumCounter.java",
+    "checkpoint/FSCheckpointID.java",
+    "checkpoint/FSCheckpointService.java",
+    "checkpoint/RandomNameCNS.java",
+    "checkpoint/SimpleNamingService.java",
+    "checkpoint/TaskCheckpointID.java",
+    "util/ResourceBundles.java"
+  ]
+}

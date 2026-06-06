@@ -1,0 +1,27 @@
+{
+  "cluster_id": 39,
+  "title": "Hadoop MapReduce Cluster Architecture",
+  "description": "The Hadoop MapReduce cluster architecture is designed to process large-scale data sets efficiently and scalably. It consists of a master node (NameNode) and multiple slave nodes (DataNodes). The NameNode manages the file system namespace and coordinates the distributed processing of data across the cluster. The DataNodes store and process the actual data blocks. MapReduce jobs are submitted to the NameNode, which assigns tasks to DataNodes for execution. The MapReduce framework provides fault-tolerance and scalability, allowing for efficient processing of large data sets. The architecture supports various data processing patterns, such as batch processing, interactive queries, and stream processing. It also integrates with other Hadoop components, such as HDFS (Hadoop Distributed File System) and YARN (Yet Another Resource Negotiator), to provide a comprehensive data processing solution.",
+  "description_word_count": 125,
+  "number_of_files": 7,
+  "number_of_directories": 2,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Cluster Architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce cluster architecture is designed to process large-scale data sets efficiently and scalably. It consists of a master node (NameNode) and multiple slave nodes (DataNodes). The NameNode manages the file system namespace and coordinates the distributed processing of data across the cluster. The DataNodes store and process the actual data blocks. MapReduce jobs are submitted to the NameNode, which assigns tasks to DataNodes for execution. The MapReduce framework provides fault-tolerance and scalability, allowing for efficient processing of large data sets. The architecture supports various data processing patterns, such as batch processing, interactive queries, and stream processing. It also integrates with other Hadoop components, such as HDFS (Hadoop Distributed File System) and YARN (Yet Another Resource Negotiator), to provide a comprehensive data processing solution.",
+  "algorithm": "LIMBO",
+  "files": [
+    "jobhistory/JobInfoChangeEvent.java",
+    "jobhistory/JobInitedEvent.java",
+    "jobhistory/JobPriorityChangeEvent.java",
+    "jobhistory/JobQueueChangeEvent.java",
+    "jobhistory/JobStatusChangedEvent.java",
+    "jobhistory/JobSubmittedEvent.java",
+    "jobhistory/JobUnsuccessfulCompletionEvent.java"
+  ]
+}

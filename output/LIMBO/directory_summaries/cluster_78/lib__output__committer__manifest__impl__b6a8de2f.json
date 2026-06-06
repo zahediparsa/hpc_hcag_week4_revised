@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 78,
+  "directory": "lib/output/committer/manifest/impl",
+  "title": "Manifest Committer Auditing Integration",
+  "description": "- Integrates with Hadoop 3.3.2+ Auditing\n- Updates common context with job ID and task attempt ID\n- Manages entry and exit of stages\n- Updates thread context with stage name and job ID",
+  "summary": "TITLE: Manifest Committer Auditing Integration\nDESCRIPTION: - Integrates with Hadoop 3.3.2+ Auditing\n- Updates common context with job ID and task attempt ID\n- Manages entry and exit of stages\n- Updates thread context with stage name and job ID",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "AuditingIntegration.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Manifest Committer Auditing Integration\n\nDESCRIPTION:\n- Integrates with Hadoop 3.3.2+ Auditing\n- Updates common context with job ID and task attempt ID\n- Manages entry and exit of stages\n- Updates thread context with stage name and job ID"
+}

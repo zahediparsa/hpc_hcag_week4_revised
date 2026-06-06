@@ -1,0 +1,53 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 32,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.EventReader",
+    "path": "jobhistory/EventReader.java",
+    "file_name": "EventReader.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\n- reads events from a file\n- parses the events and creates the appropriate HistoryEvent object\n- returns the next event from the stream\n\nCORE LOGIC:\n- uses the avro library to read and parse the events\n- handles different event types and creates the appropriate HistoryEvent object\n\nINPUTS/OUTPUTS:\n- reads from a DataInputStream\n- returns HistoryEvent objects\n\nDEPENDENCIES:\n- org.apache.avro.AvroRuntimeException\n- org.apache.avro.Schema\n- org.apache.avro.io.DatumReader\n- org.apache.avro.io.Decoder\n- org.apache.avro.io.DecoderFactory\n- org.apache.avro.specific.SpecificData\n- org.apache.avro.specific.SpecificDatumReader\n- org.apache.hadoop.classification.InterfaceAudience\n- org.apache.hadoop.classification.InterfaceStability\n- org.apache.hadoop.fs.FileSystem\n- org.apache.hadoop.fs.Path\n- org.apache.hadoop.mapreduce.CounterGroup\n- org.apache.hadoop.mapreduce.Counters\n- org.apache.hadoop.util.StringInterner",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 32,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.EventWriter",
+    "path": "jobhistory/EventWriter.java",
+    "file_name": "EventWriter.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\n\nThe EventWriter class is used to write events to the underlying stream. It typically creates one event writer per job.\n\nCORE LOGIC:\n\nThe EventWriter class uses the Avro library to write events to the stream. It supports two encoding formats: JSON and BINARY.\n\nINPUTS/OUTPUTS:\n\nThe EventWriter class takes an FSDataOutputStream and a WriteMode as input, and it writes events to the stream.\n\nDEPENDENCIES:\n\nThe EventWriter class depends on the org.apache.avro library for Avro encoding and decoding. It also depends on the org.apache.hadoop.mapreduce.jobhistory package for the HistoryEvent and Event classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 32,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.JobFinishedEvent",
+    "path": "jobhistory/JobFinishedEvent.java",
+    "file_name": "JobFinishedEvent.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\n\nThis chunk of code is an event to record successful completion of a job.\n\nCORE LOGIC:\n\nThe code sets the finish time, number of succeeded and failed maps and reduces, and the counters for the job.\n\nINPUTS/OUTPUTS:\n\nThe code takes in the job ID, finish time, number of succeeded and failed maps and reduces, and the counters for the job as inputs. It outputs the job ID, finish time, number of succeeded and failed maps and reduces, and the counters for the job.\n\nDEPENDENCIES:\n\nThe code depends on the JobID, Counters, and JobHistoryEventUtils classes.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 32,
+    "class": "org.apache.hadoop.mapreduce.jobhistory.JobHistoryParser",
+    "path": "jobhistory/JobHistoryParser.java",
+    "file_name": "JobHistoryParser.java",
+    "directory": "jobhistory",
+    "summary": "KEY FUNCTIONALITY:\nThe JobHistoryParser class is responsible for parsing job history files and storing the parsed data in a data structure.\n\nCORE LOGIC:\nThe code iterates over the values of a map of TaskInfo objects and calls the printAll() method on each object. The printAll() method prints various information about the task, including its ID, start time, finish time, type, split locations, and counters.\n\nINPUTS/OUTPUTS:\nThe code takes in a map of TaskInfo objects as input and does not produce any output.\n\nDEPENDENCIES:\nThe code depends on the existence of a TaskInfo class, which contains information about a particular task, and a TaskAttemptInfo class, which contains information about a particular task attempt. The code also depends on the existence of a Counters class, which is used to store performance counters for the job, task, or task attempt.",
+    "chunked": true,
+    "number_of_code_chunks": 2,
+    "chunk_summaries": [
+      "Summarize this raw Java source-code chunk.\n\nThis is chunk 1 of 2 from file JobHistoryParser.java.\nUse only the code shown in this chunk.\n\nReturn exactly these four sections:\n\nKEY FUNCTIONALITY: main purpose visible in this chunk\nCORE LOGIC: key algorithms or processing patterns visible in this chunk\nINPUTS/OUTPUTS: data flowing in and out\nDEPENDENCIES: key imported, parent, or collaborator classes visible in this chunk\n\nCode chunk:\n/**\n * Licensed to the Apache Software Foundation (ASF) under one\n * or more contributor license agreements.  See the NOTICE file\n * distributed with this work for additional information\n * regarding copyright ownership.  The ASF licenses this file\n * to you under the Apache License, Version 2.0 (the\n * \"License\"); you may not use this file except in compliance\n * with the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\n\npackage org.apache.hadoop.mapreduce.jobhistory;\n\nimport java.io.IOException;\nimport java.util.HashMap;\nimport java.util.LinkedList;\nimport java.util.List;\nimport java.util.Map;\n\nimport org.apache.hadoop.classification.InterfaceAudience;\nimport org.apache.hadoop.classification.InterfaceStability;\nimport org.apache.hadoop.classification.InterfaceAudience.Private;\nimport org.apache.hadoop.fs.FSDataInputStream;\nimport org.apache.hadoop.fs.FileSystem;\nimport org.apache.hadoop.fs.Path;\nimport org.apache.hadoop.mapreduce.Counters;\nimport org.apache.hadoop.mapreduce.JobACL;\nimport org.apache.hadoop.mapreduce.JobID;\nimport org.apache.hadoop.mapred.JobPriority;\nimport org.apache.hadoop.mapred.JobStatus;\nimport org.apache.hadoop.mapreduce.TaskAttemptID",
+      "KEY FUNCTIONALITY:\nThis code chunk is part of a class that parses job history files and stores the parsed data in a data structure.\n\nCORE LOGIC:\nThe code chunk iterates over the values of a map of TaskInfo objects and calls the printAll() method on each object. The printAll() method prints various information about the task, including its ID, start time, finish time, type, split locations, and counters.\n\nINPUTS/OUTPUTS:\nThe code chunk takes in a map of TaskInfo objects as input and does not produce any output.\n\nDEPENDENCIES:\nThe code chunk depends on the existence of a TaskInfo class, which contains information about a particular task, and a TaskAttemptInfo class, which contains information about a particular task attempt. The code chunk also depends on the existence of a Counters class, which is used to store performance counters for the job, task, or task attempt."
+    ]
+  }
+]

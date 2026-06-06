@@ -1,0 +1,699 @@
+{
+  "algorithm": "LIMBO",
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "number_of_files": 2,
+      "number_of_directories": 2,
+      "directories": [
+        ".",
+        "protocol"
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "number_of_files": 4,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "protocol",
+        "tools"
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "number_of_files": 47,
+      "number_of_directories": 23,
+      "directories": [
+        ".",
+        "checkpoint",
+        "counters",
+        "jobhistory",
+        "lib",
+        "lib/aggregate",
+        "lib/db",
+        "lib/fieldsel",
+        "lib/input",
+        "lib/output",
+        "lib/output/committer",
+        "lib/output/committer/manifest",
+        "lib/output/committer/manifest/files",
+        "lib/output/committer/manifest/impl",
+        "lib/output/committer/manifest/stages",
+        "security",
+        "security/token",
+        "security/token/delegation",
+        "task",
+        "task/annotation",
+        "task/reduce",
+        "util",
+        "v2"
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "number_of_files": 5,
+      "number_of_directories": 4,
+      "directories": [
+        ".",
+        "lib",
+        "lib/map",
+        "task"
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "number_of_files": 8,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "counters",
+        "util"
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "number_of_files": 4,
+      "number_of_directories": 4,
+      "directories": [
+        ".",
+        "lib",
+        "lib/output",
+        "task"
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "number_of_files": 1,
+      "number_of_directories": 1,
+      "directories": [
+        "."
+      ]
+    },
+    {
+      "cluster_id": 7,
+      "number_of_files": 7,
+      "number_of_directories": 5,
+      "directories": [
+        ".",
+        "counters",
+        "filecache",
+        "security",
+        "util"
+      ]
+    },
+    {
+      "cluster_id": 8,
+      "number_of_files": 18,
+      "number_of_directories": 4,
+      "directories": [
+        ".",
+        "lib",
+        "lib/input",
+        "lib/join"
+      ]
+    },
+    {
+      "cluster_id": 10,
+      "number_of_files": 4,
+      "number_of_directories": 4,
+      "directories": [
+        ".",
+        "lib",
+        "lib/chain",
+        "task"
+      ]
+    },
+    {
+      "cluster_id": 11,
+      "number_of_files": 4,
+      "number_of_directories": 1,
+      "directories": [
+        "."
+      ]
+    },
+    {
+      "cluster_id": 12,
+      "number_of_files": 8,
+      "number_of_directories": 7,
+      "directories": [
+        ".",
+        "lib",
+        "lib/aggregate",
+        "lib/input",
+        "lib/jobcontrol",
+        "lib/partition",
+        "util"
+      ]
+    },
+    {
+      "cluster_id": 13,
+      "number_of_files": 1,
+      "number_of_directories": 1,
+      "directories": [
+        "."
+      ]
+    },
+    {
+      "cluster_id": 14,
+      "number_of_files": 2,
+      "number_of_directories": 1,
+      "directories": [
+        "."
+      ]
+    },
+    {
+      "cluster_id": 15,
+      "number_of_files": 5,
+      "number_of_directories": 6,
+      "directories": [
+        ".",
+        "lib",
+        "lib/aggregate",
+        "lib/fieldsel",
+        "lib/input",
+        "lib/map"
+      ]
+    },
+    {
+      "cluster_id": 16,
+      "number_of_files": 4,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/map"
+      ]
+    },
+    {
+      "cluster_id": 17,
+      "number_of_files": 2,
+      "number_of_directories": 1,
+      "directories": [
+        "."
+      ]
+    },
+    {
+      "cluster_id": 18,
+      "number_of_files": 9,
+      "number_of_directories": 5,
+      "directories": [
+        ".",
+        "lib",
+        "lib/output",
+        "lib/output/committer",
+        "lib/output/committer/manifest"
+      ]
+    },
+    {
+      "cluster_id": 19,
+      "number_of_files": 6,
+      "number_of_directories": 4,
+      "directories": [
+        ".",
+        "lib",
+        "lib/db",
+        "lib/output"
+      ]
+    },
+    {
+      "cluster_id": 20,
+      "number_of_files": 3,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/output"
+      ]
+    },
+    {
+      "cluster_id": 21,
+      "number_of_files": 4,
+      "number_of_directories": 4,
+      "directories": [
+        ".",
+        "lib",
+        "lib/fieldsel",
+        "lib/reduce"
+      ]
+    },
+    {
+      "cluster_id": 22,
+      "number_of_files": 3,
+      "number_of_directories": 4,
+      "directories": [
+        ".",
+        "server",
+        "server/jobtracker",
+        "server/tasktracker"
+      ]
+    },
+    {
+      "cluster_id": 23,
+      "number_of_files": 3,
+      "number_of_directories": 2,
+      "directories": [
+        ".",
+        "counters"
+      ]
+    },
+    {
+      "cluster_id": 24,
+      "number_of_files": 14,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "task",
+        "task/reduce"
+      ]
+    },
+    {
+      "cluster_id": 26,
+      "number_of_files": 4,
+      "number_of_directories": 2,
+      "directories": [
+        ".",
+        "checkpoint"
+      ]
+    },
+    {
+      "cluster_id": 27,
+      "number_of_files": 2,
+      "number_of_directories": 2,
+      "directories": [
+        ".",
+        "checkpoint"
+      ]
+    },
+    {
+      "cluster_id": 28,
+      "number_of_files": 1,
+      "number_of_directories": 2,
+      "directories": [
+        ".",
+        "counters"
+      ]
+    },
+    {
+      "cluster_id": 30,
+      "number_of_files": 5,
+      "number_of_directories": 2,
+      "directories": [
+        ".",
+        "jobhistory"
+      ]
+    },
+    {
+      "cluster_id": 31,
+      "number_of_files": 1,
+      "number_of_directories": 2,
+      "directories": [
+        ".",
+        "jobhistory"
+      ]
+    },
+    {
+      "cluster_id": 32,
+      "number_of_files": 4,
+      "number_of_directories": 2,
+      "directories": [
+        ".",
+        "jobhistory"
+      ]
+    },
+    {
+      "cluster_id": 33,
+      "number_of_files": 3,
+      "number_of_directories": 2,
+      "directories": [
+        ".",
+        "jobhistory"
+      ]
+    },
+    {
+      "cluster_id": 39,
+      "number_of_files": 7,
+      "number_of_directories": 2,
+      "directories": [
+        ".",
+        "jobhistory"
+      ]
+    },
+    {
+      "cluster_id": 46,
+      "number_of_files": 6,
+      "number_of_directories": 2,
+      "directories": [
+        ".",
+        "jobhistory"
+      ]
+    },
+    {
+      "cluster_id": 50,
+      "number_of_files": 8,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/aggregate"
+      ]
+    },
+    {
+      "cluster_id": 51,
+      "number_of_files": 5,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/aggregate"
+      ]
+    },
+    {
+      "cluster_id": 53,
+      "number_of_files": 3,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/chain"
+      ]
+    },
+    {
+      "cluster_id": 54,
+      "number_of_files": 4,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/output"
+      ]
+    },
+    {
+      "cluster_id": 55,
+      "number_of_files": 6,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/db"
+      ]
+    },
+    {
+      "cluster_id": 56,
+      "number_of_files": 1,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/db"
+      ]
+    },
+    {
+      "cluster_id": 57,
+      "number_of_files": 9,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/db"
+      ]
+    },
+    {
+      "cluster_id": 58,
+      "number_of_files": 4,
+      "number_of_directories": 5,
+      "directories": [
+        ".",
+        "lib",
+        "lib/db",
+        "lib/input",
+        "lib/join"
+      ]
+    },
+    {
+      "cluster_id": 61,
+      "number_of_files": 5,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/input"
+      ]
+    },
+    {
+      "cluster_id": 62,
+      "number_of_files": 2,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/input"
+      ]
+    },
+    {
+      "cluster_id": 66,
+      "number_of_files": 1,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/jobcontrol"
+      ]
+    },
+    {
+      "cluster_id": 67,
+      "number_of_files": 4,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/join"
+      ]
+    },
+    {
+      "cluster_id": 68,
+      "number_of_files": 2,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/join"
+      ]
+    },
+    {
+      "cluster_id": 69,
+      "number_of_files": 2,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/join"
+      ]
+    },
+    {
+      "cluster_id": 70,
+      "number_of_files": 2,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/join"
+      ]
+    },
+    {
+      "cluster_id": 71,
+      "number_of_files": 2,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/join"
+      ]
+    },
+    {
+      "cluster_id": 73,
+      "number_of_files": 5,
+      "number_of_directories": 8,
+      "directories": [
+        ".",
+        "lib",
+        "lib/join",
+        "lib/output",
+        "lib/output/committer",
+        "lib/output/committer/manifest",
+        "security",
+        "security/token"
+      ]
+    },
+    {
+      "cluster_id": 75,
+      "number_of_files": 7,
+      "number_of_directories": 7,
+      "directories": [
+        ".",
+        "lib",
+        "lib/output",
+        "lib/output/committer",
+        "lib/output/committer/manifest",
+        "lib/output/committer/manifest/impl",
+        "lib/output/committer/manifest/stages"
+      ]
+    },
+    {
+      "cluster_id": 76,
+      "number_of_files": 5,
+      "number_of_directories": 7,
+      "directories": [
+        ".",
+        "lib",
+        "lib/output",
+        "lib/output/committer",
+        "lib/output/committer/manifest",
+        "lib/output/committer/manifest/files",
+        "lib/output/committer/manifest/impl"
+      ]
+    },
+    {
+      "cluster_id": 77,
+      "number_of_files": 1,
+      "number_of_directories": 6,
+      "directories": [
+        ".",
+        "lib",
+        "lib/output",
+        "lib/output/committer",
+        "lib/output/committer/manifest",
+        "lib/output/committer/manifest/files"
+      ]
+    },
+    {
+      "cluster_id": 78,
+      "number_of_files": 6,
+      "number_of_directories": 7,
+      "directories": [
+        ".",
+        "lib",
+        "lib/output",
+        "lib/output/committer",
+        "lib/output/committer/manifest",
+        "lib/output/committer/manifest/impl",
+        "lib/output/committer/manifest/stages"
+      ]
+    },
+    {
+      "cluster_id": 80,
+      "number_of_files": 1,
+      "number_of_directories": 6,
+      "directories": [
+        ".",
+        "lib",
+        "lib/output",
+        "lib/output/committer",
+        "lib/output/committer/manifest",
+        "lib/output/committer/manifest/impl"
+      ]
+    },
+    {
+      "cluster_id": 81,
+      "number_of_files": 9,
+      "number_of_directories": 7,
+      "directories": [
+        ".",
+        "lib",
+        "lib/output",
+        "lib/output/committer",
+        "lib/output/committer/manifest",
+        "lib/output/committer/manifest/impl",
+        "lib/output/committer/manifest/stages"
+      ]
+    },
+    {
+      "cluster_id": 85,
+      "number_of_files": 3,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/partition"
+      ]
+    },
+    {
+      "cluster_id": 87,
+      "number_of_files": 4,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "lib",
+        "lib/partition"
+      ]
+    },
+    {
+      "cluster_id": 90,
+      "number_of_files": 2,
+      "number_of_directories": 2,
+      "directories": [
+        ".",
+        "security"
+      ]
+    },
+    {
+      "cluster_id": 91,
+      "number_of_files": 2,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "security",
+        "security/token"
+      ]
+    },
+    {
+      "cluster_id": 92,
+      "number_of_files": 2,
+      "number_of_directories": 4,
+      "directories": [
+        ".",
+        "security",
+        "security/token",
+        "security/token/delegation"
+      ]
+    },
+    {
+      "cluster_id": 93,
+      "number_of_files": 3,
+      "number_of_directories": 2,
+      "directories": [
+        ".",
+        "split"
+      ]
+    },
+    {
+      "cluster_id": 96,
+      "number_of_files": 1,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "task",
+        "task/reduce"
+      ]
+    },
+    {
+      "cluster_id": 97,
+      "number_of_files": 1,
+      "number_of_directories": 3,
+      "directories": [
+        ".",
+        "task",
+        "task/reduce"
+      ]
+    },
+    {
+      "cluster_id": 99,
+      "number_of_files": 1,
+      "number_of_directories": 2,
+      "directories": [
+        ".",
+        "util"
+      ]
+    }
+  ]
+}

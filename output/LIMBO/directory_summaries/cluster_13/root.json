@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 13,
+  "directory": ".",
+  "title": "QueueInfo",
+  "description": "- Maintains information about job queues in the Hadoop Map/Reduce framework\n- Manages job submission to queues\n- Keeps track of queue state and scheduling information\n- Includes the queue name, scheduling information, queue state, and job statuses\n- Job statuses are outputs\n- org.apache.hadoop.classification.InterfaceAudience\n- org.apache.hadoop.classification.InterfaceStability\n- org.apache.hadoop.io.Text\n- org.apache.hadoop.io.Writable\n- org.apache.hadoop.io.WritableUtils\n- org.apache.hadoop.util.StringInterner",
+  "summary": "TITLE: QueueInfo\nDESCRIPTION: - Maintains information about job queues in the Hadoop Map/Reduce framework\n- Manages job submission to queues\n- Keeps track of queue state and scheduling information\n- Includes the queue name, scheduling information, queue state, and job statuses\n- Job statuses are outputs\n- org.apache.hadoop.classification.InterfaceAudience\n- org.apache.hadoop.classification.InterfaceStability\n- org.apache.hadoop.io.Text\n- org.apache.hadoop.io.Writable\n- org.apache.hadoop.io.WritableUtils\n- org.apache.hadoop.util.StringInterner",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "QueueInfo.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: QueueInfo\n\nDESCRIPTION:\n- Maintains information about job queues in the Hadoop Map/Reduce framework\n- Manages job submission to queues\n- Keeps track of queue state and scheduling information\n- Includes the queue name, scheduling information, queue state, and job statuses\n- Job statuses are outputs\n- org.apache.hadoop.classification.InterfaceAudience\n- org.apache.hadoop.classification.InterfaceStability\n- org.apache.hadoop.io.Text\n- org.apache.hadoop.io.Writable\n- org.apache.hadoop.io.WritableUtils\n- org.apache.hadoop.util.StringInterner"
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 13,
+  "directory": "security",
+  "title": "Security",
+  "description": "This directory contains classes related to security in Hadoop MapReduce. It includes classes for transferring secrets from the job client to the tasks, obtaining delegation tokens from namenodes, and removing jobtoken referrals that don't make sense in the context of the task execution. The classes in this directory collaborate to ensure secure execution of MapReduce jobs.",
+  "summary": "TITLE: Security\nDESCRIPTION: This directory contains classes related to security in Hadoop MapReduce. It includes classes for transferring secrets from the job client to the tasks, obtaining delegation tokens from namenodes, and removing jobtoken referrals that don't make sense in the context of the task execution. The classes in this directory collaborate to ensure secure execution of MapReduce jobs.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "TokenCache.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Security\n\nDESCRIPTION:\nThis directory contains classes related to security in Hadoop MapReduce. It includes classes for transferring secrets from the job client to the tasks, obtaining delegation tokens from namenodes, and removing jobtoken referrals that don't make sense in the context of the task execution. The classes in this directory collaborate to ensure secure execution of MapReduce jobs."
+}

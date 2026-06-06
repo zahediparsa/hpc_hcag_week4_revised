@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 1,
+  "directory": "security/token",
+  "title": "MapReduce Delegation Token Architecture",
+  "description": "The MapReduce delegation token architecture is responsible for managing and generating delegation tokens specific to MapReduce. The DelegationTokenIdentifier class extends the AbstractDelegationTokenIdentifier class and provides functionality for creating and managing these tokens. The DelegationTokenSecretManager class is responsible for creating a MapReduce specific delegation token secret manager, which is used to generate and accept the password for each token. The DelegationTokenSelector class extends the AbstractDelegationTokenSelector class and specializes it for MapReduce.",
+  "summary": "TITLE: MapReduce Delegation Token Architecture\nDESCRIPTION: The MapReduce delegation token architecture is responsible for managing and generating delegation tokens specific to MapReduce. The DelegationTokenIdentifier class extends the AbstractDelegationTokenIdentifier class and provides functionality for creating and managing these tokens. The DelegationTokenSecretManager class is responsible for creating a MapReduce specific delegation token secret manager, which is used to generate and accept the password for each token. The DelegationTokenSelector class extends the AbstractDelegationTokenSelector class and specializes it for MapReduce.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "security/token/delegation"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Delegation Token Architecture\n\nDESCRIPTION: The MapReduce delegation token architecture is responsible for managing and generating delegation tokens specific to MapReduce. The DelegationTokenIdentifier class extends the AbstractDelegationTokenIdentifier class and provides functionality for creating and managing these tokens. The DelegationTokenSecretManager class is responsible for creating a MapReduce specific delegation token secret manager, which is used to generate and accept the password for each token. The DelegationTokenSelector class extends the AbstractDelegationTokenSelector class and specializes it for MapReduce."
+}

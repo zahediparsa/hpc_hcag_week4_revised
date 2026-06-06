@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 62,
+  "directory": "lib/input",
+  "title": "lib/input",
+  "description": "This directory contains classes that are used to read data from input sources.\nThe classes in this directory collaborate to read data from various input sources,\nsuch as compressed input splits and input streams. The classes in this directory\nuse the SplitCompressionInputStream class to read from compressed input splits,\nand the Configuration class to configure the behavior of the line reader.\nThe classes in this directory also handle multi-byte delimiters correctly and\nsupport customizable record delimiters.",
+  "summary": "TITLE: lib/input\nDESCRIPTION: This directory contains classes that are used to read data from input sources.\nThe classes in this directory collaborate to read data from various input sources,\nsuch as compressed input splits and input streams. The classes in this directory\nuse the SplitCompressionInputStream class to read from compressed input splits,\nand the Configuration class to configure the behavior of the line reader.\nThe classes in this directory also handle multi-byte delimiters correctly and\nsupport customizable record delimiters.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "CompressedSplitLineReader.java"
+    },
+    {
+      "type": "file",
+      "name": "UncompressedSplitLineReader.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/input\n\nDESCRIPTION:\nThis directory contains classes that are used to read data from input sources.\nThe classes in this directory collaborate to read data from various input sources,\nsuch as compressed input splits and input streams. The classes in this directory\nuse the SplitCompressionInputStream class to read from compressed input splits,\nand the Configuration class to configure the behavior of the line reader.\nThe classes in this directory also handle multi-byte delimiters correctly and\nsupport customizable record delimiters."
+}

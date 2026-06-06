@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": "filecache",
+  "title": "Directory-level architectural abstraction for filecache",
+  "description": "The filecache directory is responsible for determining the timestamps of files to be cached and storing them in the configuration. It also determines the visibilities of the distributed cache files and archives and gets the corresponding delegation tokens for each file. The core logic involves using the configuration to get the cache archives and files, then using the FileSystem class to get the file status for each URI. The FileStatus class is used to get the length and modification time of each file, while the FsAction class is used to check the permissions of each file. Finally, the TokenCache class is used to get the delegation tokens for each file. The inputs are the configuration of a job and the Credentials, while the dependencies include the FileSystem, FileStatus, FsAction, and TokenCache classes.",
+  "summary": "TITLE: Directory-level architectural abstraction for filecache\nDESCRIPTION: The filecache directory is responsible for determining the timestamps of files to be cached and storing them in the configuration. It also determines the visibilities of the distributed cache files and archives and gets the corresponding delegation tokens for each file. The core logic involves using the configuration to get the cache archives and files, then using the FileSystem class to get the file status for each URI. The FileStatus class is used to get the length and modification time of each file, while the FsAction class is used to check the permissions of each file. Finally, the TokenCache class is used to get the delegation tokens for each file. The inputs are the configuration of a job and the Credentials, while the dependencies include the FileSystem, FileStatus, FsAction, and TokenCache classes.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ClientDistributedCacheManager.java"
+    },
+    {
+      "type": "file",
+      "name": "DistributedCache.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Directory-level architectural abstraction for filecache\n\nDESCRIPTION:\nThe filecache directory is responsible for determining the timestamps of files to be cached and storing them in the configuration. It also determines the visibilities of the distributed cache files and archives and gets the corresponding delegation tokens for each file. The core logic involves using the configuration to get the cache archives and files, then using the FileSystem class to get the file status for each URI. The FileStatus class is used to get the length and modification time of each file, while the FsAction class is used to check the permissions of each file. Finally, the TokenCache class is used to get the delegation tokens for each file. The inputs are the configuration of a job and the Credentials, while the dependencies include the FileSystem, FileStatus, FsAction, and TokenCache classes."
+}

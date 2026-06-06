@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 7,
+  "directory": "filecache",
+  "title": "FileCache",
+  "description": "The FileCache directory is responsible for distributing application-specific large, read-only files efficiently. It sets up the cache for the application by copying the necessary files to the FileSystem and setting up the application's JobConf. The core logic of this chunk is to handle the localization of files and archives, which are used by the Mapper or Reducer. The inputs are the necessary files to be cached, specified via urls, and the JobConf. The outputs are the localized files and archives. The dependencies include the org.apache.hadoop.mapreduce.filecache package, the org.apache.hadoop.conf package, the org.apache.hadoop.mapreduce.task package, the org.apache.hadoop.util package, the org.apache.hadoop.fs package, the org.apache.hadoop.mapreduce package, and the java.net package.",
+  "summary": "TITLE: FileCache\nDESCRIPTION: The FileCache directory is responsible for distributing application-specific large, read-only files efficiently. It sets up the cache for the application by copying the necessary files to the FileSystem and setting up the application's JobConf. The core logic of this chunk is to handle the localization of files and archives, which are used by the Mapper or Reducer. The inputs are the necessary files to be cached, specified via urls, and the JobConf. The outputs are the localized files and archives. The dependencies include the org.apache.hadoop.mapreduce.filecache package, the org.apache.hadoop.conf package, the org.apache.hadoop.mapreduce.task package, the org.apache.hadoop.util package, the org.apache.hadoop.fs package, the org.apache.hadoop.mapreduce package, and the java.net package.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "DistributedCache.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: FileCache\n\nDESCRIPTION:\nThe FileCache directory is responsible for distributing application-specific large, read-only files efficiently. It sets up the cache for the application by copying the necessary files to the FileSystem and setting up the application's JobConf. The core logic of this chunk is to handle the localization of files and archives, which are used by the Mapper or Reducer. The inputs are the necessary files to be cached, specified via urls, and the JobConf. The outputs are the localized files and archives. The dependencies include the org.apache.hadoop.mapreduce.filecache package, the org.apache.hadoop.conf package, the org.apache.hadoop.mapreduce.task package, the org.apache.hadoop.util package, the org.apache.hadoop.fs package, the org.apache.hadoop.mapreduce package, and the java.net package."
+}

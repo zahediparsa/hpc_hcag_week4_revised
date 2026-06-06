@@ -1,0 +1,30 @@
+{
+  "type": "directory",
+  "cluster_id": 54,
+  "directory": "lib/output",
+  "title": "MapReduce Output Format",
+  "description": "The MapReduce Output Format is responsible for writing the output of a MapReduce job to a specified location. It collaborates with the RecordWriter class to write the output data in a specific format. The MapReduce Output Format also plays a role in the overall architecture of the system, as it is responsible for managing the flow of data between different components of the system.",
+  "summary": "TITLE: MapReduce Output Format\nDESCRIPTION: The MapReduce Output Format is responsible for writing the output of a MapReduce job to a specified location. It collaborates with the RecordWriter class to write the output data in a specific format. The MapReduce Output Format also plays a role in the overall architecture of the system, as it is responsible for managing the flow of data between different components of the system.",
+  "number_of_children": 4,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "MapFileOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileAsBinaryOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "SequenceFileOutputFormat.java"
+    },
+    {
+      "type": "file",
+      "name": "TextOutputFormat.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Output Format\n\nDESCRIPTION:\nThe MapReduce Output Format is responsible for writing the output of a MapReduce job to a specified location. It collaborates with the RecordWriter class to write the output data in a specific format. The MapReduce Output Format also plays a role in the overall architecture of the system, as it is responsible for managing the flow of data between different components of the system."
+}

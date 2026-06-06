@@ -1,0 +1,46 @@
+{
+  "type": "directory",
+  "cluster_id": 4,
+  "directory": ".",
+  "title": "org.apache.hadoop.mapreduce.lib.chain",
+  "description": "This package provides the ChainMapper and ChainReducer classes, which allow multiple Mapper and Reducer classes to be linked together in a single MapReduce job. The ChainMapper class allows the output of one Mapper to be passed as input to another Mapper, while the ChainReducer class allows the output of one Reducer to be passed as input to another Reducer. This allows complex data processing pipelines to be created by combining multiple Mappers and Reducers in a flexible and modular way. Additionally, the package includes reducers for performing field selections and calculating the sum of values for a key. These reducers can be used as building blocks for more complex data processing tasks.",
+  "summary": "TITLE: org.apache.hadoop.mapreduce.lib.chain\nDESCRIPTION: This package provides the ChainMapper and ChainReducer classes, which allow multiple Mapper and Reducer classes to be linked together in a single MapReduce job. The ChainMapper class allows the output of one Mapper to be passed as input to another Mapper, while the ChainReducer class allows the output of one Reducer to be passed as input to another Reducer. This allows complex data processing pipelines to be created by combining multiple Mappers and Reducers in a flexible and modular way. Additionally, the package includes reducers for performing field selections and calculating the sum of values for a key. These reducers can be used as building blocks for more complex data processing tasks.",
+  "number_of_children": 8,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ContextFactory.java"
+    },
+    {
+      "type": "file",
+      "name": "OutputCommitter.java"
+    },
+    {
+      "type": "file",
+      "name": "RecordReader.java"
+    },
+    {
+      "type": "file",
+      "name": "RecordWriter.java"
+    },
+    {
+      "type": "file",
+      "name": "Reducer.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptContext.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskInputOutputContext.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: org.apache.hadoop.mapreduce.lib.chain\n\nDESCRIPTION:\nThis package provides the ChainMapper and ChainReducer classes, which allow multiple Mapper and Reducer classes to be linked together in a single MapReduce job. The ChainMapper class allows the output of one Mapper to be passed as input to another Mapper, while the ChainReducer class allows the output of one Reducer to be passed as input to another Reducer. This allows complex data processing pipelines to be created by combining multiple Mappers and Reducers in a flexible and modular way. Additionally, the package includes reducers for performing field selections and calculating the sum of values for a key. These reducers can be used as building blocks for more complex data processing tasks."
+}

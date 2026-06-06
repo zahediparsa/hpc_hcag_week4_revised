@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 5,
+  "directory": "util",
+  "title": "Utility methods for converting Counters to JSON and to TimelineMetric.",
+  "description": "This directory contains utility methods for converting Counters to JSON and to TimelineMetric. The countersToJSON method converts the given Counters object to a JSON representation using the Jackson library. The countersToTimelineMetric method converts the given Counters object to a set of TimelineMetric objects, with an optional group name prefix. These utility methods are used for various purposes such as logging and monitoring.",
+  "summary": "TITLE: Utility methods for converting Counters to JSON and to TimelineMetric.\nDESCRIPTION: This directory contains utility methods for converting Counters to JSON and to TimelineMetric. The countersToJSON method converts the given Counters object to a JSON representation using the Jackson library. The countersToTimelineMetric method converts the given Counters object to a set of TimelineMetric objects, with an optional group name prefix. These utility methods are used for various purposes such as logging and monitoring.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobHistoryEventUtils.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Utility methods for converting Counters to JSON and to TimelineMetric.\n\nDESCRIPTION:\nThis directory contains utility methods for converting Counters to JSON and to TimelineMetric. The countersToJSON method converts the given Counters object to a JSON representation using the Jackson library. The countersToTimelineMetric method converts the given Counters object to a set of TimelineMetric objects, with an optional group name prefix. These utility methods are used for various purposes such as logging and monitoring."
+}

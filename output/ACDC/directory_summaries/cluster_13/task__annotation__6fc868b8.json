@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 13,
+  "directory": "task/annotation",
+  "title": "Checkpointable Annotation",
+  "description": "The Checkpointable annotation is used to mark tasks that can be safely checkpointed and restarted in case of failures or preemptions. It allows for fault tolerance and efficient processing of large datasets. The annotation is used to decorate a class, indicating that the task can be checkpointed and restarted.",
+  "summary": "TITLE: Checkpointable Annotation\nDESCRIPTION: The Checkpointable annotation is used to mark tasks that can be safely checkpointed and restarted in case of failures or preemptions. It allows for fault tolerance and efficient processing of large datasets. The annotation is used to decorate a class, indicating that the task can be checkpointed and restarted.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "Checkpointable.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Checkpointable Annotation\n\nDESCRIPTION:\nThe Checkpointable annotation is used to mark tasks that can be safely checkpointed and restarted in case of failures or preemptions. It allows for fault tolerance and efficient processing of large datasets. The annotation is used to decorate a class, indicating that the task can be checkpointed and restarted."
+}

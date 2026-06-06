@@ -1,0 +1,23 @@
+{
+  "cluster_id": 22,
+  "title": "Hadoop MapReduce cluster-level architecture",
+  "description": "The Hadoop MapReduce cluster-level architecture consists of a master node (JobTracker) and multiple slave nodes (TaskTrackers). The JobTracker is responsible for scheduling and monitoring MapReduce jobs, while the TaskTrackers execute the tasks assigned by the JobTracker. The architecture is designed to scale horizontally, allowing for the addition of more slave nodes to handle increased workloads. The system also supports fault tolerance, with the ability to recover from failed tasks and nodes. The architecture is built on top of the Hadoop Distributed File System (HDFS), which provides fault-tolerant storage for the input data and intermediate results. The system uses the Java programming language and the MapReduce framework for parallel processing.",
+  "description_word_count": 109,
+  "number_of_files": 3,
+  "number_of_directories": 4,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce cluster-level architecture\n\nDESCRIPTION:\nThe Hadoop MapReduce cluster-level architecture consists of a master node (JobTracker) and multiple slave nodes (TaskTrackers). The JobTracker is responsible for scheduling and monitoring MapReduce jobs, while the TaskTrackers execute the tasks assigned by the JobTracker. The architecture is designed to scale horizontally, allowing for the addition of more slave nodes to handle increased workloads. The system also supports fault tolerance, with the ability to recover from failed tasks and nodes. The architecture is built on top of the Hadoop Distributed File System (HDFS), which provides fault-tolerant storage for the input data and intermediate results. The system uses the Java programming language and the MapReduce framework for parallel processing.",
+  "algorithm": "LIMBO",
+  "files": [
+    "SharedCacheConfig.java",
+    "server/jobtracker/JTConfig.java",
+    "server/tasktracker/TTConfig.java"
+  ]
+}

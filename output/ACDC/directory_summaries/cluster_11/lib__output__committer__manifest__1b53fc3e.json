@@ -1,0 +1,46 @@
+{
+  "type": "directory",
+  "cluster_id": 11,
+  "directory": "lib/output/committer/manifest",
+  "title": "<maximum 10 words>",
+  "description": "<4 to 6 concise sentences>",
+  "summary": "TITLE: <maximum 10 words>\nDESCRIPTION: <4 to 6 concise sentences>",
+  "number_of_children": 8,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "ManifestCommitter.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestCommitterConfig.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestCommitterConstants.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestCommitterFactory.java"
+    },
+    {
+      "type": "file",
+      "name": "ManifestCommitterStatisticNames.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest/files"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest/impl"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest/stages"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "```java\npackage org.apache.hadoop.mapreduce.lib.output.committer.manifest;\n\nimport org.apache.hadoop.fs.Path;\nimport org.apache.hadoop.fs.statistics.IOStatistics;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.TaskManifest;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterStatisticNames;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterSupport;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.EntryStatus;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.FileEntry;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.DirEntry;\nimport org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.TaskManifest;\nimport org.apache.hadoop.util.DurationInfo;\n\nimport java.io.IOException;\nimport java.util.List;\n\npublic class TaskAttemptScanDirectoryStage {\n    public TaskManifest scanDirectory(Path directory) throws IOException {\n        // Recursively scan the directory tree\n        // Build a task manifest containing all files to rename and directories to create\n        // Process all files before processing any subdirectories\n        // Perform any necessary optimizations for performance\n\n        // Return the task manifest\n        return new TaskManifest();\n    }\n}\n```\n\nOutput format exactly as:\nTITLE: <maximum 10 words>\n\nDESCRIPTION:\n<4 to 6 concise sentences>"
+}

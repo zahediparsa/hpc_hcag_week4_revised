@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 20,
+  "directory": ".",
+  "title": "org.apache.hadoop.mapreduce.lib.output",
+  "description": "- The org.apache.hadoop.mapreduce.lib.output package is a part of the Hadoop MapReduce library and contains classes for writing data from MapReduce jobs.\n- The package provides a set of classes that implement the RecordWriter interface and are used to write data to output files.\n- The classes in this package collaborate to provide a flexible and extensible framework for writing data from MapReduce jobs.\n- The package follows the architectural pattern of the Hadoop framework, providing a modular and extensible solution for writing data from MapReduce jobs.",
+  "summary": "TITLE: org.apache.hadoop.mapreduce.lib.output\nDESCRIPTION: - The org.apache.hadoop.mapreduce.lib.output package is a part of the Hadoop MapReduce library and contains classes for writing data from MapReduce jobs.\n- The package provides a set of classes that implement the RecordWriter interface and are used to write data to output files.\n- The classes in this package collaborate to provide a flexible and extensible framework for writing data from MapReduce jobs.\n- The package follows the architectural pattern of the Hadoop framework, providing a modular and extensible solution for writing data from MapReduce jobs.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "RecordWriter.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskInputOutputContext.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: org.apache.hadoop.mapreduce.lib.output\n\nDESCRIPTION:\n- The org.apache.hadoop.mapreduce.lib.output package is a part of the Hadoop MapReduce library and contains classes for writing data from MapReduce jobs.\n- The package provides a set of classes that implement the RecordWriter interface and are used to write data to output files.\n- The classes in this package collaborate to provide a flexible and extensible framework for writing data from MapReduce jobs.\n- The package follows the architectural pattern of the Hadoop framework, providing a modular and extensible solution for writing data from MapReduce jobs."
+}

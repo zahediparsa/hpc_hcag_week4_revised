@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 18,
+  "directory": "security/token",
+  "title": "Hadoop MapReduce security/token directory",
+  "description": "The security/token directory in Hadoop MapReduce contains classes related to authentication and authorization. The classes in this directory are used to identify and authenticate jobs running on the Hadoop cluster. The JobTokenIdentifier class is used to identify a job token, and the JobTokenSelector class is used to select a job token from a collection of tokens. These classes collaborate to ensure that only authorized jobs can access the cluster resources. The security/token directory plays a crucial role in the security of the Hadoop cluster by providing authentication and authorization mechanisms for jobs.",
+  "summary": "TITLE: Hadoop MapReduce security/token directory\nDESCRIPTION: The security/token directory in Hadoop MapReduce contains classes related to authentication and authorization. The classes in this directory are used to identify and authenticate jobs running on the Hadoop cluster. The JobTokenIdentifier class is used to identify a job token, and the JobTokenSelector class is used to select a job token from a collection of tokens. These classes collaborate to ensure that only authorized jobs can access the cluster resources. The security/token directory plays a crucial role in the security of the Hadoop cluster by providing authentication and authorization mechanisms for jobs.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobTokenIdentifier.java"
+    },
+    {
+      "type": "file",
+      "name": "JobTokenSelector.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce security/token directory\n\nDESCRIPTION:\nThe security/token directory in Hadoop MapReduce contains classes related to authentication and authorization. The classes in this directory are used to identify and authenticate jobs running on the Hadoop cluster. The JobTokenIdentifier class is used to identify a job token, and the JobTokenSelector class is used to select a job token from a collection of tokens. These classes collaborate to ensure that only authorized jobs can access the cluster resources. The security/token directory plays a crucial role in the security of the Hadoop cluster by providing authentication and authorization mechanisms for jobs."
+}

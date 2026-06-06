@@ -1,0 +1,35 @@
+{
+  "cluster_id": 4,
+  "title": "org.apache.hadoop.mapreduce.lib.chain",
+  "description": "This package provides the ChainMapper and ChainReducer classes, which allow multiple Mapper and Reducer classes to be linked together in a single MapReduce job. The ChainMapper class allows the output of one Mapper to be passed as input to another Mapper, while the ChainReducer class allows the output of one Reducer to be passed as input to another Reducer. This allows complex data processing pipelines to be created by combining multiple Mappers and Reducers in a flexible and modular way. Additionally, the package includes reducers for performing field selections and calculating the sum of values for a key. These reducers can be used as building blocks for more complex data processing tasks.\n\nTechnologies used: Java, Hadoop MapReduce, Apache Hadoop.",
+  "description_word_count": 119,
+  "number_of_files": 15,
+  "number_of_directories": 5,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: org.apache.hadoop.mapreduce.lib.chain\n\nDESCRIPTION:\nThis package provides the ChainMapper and ChainReducer classes, which allow multiple Mapper and Reducer classes to be linked together in a single MapReduce job. The ChainMapper class allows the output of one Mapper to be passed as input to another Mapper, while the ChainReducer class allows the output of one Reducer to be passed as input to another Reducer. This allows complex data processing pipelines to be created by combining multiple Mappers and Reducers in a flexible and modular way. Additionally, the package includes reducers for performing field selections and calculating the sum of values for a key. These reducers can be used as building blocks for more complex data processing tasks.\n\nTechnologies used: Java, Hadoop MapReduce, Apache Hadoop.",
+  "algorithm": "ACDC",
+  "files": [
+    "ContextFactory.java",
+    "OutputCommitter.java",
+    "RecordReader.java",
+    "RecordWriter.java",
+    "Reducer.java",
+    "TaskAttemptContext.java",
+    "TaskInputOutputContext.java",
+    "lib/chain/Chain.java",
+    "lib/chain/ChainMapContextImpl.java",
+    "lib/chain/ChainMapper.java",
+    "lib/chain/ChainReduceContextImpl.java",
+    "lib/chain/ChainReducer.java",
+    "lib/fieldsel/FieldSelectionReducer.java",
+    "lib/reduce/IntSumReducer.java",
+    "lib/reduce/LongSumReducer.java"
+  ]
+}

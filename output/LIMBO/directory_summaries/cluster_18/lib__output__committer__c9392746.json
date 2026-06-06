@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 18,
+  "directory": "lib/output/committer",
+  "title": "OutputCommitterFactory",
+  "description": "The OutputCommitterFactory is the committer factory to register as the source of committers for the job/filesystem schema. It checks the schema of the output path and fails fast if it is not supported. The factory creates a committer instance for the output path and task context.\n\nOutput format exactly as:\nTITLE: <maximum 10 words>\n\nDESCRIPTION:\n<4 to 6 concise sentences>",
+  "summary": "TITLE: OutputCommitterFactory\nDESCRIPTION: The OutputCommitterFactory is the committer factory to register as the source of committers for the job/filesystem schema. It checks the schema of the output path and fails fast if it is not supported. The factory creates a committer instance for the output path and task context.\n\nOutput format exactly as:\nTITLE: <maximum 10 words>\n\nDESCRIPTION:\n<4 to 6 concise sentences>",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: OutputCommitterFactory\nDESCRIPTION: The OutputCommitterFactory is the committer factory to register as the source of committers for the job/filesystem schema. It checks the schema of the output path and fails fast if it is not supported. The factory creates a committer instance for the output path and task context.\n\nOutput format exactly as:\nTITLE: <maximum 10 words>\n\nDESCRIPTION:\n<4 to 6 concise sentences>"
+}

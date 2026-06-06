@@ -1,0 +1,34 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "lib",
+  "title": "Hadoop MapReduce Abstraction",
+  "description": "The lib directory is responsible for providing the core Hadoop MapReduce abstraction. It includes the core interfaces and classes that guide the way to implement the MapReduce jobs. The directory collaborates with the other directories to provide a complete solution for processing large data sets in a distributed manner.\n\nThe lib directory follows the Hadoop MapReduce pattern, which is a distributed computing framework for processing large data sets. It consists of two main components: the mapper and the reducer. The mapper processes the input data and produces intermediate key-value pairs, while the reducer processes these intermediate pairs to produce the final output. The lib directory provides the core interfaces and classes that guide the way to implement the mapper and reducer classes, and collaborates with the other directories to provide a complete solution for processing large data sets in a distributed manner.\n\nThe architectural role of the lib directory is to provide the core Hadoop MapReduce abstraction, which guides the way to implement the MapReduce jobs. It collaborates with the other directories to provide a complete solution for processing large data sets in a distributed manner.",
+  "summary": "TITLE: Hadoop MapReduce Abstraction\nDESCRIPTION: The lib directory is responsible for providing the core Hadoop MapReduce abstraction. It includes the core interfaces and classes that guide the way to implement the MapReduce jobs. The directory collaborates with the other directories to provide a complete solution for processing large data sets in a distributed manner.\n\nThe lib directory follows the Hadoop MapReduce pattern, which is a distributed computing framework for processing large data sets. It consists of two main components: the mapper and the reducer. The mapper processes the input data and produces intermediate key-value pairs, while the reducer processes these intermediate pairs to produce the final output. The lib directory provides the core interfaces and classes that guide the way to implement the mapper and reducer classes, and collaborates with the other directories to provide a complete solution for processing large data sets in a distributed manner.\n\nThe architectural role of the lib directory is to provide the core Hadoop MapReduce abstraction, which guides the way to implement the MapReduce jobs. It collaborates with the other directories to provide a complete solution for processing large data sets in a distributed manner.",
+  "number_of_children": 5,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/aggregate"
+    },
+    {
+      "type": "directory",
+      "name": "lib/db"
+    },
+    {
+      "type": "directory",
+      "name": "lib/fieldsel"
+    },
+    {
+      "type": "directory",
+      "name": "lib/input"
+    },
+    {
+      "type": "directory",
+      "name": "lib/output"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "--- DIRECTORY: lib ---\nTITLE: Hadoop MapReduce Abstraction\nDESCRIPTION: The lib directory is responsible for providing the core Hadoop MapReduce abstraction. It includes the core interfaces and classes that guide the way to implement the MapReduce jobs. The directory collaborates with the other directories to provide a complete solution for processing large data sets in a distributed manner.\n\nThe lib directory follows the Hadoop MapReduce pattern, which is a distributed computing framework for processing large data sets. It consists of two main components: the mapper and the reducer. The mapper processes the input data and produces intermediate key-value pairs, while the reducer processes these intermediate pairs to produce the final output. The lib directory provides the core interfaces and classes that guide the way to implement the mapper and reducer classes, and collaborates with the other directories to provide a complete solution for processing large data sets in a distributed manner.\n\nThe architectural role of the lib directory is to provide the core Hadoop MapReduce abstraction, which guides the way to implement the MapReduce jobs. It collaborates with the other directories to provide a complete solution for processing large data sets in a distributed manner."
+}

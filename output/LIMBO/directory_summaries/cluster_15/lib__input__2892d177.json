@@ -1,0 +1,22 @@
+{
+  "type": "directory",
+  "cluster_id": 15,
+  "directory": "lib/input",
+  "title": "",
+  "description": "lib/input\n\nResponsibility:\nThis directory contains classes that handle the input data for the Hadoop MapReduce jobs. It includes a DelegatingMapper class that delegates behavior of paths to multiple other mappers, and a TaggedInputSplit class that tags an InputSplit with extra data for use by DelegatingInputFormat and DelegatingMapper.\n\nCollaboration:\nThe DelegatingMapper class collaborates with the TaggedInputSplit class to find the appropriate Mapper from the TaggedInputSplit and run it. The TaggedInputSplit class collaborates with the InputSplit, Configuration, InputFormat, and Mapper classes to retrieve the original InputSplit, the InputFormat class to use for this split, and the Mapper class to use for this split.\n\nArchitectural Role/Pattern:\nThe directory follows the \"Extract-Transform-Load\" (ETL) pattern, which is a common pattern for processing data in Hadoop MapReduce. The ETL pattern involves extracting data from various sources, transforming it into a desired format, and loading it into a target system. In this case, the directory extracts input data from various sources, transforms it into a format that can be processed by the MapReduce jobs, and loads it into the Hadoop cluster for further processing.",
+  "summary": "TITLE: \nDESCRIPTION: lib/input\n\nResponsibility:\nThis directory contains classes that handle the input data for the Hadoop MapReduce jobs. It includes a DelegatingMapper class that delegates behavior of paths to multiple other mappers, and a TaggedInputSplit class that tags an InputSplit with extra data for use by DelegatingInputFormat and DelegatingMapper.\n\nCollaboration:\nThe DelegatingMapper class collaborates with the TaggedInputSplit class to find the appropriate Mapper from the TaggedInputSplit and run it. The TaggedInputSplit class collaborates with the InputSplit, Configuration, InputFormat, and Mapper classes to retrieve the original InputSplit, the InputFormat class to use for this split, and the Mapper class to use for this split.\n\nArchitectural Role/Pattern:\nThe directory follows the \"Extract-Transform-Load\" (ETL) pattern, which is a common pattern for processing data in Hadoop MapReduce. The ETL pattern involves extracting data from various sources, transforming it into a desired format, and loading it into a target system. In this case, the directory extracts input data from various sources, transforms it into a format that can be processed by the MapReduce jobs, and loads it into the Hadoop cluster for further processing.",
+  "number_of_children": 2,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "DelegatingMapper.java"
+    },
+    {
+      "type": "file",
+      "name": "TaggedInputSplit.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "lib/input\n\nResponsibility:\nThis directory contains classes that handle the input data for the Hadoop MapReduce jobs. It includes a DelegatingMapper class that delegates behavior of paths to multiple other mappers, and a TaggedInputSplit class that tags an InputSplit with extra data for use by DelegatingInputFormat and DelegatingMapper.\n\nCollaboration:\nThe DelegatingMapper class collaborates with the TaggedInputSplit class to find the appropriate Mapper from the TaggedInputSplit and run it. The TaggedInputSplit class collaborates with the InputSplit, Configuration, InputFormat, and Mapper classes to retrieve the original InputSplit, the InputFormat class to use for this split, and the Mapper class to use for this split.\n\nArchitectural Role/Pattern:\nThe directory follows the \"Extract-Transform-Load\" (ETL) pattern, which is a common pattern for processing data in Hadoop MapReduce. The ETL pattern involves extracting data from various sources, transforming it into a desired format, and loading it into a target system. In this case, the directory extracts input data from various sources, transforms it into a format that can be processed by the MapReduce jobs, and loads it into the Hadoop cluster for further processing."
+}

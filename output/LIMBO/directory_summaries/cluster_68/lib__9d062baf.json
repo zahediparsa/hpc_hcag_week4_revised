@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 68,
+  "directory": "lib",
+  "title": "Join directory",
+  "description": "The join directory contains classes that implement the join operation in Hadoop MapReduce. The classes in this directory collaborate to perform the join operation efficiently and effectively. The architectural role of this directory is to provide a high-performance and scalable solution for joining large datasets in a distributed environment.",
+  "summary": "TITLE: Join directory\nDESCRIPTION: The join directory contains classes that implement the join operation in Hadoop MapReduce. The classes in this directory collaborate to perform the join operation efficiently and effectively. The architectural role of this directory is to provide a high-performance and scalable solution for joining large datasets in a distributed environment.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/join"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Join directory\n\nDESCRIPTION:\nThe join directory contains classes that implement the join operation in Hadoop MapReduce. The classes in this directory collaborate to perform the join operation efficiently and effectively. The architectural role of this directory is to provide a high-performance and scalable solution for joining large datasets in a distributed environment."
+}

@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 2,
+  "directory": "security/token",
+  "title": "MapReduce Delegation Token Identifier",
+  "description": "This directory contains the code for managing delegation tokens specific to MapReduce. The DelegationTokenIdentifier class extends the AbstractDelegationTokenIdentifier class and provides functionality for creating and managing these tokens. It overrides the getKind() method to return the specific kind of delegation token, MAPREDUCE_DELEGATION_KIND, and takes in the effective username of the token owner, the username of the renewer, and the real username of the token owner as inputs when creating a new delegation token identifier. The code depends on the AbstractDelegationTokenIdentifier class and the Text class from the Apache Hadoop library, and imports the InterfaceAudience and InterfaceStability annotations from the same library.",
+  "summary": "TITLE: MapReduce Delegation Token Identifier\nDESCRIPTION: This directory contains the code for managing delegation tokens specific to MapReduce. The DelegationTokenIdentifier class extends the AbstractDelegationTokenIdentifier class and provides functionality for creating and managing these tokens. It overrides the getKind() method to return the specific kind of delegation token, MAPREDUCE_DELEGATION_KIND, and takes in the effective username of the token owner, the username of the renewer, and the real username of the token owner as inputs when creating a new delegation token identifier. The code depends on the AbstractDelegationTokenIdentifier class and the Text class from the Apache Hadoop library, and imports the InterfaceAudience and InterfaceStability annotations from the same library.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "security/token/delegation"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce Delegation Token Identifier\n\nDESCRIPTION: This directory contains the code for managing delegation tokens specific to MapReduce. The DelegationTokenIdentifier class extends the AbstractDelegationTokenIdentifier class and provides functionality for creating and managing these tokens. It overrides the getKind() method to return the specific kind of delegation token, MAPREDUCE_DELEGATION_KIND, and takes in the effective username of the token owner, the username of the renewer, and the real username of the token owner as inputs when creating a new delegation token identifier. The code depends on the AbstractDelegationTokenIdentifier class and the Text class from the Apache Hadoop library, and imports the InterfaceAudience and InterfaceStability annotations from the same library."
+}

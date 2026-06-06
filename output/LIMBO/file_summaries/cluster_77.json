@@ -1,0 +1,14 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 77,
+    "class": "org.apache.hadoop.mapreduce.lib.output.committer.manifest.files.ManifestPrinter",
+    "path": "lib/output/committer/manifest/files/ManifestPrinter.java",
+    "file_name": "ManifestPrinter.java",
+    "directory": "lib/output/committer/manifest/files",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this code is to print a manifest file.\n\nCORE LOGIC:\nThe code loads a manifest file from a given path and prints its contents.\n\nINPUTS/OUTPUTS:\nThe input is a path to the manifest file, and the output is the contents of the manifest file.\n\nDEPENDENCIES:\nThe code depends on the Apache Hadoop MapReduce library and the Java IO library.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

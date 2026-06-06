@@ -1,0 +1,22 @@
+{
+  "cluster_id": 14,
+  "title": "Hadoop MapReduce Architecture",
+  "description": "Hadoop MapReduce is a software framework for easily writing applications that process vast amounts of data in parallel on large clusters. It consists of the Map, Reduce, Combiner, Shuffle, and Output format components. The system is designed to scale up from single servers to thousands of machines and provides quality attributes such as scalability, maintainability, reliability, security, and performance. It uses the Hadoop Distributed File System (HDFS) as its distributed file system, which provides high-throughput access to application data and is designed to reliably store large files across clusters of computers.",
+  "description_word_count": 91,
+  "number_of_files": 2,
+  "number_of_directories": 1,
+  "number_of_intermediate_summaries": 0,
+  "top_nodes": [
+    {
+      "type": "directory",
+      "name": "."
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: Hadoop MapReduce Architecture\n\nDESCRIPTION:\nHadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) parallelly on large clusters (thousands of nodes). The framework handles the details of distributed computing including software load balancing and distributed file system.\n\nThe system is scalable to thousands of nodes, each offering local computation and storage. Data is stored in a distributed file system that is accessible from all the nodes. The system can run on a single node for testing and debugging purposes.\n\nThe MapReduce framework is designed to scale up from single servers to thousands of machines. It uses a simple data-parallel model that breaks the input data into smaller chunks ( splits), processes each chunk independently, and then combines the results.\n\nThe MapReduce framework consists of the following components:\n- Map: A function that processes a key/value pair to generate a set of intermediate key/value pairs.\n- Reduce: A function that merges all intermediate values associated with the same intermediate key.\n- Combiner: An optional function that performs local aggregation to reduce the amount of data before shuffle.\n- Shuffle and sort: The system sorts the intermediate keys and groups them to be processed by the same reduce task.\n- Output format: The system writes the output in a format that is suitable for the output collector.\n\nThe MapReduce framework provides several quality attributes, including scalability, maintainability, reliability, security, and performance. It is designed to be fault-tolerant and can recover from failures. It also supports data locality and task scheduling to optimize performance.\n\nThe system uses the Hadoop Distributed File System (HDFS) as its distributed file system. HDFS provides high-throughput access to application data and is designed to reliably store large files across clusters of computers.\n\nIn summary, the Hadoop MapReduce framework is a powerful tool for processing large-scale data-sets in a distributed environment. It provides a simple and scalable model for data-parallel processing and is widely used in industry for big data analytics.",
+  "algorithm": "LIMBO",
+  "files": [
+    "MapContext.java",
+    "ReduceContext.java"
+  ]
+}

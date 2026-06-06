@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 11,
+  "directory": "lib",
+  "title": "OutputCommitter",
+  "description": "The OutputCommitter interface is responsible for the final steps of the MapReduce task, including committing or aborting the task, committing or aborting the task attempt, and cleaning up the task attempt directory. The OutputCommitter collaborates with the OutputFormat to create the committer and the OutputFormat to configure it. The OutputCommitter is also responsible for deleting the task attempt directory if the task is aborted. The OutputCommitter plays the role of the committer in the transactional model of MapReduce.",
+  "summary": "TITLE: OutputCommitter\nDESCRIPTION: The OutputCommitter interface is responsible for the final steps of the MapReduce task, including committing or aborting the task, committing or aborting the task attempt, and cleaning up the task attempt directory. The OutputCommitter collaborates with the OutputFormat to create the committer and the OutputFormat to configure it. The OutputCommitter is also responsible for deleting the task attempt directory if the task is aborted. The OutputCommitter plays the role of the committer in the transactional model of MapReduce.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: OutputCommitter\n\nDESCRIPTION: The OutputCommitter interface is responsible for the final steps of the MapReduce task, including committing or aborting the task, committing or aborting the task attempt, and cleaning up the task attempt directory. The OutputCommitter collaborates with the OutputFormat to create the committer and the OutputFormat to configure it. The OutputCommitter is also responsible for deleting the task attempt directory if the task is aborted. The OutputCommitter plays the role of the committer in the transactional model of MapReduce."
+}

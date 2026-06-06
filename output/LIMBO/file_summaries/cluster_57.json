@@ -1,0 +1,110 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 57,
+    "class": "org.apache.hadoop.mapreduce.lib.db.DBInputFormat",
+    "path": "lib/db/DBInputFormat.java",
+    "file_name": "DBInputFormat.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY: DBInputFormat is an InputFormat that reads input data from an SQL table.\n\nCORE LOGIC: DBInputFormat emits LongWritables containing the record number as key and DBWritables as value.\n\nINPUTS/OUTPUTS: DBInputFormat takes an SQL query and input class as input, and emits LongWritable keys and DBWritable values.\n\nDEPENDENCIES: DBInputFormat depends on the Apache Hadoop MapReduce framework and the Apache Hadoop classification library.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 57,
+    "class": "org.apache.hadoop.mapreduce.lib.db.DBRecordReader",
+    "path": "lib/db/DBRecordReader.java",
+    "file_name": "DBRecordReader.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\n- DBRecordReader is a RecordReader that reads records from a SQL table.\n- Emits LongWritables containing the record number as key and DBWritables as value.\n\nCORE LOGIC:\n- DBRecordReader uses a PreparedStatement to execute a SQL query and retrieve the results.\n- It uses LIMIT and OFFSET clauses in the query to handle splits and retrieve only a portion of the data.\n- It uses ReflectionUtils to create a new instance of the inputClass.\n\nINPUTS/OUTPUTS:\n- DBRecordReader takes an InputSplit, inputClass, Configuration, Connection, DBConfiguration, conditions, fieldNames, and tableName as input.\n- It emits LongWritable key and T value.\n\nDEPENDENCIES:\n- DBRecordReader depends on the inputClass, Configuration, Connection, DBConfiguration, conditions, fieldNames, and tableName.\n- It also depends on the results, pos, key, value, connection, statement, dbConf, split, and tableName.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 57,
+    "class": "org.apache.hadoop.mapreduce.lib.db.DataDrivenDBInputFormat",
+    "path": "lib/db/DataDrivenDBInputFormat.java",
+    "file_name": "DataDrivenDBInputFormat.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class is a subclass of DBInputFormat that implements a custom algorithm for dividing a database table into splits.\n\nCORE LOGIC:\n\nThe core logic of this class is in the getSplits() method, which uses a DBSplitter implementation to generate WHERE clauses that separate the data into roughly equivalent shards.\n\nINPUTS/OUTPUTS:\n\nThe class takes an InputSplit, which is a set of rows, and returns a list of InputSplits.\n\nDEPENDENCIES:\n\nThis class depends on the DBInputFormat class and its dependencies.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 57,
+    "class": "org.apache.hadoop.mapreduce.lib.db.DataDrivenDBRecordReader",
+    "path": "lib/db/DataDrivenDBRecordReader.java",
+    "file_name": "DataDrivenDBRecordReader.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\nThis class is a subclass of DBRecordReader, which is a RecordReader that reads records from a SQL table.\nIt uses data-driven WHERE clause splits to read records.\n\nCORE LOGIC:\nThe core logic of this class is to build the WHERE clauses associated with the data split first,\nand then use them to generate the SELECT query.\n\nINPUTS/OUTPUTS:\nThe input is a DBInputFormat.DBInputSplit, a class that represents the data split to be read.\nThe output is a LongWritable containing the record number as key and DBWritable as value.\n\nDEPENDENCIES:\nThis class depends on the following classes:\n- DBRecordReader: a RecordReader that reads records from a SQL table\n- DataDrivenDBInputFormat.DataDrivenDBInputSplit: a class that represents the data split to be read\n- DBConfiguration: a class that contains configuration information for the database connection\n- String: a class that represents text\n- StringBuilder: a class that provides methods for manipulating strings\n- Configuration: a class that contains configuration information for the Hadoop framework\n- Connection: a class that represents a connection to a database\n- SQLException: a class that represents an exception that can be thrown when a database access error occurs\n- Logger: a class that provides methods for logging messages\n- LoggerFactory: a class that provides methods for creating Logger objects",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 57,
+    "class": "org.apache.hadoop.mapreduce.lib.db.MySQLDBRecordReader",
+    "path": "lib/db/MySQLDBRecordReader.java",
+    "file_name": "MySQLDBRecordReader.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\n- MySQLDBRecordReader is a RecordReader that reads records from a MySQL table.\n\nCORE LOGIC:\n- MySQLDBRecordReader executes statements for MySQL in unbuffered mode, meaning it reads row-at-a-time.\n\nINPUTS/OUTPUTS:\n- MySQLDBRecordReader takes in a DBInputFormat.DBInputSplit, inputClass, Configuration, Connection, DBConfiguration, cond, fields, and table as inputs.\n- It outputs a ResultSet.\n\nDEPENDENCIES:\n- MySQLDBRecordReader extends DBRecordReader and imports various classes such as Connection, ResultSet, SQLException, Configuration, and DBConfiguration.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 57,
+    "class": "org.apache.hadoop.mapreduce.lib.db.MySQLDataDrivenDBRecordReader",
+    "path": "lib/db/MySQLDataDrivenDBRecordReader.java",
+    "file_name": "MySQLDataDrivenDBRecordReader.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\n- MySQLDataDrivenDBRecordReader is a RecordReader that reads records from a MySQL table via DataDrivenDBRecordReader\n\nCORE LOGIC:\n- MySQLDataDrivenDBRecordReader executes statements for MySQL in unbuffered mode, meaning it reads row-at-a-time.\n\nINPUTS/OUTPUTS:\n- MySQLDataDrivenDBRecordReader takes in a DBInputFormat.DBInputSplit, inputClass, Configuration, Connection, DBConfiguration, cond, fields, and table as inputs.\n- It outputs a ResultSet.\n\nDEPENDENCIES:\n- MySQLDataDrivenDBRecordReader depends on the following classes:\n  - org.apache.hadoop.classification.InterfaceAudience\n  - org.apache.hadoop.classification.InterfaceStability\n  - org.apache.hadoop.conf.Configuration\n  - org.apache.hadoop.mapreduce.lib.db.DataDrivenDBRecordReader\n  - java.sql.Connection\n  - java.sql.ResultSet\n  - java.sql.SQLException",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 57,
+    "class": "org.apache.hadoop.mapreduce.lib.db.OracleDBRecordReader",
+    "path": "lib/db/OracleDBRecordReader.java",
+    "file_name": "OracleDBRecordReader.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\n- This class is a RecordReader that reads records from an Oracle SQL table.\n\nCORE LOGIC:\n- It uses rownum instead of LIMIT/OFFSET for pagination.\n- It sets the session timezone for the Oracle connection.\n\nINPUTS/OUTPUTS:\n- It takes a DBInputSplit, inputClass, Configuration, Connection, DBConfiguration, cond, fields, and table as inputs.\n- It returns records from the Oracle SQL table.\n\nDEPENDENCIES:\n- It depends on the Oracle database and the Oracle Java libraries.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 57,
+    "class": "org.apache.hadoop.mapreduce.lib.db.OracleDataDrivenDBInputFormat",
+    "path": "lib/db/OracleDataDrivenDBInputFormat.java",
+    "file_name": "OracleDataDrivenDBInputFormat.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\n- Reads input data from an SQL table in an Oracle db\n- Divides the table/query into InputSplits\n- Uses Oracle-specific db reader\n\nCORE LOGIC:\n- Uses OracleDateSplitter to divide the table/query into InputSplits for DATE, TIME, and TIMESTAMP data types\n- Uses super.getSplitter for other data types\n- Creates OracleDataDrivenDBRecordReader to read input data from the SQL table\n\nINPUTS/OUTPUTS:\n- Input data from an SQL table in an Oracle db\n- Output data read from the SQL table\n\nDEPENDENCIES:\n- org.apache.hadoop.mapreduce.lib.db.DataDrivenDBInputFormat\n- org.apache.hadoop.mapreduce.lib.db.DBSplitter\n- org.apache.hadoop.mapreduce.lib.db.OracleDateSplitter\n- org.apache.hadoop.mapreduce.lib.db.DBConfiguration\n- org.apache.hadoop.mapreduce.lib.db.DBInputSplit\n- org.apache.hadoop.mapreduce.lib.db.DBWritable\n- org.apache.hadoop.mapreduce.lib.db.OracleDataDrivenDBRecordReader\n- org.apache.hadoop.conf.Configurable\n- org.apache.hadoop.conf.Configuration\n- org.apache.hadoop.io.LongWritable\n- java.sql.Types\n- java.sql.SQLException\n- java.io.IOException",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 57,
+    "class": "org.apache.hadoop.mapreduce.lib.db.OracleDataDrivenDBRecordReader",
+    "path": "lib/db/OracleDataDrivenDBRecordReader.java",
+    "file_name": "OracleDataDrivenDBRecordReader.java",
+    "directory": "lib/db",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class is a RecordReader that reads records from a Oracle table.\n\nCORE LOGIC:\n\nThe core logic of this class is in the constructor, where it calls the super constructor and then sets the session time zone for the Oracle connection.\n\nINPUTS/OUTPUTS:\n\nThe inputs to this class are a DBInputSplit, a class, a Configuration, a Connection, a DBConfiguration, a condition string, an array of fields, and a table name. The output is a set of records read from the Oracle table.\n\nDEPENDENCIES:\n\nThis class depends on the org.apache.hadoop.mapreduce.lib.db package and the Oracle database.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

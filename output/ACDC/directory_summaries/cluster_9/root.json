@@ -1,0 +1,34 @@
+{
+  "type": "directory",
+  "cluster_id": 9,
+  "directory": ".",
+  "title": "MapReduce",
+  "description": "The MapReduce directory is responsible for processing the input data and transforming it into a format that can be processed by the reducers. The mappers in this directory collaborate by passing data to each other and by sharing information about the input data. The mappers follow the MapReduce pattern, which is a distributed processing framework for large data sets. The MapReduce pattern separates the task of processing data into two main phases: the map phase and the reduce phase. The mappers in this directory are responsible for the map phase, which involves transforming the input data into a format that can be processed by the reducers.",
+  "summary": "TITLE: MapReduce\nDESCRIPTION: The MapReduce directory is responsible for processing the input data and transforming it into a format that can be processed by the reducers. The mappers in this directory collaborate by passing data to each other and by sharing information about the input data. The mappers follow the MapReduce pattern, which is a distributed processing framework for large data sets. The MapReduce pattern separates the task of processing data into two main phases: the map phase and the reduce phase. The mappers in this directory are responsible for the map phase, which involves transforming the input data into a format that can be processed by the reducers.",
+  "number_of_children": 5,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "MapContext.java"
+    },
+    {
+      "type": "file",
+      "name": "Mapper.java"
+    },
+    {
+      "type": "file",
+      "name": "StatusReporter.java"
+    },
+    {
+      "type": "directory",
+      "name": "lib"
+    },
+    {
+      "type": "directory",
+      "name": "task"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce\n\nDESCRIPTION: The MapReduce directory is responsible for processing the input data and transforming it into a format that can be processed by the reducers. The mappers in this directory collaborate by passing data to each other and by sharing information about the input data. The mappers follow the MapReduce pattern, which is a distributed processing framework for large data sets. The MapReduce pattern separates the task of processing data into two main phases: the map phase and the reduce phase. The mappers in this directory are responsible for the map phase, which involves transforming the input data into a format that can be processed by the reducers."
+}

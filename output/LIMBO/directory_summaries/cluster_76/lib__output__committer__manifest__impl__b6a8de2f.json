@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 76,
+  "directory": "lib/output/committer/manifest/impl",
+  "title": "LoadedManifestData.java",
+  "description": "- This class holds information about the loaded manifest data, including the directories, the path of the intermediate cache of files to rename, and the number of files to be renamed.\n- It provides a constructor to initialize the loaded manifest data, and getter methods to access the directories, file count, and entry sequence data.\n- The class depends on the DirEntry, LoadManifestsStage, Path, and File classes.",
+  "summary": "TITLE: LoadedManifestData.java\nDESCRIPTION: - This class holds information about the loaded manifest data, including the directories, the path of the intermediate cache of files to rename, and the number of files to be renamed.\n- It provides a constructor to initialize the loaded manifest data, and getter methods to access the directories, file count, and entry sequence data.\n- The class depends on the DirEntry, LoadManifestsStage, Path, and File classes.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "LoadedManifestData.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: LoadedManifestData.java\n\nDESCRIPTION:\n- This class holds information about the loaded manifest data, including the directories, the path of the intermediate cache of files to rename, and the number of files to be renamed.\n- It provides a constructor to initialize the loaded manifest data, and getter methods to access the directories, file count, and entry sequence data.\n- The class depends on the DirEntry, LoadManifestsStage, Path, and File classes."
+}

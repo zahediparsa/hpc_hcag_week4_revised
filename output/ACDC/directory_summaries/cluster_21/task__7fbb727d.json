@@ -1,0 +1,26 @@
+{
+  "type": "directory",
+  "cluster_id": 21,
+  "directory": "task",
+  "title": "MapReduce - Task Attempt Context",
+  "description": "The TaskAttemptContextImpl class is a context for task attempts in the MapReduce framework. It provides information and functionality related to the task attempt, such as the task attempt ID, status, and progress. The class includes methods for getting the unique name for the task attempt, getting the last set status message, reporting progress, setting the current status of the task, and getting the progress of the task. It takes a Configuration object and a TaskAttemptID object as inputs in its constructor. It also has methods for getting the task attempt ID, status, and progress. The class depends on the Configuration, TaskAttemptID, StatusReporter, Counter, and Counters classes. It also depends on the JobContextImpl class.",
+  "summary": "TITLE: MapReduce - Task Attempt Context\nDESCRIPTION: The TaskAttemptContextImpl class is a context for task attempts in the MapReduce framework. It provides information and functionality related to the task attempt, such as the task attempt ID, status, and progress. The class includes methods for getting the unique name for the task attempt, getting the last set status message, reporting progress, setting the current status of the task, and getting the progress of the task. It takes a Configuration object and a TaskAttemptID object as inputs in its constructor. It also has methods for getting the task attempt ID, status, and progress. The class depends on the Configuration, TaskAttemptID, StatusReporter, Counter, and Counters classes. It also depends on the JobContextImpl class.",
+  "number_of_children": 3,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "file",
+      "name": "JobContextImpl.java"
+    },
+    {
+      "type": "file",
+      "name": "ReduceContextImpl.java"
+    },
+    {
+      "type": "file",
+      "name": "TaskAttemptContextImpl.java"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: MapReduce - Task Attempt Context\n\nDESCRIPTION:\nThe TaskAttemptContextImpl class is a context for task attempts in the MapReduce framework. It provides information and functionality related to the task attempt, such as the task attempt ID, status, and progress. The class includes methods for getting the unique name for the task attempt, getting the last set status message, reporting progress, setting the current status of the task, and getting the progress of the task. It takes a Configuration object and a TaskAttemptID object as inputs in its constructor. It also has methods for getting the task attempt ID, status, and progress. The class depends on the Configuration, TaskAttemptID, StatusReporter, Counter, and Counters classes. It also depends on the JobContextImpl class."
+}

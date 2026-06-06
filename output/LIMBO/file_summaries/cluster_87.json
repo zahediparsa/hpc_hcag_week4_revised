@@ -1,0 +1,50 @@
+[
+  {
+    "algorithm": "LIMBO",
+    "cluster": 87,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.KeyFieldBasedComparator",
+    "path": "lib/partition/KeyFieldBasedComparator.java",
+    "file_name": "KeyFieldBasedComparator.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\nThe KeyFieldBasedComparator class is a WritableComparator that provides a subset of the features provided by the Unix/GNU Sort. It supports sorting numerically and reversing the result of comparison.\n\nCORE LOGIC:\nThe compare method compares two byte sequences based on the key specifications provided. It uses the KeyFieldHelper class to parse the key specifications and extract the relevant fields from the byte sequences. It then compares the fields based on the specified options.\n\nINPUTS/OUTPUTS:\nThe compare method takes two byte sequences as input and returns an integer value indicating their relative order.\n\nDEPENDENCIES:\nThe KeyFieldBasedComparator class depends on the KeyFieldHelper class for parsing the key specifications and extracting the relevant fields from the byte sequences. It also depends on the WritableComparator class for comparing the byte sequences.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 87,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.KeyFieldBasedPartitioner",
+    "path": "lib/partition/KeyFieldBasedPartitioner.java",
+    "file_name": "KeyFieldBasedPartitioner.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\n\nThe KeyFieldBasedPartitioner class is a custom partitioner for Apache Hadoop MapReduce. It is used to partition keys based on certain key fields, as specified by the user.\n\nCORE LOGIC:\n\nThe core logic of the KeyFieldBasedPartitioner class is implemented in the getPartition() method. This method takes a key, a value, and the number of reduce tasks as input, and returns the partition number for the given key.\n\nThe method first checks if there are any key fields specified by the user. If not, it simply returns the partition number based on the hash code of the key.\n\nIf key fields are specified, the method converts the key to a byte array and calculates the start and end indices of each key field within the byte array. It then computes a hash code based on the key fields and returns the partition number based on this hash code.\n\nINPUTS/OUTPUTS:\n\nThe KeyFieldBasedPartitioner class takes a key, a value, and the number of reduce tasks as input, and returns the partition number for the given key.\n\nDEPENDENCIES:\n\nThe KeyFieldBasedPartitioner class depends on the KeyFieldHelper class, which is used to parse and process the key field specifications. It also depends on the Configuration class, which is used to retrieve the job configuration.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 87,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.KeyFieldHelper",
+    "path": "lib/partition/KeyFieldHelper.java",
+    "file_name": "KeyFieldHelper.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\n- Parse key specifications of the form -k pos1[,pos2], where pos is of the form f[.c][opts], where f is the number of the field to use, and c is the number of the first character from the beginning of the field.\n- Set key field separator.\n- Get word lengths from a given string.\n- Get start and end offsets for a given key specification.\n- Parse key options.\n\nCORE LOGIC:\n- Parse key specifications and set key field separator.\n- Get word lengths from a given string.\n- Get start and end offsets for a given key specification.\n- Parse key options.\n\nINPUTS/OUTPUTS:\n- Set key field separator: input is a string representing the key field separator.\n- Get word lengths: input is a byte array, start index, and end index. Output is an array of integers representing the lengths of the words in the string.\n- Get start and end offsets: input is a byte array, start index, end index, array of word lengths, and a KeyDescription object. Output is the start and end offsets for the given key specification.\n- Parse key options: input is a string representing the key options.\n\nDEPENDENCIES:\n- org.apache.hadoop.util.UTF8ByteArrayUtils\n- java.util.List\n- java.util.ArrayList\n- java.util.StringTokenizer\n- java.nio.charset.StandardCharsets",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  },
+  {
+    "algorithm": "LIMBO",
+    "cluster": 87,
+    "class": "org.apache.hadoop.mapreduce.lib.partition.TotalOrderPartitioner",
+    "path": "lib/partition/TotalOrderPartitioner.java",
+    "file_name": "TotalOrderPartitioner.java",
+    "directory": "lib/partition",
+    "summary": "KEY FUNCTIONALITY:\nThe main purpose of this chunk is to implement a partitioner that effects a total order by reading split points from an externally generated source.\n\nCORE LOGIC:\nThe key algorithms or processing patterns visible in this chunk are the building of a trie of the first bytes of the split points if the key type is BinaryComparable and the use of a binary search of the partition keyset otherwise.\n\nINPUTS/OUTPUTS:\nThe data flowing in is the configuration, and the data flowing out is the partitioning of the keys.\n\nDEPENDENCIES:\nThe key imported, parent, or collaborator classes visible in this chunk are the Node interface, the RawComparator class, the Configuration class, the FileSystem class, the Path class, the SequenceFile class, the RawComparator class, the Job class, the ReflectionUtils class, the IOUtils class, the BinaryComparable class, the BinarySearchNode class, the InnerTrieNode class, the LeafTrieNode class, the UnsplitTrieNode class, the SinglySplitTrieNode class, the CarriedTrieNodeRef class, and the TotalOrderPartitioner class.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "algorithm": "ACDC",
+    "cluster": 15,
+    "class": "org.apache.hadoop.mapreduce.lib.reduce.WrappedReducer",
+    "path": "lib/reduce/WrappedReducer.java",
+    "file_name": "WrappedReducer.java",
+    "directory": "lib/reduce",
+    "summary": "KEY FUNCTIONALITY:\n\nThis class is a wrapper for a given Reducer to allow for custom Reducer.Context implementations.\n\nCORE LOGIC:\n\nThe getReducerContext method returns a wrapped Reducer.Context for custom implementations.\n\nINPUTS/OUTPUTS:\n\nThe WrappedReducer class takes in a ReduceContext as input and provides a wrapped Reducer.Context for custom implementations.\n\nDEPENDENCIES:\n\nThis class depends on the org.apache.hadoop.mapreduce package and its dependencies.",
+    "chunked": false,
+    "number_of_code_chunks": 1,
+    "chunk_summaries": []
+  }
+]

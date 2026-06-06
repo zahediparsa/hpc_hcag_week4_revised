@@ -1,0 +1,18 @@
+{
+  "type": "directory",
+  "cluster_id": 77,
+  "directory": "lib/output/committer",
+  "title": "lib/output/committer/manifest",
+  "description": "The lib/output/committer/manifest directory is responsible for handling the manifest file output in the Hadoop MapReduce framework. It collaborates with the ManifestPrinter.java file to load the manifest file from a given path and print its contents. The architectural role of this directory is to provide a way to output manifest data in a readable format.\n\nThe directory uses the Apache Hadoop MapReduce library and the Java IO library to perform its core logic. It takes a path to the manifest file as input and outputs the contents of the manifest file.",
+  "summary": "TITLE: lib/output/committer/manifest\nDESCRIPTION: The lib/output/committer/manifest directory is responsible for handling the manifest file output in the Hadoop MapReduce framework. It collaborates with the ManifestPrinter.java file to load the manifest file from a given path and print its contents. The architectural role of this directory is to provide a way to output manifest data in a readable format.\n\nThe directory uses the Apache Hadoop MapReduce library and the Java IO library to perform its core logic. It takes a path to the manifest file as input and outputs the contents of the manifest file.",
+  "number_of_children": 1,
+  "number_of_intermediate_summaries": 0,
+  "children": [
+    {
+      "type": "directory",
+      "name": "lib/output/committer/manifest"
+    }
+  ],
+  "intermediate_summaries": [],
+  "raw_response": "TITLE: lib/output/committer/manifest\n\nDESCRIPTION:\nThe lib/output/committer/manifest directory is responsible for handling the manifest file output in the Hadoop MapReduce framework. It collaborates with the ManifestPrinter.java file to load the manifest file from a given path and print its contents. The architectural role of this directory is to provide a way to output manifest data in a readable format.\n\nThe directory uses the Apache Hadoop MapReduce library and the Java IO library to perform its core logic. It takes a path to the manifest file as input and outputs the contents of the manifest file."
+}
